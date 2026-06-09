@@ -125,6 +125,7 @@
   .signal-box.buy-box .count { color: var(--green); }
   .signal-box.sell-box .count { color: var(--red); }
   .signal-box .label { font-size: 0.8rem; color: var(--text-dim); }
+  .signal-box.pl-box { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.3); }
 
   @media (max-width: 768px) {
     .charts-row { grid-template-columns: 1fr; }
@@ -204,6 +205,23 @@
     <div class="modal-signal-info">
       <div class="signal-box buy-box"><div class="count" id="modal-buy-count">0</div><div class="label">買進訊號</div></div>
       <div class="signal-box sell-box"><div class="count" id="modal-sell-count">0</div><div class="label">賣出訊號</div></div>
+      <div class="signal-box pl-box" id="modal-pl-box" style="display:none;">
+        <div class="count" id="modal-pl-value" style="color:var(--blue);">0</div>
+        <div class="label">模擬損益</div>
+      </div>
+    </div>
+    <div id="modal-trades" style="margin-bottom:12px;display:none;">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:8px;">
+        <span id="modal-trade-count" style="font-size:1rem;font-weight:600;">0 筆交易</span>
+        <span id="modal-total-pl" style="font-size:1rem;">總損益: --</span>
+        <span id="modal-return-rate" style="font-size:1rem;">報酬率: --</span>
+      </div>
+      <div style="max-height:120px;overflow-y:auto;">
+        <table style="font-size:0.8rem;">
+          <thead><tr><th>買進日</th><th>買價</th><th>賣出日</th><th>賣價</th><th>損益</th><th>報酬率</th></tr></thead>
+          <tbody id="modal-trades-body"></tbody>
+        </table>
+      </div>
     </div>
     <div id="modal-body">
       <div class="modal-loading">載入圖表資料...</div>
@@ -257,15 +275,25 @@ function render(data) {
       const b = s.buy_count || 0;
       const se = s.sell_count || 0;
       const sg = s.surge_days || 0;
+      const tc = s.trade_count || 0;
+      const rr = s.return_rate || 0;
+      const pl = s.total_pl || 0;
       const days = s.total_days || 0;
       let tags = '';
       if (b > 0) tags += `<span class="tag tag-buy">買 ${b}</span> `;
       if (se > 0) tags += `<span class="tag tag-sell">賣 ${se}</span> `;
       if (sg > 0) tags += `<span class="tag tag-surge">⚡${sg}</span> `;
+      let plHtml = '';
+      if (tc > 0) {
+        const plClass = rr >= 0 ? 'tag-buy' : 'tag-sell';
+        const sign = rr >= 0 ? '+' : '';
+        plHtml = `<div class="stat-row"><span class="tag ${plClass}">${tc}筆交易 ${sign}${rr}%</span></div>`;
+      }
       return `<div class="stock-card" onclick="openModal('${s.ticker}')">
         <div class="ticker">${s.ticker}</div>
         <div class="meta"><span>📅 ${days}日</span></div>
         <div class="stat-row">${tags}</div>
+        ${plHtml}
       </div>`;
     }).join('');
   }
@@ -394,10 +422,43 @@ function renderChart(data) {
   const taiex = data.taiex || [];
   const stock = data.stock || [];
   const signals = data.signals || { buy: [], sell: [] };
+  const sim = data.simulation || { trades: [], total_pl: 0, return_rate: 0, trade_count: 0 };
 
   // Update signal counts
   document.getElementById('modal-buy-count').textContent = signals.buy.length;
   document.getElementById('modal-sell-count').textContent = signals.sell.length;
+
+  // P&L display
+  const plBox = document.getElementById('modal-pl-box');
+  const tradesDiv = document.getElementById('modal-trades');
+  if (sim.trade_count > 0) {
+    plBox.style.display = 'block';
+    const plSign = sim.total_pl >= 0 ? '+' : '';
+    const rrSign = sim.return_rate >= 0 ? '+' : '';
+    document.getElementById('modal-pl-value').textContent = `${plSign}${sim.total_pl}`;
+    document.getElementById('modal-pl-value').style.color = sim.total_pl >= 0 ? 'var(--green)' : 'var(--red)';
+
+    tradesDiv.style.display = 'block';
+    document.getElementById('modal-trade-count').textContent = `${sim.trade_count} 筆交易`;
+    document.getElementById('modal-total-pl').textContent = `總損益: ${plSign}${sim.total_pl}`;
+    document.getElementById('modal-total-pl').style.color = sim.total_pl >= 0 ? 'var(--green)' : 'var(--red)';
+    document.getElementById('modal-return-rate').textContent = `報酬率: ${rrSign}${sim.return_rate}%`;
+    document.getElementById('modal-return-rate').style.color = sim.return_rate >= 0 ? 'var(--green)' : 'var(--red)';
+
+    document.getElementById('modal-trades-body').innerHTML = sim.trades.map(t => {
+      const tp = t.pl >= 0 ? '+' : '';
+      const tr = t.return_pct >= 0 ? '+' : '';
+      return `<tr>
+        <td>${t.buy_date}</td><td>${t.buy_price}</td>
+        <td>${t.sell_date}</td><td>${t.sell_price}</td>
+        <td style="color:${t.pl>=0?'var(--green)':'var(--red)'}">${tp}${t.pl}</td>
+        <td style="color:${t.return_pct>=0?'var(--green)':'var(--red)'}">${tr}${t.return_pct}%</td>
+      </tr>`;
+    }).join('');
+  } else {
+    plBox.style.display = 'none';
+    tradesDiv.style.display = 'none';
+  }
 
   // Build modal body
   let html = `
@@ -432,9 +493,9 @@ function renderChart(data) {
   chartInstances.push(taiexChart);
 
   const taiexCandles = taiexChart.addCandlestickSeries({
-    upColor: '#22c55e', downColor: '#ef4444',
-    borderUpColor: '#22c55e', borderDownColor: '#ef4444',
-    wickUpColor: '#22c55e', wickDownColor: '#ef4444',
+    upColor: '#ef4444', downColor: '#22c55e',
+    borderUpColor: '#ef4444', borderDownColor: '#22c55e',
+    wickUpColor: '#ef4444', wickDownColor: '#22c55e',
   });
   const taiexData = taiex.map(d => ({
     time: d.d, open: d.o, high: d.h, low: d.l, close: d.c,
@@ -465,9 +526,9 @@ function renderStockKline(ticker, stock, signals, indicatorVis) {
 
   // Candlestick
   const candleSeries = stockChart.addCandlestickSeries({
-    upColor: '#22c55e', downColor: '#ef4444',
-    borderUpColor: '#22c55e', borderDownColor: '#ef4444',
-    wickUpColor: '#22c55e', wickDownColor: '#ef4444',
+    upColor: '#ef4444', downColor: '#22c55e',
+    borderUpColor: '#ef4444', borderDownColor: '#22c55e',
+    wickUpColor: '#ef4444', wickDownColor: '#22c55e',
   });
   const candleData = stock.map(d => ({
     time: d.d, open: d.o, high: d.h, low: d.l, close: d.c,
@@ -481,7 +542,7 @@ function renderStockKline(ticker, stock, signals, indicatorVis) {
   stockChart.priceScale('volume').applyOptions({
     scaleMargins: { top: 0.85, bottom: 0 },
   });
-  const volData = stock.map(d => ({ time: d.d, value: d.v, color: d.c >= d.o ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)' }));
+  const volData = stock.map(d => ({ time: d.d, value: d.v, color: d.c >= d.o ? 'rgba(239,68,68,0.3)' : 'rgba(34,197,94,0.3)' }));
   volSeries.setData(volData);
 
   // Buy/Sell markers
