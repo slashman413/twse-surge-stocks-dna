@@ -1,47 +1,28 @@
 {
-  "generated_at": "2026-06-10 02:32:39",
-  "data_until": "2007",
-  "period": "2004-2007",
+  "generated_at": "2026-06-10 04:59:19",
+  "data_until": "2008",
+  "period": "2004-2008",
   "tickers_tested": 8,
   "ticker": "multiple",
   "market": {
-    "state": "備戰",
-    "score": 10,
+    "state": "多頭",
+    "score": 50,
     "reasons": [
-      "收盤 36 > N2 35 → 多頭",
-      "MACD -0.0 < 0"
+      "收盤 27 > N2 26 → 多頭",
+      "MACD 0.4 > 0"
     ]
   },
   "stocks": [
     {
       "ticker": "2330",
-      "total_days": 1014,
-      "samples": 16,
+      "total_days": 1265,
+      "samples": 21,
       "market": {
-        "state": "備戰",
-        "score": 10,
+        "state": "多頭",
+        "score": 50,
         "reasons": [
-          "收盤 36 > N2 35 → 多頭",
-          "MACD -0.0 < 0"
-        ]
-      },
-      "buy_count": 0,
-      "sell_count": 5,
-      "buy_rate": 0.0,
-      "sell_rate": 31.2,
-      "surge_days": 1
-    },
-    {
-      "ticker": "2454",
-      "total_days": 1014,
-      "samples": 16,
-      "market": {
-        "state": "空頭",
-        "score": -50,
-        "reasons": [
-          "收盤 182 在 N2-備戰區之間 → 備戰",
-          "MACD -7.0 < 0",
-          "-DI 27 > +DI 26 強空"
+          "收盤 27 > N2 26 → 多頭",
+          "MACD 0.4 > 0"
         ]
       },
       "buy_count": 0,
@@ -51,15 +32,33 @@
       "surge_days": 2
     },
     {
-      "ticker": "2317",
-      "total_days": 1014,
-      "samples": 16,
+      "ticker": "2454",
+      "total_days": 1265,
+      "samples": 21,
       "market": {
         "state": "空頭",
         "score": -35,
         "reasons": [
-          "收盤 73 在 N2-備戰區之間 → 備戰",
-          "MACD -0.8 < 0"
+          "收盤 102 在 N2-備戰區之間 → 備戰",
+          "MACD -0.7 < 0"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 3
+    },
+    {
+      "ticker": "2317",
+      "total_days": 1265,
+      "samples": 21,
+      "market": {
+        "state": "空頭",
+        "score": -35,
+        "reasons": [
+          "收盤 24 在 N2-備戰區之間 → 備戰",
+          "MACD -0.4 < 0"
         ]
       },
       "buy_count": 0,
@@ -70,14 +69,14 @@
     },
     {
       "ticker": "2308",
-      "total_days": 1014,
-      "samples": 16,
+      "total_days": 1265,
+      "samples": 21,
       "market": {
         "state": "空頭",
         "score": -35,
         "reasons": [
-          "收盤 61 在 N2-備戰區之間 → 備戰",
-          "MACD -0.7 < 0"
+          "收盤 37 在 N2-備戰區之間 → 備戰",
+          "MACD -0.3 < 0"
         ]
       },
       "buy_count": 0,
@@ -88,50 +87,32 @@
     },
     {
       "ticker": "2301",
-      "total_days": 1014,
-      "samples": 16,
+      "total_days": 1265,
+      "samples": 21,
       "market": {
-        "state": "多頭",
-        "score": 25,
+        "state": "空頭",
+        "score": -50,
         "reasons": [
-          "收盤 57 > N2 56 → 多頭",
+          "收盤 21 在 N2-備戰區之間 → 備戰",
           "MACD -0.4 < 0",
-          "+DI 31 > -DI 16 強多"
-        ]
-      },
-      "buy_count": 0,
-      "sell_count": 8,
-      "buy_rate": 0.0,
-      "sell_rate": 50.0,
-      "surge_days": 3
-    },
-    {
-      "ticker": "2002",
-      "total_days": 1014,
-      "samples": 16,
-      "market": {
-        "state": "備戰",
-        "score": 10,
-        "reasons": [
-          "收盤 23 > N2 23 → 多頭",
-          "MACD -0.1 < 0"
+          "-DI 29 > +DI 17 強空"
         ]
       },
       "buy_count": 0,
       "sell_count": 0,
       "buy_rate": 0.0,
       "sell_rate": 0.0,
-      "surge_days": 5
+      "surge_days": 3
     },
     {
-      "ticker": "2881",
-      "total_days": 1014,
-      "samples": 16,
+      "ticker": "2002",
+      "total_days": 1265,
+      "samples": 21,
       "market": {
-        "state": "空頭",
-        "score": -35,
+        "state": "備戰",
+        "score": 10,
         "reasons": [
-          "收盤 11 在 N2-備戰區之間 → 備戰",
+          "收盤 13 > N2 13 → 多頭",
           "MACD -0.0 < 0"
         ]
       },
@@ -139,26 +120,44 @@
       "sell_count": 0,
       "buy_rate": 0.0,
       "sell_rate": 0.0,
-      "surge_days": 2
+      "surge_days": 6
     },
     {
-      "ticker": "2412",
-      "total_days": 1014,
-      "samples": 16,
+      "ticker": "2881",
+      "total_days": 1265,
+      "samples": 21,
       "market": {
         "state": "多頭",
         "score": 75,
         "reasons": [
-          "收盤 32 > N2 28 → 多頭",
-          "MACD 1.5 > 0",
-          "+DI 66 > -DI 12 強多"
+          "收盤 9 > N2 8 → 多頭",
+          "MACD 0.3 > 0",
+          "+DI 34 > -DI 11 強多"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 6,
+      "buy_rate": 0.0,
+      "sell_rate": 28.6,
+      "surge_days": 2
+    },
+    {
+      "ticker": "2412",
+      "total_days": 1265,
+      "samples": 21,
+      "market": {
+        "state": "備戰",
+        "score": 10,
+        "reasons": [
+          "收盤 25 > N2 24 → 多頭",
+          "MACD -0.1 < 0"
         ]
       },
       "buy_count": 0,
       "sell_count": 0,
       "buy_rate": 0.0,
       "sell_rate": 0.0,
-      "surge_days": 1
+      "surge_days": 2
     }
   ],
   "buy_signals": [],
@@ -168,143 +167,66 @@
       "signal": "賣出",
       "confidence": 0.6,
       "met": [
-        "S1: 月W%R3=-44 > -50 (偏弱)",
-        "S2: 月RSI4=41 < 77",
-        "S4: 收盤 23 < MA60 29"
+        "S1: 月W%R3=-3 > -50 (偏弱)",
+        "S2: 月RSI4=47 < 77",
+        "S4: 收盤 11 < MA60 11"
       ],
-      "ticker": "2330"
+      "ticker": "2881"
     },
     {
-      "date": "2004-09-09",
+      "date": "2005-11-03",
       "signal": "賣出",
       "confidence": 0.6,
       "met": [
-        "S1: 月W%R3=-44 > -50 (偏弱)",
-        "S2: 月RSI4=41 < 77",
-        "S4: 收盤 22 < MA60 23"
+        "S1: 月W%R3=-3 > -50 (偏弱)",
+        "S2: 月RSI4=47 < 77",
+        "S4: 收盤 10 < MA60 11"
       ],
-      "ticker": "2330"
-    },
-    {
-      "date": "2005-08-11",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-44 > -50 (偏弱)",
-        "S2: 月RSI4=41 < 77",
-        "S4: 收盤 28 < MA60 29"
-      ],
-      "ticker": "2330"
+      "ticker": "2881"
     },
     {
       "date": "2006-07-27",
       "signal": "賣出",
       "confidence": 0.6,
       "met": [
-        "S1: 月W%R3=-44 > -50 (偏弱)",
-        "S2: 月RSI4=41 < 77",
-        "S4: 收盤 30 < MA60 32"
+        "S1: 月W%R3=-3 > -50 (偏弱)",
+        "S2: 月RSI4=47 < 77",
+        "S4: 收盤 10 < MA60 10"
       ],
-      "ticker": "2330"
-    },
-    {
-      "date": "2007-10-17",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-44 > -50 (偏弱)",
-        "S2: 月RSI4=41 < 77",
-        "S4: 收盤 36 < MA60 36"
-      ],
-      "ticker": "2330"
-    },
-    {
-      "date": "2004-03-25",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 34 < MA60 41"
-      ],
-      "ticker": "2301"
-    },
-    {
-      "date": "2004-06-17",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 35 < MA60 36"
-      ],
-      "ticker": "2301"
-    },
-    {
-      "date": "2004-09-09",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 32 < MA60 34"
-      ],
-      "ticker": "2301"
-    },
-    {
-      "date": "2005-02-24",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 33 < MA60 34"
-      ],
-      "ticker": "2301"
-    },
-    {
-      "date": "2005-05-19",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 34 < MA60 34"
-      ],
-      "ticker": "2301"
-    },
-    {
-      "date": "2006-07-27",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 45 < MA60 49"
-      ],
-      "ticker": "2301"
-    },
-    {
-      "date": "2006-10-23",
-      "signal": "賣出",
-      "confidence": 0.6,
-      "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 41 < MA60 43"
-      ],
-      "ticker": "2301"
+      "ticker": "2881"
     },
     {
       "date": "2007-04-24",
       "signal": "賣出",
       "confidence": 0.6,
       "met": [
-        "S1: 月W%R3=-42 > -50 (偏弱)",
-        "S2: 月RSI4=65 < 77",
-        "S4: 收盤 42 < MA60 44"
+        "S1: 月W%R3=-3 > -50 (偏弱)",
+        "S2: 月RSI4=47 < 77",
+        "S4: 收盤 11 < MA60 11"
       ],
-      "ticker": "2301"
+      "ticker": "2881"
+    },
+    {
+      "date": "2008-07-09",
+      "signal": "賣出",
+      "confidence": 0.6,
+      "met": [
+        "S1: 月W%R3=-3 > -50 (偏弱)",
+        "S2: 月RSI4=47 < 77",
+        "S4: 收盤 10 < MA60 13"
+      ],
+      "ticker": "2881"
+    },
+    {
+      "date": "2008-10-01",
+      "signal": "賣出",
+      "confidence": 0.6,
+      "met": [
+        "S1: 月W%R3=-3 > -50 (偏弱)",
+        "S2: 月RSI4=47 < 77",
+        "S4: 收盤 9 < MA60 10"
+      ],
+      "ticker": "2881"
     }
   ]
 }
