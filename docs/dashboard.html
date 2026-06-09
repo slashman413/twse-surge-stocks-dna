@@ -5,49 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>大飆股DNA - 台股量化篩選系統回測報告</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://unpkg.com/lightweight-charts@4.2.1/dist/lightweight-charts.standalone.production.js"></script>
 <style>
   :root {
-    --bg: #0f172a;
-    --card: #1e293b;
-    --border: #334155;
-    --text: #e2e8f0;
-    --text-dim: #94a3b8;
-    --green: #22c55e;
-    --red: #ef4444;
-    --yellow: #eab308;
-    --blue: #3b82f6;
-    --purple: #a855f7;
+    --bg: #0f172a; --card: #1e293b; --border: #334155;
+    --text: #e2e8f0; --text-dim: #94a3b8;
+    --green: #22c55e; --red: #ef4444; --yellow: #eab308;
+    --blue: #3b82f6; --purple: #a855f7; --orange: #f97316;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+    background: var(--bg); color: var(--text); line-height: 1.6;
   }
   .container { max-width: 1280px; margin: 0 auto; padding: 20px; }
 
-  /* Header */
-  .header {
-    text-align: center; padding: 40px 20px 30px;
-    border-bottom: 1px solid var(--border); margin-bottom: 30px;
-  }
-  .header h1 {
-    font-size: 2.2rem; font-weight: 800;
-    background: linear-gradient(135deg, var(--green), var(--blue));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  }
+  .header { text-align: center; padding: 40px 20px 30px; border-bottom: 1px solid var(--border); margin-bottom: 30px; }
+  .header h1 { font-size: 2.2rem; font-weight: 800; background: linear-gradient(135deg, var(--green), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .header .subtitle { color: var(--text-dim); margin-top: 8px; font-size: 1rem; }
 
-  /* Stats Grid */
-  .stats-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px; margin-bottom: 30px;
-  }
-  .stat-card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 12px; padding: 20px; text-align: center;
-  }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 30px; }
+  .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
   .stat-card .value { font-size: 2rem; font-weight: 700; }
   .stat-card .label { color: var(--text-dim); font-size: 0.85rem; margin-top: 4px; }
   .stat-card.bull { border-left: 3px solid var(--green); }
@@ -55,153 +33,104 @@
   .stat-card.neutral { border-left: 3px solid var(--yellow); }
   .stat-card.info { border-left: 3px solid var(--blue); }
 
-  /* Stock Cards */
-  .stock-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px; margin-bottom: 30px;
-  }
+  /* Stock Grid — only stocks with signals */
+  .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-bottom: 30px; }
   .stock-card {
     background: var(--card); border: 1px solid var(--border);
-    border-radius: 12px; padding: 20px;
+    border-radius: 12px; padding: 20px; cursor: pointer;
+    transition: border-color 0.2s, transform 0.15s;
   }
-  .stock-card .ticker {
-    font-size: 1.3rem; font-weight: 700;
-  }
-  .stock-card .meta {
-    display: flex; gap: 16px; margin: 8px 0 12px;
-    font-size: 0.85rem; color: var(--text-dim);
-  }
-  .stock-card .meta span { display: flex; align-items: center; gap: 4px; }
-  .stock-card .meter-row {
-    display: flex; align-items: center; gap: 8px; margin: 4px 0;
-  }
-  .stock-card .meter-row .label { font-size: 0.8rem; width: 60px; color: var(--text-dim); }
-  .stock-card .meter-row .bar {
-    flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden;
-  }
-  .stock-card .meter-row .bar .fill {
-    height: 100%; border-radius: 4px; transition: width 0.5s;
-  }
-  .stock-card .market-state {
-    font-size: 0.8rem; padding: 2px 10px; border-radius: 10px; display: inline-block;
-  }
-  .market-bull { background: rgba(34,197,94,0.2); color: var(--green); }
-  .market-bear { background: rgba(239,68,68,0.2); color: var(--red); }
-  .market-alert { background: rgba(234,179,8,0.2); color: var(--yellow); }
+  .stock-card:hover { border-color: var(--blue); transform: translateY(-2px); }
+  .stock-card .ticker { font-size: 1.3rem; font-weight: 700; }
+  .stock-card .name { color: var(--text-dim); font-size: 0.85rem; }
+  .stock-card .meta { display: flex; gap: 16px; margin: 8px 0 12px; font-size: 0.85rem; color: var(--text-dim); }
+  .stock-card .stat-row { display: flex; gap: 20px; margin: 8px 0; }
+  .stock-card .stat-row .tag { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 10px; font-size: 0.8rem; }
+  .tag-buy { background: rgba(34,197,94,0.2); color: var(--green); }
+  .tag-sell { background: rgba(239,68,68,0.2); color: var(--red); }
+  .tag-surge { background: rgba(168,85,247,0.2); color: var(--purple); }
 
   /* Charts Row */
-  .charts-row {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 16px; margin-bottom: 30px;
-  }
-  .chart-card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 12px; padding: 20px;
-  }
-  .chart-card h3 {
-    font-size: 0.95rem; color: var(--text-dim); margin-bottom: 12px;
-    text-transform: uppercase; letter-spacing: 1px;
-  }
-  .chart-card canvas { max-height: 300px; }
+  .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 30px; }
+  .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .chart-card h3 { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
 
-  /* Tables */
+  /* Loading */
+  .loading { text-align: center; padding: 60px 20px; color: var(--text-dim); }
+  .loading .spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Tab selector */
+  .tab-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab-btn { padding: 8px 20px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text-dim); cursor: pointer; font-size: 0.9rem; transition: all 0.2s; }
+  .tab-btn:hover { border-color: var(--blue); color: var(--text); }
+  .tab-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
   .table-section { margin-bottom: 30px; }
-  .table-section h2 {
-    font-size: 1.2rem; margin-bottom: 16px; padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-  }
-  .table-section h2 .badge {
-    font-size: 0.75rem; padding: 2px 10px; border-radius: 12px;
-    margin-left: 8px;
-  }
+  .table-section h2 { font-size: 1.2rem; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .table-section h2 .badge { font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; margin-left: 8px; }
   .badge-buy { background: rgba(34,197,94,0.2); color: var(--green); }
   .badge-sell { background: rgba(239,68,68,0.2); color: var(--red); }
 
-  table {
-    width: 100%; border-collapse: collapse;
-    background: var(--card); border-radius: 12px; overflow: hidden;
-  }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; }
   th, td { padding: 10px 14px; text-align: left; font-size: 0.9rem; }
-  th {
-    background: rgba(51,65,85,0.4); color: var(--text-dim);
-    font-weight: 600; text-transform: uppercase; font-size: 0.75rem;
-    letter-spacing: 0.5px;
-  }
+  th { background: rgba(51,65,85,0.4); color: var(--text-dim); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
   tr:not(:last-child) td { border-bottom: 1px solid var(--border); }
   tr:hover td { background: rgba(59,130,246,0.05); }
   .signal-buy { color: var(--green); font-weight: 600; }
   .signal-sell { color: var(--red); font-weight: 600; }
 
-  /* Market Banner */
-  .market-banner {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 12px; padding: 24px; margin-bottom: 30px;
-    display: flex; align-items: center; gap: 24px;
-  }
-  .market-banner .icon { font-size: 3rem; }
-  .market-banner .info { flex: 1; }
-  .market-banner .state { font-size: 1.4rem; font-weight: 700; }
-  .market-banner .state.bull { color: var(--green); }
-  .market-banner .state.bear { color: var(--red); }
-  .market-banner .state.alert { color: var(--yellow); }
-  .market-banner .score { font-size: 0.9rem; color: var(--text-dim); margin-top: 4px; }
-  .market-banner .reasons { margin-top: 8px; font-size: 0.85rem; color: var(--text-dim); }
-  .market-banner .reasons li { margin-left: 16px; }
+  .footer { text-align: center; padding: 30px; color: var(--text-dim); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px; }
 
-  /* Timeline */
-  .timeline { position: relative; padding: 20px 0; }
-  .timeline::before {
-    content: ''; position: absolute; left: 20px; top: 0; bottom: 0;
-    width: 2px; background: var(--border);
+  /* ═══ MODAL ═══ */
+  .modal-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.75); z-index: 1000;
+    justify-content: center; align-items: center; padding: 20px;
   }
-  .timeline-item {
-    position: relative; padding: 8px 0 8px 50px; margin-bottom: 12px;
+  .modal-overlay.open { display: flex; }
+  .modal-content {
+    background: #131c31; border: 1px solid var(--border); border-radius: 16px;
+    width: 100%; max-width: 1100px; max-height: 90vh; overflow-y: auto;
+    padding: 24px; position: relative;
   }
-  .timeline-item::before {
-    content: ''; position: absolute; left: 14px; top: 14px;
-    width: 14px; height: 14px; border-radius: 50%;
-    border: 2px solid;
+  .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .modal-header h2 { font-size: 1.4rem; font-weight: 700; }
+  .modal-header .close-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--text-dim);
+    width: 36px; height: 36px; border-radius: 8px; cursor: pointer; font-size: 1.2rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
   }
-  .timeline-item.buy::before { background: var(--green); border-color: var(--green); }
-  .timeline-item.sell::before { background: var(--red); border-color: var(--red); }
-  .timeline-item .date { font-size: 0.8rem; color: var(--text-dim); }
-  .timeline-item .desc { font-size: 0.95rem; margin-top: 2px; }
-
-  /* Loading */
-  .loading {
-    text-align: center; padding: 60px 20px; color: var(--text-dim);
-  }
-  .loading .spinner {
-    width: 40px; height: 40px; border: 3px solid var(--border);
-    border-top-color: var(--blue); border-radius: 50%;
-    animation: spin 0.8s linear infinite; margin: 0 auto 16px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* Tab selector */
-  .tab-bar {
-    display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;
-  }
-  .tab-btn {
-    padding: 8px 20px; border-radius: 8px; border: 1px solid var(--border);
+  .modal-header .close-btn:hover { background: var(--red); color: white; border-color: var(--red); }
+  .modal-chart-container { height: 340px; margin-bottom: 8px; border-radius: 8px; overflow: hidden; background: #0b1426; }
+  .modal-chart-container:first-of-type { height: 280px; }
+  .modal-chart-label { font-size: 0.8rem; color: var(--text-dim); margin: 4px 0 8px; display: flex; justify-content: space-between; }
+  .modal-chart-label .badge { padding: 1px 8px; border-radius: 6px; font-size: 0.75rem; }
+  .modal-indicator-tabs { display: flex; gap: 6px; margin: 8px 0 12px; flex-wrap: wrap; }
+  .modal-indicator-tabs .ind-btn {
+    padding: 4px 12px; border-radius: 6px; border: 1px solid var(--border);
     background: transparent; color: var(--text-dim); cursor: pointer;
-    font-size: 0.9rem; transition: all 0.2s;
+    font-size: 0.75rem; transition: all 0.15s;
   }
-  .tab-btn:hover { border-color: var(--blue); color: var(--text); }
-  .tab-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+  .modal-indicator-tabs .ind-btn:hover { border-color: var(--blue); color: var(--text); }
+  .modal-indicator-tabs .ind-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+  .modal-loading { text-align: center; padding: 80px 20px; color: var(--text-dim); font-size: 0.9rem; }
+  .modal-error { text-align: center; padding: 40px 20px; color: var(--red); }
+  .modal-signal-info { display: flex; gap: 20px; margin-bottom: 16px; }
+  .modal-signal-info .signal-box { flex: 1; padding: 12px 16px; border-radius: 8px; }
+  .signal-box.buy-box { background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); }
+  .signal-box.sell-box { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); }
+  .signal-box .count { font-size: 1.5rem; font-weight: 700; }
+  .signal-box.buy-box .count { color: var(--green); }
+  .signal-box.sell-box .count { color: var(--red); }
+  .signal-box .label { font-size: 0.8rem; color: var(--text-dim); }
 
-  /* Responsive */
   @media (max-width: 768px) {
     .charts-row { grid-template-columns: 1fr; }
-    .market-banner { flex-direction: column; text-align: center; }
-    .header h1 { font-size: 1.6rem; }
-    .stock-grid { grid-template-columns: 1fr; }
-  }
-
-  /* Footer */
-  .footer {
-    text-align: center; padding: 30px; color: var(--text-dim);
-    font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px;
+    .modal-content { padding: 16px; }
+    .modal-chart-container { height: 250px; }
+    .modal-chart-container:first-of-type { height: 200px; }
   }
 </style>
 </head>
@@ -221,100 +150,72 @@
 
   <div id="content" style="display:none;">
 
-    <!-- Market Banner (first stock) -->
-    <div class="market-banner" id="market-banner">
-      <div class="icon" id="market-icon">📊</div>
-      <div class="info">
-        <div class="state" id="market-state">--</div>
-        <div class="score" id="market-score">Score: --</div>
-        <ul class="reasons" id="market-reasons"></ul>
-      </div>
-    </div>
-
     <!-- Stats -->
     <div class="stats-grid" id="stats-grid">
-      <div class="stat-card info">
-        <div class="value" id="stat-period">--</div>
-        <div class="label">回測區間</div>
-      </div>
-      <div class="stat-card bull">
-        <div class="value" id="stat-buy">0</div>
-        <div class="label">買進訊號</div>
-      </div>
-      <div class="stat-card bear">
-        <div class="value" id="stat-sell">0</div>
-        <div class="label">賣出訊號</div>
-      </div>
-      <div class="stat-card info">
-        <div class="value" id="stat-tickers">0</div>
-        <div class="label">回測標的</div>
-      </div>
+      <div class="stat-card info"><div class="value" id="stat-period">--</div><div class="label">回測區間</div></div>
+      <div class="stat-card bull"><div class="value" id="stat-buy">0</div><div class="label">買進訊號</div></div>
+      <div class="stat-card bear"><div class="value" id="stat-sell">0</div><div class="label">賣出訊號</div></div>
+      <div class="stat-card info"><div class="value" id="stat-tickers">0</div><div class="label">有訊號標的</div></div>
     </div>
 
-    <!-- Per-Stock Summary -->
-    <div class="table-section">
-      <h2>📊 各股回測摘要 <span class="badge badge-buy" id="stock-count">0</span></h2>
-      <div class="stock-grid" id="stock-grid"></div>
-    </div>
-
-    <!-- Charts -->
+    <!-- Charts Row -->
     <div class="charts-row">
-      <div class="chart-card">
-        <h3>📊 買賣訊號分布</h3>
-        <canvas id="signalChart"></canvas>
-      </div>
-      <div class="chart-card">
-        <h3>📊 各股賣出率</h3>
-        <canvas id="stockChart"></canvas>
-      </div>
+      <div class="chart-card"><h3>📊 買賣訊號分布</h3><canvas id="signalChart"></canvas></div>
+      <div class="chart-card"><h3>📊 各股訊號強度</h3><canvas id="stockChart"></canvas></div>
     </div>
 
     <!-- Tab: 買進 / 賣出 -->
     <div class="tab-bar">
       <button class="tab-btn active" data-tab="buy" onclick="switchTab('buy')">🟢 買進訊號</button>
       <button class="tab-btn" data-tab="sell" onclick="switchTab('sell')">🔴 賣出訊號</button>
-      <button class="tab-btn" data-tab="timeline" onclick="switchTab('timeline')">📅 時間軸</button>
     </div>
 
-    <!-- Buy Signals Table -->
     <div class="table-section tab-content" id="tab-buy">
       <h2>🟢 買進訊號 <span class="badge badge-buy" id="buy-count">0</span></h2>
-      <table>
-        <thead><tr>
-          <th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th>
-        </tr></thead>
-        <tbody id="buy-table-body"></tbody>
-      </table>
+      <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="buy-table-body"></tbody></table>
     </div>
 
-    <!-- Sell Signals Table -->
     <div class="table-section tab-content" id="tab-sell" style="display:none;">
       <h2>🔴 賣出訊號 <span class="badge badge-sell" id="sell-count">0</span></h2>
-      <table>
-        <thead><tr>
-          <th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th>
-        </tr></thead>
-        <tbody id="sell-table-body"></tbody>
-      </table>
+      <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="sell-table-body"></tbody></table>
     </div>
 
-    <!-- Timeline -->
-    <div class="table-section tab-content" id="tab-timeline" style="display:none;">
-      <h2>📅 訊號時間軸</h2>
-      <div class="timeline" id="timeline"></div>
+    <!-- Stocks with Signals -->
+    <div class="table-section">
+      <h2>📊 有訊號標的 <span class="badge badge-buy" id="signal-stock-count">0</span></h2>
+      <div class="stock-grid" id="stock-grid"></div>
     </div>
 
   </div><!-- /content -->
 
   <div class="footer">
     <p>大飆股DNA — TWSE Quant Screener | 資料來源: TWSE / yfinance</p>
-    <p style="margin-top:4px;">Generated by <strong>Hermes Agent</strong></p>
+    <p style="margin-top:4px;">點擊有訊號的股票卡片可查看詳細 K 線圖表</p>
+  </div>
+</div>
+
+<!-- ═══ MODAL ═══ -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="modal-title">📈 2330 台積電</h2>
+      <button class="close-btn" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-signal-info">
+      <div class="signal-box buy-box"><div class="count" id="modal-buy-count">0</div><div class="label">買進訊號</div></div>
+      <div class="signal-box sell-box"><div class="count" id="modal-sell-count">0</div><div class="label">賣出訊號</div></div>
+    </div>
+    <div id="modal-body">
+      <div class="modal-loading">載入圖表資料...</div>
+    </div>
   </div>
 </div>
 
 <script>
 const DATA_URL = './backtest_data.json';
+const CHARTS_DIR = './charts/';
 let currentData = null;
+let currentTicker = null;
 
 async function loadData() {
   try {
@@ -326,11 +227,7 @@ async function loadData() {
   } catch(e) {
     document.getElementById('loading').innerHTML = `
       <div style="color:#ef4444;font-size:1.2rem;">⚠️ 無法載入回測資料</div>
-      <div style="margin-top:8px;color:var(--text-dim);">${e.message}</div>
-      <div style="margin-top:16px;color:var(--text-dim);font-size:0.9rem;">
-        回測報告尚未產生。爬蟲完成後會自動執行回測，請稍後再訪。
-      </div>
-    `;
+      <div style="margin-top:8px;color:var(--text-dim);">${e.message}</div>`;
   }
 }
 
@@ -338,214 +235,345 @@ function render(data) {
   document.getElementById('loading').style.display = 'none';
   document.getElementById('content').style.display = 'block';
 
-  // Report date
   document.getElementById('report-date').textContent =
     `報告產生: ${data.generated_at || '--'} | 資料截至: ${data.data_until || '--'}`;
 
-  // Market (use data.market or first stock's market)
-  const mkt = data.market || (data.stocks && data.stocks[0] && data.stocks[0].market) || {};
-  const stateEl = document.getElementById('market-state');
-  stateEl.textContent = mkt.state || '--';
-  stateEl.className = 'state ' + (mkt.state === '多頭' ? 'bull' : mkt.state === '空頭' ? 'bear' : 'alert');
-  document.getElementById('market-icon').textContent =
-    mkt.state === '多頭' ? '🟢' : mkt.state === '空頭' ? '🔴' : '🟡';
-  document.getElementById('market-score').textContent = `Score: ${mkt.score ?? '--'}`;
-  const reasonsEl = document.getElementById('market-reasons');
-  reasonsEl.innerHTML = (mkt.reasons || []).map(r => `<li>${r}</li>`).join('');
+  const stocks = (data.stocks || []).filter(s => (s.buy_count || 0) + (s.sell_count || 0) > 0);
+  const buys = data.buy_signals || [];
+  const sells = data.sell_signals || [];
 
-  // Stats
   document.getElementById('stat-period').textContent = data.period || '--';
-  document.getElementById('stat-buy').textContent = (data.buy_signals || []).length;
-  document.getElementById('stat-sell').textContent = (data.sell_signals || []).length;
-  document.getElementById('stat-tickers').textContent = data.tickers_tested || 0;
+  document.getElementById('stat-buy').textContent = buys.length;
+  document.getElementById('stat-sell').textContent = sells.length;
+  document.getElementById('stat-tickers').textContent = stocks.length;
 
-  // Per-stock cards
-  const stocks = data.stocks || [];
-  document.getElementById('stock-count').textContent = stocks.length;
+  // Stock cards (only signal stocks)
+  document.getElementById('signal-stock-count').textContent = stocks.length;
   const grid = document.getElementById('stock-grid');
   if (stocks.length === 0) {
-    grid.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:30px;">尚無個股資料</div>';
+    grid.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:40px;">目前沒有任何買進/賣出訊號</div>';
   } else {
     grid.innerHTML = stocks.map(s => {
-      const m = s.market || {};
-      const mktClass = m.state === '多頭' ? 'market-bull' : m.state === '空頭' ? 'market-bear' : 'market-alert';
-      const buyPct = Math.min(s.buy_rate || 0, 100);
-      const sellPct = Math.min(s.sell_rate || 0, 100);
-      const surge = s.surge_days || 0;
-      return `
-        <div class="stock-card">
-          <div class="ticker">${s.ticker}</div>
-          <div class="meta">
-            <span>📅 ${s.total_days}日</span>
-            <span>🔍 ${s.samples}次取樣</span>
-            <span class="market-state ${mktClass}">${m.state || '--'}</span>
-          </div>
-          <div class="meter-row">
-            <span class="label">買進 ${s.buy_count}</span>
-            <div class="bar"><div class="fill" style="width:${buyPct}%;background:var(--green);"></div></div>
-            <span style="font-size:0.8rem;color:var(--text-dim);width:40px;text-align:right;">${buyPct.toFixed(1)}%</span>
-          </div>
-          <div class="meter-row">
-            <span class="label">賣出 ${s.sell_count}</span>
-            <div class="bar"><div class="fill" style="width:${sellPct}%;background:var(--red);"></div></div>
-            <span style="font-size:0.8rem;color:var(--text-dim);width:40px;text-align:right;">${sellPct.toFixed(1)}%</span>
-          </div>
-          ${surge > 0 ? `<div class="meter-row"><span class="label">⚡飆漲</span><span style="color:var(--purple);font-weight:600;">${surge}次</span></div>` : ''}
-        </div>
-      `;
+      const b = s.buy_count || 0;
+      const se = s.sell_count || 0;
+      const sg = s.surge_days || 0;
+      const days = s.total_days || 0;
+      let tags = '';
+      if (b > 0) tags += `<span class="tag tag-buy">買 ${b}</span> `;
+      if (se > 0) tags += `<span class="tag tag-sell">賣 ${se}</span> `;
+      if (sg > 0) tags += `<span class="tag tag-surge">⚡${sg}</span> `;
+      return `<div class="stock-card" onclick="openModal('${s.ticker}')">
+        <div class="ticker">${s.ticker}</div>
+        <div class="meta"><span>📅 ${days}日</span></div>
+        <div class="stat-row">${tags}</div>
+      </div>`;
     }).join('');
   }
 
   // Buy table
-  const buys = data.buy_signals || [];
   document.getElementById('buy-count').textContent = buys.length;
   const buyBody = document.getElementById('buy-table-body');
   if (buys.length === 0) {
     buyBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無買進訊號</td></tr>';
   } else {
-    buyBody.innerHTML = buys.slice(0, 50).map(b => `
-      <tr>
-        <td>${b.date}</td>
-        <td><strong>${b.ticker || '--'}</strong></td>
-        <td class="signal-buy">${b.signal}</td>
-        <td>${(b.confidence * 100).toFixed(0)}%</td>
-        <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 3).join('; ')}</td>
-      </tr>
+    buyBody.innerHTML = buys.slice(0, 100).map(b => `
+      <tr><td>${b.date}</td><td><strong>${b.ticker || '--'}</strong></td>
+      <td class="signal-buy">${b.signal}</td><td>${(b.confidence * 100).toFixed(0)}%</td>
+      <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 2).join('; ')}</td></tr>
     `).join('');
-    if (buys.length > 50) {
-      buyBody.innerHTML += `<tr><td colspan="5" style="text-align:center;color:var(--text-dim);">... 尚有 ${buys.length - 50} 筆</td></tr>`;
-    }
   }
 
   // Sell table
-  const sells = data.sell_signals || [];
   document.getElementById('sell-count').textContent = sells.length;
   const sellBody = document.getElementById('sell-table-body');
   if (sells.length === 0) {
     sellBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無賣出訊號</td></tr>';
   } else {
-    sellBody.innerHTML = sells.slice(0, 50).map(s => `
-      <tr>
-        <td>${s.date}</td>
-        <td><strong>${s.ticker || '--'}</strong></td>
-        <td class="signal-sell">${s.signal}</td>
-        <td>${(s.confidence * 100).toFixed(0)}%</td>
-        <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 3).join('; ')}</td>
-      </tr>
-    `).join('');
-    if (sells.length > 50) {
-      sellBody.innerHTML += `<tr><td colspan="5" style="text-align:center;color:var(--text-dim);">... 尚有 ${sells.length - 50} 筆</td></tr>`;
-    }
-  }
-
-  // Timeline
-  const timeline = document.getElementById('timeline');
-  const allEvents = [
-    ...buys.slice(0, 20).map(b => ({ ...b, type: 'buy' })),
-    ...sells.slice(0, 20).map(s => ({ ...s, type: 'sell' })),
-  ].sort((a, b) => a.date.localeCompare(b.date));
-  if (allEvents.length === 0) {
-    timeline.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:30px;">尚無訊號事件</div>';
-  } else {
-    timeline.innerHTML = allEvents.map(e => `
-      <div class="timeline-item ${e.type}">
-        <div class="date">${e.date} <strong>${e.ticker || ''}</strong></div>
-        <div class="desc">
-          ${e.signal} — ${(e.met || []).slice(0, 2).join(', ')}
-        </div>
-      </div>
+    sellBody.innerHTML = sells.slice(0, 100).map(s => `
+      <tr><td>${s.date}</td><td><strong>${s.ticker || '--'}</strong></td>
+      <td class="signal-sell">${s.signal}</td><td>${(s.confidence * 100).toFixed(0)}%</td>
+      <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 2).join('; ')}</td></tr>
     `).join('');
   }
 
   // Charts
-  renderSignalChart(buys.length, sells.length);
+  renderSignalChart(buys.length, sells.length, stocks.length);
   renderStockChart(stocks);
-
-  // Show buy tab by default
   switchTab('buy');
 }
 
-function renderSignalChart(buyCount, sellCount) {
+function renderSignalChart(buyCount, sellCount, stockCount) {
   const ctx = document.getElementById('signalChart').getContext('2d');
   new Chart(ctx, {
     type: 'doughnut',
     data: {
       labels: ['買進訊號', '賣出訊號'],
-      datasets: [{
-        data: [buyCount, sellCount],
-        backgroundColor: ['#22c55e', '#ef4444'],
-        borderWidth: 0,
-      }]
+      datasets: [{ data: [buyCount, sellCount], backgroundColor: ['#22c55e', '#ef4444'], borderWidth: 0 }]
     },
     options: {
       responsive: true,
-      plugins: {
-        legend: { position: 'bottom', labels: { color: '#94a3b8' } },
-      },
+      plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } },
     }
   });
 }
 
 function renderStockChart(stocks) {
   const ctx = document.getElementById('stockChart').getContext('2d');
-  if (!stocks || stocks.length === 0) {
-    new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: ['等待資料'],
-        datasets: [{ data: [1], backgroundColor: ['#334155'], borderWidth: 0 }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } },
-      }
-    });
-    return;
-  }
-
   const tickers = stocks.map(s => s.ticker);
-  const buyRates = stocks.map(s => s.buy_rate || 0);
-  const sellRates = stocks.map(s => s.sell_rate || 0);
-
+  const data = {
+    labels: tickers,
+    datasets: [
+      { label: '買進率 %', data: stocks.map(s => s.buy_rate || 0), backgroundColor: 'rgba(34,197,94,0.6)', borderRadius: 4 },
+      { label: '賣出率 %', data: stocks.map(s => s.sell_rate || 0), backgroundColor: 'rgba(239,68,68,0.6)', borderRadius: 4 },
+    ]
+  };
   new Chart(ctx, {
     type: 'bar',
-    data: {
-      labels: tickers,
-      datasets: [
-        {
-          label: '買進率 %',
-          data: buyRates,
-          backgroundColor: 'rgba(34,197,94,0.6)',
-          borderColor: '#22c55e',
-          borderWidth: 1,
-        },
-        {
-          label: '賣出率 %',
-          data: sellRates,
-          backgroundColor: 'rgba(239,68,68,0.6)',
-          borderColor: '#ef4444',
-          borderWidth: 1,
-        }
-      ]
-    },
+    data,
     options: {
       responsive: true,
+      plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } },
       scales: {
-        x: { ticks: { color: '#94a3b8' }, grid: { color: '#334155' } },
-        y: { beginAtZero: true, ticks: { color: '#94a3b8', callback: v => v + '%' }, grid: { color: '#334155' } },
-      },
-      plugins: {
-        legend: { position: 'bottom', labels: { color: '#94a3b8' } },
-      },
+        x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, beginAtZero: true }
+      }
     }
   });
 }
 
-function switchTab(name) {
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
-  document.querySelector(`.tab-btn[data-tab="${name}"]`).classList.add('active');
-  document.getElementById(`tab-${name}`).style.display = 'block';
+function switchTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById(`tab-${tab}`).style.display = 'block';
+  document.querySelector(`.tab-btn[data-tab="${tab}"]`).classList.add('active');
+}
+
+// ═══ MODAL ═══
+
+function openModal(ticker) {
+  currentTicker = ticker;
+  document.getElementById('modal-title').textContent = `📈 ${ticker}`;
+  document.getElementById('modal-buy-count').textContent = '...';
+  document.getElementById('modal-sell-count').textContent = '...';
+  document.getElementById('modal-body').innerHTML = '<div class="modal-loading">載入圖表資料...</div>';
+  document.getElementById('modal').classList.add('open');
+  loadChartData(ticker);
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  currentTicker = null;
+}
+
+// Close on overlay click
+document.getElementById('modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// Close on Escape
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+
+async function loadChartData(ticker) {
+  try {
+    const resp = await fetch(`${CHARTS_DIR}${ticker}.json`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    renderChart(data);
+  } catch(e) {
+    document.getElementById('modal-body').innerHTML =
+      `<div class="modal-error">⚠️ 無法載入 ${ticker} 圖表資料<br><span style="font-size:0.85rem;">${e.message}</span></div>`;
+  }
+}
+
+let chartInstances = [];
+
+function renderChart(data) {
+  const ticker = data.ticker;
+  const taiex = data.taiex || [];
+  const stock = data.stock || [];
+  const signals = data.signals || { buy: [], sell: [] };
+
+  // Update signal counts
+  document.getElementById('modal-buy-count').textContent = signals.buy.length;
+  document.getElementById('modal-sell-count').textContent = signals.sell.length;
+
+  // Build modal body
+  let html = `
+    <div class="modal-chart-label">📊 大盤 0050 <span class="badge badge-buy">${taiex.length} 日</span></div>
+    <div class="modal-chart-container" id="chart-taiex"></div>
+    <div class="modal-chart-label" style="margin-top:16px;">📈 ${ticker} K線 <span class="badge badge-buy">${stock.length} 日</span></div>
+    <div class="modal-indicator-tabs">
+      <button class="ind-btn active" onclick="showIndicator('ma60', this)">MA60</button>
+      <button class="ind-btn" onclick="showIndicator('wr', this)">W%R</button>
+      <button class="ind-btn" onclick="showIndicator('rsi', this)">RSI</button>
+      <button class="ind-btn" onclick="showIndicator('macd', this)">MACD</button>
+      <button class="ind-btn" onclick="showIndicator('adx', this)">ADX</button>
+      <button class="ind-btn" onclick="showIndicator('n2', this)">N2</button>
+    </div>
+    <div class="modal-chart-container" id="chart-stock"></div>
+  `;
+  document.getElementById('modal-body').innerHTML = html;
+
+  // Clear previous chart instances
+  chartInstances.forEach(c => c.remove());
+  chartInstances = [];
+
+  // ── 大盤 K線 ──
+  const taiexContainer = document.getElementById('chart-taiex');
+  const taiexChart = createChart(taiexContainer, {
+    layout: { background: { color: '#0b1426' }, textColor: '#94a3b8' },
+    grid: { vertLines: { color: '#1e293b' }, horzLines: { color: '#1e293b' } },
+    timeScale: { borderColor: '#334155', timeVisible: false, secondsVisible: false },
+    rightPriceScale: { borderColor: '#334155' },
+    crosshair: { mode: 0 },
+  });
+  chartInstances.push(taiexChart);
+
+  const taiexCandles = taiexChart.addCandlestickSeries({
+    upColor: '#22c55e', downColor: '#ef4444',
+    borderUpColor: '#22c55e', borderDownColor: '#ef4444',
+    wickUpColor: '#22c55e', wickDownColor: '#ef4444',
+  });
+  const taiexData = taiex.map(d => ({
+    time: d.d, open: d.o, high: d.h, low: d.l, close: d.c,
+  }));
+  taiexCandles.setData(taiexData);
+  taiexChart.timeScale().fitContent();
+
+  // ── 個股 K線 ──
+  // Prepare sub-data for indicators
+  let indicatorVisible = 'ma60';
+  window._indicatorState = { ticker, stock, signals, indicatorVisible };
+
+  renderStockKline(ticker, stock, signals, indicatorVisible);
+}
+
+function renderStockKline(ticker, stock, signals, indicatorVis) {
+  const container = document.getElementById('chart-stock');
+  container.innerHTML = '';
+
+  const stockChart = createChart(container, {
+    layout: { background: { color: '#0b1426' }, textColor: '#94a3b8' },
+    grid: { vertLines: { color: '#1e293b' }, horzLines: { color: '#1e293b' } },
+    timeScale: { borderColor: '#334155', timeVisible: false, secondsVisible: false },
+    rightPriceScale: { borderColor: '#334155' },
+    crosshair: { mode: 0 },
+  });
+  chartInstances.push(stockChart);
+
+  // Candlestick
+  const candleSeries = stockChart.addCandlestickSeries({
+    upColor: '#22c55e', downColor: '#ef4444',
+    borderUpColor: '#22c55e', borderDownColor: '#ef4444',
+    wickUpColor: '#22c55e', wickDownColor: '#ef4444',
+  });
+  const candleData = stock.map(d => ({
+    time: d.d, open: d.o, high: d.h, low: d.l, close: d.c,
+  }));
+  candleSeries.setData(candleData);
+
+  // Volume histogram (optional, lightweight approach)
+  const volSeries = stockChart.addHistogramSeries({
+    color: '#334155', priceFormat: { type: 'volume' }, priceScaleId: 'volume',
+  });
+  stockChart.priceScale('volume').applyOptions({
+    scaleMargins: { top: 0.85, bottom: 0 },
+  });
+  const volData = stock.map(d => ({ time: d.d, value: d.v, color: d.c >= d.o ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)' }));
+  volSeries.setData(volData);
+
+  // Buy/Sell markers
+  const markers = [];
+  const buySet = new Set(signals.buy);
+  const sellSet = new Set(signals.sell);
+  for (let i = 0; i < stock.length; i++) {
+    const d = stock[i].d;
+    if (buySet.has(d)) {
+      markers.push({ time: d, position: 'belowBar', color: '#22c55e', shape: 'arrowUp', text: 'B' });
+    }
+    if (sellSet.has(d)) {
+      markers.push({ time: d, position: 'aboveBar', color: '#ef4444', shape: 'arrowDown', text: 'S' });
+    }
+  }
+  candleSeries.setMarkers(markers);
+
+  // Indicator line
+  addIndicatorLine(stockChart, stock, indicatorVis);
+
+  stockChart.timeScale().fitContent();
+}
+
+function addIndicatorLine(chart, stock, indicator) {
+  if (indicator === 'ma60') {
+    const line = chart.addLineSeries({ color: '#f97316', lineWidth: 1, priceScaleId: 'right' });
+    line.setData(stock.map(d => ({ time: d.d, value: d.ma60 })).filter(d => d.value != null));
+  } else if (indicator === 'wr') {
+    const axis = chart.addLineSeries({ color: '#a855f7', lineWidth: 1, priceScaleId: 'wr' });
+    chart.priceScale('wr').applyOptions({
+      scaleMargins: { top: 0.7, bottom: 0.25 },
+    });
+    axis.setData(stock.map(d => ({ time: d.d, value: d.wr != null ? d.wr : null })).filter(d => d.value != null));
+    // Overbought/oversold lines
+    const ob = chart.addLineSeries({ color: 'rgba(239,68,68,0.3)', lineWidth: 1, priceScaleId: 'wr' });
+    ob.setData(stock.map(d => ({ time: d.d, value: -20 })));
+    const os = chart.addLineSeries({ color: 'rgba(34,197,94,0.3)', lineWidth: 1, priceScaleId: 'wr' });
+    os.setData(stock.map(d => ({ time: d.d, value: -80 })));
+  } else if (indicator === 'rsi') {
+    const line = chart.addLineSeries({ color: '#06b6d4', lineWidth: 1, priceScaleId: 'rsi' });
+    chart.priceScale('rsi').applyOptions({
+      scaleMargins: { top: 0.7, bottom: 0.25 },
+    });
+    line.setData(stock.map(d => ({ time: d.d, value: d.rsi != null ? d.rsi : null })).filter(d => d.value != null));
+    const ob = chart.addLineSeries({ color: 'rgba(239,68,68,0.3)', lineWidth: 1, priceScaleId: 'rsi' });
+    ob.setData(stock.map(d => ({ time: d.d, value: 70 })));
+    const os = chart.addLineSeries({ color: 'rgba(34,197,94,0.3)', lineWidth: 1, priceScaleId: 'rsi' });
+    os.setData(stock.map(d => ({ time: d.d, value: 30 })));
+  } else if (indicator === 'macd') {
+    const dif = chart.addLineSeries({ color: '#3b82f6', lineWidth: 1, priceScaleId: 'macd' });
+    chart.priceScale('macd').applyOptions({
+      scaleMargins: { top: 0.7, bottom: 0.25 },
+    });
+    dif.setData(stock.map(d => ({ time: d.d, value: d.dif })).filter(d => d.value != null));
+    const sig = chart.addLineSeries({ color: '#f97316', lineWidth: 1, priceScaleId: 'macd' });
+    sig.setData(stock.map(d => ({ time: d.d, value: d.macds })).filter(d => d.value != null));
+    const hist = chart.addHistogramSeries({ priceScaleId: 'macd', color: '#6366f1' });
+    hist.setData(stock.map(d => ({ time: d.d, value: d.macdh, color: d.macdh >= 0 ? 'rgba(99,102,241,0.4)' : 'rgba(239,68,68,0.4)' })));
+  } else if (indicator === 'adx') {
+    const line = chart.addLineSeries({ color: '#f97316', lineWidth: 1, priceScaleId: 'adx' });
+    chart.priceScale('adx').applyOptions({
+      scaleMargins: { top: 0.7, bottom: 0.25 },
+    });
+    line.setData(stock.map(d => ({ time: d.d, value: d.adx != null ? d.adx : null })).filter(d => d.value != null));
+    const threshold = chart.addLineSeries({ color: 'rgba(255,255,255,0.2)', lineWidth: 1, priceScaleId: 'adx' });
+    threshold.setData(stock.map(d => ({ time: d.d, value: 25 })));
+  } else if (indicator === 'n2') {
+    const line = chart.addLineSeries({ color: '#22d3ee', lineWidth: 1, priceScaleId: 'right' });
+    const n2Data = stock.map(d => ({ time: d.d, value: d.n2 })).filter(d => d.value != null);
+    if (n2Data.length > 0) line.setData(n2Data);
+  }
+}
+
+function showIndicator(name, btn) {
+  document.querySelectorAll('.ind-btn').forEach(el => el.classList.remove('active'));
+  btn.classList.add('active');
+  renderStockKline(window._indicatorState.ticker, window._indicatorState.stock, window._indicatorState.signals, name);
+}
+
+// ── Lightweight Charts helper ──
+function createChart(container, options) {
+  // lightweight-charts might be under LC namespace
+  if (typeof LightweightCharts !== 'undefined') {
+    return LightweightCharts.createChart(container, options);
+  }
+  // Fallback for older API
+  return window.createChart(container, options);
+}
+
+// Polyfill for CDN
+if (typeof LightweightCharts === 'undefined' && typeof createChart === 'undefined') {
+  console.warn('Lightweight Charts not loaded, checking fallback...');
 }
 
 loadData();
