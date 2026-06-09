@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大飆股DNA - 台股量化篩選系統回測報告</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --border: #334155;
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --green: #22c55e;
+    --red: #ef4444;
+    --yellow: #eab308;
+    --blue: #3b82f6;
+    --purple: #a855f7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 1280px; margin: 0 auto; padding: 20px; }
+
+  /* Header */
+  .header {
+    text-align: center; padding: 40px 20px 30px;
+    border-bottom: 1px solid var(--border); margin-bottom: 30px;
+  }
+  .header h1 {
+    font-size: 2.2rem; font-weight: 800;
+    background: linear-gradient(135deg, var(--green), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .header .subtitle { color: var(--text-dim); margin-top: 8px; font-size: 1rem; }
+
+  /* Stats Grid */
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px; margin-bottom: 30px;
+  }
+  .stat-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px; text-align: center;
+  }
+  .stat-card .value { font-size: 2rem; font-weight: 700; }
+  .stat-card .label { color: var(--text-dim); font-size: 0.85rem; margin-top: 4px; }
+  .stat-card.bull { border-left: 3px solid var(--green); }
+  .stat-card.bear { border-left: 3px solid var(--red); }
+  .stat-card.neutral { border-left: 3px solid var(--yellow); }
+  .stat-card.info { border-left: 3px solid var(--blue); }
+
+  /* Charts Row */
+  .charts-row {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; margin-bottom: 30px;
+  }
+  .chart-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .chart-card h3 {
+    font-size: 0.95rem; color: var(--text-dim); margin-bottom: 12px;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .chart-card canvas { max-height: 300px; }
+
+  /* Tables */
+  .table-section { margin-bottom: 30px; }
+  .table-section h2 {
+    font-size: 1.2rem; margin-bottom: 16px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .table-section h2 .badge {
+    font-size: 0.75rem; padding: 2px 10px; border-radius: 12px;
+    margin-left: 8px;
+  }
+  .badge-buy { background: rgba(34,197,94,0.2); color: var(--green); }
+  .badge-sell { background: rgba(239,68,68,0.2); color: var(--red); }
+
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--card); border-radius: 12px; overflow: hidden;
+  }
+  th, td { padding: 10px 14px; text-align: left; font-size: 0.9rem; }
+  th {
+    background: rgba(51,65,85,0.4); color: var(--text-dim);
+    font-weight: 600; text-transform: uppercase; font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+  tr:not(:last-child) td { border-bottom: 1px solid var(--border); }
+  tr:hover td { background: rgba(59,130,246,0.05); }
+  .signal-buy { color: var(--green); font-weight: 600; }
+  .signal-sell { color: var(--red); font-weight: 600; }
+  .signal-hold { color: var(--yellow); font-weight: 600; }
+
+  /* Market State */
+  .market-banner {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 24px; margin-bottom: 30px;
+    display: flex; align-items: center; gap: 24px;
+  }
+  .market-banner .icon { font-size: 3rem; }
+  .market-banner .info { flex: 1; }
+  .market-banner .state {
+    font-size: 1.4rem; font-weight: 700;
+  }
+  .market-banner .state.bull { color: var(--green); }
+  .market-banner .state.bear { color: var(--red); }
+  .market-banner .state.alert { color: var(--yellow); }
+  .market-banner .score {
+    font-size: 0.9rem; color: var(--text-dim); margin-top: 4px;
+  }
+  .market-banner .reasons {
+    margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);
+  }
+  .market-banner .reasons li { margin-left: 16px; }
+
+  /* Timeline */
+  .timeline { position: relative; padding: 20px 0; }
+  .timeline::before {
+    content: ''; position: absolute; left: 20px; top: 0; bottom: 0;
+    width: 2px; background: var(--border);
+  }
+  .timeline-item {
+    position: relative; padding: 8px 0 8px 50px; margin-bottom: 12px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute; left: 14px; top: 14px;
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid;
+  }
+  .timeline-item.buy::before { background: var(--green); border-color: var(--green); }
+  .timeline-item.sell::before { background: var(--red); border-color: var(--red); }
+  .timeline-item .date { font-size: 0.8rem; color: var(--text-dim); }
+  .timeline-item .desc { font-size: 0.95rem; margin-top: 2px; }
+
+  /* Loading */
+  .loading {
+    text-align: center; padding: 60px 20px; color: var(--text-dim);
+  }
+  .loading .spinner {
+    width: 40px; height: 40px; border: 3px solid var(--border);
+    border-top-color: var(--blue); border-radius: 50%;
+    animation: spin 0.8s linear infinite; margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .charts-row { grid-template-columns: 1fr; }
+    .market-banner { flex-direction: column; text-align: center; }
+    .header h1 { font-size: 1.6rem; }
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 30px; color: var(--text-dim);
+    font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>📈 大飆股DNA</h1>
+    <div class="subtitle">台股多週期量化交易篩選系統 — 歷史回測報告</div>
+    <div class="subtitle" id="report-date" style="margin-top:4px;">載入中...</div>
+  </div>
+
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <div>載入回測資料...</div>
+  </div>
+
+  <div id="content" style="display:none;">
+
+    <!-- Market Banner -->
+    <div class="market-banner" id="market-banner">
+      <div class="icon" id="market-icon">📊</div>
+      <div class="info">
+        <div class="state" id="market-state">--</div>
+        <div class="score" id="market-score">Score: --</div>
+        <ul class="reasons" id="market-reasons"></ul>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid" id="stats-grid">
+      <div class="stat-card info">
+        <div class="value" id="stat-period">--</div>
+        <div class="label">回測區間</div>
+      </div>
+      <div class="stat-card bull">
+        <div class="value" id="stat-buy">0</div>
+        <div class="label">買進訊號</div>
+      </div>
+      <div class="stat-card bear">
+        <div class="value" id="stat-sell">0</div>
+        <div class="label">賣出訊號</div>
+      </div>
+      <div class="stat-card info">
+        <div class="value" id="stat-tickers">0</div>
+        <div class="label">回測標的</div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts-row">
+      <div class="chart-card">
+        <h3>📊 買賣訊號分布</h3>
+        <canvas id="signalChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>📊 大盤狀態分布</h3>
+        <canvas id="marketChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Buy Signals Table -->
+    <div class="table-section" id="buy-section">
+      <h2>🟢 買進訊號 <span class="badge badge-buy" id="buy-count">0</span></h2>
+      <table>
+        <thead><tr>
+          <th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th>
+        </tr></thead>
+        <tbody id="buy-table-body"></tbody>
+      </table>
+    </div>
+
+    <!-- Sell Signals Table -->
+    <div class="table-section" id="sell-section">
+      <h2>🔴 賣出訊號 <span class="badge badge-sell" id="sell-count">0</span></h2>
+      <table>
+        <thead><tr>
+          <th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th>
+        </tr></thead>
+        <tbody id="sell-table-body"></tbody>
+      </table>
+    </div>
+
+    <!-- Timeline -->
+    <div class="table-section">
+      <h2>📅 訊號時間軸</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+
+  </div><!-- /content -->
+
+  <div class="footer">
+    <p>大飆股DNA — TWSE Quant Screener | 資料來源: TWSE / yfinance</p>
+    <p style="margin-top:4px;">Generated by <strong>Hermes Agent</strong></p>
+  </div>
+</div>
+
+<script>
+// ── 載入回測資料 ──
+const DATA_URL = './backtest_data.json';
+
+async function loadData() {
+  try {
+    const resp = await fetch(DATA_URL);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    render(data);
+  } catch(e) {
+    document.getElementById('loading').innerHTML = `
+      <div style="color:#ef4444;font-size:1.2rem;">⚠️ 無法載入回測資料</div>
+      <div style="margin-top:8px;color:var(--text-dim);">${e.message}</div>
+      <div style="margin-top:16px;color:var(--text-dim);font-size:0.9rem;">
+        回測報告尚未產生。爬蟲完成後會自動執行回測，請稍後再訪。
+      </div>
+    `;
+  }
+}
+
+function render(data) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('content').style.display = 'block';
+
+  // Report date
+  document.getElementById('report-date').textContent =
+    `報告產生: ${data.generated_at || '--'} | 資料截至: ${data.data_until || '--'}`;
+
+  // Market
+  const mkt = data.market || {};
+  const stateEl = document.getElementById('market-state');
+  stateEl.textContent = mkt.state || '--';
+  stateEl.className = 'state ' + (mkt.state === '多頭' ? 'bull' : mkt.state === '空頭' ? 'bear' : 'alert');
+  document.getElementById('market-icon').textContent =
+    mkt.state === '多頭' ? '🟢' : mkt.state === '空頭' ? '🔴' : '🟡';
+  document.getElementById('market-score').textContent = `Score: ${mkt.score ?? '--'}`;
+  const reasonsEl = document.getElementById('market-reasons');
+  reasonsEl.innerHTML = (mkt.reasons || []).map(r => `<li>${r}</li>`).join('');
+
+  // Stats
+  document.getElementById('stat-period').textContent = data.period || '--';
+  document.getElementById('stat-buy').textContent = (data.buy_signals || []).length;
+  document.getElementById('stat-sell').textContent = (data.sell_signals || []).length;
+  document.getElementById('stat-tickers').textContent = data.tickers_tested || 0;
+
+  // Buy table
+  const buys = data.buy_signals || [];
+  document.getElementById('buy-count').textContent = buys.length;
+  const buyBody = document.getElementById('buy-table-body');
+  if (buys.length === 0) {
+    buyBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無買進訊號</td></tr>';
+  } else {
+    buyBody.innerHTML = buys.slice(0, 50).map(b => `
+      <tr>
+        <td>${b.date}</td>
+        <td>${b.ticker || data.ticker}</td>
+        <td class="signal-buy">${b.signal}</td>
+        <td>${(b.confidence * 100).toFixed(0)}%</td>
+        <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 3).join('; ')}</td>
+      </tr>
+    `).join('');
+    if (buys.length > 50) {
+      buyBody.innerHTML += `<tr><td colspan="5" style="text-align:center;color:var(--text-dim);">... 尚有 ${buys.length - 50} 筆</td></tr>`;
+    }
+  }
+
+  // Sell table
+  const sells = data.sell_signals || [];
+  document.getElementById('sell-count').textContent = sells.length;
+  const sellBody = document.getElementById('sell-table-body');
+  if (sells.length === 0) {
+    sellBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無賣出訊號</td></tr>';
+  } else {
+    sellBody.innerHTML = sells.slice(0, 50).map(s => `
+      <tr>
+        <td>${s.date}</td>
+        <td>${s.ticker || data.ticker}</td>
+        <td class="signal-sell">${s.signal}</td>
+        <td>${(s.confidence * 100).toFixed(0)}%</td>
+        <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 3).join('; ')}</td>
+      </tr>
+    `).join('');
+    if (sells.length > 50) {
+      sellBody.innerHTML += `<tr><td colspan="5" style="text-align:center;color:var(--text-dim);">... 尚有 ${sells.length - 50} 筆</td></tr>`;
+    }
+  }
+
+  // Signal timeline (merge buys and sells)
+  const timeline = document.getElementById('timeline');
+  const allEvents = [
+    ...buys.slice(0, 20).map(b => ({ ...b, type: 'buy' })),
+    ...sells.slice(0, 20).map(s => ({ ...s, type: 'sell' })),
+  ].sort((a, b) => a.date.localeCompare(b.date));
+
+  if (allEvents.length === 0) {
+    timeline.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:30px;">尚無訊號事件</div>';
+  } else {
+    timeline.innerHTML = allEvents.map(e => `
+      <div class="timeline-item ${e.type}">
+        <div class="date">${e.date}</div>
+        <div class="desc">
+          <strong>${e.signal}</strong> — ${(e.met || []).slice(0, 2).join(', ')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Charts
+  renderSignalChart(buys.length, sells.length);
+  renderMarketChart(data.market_history || null);
+}
+
+function renderSignalChart(buyCount, sellCount) {
+  const ctx = document.getElementById('signalChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['買進訊號', '賣出訊號'],
+      datasets: [{
+        data: [buyCount, sellCount],
+        backgroundColor: ['#22c55e', '#ef4444'],
+        borderWidth: 0,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94a3b8' } },
+      },
+    }
+  });
+}
+
+function renderMarketChart(marketHistory) {
+  const ctx = document.getElementById('marketChart').getContext('2d');
+  if (!marketHistory) {
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['多頭', '空頭', '備戰'],
+        datasets: [{
+          data: [1, 0, 0],
+          backgroundColor: ['#22c55e', '#ef4444', '#eab308'],
+          borderWidth: 0,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#94a3b8' } },
+        },
+      }
+    });
+    return;
+  }
+
+  const states = marketHistory.states || { 多頭: 0, 空頭: 0, 備戰: 0, 崩盤: 0 };
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(states),
+      datasets: [{
+        data: Object.values(states),
+        backgroundColor: ['#22c55e', '#ef4444', '#eab308', '#f97316'],
+        borderWidth: 0,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94a3b8' } },
+      },
+    }
+  });
+}
+
+loadData();
+</script>
+</body>
+</html>
