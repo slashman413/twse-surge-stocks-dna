@@ -55,6 +55,40 @@
   .stat-card.neutral { border-left: 3px solid var(--yellow); }
   .stat-card.info { border-left: 3px solid var(--blue); }
 
+  /* Stock Cards */
+  .stock-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px; margin-bottom: 30px;
+  }
+  .stock-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .stock-card .ticker {
+    font-size: 1.3rem; font-weight: 700;
+  }
+  .stock-card .meta {
+    display: flex; gap: 16px; margin: 8px 0 12px;
+    font-size: 0.85rem; color: var(--text-dim);
+  }
+  .stock-card .meta span { display: flex; align-items: center; gap: 4px; }
+  .stock-card .meter-row {
+    display: flex; align-items: center; gap: 8px; margin: 4px 0;
+  }
+  .stock-card .meter-row .label { font-size: 0.8rem; width: 60px; color: var(--text-dim); }
+  .stock-card .meter-row .bar {
+    flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden;
+  }
+  .stock-card .meter-row .bar .fill {
+    height: 100%; border-radius: 4px; transition: width 0.5s;
+  }
+  .stock-card .market-state {
+    font-size: 0.8rem; padding: 2px 10px; border-radius: 10px; display: inline-block;
+  }
+  .market-bull { background: rgba(34,197,94,0.2); color: var(--green); }
+  .market-bear { background: rgba(239,68,68,0.2); color: var(--red); }
+  .market-alert { background: rgba(234,179,8,0.2); color: var(--yellow); }
+
   /* Charts Row */
   .charts-row {
     display: grid; grid-template-columns: 1fr 1fr;
@@ -97,9 +131,8 @@
   tr:hover td { background: rgba(59,130,246,0.05); }
   .signal-buy { color: var(--green); font-weight: 600; }
   .signal-sell { color: var(--red); font-weight: 600; }
-  .signal-hold { color: var(--yellow); font-weight: 600; }
 
-  /* Market State */
+  /* Market Banner */
   .market-banner {
     background: var(--card); border: 1px solid var(--border);
     border-radius: 12px; padding: 24px; margin-bottom: 30px;
@@ -107,18 +140,12 @@
   }
   .market-banner .icon { font-size: 3rem; }
   .market-banner .info { flex: 1; }
-  .market-banner .state {
-    font-size: 1.4rem; font-weight: 700;
-  }
+  .market-banner .state { font-size: 1.4rem; font-weight: 700; }
   .market-banner .state.bull { color: var(--green); }
   .market-banner .state.bear { color: var(--red); }
   .market-banner .state.alert { color: var(--yellow); }
-  .market-banner .score {
-    font-size: 0.9rem; color: var(--text-dim); margin-top: 4px;
-  }
-  .market-banner .reasons {
-    margin-top: 8px; font-size: 0.85rem; color: var(--text-dim);
-  }
+  .market-banner .score { font-size: 0.9rem; color: var(--text-dim); margin-top: 4px; }
+  .market-banner .reasons { margin-top: 8px; font-size: 0.85rem; color: var(--text-dim); }
   .market-banner .reasons li { margin-left: 16px; }
 
   /* Timeline */
@@ -131,8 +158,7 @@
     position: relative; padding: 8px 0 8px 50px; margin-bottom: 12px;
   }
   .timeline-item::before {
-    content: '';
-    position: absolute; left: 14px; top: 14px;
+    content: ''; position: absolute; left: 14px; top: 14px;
     width: 14px; height: 14px; border-radius: 50%;
     border: 2px solid;
   }
@@ -152,11 +178,24 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* Tab selector */
+  .tab-bar {
+    display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .tab-btn {
+    padding: 8px 20px; border-radius: 8px; border: 1px solid var(--border);
+    background: transparent; color: var(--text-dim); cursor: pointer;
+    font-size: 0.9rem; transition: all 0.2s;
+  }
+  .tab-btn:hover { border-color: var(--blue); color: var(--text); }
+  .tab-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
   /* Responsive */
   @media (max-width: 768px) {
     .charts-row { grid-template-columns: 1fr; }
     .market-banner { flex-direction: column; text-align: center; }
     .header h1 { font-size: 1.6rem; }
+    .stock-grid { grid-template-columns: 1fr; }
   }
 
   /* Footer */
@@ -182,7 +221,7 @@
 
   <div id="content" style="display:none;">
 
-    <!-- Market Banner -->
+    <!-- Market Banner (first stock) -->
     <div class="market-banner" id="market-banner">
       <div class="icon" id="market-icon">📊</div>
       <div class="info">
@@ -212,6 +251,12 @@
       </div>
     </div>
 
+    <!-- Per-Stock Summary -->
+    <div class="table-section">
+      <h2>📊 各股回測摘要 <span class="badge badge-buy" id="stock-count">0</span></h2>
+      <div class="stock-grid" id="stock-grid"></div>
+    </div>
+
     <!-- Charts -->
     <div class="charts-row">
       <div class="chart-card">
@@ -219,13 +264,20 @@
         <canvas id="signalChart"></canvas>
       </div>
       <div class="chart-card">
-        <h3>📊 大盤狀態分布</h3>
-        <canvas id="marketChart"></canvas>
+        <h3>📊 各股賣出率</h3>
+        <canvas id="stockChart"></canvas>
       </div>
     </div>
 
+    <!-- Tab: 買進 / 賣出 -->
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="buy" onclick="switchTab('buy')">🟢 買進訊號</button>
+      <button class="tab-btn" data-tab="sell" onclick="switchTab('sell')">🔴 賣出訊號</button>
+      <button class="tab-btn" data-tab="timeline" onclick="switchTab('timeline')">📅 時間軸</button>
+    </div>
+
     <!-- Buy Signals Table -->
-    <div class="table-section" id="buy-section">
+    <div class="table-section tab-content" id="tab-buy">
       <h2>🟢 買進訊號 <span class="badge badge-buy" id="buy-count">0</span></h2>
       <table>
         <thead><tr>
@@ -236,7 +288,7 @@
     </div>
 
     <!-- Sell Signals Table -->
-    <div class="table-section" id="sell-section">
+    <div class="table-section tab-content" id="tab-sell" style="display:none;">
       <h2>🔴 賣出訊號 <span class="badge badge-sell" id="sell-count">0</span></h2>
       <table>
         <thead><tr>
@@ -247,7 +299,7 @@
     </div>
 
     <!-- Timeline -->
-    <div class="table-section">
+    <div class="table-section tab-content" id="tab-timeline" style="display:none;">
       <h2>📅 訊號時間軸</h2>
       <div class="timeline" id="timeline"></div>
     </div>
@@ -261,14 +313,15 @@
 </div>
 
 <script>
-// ── 載入回測資料 ──
 const DATA_URL = './backtest_data.json';
+let currentData = null;
 
 async function loadData() {
   try {
     const resp = await fetch(DATA_URL);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
+    currentData = data;
     render(data);
   } catch(e) {
     document.getElementById('loading').innerHTML = `
@@ -289,8 +342,8 @@ function render(data) {
   document.getElementById('report-date').textContent =
     `報告產生: ${data.generated_at || '--'} | 資料截至: ${data.data_until || '--'}`;
 
-  // Market
-  const mkt = data.market || {};
+  // Market (use data.market or first stock's market)
+  const mkt = data.market || (data.stocks && data.stocks[0] && data.stocks[0].market) || {};
   const stateEl = document.getElementById('market-state');
   stateEl.textContent = mkt.state || '--';
   stateEl.className = 'state ' + (mkt.state === '多頭' ? 'bull' : mkt.state === '空頭' ? 'bear' : 'alert');
@@ -306,6 +359,43 @@ function render(data) {
   document.getElementById('stat-sell').textContent = (data.sell_signals || []).length;
   document.getElementById('stat-tickers').textContent = data.tickers_tested || 0;
 
+  // Per-stock cards
+  const stocks = data.stocks || [];
+  document.getElementById('stock-count').textContent = stocks.length;
+  const grid = document.getElementById('stock-grid');
+  if (stocks.length === 0) {
+    grid.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:30px;">尚無個股資料</div>';
+  } else {
+    grid.innerHTML = stocks.map(s => {
+      const m = s.market || {};
+      const mktClass = m.state === '多頭' ? 'market-bull' : m.state === '空頭' ? 'market-bear' : 'market-alert';
+      const buyPct = Math.min(s.buy_rate || 0, 100);
+      const sellPct = Math.min(s.sell_rate || 0, 100);
+      const surge = s.surge_days || 0;
+      return `
+        <div class="stock-card">
+          <div class="ticker">${s.ticker}</div>
+          <div class="meta">
+            <span>📅 ${s.total_days}日</span>
+            <span>🔍 ${s.samples}次取樣</span>
+            <span class="market-state ${mktClass}">${m.state || '--'}</span>
+          </div>
+          <div class="meter-row">
+            <span class="label">買進 ${s.buy_count}</span>
+            <div class="bar"><div class="fill" style="width:${buyPct}%;background:var(--green);"></div></div>
+            <span style="font-size:0.8rem;color:var(--text-dim);width:40px;text-align:right;">${buyPct.toFixed(1)}%</span>
+          </div>
+          <div class="meter-row">
+            <span class="label">賣出 ${s.sell_count}</span>
+            <div class="bar"><div class="fill" style="width:${sellPct}%;background:var(--red);"></div></div>
+            <span style="font-size:0.8rem;color:var(--text-dim);width:40px;text-align:right;">${sellPct.toFixed(1)}%</span>
+          </div>
+          ${surge > 0 ? `<div class="meter-row"><span class="label">⚡飆漲</span><span style="color:var(--purple);font-weight:600;">${surge}次</span></div>` : ''}
+        </div>
+      `;
+    }).join('');
+  }
+
   // Buy table
   const buys = data.buy_signals || [];
   document.getElementById('buy-count').textContent = buys.length;
@@ -316,7 +406,7 @@ function render(data) {
     buyBody.innerHTML = buys.slice(0, 50).map(b => `
       <tr>
         <td>${b.date}</td>
-        <td>${b.ticker || data.ticker}</td>
+        <td><strong>${b.ticker || '--'}</strong></td>
         <td class="signal-buy">${b.signal}</td>
         <td>${(b.confidence * 100).toFixed(0)}%</td>
         <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 3).join('; ')}</td>
@@ -337,7 +427,7 @@ function render(data) {
     sellBody.innerHTML = sells.slice(0, 50).map(s => `
       <tr>
         <td>${s.date}</td>
-        <td>${s.ticker || data.ticker}</td>
+        <td><strong>${s.ticker || '--'}</strong></td>
         <td class="signal-sell">${s.signal}</td>
         <td>${(s.confidence * 100).toFixed(0)}%</td>
         <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 3).join('; ')}</td>
@@ -348,21 +438,20 @@ function render(data) {
     }
   }
 
-  // Signal timeline (merge buys and sells)
+  // Timeline
   const timeline = document.getElementById('timeline');
   const allEvents = [
     ...buys.slice(0, 20).map(b => ({ ...b, type: 'buy' })),
     ...sells.slice(0, 20).map(s => ({ ...s, type: 'sell' })),
   ].sort((a, b) => a.date.localeCompare(b.date));
-
   if (allEvents.length === 0) {
     timeline.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:30px;">尚無訊號事件</div>';
   } else {
     timeline.innerHTML = allEvents.map(e => `
       <div class="timeline-item ${e.type}">
-        <div class="date">${e.date}</div>
+        <div class="date">${e.date} <strong>${e.ticker || ''}</strong></div>
         <div class="desc">
-          <strong>${e.signal}</strong> — ${(e.met || []).slice(0, 2).join(', ')}
+          ${e.signal} — ${(e.met || []).slice(0, 2).join(', ')}
         </div>
       </div>
     `).join('');
@@ -370,7 +459,10 @@ function render(data) {
 
   // Charts
   renderSignalChart(buys.length, sells.length);
-  renderMarketChart(data.market_history || null);
+  renderStockChart(stocks);
+
+  // Show buy tab by default
+  switchTab('buy');
 }
 
 function renderSignalChart(buyCount, sellCount) {
@@ -394,47 +486,66 @@ function renderSignalChart(buyCount, sellCount) {
   });
 }
 
-function renderMarketChart(marketHistory) {
-  const ctx = document.getElementById('marketChart').getContext('2d');
-  if (!marketHistory) {
+function renderStockChart(stocks) {
+  const ctx = document.getElementById('stockChart').getContext('2d');
+  if (!stocks || stocks.length === 0) {
     new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: ['多頭', '空頭', '備戰'],
-        datasets: [{
-          data: [1, 0, 0],
-          backgroundColor: ['#22c55e', '#ef4444', '#eab308'],
-          borderWidth: 0,
-        }]
+        labels: ['等待資料'],
+        datasets: [{ data: [1], backgroundColor: ['#334155'], borderWidth: 0 }]
       },
       options: {
         responsive: true,
-        plugins: {
-          legend: { position: 'bottom', labels: { color: '#94a3b8' } },
-        },
+        plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } },
       }
     });
     return;
   }
 
-  const states = marketHistory.states || { 多頭: 0, 空頭: 0, 備戰: 0, 崩盤: 0 };
+  const tickers = stocks.map(s => s.ticker);
+  const buyRates = stocks.map(s => s.buy_rate || 0);
+  const sellRates = stocks.map(s => s.sell_rate || 0);
+
   new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
-      labels: Object.keys(states),
-      datasets: [{
-        data: Object.values(states),
-        backgroundColor: ['#22c55e', '#ef4444', '#eab308', '#f97316'],
-        borderWidth: 0,
-      }]
+      labels: tickers,
+      datasets: [
+        {
+          label: '買進率 %',
+          data: buyRates,
+          backgroundColor: 'rgba(34,197,94,0.6)',
+          borderColor: '#22c55e',
+          borderWidth: 1,
+        },
+        {
+          label: '賣出率 %',
+          data: sellRates,
+          backgroundColor: 'rgba(239,68,68,0.6)',
+          borderColor: '#ef4444',
+          borderWidth: 1,
+        }
+      ]
     },
     options: {
       responsive: true,
+      scales: {
+        x: { ticks: { color: '#94a3b8' }, grid: { color: '#334155' } },
+        y: { beginAtZero: true, ticks: { color: '#94a3b8', callback: v => v + '%' }, grid: { color: '#334155' } },
+      },
       plugins: {
         legend: { position: 'bottom', labels: { color: '#94a3b8' } },
       },
     }
   });
+}
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+  document.querySelector(`.tab-btn[data-tab="${name}"]`).classList.add('active');
+  document.getElementById(`tab-${name}`).style.display = 'block';
 }
 
 loadData();

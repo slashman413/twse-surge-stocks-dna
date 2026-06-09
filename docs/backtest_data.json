@@ -1,11 +1,189 @@
 {
-  "generated_at": "回測進行中 — 爬蟲尚未完成",
-  "data_until": "--",
-  "period": "2004-2026",
-  "tickers_tested": 0,
+  "generated_at": "2026-06-09 18:45:59",
+  "data_until": "2004",
+  "period": "2004-2004",
+  "tickers_tested": 8,
   "ticker": "multiple",
-  "market": null,
-  "market_history": null,
+  "market": {
+    "state": "多頭",
+    "score": 50,
+    "reasons": [
+      "收盤 26 > N2 25 → 多頭",
+      "MACD 0.2 > 0"
+    ]
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "多頭",
+        "score": 50,
+        "reasons": [
+          "收盤 26 > N2 25 → 多頭",
+          "MACD 0.2 > 0"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2454",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "空頭",
+        "score": -35,
+        "reasons": [
+          "收盤 87 在 N2-備戰區之間 → 備戰",
+          "MACD -0.6 < 0"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2317",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "多頭",
+        "score": 75,
+        "reasons": [
+          "收盤 43 > N2 40 → 多頭",
+          "MACD 1.2 > 0",
+          "+DI 49 > -DI 8 強多"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2308",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "多頭",
+        "score": 75,
+        "reasons": [
+          "收盤 28 > N2 26 → 多頭",
+          "MACD 0.3 > 0",
+          "+DI 39 > -DI 8 強多"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2301",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "多頭",
+        "score": 75,
+        "reasons": [
+          "收盤 34 > N2 32 → 多頭",
+          "MACD 0.3 > 0",
+          "+DI 36 > -DI 11 強多"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2002",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "多頭",
+        "score": 50,
+        "reasons": [
+          "收盤 16 > N2 13 → 多頭",
+          "MACD 0.2 > 0"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 2,
+      "buy_rate": 0.0,
+      "sell_rate": 50.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2881",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "空頭",
+        "score": -35,
+        "reasons": [
+          "收盤 11 在 N2-備戰區之間 → 備戰",
+          "MACD -0.0 < 0"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    },
+    {
+      "ticker": "2412",
+      "total_days": 262,
+      "samples": 4,
+      "market": {
+        "state": "備戰",
+        "score": 5,
+        "reasons": [
+          "收盤 23 在 N2-備戰區之間 → 備戰",
+          "MACD 0.0 > 0"
+        ]
+      },
+      "buy_count": 0,
+      "sell_count": 0,
+      "buy_rate": 0.0,
+      "sell_rate": 0.0,
+      "surge_days": 0
+    }
+  ],
   "buy_signals": [],
-  "sell_signals": []
+  "sell_signals": [
+    {
+      "date": "2004-03-25",
+      "signal": "賣出",
+      "confidence": 0.6,
+      "met": [
+        "S1: 月W%R3=-10 > -50 (偏弱)",
+        "S2: 月RSI4=69 < 77",
+        "S5: RSI60=82 > 80 超買"
+      ],
+      "ticker": "2002"
+    },
+    {
+      "date": "2004-06-17",
+      "signal": "賣出",
+      "confidence": 0.6,
+      "met": [
+        "S1: 月W%R3=-10 > -50 (偏弱)",
+        "S2: 月RSI4=69 < 77",
+        "S4: 收盤 13 < MA60 13"
+      ],
+      "ticker": "2002"
+    }
+  ]
 }
