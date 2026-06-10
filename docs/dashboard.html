@@ -336,26 +336,33 @@ function render(data) {
     }).join('');
   }
 
-  // Buy table
+  // Buy table — 有交易的排前面
   document.getElementById('buy-count').textContent = buys.length;
   const buyBody = document.getElementById('buy-table-body');
+  // 建立有交易記錄的 ticker set
+  const tradedTickers = new Set(stocks.filter(s => (s.trade_count || 0) > 0).map(s => s.ticker));
+  const sortByTrade = (a, b) => {
+    const aTraded = tradedTickers.has(a.ticker) ? 0 : 1;
+    const bTraded = tradedTickers.has(b.ticker) ? 0 : 1;
+    return aTraded - bTraded;
+  };
   if (buys.length === 0) {
     buyBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無買進訊號</td></tr>';
   } else {
-    buyBody.innerHTML = buys.slice(0, 100).map(b => `
+    buyBody.innerHTML = buys.sort(sortByTrade).slice(0, 100).map(b => `
       <tr><td>${b.date}</td><td><strong>${b.ticker || '--'}</strong></td>
       <td class="signal-buy">${b.signal}</td><td>${(b.confidence * 100).toFixed(0)}%</td>
       <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 2).join('; ')}</td></tr>
     `).join('');
   }
 
-  // Sell table
+  // Sell table — 有交易的排前面
   document.getElementById('sell-count').textContent = sells.length;
   const sellBody = document.getElementById('sell-table-body');
   if (sells.length === 0) {
     sellBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無賣出訊號</td></tr>';
   } else {
-    sellBody.innerHTML = sells.slice(0, 100).map(s => `
+    sellBody.innerHTML = sells.sort(sortByTrade).slice(0, 100).map(s => `
       <tr><td>${s.date}</td><td><strong>${s.ticker || '--'}</strong></td>
       <td class="signal-sell">${s.signal}</td><td>${(s.confidence * 100).toFixed(0)}%</td>
       <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 2).join('; ')}</td></tr>
