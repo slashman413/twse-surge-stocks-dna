@@ -680,8 +680,10 @@ function renderChart(data) {
 }
 
 function renderIndicatorSeries(indicator) {
-  // Remove old indicator series
-  indicatorSeries.forEach(s => { try { s.remove(); } catch(e) {} });
+  // Remove old indicator series via chart API
+  if (window._mainChart) {
+    indicatorSeries.forEach(s => { try { window._mainChart.removeSeries(s); } catch(e) {} });
+  }
   indicatorSeries = [];
   if (!window._mainChart) return;
 
