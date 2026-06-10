@@ -21,8 +21,40 @@
   .container { max-width: 1280px; margin: 0 auto; padding: 20px; }
 
   .header { text-align: center; padding: 40px 20px 30px; border-bottom: 1px solid var(--border); margin-bottom: 30px; }
+  .header-row { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
   .header h1 { font-size: 2.2rem; font-weight: 800; background: linear-gradient(135deg, var(--green), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .sponsor-btn {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 6px 14px; border-radius: 20px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff; font-size: 0.85rem; font-weight: 600;
+    cursor: pointer; border: none; transition: transform 0.15s, box-shadow 0.15s;
+    text-decoration: none;
+  }
+  .sponsor-btn:hover { transform: scale(1.05); box-shadow: 0 0 16px rgba(245,158,11,0.4); }
+  .sponsor-btn svg { width: 18px; height: 18px; fill: currentColor; }
   .header .subtitle { color: var(--text-dim); margin-top: 8px; font-size: 1rem; }
+
+  /* Sponsor Modal */
+  .sponsor-modal-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7); z-index: 2000;
+    justify-content: center; align-items: center; padding: 20px;
+  }
+  .sponsor-modal-overlay.open { display: flex; }
+  .sponsor-modal {
+    background: #1e293b; border: 1px solid #334155; border-radius: 20px;
+    max-width: 420px; width: 100%; padding: 32px; text-align: center;
+    position: relative;
+  }
+  .sponsor-modal .close-btn {
+    position: absolute; top: 12px; right: 16px;
+    background: transparent; border: none; color: #94a3b8;
+    font-size: 1.5rem; cursor: pointer; line-height: 1;
+  }
+  .sponsor-modal .close-btn:hover { color: #e2e8f0; }
+  .sponsor-modal img { width: 100%; max-width: 300px; border-radius: 12px; margin: 12px 0; }
+  .sponsor-modal p { color: #cbd5e1; font-size: 1rem; line-height: 1.6; }
 
   .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 30px; }
   .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
@@ -139,7 +171,13 @@
 
 <div class="container">
   <div class="header">
-    <h1>📈 大飆股DNA</h1>
+    <div class="header-row">
+      <h1>📈 大飆股DNA</h1>
+      <button class="sponsor-btn" onclick="document.getElementById('sponsor-modal').classList.add('open')">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        贊助
+      </button>
+    </div>
     <div class="subtitle">台股多週期量化交易篩選系統 — 歷史回測報告</div>
     <div class="subtitle" id="report-date" style="margin-top:4px;">載入中...</div>
   </div>
@@ -649,5 +687,15 @@ if (typeof LightweightCharts === 'undefined' && typeof createChart === 'undefine
 
 loadData();
 </script>
+
+<!-- ═══ 贊助 Modal ═══ -->
+<div id="sponsor-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="sponsor-modal">
+    <button class="close-btn" onclick="document.getElementById('sponsor-modal').classList.remove('open')">&times;</button>
+    <img src="qr_sponsor.webp" alt="贊助QR Code">
+    <p>☕ 覺得這個儀表板好用嗎？<br>歡迎請我喝杯咖啡，支持我繼續開發與維護！</p>
+  </div>
+</div>
+
 </body>
 </html>
