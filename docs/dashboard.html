@@ -518,6 +518,8 @@ async function loadChartData(ticker) {
 }
 
 let chartInstances = [];
+let mainChart = null;
+let indicatorSeries = [];
 
 function renderChart(data) {
   const ticker = data.ticker;
@@ -562,57 +564,54 @@ function renderChart(data) {
     tradesDiv.style.display = 'none';
   }
 
-  // Build modal body — side-by-side K-lines, separate indicator panel
-  let html = `
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:8px;">
-      <div>
-        <div class="modal-chart-label">📊 加權指數 <span class="badge badge-buy">${taiex.length}日</span> <span style="color:#22d3ee;font-size:0.75rem;">── N2</span></div>
-        <div class="modal-chart-container" id="chart-taiex" style="height:300px;"></div>
-      </div>
-      <div>
-        <div class="modal-chart-label">📈 ${ticker} K線 <span class="badge badge-buy">${stock.length}日</span></div>
-        <div class="modal-chart-container" id="chart-stock" style="height:300px;"></div>
+  // Build single chart container + indicator tabs
+  document.getElementById('modal-body').innerHTML = `
+    <div class="modal-chart-container" id="chart-main" style="height:660px;"></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+      <span style="color:var(--text-dim);font-size:0.8rem;">📉 切換指標:</span>
+      <div class="modal-indicator-tabs" style="margin:0;">
+        <button class="ind-btn active" onclick="showIndicator('ma60', this)">MA60</button>
+        <button class="ind-btn" onclick="showIndicator('wr', this)">W%R</button>
+        <button class="ind-btn" onclick="showIndicator('rsi', this)">RSI</button>
+        <button class="ind-btn" onclick="showIndicator('macd', this)">MACD</button>
+        <button class="ind-btn" onclick="showIndicator('adx', this)">ADX</button>
       </div>
     </div>
-    <div class="modal-indicator-tabs">
-      <button class="ind-btn active" onclick="showIndicator('ma60', this)">MA60</button>
-      <button class="ind-btn" onclick="showIndicator('wr', this)">W%R</button>
-      <button class="ind-btn" onclick="showIndicator('rsi', this)">RSI</button>
-      <button class="ind-btn" onclick="showIndicator('macd', this)">MACD</button>
-      <button class="ind-btn" onclick="showIndicator('adx', this)">ADX</button>
-    </div>
-    <div class="modal-chart-label" style="margin-top:4px;">📉 指標: <span id="indicator-label">MA60</span></div>
-    <div class="modal-chart-container" id="chart-indicator" style="height:180px;"></div>
   `;
-  document.getElementById('modal-body').innerHTML = html;
 
-  // Clear previous chart instances
-  chartInstances.forEach(c => c.remove());
+  // Clear previous charts
+  if (mainChart) {
+    chartInstances.forEach(c => { try { c.remove(); } catch(e) {} });
+  }
   chartInstances = [];
+  indicatorSeries = [];
+  mainChart = null;
 
-  // ── 大盤 K線 ──
-  const taiexContainer = document.getElementById('chart-taiex');
-  const taiexChart = createChart(taiexContainer, {
+  // ── Create single chart ──
+  const container = document.getElementById('chart-main');
+  mainChart = createChart(container, {
+    height: 660,
     layout: { background: { color: '#0b1426' }, textColor: '#94a3b8' },
     grid: { vertLines: { color: '#1e293b' }, horzLines: { color: '#1e293b' } },
     timeScale: { borderColor: '#334155', timeVisible: false, secondsVisible: false },
-    rightPriceScale: { borderColor: '#334155' },
     crosshair: { mode: 0 },
   });
-  chartInstances.push(taiexChart);
+  chartInstances.push(mainChart);
 
-  const taiexCandles = taiexChart.addCandlestickSeries({
+  // ═══ Pane 1: 加權指數 K線 (top 0-30%) ═══
+  mainChart.priceScale('taiex').applyOptions({
+    scaleMargins: { top: 0.0, bottom: 0.72 },
+  });
+  const taiexCandles = mainChart.addCandlestickSeries({
+    priceScaleId: 'taiex',
+    title: '加權指數',
     upColor: '#ef4444', downColor: '#22c55e',
     borderUpColor: '#ef4444', borderDownColor: '#22c55e',
     wickUpColor: '#ef4444', wickDownColor: '#22c55e',
   });
-  const taiexData = taiex.map(d => ({
-    time: d.d, open: d.o, high: d.h, low: d.l, close: d.c,
-  }));
-  taiexCandles.setData(taiexData);
+  taiexCandles.setData(taiex.map(d => ({ time: d.d, open: d.o, high: d.h, low: d.l, close: d.c })));
 
-  // N2 line on 大盤 (42日高低點均值)
-  const n2Line = taiexChart.addLineSeries({ color: '#22d3ee', lineWidth: 1, priceScaleId: 'right' });
+  // N2 line
   const n2Data = [];
   for (let i = 0; i < taiex.length; i++) {
     if (i < 41) { n2Data.push({ time: taiex[i].d, value: null }); continue; }
@@ -623,126 +622,115 @@ function renderChart(data) {
     }
     n2Data.push({ time: taiex[i].d, value: (hh + ll) / 2 });
   }
+  const n2Line = mainChart.addLineSeries({
+    priceScaleId: 'taiex', color: '#22d3ee', lineWidth: 1,
+  });
   n2Line.setData(n2Data.filter(d => d.value != null));
 
-  taiexChart.timeScale().fitContent();
-
-  // ── 個股 K線 ──
-  // Prepare sub-data for indicators
-  let indicatorVisible = 'ma60';
-  window._indicatorState = { ticker, stock, signals, indicatorVisible };
-
-  renderStockKline(ticker, stock, signals, indicatorVisible);
-  renderIndicatorChart('ma60');
-}
-
-function renderStockKline(ticker, stock, signals, indicatorVis) {
-  const container = document.getElementById('chart-stock');
-  container.innerHTML = '';
-
-  const stockChart = createChart(container, {
-    layout: { background: { color: '#0b1426' }, textColor: '#94a3b8' },
-    grid: { vertLines: { color: '#1e293b' }, horzLines: { color: '#1e293b' } },
-    timeScale: { borderColor: '#334155', timeVisible: false, secondsVisible: false },
-    rightPriceScale: { borderColor: '#334155' },
-    crosshair: { mode: 0 },
+  // ═══ Pane 2: 個股 K線 (middle 28%-60%) ═══
+  mainChart.priceScale('stock').applyOptions({
+    scaleMargins: { top: 0.28, bottom: 0.40 },
   });
-  chartInstances.push(stockChart);
-
-  // Candlestick
-  const candleSeries = stockChart.addCandlestickSeries({
+  const stockCandles = mainChart.addCandlestickSeries({
+    priceScaleId: 'stock',
+    title: ticker,
     upColor: '#ef4444', downColor: '#22c55e',
     borderUpColor: '#ef4444', borderDownColor: '#22c55e',
     wickUpColor: '#ef4444', wickDownColor: '#22c55e',
   });
-  const candleData = stock.map(d => ({
-    time: d.d, open: d.o, high: d.h, low: d.l, close: d.c,
-  }));
-  candleSeries.setData(candleData);
+  const candleData = stock.map(d => ({ time: d.d, open: d.o, high: d.h, low: d.l, close: d.c }));
+  stockCandles.setData(candleData);
 
-  // Volume histogram (optional, lightweight approach)
-  const volSeries = stockChart.addHistogramSeries({
-    color: '#334155', priceFormat: { type: 'volume' }, priceScaleId: 'volume',
+  // Volume histogram (thin strip at bottom of stock pane)
+  mainChart.priceScale('volume').applyOptions({
+    scaleMargins: { top: 0.56, bottom: 0.40 },
   });
-  stockChart.priceScale('volume').applyOptions({
-    scaleMargins: { top: 0.85, bottom: 0 },
+  const volSeries = mainChart.addHistogramSeries({
+    priceScaleId: 'volume', color: '#334155', priceFormat: { type: 'volume' },
   });
-  const volData = stock.map(d => ({ time: d.d, value: d.v, color: d.c >= d.o ? 'rgba(239,68,68,0.3)' : 'rgba(34,197,94,0.3)' }));
-  volSeries.setData(volData);
+  volSeries.setData(stock.map(d => ({
+    time: d.d, value: d.v,
+    color: d.c >= d.o ? 'rgba(239,68,68,0.3)' : 'rgba(34,197,94,0.3)'
+  })));
 
-  // Buy/Sell markers (紅買綠賣)
+  // Buy/Sell markers on stock
   const markers = [];
   const buySet = new Set(signals.buy);
   const sellSet = new Set(signals.sell);
   for (let i = 0; i < stock.length; i++) {
     const d = stock[i].d;
-    if (buySet.has(d)) {
-      markers.push({ time: d, position: 'belowBar', color: '#ef4444', shape: 'arrowUp', text: 'B' });
-    }
-    if (sellSet.has(d)) {
-      markers.push({ time: d, position: 'aboveBar', color: '#22c55e', shape: 'arrowDown', text: 'S' });
-    }
+    if (buySet.has(d)) markers.push({ time: d, position: 'belowBar', color: '#ef4444', shape: 'arrowUp', text: 'B' });
+    if (sellSet.has(d)) markers.push({ time: d, position: 'aboveBar', color: '#22c55e', shape: 'arrowDown', text: 'S' });
   }
-  candleSeries.setMarkers(markers);
+  stockCandles.setMarkers(markers);
 
-  stockChart.timeScale().fitContent();
+  // ═══ Pane 3: 指標 (bottom 60%-100%) ═══
+  mainChart.priceScale('indicator').applyOptions({
+    scaleMargins: { top: 0.60, bottom: 0.0 },
+  });
+
+  // Store state for indicator switching
+  window._indicatorState = { ticker, stock, signals, indicatorVisible: 'ma60' };
+  window._mainChart = mainChart;
+
+  // Draw initial indicator
+  renderIndicatorSeries('ma60');
+
+  mainChart.timeScale().fitContent();
 }
 
-function renderIndicatorChart(indicator) {
-  const container = document.getElementById('chart-indicator');
-  if (!container) return;
-  container.innerHTML = '';
-  const stock = window._indicatorState.stock;
+function renderIndicatorSeries(indicator) {
+  // Remove old indicator series
+  indicatorSeries.forEach(s => { try { s.remove(); } catch(e) {} });
+  indicatorSeries = [];
+  if (!window._mainChart) return;
 
-  const chart = createChart(container, {
-    layout: { background: { color: '#0b1426' }, textColor: '#94a3b8' },
-    grid: { vertLines: { color: '#1e293b' }, horzLines: { color: '#1e293b' } },
-    timeScale: { borderColor: '#334155', timeVisible: false, secondsVisible: false },
-    rightPriceScale: { borderColor: '#334155' },
-    crosshair: { mode: 0 },
-  });
-  chartInstances.push(chart);
+  const chart = window._mainChart;
+  const stock = window._indicatorState.stock;
+  const psId = 'indicator';
 
   if (indicator === 'ma60') {
-    const line = chart.addLineSeries({ color: '#f97316', lineWidth: 2 });
+    const line = chart.addLineSeries({ priceScaleId: psId, color: '#f97316', lineWidth: 2 });
     line.setData(stock.map(d => ({ time: d.d, value: d.ma60 })).filter(d => d.value != null));
+    indicatorSeries.push(line);
   } else if (indicator === 'wr') {
-    const line = chart.addLineSeries({ color: '#a855f7', lineWidth: 2 });
+    const line = chart.addLineSeries({ priceScaleId: psId, color: '#a855f7', lineWidth: 2 });
     line.setData(stock.map(d => ({ time: d.d, value: d.wr != null ? d.wr : null })).filter(d => d.value != null));
-    const ob = chart.addLineSeries({ color: 'rgba(239,68,68,0.3)', lineWidth: 1 });
+    const ob = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(239,68,68,0.3)', lineWidth: 1 });
     ob.setData(stock.map(d => ({ time: d.d, value: -20 })));
-    const os = chart.addLineSeries({ color: 'rgba(34,197,94,0.3)', lineWidth: 1 });
+    const os = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(34,197,94,0.3)', lineWidth: 1 });
     os.setData(stock.map(d => ({ time: d.d, value: -80 })));
+    indicatorSeries.push(line, ob, os);
   } else if (indicator === 'rsi') {
-    const line = chart.addLineSeries({ color: '#06b6d4', lineWidth: 2 });
+    const line = chart.addLineSeries({ priceScaleId: psId, color: '#06b6d4', lineWidth: 2 });
     line.setData(stock.map(d => ({ time: d.d, value: d.rsi != null ? d.rsi : null })).filter(d => d.value != null));
-    const ob = chart.addLineSeries({ color: 'rgba(239,68,68,0.3)', lineWidth: 1 });
+    const ob = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(239,68,68,0.3)', lineWidth: 1 });
     ob.setData(stock.map(d => ({ time: d.d, value: 70 })));
-    const os = chart.addLineSeries({ color: 'rgba(34,197,94,0.3)', lineWidth: 1 });
+    const os = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(34,197,94,0.3)', lineWidth: 1 });
     os.setData(stock.map(d => ({ time: d.d, value: 30 })));
+    indicatorSeries.push(line, ob, os);
   } else if (indicator === 'macd') {
-    const dif = chart.addLineSeries({ color: '#3b82f6', lineWidth: 2 });
+    const dif = chart.addLineSeries({ priceScaleId: psId, color: '#3b82f6', lineWidth: 2 });
     dif.setData(stock.map(d => ({ time: d.d, value: d.dif })).filter(d => d.value != null));
-    const sig = chart.addLineSeries({ color: '#f97316', lineWidth: 1 });
+    const sig = chart.addLineSeries({ priceScaleId: psId, color: '#f97316', lineWidth: 1 });
     sig.setData(stock.map(d => ({ time: d.d, value: d.macds })).filter(d => d.value != null));
-    const hist = chart.addHistogramSeries({ color: '#6366f1' });
+    const hist = chart.addHistogramSeries({ priceScaleId: psId, color: '#6366f1' });
     hist.setData(stock.map(d => ({ time: d.d, value: d.macdh, color: d.macdh >= 0 ? 'rgba(99,102,241,0.4)' : 'rgba(239,68,68,0.4)' })));
+    indicatorSeries.push(dif, sig, hist);
   } else if (indicator === 'adx') {
-    const line = chart.addLineSeries({ color: '#f97316', lineWidth: 2 });
+    const line = chart.addLineSeries({ priceScaleId: psId, color: '#f97316', lineWidth: 2 });
     line.setData(stock.map(d => ({ time: d.d, value: d.adx != null ? d.adx : null })).filter(d => d.value != null));
-    const threshold = chart.addLineSeries({ color: 'rgba(255,255,255,0.2)', lineWidth: 1 });
+    const threshold = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(255,255,255,0.2)', lineWidth: 1 });
     threshold.setData(stock.map(d => ({ time: d.d, value: 25 })));
+    indicatorSeries.push(line, threshold);
   }
-
-  chart.timeScale().fitContent();
 }
 
 function showIndicator(name, btn) {
   document.querySelectorAll('.ind-btn').forEach(el => el.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('indicator-label').textContent = name.toUpperCase();
   window._indicatorState.indicatorVisible = name;
-  renderIndicatorChart(name);
+  renderIndicatorSeries(name);
 }
 
 // ── Lightweight Charts helper ──
