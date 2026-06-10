@@ -82,6 +82,15 @@
   .tag-sell { background: rgba(239,68,68,0.2); color: var(--red); }
   .tag-surge { background: rgba(168,85,247,0.2); color: var(--purple); }
 
+  /* Trade Tab */
+  .trade-stock-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+  .trade-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; cursor: pointer; transition: background 0.15s; }
+  .trade-header:hover { background: rgba(59,130,246,0.06); }
+  .trade-ticker { font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: color 0.15s; }
+  .trade-ticker:hover { color: var(--blue); }
+  .trade-meta { display: flex; align-items: center; gap: 12px; }
+  .trade-detail { border-top: 1px solid var(--border); padding: 12px 18px; }
+
   /* Charts Row */
   .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 30px; }
   .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
@@ -203,26 +212,44 @@
       <div class="chart-card"><h3>📊 各股訊號強度</h3><canvas id="stockChart"></canvas></div>
     </div>
 
-    <!-- Tab: 買進 / 賣出 -->
+    <!-- Outer Tab: 買賣訊號列表 / 有交易列表 -->
     <div class="tab-bar">
-      <button class="tab-btn active" data-tab="buy" onclick="switchTab('buy')">🟢 買進訊號</button>
-      <button class="tab-btn" data-tab="sell" onclick="switchTab('sell')">🔴 賣出訊號</button>
+      <button class="tab-btn active" data-otab="signals" onclick="switchOTab('signals')">📋 買賣訊號列表</button>
+      <button class="tab-btn" data-otab="trades" onclick="switchOTab('trades')">💰 有交易列表</button>
     </div>
 
-    <div class="table-section tab-content" id="tab-buy">
-      <h2>🟢 買進訊號 <span class="badge badge-buy" id="buy-count">0</span></h2>
-      <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="buy-table-body"></tbody></table>
+    <!-- ═══ Tab: 買賣訊號列表 ═══ -->
+    <div class="otab-content" id="otab-signals">
+
+      <!-- Stock cards summary -->
+      <div class="table-section">
+        <h2>📊 有訊號標的 <span class="badge badge-buy" id="signal-stock-count">0</span></h2>
+        <div class="stock-grid" id="stock-grid"></div>
+      </div>
+
+      <!-- Inner Tab: 買進 / 賣出 -->
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="buy" onclick="switchTab('buy')">🟢 買進訊號</button>
+        <button class="tab-btn" data-tab="sell" onclick="switchTab('sell')">🔴 賣出訊號</button>
+      </div>
+
+      <div class="table-section tab-content" id="tab-buy">
+        <h2>🟢 買進訊號 <span class="badge badge-buy" id="buy-count">0</span></h2>
+        <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="buy-table-body"></tbody></table>
+      </div>
+
+      <div class="table-section tab-content" id="tab-sell" style="display:none;">
+        <h2>🔴 賣出訊號 <span class="badge badge-sell" id="sell-count">0</span></h2>
+        <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="sell-table-body"></tbody></table>
+      </div>
     </div>
 
-    <div class="table-section tab-content" id="tab-sell" style="display:none;">
-      <h2>🔴 賣出訊號 <span class="badge badge-sell" id="sell-count">0</span></h2>
-      <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="sell-table-body"></tbody></table>
-    </div>
-
-    <!-- Stocks with Signals -->
-    <div class="table-section">
-      <h2>📊 有訊號標的 <span class="badge badge-buy" id="signal-stock-count">0</span></h2>
-      <div class="stock-grid" id="stock-grid"></div>
+    <!-- ═══ Tab: 有交易列表 ═══ -->
+    <div class="otab-content" id="otab-trades" style="display:none;">
+      <div class="table-section">
+        <h2>💰 有交易記錄的標的 <span class="badge badge-buy" id="trade-stock-count">0</span></h2>
+        <div id="trade-stocks-list"></div>
+      </div>
     </div>
 
   </div><!-- /content -->
@@ -336,37 +363,60 @@ function render(data) {
     }).join('');
   }
 
-  // Buy table — 有交易的排前面
+  // Buy table (sorted by date desc)
   document.getElementById('buy-count').textContent = buys.length;
   const buyBody = document.getElementById('buy-table-body');
-  // 建立有交易記錄的 ticker set
-  const tradedTickers = new Set(stocks.filter(s => (s.trade_count || 0) > 0).map(s => s.ticker));
-  const sortByTrade = (a, b) => {
-    const aTraded = tradedTickers.has(a.ticker) ? 0 : 1;
-    const bTraded = tradedTickers.has(b.ticker) ? 0 : 1;
-    return aTraded - bTraded;
-  };
   if (buys.length === 0) {
     buyBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無買進訊號</td></tr>';
   } else {
-    buyBody.innerHTML = buys.sort(sortByTrade).slice(0, 100).map(b => `
+    buyBody.innerHTML = buys.slice(0, 100).map(b => `
       <tr><td>${b.date}</td><td><strong>${b.ticker || '--'}</strong></td>
       <td class="signal-buy">${b.signal}</td><td>${(b.confidence * 100).toFixed(0)}%</td>
       <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 2).join('; ')}</td></tr>
     `).join('');
   }
 
-  // Sell table — 有交易的排前面
+  // Sell table (sorted by date desc)
   document.getElementById('sell-count').textContent = sells.length;
   const sellBody = document.getElementById('sell-table-body');
   if (sells.length === 0) {
     sellBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無賣出訊號</td></tr>';
   } else {
-    sellBody.innerHTML = sells.sort(sortByTrade).slice(0, 100).map(s => `
+    sellBody.innerHTML = sells.slice(0, 100).map(s => `
       <tr><td>${s.date}</td><td><strong>${s.ticker || '--'}</strong></td>
       <td class="signal-sell">${s.signal}</td><td>${(s.confidence * 100).toFixed(0)}%</td>
       <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 2).join('; ')}</td></tr>
     `).join('');
+  }
+
+  // ═══ Trade Tab ═══
+  const tradedStocks = stocks.filter(s => (s.trade_count || 0) > 0)
+    .sort((a, b) => (b.return_rate || 0) - (a.return_rate || 0));
+  document.getElementById('trade-stock-count').textContent = tradedStocks.length;
+  const tradeList = document.getElementById('trade-stocks-list');
+  if (tradedStocks.length === 0) {
+    tradeList.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:40px;">目前沒有任何有交易記錄的標的</div>';
+  } else {
+    tradeList.innerHTML = tradedStocks.map(s => {
+      const rr = s.return_rate || 0;
+      const pl = s.total_pl || 0;
+      const tc = s.trade_count || 0;
+      const b = s.buy_count || 0;
+      const se = s.sell_count || 0;
+      const sg = s.surge_days || 0;
+      const plCls = rr >= 0 ? 'tag-buy' : 'tag-sell';
+      const sign = rr >= 0 ? '+' : '';
+      let tags = `<span class="tag ${plCls}">${tc}筆交易 ${sign}${rr}%</span> `;
+      if (b > 0) tags += `<span class="tag tag-buy">買 ${b}</span> `;
+      if (se > 0) tags += `<span class="tag tag-sell">賣 ${se}</span> `;
+      if (sg > 0) tags += `<span class="tag tag-surge">⚡${sg}</span> `;
+      return `<div class="trade-stock-card" onclick="openModal('${s.ticker}')">
+        <div class="trade-header">
+          <div class="trade-ticker">${s.ticker}</div>
+          <div class="trade-meta">${tags}</div>
+        </div>
+      </div>`;
+    }).join('');
   }
 
   // Charts
@@ -419,6 +469,13 @@ function switchTab(tab) {
   document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
   document.getElementById(`tab-${tab}`).style.display = 'block';
   document.querySelector(`.tab-btn[data-tab="${tab}"]`).classList.add('active');
+}
+
+function switchOTab(tab) {
+  document.querySelectorAll('.otab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.tab-btn[data-otab]').forEach(el => el.classList.remove('active'));
+  document.getElementById(`otab-${tab}`).style.display = 'block';
+  document.querySelector(`.tab-btn[data-otab="${tab}"]`).classList.add('active');
 }
 
 // ═══ MODAL ═══
