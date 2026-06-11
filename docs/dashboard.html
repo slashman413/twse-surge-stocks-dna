@@ -216,6 +216,7 @@
     <div class="tab-bar">
       <button class="tab-btn active" data-otab="signals" onclick="switchOTab('signals')">📋 買賣訊號列表</button>
       <button class="tab-btn" data-otab="trades" onclick="switchOTab('trades')">💰 有交易列表</button>
+      <button class="tab-btn" data-otab="yearly" onclick="switchOTab('yearly');loadYearlyData()">📊 年度回測</button>
     </div>
 
     <!-- ═══ Tab: 買賣訊號列表 ═══ -->
@@ -249,6 +250,36 @@
       <div class="table-section">
         <h2>💰 有交易記錄的標的 <span class="badge badge-buy" id="trade-stock-count">0</span></h2>
         <div id="trade-stocks-list"></div>
+      </div>
+    </div>
+
+    <!-- ═══ Tab: 年度回測 ═══ -->
+    <div class="otab-content" id="otab-yearly" style="display:none;">
+      <div class="charts-row">
+        <div class="chart-card"><h3>📊 每年有訊號股票數</h3><canvas id="yearlyStockChart"></canvas></div>
+        <div class="chart-card"><h3>📊 每年買賣訊號次數</h3><canvas id="yearlySignalChart"></canvas></div>
+      </div>
+      <div class="table-section">
+        <h2>📅 每年回測結果一覽 <span class="badge badge-buy" id="yearly-count">0</span></h2>
+        <div style="overflow-x:auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>年度</th>
+                <th>有訊號股票</th>
+                <th>買進次數</th>
+                <th>賣出次數</th>
+                <th>處理時間</th>
+                <th>資料筆數</th>
+              </tr>
+            </thead>
+            <tbody id="yearly-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="table-section">
+        <h2>📈 年度趨勢說明</h2>
+        <div id="yearly-insights" style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;line-height:1.8;font-size:0.9rem;color:var(--text-dim);"></div>
       </div>
     </div>
 
@@ -299,6 +330,8 @@ const DATA_URL = './backtest_data.json';
 const CHARTS_DIR = './charts/';
 let currentData = null;
 let currentTicker = null;
+let yearlyChart1 = null;
+let yearlyChart2 = null;
 
 async function loadData() {
   try {
@@ -476,6 +509,105 @@ function switchOTab(tab) {
   document.querySelectorAll('.tab-btn[data-otab]').forEach(el => el.classList.remove('active'));
   document.getElementById(`otab-${tab}`).style.display = 'block';
   document.querySelector(`.tab-btn[data-otab="${tab}"]`).classList.add('active');
+}
+
+// ═══ 年度回測 ═══
+
+async function loadYearlyData() {
+  if (yearlyChart1) { yearlyChart1.destroy(); yearlyChart1 = null; }
+  if (yearlyChart2) { yearlyChart2.destroy(); yearlyChart2 = null; }
+  try {
+    const resp = await fetch('./yearly_backtests/summary.json');
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    renderYearly(data);
+  } catch(e) {
+    document.getElementById('yearly-table-body').innerHTML =
+      `<tr><td colspan="6" style="text-align:center;padding:30px;color:var(--red);">⚠️ 無法載入年度回測資料: ${e.message}</td></tr>`;
+  }
+}
+
+function renderYearly(data) {
+  document.getElementById('yearly-count').textContent = data.length;
+  const body = document.getElementById('yearly-table-body');
+  body.innerHTML = data.map(s => {
+    const min = Math.floor(s.elapsed_s / 60);
+    const sec = s.elapsed_s % 60;
+    return `<tr>
+      <td><strong>${s.year}</strong></td>
+      <td>${s.stocks.toLocaleString()}</td>
+      <td class="signal-buy">${s.buys.toLocaleString()}</td>
+      <td class="signal-sell">${s.sells.toLocaleString()}</td>
+      <td style="color:var(--text-dim)">${min}分${sec}秒</td>
+      <td style="color:var(--text-dim)">${s.n_rows.toLocaleString()}</td>
+    </tr>`;
+  }).join('');
+
+  // Chart: stocks with signals per year
+  const ctx1 = document.getElementById('yearlyStockChart').getContext('2d');
+  yearlyChart1 = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: data.map(s => s.year),
+      datasets: [{
+        label: '有訊號股票數',
+        data: data.map(s => s.stocks),
+        backgroundColor: data.map(s => s.stocks > 3000 ? 'rgba(34,197,94,0.7)' : s.stocks > 1000 ? 'rgba(59,130,246,0.7)' : 'rgba(239,68,68,0.7)'),
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, beginAtZero: true }
+      }
+    }
+  });
+
+  // Chart: buys & sells per year
+  const ctx2 = document.getElementById('yearlySignalChart').getContext('2d');
+  yearlyChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: data.map(s => s.year),
+      datasets: [
+        { label: '買進次數', data: data.map(s => s.buys), borderColor: '#ef4444', backgroundColor: 'rgba(239,68,68,0.1)', fill: true, tension: 0.3, pointRadius: 3 },
+        { label: '賣出次數', data: data.map(s => s.sells), borderColor: '#22c55e', backgroundColor: 'rgba(34,197,94,0.1)', fill: true, tension: 0.3, pointRadius: 3 },
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12 } } },
+      scales: {
+        x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, beginAtZero: true }
+      }
+    }
+  });
+
+  // Insights
+  const totalStocks = data.reduce((a, s) => a + s.stocks, 0);
+  const totalBuys = data.reduce((a, s) => a + s.buys, 0);
+  const totalSells = data.reduce((a, s) => a + s.sells, 0);
+  const maxYear = data.reduce((a, s) => s.stocks > a.stocks ? s : a, data[0]);
+  const minYear = data.reduce((a, s) => s.stocks < a.stocks ? s : a, data[0]);
+  const avgStocks = Math.round(totalStocks / data.length);
+  document.getElementById('yearly-insights').innerHTML = `
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;">
+      <div><strong style="color:var(--text);">${totalStocks.toLocaleString()}</strong><br>總計有訊號股票次數</div>
+      <div><strong style="color:var(--red);">${totalBuys.toLocaleString()}</strong><br>總買進次數</div>
+      <div><strong style="color:var(--green);">${totalSells.toLocaleString()}</strong><br>總賣出次數</div>
+      <div><strong style="color:var(--yellow);">${avgStocks.toLocaleString()}</strong><br>年均訊號股票數</div>
+      <div><strong style="color:var(--green);">${maxYear.year}年 (${maxYear.stocks.toLocaleString()})</strong><br>最高訊號年份</div>
+      <div><strong style="color:var(--red);">${minYear.year}年 (${minYear.stocks.toLocaleString()})</strong><br>最低訊號年份</div>
+    </div>
+    <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
+      策略在 <strong style="color:var(--green);">${maxYear.year}</strong> 年捕獲最多訊號（${maxYear.stocks.toLocaleString()} 檔），
+      在 <strong style="color:var(--red);">${minYear.year}</strong> 年（金融海嘯）最少。2011~2015 年為策略高峰期，
+      之後逐年遞減，反映市場結構變化與策略適應性。
+    </div>`;
 }
 
 // ═══ MODAL ═══

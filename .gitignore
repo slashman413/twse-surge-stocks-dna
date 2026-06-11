@@ -6,3 +6,5 @@ venv/
 .venv/
 .env
 *.log
+docs/yearly_backtests/*_signals.json
+reports/
