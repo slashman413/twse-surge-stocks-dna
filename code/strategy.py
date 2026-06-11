@@ -519,13 +519,16 @@ class StockSurgeSignal:
 
 
 class BigStockBuySignalV2:
-    """大飆股買進訊號模組 (v2, 7-8 條件).
+    """大飆股買進訊號模組 (v3 — 依使用者定義).
 
-    條件越多成立 → 越飆：
-        全 8 條件 → STRONG_BUY
-        6-7 條件 → BUY
-        4-5 條件 → 偏多觀察
-        < 4 條件 → NEUTRAL
+    進場前提：大盤在備戰區(N2-100)或DIF210觸底
+    選股指標（三條件全滿足 AND）：
+        C1: MACD DIF210 四箭頭 ≥ 3
+        C2: ADX300 箭頭向上
+        C3: WMS%R50 < -20
+
+    全中 3/3 → STRONG_BUY | BUY
+    < 3/3 → NEUTRAL
     """
 
     def __init__(self, loader: TWSEStockLoader | None = None):
@@ -539,18 +542,7 @@ class BigStockBuySignalV2:
         weekly: pd.DataFrame | None = None,
         monthly: pd.DataFrame | None = None,
     ) -> SignalResult:
-        """評估大飆股買進訊號 (v2).
-
-        Args:
-            ticker: 股票代號
-            daily: 日線
-            weekly: 週線
-            monthly: 月線
-
-        Returns:
-            SignalResult
-        """
-        # ── 載入資料 ──
+        """評估大飆股買進訊號 (v3)."""
         if daily is None or weekly is None or monthly is None:
             tf = self.loader.load_multi_timeframe(ticker, adjusted=True)
             daily = daily if daily is not None else tf["daily"]
@@ -566,139 +558,133 @@ class BigStockBuySignalV2:
         d_close = daily["Adj_Close"]
         d_high = daily["Adj_High"]
         d_low = daily["Adj_Low"]
-        d_vol = daily["Adj_Volume"]
 
-        # ── 日線指標 ──
-        # MACD DIF210 四箭頭 (C1)
+        # C1: MACD DIF210 四箭頭 ≥ 3
         m4 = macd_4arrows(d_close, fast=200, slow=209, signal=210)
         d4_latest = _safe_last(m4["arrows_count"], 0)
+        c1_ok = d4_latest >= 3
 
-        # ADX300 箭頭 (C2)
+        # C2: ADX300 箭頭向上
         d300 = dmi(d_high, d_low, d_close, period=300)
         adx300_up = _safe_last(_dmi_arrow_up(d300), False)
         adx300_val = _safe_last(d300["adx"], 0.0)
 
-        # WMS%R50 (C3)
+        # C3: WMS%R50 < -20
         w50 = wr(d_high, d_low, d_close, period=50)
         w50_val = _safe_last(w50, 0.0)
+        c3_ok = not pd.isna(w50_val) and w50_val < -20
 
-        # RSI60 (C4)
-        rsi60_val = _safe_last(rsi(d_close, period=60), 50.0)
-
-        # ── 週線 VR2 (C5) ──
-        w_vr2 = 0.0
-        if not weekly.empty and len(weekly) > 2:
-            w_up = weekly["Close"].diff() > 0
-            w_down = weekly["Close"].diff() < 0
-            w_avs = (weekly["Volume"] * w_up).rolling(2).sum()
-            w_bvs = (weekly["Volume"] * w_down).rolling(2).sum()
-            w_denom = w_bvs.replace(0, np.nan)
-            w_vr = 100.0 * w_avs / w_denom
-            w_vr2 = _safe_last(w_vr, 0.0)
-
-        # ── 月線 VR2 (C6) ──
-        m_vr2 = 0.0
-        if not monthly.empty and len(monthly) > 2:
-            m_up = monthly["Close"].diff() > 0
-            m_down = monthly["Close"].diff() < 0
-            m_avs = (monthly["Volume"] * m_up).rolling(2).sum()
-            m_bvs = (monthly["Volume"] * m_down).rolling(2).sum()
-            m_denom = m_bvs.replace(0, np.nan)
-            m_vr = 100.0 * m_avs / m_denom
-            m_vr2 = _safe_last(m_vr, 0.0)
-
-        # ── 月線 DMI1 +DI1 > 50 (C7 部分) ──
-        m_pdi1 = 0.0
-        m_rsi4 = 0.0
-        if not monthly.empty and len(monthly) > 14:
-            m_dmi = dmi(monthly["High"], monthly["Low"], monthly["Close"], period=1)
-            m_pdi1 = _safe_last(m_dmi["plus_di"], 0.0)
-            m_rsi4 = _safe_last(rsi(monthly["Close"], period=4), 50.0)
-
-        # ── 條件檢查 ──
         conditions_met: list[str] = []
         conditions_failed: list[str] = []
         met_count = 0
-        detail: dict[str, Any] = {}
+        detail: dict[str, Any] = {
+            "macd_4arrows_210": int(d4_latest),
+            "adx300": round(float(adx300_val), 1),
+            "adx300_up": bool(adx300_up),
+            "wr50": round(float(w50_val), 1),
+        }
 
-        # C1: MACD DIF210 四箭頭
-        detail["macd_4arrows_210"] = int(d4_latest)
-        if d4_latest == 4:
-            conditions_met.append(f"C1: DIF210 四箭頭全上")
-            met_count += 1
-        elif d4_latest >= 3:
-            conditions_met.append(f"C1: DIF210 {d4_latest}/4 箭頭")
+        if c1_ok:
+            cond = f"C1: DIF210 {'四箭頭全上' if d4_latest==4 else f'{d4_latest}/4箭頭'}"
+            conditions_met.append(cond)
             met_count += 1
         else:
             conditions_failed.append(f"C1: DIF210 {d4_latest}/4 箭頭不足")
 
-        # C2: ADX300 箭頭向上
-        detail["adx300"] = round(float(adx300_val), 1)
-        detail["adx300_up"] = bool(adx300_up)
         if adx300_up:
             conditions_met.append(f"C2: ADX300 箭頭向上 ({adx300_val:.0f})")
             met_count += 1
         else:
             conditions_failed.append(f"C2: ADX300 未向上 ({adx300_val:.0f})")
 
-        # C3: WMS%R50 < 20 (成形)
-        detail["wr50"] = round(float(w50_val), 1)
-        if not pd.isna(w50_val) and w50_val < -80:
-            conditions_met.append(f"C3: WMS%R50={w50_val:.0f} < -80 超賣")
-            met_count += 1
-        elif not pd.isna(w50_val) and w50_val < -20:
+        if c3_ok:
             conditions_met.append(f"C3: WMS%R50={w50_val:.0f} < -20")
             met_count += 1
         else:
             conditions_failed.append(f"C3: WMS%R50={w50_val:.0f} >= -20")
 
-        # C4: RSI60 > 57
-        detail["rsi60"] = round(float(rsi60_val), 1)
-        if not pd.isna(rsi60_val) and rsi60_val > 57:
-            conditions_met.append(f"C4: RSI60={rsi60_val:.0f} > 57")
-            met_count += 1
-        else:
-            conditions_failed.append(f"C4: RSI60={rsi60_val:.0f} <= 57")
+        # ── 加分確認：6 項飆股跡象 ──
+        bonus_met: list[str] = []
+        bonus_failed: list[str] = []
+        bonus_count = 0
 
-        # C5: 週 VR2 ≈ 150
-        detail["weekly_vr2"] = round(float(w_vr2), 1)
-        if not pd.isna(w_vr2) and abs(w_vr2 - 150) < 50:
-            conditions_met.append(f"C5: 週VR2={w_vr2:.0f} ≈ 150")
-            met_count += 1
-        else:
-            conditions_failed.append(f"C5: 週VR2={w_vr2:.0f} 偏離150")
+        # B1: 月 DMI +DI1 > 50
+        if not monthly.empty and len(monthly) > 15:
+            m_dmi = dmi(monthly["High"], monthly["Low"], monthly["Close"], period=1)
+            m_pdi = _safe_last(m_dmi["plus_di"], 0.0)
+            detail["monthly_pdi1"] = round(float(m_pdi), 1)
+            if not pd.isna(m_pdi) and m_pdi > 50:
+                bonus_met.append(f"B1: 月+DI1={m_pdi:.0f} > 50")
+                bonus_count += 1
+            else:
+                bonus_failed.append(f"B1: 月+DI1={m_pdi:.0f} <= 50")
 
-        # C6: 月 VR2 ≈ 150
-        detail["monthly_vr2"] = round(float(m_vr2), 1)
-        if not pd.isna(m_vr2) and abs(m_vr2 - 150) < 50:
-            conditions_met.append(f"C6: 月VR2={m_vr2:.0f} ≈ 150")
-            met_count += 1
-        else:
-            conditions_failed.append(f"C6: 月VR2={m_vr2:.0f} 偏離150")
+        # B2: 月 RSI4 > 77
+        if not monthly.empty and len(monthly) > 4:
+            m_rsi4_val = rsi(monthly["Close"], period=4)
+            m_rsi4 = _safe_last(m_rsi4_val, 50.0)
+            detail["monthly_rsi4"] = round(float(m_rsi4), 1)
+            if not pd.isna(m_rsi4) and m_rsi4 > 77:
+                bonus_met.append(f"B2: 月RSI4={m_rsi4:.0f} > 77")
+                bonus_count += 1
+            else:
+                bonus_failed.append(f"B2: 月RSI4={m_rsi4:.0f} <= 77")
 
-        # C7: 月 DMI1 +DI1 > 50 AND 月 RSI4 > 77
-        detail["monthly_pdi1"] = round(float(m_pdi1), 1)
-        detail["monthly_rsi4"] = round(float(m_rsi4), 1)
-        c7_ok = (not pd.isna(m_pdi1) and m_pdi1 > 50
-                 and not pd.isna(m_rsi4) and m_rsi4 > 77)
-        if c7_ok:
-            conditions_met.append(f"C7: 月+DI1={m_pdi1:.0f}>50, 月RSI4={m_rsi4:.0f}>77")
-            met_count += 1
-        else:
-            conditions_failed.append(f"C7: 月+DI1={m_pdi1:.0f}, 月RSI4={m_rsi4:.0f}")
+        # B3: 日威廉 W%R50 < -20 (同 C3，不重複計分)
 
-        # ── 最終判定 ──
+        # B4: 日 RSI60 > 57
+        d_rsi60_val = rsi(d_close, period=60)
+        d_rsi60 = _safe_last(d_rsi60_val, 50.0)
+        detail["daily_rsi60"] = round(float(d_rsi60), 1)
+        if not pd.isna(d_rsi60) and d_rsi60 > 57:
+            bonus_met.append(f"B4: 日RSI60={d_rsi60:.0f} > 57")
+            bonus_count += 1
+        else:
+            bonus_failed.append(f"B4: 日RSI60={d_rsi60:.0f} <= 57")
+
+        # B5: 週 VR2 ≈ 150
+        if not weekly.empty and len(weekly) > 2:
+            w_vr = vr(weekly["Close"], weekly["Volume"] if "Volume" in weekly.columns else None)
+            w_vr2 = _safe_last(w_vr["vr2"], 0.0) if isinstance(w_vr, dict) and "vr2" in w_vr else _safe_last(w_vr.get("vr", 0.0) if isinstance(w_vr, dict) else w_vr, 0.0)
+            detail["weekly_vr2"] = round(float(w_vr2), 1)
+            if not pd.isna(w_vr2) and 120 <= w_vr2 <= 180:
+                bonus_met.append(f"B5: 週VR2={w_vr2:.0f} ≈150")
+                bonus_count += 1
+            else:
+                bonus_failed.append(f"B5: 週VR2={w_vr2:.0f} 不在120~180")
+
+        # B6: 月 VR2 ≈ 150
+        if not monthly.empty and len(monthly) > 2:
+            m_vr = vr(monthly["Close"], monthly["Volume"] if "Volume" in monthly.columns else None)
+            m_vr2 = _safe_last(m_vr["vr2"], 0.0) if isinstance(m_vr, dict) and "vr2" in m_vr else _safe_last(m_vr.get("vr", 0.0) if isinstance(m_vr, dict) else m_vr, 0.0)
+            detail["monthly_vr2"] = round(float(m_vr2), 1)
+            if not pd.isna(m_vr2) and 120 <= m_vr2 <= 180:
+                bonus_met.append(f"B6: 月VR2={m_vr2:.0f} ≈150")
+                bonus_count += 1
+            else:
+                bonus_failed.append(f"B6: 月VR2={m_vr2:.0f} 不在120~180")
+
+        # 加分結果
+        detail["bonus_count"] = bonus_count
+        if bonus_met:
+            conditions_met.append(f"➕ 加分: {bonus_count}/5 ({'專業' if bonus_count>=3 else '免費' if bonus_count>=2 else '不足'})")
+            conditions_met.extend(bonus_met)
+        if bonus_failed:
+            conditions_failed.extend(bonus_failed)
+
         result.conditions_met = conditions_met
         result.conditions_failed = conditions_failed
-        result.confidence = met_count / 8.0
+
+        # 信心度 = C1-C3 基礎 + 加分加成
+        base_conf = met_count / 3.0
+        bonus_boost = min(bonus_count / 5.0, 0.2)  # 最多 +0.2
+        result.confidence = min(base_conf + bonus_boost, 1.0)
         result.detail = detail
 
-        if met_count >= 8:
+        if met_count >= 3:
             result.signal = TradeSignal.STRONG_BUY
-        elif met_count >= 6:
+        elif met_count >= 2:
             result.signal = TradeSignal.BUY
-        elif met_count >= 4:
-            result.signal = TradeSignal.HOLD
         else:
             result.signal = TradeSignal.NEUTRAL
 
@@ -781,16 +767,37 @@ class BigStockSellSignalV2:
         else:
             conditions_failed.append(f"S1: 月W%R3={m_wr3:.0f} <= -50")
 
-        # ── S2: 月 RSI4 < 77 ──
+        # ── S2: 月 RSI4 < 77 (分批出場邏輯) ──
         m_rsi4 = 0.0
+        m_rsi4_prev = 0.0
+        m_rsi4_prev2 = 0.0
         if not monthly.empty and len(monthly) > 4:
             m_rsi4_val = rsi(monthly["Close"], period=4)
             m_rsi4 = _safe_last(m_rsi4_val, 50.0)
+            m_rsi4_prev = _safe_last(m_rsi4_val.shift(1), 50.0)
+            m_rsi4_prev2 = _safe_last(m_rsi4_val.shift(2), 50.0)
 
         detail["monthly_rsi4"] = round(float(m_rsi4), 1)
-        if not pd.isna(m_rsi4) and m_rsi4 < 77:
-            conditions_met.append(f"S2: 月RSI4={m_rsi4:.0f} < 77")
-            met_count += 1
+        detail["monthly_rsi4_prev"] = round(float(m_rsi4_prev), 1)
+
+        rsi4_now_below = not pd.isna(m_rsi4) and m_rsi4 < 77
+        rsi4_prev_below = not pd.isna(m_rsi4_prev) and m_rsi4_prev < 77
+        rsi4_prev2_below = not pd.isna(m_rsi4_prev2) and m_rsi4_prev2 < 77
+
+        if rsi4_now_below:
+            if not rsi4_prev_below:
+                # 訊號一： 初次跌破 77 → 賣出 50%
+                conditions_met.append(f"S2a: 月RSI4={m_rsi4:.0f} < 77 (初次跌破→賣50%)")
+                met_count += 1
+                detail["rsi4_sell_type"] = "first_50pct"
+            elif not rsi4_prev2_below and rsi4_prev_below:
+                # 訊號二： 站回77後又跌破 → 賣出剩餘 50%
+                conditions_met.append(f"S2b: 月RSI4={m_rsi4:.0f} < 77 (二次跌破→賣剩餘50%)")
+                met_count += 1
+                detail["rsi4_sell_type"] = "second_50pct"
+            else:
+                # 連續低檔 (已在前次賣出)
+                conditions_failed.append(f"S2: 月RSI4={m_rsi4:.0f} 持續低檔(已反應)")
         else:
             conditions_failed.append(f"S2: 月RSI4={m_rsi4:.0f} >= 77")
 
@@ -1070,6 +1077,81 @@ class CrashExitSignal:
         else:
             result.signal = TradeSignal.NEUTRAL
             result.conditions_failed = [f"月線無6K/9K賣出 (type={k_type}, count={count})"]
+
+        return result
+
+    def check_pendulum_extreme(
+        self,
+        ticker: str,
+        taiex_daily: pd.DataFrame,
+        financial_daily: pd.DataFrame | None = None,
+    ) -> SignalResult:
+        """鐘擺效應極限檢查 (大飆股末日).
+
+        條件：
+            1. 大盤本波低點→高點漲幅 > +6000 點
+            2. 大盤與金融指數極端乖離 (大盤 - 金融×10 > +2000 或 < -2000)
+
+        Args:
+            ticker: 股票代號
+            taiex_daily: 加權指數日線
+            financial_daily: 金融指數日線 (可選)
+
+        Returns:
+            SignalResult
+        """
+        result = SignalResult(ticker=ticker)
+        if taiex_daily.empty or len(taiex_daily) < 60:
+            result.signal = TradeSignal.NEUTRAL
+            result.conditions_failed = ["大盤資料不足"]
+            return result
+
+        tx_close = taiex_daily["Close"] if "Close" in taiex_daily.columns else taiex_daily["Adj_Close"]
+
+        # 本波低點→高點漲幅
+        lowest = float(tx_close.min())
+        highest = float(tx_close.max())
+        total_gain = highest - lowest
+
+        result.detail["tx_low"] = round(lowest, 2)
+        result.detail["tx_high"] = round(highest, 2)
+        result.detail["tx_gain"] = round(total_gain, 2)
+
+        # 條件1: 漲幅 > 6000 點
+        gain_ok = total_gain > 6000
+
+        # 條件2: 大盤與金融指數乖離
+        divergence_ok = False
+        divergence_val = 0.0
+        if financial_daily is not None and not financial_daily.empty:
+            fin_close = financial_daily["Close"] if "Close" in financial_daily.columns else financial_daily["Adj_Close"]
+            tx_now = float(tx_close.iloc[-1])
+            fin_now = float(fin_close.iloc[-1])
+            divergence_val = tx_now - (fin_now * 10)
+            divergence_ok = divergence_val > 2000 or divergence_val < -2000
+
+        result.detail["divergence_10x"] = round(divergence_val, 2)
+
+        conditions: list[str] = []
+        failed: list[str] = []
+
+        if gain_ok:
+            conditions.append(f"大盤漲幅 {total_gain:.0f} > 6000 點")
+        else:
+            failed.append(f"大盤漲幅 {total_gain:.0f} <= 6000 點")
+
+        if divergence_ok:
+            conditions.append(f"大盤-金融×10={divergence_val:.0f} 極端乖離")
+        else:
+            failed.append(f"大盤-金融×10={divergence_val:.0f} 無乖離")
+
+        if gain_ok and divergence_ok:
+            result.signal = TradeSignal.STRONG_SELL
+            result.conditions_met = [f"⚠️ 鐘擺效應極限: {', '.join(conditions)}"]
+            result.confidence = 1.0
+        else:
+            result.signal = TradeSignal.NEUTRAL
+            result.conditions_failed = failed
 
         return result
 
