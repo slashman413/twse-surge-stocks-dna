@@ -187,7 +187,7 @@
   </div><!-- /content -->
 
   <div class="footer">
-    <p>大飆股DNA — TWSE Quant Screener | 初始資金100萬，每日前5檔突破股</p>
+    <p>大飆股DNA — TWSE Quant Screener | 突破買進+停損/停利+趨勢過濾+量過濾</p>
     <p style="margin-top:4px;">點擊年份可查看該年度逐筆交易明細及資金曲線</p>
   </div>
 </div>
@@ -202,7 +202,7 @@
 </div>
 
 <script>
-const SUMMARY_URL = './yearly_backtests/summary_v8.json';
+const SUMMARY_URL = './yearly_backtests/summary_v10.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
 let equityChart = null;
@@ -344,7 +344,7 @@ function renderYearly(data) {
       <div><strong style="color:var(--red);">${worstYear.year}年 (${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%)</strong><br>最差年份</div>
     </div>
     <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
-      初始資金 100 萬，每日篩選前 5 檔突破股（大盤多頭才進場，6K/9K 危機清倉）。
+      初始資金 100 萬，突破買進 + 停損-25%/移動停利-15%/分批停利 + 大盤60MA趨勢過濾 + 日量≥1000。
       策略在 <strong style="color:var(--green);">${bestYear.year}</strong> 年最佳（${bestYear.total_return_pct >= 0 ? '+' : ''}${bestYear.total_return_pct}%），
       <strong style="color:var(--red);">${worstYear.year}</strong> 年最差（${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%）。
       共 ${winYears}/${nYears} 年正報酬，年化報酬率 ${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%，
@@ -361,7 +361,7 @@ async function openYearDetail(year) {
     '<tr><td colspan="8" style="text-align:center;padding:20px;color:var(--text-dim);">載入中...</td></tr>';
 
   try {
-    const resp = await fetch(`./yearly_backtests/${year}_trades_v8.json`);
+    const resp = await fetch(`./yearly_backtests/${year}_trades_v10.json`);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     const trades = data.trades || [];

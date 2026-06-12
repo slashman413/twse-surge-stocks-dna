@@ -1,0 +1,2698 @@
+{
+  "trades": [
+    {
+      "ticker": "050569",
+      "buy_date": "2022-05-31",
+      "buy_price": 6.2,
+      "sell_date": "2022-06-08",
+      "sell_price": 5.7,
+      "shares": 16129,
+      "pl": -8064.5,
+      "pl_pct": -8.06,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-19% from peak)"
+    },
+    {
+      "ticker": "6281",
+      "buy_date": "2022-05-31",
+      "buy_price": 84.44,
+      "sell_date": "2022-06-08",
+      "sell_price": 84.25,
+      "shares": 1184,
+      "pl": -230.1,
+      "pl_pct": -0.23,
+      "sell_reason": "\u9000\u51fa\u524d5(5\u65e5)"
+    },
+    {
+      "ticker": "2892",
+      "buy_date": "2022-05-31",
+      "buy_price": 25.93,
+      "sell_date": "2022-06-08",
+      "sell_price": 25.08,
+      "shares": 3856,
+      "pl": -3290.12,
+      "pl_pct": -3.29,
+      "sell_reason": "\u9000\u51fa\u524d5(5\u65e5)"
+    },
+    {
+      "ticker": "9945",
+      "buy_date": "2022-05-31",
+      "buy_price": 52.39,
+      "sell_date": "2022-06-08",
+      "sell_price": 52.93,
+      "shares": 1908,
+      "pl": 1037.21,
+      "pl_pct": 1.04,
+      "sell_reason": "\u9000\u51fa\u524d5(5\u65e5)"
+    },
+    {
+      "ticker": "3011",
+      "buy_date": "2022-06-08",
+      "buy_price": 19.1,
+      "sell_date": "2022-06-14",
+      "sell_price": 19.65,
+      "shares": 5235,
+      "pl": 2879.25,
+      "pl_pct": 2.88,
+      "sell_reason": "\u5927\u76e46K/9K\u6e05\u5009"
+    },
+    {
+      "ticker": "2368",
+      "buy_date": "2022-06-09",
+      "buy_price": 84.5,
+      "sell_date": "2022-06-14",
+      "sell_price": 91.0,
+      "shares": 1183,
+      "pl": 7689.5,
+      "pl_pct": 7.69,
+      "sell_reason": "\u5927\u76e46K/9K\u6e05\u5009"
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2022-01-03",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-04",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-05",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-06",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-07",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-10",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-11",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-12",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-13",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-14",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-17",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-18",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-19",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-20",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-21",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-24",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-25",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-01-26",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-07",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-08",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-09",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-10",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-11",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-14",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-15",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-16",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-17",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-18",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-21",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-22",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-23",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-24",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-02-25",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-01",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-02",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-03",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-04",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-07",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-08",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-09",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-10",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-11",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-14",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-15",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-16",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-17",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-18",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-21",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-22",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-23",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-24",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-25",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-28",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-29",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-30",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-03-31",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-01",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-06",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-07",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-08",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-11",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-12",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-13",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-14",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-15",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-18",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-19",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-20",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-21",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-22",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-25",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-26",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-27",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-28",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-04-29",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-03",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-04",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-05",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-06",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-09",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-10",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-11",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-12",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-13",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-16",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-17",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-18",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-19",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-20",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-23",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-24",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-25",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-26",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-27",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-30",
+      "equity": 1000000,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-05-31",
+      "equity": 1000000.0,
+      "type": "daily",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-01",
+      "equity": 992421.31,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-02",
+      "equity": 1004140.78,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-06",
+      "equity": 996532.37,
+      "type": "daily",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-07",
+      "equity": 997502.4,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-08",
+      "equity": 989452.49,
+      "type": "daily",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-09",
+      "equity": 999137.24,
+      "type": "daily",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-10",
+      "equity": 1003315.94,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-13",
+      "equity": 1005047.58,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-14",
+      "equity": 900028.34,
+      "type": "crash",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-15",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-16",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-17",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-20",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-21",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-22",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-23",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-24",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-27",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-28",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-29",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-06-30",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-01",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-04",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-05",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-06",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-07",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-08",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-11",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-12",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-13",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-14",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-15",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-18",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-19",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-20",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-21",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-22",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-25",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-26",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-27",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-28",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-07-29",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-01",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-02",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-03",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-04",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-05",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-08",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-09",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-10",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-11",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-12",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-15",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-16",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-17",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-18",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-19",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-22",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-23",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-24",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-25",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-26",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-29",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-30",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-08-31",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-01",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-02",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-05",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-06",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-07",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-08",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-12",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-13",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-14",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-15",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-16",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-19",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-20",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-21",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-22",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-23",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-26",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-27",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-28",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-29",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-09-30",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-03",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-04",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-05",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-06",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-07",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-11",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-12",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-13",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-14",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-17",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-18",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-19",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-20",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-21",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-24",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-25",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-26",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-27",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-28",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-10-31",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-01",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-02",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-03",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-04",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-07",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-08",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-09",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-10",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-11",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-14",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-15",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-16",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-17",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-18",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-21",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-22",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-23",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-24",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-25",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-28",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-29",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-11-30",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-01",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-02",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-05",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-06",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-07",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-08",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-09",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-12",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-13",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-14",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-15",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-16",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-19",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-20",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-21",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-22",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-23",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-26",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-27",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-28",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-29",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    },
+    {
+      "date": "2022-12-30",
+      "equity": 900028.34,
+      "type": "hold",
+      "ticker": ""
+    }
+  ],
+  "missed_trades": [
+    {
+      "date": "2022-03-25",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 126.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-25",
+      "ticker": "039152",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 126.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-28",
+      "ticker": "039152",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 145.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-28",
+      "ticker": "2642",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 138.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-30",
+      "ticker": "1535",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 143.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-30",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-31",
+      "ticker": "1760",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 153.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-03-31",
+      "ticker": "1522A",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 132.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-01",
+      "ticker": "1808",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-06",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-06",
+      "ticker": "1218",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-07",
+      "ticker": "00632R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 118.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-12",
+      "ticker": "3045",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-12",
+      "ticker": "2002A",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-12",
+      "ticker": "03806P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-13",
+      "ticker": "2024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 167.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-13",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 139.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-13",
+      "ticker": "1435",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 124.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-14",
+      "ticker": "1435",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 144.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-14",
+      "ticker": "6281",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-20",
+      "ticker": "1522A",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 123.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-21",
+      "ticker": "2024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 164.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-22",
+      "ticker": "1301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-26",
+      "ticker": "2915",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 114.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-28",
+      "ticker": "1102",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 131.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-04-29",
+      "ticker": "2884",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-04",
+      "ticker": "1312A",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 114.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-06",
+      "ticker": "1341",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-09",
+      "ticker": "1795",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 155.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-09",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 154.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-09",
+      "ticker": "2543",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 114.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-09",
+      "ticker": "00702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-16",
+      "ticker": "3708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 134.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-18",
+      "ticker": "1795",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 131.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-18",
+      "ticker": "2543",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-18",
+      "ticker": "00702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-18",
+      "ticker": "1432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-19",
+      "ticker": "8033",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-19",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-20",
+      "ticker": "2243",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-23",
+      "ticker": "058854",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 125.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-23",
+      "ticker": "3356",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 123.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-25",
+      "ticker": "061632",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 130.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-25",
+      "ticker": "043926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-25",
+      "ticker": "1605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 114.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-25",
+      "ticker": "6281",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-26",
+      "ticker": "6281",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-27",
+      "ticker": "050569",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-27",
+      "ticker": "1473",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-30",
+      "ticker": "050569",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-05-30",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-01",
+      "ticker": "2545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 146.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-01",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-01",
+      "ticker": "4557",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-02",
+      "ticker": "6579",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-07",
+      "ticker": "9136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-07",
+      "ticker": "4557",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-10",
+      "ticker": "00865B",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-13",
+      "ticker": "00865B",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-16",
+      "ticker": "03906P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-16",
+      "ticker": "00664R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-06-27",
+      "ticker": "04318P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 156.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-07",
+      "ticker": "1587",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-08",
+      "ticker": "1568",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-11",
+      "ticker": "3535",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-13",
+      "ticker": "5258",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-14",
+      "ticker": "2474",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-15",
+      "ticker": "4557",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 133.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-18",
+      "ticker": "2305",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-18",
+      "ticker": "8478",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-19",
+      "ticker": "8940",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-19",
+      "ticker": "8996",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-19",
+      "ticker": "2471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-20",
+      "ticker": "050569",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-25",
+      "ticker": "6541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-26",
+      "ticker": "1232",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-27",
+      "ticker": "2482",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-27",
+      "ticker": "9933",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-27",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-27",
+      "ticker": "2444",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-28",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-29",
+      "ticker": "8374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-29",
+      "ticker": "2373",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-07-29",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-01",
+      "ticker": "6585",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 126.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-08",
+      "ticker": "2702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-16",
+      "ticker": "062233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 129.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-17",
+      "ticker": "075641",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 130.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-17",
+      "ticker": "074372",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 125.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-17",
+      "ticker": "072428",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 117.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-18",
+      "ticker": "074372",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 124.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-18",
+      "ticker": "072428",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 117.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-18",
+      "ticker": "1503",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-22",
+      "ticker": "1218",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-24",
+      "ticker": "9926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-25",
+      "ticker": "00707R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-26",
+      "ticker": "00707R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-08-26",
+      "ticker": "1438",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-01",
+      "ticker": "05029P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-02",
+      "ticker": "075641",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-02",
+      "ticker": "03853P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-07",
+      "ticker": "04921P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 140.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-07",
+      "ticker": "03547B",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-07",
+      "ticker": "04588P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-12",
+      "ticker": "6142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-16",
+      "ticker": "2385",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-20",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-22",
+      "ticker": "03547B",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 140.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-22",
+      "ticker": "03853P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-23",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 115.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-26",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 135.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-26",
+      "ticker": "05521P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-26",
+      "ticker": "03540B",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-27",
+      "ticker": "05060P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 140.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-29",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 114.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-29",
+      "ticker": "8480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-09-30",
+      "ticker": "2364",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-03",
+      "ticker": "062233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 129.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-03",
+      "ticker": "2364",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-03",
+      "ticker": "1449",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-03",
+      "ticker": "8480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-04",
+      "ticker": "2364",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-04",
+      "ticker": "2540",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-04",
+      "ticker": "8480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-05",
+      "ticker": "2305",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-06",
+      "ticker": "4557",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 118.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-07",
+      "ticker": "1734",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-07",
+      "ticker": "1414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-24",
+      "ticker": "8480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-26",
+      "ticker": "2364",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-28",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-10-31",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-01",
+      "ticker": "3454",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-02",
+      "ticker": "2468",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-02",
+      "ticker": "3454",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-03",
+      "ticker": "2468",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-03",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-03",
+      "ticker": "3043",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-04",
+      "ticker": "4155",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-04",
+      "ticker": "8996",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-04",
+      "ticker": "3046",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-07",
+      "ticker": "8996",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-08",
+      "ticker": "3550",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.8,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-09",
+      "ticker": "065715",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.9,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-09",
+      "ticker": "066017",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-09",
+      "ticker": "3454",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-09",
+      "ticker": "3034",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-11",
+      "ticker": "082118",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 118.3,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-11",
+      "ticker": "074854",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-11",
+      "ticker": "03017X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-11",
+      "ticker": "1795",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-14",
+      "ticker": "080272",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-15",
+      "ticker": "078227",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 140.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-16",
+      "ticker": "081542",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 118.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-21",
+      "ticker": "070231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.0,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-23",
+      "ticker": "075522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.1,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-23",
+      "ticker": "03017X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.6,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-24",
+      "ticker": "075522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.7,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-24",
+      "ticker": "03017X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-25",
+      "ticker": "03017X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-11-30",
+      "ticker": "1465",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.5,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-12-14",
+      "ticker": "083249",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 129.2,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-12-16",
+      "ticker": "3034",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4,
+      "bpt": 0.0
+    },
+    {
+      "date": "2022-12-29",
+      "ticker": "03024P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.9,
+      "bpt": 0.0
+    }
+  ]
+}
