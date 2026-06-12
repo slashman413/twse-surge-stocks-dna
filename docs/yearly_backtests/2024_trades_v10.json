@@ -397,6 +397,17 @@
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
+      "ticker": "00882",
+      "buy_date": "2024-05-16",
+      "buy_price": 11.56,
+      "sell_date": "2024-05-23",
+      "sell_price": 11.55,
+      "shares": 4325,
+      "pl": -41.32,
+      "pl_pct": -0.08,
+      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
+    },
+    {
       "ticker": "3702A",
       "buy_date": "2024-05-02",
       "buy_price": 48.4,
@@ -416,17 +427,6 @@
       "shares": 8085,
       "pl": 884.24,
       "pl_pct": 1.77,
-      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
-    },
-    {
-      "ticker": "00636K",
-      "buy_date": "2024-05-16",
-      "buy_price": 6.62,
-      "sell_date": "2024-05-27",
-      "sell_price": 6.53,
-      "shares": 7552,
-      "pl": -679.68,
-      "pl_pct": -1.36,
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
@@ -552,13 +552,13 @@
     },
     {
       "ticker": "2881A",
-      "buy_date": "2024-05-27",
-      "buy_price": 60.44,
+      "buy_date": "2024-05-23",
+      "buy_price": 60.15,
       "sell_date": "2024-06-04",
       "sell_price": 60.63,
-      "shares": 827,
-      "pl": 159.44,
-      "pl_pct": 0.32,
+      "shares": 831,
+      "pl": 400.52,
+      "pl_pct": 0.8,
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
@@ -848,6 +848,17 @@
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
+      "ticker": "6139",
+      "buy_date": "2024-07-01",
+      "buy_price": 254.66,
+      "sell_date": "2024-07-08",
+      "sell_price": 246.48,
+      "shares": 196,
+      "pl": -1604.04,
+      "pl_pct": -3.21,
+      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
+    },
+    {
       "ticker": "1109",
       "buy_date": "2024-06-28",
       "buy_price": 18.32,
@@ -892,17 +903,6 @@
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
-      "ticker": "020036",
-      "buy_date": "2024-07-01",
-      "buy_price": 6.19,
-      "sell_date": "2024-07-12",
-      "sell_price": 6.62,
-      "shares": 8082,
-      "pl": 3488.02,
-      "pl_pct": 6.98,
-      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
-    },
-    {
       "ticker": "2440",
       "buy_date": "2024-07-04",
       "buy_price": 18.85,
@@ -922,6 +922,17 @@
       "shares": 1712,
       "pl": 9244.8,
       "pl_pct": 18.49,
+      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
+    },
+    {
+      "ticker": "2102",
+      "buy_date": "2024-07-08",
+      "buy_price": 21.25,
+      "sell_date": "2024-07-15",
+      "sell_price": 22.3,
+      "shares": 2352,
+      "pl": 2469.6,
+      "pl_pct": 4.94,
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
@@ -980,17 +991,6 @@
       "sell_reason": "\u5927\u76e46K/9K\u6e05\u5009"
     },
     {
-      "ticker": "00636K",
-      "buy_date": "2024-07-12",
-      "buy_price": 6.35,
-      "sell_date": "2024-07-19",
-      "sell_price": 6.45,
-      "shares": 7874,
-      "pl": 787.4,
-      "pl_pct": 1.57,
-      "sell_reason": "\u5927\u76e46K/9K\u6e05\u5009"
-    },
-    {
       "ticker": "00660",
       "buy_date": "2024-07-15",
       "buy_price": 36.49,
@@ -1010,6 +1010,17 @@
       "shares": 1763,
       "pl": 211.56,
       "pl_pct": 0.42,
+      "sell_reason": "\u5927\u76e46K/9K\u6e05\u5009"
+    },
+    {
+      "ticker": "00708L",
+      "buy_date": "2024-07-15",
+      "buy_price": 35.41,
+      "sell_date": "2024-07-19",
+      "sell_price": 35.71,
+      "shares": 1412,
+      "pl": 423.6,
+      "pl_pct": 0.85,
       "sell_reason": "\u5927\u76e46K/9K\u6e05\u5009"
     },
     {
@@ -1123,14 +1134,14 @@
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
-      "ticker": "00636K",
+      "ticker": "6834",
       "buy_date": "2024-09-25",
-      "buy_price": 6.7,
+      "buy_price": 41.55,
       "sell_date": "2024-10-04",
-      "sell_price": 7.68,
-      "shares": 7462,
-      "pl": 7312.76,
-      "pl_pct": 14.63,
+      "sell_price": 40.6,
+      "shares": 1203,
+      "pl": -1142.85,
+      "pl_pct": -2.29,
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
@@ -1728,17 +1739,6 @@
       "sell_reason": "\u505c\u5229\u5168\u51fa(88%)"
     },
     {
-      "ticker": "00657K",
-      "buy_date": "2024-12-12",
-      "buy_price": 14.46,
-      "sell_date": "2024-12-19",
-      "sell_price": 13.98,
-      "shares": 3457,
-      "pl": -1659.36,
-      "pl_pct": -3.32,
-      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
-    },
-    {
       "ticker": "084098",
       "buy_date": "2024-12-17",
       "buy_price": 5.2,
@@ -1758,6 +1758,17 @@
       "shares": 1639,
       "pl": -655.6,
       "pl_pct": -1.31,
+      "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
+    },
+    {
+      "ticker": "069078",
+      "buy_date": "2024-12-12",
+      "buy_price": 8.15,
+      "sell_date": "2024-12-27",
+      "sell_price": 8.7,
+      "shares": 6134,
+      "pl": 3373.7,
+      "pl_pct": 6.75,
       "sell_reason": "\u9000\u51fa\u524d10(5\u65e5)"
     },
     {
@@ -2363,931 +2374,931 @@
     },
     {
       "date": "2024-05-17",
-      "equity": 1009112.07,
+      "equity": 1009744.7,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-20",
-      "equity": 1009636.3,
+      "equity": 1010573.79,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-21",
-      "equity": 1008449.7,
+      "equity": 1009207.67,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-22",
-      "equity": 1010750.1,
+      "equity": 1012045.22,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-23",
-      "equity": 1009660.66,
+      "equity": 1009845.9,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-24",
-      "equity": 1006332.63,
+      "equity": 1007131.19,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-27",
-      "equity": 1009868.79,
+      "equity": 1010747.46,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-28",
-      "equity": 1016943.62,
+      "equity": 1017822.29,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-29",
-      "equity": 1011858.73,
+      "equity": 1012737.01,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-30",
-      "equity": 1000373.68,
+      "equity": 1001252.35,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-05-31",
-      "equity": 997960.82,
+      "equity": 998839.87,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-03",
-      "equity": 1000699.56,
+      "equity": 1001579.0,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-04",
-      "equity": 1000383.95,
+      "equity": 1001263.39,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-05",
-      "equity": 996308.29,
+      "equity": 997187.73,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-06",
-      "equity": 993745.49,
+      "equity": 994624.93,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-07",
-      "equity": 996543.59,
+      "equity": 997423.03,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-11",
-      "equity": 989746.49,
+      "equity": 990625.93,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-12",
-      "equity": 995019.67,
+      "equity": 995899.11,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-13",
-      "equity": 993655.22,
+      "equity": 994534.66,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-14",
-      "equity": 998864.33,
+      "equity": 999743.77,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-17",
-      "equity": 1002625.51,
+      "equity": 1003504.95,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-18",
-      "equity": 1001147.65,
+      "equity": 1002027.09,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-19",
-      "equity": 1009378.2,
+      "equity": 1010257.64,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-20",
-      "equity": 1009478.0,
+      "equity": 1010357.44,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-21",
-      "equity": 1001150.6,
+      "equity": 1002030.04,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-24",
-      "equity": 998503.06,
+      "equity": 999382.5,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-25",
-      "equity": 986270.47,
+      "equity": 987149.91,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-26",
-      "equity": 985376.15,
+      "equity": 986255.59,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-27",
-      "equity": 985329.92,
+      "equity": 986209.36,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-06-28",
-      "equity": 985916.25,
+      "equity": 986795.69,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-01",
-      "equity": 985664.58,
+      "equity": 986544.02,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-02",
-      "equity": 974563.55,
+      "equity": 974593.79,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-03",
-      "equity": 978444.7,
+      "equity": 978663.65,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-04",
-      "equity": 981897.41,
+      "equity": 981122.13,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-05",
-      "equity": 978165.04,
+      "equity": 976668.6,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-08",
-      "equity": 984227.8,
+      "equity": 983503.2,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-09",
-      "equity": 980820.03,
+      "equity": 977262.26,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-10",
-      "equity": 983603.29,
+      "equity": 983466.69,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-11",
-      "equity": 987927.09,
+      "equity": 985045.49,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-12",
-      "equity": 978605.26,
+      "equity": 976274.24,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-15",
-      "equity": 986146.25,
+      "equity": 984088.27,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-16",
-      "equity": 986625.16,
+      "equity": 985337.8,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-17",
-      "equity": 991992.17,
+      "equity": 992578.94,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-18",
-      "equity": 991302.29,
+      "equity": 990966.45,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-19",
-      "equity": 891024.01,
+      "equity": 888917.19,
       "type": "crash",
       "ticker": ""
     },
     {
       "date": "2024-07-22",
-      "equity": 891024.01,
+      "equity": 888917.19,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-07-23",
-      "equity": 891024.01,
+      "equity": 888917.19,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-07-26",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "crash",
       "ticker": ""
     },
     {
       "date": "2024-07-29",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-07-30",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-07-31",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-01",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-02",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-05",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-06",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-07",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-08",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-09",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-12",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-13",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-14",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-15",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-16",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-19",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-20",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-21",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-22",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-23",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-26",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-27",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-28",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-29",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-08-30",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-02",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-03",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-04",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-05",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-06",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-09",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-10",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-11",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-12",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-13",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-16",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-18",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-19",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-20",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-23",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-09-24",
-      "equity": 890698.82,
+      "equity": 888591.99,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-09-25",
-      "equity": 896451.58,
+      "equity": 894344.75,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-09-26",
-      "equity": 902591.77,
+      "equity": 898153.56,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-09-27",
-      "equity": 903038.64,
+      "equity": 894585.43,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-09-30",
-      "equity": 890437.15,
+      "equity": 879299.88,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-10-01",
-      "equity": 889205.39,
+      "equity": 879275.67,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-04",
-      "equity": 891818.75,
+      "equity": 881256.32,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-07",
-      "equity": 896341.4,
+      "equity": 885778.96,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-08",
-      "equity": 889997.95,
+      "equity": 879435.51,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-09",
-      "equity": 890047.5,
+      "equity": 879485.06,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-11",
-      "equity": 883291.34,
+      "equity": 872728.9,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-14",
-      "equity": 883192.16,
+      "equity": 872629.73,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-15",
-      "equity": 886781.74,
+      "equity": 876219.3,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-16",
-      "equity": 883623.43,
+      "equity": 873060.99,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-17",
-      "equity": 889363.71,
+      "equity": 878801.27,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-18",
-      "equity": 881183.85,
+      "equity": 870621.42,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-21",
-      "equity": 896685.62,
+      "equity": 886123.18,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-22",
-      "equity": 898502.58,
+      "equity": 887940.14,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-23",
-      "equity": 893689.63,
+      "equity": 883127.19,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-24",
-      "equity": 882619.78,
+      "equity": 872057.35,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-25",
-      "equity": 887434.91,
+      "equity": 876872.48,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-28",
-      "equity": 889859.83,
+      "equity": 879297.39,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-10-29",
-      "equity": 837433.53,
+      "equity": 826871.09,
       "type": "crash",
       "ticker": ""
     },
     {
       "date": "2024-10-30",
-      "equity": 837433.53,
+      "equity": 826871.09,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-01",
-      "equity": 733831.23,
+      "equity": 723268.79,
       "type": "crash",
       "ticker": ""
     },
     {
       "date": "2024-11-04",
-      "equity": 733831.23,
+      "equity": 723268.79,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-05",
-      "equity": 733831.23,
+      "equity": 723268.79,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-06",
-      "equity": 731675.33,
+      "equity": 721112.9,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-07",
-      "equity": 731788.73,
+      "equity": 721226.29,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-08",
-      "equity": 734324.43,
+      "equity": 723761.99,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-11",
-      "equity": 734211.13,
+      "equity": 723648.69,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-12",
-      "equity": 722462.58,
+      "equity": 711900.14,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-13",
-      "equity": 731649.63,
+      "equity": 721087.19,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-14",
-      "equity": 724191.13,
+      "equity": 713628.69,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-15",
-      "equity": 724601.83,
+      "equity": 714039.39,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-18",
-      "equity": 673394.83,
+      "equity": 662832.39,
       "type": "crash",
       "ticker": ""
     },
     {
       "date": "2024-11-19",
-      "equity": 673394.83,
+      "equity": 662832.39,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-20",
-      "equity": 673394.83,
+      "equity": 662832.39,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-21",
-      "equity": 673394.83,
+      "equity": 662832.39,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-11-22",
-      "equity": 673394.83,
+      "equity": 662832.39,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-11-25",
-      "equity": 673394.83,
+      "equity": 662832.39,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-11-26",
-      "equity": 671856.18,
+      "equity": 661293.74,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-11-27",
-      "equity": 671864.02,
+      "equity": 661301.59,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-11-28",
-      "equity": 670849.47,
+      "equity": 660287.04,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-11-29",
-      "equity": 670292.99,
+      "equity": 659730.55,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-12-02",
-      "equity": 645666.78,
+      "equity": 635104.34,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-12-03",
-      "equity": 645666.78,
+      "equity": 635104.34,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-04",
-      "equity": 645281.33,
+      "equity": 634718.89,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-05",
-      "equity": 645229.08,
+      "equity": 634666.64,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-06",
-      "equity": 655575.53,
+      "equity": 645013.09,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-09",
-      "equity": 645943.33,
+      "equity": 635380.89,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-10",
-      "equity": 646033.38,
+      "equity": 635470.94,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-11",
-      "equity": 657821.65,
+      "equity": 647259.22,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-12",
-      "equity": 666772.53,
+      "equity": 656210.09,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-13",
-      "equity": 684766.82,
+      "equity": 674895.78,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-16",
-      "equity": 694379.32,
+      "equity": 690810.7,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-17",
-      "equity": 670320.35,
+      "equity": 667706.4,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-18",
-      "equity": 703003.84,
+      "equity": 693478.51,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-19",
-      "equity": 710340.08,
+      "equity": 702970.5,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-20",
-      "equity": 698696.83,
+      "equity": 694394.26,
       "type": "hold",
       "ticker": ""
     },
     {
       "date": "2024-12-23",
-      "equity": 708097.48,
+      "equity": 699194.41,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-24",
-      "equity": 708602.83,
+      "equity": 699699.76,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-25",
-      "equity": 720681.38,
+      "equity": 711778.3,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-26",
-      "equity": 719668.38,
+      "equity": 710765.31,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-27",
-      "equity": 706406.48,
+      "equity": 700877.1,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-30",
-      "equity": 711859.87,
+      "equity": 706330.5,
       "type": "daily",
       "ticker": ""
     },
     {
       "date": "2024-12-31",
-      "equity": 704317.48,
+      "equity": 698788.1,
       "type": "daily",
       "ticker": ""
     }
