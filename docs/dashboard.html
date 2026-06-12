@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>大飆股DNA - 台股量化篩選系統回測報告</title>
+<title>大飆股DNA - 台股量化回測報告</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-<script src="https://unpkg.com/lightweight-charts@4.2.1/dist/lightweight-charts.standalone.production.js"></script>
 <style>
   :root {
     --bg: #0f172a; --card: #1e293b; --border: #334155;
@@ -35,7 +34,6 @@
   .sponsor-btn svg { width: 18px; height: 18px; fill: currentColor; }
   .header .subtitle { color: var(--text-dim); margin-top: 8px; font-size: 1rem; }
 
-  /* Sponsor Modal */
   .sponsor-modal-overlay {
     display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0,0,0,0.7); z-index: 2000;
@@ -65,53 +63,21 @@
   .stat-card.neutral { border-left: 3px solid var(--yellow); }
   .stat-card.info { border-left: 3px solid var(--blue); }
 
-  /* Stock Grid — only stocks with signals */
-  .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-bottom: 30px; }
-  .stock-card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 12px; padding: 20px; cursor: pointer;
-    transition: border-color 0.2s, transform 0.15s;
-  }
-  .stock-card:hover { border-color: var(--blue); transform: translateY(-2px); }
-  .stock-card .ticker { font-size: 1.3rem; font-weight: 700; }
-  .stock-card .name { color: var(--text-dim); font-size: 0.85rem; }
-  .stock-card .meta { display: flex; gap: 16px; margin: 8px 0 12px; font-size: 0.85rem; color: var(--text-dim); }
-  .stock-card .stat-row { display: flex; gap: 20px; margin: 8px 0; }
-  .stock-card .stat-row .tag { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 10px; font-size: 0.8rem; }
-  .tag-buy { background: rgba(239,68,68,0.2); color: var(--red); }
-  .tag-sell { background: rgba(34,197,94,0.2); color: var(--green); }
-  .tag-surge { background: rgba(168,85,247,0.2); color: var(--purple); }
-
-  /* Trade Tab */
-  .trade-stock-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
-  .trade-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; cursor: pointer; transition: background 0.15s; }
-  .trade-header:hover { background: rgba(59,130,246,0.06); }
-  .trade-ticker { font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: color 0.15s; }
-  .trade-ticker:hover { color: var(--blue); }
-  .trade-meta { display: flex; align-items: center; gap: 12px; }
-  .trade-detail { border-top: 1px solid var(--border); padding: 12px 18px; }
-
-  /* Charts Row */
   .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 30px; }
   .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
   .chart-card h3 { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
 
-  /* Loading */
   .loading { text-align: center; padding: 60px 20px; color: var(--text-dim); }
   .loading .spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* Tab selector */
-  .tab-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
   .tab-btn { padding: 8px 20px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text-dim); cursor: pointer; font-size: 0.9rem; transition: all 0.2s; }
   .tab-btn:hover { border-color: var(--blue); color: var(--text); }
-  .tab-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
 
   .table-section { margin-bottom: 30px; }
   .table-section h2 { font-size: 1.2rem; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
   .table-section h2 .badge { font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; margin-left: 8px; }
   .badge-buy { background: rgba(239,68,68,0.2); color: var(--red); }
-  .badge-sell { background: rgba(34,197,94,0.2); color: var(--green); }
 
   table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; }
   th, td { padding: 10px 14px; text-align: left; font-size: 0.9rem; }
@@ -123,56 +89,8 @@
 
   .footer { text-align: center; padding: 30px; color: var(--text-dim); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px; }
 
-  /* ═══ MODAL ═══ */
-  .modal-overlay {
-    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.75); z-index: 1000;
-    justify-content: center; align-items: center; padding: 20px;
-  }
-  .modal-overlay.open { display: flex; }
-  .modal-content {
-    background: #131c31; border: 1px solid var(--border); border-radius: 16px;
-    width: 100%; max-width: 1200px; max-height: 95vh; overflow-y: auto;
-    padding: 24px; position: relative;
-  }
-  .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
-  .modal-header h2 { font-size: 1.4rem; font-weight: 700; }
-  .modal-header .close-btn {
-    background: transparent; border: 1px solid var(--border); color: var(--text-dim);
-    width: 36px; height: 36px; border-radius: 8px; cursor: pointer; font-size: 1.2rem;
-    display: flex; align-items: center; justify-content: center;
-    transition: all 0.2s;
-  }
-  .modal-header .close-btn:hover { background: var(--red); color: white; border-color: var(--red); }
-  .modal-chart-container { height: 340px; margin-bottom: 8px; border-radius: 8px; overflow: hidden; background: #0b1426; }
-  .modal-chart-container:first-of-type { height: 280px; }
-  .modal-chart-label { font-size: 0.8rem; color: var(--text-dim); margin: 4px 0 8px; display: flex; justify-content: space-between; }
-  .modal-chart-label .badge { padding: 1px 8px; border-radius: 6px; font-size: 0.75rem; }
-  .modal-indicator-tabs { display: flex; gap: 6px; margin: 8px 0 12px; flex-wrap: wrap; }
-  .modal-indicator-tabs .ind-btn {
-    padding: 4px 12px; border-radius: 6px; border: 1px solid var(--border);
-    background: transparent; color: var(--text-dim); cursor: pointer;
-    font-size: 0.75rem; transition: all 0.15s;
-  }
-  .modal-indicator-tabs .ind-btn:hover { border-color: var(--blue); color: var(--text); }
-  .modal-indicator-tabs .ind-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
-  .modal-loading { text-align: center; padding: 80px 20px; color: var(--text-dim); font-size: 0.9rem; }
-  .modal-error { text-align: center; padding: 40px 20px; color: var(--red); }
-  .modal-signal-info { display: flex; gap: 20px; margin-bottom: 16px; }
-  .modal-signal-info .signal-box { flex: 1; padding: 12px 16px; border-radius: 8px; }
-  .signal-box.buy-box { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); }
-  .signal-box.sell-box { background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); }
-  .signal-box .count { font-size: 1.5rem; font-weight: 700; }
-  .signal-box.buy-box .count { color: var(--red); }
-  .signal-box.sell-box .count { color: var(--green); }
-  .signal-box .label { font-size: 0.8rem; color: var(--text-dim); }
-  .signal-box.pl-box { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.3); }
-
   @media (max-width: 768px) {
     .charts-row { grid-template-columns: 1fr; }
-    .modal-content { padding: 16px; }
-    .modal-chart-container { height: 250px; }
-    .modal-chart-container:first-of-type { height: 200px; }
   }
 </style>
 </head>
@@ -187,7 +105,7 @@
         贊助
       </button>
     </div>
-    <div class="subtitle">台股多週期量化交易篩選系統 — 歷史回測報告</div>
+    <div class="subtitle">台股多週期量化交易系統 — 歷史資金模擬回測</div>
     <div class="subtitle" id="report-date" style="margin-top:4px;">載入中...</div>
   </div>
 
@@ -198,177 +116,103 @@
 
   <div id="content" style="display:none;">
 
-    <!-- Stats -->
-    <div class="stats-grid" id="stats-grid">
-      <div class="stat-card info"><div class="value" id="stat-period">--</div><div class="label">回測區間</div></div>
-      <div class="stat-card bull"><div class="value" id="stat-buy">0</div><div class="label">買進訊號</div></div>
-      <div class="stat-card bear"><div class="value" id="stat-sell">0</div><div class="label">賣出訊號</div></div>
-      <div class="stat-card info"><div class="value" id="stat-tickers">0</div><div class="label">有訊號標的</div></div>
-      <div class="stat-card" id="stat-pl-card"><div class="value" id="stat-total-pl">--</div><div class="label">累計損益</div></div>
+    <!-- ═══ 回測模擬操作總結 ═══ -->
+    <div class="stats-grid" id="summary-stats-grid">
+      <div class="stat-card info"><div class="value">100 萬</div><div class="label">初始資金</div></div>
+      <div class="stat-card" id="sum-final-equity-card"><div class="value" id="sum-final-equity">--</div><div class="label">複利最終權益</div></div>
+      <div class="stat-card" id="sum-cagr-card"><div class="value" id="sum-cagr">--</div><div class="label">年化報酬率 (CAGR)</div></div>
+      <div class="stat-card" id="sum-total-return-card"><div class="value" id="sum-total-return">--</div><div class="label">總報酬率</div></div>
+      <div class="stat-card" id="sum-max-dd-card"><div class="value" id="sum-max-dd">--</div><div class="label">最大回撤 (MDD)</div></div>
+      <div class="stat-card info"><div class="value" id="sum-win-years">--</div><div class="label">正報酬年數</div></div>
+      <div class="stat-card info"><div class="value" id="sum-total-trades">--</div><div class="label">總交易次數</div></div>
+      <div class="stat-card" id="sum-avg-win-card"><div class="value" id="sum-avg-win">--</div><div class="label">平均勝率</div></div>
     </div>
 
     <!-- Charts Row -->
     <div class="charts-row">
-      <div class="chart-card"><h3>📊 買賣訊號分布</h3><canvas id="signalChart"></canvas></div>
-      <div class="chart-card"><h3>📊 各股訊號強度</h3><canvas id="stockChart"></canvas></div>
+      <div class="chart-card"><h3>📊 每年報酬率</h3><canvas id="yearlyReturnChart"></canvas></div>
+      <div class="chart-card"><h3>📊 最終權益</h3><canvas id="yearlyPLChart"></canvas></div>
     </div>
 
-    <!-- Outer Tab: 買賣訊號列表 / 有交易列表 -->
-    <div class="tab-bar">
-      <button class="tab-btn active" data-otab="signals" onclick="switchOTab('signals')">📋 買賣訊號列表</button>
-      <button class="tab-btn" data-otab="trades" onclick="switchOTab('trades')">💰 有交易列表</button>
-      <button class="tab-btn" data-otab="yearly" onclick="switchOTab('yearly');loadYearlyData()">📊 年度回測</button>
-    </div>
-
-    <!-- ═══ Tab: 買賣訊號列表 ═══ -->
-    <div class="otab-content" id="otab-signals">
-
-      <!-- Stock cards summary -->
-      <div class="table-section">
-        <h2>📊 有訊號標的 <span class="badge badge-buy" id="signal-stock-count">0</span></h2>
-        <div class="stock-grid" id="stock-grid"></div>
-      </div>
-
-      <!-- Inner Tab: 買進 / 賣出 -->
-      <div class="tab-bar">
-        <button class="tab-btn active" data-tab="buy" onclick="switchTab('buy')">🔴 買進訊號</button>
-        <button class="tab-btn" data-tab="sell" onclick="switchTab('sell')">🟢 賣出訊號</button>
-      </div>
-
-      <div class="table-section tab-content" id="tab-buy">
-        <h2>🔴 買進訊號 <span class="badge badge-buy" id="buy-count">0</span></h2>
-        <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="buy-table-body"></tbody></table>
-      </div>
-
-      <div class="table-section tab-content" id="tab-sell" style="display:none;">
-        <h2>🟢 賣出訊號 <span class="badge badge-sell" id="sell-count">0</span></h2>
-        <table><thead><tr><th>日期</th><th>股票</th><th>訊號</th><th>信心度</th><th>條件</th></tr></thead><tbody id="sell-table-body"></tbody></table>
+    <!-- Yearly table -->
+    <div class="table-section">
+      <h2>📅 每年回測損益一覽 <span class="badge badge-buy" id="yearly-count">0</span></h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>年度</th>
+              <th>有交易股票</th>
+              <th>交易次數</th>
+              <th>年報酬率</th>
+              <th>最終權益</th>
+              <th>勝率</th>
+              <th>資料筆數</th>
+            </tr>
+          </thead>
+          <tbody id="yearly-table-body"></tbody>
+        </table>
       </div>
     </div>
 
-    <!-- ═══ Tab: 有交易列表 ═══ -->
-    <div class="otab-content" id="otab-trades" style="display:none;">
-      <div class="table-section">
-        <h2>💰 有交易記錄的標的 <span class="badge badge-buy" id="trade-stock-count">0</span></h2>
-        <div id="trade-stocks-list"></div>
-      </div>
-    </div>
-
-    <!-- ═══ Tab: 年度回測 (P&L) ═══ -->
-    <div class="otab-content" id="otab-yearly" style="display:none;">
-      <div class="stats-grid" id="yearly-stats-grid">
-        <div class="stat-card info"><div class="value" id="yearly-total-pl">--</div><div class="label">總損益</div></div>
-        <div class="stat-card bull"><div class="value" id="yearly-win-rate">--</div><div class="label">勝率</div></div>
-        <div class="stat-card neutral"><div class="value" id="yearly-avg-return">--</div><div class="label">年均報酬率</div></div>
-        <div class="stat-card info"><div class="value" id="yearly-total-trades">--</div><div class="label">總交易次數</div></div>
-      </div>
-      <div class="charts-row">
-        <div class="chart-card"><h3>📊 每年平均報酬率</h3><canvas id="yearlyReturnChart"></canvas></div>
-        <div class="chart-card"><h3>📊 每年總損益</h3><canvas id="yearlyPLChart"></canvas></div>
-      </div>
-      <div class="table-section">
-        <h2>📅 每年回測損益一覽 <span class="badge badge-buy" id="yearly-count">0</span></h2>
-        <div style="overflow-x:auto;">
-          <table>
+    <!-- Year detail panel -->
+    <div class="table-section" id="year-detail-section" style="display:none;">
+      <h2 id="year-detail-title">📋 年度交易明細</h2>
+      <button class="tab-btn" onclick="closeYearDetail()" style="margin-bottom:12px;">✕ 關閉</button>
+      <div id="year-detail-content" style="padding:0;">
+        <div class="chart-card" style="margin-bottom:16px;">
+          <h3>💰 資金曲線</h3>
+          <canvas id="equityCurveChart" style="height:200px;"></canvas>
+        </div>
+        <div style="max-height:500px;overflow-y:auto;">
+          <table style="font-size:0.85rem;">
             <thead>
               <tr>
-                <th>年度</th>
-                <th>有交易股票</th>
-                <th>交易次數</th>
-                <th>年報酬率</th>
-                <th>總損益</th>
-                <th>資料筆數</th>
+                <th>股票</th><th>買進日</th><th>買價</th><th>賣出日</th>
+                <th>賣價</th><th>損益</th><th>報酬率</th><th>理由</th>
               </tr>
             </thead>
-            <tbody id="yearly-table-body"></tbody>
+            <tbody id="year-detail-body"></tbody>
           </table>
         </div>
+        <div id="year-detail-summary" class="stat-card neutral" style="margin-top:12px;display:flex;gap:20px;flex-wrap:wrap;padding:12px 18px;"></div>
       </div>
-      <!-- Year detail panel (shown on click) -->
-      <div class="table-section" id="year-detail-section" style="display:none;">
-        <h2 id="year-detail-title">📋 年度交易明細</h2>
-        <button class="tab-btn" onclick="closeYearDetail()" style="margin-bottom:12px;">✕ 關閉</button>
-        <div id="year-detail-content" style="padding:0;">
-          <div style="max-height:500px;overflow-y:auto;">
-            <table style="font-size:0.85rem;">
-              <thead>
-                <tr>
-                  <th>股票</th>
-                  <th>買進日</th>
-                  <th>買價</th>
-                  <th>賣出日</th>
-                  <th>賣價</th>
-                  <th>損益</th>
-                  <th>報酬率</th>
-                  <th>理由</th>
-                </tr>
-              </thead>
-              <tbody id="year-detail-body"></tbody>
-            </table>
-          </div>
-          <div id="year-detail-summary" class="stat-card neutral" style="margin-top:12px;display:flex;gap:20px;flex-wrap:wrap;padding:12px 18px;"></div>
-        </div>
-      </div>
-      <div class="table-section">
-        <h2>📈 年度績效說明</h2>
-        <div id="yearly-insights" style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;line-height:1.8;font-size:0.9rem;color:var(--text-dim);"></div>
-      </div>
+    </div>
+
+    <div class="table-section">
+      <h2>📈 年度績效說明</h2>
+      <div id="yearly-insights" style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;line-height:1.8;font-size:0.9rem;color:var(--text-dim);"></div>
     </div>
 
   </div><!-- /content -->
 
   <div class="footer">
-    <p>大飆股DNA — TWSE Quant Screener | 資料來源: TWSE / yfinance</p>
-    <p style="margin-top:4px;">點擊有訊號的股票卡片可查看詳細 K 線圖表</p>
+    <p>大飆股DNA — TWSE Quant Screener | 初始資金100萬，每筆固定10萬進場</p>
+    <p style="margin-top:4px;">點擊年份可查看該年度逐筆交易明細及資金曲線</p>
   </div>
 </div>
 
-<!-- ═══ MODAL ═══ -->
-<div class="modal-overlay" id="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2 id="modal-title">📈 2330 台積電</h2>
-      <button class="close-btn" onclick="closeModal()">✕</button>
-    </div>
-    <div class="modal-signal-info">
-      <div class="signal-box buy-box"><div class="count" id="modal-buy-count">0</div><div class="label">買進訊號</div></div>
-      <div class="signal-box sell-box"><div class="count" id="modal-sell-count">0</div><div class="label">賣出訊號</div></div>
-      <div class="signal-box pl-box" id="modal-pl-box" style="display:none;">
-        <div class="count" id="modal-pl-value" style="color:var(--blue);">0</div>
-        <div class="label">模擬損益</div>
-      </div>
-    </div>
-    <div id="modal-trades" style="margin-bottom:12px;display:none;">
-      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:8px;">
-        <span id="modal-trade-count" style="font-size:1rem;font-weight:600;">0 筆交易</span>
-        <span id="modal-total-pl" style="font-size:1rem;">總損益: --</span>
-        <span id="modal-return-rate" style="font-size:1rem;">報酬率: --</span>
-      </div>
-      <div style="max-height:120px;overflow-y:auto;">
-        <table style="font-size:0.8rem;">
-          <thead><tr><th>買進日</th><th>買價</th><th>賣出日</th><th>賣價</th><th>損益</th><th>報酬率</th></tr></thead>
-          <tbody id="modal-trades-body"></tbody>
-        </table>
-      </div>
-    </div>
-    <div id="modal-body">
-      <div class="modal-loading">載入圖表資料...</div>
-    </div>
+<!-- ═══ 贊助 Modal ═══ -->
+<div id="sponsor-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="sponsor-modal">
+    <button class="close-btn" onclick="document.getElementById('sponsor-modal').classList.remove('open')">&times;</button>
+    <img src="qr_sponsor.webp" alt="贊助QR Code">
+    <p>☕ 覺得這個儀表板好用嗎？<br>歡迎請我喝杯咖啡，支持我繼續開發與維護！</p>
   </div>
 </div>
 
 <script>
-const DATA_URL = './backtest_data.json';
-const CHARTS_DIR = './charts/';
-let currentData = null;
-let currentTicker = null;
+const SUMMARY_URL = './yearly_backtests/summary_v7.json';
+let yearlyChart1 = null;
+let yearlyChart2 = null;
+let equityChart = null;
+
 async function loadData() {
   try {
-    const resp = await fetch(DATA_URL);
+    const resp = await fetch(SUMMARY_URL);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
-    currentData = data;
-    render(data);
+    renderYearly(data);
   } catch(e) {
     document.getElementById('loading').innerHTML = `
       <div style="color:#ef4444;font-size:1.2rem;">⚠️ 無法載入回測資料</div>
@@ -376,236 +220,81 @@ async function loadData() {
   }
 }
 
-function render(data) {
+function renderYearly(data) {
   document.getElementById('loading').style.display = 'none';
   document.getElementById('content').style.display = 'block';
 
   document.getElementById('report-date').textContent =
-    `報告產生: ${data.generated_at || '--'} | 資料截至: ${data.data_until || '--'}`;
+    `報告產生: ${new Date().toISOString().slice(0, 10)} | 回測區間: 2004-2026`;
 
-  const stocks = (data.stocks || []).filter(s => (s.buy_count || 0) + (s.sell_count || 0) > 0);
-  const buys = data.buy_signals || [];
-  const sells = data.sell_signals || [];
-
-  document.getElementById('stat-period').textContent = data.period || '--';
-  document.getElementById('stat-buy').textContent = buys.length;
-  document.getElementById('stat-sell').textContent = sells.length;
-  document.getElementById('stat-tickers').textContent = stocks.length;
-
-  // Total P&L
-  const totalPL = data.total_pl || 0;
-  const plCard = document.getElementById('stat-pl-card');
-  document.getElementById('stat-total-pl').textContent = `${totalPL >= 0 ? '+' : ''}${totalPL.toLocaleString()}`;
-  document.getElementById('stat-total-pl').style.color = totalPL >= 0 ? 'var(--green)' : 'var(--red)';
-  plCard.style.borderLeft = `3px solid ${totalPL >= 0 ? 'var(--green)' : 'var(--red)'}`;
-
-  // Stock cards (only signal stocks)
-  document.getElementById('signal-stock-count').textContent = stocks.length;
-  const grid = document.getElementById('stock-grid');
-  if (stocks.length === 0) {
-    grid.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:40px;">目前沒有任何買進/賣出訊號</div>';
-  } else {
-    grid.innerHTML = stocks.map(s => {
-      const b = s.buy_count || 0;
-      const se = s.sell_count || 0;
-      const sg = s.surge_days || 0;
-      const tc = s.trade_count || 0;
-      const rr = s.return_rate || 0;
-      const pl = s.total_pl || 0;
-      const days = s.total_days || 0;
-      let tags = '';
-      if (b > 0) tags += `<span class="tag tag-buy">買 ${b}</span> `;
-      if (se > 0) tags += `<span class="tag tag-sell">賣 ${se}</span> `;
-      if (sg > 0) tags += `<span class="tag tag-surge">⚡${sg}</span> `;
-      let plHtml = '';
-      if (tc > 0) {
-        const plClass = rr >= 0 ? 'tag-buy' : 'tag-sell';
-        const sign = rr >= 0 ? '+' : '';
-        plHtml = `<div class="stat-row"><span class="tag ${plClass}">${tc}筆交易 ${sign}${rr}%</span></div>`;
-      }
-      return `<div class="stock-card" onclick="openModal('${s.ticker}')">
-        <div class="ticker">${s.ticker}</div>
-        <div class="meta"><span>📅 ${days}日</span></div>
-        <div class="stat-row">${tags}</div>
-        ${plHtml}
-      </div>`;
-    }).join('');
-  }
-
-  // Buy table (sorted by date desc)
-  document.getElementById('buy-count').textContent = buys.length;
-  const buyBody = document.getElementById('buy-table-body');
-  if (buys.length === 0) {
-    buyBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無買進訊號</td></tr>';
-  } else {
-    buyBody.innerHTML = buys.slice(0, 100).map(b => `
-      <tr><td>${b.date}</td><td><strong>${b.ticker || '--'}</strong></td>
-      <td class="signal-buy">${b.signal}</td><td>${(b.confidence * 100).toFixed(0)}%</td>
-      <td style="font-size:0.8rem;color:var(--text-dim);">${(b.met || []).slice(0, 2).join('; ')}</td></tr>
-    `).join('');
-  }
-
-  // Sell table (sorted by date desc)
-  document.getElementById('sell-count').textContent = sells.length;
-  const sellBody = document.getElementById('sell-table-body');
-  if (sells.length === 0) {
-    sellBody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-dim);padding:30px;">尚無賣出訊號</td></tr>';
-  } else {
-    sellBody.innerHTML = sells.slice(0, 100).map(s => `
-      <tr><td>${s.date}</td><td><strong>${s.ticker || '--'}</strong></td>
-      <td class="signal-sell">${s.signal}</td><td>${(s.confidence * 100).toFixed(0)}%</td>
-      <td style="font-size:0.8rem;color:var(--text-dim);">${(s.met || []).slice(0, 2).join('; ')}</td></tr>
-    `).join('');
-  }
-
-  // ═══ Trade Tab ═══
-  const tradedStocks = stocks.filter(s => (s.trade_count || 0) > 0)
-    .sort((a, b) => (b.return_rate || 0) - (a.return_rate || 0));
-  document.getElementById('trade-stock-count').textContent = tradedStocks.length;
-  const tradeList = document.getElementById('trade-stocks-list');
-  if (tradedStocks.length === 0) {
-    tradeList.innerHTML = '<div style="color:var(--text-dim);text-align:center;padding:40px;">目前沒有任何有交易記錄的標的</div>';
-  } else {
-    tradeList.innerHTML = tradedStocks.map(s => {
-      const rr = s.return_rate || 0;
-      const pl = s.total_pl || 0;
-      const tc = s.trade_count || 0;
-      const b = s.buy_count || 0;
-      const se = s.sell_count || 0;
-      const sg = s.surge_days || 0;
-      const plCls = rr >= 0 ? 'tag-buy' : 'tag-sell';
-      const sign = rr >= 0 ? '+' : '';
-      let tags = `<span class="tag ${plCls}">${tc}筆交易 ${sign}${rr}%</span> `;
-      if (b > 0) tags += `<span class="tag tag-buy">買 ${b}</span> `;
-      if (se > 0) tags += `<span class="tag tag-sell">賣 ${se}</span> `;
-      if (sg > 0) tags += `<span class="tag tag-surge">⚡${sg}</span> `;
-      return `<div class="trade-stock-card" onclick="openModal('${s.ticker}')">
-        <div class="trade-header">
-          <div class="trade-ticker">${s.ticker}</div>
-          <div class="trade-meta">${tags}</div>
-        </div>
-      </div>`;
-    }).join('');
-  }
-
-  // Charts
-  renderSignalChart(buys.length, sells.length, stocks.length);
-  renderStockChart(stocks);
-  switchTab('buy');
-}
-
-function renderSignalChart(buyCount, sellCount, stockCount) {
-  const ctx = document.getElementById('signalChart').getContext('2d');
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['買進訊號', '賣出訊號'],
-      datasets: [{ data: [buyCount, sellCount], backgroundColor: ['#22c55e', '#ef4444'], borderWidth: 0 }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } },
-    }
+  // ── Compute overall stats ──
+  let compounded = 1000000;
+  let peak = 1000000;
+  let mdd = 0;
+  data.forEach(s => {
+    compounded *= (1 + s.total_return_pct / 100);
+    if (compounded > peak) peak = compounded;
+    const dd = (peak - compounded) / peak * 100;
+    if (dd > mdd) mdd = dd;
   });
-}
-
-function renderStockChart(stocks) {
-  const ctx = document.getElementById('stockChart').getContext('2d');
-  const tickers = stocks.map(s => s.ticker);
-  const data = {
-    labels: tickers,
-    datasets: [
-      { label: '買進率 %', data: stocks.map(s => s.buy_rate || 0), backgroundColor: 'rgba(34,197,94,0.6)', borderRadius: 4 },
-      { label: '賣出率 %', data: stocks.map(s => s.sell_rate || 0), backgroundColor: 'rgba(239,68,68,0.6)', borderRadius: 4 },
-    ]
-  };
-  new Chart(ctx, {
-    type: 'bar',
-    data,
-    options: {
-      responsive: true,
-      plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } },
-      scales: {
-        x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
-        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, beginAtZero: true }
-      }
-    }
-  });
-}
-
-function switchTab(tab) {
-  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-  document.getElementById(`tab-${tab}`).style.display = 'block';
-  document.querySelector(`.tab-btn[data-tab="${tab}"]`).classList.add('active');
-}
-
-function switchOTab(tab) {
-  document.querySelectorAll('.otab-content').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('.tab-btn[data-otab]').forEach(el => el.classList.remove('active'));
-  document.getElementById(`otab-${tab}`).style.display = 'block';
-  document.querySelector(`.tab-btn[data-otab="${tab}"]`).classList.add('active');
-}
-
-// ═══ 年度回測 (P&L) ═══
-let yearlyChart1 = null;
-let yearlyChart2 = null;
-
-async function loadYearlyData() {
-  if (yearlyChart1) { yearlyChart1.destroy(); yearlyChart1 = null; }
-  if (yearlyChart2) { yearlyChart2.destroy(); yearlyChart2 = null; }
-  try {
-    const resp = await fetch('./yearly_backtests/summary_v6.json');
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const data = await resp.json();
-    renderYearly(data);
-  } catch(e) {
-    document.getElementById('yearly-table-body').innerHTML =
-      `<tr><td colspan="6" style="text-align:center;padding:30px;color:var(--red);">⚠️ 無法載入年度回測資料: ${e.message}</td></tr>`;
-  }
-}
-
-function renderYearly(data) {
-  document.getElementById('yearly-count').textContent = data.length;
   const totalPL = data.reduce((a, s) => a + s.total_pl, 0);
   const totalTrades = data.reduce((a, s) => a + s.trade_count, 0);
-  const winYears = data.filter(s => s.avg_pl_pct > 0).length;
-  const winRate = (winYears / data.length * 100).toFixed(0);
-  const avgReturn = (data.reduce((a, s) => a + s.avg_pl_pct, 0) / data.length).toFixed(2);
+  const winYears = data.filter(s => s.total_return_pct > 0).length;
+  const avgWinRate = data.reduce((a, s) => a + s.trade_win_rate, 0) / data.length;
+  const nYears = data.length;
+  const cagr = (((compounded / 1000000) ** (1.0 / nYears)) - 1) * 100;
+  const totalReturnPct = (compounded - 1000000) / 1000000 * 100;
+  const avgReturn = data.reduce((a, s) => a + s.total_return_pct, 0) / data.length;
 
-  document.getElementById('yearly-total-pl').textContent =
-    `${totalPL >= 0 ? '+' : ''}${totalPL.toFixed(0)}`;
-  document.getElementById('yearly-total-pl').style.color = totalPL >= 0 ? 'var(--green)' : 'var(--red)';
-  document.getElementById('yearly-win-rate').textContent = `${winRate}%`;
-  document.getElementById('yearly-win-rate').style.color = winRate >= 50 ? 'var(--green)' : 'var(--red)';
-  document.getElementById('yearly-avg-return').textContent = `${avgReturn}%`;
-  document.getElementById('yearly-avg-return').style.color = avgReturn >= 0 ? 'var(--green)' : 'var(--red)';
-  document.getElementById('yearly-total-trades').textContent = totalTrades.toLocaleString();
+  document.getElementById('sum-final-equity').textContent =
+    `NT$${Math.round(compounded).toLocaleString()}`;
+  document.getElementById('sum-final-equity').style.color = compounded >= 1000000 ? 'var(--green)' : 'var(--red)';
+  document.getElementById('sum-final-equity-card').style.borderLeft = `3px solid ${compounded >= 1000000 ? 'var(--green)' : 'var(--red)'}`;
 
+  document.getElementById('sum-cagr').textContent = `${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%`;
+  document.getElementById('sum-cagr').style.color = cagr >= 0 ? 'var(--green)' : 'var(--red)';
+  document.getElementById('sum-cagr-card').style.borderLeft = `3px solid ${cagr >= 0 ? 'var(--green)' : 'var(--red)'}`;
+
+  document.getElementById('sum-total-return').textContent = `${totalReturnPct >= 0 ? '+' : ''}${totalReturnPct.toFixed(2)}%`;
+  document.getElementById('sum-total-return').style.color = totalReturnPct >= 0 ? 'var(--green)' : 'var(--red)';
+  document.getElementById('sum-total-return-card').style.borderLeft = `3px solid ${totalReturnPct >= 0 ? 'var(--green)' : 'var(--red)'}`;
+
+  document.getElementById('sum-max-dd').textContent = `-${mdd.toFixed(2)}%`;
+  document.getElementById('sum-max-dd').style.color = 'var(--red)';
+  document.getElementById('sum-max-dd-card').style.borderLeft = '3px solid var(--red)';
+
+  document.getElementById('sum-win-years').textContent = `${winYears}/${nYears}`;
+  document.getElementById('sum-total-trades').textContent = totalTrades.toLocaleString();
+  document.getElementById('sum-avg-win').textContent = `${avgWinRate.toFixed(1)}%`;
+
+  // ── Yearly table ──
+  document.getElementById('yearly-count').textContent = data.length;
   const body = document.getElementById('yearly-table-body');
   body.innerHTML = data.map(s => {
-    const plClass = s.avg_pl_pct >= 0 ? 'signal-buy' : 'signal-sell';
+    const plClass = s.total_return_pct >= 0 ? 'signal-buy' : 'signal-sell';
+    const wrClass = s.trade_win_rate >= 50 ? 'signal-buy' : 'signal-sell';
     return `<tr onclick="openYearDetail(${s.year})" style="cursor:pointer;">
       <td><strong>${s.year}</strong></td>
       <td>${s.stocks_with_signals.toLocaleString()}</td>
       <td>${s.trade_count.toLocaleString()}</td>
-      <td class="${plClass}">${s.avg_pl_pct >= 0 ? '+' : ''}${s.avg_pl_pct}%</td>
-      <td class="${plClass}">${s.total_pl >= 0 ? '+' : ''}${s.total_pl.toFixed(0)}</td>
+      <td class="${plClass}">${s.total_return_pct >= 0 ? '+' : ''}${s.total_return_pct}%</td>
+      <td class="${plClass}">${s.final_equity >= 0 ? '' : ''}NT$${Math.round(s.final_equity).toLocaleString()}</td>
+      <td class="${wrClass}">${s.trade_win_rate}%</td>
       <td style="color:var(--text-dim)">${s.n_rows.toLocaleString()}</td>
     </tr>`;
   }).join('');
 
-  // Chart 1: Average return per year (bar)
+  // ── Charts ──
   const ctx1 = document.getElementById('yearlyReturnChart').getContext('2d');
   yearlyChart1 = new Chart(ctx1, {
     type: 'bar',
     data: {
       labels: data.map(s => s.year),
       datasets: [{
-        label: '年平均報酬率 %',
-        data: data.map(s => s.avg_pl_pct),
+        label: '年報酬率 %',
+        data: data.map(s => s.total_return_pct),
         backgroundColor: data.map(s =>
-          s.avg_pl_pct >= 0 ? 'rgba(34,197,94,0.7)' : 'rgba(239,68,68,0.7)'),
+          s.total_return_pct >= 0 ? 'rgba(34,197,94,0.7)' : 'rgba(239,68,68,0.7)'),
         borderRadius: 4,
       }]
     },
@@ -614,20 +303,19 @@ function renderYearly(data) {
       plugins: { legend: { display: false } },
       scales: {
         x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
-        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } }
+        y: { ticks: { color: '#94a3b8', callback: v => v + '%' }, grid: { color: '#1e293b' } }
       }
     }
   });
 
-  // Chart 2: Total P&L per year (line)
   const ctx2 = document.getElementById('yearlyPLChart').getContext('2d');
   yearlyChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
       labels: data.map(s => s.year),
       datasets: [{
-        label: '總損益',
-        data: data.map(s => s.total_pl),
+        label: '最終權益 (NT$)',
+        data: data.map(s => s.final_equity),
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.1)',
         fill: true, tension: 0.3, pointRadius: 3,
@@ -638,46 +326,87 @@ function renderYearly(data) {
       plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12 } } },
       scales: {
         x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
-        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } }
+        y: { ticks: { color: '#94a3b8', callback: v => 'NT$' + (v/10000).toFixed(0) + '萬' }, grid: { color: '#1e293b' } }
       }
     }
   });
 
-  // Insights
-  const bestYear = data.reduce((a, s) => s.avg_pl_pct > a.avg_pl_pct ? s : a, data[0]);
-  const worstYear = data.reduce((a, s) => s.avg_pl_pct < a.avg_pl_pct ? s : a, data[0]);
-  const positiveYears = data.filter(s => s.avg_pl_pct > 0).length;
+  // ── Insights ──
+  const bestYear = data.reduce((a, s) => s.total_return_pct > a.total_return_pct ? s : a, data[0]);
+  const worstYear = data.reduce((a, s) => s.total_return_pct < a.total_return_pct ? s : a, data[0]);
   document.getElementById('yearly-insights').innerHTML = `
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;">
-      <div><strong style="color:var(--text);">${totalPL >= 0 ? '+' : ''}${totalPL.toFixed(0)}</strong><br>累計總損益</div>
-      <div><strong style="color:var(--green);">${positiveYears}/${data.length}</strong><br>正報酬年數</div>
-      <div><strong style="color:var(--green);">${bestYear.year}年 (${bestYear.avg_pl_pct >= 0 ? '+' : ''}${bestYear.avg_pl_pct}%)</strong><br>最佳年份</div>
-      <div><strong style="color:var(--red);">${worstYear.year}年 (${worstYear.avg_pl_pct >= 0 ? '+' : ''}${worstYear.avg_pl_pct}%)</strong><br>最差年份</div>
-      <div><strong style="color:var(--yellow);">${avgReturn}%</strong><br>年均報酬率</div>
-      <div><strong style="color:var(--text);">${totalTrades.toLocaleString()}</strong><br>總交易次數</div>
+      <div><strong style="color:var(--text);">NT$${Math.round(compounded).toLocaleString()}</strong><br>複利最終權益</div>
+      <div><strong style="color:${cagr >= 0 ? 'var(--green)' : 'var(--red)'}">${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%</strong><br>年化報酬率</div>
+      <div><strong style="color:var(--red);">-${mdd.toFixed(2)}%</strong><br>最大回撤</div>
+      <div><strong style="color:var(--green);">${positiveYears}/${nYears}</strong><br>正報酬年數</div>
+      <div><strong style="color:var(--green);">${bestYear.year}年 (${bestYear.total_return_pct >= 0 ? '+' : ''}${bestYear.total_return_pct}%)</strong><br>最佳年份</div>
+      <div><strong style="color:var(--red);">${worstYear.year}年 (${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%)</strong><br>最差年份</div>
     </div>
     <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
-      策略在 <strong style="color:var(--green);">${bestYear.year}</strong> 年表現最佳（${bestYear.avg_pl_pct >= 0 ? '+' : ''}${bestYear.avg_pl_pct}%），
-      <strong style="color:var(--red);">${worstYear.year}</strong> 年最差（${worstYear.avg_pl_pct >= 0 ? '+' : ''}${worstYear.avg_pl_pct}%）。
-      共 ${positiveYears}/${data.length} 年實現正報酬，累計總損益 ${totalPL >= 0 ? '+' : ''}${totalPL.toFixed(0)}。
-      點擊年份可查看該年度逐筆交易明細。
+      初始資金 100 萬，每筆交易固定投入 <strong>NT$100,000</strong>（10%）。
+      策略在 <strong style="color:var(--green);">${bestYear.year}</strong> 年最佳（${bestYear.total_return_pct >= 0 ? '+' : ''}${bestYear.total_return_pct}%），
+      <strong style="color:var(--red);">${worstYear.year}</strong> 年最差（${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%）。
+      共 ${winYears}/${nYears} 年正報酬，年化報酬率 ${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%，
+      最大回撤 ${mdd.toFixed(2)}%。點擊年份可查看該年度逐筆交易明細及資金曲線。
     </div>`;
 }
 
-// ═══ Year detail (trade details) ═══
-let currentYearTrades = null;
-
+// ═══ Year detail ═══
 async function openYearDetail(year) {
-  document.getElementById('year-detail-title').textContent = `📋 ${year} 年交易明細`;
+  if (equityChart) { equityChart.destroy(); equityChart = null; }
+  document.getElementById('year-detail-title').textContent = `📋 ${year} 年交易明細 (100萬資金模擬)`;
   document.getElementById('year-detail-section').style.display = 'block';
   document.getElementById('year-detail-body').innerHTML =
     '<tr><td colspan="8" style="text-align:center;padding:20px;color:var(--text-dim);">載入中...</td></tr>';
 
   try {
-    const resp = await fetch(`./yearly_backtests/${year}_trades.json`);
+    const resp = await fetch(`./yearly_backtests/${year}_trades_v7.json`);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const trades = await resp.json();
-    currentYearTrades = trades;
+    const data = await resp.json();
+    const trades = data.trades || [];
+    const equityCurve = data.equity_curve || [];
+
+    // Equity curve chart
+    if (equityCurve.length > 1) {
+      const sorted = [...equityCurve].sort((a, b) => a.date.localeCompare(b.date));
+      const ctx = document.getElementById('equityCurveChart').getContext('2d');
+      const initialVal = sorted[0].equity;
+      equityChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: sorted.map(p => p.date.slice(5)),
+          datasets: [{
+            label: '資金 (NT$)',
+            data: sorted.map(p => p.equity),
+            borderColor: '#3b82f6',
+            backgroundColor: 'rgba(59,130,246,0.1)',
+            fill: true, tension: 0.2, pointRadius: 2,
+            pointBackgroundColor: sorted.map(p =>
+              p.type === 'buy' ? '#ef4444' : p.type === 'sell' ? '#22c55e' : '#3b82f6'),
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  const p = sorted[ctx.dataIndex];
+                  const chg = ((p.equity - initialVal) / initialVal * 100).toFixed(2);
+                  return `NT$${p.equity.toLocaleString()} (${chg >= 0 ? '+' : ''}${chg}%)`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: { ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 10 }, grid: { display: false } },
+            y: { ticks: { color: '#94a3b8', font: { size: 9 }, callback: v => 'NT$' + (v/10000).toFixed(0) + '萬' }, grid: { color: '#1e293b' } }
+          }
+        }
+      });
+    }
 
     if (trades.length === 0) {
       document.getElementById('year-detail-body').innerHTML =
@@ -686,7 +415,6 @@ async function openYearDetail(year) {
       return;
     }
 
-    // Build table
     document.getElementById('year-detail-body').innerHTML = trades.map(t => {
       const plColor = t.pl >= 0 ? 'var(--green)' : 'var(--red)';
       const plSign = t.pl >= 0 ? '+' : '';
@@ -697,18 +425,16 @@ async function openYearDetail(year) {
         <td>${t.buy_price}</td>
         <td>${t.sell_date}</td>
         <td>${t.sell_price}</td>
-        <td style="color:${plColor}">${plSign}${t.pl}</td>
+        <td style="color:${plColor}">${plSign}${t.pl.toLocaleString()}</td>
         <td style="color:${plColor}">${rpSign}${t.pl_pct}%</td>
         <td style="font-size:0.8rem;color:var(--text-dim)">${t.sell_reason || ''}</td>
       </tr>`;
     }).join('');
 
-    // Summary
     const totalPl = trades.reduce((a, t) => a + t.pl, 0);
     const winTrades = trades.filter(t => t.pl > 0).length;
     const winRt = (winTrades / trades.length * 100).toFixed(0);
     const avgPct = (trades.reduce((a, t) => a + t.pl_pct, 0) / trades.length).toFixed(2);
-
     document.getElementById('year-detail-summary').innerHTML = `
       <div><strong style="color:${totalPl >= 0 ? 'var(--green)' : 'var(--red)'}">${totalPl >= 0 ? '+' : ''}${totalPl.toFixed(0)}</strong><br>淨損益</div>
       <div><strong>${winRt}%</strong><br>交易勝率</div>
@@ -723,292 +449,11 @@ async function openYearDetail(year) {
 
 function closeYearDetail() {
   document.getElementById('year-detail-section').style.display = 'none';
-  currentYearTrades = null;
-}
-
-// ═══ MODAL ═══
-
-function openModal(ticker) {
-  currentTicker = ticker;
-  document.getElementById('modal-title').textContent = `📈 ${ticker}`;
-  document.getElementById('modal-buy-count').textContent = '...';
-  document.getElementById('modal-sell-count').textContent = '...';
-  document.getElementById('modal-body').innerHTML = '<div class="modal-loading">載入圖表資料...</div>';
-  document.getElementById('modal').classList.add('open');
-  loadChartData(ticker);
-}
-
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-  currentTicker = null;
-}
-
-// Close on overlay click
-document.getElementById('modal').addEventListener('click', function(e) {
-  if (e.target === this) closeModal();
-});
-
-// Close on Escape
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeModal();
-});
-
-async function loadChartData(ticker) {
-  try {
-    const resp = await fetch(`${CHARTS_DIR}${ticker}.json`);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const data = await resp.json();
-    renderChart(data);
-  } catch(e) {
-    document.getElementById('modal-body').innerHTML =
-      `<div class="modal-error">⚠️ 無法載入 ${ticker} 圖表資料<br><span style="font-size:0.85rem;">${e.message}</span></div>`;
-  }
-}
-
-let chartInstances = [];
-let mainChart = null;
-let indicatorSeries = [];
-
-function renderChart(data) {
-  const ticker = data.ticker;
-  const taiex = data.taiex || [];
-  const stock = data.stock || [];
-  const signals = data.signals || { buy: [], sell: [] };
-  const sim = data.simulation || { trades: [], total_pl: 0, return_rate: 0, trade_count: 0 };
-
-  // Update signal counts
-  document.getElementById('modal-buy-count').textContent = signals.buy.length;
-  document.getElementById('modal-sell-count').textContent = signals.sell.length;
-
-  // P&L display
-  const plBox = document.getElementById('modal-pl-box');
-  const tradesDiv = document.getElementById('modal-trades');
-  if (sim.trade_count > 0) {
-    plBox.style.display = 'block';
-    const plSign = sim.total_pl >= 0 ? '+' : '';
-    const rrSign = sim.return_rate >= 0 ? '+' : '';
-    document.getElementById('modal-pl-value').textContent = `${plSign}${sim.total_pl}`;
-    document.getElementById('modal-pl-value').style.color = sim.total_pl >= 0 ? 'var(--green)' : 'var(--red)';
-
-    tradesDiv.style.display = 'block';
-    document.getElementById('modal-trade-count').textContent = `${sim.trade_count} 筆交易`;
-    document.getElementById('modal-total-pl').textContent = `總損益: ${plSign}${sim.total_pl}`;
-    document.getElementById('modal-total-pl').style.color = sim.total_pl >= 0 ? 'var(--green)' : 'var(--red)';
-    document.getElementById('modal-return-rate').textContent = `報酬率: ${rrSign}${sim.return_rate}%`;
-    document.getElementById('modal-return-rate').style.color = sim.return_rate >= 0 ? 'var(--green)' : 'var(--red)';
-
-    document.getElementById('modal-trades-body').innerHTML = sim.trades.map(t => {
-      const tp = t.pl >= 0 ? '+' : '';
-      const tr = t.return_pct >= 0 ? '+' : '';
-      return `<tr>
-        <td>${t.buy_date}</td><td>${t.buy_price}</td>
-        <td>${t.sell_date}</td><td>${t.sell_price}</td>
-        <td style="color:${t.pl>=0?'var(--green)':'var(--red)'}">${tp}${t.pl}</td>
-        <td style="color:${t.return_pct>=0?'var(--green)':'var(--red)'}">${tr}${t.return_pct}%</td>
-      </tr>`;
-    }).join('');
-  } else {
-    plBox.style.display = 'none';
-    tradesDiv.style.display = 'none';
-  }
-
-  // Build single chart container + indicator tabs
-  document.getElementById('modal-body').innerHTML = `
-    <div class="modal-chart-container" id="chart-main" style="height:660px;"></div>
-    <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
-      <span style="color:var(--text-dim);font-size:0.8rem;">📉 切換指標:</span>
-      <div class="modal-indicator-tabs" style="margin:0;">
-        <button class="ind-btn active" onclick="showIndicator('ma60', this)">MA60</button>
-        <button class="ind-btn" onclick="showIndicator('wr', this)">W%R</button>
-        <button class="ind-btn" onclick="showIndicator('rsi', this)">RSI</button>
-        <button class="ind-btn" onclick="showIndicator('macd', this)">MACD</button>
-        <button class="ind-btn" onclick="showIndicator('adx', this)">ADX</button>
-      </div>
-    </div>
-  `;
-
-  // Clear previous charts
-  if (mainChart) {
-    chartInstances.forEach(c => { try { c.remove(); } catch(e) {} });
-  }
-  chartInstances = [];
-  indicatorSeries = [];
-  mainChart = null;
-
-  // ── Create single chart ──
-  const container = document.getElementById('chart-main');
-  mainChart = createChart(container, {
-    height: 660,
-    layout: { background: { color: '#0b1426' }, textColor: '#94a3b8' },
-    grid: { vertLines: { color: '#1e293b' }, horzLines: { color: '#1e293b' } },
-    timeScale: { borderColor: '#334155', timeVisible: false, secondsVisible: false },
-    crosshair: { mode: 0 },
-  });
-  chartInstances.push(mainChart);
-
-  // ═══ Pane 1: 加權指數 K線 (top 0-30%) ═══
-  mainChart.priceScale('taiex').applyOptions({
-    scaleMargins: { top: 0.0, bottom: 0.72 },
-  });
-  const taiexCandles = mainChart.addCandlestickSeries({
-    priceScaleId: 'taiex',
-    title: '加權指數',
-    upColor: '#ef4444', downColor: '#22c55e',
-    borderUpColor: '#ef4444', borderDownColor: '#22c55e',
-    wickUpColor: '#ef4444', wickDownColor: '#22c55e',
-  });
-  taiexCandles.setData(taiex.map(d => ({ time: d.d, open: d.o, high: d.h, low: d.l, close: d.c })));
-
-  // N2 line
-  const n2Data = [];
-  for (let i = 0; i < taiex.length; i++) {
-    if (i < 41) { n2Data.push({ time: taiex[i].d, value: null }); continue; }
-    let hh = -Infinity, ll = Infinity;
-    for (let j = i - 41; j <= i; j++) {
-      hh = Math.max(hh, taiex[j].h);
-      ll = Math.min(ll, taiex[j].l);
-    }
-    n2Data.push({ time: taiex[i].d, value: (hh + ll) / 2 });
-  }
-  const n2Line = mainChart.addLineSeries({
-    priceScaleId: 'taiex', color: '#22d3ee', lineWidth: 1,
-  });
-  n2Line.setData(n2Data.filter(d => d.value != null));
-
-  // ═══ Pane 2: 個股 K線 (middle 28%-60%) ═══
-  mainChart.priceScale('stock').applyOptions({
-    scaleMargins: { top: 0.28, bottom: 0.40 },
-  });
-  const stockCandles = mainChart.addCandlestickSeries({
-    priceScaleId: 'stock',
-    title: ticker,
-    upColor: '#ef4444', downColor: '#22c55e',
-    borderUpColor: '#ef4444', borderDownColor: '#22c55e',
-    wickUpColor: '#ef4444', wickDownColor: '#22c55e',
-  });
-  const candleData = stock.map(d => ({ time: d.d, open: d.o, high: d.h, low: d.l, close: d.c }));
-  stockCandles.setData(candleData);
-
-  // Volume histogram (thin strip at bottom of stock pane)
-  mainChart.priceScale('volume').applyOptions({
-    scaleMargins: { top: 0.56, bottom: 0.40 },
-  });
-  const volSeries = mainChart.addHistogramSeries({
-    priceScaleId: 'volume', color: '#334155', priceFormat: { type: 'volume' },
-  });
-  volSeries.setData(stock.map(d => ({
-    time: d.d, value: d.v,
-    color: d.c >= d.o ? 'rgba(239,68,68,0.3)' : 'rgba(34,197,94,0.3)'
-  })));
-
-  // Buy/Sell markers on stock
-  const markers = [];
-  const buySet = new Set(signals.buy);
-  const sellSet = new Set(signals.sell);
-  for (let i = 0; i < stock.length; i++) {
-    const d = stock[i].d;
-    if (buySet.has(d)) markers.push({ time: d, position: 'belowBar', color: '#ef4444', shape: 'arrowUp', text: 'B' });
-    if (sellSet.has(d)) markers.push({ time: d, position: 'aboveBar', color: '#22c55e', shape: 'arrowDown', text: 'S' });
-  }
-  stockCandles.setMarkers(markers);
-
-  // ═══ Pane 3: 指標 (bottom 60%-100%) ═══
-  mainChart.priceScale('indicator').applyOptions({
-    scaleMargins: { top: 0.60, bottom: 0.0 },
-  });
-
-  // Store state for indicator switching
-  window._indicatorState = { ticker, stock, signals, indicatorVisible: 'ma60' };
-  window._mainChart = mainChart;
-
-  // Draw initial indicator
-  renderIndicatorSeries('ma60');
-
-  mainChart.timeScale().fitContent();
-}
-
-function renderIndicatorSeries(indicator) {
-  // Remove old indicator series via chart API
-  if (window._mainChart) {
-    indicatorSeries.forEach(s => { try { window._mainChart.removeSeries(s); } catch(e) {} });
-  }
-  indicatorSeries = [];
-  if (!window._mainChart) return;
-
-  const chart = window._mainChart;
-  const stock = window._indicatorState.stock;
-  const psId = 'indicator';
-
-  if (indicator === 'ma60') {
-    const line = chart.addLineSeries({ priceScaleId: psId, color: '#f97316', lineWidth: 2 });
-    line.setData(stock.map(d => ({ time: d.d, value: d.ma60 })).filter(d => d.value != null));
-    indicatorSeries.push(line);
-  } else if (indicator === 'wr') {
-    const line = chart.addLineSeries({ priceScaleId: psId, color: '#a855f7', lineWidth: 2 });
-    line.setData(stock.map(d => ({ time: d.d, value: d.wr != null ? d.wr : null })).filter(d => d.value != null));
-    const ob = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(239,68,68,0.3)', lineWidth: 1 });
-    ob.setData(stock.map(d => ({ time: d.d, value: -20 })));
-    const os = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(34,197,94,0.3)', lineWidth: 1 });
-    os.setData(stock.map(d => ({ time: d.d, value: -80 })));
-    indicatorSeries.push(line, ob, os);
-  } else if (indicator === 'rsi') {
-    const line = chart.addLineSeries({ priceScaleId: psId, color: '#06b6d4', lineWidth: 2 });
-    line.setData(stock.map(d => ({ time: d.d, value: d.rsi != null ? d.rsi : null })).filter(d => d.value != null));
-    const ob = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(239,68,68,0.3)', lineWidth: 1 });
-    ob.setData(stock.map(d => ({ time: d.d, value: 70 })));
-    const os = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(34,197,94,0.3)', lineWidth: 1 });
-    os.setData(stock.map(d => ({ time: d.d, value: 30 })));
-    indicatorSeries.push(line, ob, os);
-  } else if (indicator === 'macd') {
-    const dif = chart.addLineSeries({ priceScaleId: psId, color: '#3b82f6', lineWidth: 2 });
-    dif.setData(stock.map(d => ({ time: d.d, value: d.dif })).filter(d => d.value != null));
-    const sig = chart.addLineSeries({ priceScaleId: psId, color: '#f97316', lineWidth: 1 });
-    sig.setData(stock.map(d => ({ time: d.d, value: d.macds })).filter(d => d.value != null));
-    const hist = chart.addHistogramSeries({ priceScaleId: psId, color: '#6366f1' });
-    hist.setData(stock.map(d => ({ time: d.d, value: d.macdh, color: d.macdh >= 0 ? 'rgba(99,102,241,0.4)' : 'rgba(239,68,68,0.4)' })));
-    indicatorSeries.push(dif, sig, hist);
-  } else if (indicator === 'adx') {
-    const line = chart.addLineSeries({ priceScaleId: psId, color: '#f97316', lineWidth: 2 });
-    line.setData(stock.map(d => ({ time: d.d, value: d.adx != null ? d.adx : null })).filter(d => d.value != null));
-    const threshold = chart.addLineSeries({ priceScaleId: psId, color: 'rgba(255,255,255,0.2)', lineWidth: 1 });
-    threshold.setData(stock.map(d => ({ time: d.d, value: 25 })));
-    indicatorSeries.push(line, threshold);
-  }
-}
-
-function showIndicator(name, btn) {
-  document.querySelectorAll('.ind-btn').forEach(el => el.classList.remove('active'));
-  btn.classList.add('active');
-  window._indicatorState.indicatorVisible = name;
-  renderIndicatorSeries(name);
-}
-
-// ── Lightweight Charts helper ──
-function createChart(container, options) {
-  // lightweight-charts might be under LC namespace
-  if (typeof LightweightCharts !== 'undefined') {
-    return LightweightCharts.createChart(container, options);
-  }
-  // Fallback for older API
-  return window.createChart(container, options);
-}
-
-// Polyfill for CDN
-if (typeof LightweightCharts === 'undefined' && typeof createChart === 'undefined') {
-  console.warn('Lightweight Charts not loaded, checking fallback...');
+  if (equityChart) { equityChart.destroy(); equityChart = null; }
 }
 
 loadData();
 </script>
-
-<!-- ═══ 贊助 Modal ═══ -->
-<div id="sponsor-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)this.classList.remove('open')">
-  <div class="sponsor-modal">
-    <button class="close-btn" onclick="document.getElementById('sponsor-modal').classList.remove('open')">&times;</button>
-    <img src="qr_sponsor.webp" alt="贊助QR Code">
-    <p>☕ 覺得這個儀表板好用嗎？<br>歡迎請我喝杯咖啡，支持我繼續開發與維護！</p>
-  </div>
-</div>
 
 </body>
 </html>
