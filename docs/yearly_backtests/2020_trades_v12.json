@@ -1,235 +1,587 @@
 {
   "trades": [
     {
-      "ticker": "9914",
-      "buy_date": "2020-06-08",
-      "buy_price": 172.97,
-      "sell_date": "2020-07-07",
-      "sell_price": 209.21,
-      "shares": 144,
-      "pl": 5218.22,
-      "pl_pct": 20.95,
-      "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "4956",
-      "buy_date": "2020-06-08",
-      "buy_price": 19.85,
-      "sell_date": "2020-07-20",
-      "sell_price": 18.8,
-      "shares": 2518,
-      "pl": -2643.9,
-      "pl_pct": -5.29,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
-      "ticker": "6257",
-      "buy_date": "2020-06-09",
-      "buy_price": 35.41,
-      "sell_date": "2020-07-23",
-      "sell_price": 44.06,
-      "shares": 705,
-      "pl": 6094.53,
-      "pl_pct": 24.41,
-      "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "5519",
-      "buy_date": "2020-06-10",
-      "buy_price": 14.09,
-      "sell_date": "2020-07-24",
-      "sell_price": 14.09,
-      "shares": 3547,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "2614",
-      "buy_date": "2020-06-09",
-      "buy_price": 15.12,
-      "sell_date": "2020-07-27",
-      "sell_price": 15.2,
-      "shares": 3307,
-      "pl": 276.87,
-      "pl_pct": 0.55,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "9914",
-      "buy_date": "2020-06-08",
-      "buy_price": 172.97,
-      "sell_date": "2020-08-12",
-      "sell_price": 244.0,
-      "shares": 145,
-      "pl": 10298.73,
-      "pl_pct": 41.06,
+      "ticker": "5906",
+      "buy_date": "2020-01-06",
+      "buy_price": 22.45,
+      "sell_date": "2020-01-10",
+      "sell_price": 20.75,
+      "shares": 2227,
+      "pl": -3785.9,
+      "pl_pct": -7.57,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
-      "ticker": "1514",
-      "buy_date": "2020-07-01",
-      "buy_price": 21.19,
-      "sell_date": "2020-08-17",
-      "sell_price": 25.78,
-      "shares": 1179,
-      "pl": 5408.81,
-      "pl_pct": 21.65,
-      "sell_reason": "\u505c\u522950%"
+      "ticker": "8261",
+      "buy_date": "2020-01-02",
+      "buy_price": 30.1,
+      "sell_date": "2020-01-30",
+      "sell_price": 25.45,
+      "shares": 1661,
+      "pl": -7723.65,
+      "pl_pct": -15.45,
+      "sell_reason": "\u505c\u640d(-15%)"
     },
     {
-      "ticker": "6257",
-      "buy_date": "2020-06-09",
-      "buy_price": 35.41,
-      "sell_date": "2020-08-20",
-      "sell_price": 38.8,
-      "shares": 706,
-      "pl": 2392.64,
-      "pl_pct": 9.57,
+      "ticker": "3588",
+      "buy_date": "2020-01-03",
+      "buy_price": 30.48,
+      "sell_date": "2020-01-30",
+      "sell_price": 27.02,
+      "shares": 1640,
+      "pl": -5669.63,
+      "pl_pct": -11.34,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+    },
+    {
+      "ticker": "00631L",
+      "buy_date": "2020-01-06",
+      "buy_price": 53.15,
+      "sell_date": "2020-01-30",
+      "sell_price": 48.25,
+      "shares": 940,
+      "pl": -4606.0,
+      "pl_pct": -9.22,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+    },
+    {
+      "ticker": "00675L",
+      "buy_date": "2020-01-10",
+      "buy_price": 20.67,
+      "sell_date": "2020-01-30",
+      "sell_price": 18.6,
+      "shares": 2418,
+      "pl": -5005.26,
+      "pl_pct": -10.01,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+    },
+    {
+      "ticker": "2006",
+      "buy_date": "2020-02-12",
+      "buy_price": 20.88,
+      "sell_date": "2020-02-17",
+      "sell_price": 20.74,
+      "shares": 2394,
+      "pl": -330.29,
+      "pl_pct": -0.66,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2337",
+      "buy_date": "2020-01-08",
+      "buy_price": 37.08,
+      "sell_date": "2020-02-19",
+      "sell_price": 34.05,
+      "shares": 1348,
+      "pl": -4089.66,
+      "pl_pct": -8.18,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
     },
     {
-      "ticker": "1514",
-      "buy_date": "2020-07-01",
-      "buy_price": 21.19,
-      "sell_date": "2020-09-14",
-      "sell_price": 27.4,
-      "shares": 1180,
-      "pl": 7329.93,
-      "pl_pct": 29.32,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "2542",
-      "buy_date": "2020-06-10",
-      "buy_price": 41.18,
-      "sell_date": "2020-09-24",
-      "sell_price": 41.45,
-      "shares": 1214,
-      "pl": 327.11,
-      "pl_pct": 0.65,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1615",
-      "buy_date": "2020-06-24",
-      "buy_price": 20.43,
-      "sell_date": "2020-09-24",
-      "sell_price": 21.6,
-      "shares": 2447,
-      "pl": 2864.21,
-      "pl_pct": 5.73,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "9933",
-      "buy_date": "2020-06-24",
-      "buy_price": 36.74,
-      "sell_date": "2020-09-24",
-      "sell_price": 37.7,
-      "shares": 1361,
-      "pl": 1309.79,
-      "pl_pct": 2.62,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1725",
-      "buy_date": "2020-07-01",
-      "buy_price": 13.57,
-      "sell_date": "2020-09-24",
-      "sell_price": 13.6,
-      "shares": 3683,
-      "pl": 96.76,
-      "pl_pct": 0.19,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2206",
-      "buy_date": "2020-07-20",
-      "buy_price": 20.85,
-      "sell_date": "2020-09-24",
-      "sell_price": 22.35,
-      "shares": 2398,
-      "pl": 3597.0,
-      "pl_pct": 7.19,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2884",
-      "buy_date": "2020-07-24",
-      "buy_price": 26.95,
-      "sell_date": "2020-09-24",
-      "sell_price": 24.9,
-      "shares": 1855,
-      "pl": -3802.75,
-      "pl_pct": -7.61,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2115",
-      "buy_date": "2020-07-27",
-      "buy_price": 39.36,
-      "sell_date": "2020-09-24",
-      "sell_price": 40.65,
-      "shares": 1270,
-      "pl": 1644.05,
-      "pl_pct": 3.29,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "6201",
-      "buy_date": "2020-08-12",
-      "buy_price": 33.35,
-      "sell_date": "2020-09-24",
-      "sell_price": 34.0,
-      "shares": 1499,
-      "pl": 974.35,
-      "pl_pct": 1.95,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2904",
-      "buy_date": "2020-08-20",
-      "buy_price": 24.15,
-      "sell_date": "2020-09-24",
-      "sell_price": 24.05,
-      "shares": 2070,
-      "pl": -207.0,
-      "pl_pct": -0.41,
+      "ticker": "0053",
+      "buy_date": "2020-01-02",
+      "buy_price": 42.07,
+      "sell_date": "2020-02-24",
+      "sell_price": 39.77,
+      "shares": 1188,
+      "pl": -2727.07,
+      "pl_pct": -5.46,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
       "ticker": "2008",
-      "buy_date": "2020-09-14",
-      "buy_price": 13.35,
-      "sell_date": "2020-09-24",
-      "sell_price": 12.5,
-      "shares": 3745,
-      "pl": -3183.25,
-      "pl_pct": -6.37,
+      "buy_date": "2020-01-03",
+      "buy_price": 12.4,
+      "sell_date": "2020-02-24",
+      "sell_price": 12.35,
+      "shares": 4032,
+      "pl": -201.6,
+      "pl_pct": -0.4,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1539",
-      "buy_date": "2020-10-06",
-      "buy_price": 22.5,
-      "sell_date": "2020-10-16",
-      "sell_price": 20.45,
-      "shares": 2222,
-      "pl": -4555.1,
-      "pl_pct": -9.11,
+      "ticker": "6477",
+      "buy_date": "2020-01-07",
+      "buy_price": 22.89,
+      "sell_date": "2020-02-24",
+      "sell_price": 22.11,
+      "shares": 2184,
+      "pl": -1712.77,
+      "pl_pct": -3.43,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "00830",
+      "buy_date": "2020-01-07",
+      "buy_price": 17.58,
+      "sell_date": "2020-02-24",
+      "sell_price": 18.07,
+      "shares": 2844,
+      "pl": 1393.56,
+      "pl_pct": 2.79,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2332",
+      "buy_date": "2020-01-08",
+      "buy_price": 13.3,
+      "sell_date": "2020-02-24",
+      "sell_price": 13.7,
+      "shares": 3759,
+      "pl": 1503.6,
+      "pl_pct": 3.01,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2015",
+      "buy_date": "2020-02-12",
+      "buy_price": 50.18,
+      "sell_date": "2020-02-24",
+      "sell_price": 50.75,
+      "shares": 996,
+      "pl": 561.61,
+      "pl_pct": 1.12,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "01004T",
+      "buy_date": "2020-02-13",
+      "buy_price": 13.6,
+      "sell_date": "2020-02-24",
+      "sell_price": 13.63,
+      "shares": 3676,
+      "pl": 107.44,
+      "pl_pct": 0.21,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "9931",
+      "buy_date": "2020-02-13",
+      "buy_price": 32.66,
+      "sell_date": "2020-02-24",
+      "sell_price": 31.96,
+      "shares": 1531,
+      "pl": -1057.73,
+      "pl_pct": -2.12,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3588",
+      "buy_date": "2020-06-05",
+      "buy_price": 35.11,
+      "sell_date": "2020-06-12",
+      "sell_price": 32.04,
+      "shares": 1424,
+      "pl": -4368.21,
+      "pl_pct": -8.74,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
-      "ticker": "912398",
-      "buy_date": "2020-10-14",
-      "buy_price": 10.8,
-      "sell_date": "2020-10-16",
-      "sell_price": 9.15,
-      "shares": 4629,
-      "pl": -7637.85,
-      "pl_pct": -15.28,
-      "sell_reason": "\u505c\u640d(-15%)"
+      "ticker": "1713",
+      "buy_date": "2020-06-05",
+      "buy_price": 17.51,
+      "sell_date": "2020-06-12",
+      "sell_price": 17.32,
+      "shares": 2854,
+      "pl": -555.42,
+      "pl_pct": -1.11,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "5906",
+      "buy_date": "2020-06-04",
+      "buy_price": 17.0,
+      "sell_date": "2020-06-18",
+      "sell_price": 20.5,
+      "shares": 1470,
+      "pl": 5145.0,
+      "pl_pct": 20.59,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2413",
+      "buy_date": "2020-06-10",
+      "buy_price": 12.8,
+      "sell_date": "2020-07-01",
+      "sell_price": 15.8,
+      "shares": 1953,
+      "pl": 5859.0,
+      "pl_pct": 23.44,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2436",
+      "buy_date": "2020-06-09",
+      "buy_price": 26.57,
+      "sell_date": "2020-07-09",
+      "sell_price": 32.8,
+      "shares": 940,
+      "pl": 5855.43,
+      "pl_pct": 23.44,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "6224",
+      "buy_date": "2020-06-09",
+      "buy_price": 65.0,
+      "sell_date": "2020-07-10",
+      "sell_price": 78.6,
+      "shares": 384,
+      "pl": 5222.4,
+      "pl_pct": 20.92,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2436",
+      "buy_date": "2020-06-09",
+      "buy_price": 26.57,
+      "sell_date": "2020-07-17",
+      "sell_price": 28.95,
+      "shares": 941,
+      "pl": 2238.81,
+      "pl_pct": 8.95,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+    },
+    {
+      "ticker": "3311",
+      "buy_date": "2020-06-10",
+      "buy_price": 30.3,
+      "sell_date": "2020-07-20",
+      "sell_price": 27.2,
+      "shares": 1650,
+      "pl": -5115.0,
+      "pl_pct": -10.23,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
+      "ticker": "2413",
+      "buy_date": "2020-06-10",
+      "buy_price": 12.8,
+      "sell_date": "2020-07-24",
+      "sell_price": 15.7,
+      "shares": 1953,
+      "pl": 5663.7,
+      "pl_pct": 22.66,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
+      "ticker": "1309",
+      "buy_date": "2020-07-17",
+      "buy_price": 15.8,
+      "sell_date": "2020-07-28",
+      "sell_price": 14.1,
+      "shares": 3164,
+      "pl": -5378.79,
+      "pl_pct": -10.76,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
+    },
+    {
+      "ticker": "3023",
+      "buy_date": "2020-06-08",
+      "buy_price": 145.24,
+      "sell_date": "2020-08-04",
+      "sell_price": 179.5,
+      "shares": 172,
+      "pl": 5891.96,
+      "pl_pct": 23.58,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2008",
+      "buy_date": "2020-06-04",
+      "buy_price": 12.4,
+      "sell_date": "2020-08-07",
+      "sell_price": 12.3,
+      "shares": 4032,
+      "pl": -403.2,
+      "pl_pct": -0.81,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "6491",
+      "buy_date": "2020-07-28",
+      "buy_price": 186.5,
+      "sell_date": "2020-08-12",
+      "sell_price": 169.0,
+      "shares": 268,
+      "pl": -4690.0,
+      "pl_pct": -9.38,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "3545",
+      "buy_date": "2020-06-15",
+      "buy_price": 32.3,
+      "sell_date": "2020-08-20",
+      "sell_price": 32.95,
+      "shares": 1547,
+      "pl": 1005.55,
+      "pl_pct": 2.01,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
+    },
+    {
+      "ticker": "2436",
+      "buy_date": "2020-07-24",
+      "buy_price": 29.85,
+      "sell_date": "2020-08-20",
+      "sell_price": 27.8,
+      "shares": 1675,
+      "pl": -3433.75,
+      "pl_pct": -6.87,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+    },
+    {
+      "ticker": "6477",
+      "buy_date": "2020-08-07",
+      "buy_price": 37.25,
+      "sell_date": "2020-08-20",
+      "sell_price": 35.45,
+      "shares": 1342,
+      "pl": -2415.6,
+      "pl_pct": -4.83,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "5906",
+      "buy_date": "2020-06-04",
+      "buy_price": 17.0,
+      "sell_date": "2020-08-21",
+      "sell_price": 17.0,
+      "shares": 1471,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-25%)"
+    },
+    {
+      "ticker": "8046",
+      "buy_date": "2020-08-20",
+      "buy_price": 128.0,
+      "sell_date": "2020-08-28",
+      "sell_price": 123.0,
+      "shares": 390,
+      "pl": -1950.0,
+      "pl_pct": -3.91,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+    },
+    {
+      "ticker": "2331",
+      "buy_date": "2020-06-08",
+      "buy_price": 11.6,
+      "sell_date": "2020-08-31",
+      "sell_price": 14.0,
+      "shares": 2155,
+      "pl": 5172.0,
+      "pl_pct": 20.69,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2006",
+      "buy_date": "2020-07-20",
+      "buy_price": 22.95,
+      "sell_date": "2020-09-02",
+      "sell_price": 27.7,
+      "shares": 1089,
+      "pl": 5172.75,
+      "pl_pct": 20.7,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1612",
+      "buy_date": "2020-08-21",
+      "buy_price": 12.0,
+      "sell_date": "2020-09-07",
+      "sell_price": 15.1,
+      "shares": 2083,
+      "pl": 6457.3,
+      "pl_pct": 25.83,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2331",
+      "buy_date": "2020-06-08",
+      "buy_price": 11.6,
+      "sell_date": "2020-09-11",
+      "sell_price": 12.45,
+      "shares": 2155,
+      "pl": 1831.75,
+      "pl_pct": 7.33,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "6224",
+      "buy_date": "2020-06-09",
+      "buy_price": 65.0,
+      "sell_date": "2020-09-11",
+      "sell_price": 73.3,
+      "shares": 385,
+      "pl": 3195.5,
+      "pl_pct": 12.77,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "0057",
+      "buy_date": "2020-06-15",
+      "buy_price": 58.2,
+      "sell_date": "2020-09-16",
+      "sell_price": 70.0,
+      "shares": 429,
+      "pl": 5062.2,
+      "pl_pct": 20.27,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1108",
+      "buy_date": "2020-08-20",
+      "buy_price": 10.2,
+      "sell_date": "2020-09-22",
+      "sell_price": 12.45,
+      "shares": 2450,
+      "pl": 5512.5,
+      "pl_pct": 22.06,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1435",
+      "buy_date": "2020-09-11",
+      "buy_price": 10.5,
+      "sell_date": "2020-09-22",
+      "sell_price": 13.4,
+      "shares": 2380,
+      "pl": 6902.0,
+      "pl_pct": 27.62,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3023",
+      "buy_date": "2020-06-08",
+      "buy_price": 145.24,
+      "sell_date": "2020-09-24",
+      "sell_price": 179.0,
+      "shares": 172,
+      "pl": 5805.96,
+      "pl_pct": 23.24,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "0057",
+      "buy_date": "2020-06-15",
+      "buy_price": 58.2,
+      "sell_date": "2020-09-24",
+      "sell_price": 66.05,
+      "shares": 430,
+      "pl": 3375.5,
+      "pl_pct": 13.49,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2006",
+      "buy_date": "2020-07-20",
+      "buy_price": 22.95,
+      "sell_date": "2020-09-24",
+      "sell_price": 28.75,
+      "shares": 1089,
+      "pl": 6316.2,
+      "pl_pct": 25.27,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "00850",
+      "buy_date": "2020-08-12",
+      "buy_price": 25.05,
+      "sell_date": "2020-09-24",
+      "sell_price": 24.16,
+      "shares": 1995,
+      "pl": -1781.44,
+      "pl_pct": -3.56,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1108",
+      "buy_date": "2020-08-20",
+      "buy_price": 10.2,
+      "sell_date": "2020-09-24",
+      "sell_price": 11.0,
+      "shares": 2451,
+      "pl": 1960.8,
+      "pl_pct": 7.84,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2008",
+      "buy_date": "2020-08-21",
+      "buy_price": 12.4,
+      "sell_date": "2020-09-24",
+      "sell_price": 12.5,
+      "shares": 4032,
+      "pl": 403.2,
+      "pl_pct": 0.81,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1612",
+      "buy_date": "2020-08-21",
+      "buy_price": 12.0,
+      "sell_date": "2020-09-24",
+      "sell_price": 13.4,
+      "shares": 2083,
+      "pl": 2916.2,
+      "pl_pct": 11.67,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2379",
+      "buy_date": "2020-08-28",
+      "buy_price": 376.79,
+      "sell_date": "2020-09-24",
+      "sell_price": 365.5,
+      "shares": 132,
+      "pl": -1490.15,
+      "pl_pct": -3.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1435",
+      "buy_date": "2020-09-11",
+      "buy_price": 10.5,
+      "sell_date": "2020-09-24",
+      "sell_price": 13.1,
+      "shares": 2381,
+      "pl": 6190.6,
+      "pl_pct": 24.76,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "0052",
+      "buy_date": "2020-09-11",
+      "buy_price": 89.45,
+      "sell_date": "2020-09-24",
+      "sell_price": 88.15,
+      "shares": 558,
+      "pl": -725.4,
+      "pl_pct": -1.45,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2540",
+      "buy_date": "2020-10-12",
+      "buy_price": 65.3,
+      "sell_date": "2020-10-15",
+      "sell_price": 56.4,
+      "shares": 765,
+      "pl": -6808.5,
+      "pl_pct": -13.63,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
+    },
+    {
+      "ticker": "2302",
+      "buy_date": "2020-10-06",
+      "buy_price": 15.2,
+      "sell_date": "2020-10-20",
+      "sell_price": 16.0,
+      "shares": 3289,
+      "pl": 2631.2,
+      "pl_pct": 5.26,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
       "ticker": "2006",
@@ -243,36 +595,47 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2358",
+      "ticker": "1309",
       "buy_date": "2020-10-07",
-      "buy_price": 16.0,
+      "buy_price": 27.65,
       "sell_date": "2020-10-20",
-      "sell_price": 14.7,
-      "shares": 3125,
-      "pl": -4062.5,
-      "pl_pct": -8.13,
+      "sell_price": 30.45,
+      "shares": 1808,
+      "pl": 5062.4,
+      "pl_pct": 10.13,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2038",
+      "ticker": "2008",
       "buy_date": "2020-10-07",
-      "buy_price": 10.0,
+      "buy_price": 13.35,
       "sell_date": "2020-10-20",
-      "sell_price": 9.53,
-      "shares": 5000,
-      "pl": -2350.0,
-      "pl_pct": -4.7,
+      "sell_price": 13.45,
+      "shares": 3745,
+      "pl": 374.5,
+      "pl_pct": 0.75,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1762",
+      "ticker": "01004T",
       "buy_date": "2020-10-08",
-      "buy_price": 68.2,
+      "buy_price": 16.2,
       "sell_date": "2020-10-20",
-      "sell_price": 61.6,
-      "shares": 733,
-      "pl": -4837.8,
-      "pl_pct": -9.68,
+      "sell_price": 16.49,
+      "shares": 3086,
+      "pl": 894.94,
+      "pl_pct": 1.79,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2028",
+      "buy_date": "2020-10-08",
+      "buy_price": 10.05,
+      "sell_date": "2020-10-20",
+      "sell_price": 10.05,
+      "shares": 4975,
+      "pl": 0.0,
+      "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -287,102 +650,91 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1417",
-      "buy_date": "2020-10-12",
-      "buy_price": 11.0,
-      "sell_date": "2020-10-20",
-      "sell_price": 11.05,
-      "shares": 4545,
-      "pl": 227.25,
-      "pl_pct": 0.45,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2528",
+      "ticker": "1304",
       "buy_date": "2020-10-13",
-      "buy_price": 23.85,
+      "buy_price": 16.25,
       "sell_date": "2020-10-20",
-      "sell_price": 24.0,
-      "shares": 2096,
-      "pl": 314.4,
-      "pl_pct": 0.63,
+      "sell_price": 16.6,
+      "shares": 3076,
+      "pl": 1076.6,
+      "pl_pct": 2.15,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "6230",
+      "ticker": "2460",
       "buy_date": "2020-10-13",
-      "buy_price": 259.0,
+      "buy_price": 13.1,
       "sell_date": "2020-10-20",
-      "sell_price": 247.5,
-      "shares": 193,
-      "pl": -2219.5,
-      "pl_pct": -4.44,
+      "sell_price": 13.45,
+      "shares": 3816,
+      "pl": 1335.6,
+      "pl_pct": 2.67,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1612",
-      "buy_date": "2020-10-16",
-      "buy_price": 14.65,
+      "ticker": "5906",
+      "buy_date": "2020-10-15",
+      "buy_price": 34.2,
       "sell_date": "2020-10-20",
-      "sell_price": 14.6,
-      "shares": 3412,
-      "pl": -170.6,
-      "pl_pct": -0.34,
+      "sell_price": 34.85,
+      "shares": 1461,
+      "pl": 949.65,
+      "pl_pct": 1.9,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "0053",
-      "buy_date": "2020-10-16",
-      "buy_price": 49.75,
-      "sell_date": "2020-10-20",
-      "sell_price": 50.25,
-      "shares": 1004,
-      "pl": 494.57,
-      "pl_pct": 0.99,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "0050",
+      "ticker": "2302",
       "buy_date": "2020-10-21",
-      "buy_price": 105.95,
-      "sell_date": "2020-10-30",
-      "sell_price": 103.0,
-      "shares": 471,
-      "pl": -1389.45,
-      "pl_pct": -2.78,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+      "buy_price": 15.85,
+      "sell_date": "2020-10-27",
+      "sell_price": 20.15,
+      "shares": 1577,
+      "pl": 6781.1,
+      "pl_pct": 27.13,
+      "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "2006",
+      "ticker": "2302",
       "buy_date": "2020-10-21",
-      "buy_price": 29.15,
+      "buy_price": 15.85,
+      "sell_date": "2020-10-29",
+      "sell_price": 17.95,
+      "shares": 1577,
+      "pl": 3311.7,
+      "pl_pct": 13.25,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "5906",
+      "buy_date": "2020-10-21",
+      "buy_price": 34.7,
       "sell_date": "2020-10-30",
-      "sell_price": 30.2,
-      "shares": 1715,
-      "pl": 1800.75,
-      "pl_pct": 3.6,
+      "sell_price": 34.15,
+      "shares": 1440,
+      "pl": -792.0,
+      "pl_pct": -1.59,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1532",
+      "ticker": "2330",
       "buy_date": "2020-10-22",
-      "buy_price": 33.1,
+      "buy_price": 451.45,
       "sell_date": "2020-10-30",
-      "sell_price": 33.25,
-      "shares": 1510,
-      "pl": 226.5,
-      "pl_pct": 0.45,
+      "sell_price": 428.62,
+      "shares": 110,
+      "pl": -2510.23,
+      "pl_pct": -5.05,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "3027",
+      "ticker": "0052",
       "buy_date": "2020-10-22",
-      "buy_price": 23.15,
+      "buy_price": 94.5,
       "sell_date": "2020-10-30",
-      "sell_price": 21.4,
-      "shares": 2159,
-      "pl": -3778.25,
-      "pl_pct": -7.56,
+      "sell_price": 90.9,
+      "shares": 529,
+      "pl": -1904.4,
+      "pl_pct": -3.81,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -397,81 +749,103 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "5906",
+      "ticker": "2481",
       "buy_date": "2020-10-23",
-      "buy_price": 34.5,
+      "buy_price": 38.15,
       "sell_date": "2020-10-30",
-      "sell_price": 34.15,
-      "shares": 1449,
-      "pl": -507.15,
-      "pl_pct": -1.01,
+      "sell_price": 36.05,
+      "shares": 1310,
+      "pl": -2751.0,
+      "pl_pct": -5.5,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1104",
+      "ticker": "2375",
       "buy_date": "2020-10-26",
-      "buy_price": 20.3,
+      "buy_price": 46.5,
       "sell_date": "2020-10-30",
-      "sell_price": 19.95,
-      "shares": 2463,
-      "pl": -862.05,
-      "pl_pct": -1.72,
+      "sell_price": 44.15,
+      "shares": 1075,
+      "pl": -2526.25,
+      "pl_pct": -5.05,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2373",
+      "ticker": "2014",
       "buy_date": "2020-10-26",
-      "buy_price": 86.0,
+      "buy_price": 10.0,
       "sell_date": "2020-10-30",
-      "sell_price": 84.1,
-      "shares": 581,
-      "pl": -1103.9,
-      "pl_pct": -2.21,
+      "sell_price": 9.85,
+      "shares": 5000,
+      "pl": -750.0,
+      "pl_pct": -1.5,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2809",
+      "ticker": "3023",
       "buy_date": "2020-10-27",
-      "buy_price": 38.7,
+      "buy_price": 191.0,
       "sell_date": "2020-10-30",
-      "sell_price": 38.75,
-      "shares": 1291,
-      "pl": 64.55,
-      "pl_pct": 0.13,
+      "sell_price": 192.5,
+      "shares": 261,
+      "pl": 391.5,
+      "pl_pct": 0.79,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "9958",
+      "ticker": "9918",
       "buy_date": "2020-10-27",
-      "buy_price": 132.0,
+      "buy_price": 35.8,
       "sell_date": "2020-10-30",
-      "sell_price": 130.0,
-      "shares": 378,
-      "pl": -756.0,
-      "pl_pct": -1.52,
+      "sell_price": 35.45,
+      "shares": 1396,
+      "pl": -488.6,
+      "pl_pct": -0.98,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2406",
+      "ticker": "2028",
       "buy_date": "2020-11-05",
-      "buy_price": 25.4,
-      "sell_date": "2020-11-12",
-      "sell_price": 22.5,
-      "shares": 1968,
-      "pl": -5707.2,
-      "pl_pct": -11.42,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "buy_price": 10.25,
+      "sell_date": "2020-11-13",
+      "sell_price": 12.7,
+      "shares": 2439,
+      "pl": 5975.55,
+      "pl_pct": 23.9,
+      "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "1446",
-      "buy_date": "2020-11-12",
-      "buy_price": 34.45,
-      "sell_date": "2020-11-20",
-      "sell_price": 30.3,
-      "shares": 1451,
-      "pl": -6021.65,
-      "pl_pct": -12.05,
+      "ticker": "2303",
+      "buy_date": "2020-11-04",
+      "buy_price": 31.65,
+      "sell_date": "2020-11-24",
+      "sell_price": 38.15,
+      "shares": 789,
+      "pl": 5128.5,
+      "pl_pct": 20.54,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2028",
+      "buy_date": "2020-11-05",
+      "buy_price": 10.25,
+      "sell_date": "2020-11-24",
+      "sell_price": 15.8,
+      "shares": 2439,
+      "pl": 13536.45,
+      "pl_pct": 54.15,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+    },
+    {
+      "ticker": "2331",
+      "buy_date": "2020-11-09",
+      "buy_price": 17.1,
+      "sell_date": "2020-11-24",
+      "sell_price": 17.35,
+      "shares": 2923,
+      "pl": 730.75,
+      "pl_pct": 1.46,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "5906",
@@ -485,59 +859,92 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "6141",
-      "buy_date": "2020-11-04",
-      "buy_price": 26.9,
-      "sell_date": "2020-11-25",
-      "sell_price": 28.45,
-      "shares": 1858,
-      "pl": 2879.9,
-      "pl_pct": 5.76,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "2636",
-      "buy_date": "2020-11-05",
-      "buy_price": 38.6,
-      "sell_date": "2020-12-02",
-      "sell_price": 35.6,
-      "shares": 1295,
-      "pl": -3885.0,
-      "pl_pct": -7.77,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "2349",
+      "ticker": "1612",
       "buy_date": "2020-11-09",
-      "buy_price": 10.6,
-      "sell_date": "2020-12-11",
-      "sell_price": 10.9,
-      "shares": 4716,
-      "pl": 1414.8,
-      "pl_pct": 2.83,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "buy_price": 15.0,
+      "sell_date": "2020-11-27",
+      "sell_price": 18.15,
+      "shares": 1666,
+      "pl": 5247.9,
+      "pl_pct": 21.0,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2540",
+      "buy_date": "2020-11-06",
+      "buy_price": 61.7,
+      "sell_date": "2020-12-04",
+      "sell_price": 75.7,
+      "shares": 405,
+      "pl": 5670.0,
+      "pl_pct": 22.69,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2540",
+      "buy_date": "2020-11-06",
+      "buy_price": 61.7,
+      "sell_date": "2020-12-09",
+      "sell_price": 69.0,
+      "shares": 405,
+      "pl": 2956.5,
+      "pl_pct": 11.83,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
     },
     {
       "ticker": "8261",
-      "buy_date": "2020-11-06",
-      "buy_price": 40.8,
+      "buy_date": "2020-11-05",
+      "buy_price": 41.0,
       "sell_date": "2020-12-14",
       "sell_price": 49.4,
-      "shares": 612,
-      "pl": 5263.2,
-      "pl_pct": 21.08,
+      "shares": 609,
+      "pl": 5115.6,
+      "pl_pct": 20.49,
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "1409",
-      "buy_date": "2020-11-20",
-      "buy_price": 11.85,
-      "sell_date": "2020-12-25",
-      "sell_price": 14.35,
-      "shares": 2109,
-      "pl": 5272.5,
-      "pl_pct": 21.1,
+      "ticker": "2303",
+      "buy_date": "2020-11-04",
+      "buy_price": 31.65,
+      "sell_date": "2020-12-15",
+      "sell_price": 44.0,
+      "shares": 790,
+      "pl": 9756.5,
+      "pl_pct": 39.02,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
+    },
+    {
+      "ticker": "1435",
+      "buy_date": "2020-11-24",
+      "buy_price": 19.6,
+      "sell_date": "2020-12-16",
+      "sell_price": 23.65,
+      "shares": 1275,
+      "pl": 5163.75,
+      "pl_pct": 20.66,
       "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2006",
+      "buy_date": "2020-11-24",
+      "buy_price": 31.3,
+      "sell_date": "2020-12-21",
+      "sell_price": 38.25,
+      "shares": 798,
+      "pl": 5546.1,
+      "pl_pct": 22.2,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1435",
+      "buy_date": "2020-11-24",
+      "buy_price": 19.6,
+      "sell_date": "2020-12-28",
+      "sell_price": 24.75,
+      "shares": 1276,
+      "pl": 6571.4,
+      "pl_pct": 26.28,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
     },
     {
       "ticker": "5906",
@@ -551,2370 +958,5754 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "1609",
+      "ticker": "01004T",
       "buy_date": "2020-11-03",
-      "buy_price": 20.45,
+      "buy_price": 16.38,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 20.1,
-      "shares": 2444,
-      "pl": -855.4,
-      "pl_pct": -1.71,
+      "sell_price": 16.38,
+      "shares": 3052,
+      "pl": 0.0,
+      "pl_pct": 0.0,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "2431",
+      "ticker": "3023",
       "buy_date": "2020-11-04",
-      "buy_price": 10.85,
+      "buy_price": 195.0,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 12.3,
-      "shares": 4608,
-      "pl": 6681.6,
-      "pl_pct": 13.36,
+      "sell_price": 216.0,
+      "shares": 256,
+      "pl": 5376.0,
+      "pl_pct": 10.77,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
       "ticker": "8261",
-      "buy_date": "2020-11-06",
-      "buy_price": 40.8,
+      "buy_date": "2020-11-05",
+      "buy_price": 41.0,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 52.9,
-      "shares": 613,
-      "pl": 7417.3,
-      "pl_pct": 29.66,
+      "shares": 610,
+      "pl": 7259.0,
+      "pl_pct": 29.02,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "1535",
+      "ticker": "6172",
       "buy_date": "2020-11-06",
-      "buy_price": 32.85,
+      "buy_price": 28.15,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 34.8,
-      "shares": 1522,
-      "pl": 2967.9,
-      "pl_pct": 5.94,
+      "sell_price": 30.3,
+      "shares": 1776,
+      "pl": 3818.4,
+      "pl_pct": 7.64,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "1104",
+      "ticker": "1612",
       "buy_date": "2020-11-09",
-      "buy_price": 20.05,
+      "buy_price": 15.0,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 23.2,
-      "shares": 2493,
-      "pl": 7852.95,
-      "pl_pct": 15.71,
+      "sell_price": 18.05,
+      "shares": 1667,
+      "pl": 5084.35,
+      "pl_pct": 20.33,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "1409",
-      "buy_date": "2020-11-20",
-      "buy_price": 11.85,
+      "ticker": "2006",
+      "buy_date": "2020-11-24",
+      "buy_price": 31.3,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 14.25,
-      "shares": 2110,
-      "pl": 5064.0,
-      "pl_pct": 20.25,
+      "sell_price": 36.5,
+      "shares": 799,
+      "pl": 4154.8,
+      "pl_pct": 16.61,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "6491",
-      "buy_date": "2020-11-25",
-      "buy_price": 250.0,
+      "ticker": "6477",
+      "buy_date": "2020-12-09",
+      "buy_price": 62.4,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 283.0,
-      "shares": 200,
-      "pl": 6600.0,
-      "pl_pct": 13.2,
+      "sell_price": 70.1,
+      "shares": 801,
+      "pl": 6167.7,
+      "pl_pct": 12.34,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "6184",
-      "buy_date": "2020-12-02",
-      "buy_price": 42.9,
+      "ticker": "1802",
+      "buy_date": "2020-12-15",
+      "buy_price": 17.65,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 43.1,
-      "shares": 1165,
-      "pl": 233.0,
-      "pl_pct": 0.47,
+      "sell_price": 19.5,
+      "shares": 2832,
+      "pl": 5239.2,
+      "pl_pct": 10.48,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "2413",
-      "buy_date": "2020-12-11",
-      "buy_price": 23.05,
+      "ticker": "1435",
+      "buy_date": "2020-12-28",
+      "buy_price": 24.75,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
-      "sell_price": 25.05,
-      "shares": 2169,
-      "pl": 4338.0,
-      "pl_pct": 8.68,
+      "sell_price": 23.3,
+      "shares": 2020,
+      "pl": -2929.0,
+      "pl_pct": -5.86,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     }
   ],
   "equity_curve": [
     {
       "date": "2020-01-02",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-03",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-06",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-07",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-08",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-09",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-10",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-13",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-14",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-15",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-16",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-17",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-20",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-30",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-01-31",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-03",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-04",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-05",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-06",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-07",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-10",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-11",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-12",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-13",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-14",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-17",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-18",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-19",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-20",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-21",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-24",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-25",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-26",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-02-27",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-02",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-03",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-04",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-05",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-06",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-09",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-10",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-11",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-12",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-13",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-16",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-17",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-18",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-19",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-20",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-23",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-24",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-25",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-26",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-27",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-30",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-03-31",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-01",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-06",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-07",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-08",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-09",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-10",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-13",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-14",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-15",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-16",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-17",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-20",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-21",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-22",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-23",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-24",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-27",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-28",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-29",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-04-30",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-04",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-05",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-06",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-07",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-08",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-11",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-12",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-13",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-14",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-15",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-18",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-19",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-20",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-21",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-22",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-25",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-26",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-27",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-28",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-05-29",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-06-01",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-06-02",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-06-03",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-06-04",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-06-05",
-      "equity": 1000000,
-      "type": "hold"
-    },
-    {
-      "date": "2020-06-08",
       "equity": 1000000.0,
       "type": "daily"
     },
     {
+      "date": "2020-01-03",
+      "equity": 998530.75,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-06",
+      "equity": 996751.01,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-07",
+      "equity": 999524.51,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-08",
+      "equity": 992649.46,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-09",
+      "equity": 997054.18,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-10",
+      "equity": 995405.73,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-13",
+      "equity": 1002509.68,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-14",
+      "equity": 1004807.58,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-15",
+      "equity": 998620.56,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-16",
+      "equity": 1001132.93,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-17",
+      "equity": 1000348.58,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-20",
+      "equity": 1003491.82,
+      "type": "daily"
+    },
+    {
+      "date": "2020-01-30",
+      "equity": 966666.85,
+      "type": "hold"
+    },
+    {
+      "date": "2020-01-31",
+      "equity": 971667.52,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-03",
+      "equity": 968818.0,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-04",
+      "equity": 969922.84,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-05",
+      "equity": 972269.23,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-06",
+      "equity": 976570.69,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-07",
+      "equity": 972256.79,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-10",
+      "equity": 970226.22,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-11",
+      "equity": 972417.21,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-12",
+      "equity": 974082.98,
+      "type": "daily"
+    },
+    {
+      "date": "2020-02-13",
+      "equity": 978544.98,
+      "type": "daily"
+    },
+    {
+      "date": "2020-02-14",
+      "equity": 976339.11,
+      "type": "daily"
+    },
+    {
+      "date": "2020-02-17",
+      "equity": 976274.19,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-18",
+      "equity": 974652.45,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-19",
+      "equity": 972726.13,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-20",
+      "equity": 972947.23,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-21",
+      "equity": 971610.33,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-24",
+      "equity": 966656.65,
+      "type": "crash"
+    },
+    {
+      "date": "2020-02-25",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-26",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-02-27",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-02",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-03",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-04",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-05",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-06",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-09",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-10",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-11",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-12",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-13",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-16",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-17",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-18",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-19",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-20",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-23",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-24",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-25",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-26",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-27",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-30",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-03-31",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-01",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-06",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-07",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-08",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-09",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-10",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-13",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-14",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-15",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-16",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-17",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-20",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-21",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-22",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-23",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-24",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-27",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-28",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-29",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-04-30",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-04",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-05",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-06",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-07",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-08",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-11",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-12",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-13",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-14",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-15",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-18",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-19",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-20",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-21",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-22",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-25",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-26",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-27",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-28",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-05-29",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-06-01",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-06-02",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-06-03",
+      "equity": 966656.65,
+      "type": "hold"
+    },
+    {
+      "date": "2020-06-04",
+      "equity": 966656.65,
+      "type": "daily"
+    },
+    {
+      "date": "2020-06-05",
+      "equity": 967021.91,
+      "type": "daily"
+    },
+    {
+      "date": "2020-06-08",
+      "equity": 964524.15,
+      "type": "daily"
+    },
+    {
       "date": "2020-06-09",
-      "equity": 999523.87,
+      "equity": 969182.75,
       "type": "daily"
     },
     {
       "date": "2020-06-10",
-      "equity": 1000345.09,
+      "equity": 967030.88,
       "type": "daily"
     },
     {
       "date": "2020-06-11",
-      "equity": 995781.06,
-      "type": "hold"
+      "equity": 955819.73,
+      "type": "daily"
     },
     {
       "date": "2020-06-12",
-      "equity": 993286.17,
+      "equity": 958572.83,
       "type": "hold"
     },
     {
       "date": "2020-06-15",
-      "equity": 993900.18,
-      "type": "hold"
+      "equity": 958710.88,
+      "type": "daily"
     },
     {
       "date": "2020-06-16",
-      "equity": 998442.47,
-      "type": "hold"
+      "equity": 963145.41,
+      "type": "daily"
     },
     {
       "date": "2020-06-17",
-      "equity": 999592.85,
-      "type": "hold"
+      "equity": 966429.74,
+      "type": "daily"
     },
     {
       "date": "2020-06-18",
-      "equity": 1005689.43,
-      "type": "hold"
+      "equity": 969116.94,
+      "type": "daily"
     },
     {
       "date": "2020-06-19",
-      "equity": 1001728.43,
-      "type": "hold"
+      "equity": 968664.52,
+      "type": "daily"
     },
     {
       "date": "2020-06-22",
-      "equity": 1003117.46,
-      "type": "hold"
+      "equity": 969829.56,
+      "type": "daily"
     },
     {
       "date": "2020-06-23",
-      "equity": 1003855.85,
-      "type": "hold"
+      "equity": 972564.34,
+      "type": "daily"
     },
     {
       "date": "2020-06-24",
-      "equity": 1004530.84,
+      "equity": 973373.33,
       "type": "daily"
     },
     {
       "date": "2020-06-29",
-      "equity": 1009430.54,
-      "type": "hold"
+      "equity": 972334.9,
+      "type": "daily"
     },
     {
       "date": "2020-06-30",
-      "equity": 1010717.87,
-      "type": "hold"
+      "equity": 978097.19,
+      "type": "daily"
     },
     {
       "date": "2020-07-01",
-      "equity": 1013731.96,
+      "equity": 984823.77,
       "type": "daily"
     },
     {
       "date": "2020-07-02",
-      "equity": 1024720.58,
+      "equity": 990068.85,
       "type": "daily"
     },
     {
       "date": "2020-07-03",
-      "equity": 1026409.26,
+      "equity": 998367.89,
       "type": "daily"
     },
     {
       "date": "2020-07-06",
-      "equity": 1031521.83,
+      "equity": 1005228.14,
       "type": "daily"
     },
     {
       "date": "2020-07-07",
-      "equity": 1028390.55,
+      "equity": 998695.17,
       "type": "daily"
     },
     {
       "date": "2020-07-08",
-      "equity": 1032652.44,
+      "equity": 1005121.85,
       "type": "daily"
     },
     {
       "date": "2020-07-09",
-      "equity": 1035291.87,
+      "equity": 1016979.02,
       "type": "daily"
     },
     {
       "date": "2020-07-10",
-      "equity": 1025059.27,
+      "equity": 1019374.02,
       "type": "daily"
     },
     {
       "date": "2020-07-13",
-      "equity": 1031893.98,
+      "equity": 1022642.66,
       "type": "daily"
     },
     {
       "date": "2020-07-14",
-      "equity": 1029370.76,
+      "equity": 1018638.65,
       "type": "daily"
     },
     {
       "date": "2020-07-15",
-      "equity": 1030868.12,
+      "equity": 1015645.24,
       "type": "daily"
     },
     {
       "date": "2020-07-16",
-      "equity": 1032674.17,
+      "equity": 1014862.37,
       "type": "daily"
     },
     {
       "date": "2020-07-17",
-      "equity": 1028125.17,
+      "equity": 1016408.47,
       "type": "daily"
     },
     {
       "date": "2020-07-20",
-      "equity": 1026096.09,
+      "equity": 1013654.44,
       "type": "daily"
     },
     {
       "date": "2020-07-21",
-      "equity": 1031091.57,
+      "equity": 1021869.95,
       "type": "daily"
     },
     {
       "date": "2020-07-22",
-      "equity": 1034763.06,
+      "equity": 1022480.09,
       "type": "daily"
     },
     {
       "date": "2020-07-23",
-      "equity": 1039200.4,
+      "equity": 1025357.52,
       "type": "daily"
     },
     {
       "date": "2020-07-24",
-      "equity": 1030297.98,
+      "equity": 1014299.65,
       "type": "daily"
     },
     {
       "date": "2020-07-27",
-      "equity": 1022019.18,
+      "equity": 1018102.36,
       "type": "daily"
     },
     {
       "date": "2020-07-28",
-      "equity": 1019084.28,
+      "equity": 1009443.1,
       "type": "daily"
     },
     {
       "date": "2020-07-29",
-      "equity": 1023870.73,
+      "equity": 1015293.79,
       "type": "daily"
     },
     {
       "date": "2020-07-30",
-      "equity": 1026484.44,
+      "equity": 1019164.44,
       "type": "daily"
     },
     {
       "date": "2020-07-31",
-      "equity": 1031225.23,
+      "equity": 1018630.48,
       "type": "daily"
     },
     {
       "date": "2020-08-03",
-      "equity": 1028333.0,
+      "equity": 1018861.84,
       "type": "daily"
     },
     {
       "date": "2020-08-04",
-      "equity": 1032837.38,
+      "equity": 1023423.39,
       "type": "daily"
     },
     {
       "date": "2020-08-05",
-      "equity": 1034867.52,
+      "equity": 1029158.5,
       "type": "daily"
     },
     {
       "date": "2020-08-06",
-      "equity": 1037500.7,
+      "equity": 1024769.54,
       "type": "daily"
     },
     {
       "date": "2020-08-07",
-      "equity": 1037330.44,
+      "equity": 1024727.04,
       "type": "daily"
     },
     {
       "date": "2020-08-10",
-      "equity": 1043446.69,
+      "equity": 1025995.24,
       "type": "daily"
     },
     {
       "date": "2020-08-11",
-      "equity": 1040676.76,
+      "equity": 1024453.24,
       "type": "daily"
     },
     {
       "date": "2020-08-12",
-      "equity": 1040341.71,
+      "equity": 1023886.69,
       "type": "daily"
     },
     {
       "date": "2020-08-13",
-      "equity": 1041687.3,
+      "equity": 1024470.04,
       "type": "daily"
     },
     {
       "date": "2020-08-14",
-      "equity": 1041782.92,
+      "equity": 1030081.43,
       "type": "daily"
     },
     {
       "date": "2020-08-17",
-      "equity": 1049084.35,
+      "equity": 1034687.52,
       "type": "daily"
     },
     {
       "date": "2020-08-18",
-      "equity": 1050868.78,
+      "equity": 1034108.84,
       "type": "daily"
     },
     {
       "date": "2020-08-19",
-      "equity": 1048895.31,
+      "equity": 1027343.42,
       "type": "daily"
     },
     {
       "date": "2020-08-20",
-      "equity": 1040630.02,
+      "equity": 1005319.74,
       "type": "daily"
     },
     {
       "date": "2020-08-21",
-      "equity": 1048034.36,
+      "equity": 1009832.71,
       "type": "daily"
     },
     {
       "date": "2020-08-24",
-      "equity": 1051110.89,
+      "equity": 1006767.2,
       "type": "daily"
     },
     {
       "date": "2020-08-25",
-      "equity": 1051641.91,
+      "equity": 1009175.59,
       "type": "daily"
     },
     {
       "date": "2020-08-26",
-      "equity": 1053732.5,
+      "equity": 1011782.75,
       "type": "daily"
     },
     {
       "date": "2020-08-27",
-      "equity": 1051757.15,
+      "equity": 1014832.56,
       "type": "daily"
     },
     {
       "date": "2020-08-28",
-      "equity": 1055197.49,
+      "equity": 1013281.75,
       "type": "daily"
     },
     {
       "date": "2020-08-31",
-      "equity": 1055439.88,
+      "equity": 1018333.35,
       "type": "daily"
     },
     {
       "date": "2020-09-01",
-      "equity": 1055471.7,
+      "equity": 1022830.99,
       "type": "daily"
     },
     {
       "date": "2020-09-02",
-      "equity": 1054928.01,
+      "equity": 1025117.18,
       "type": "daily"
     },
     {
       "date": "2020-09-03",
-      "equity": 1053499.94,
+      "equity": 1029714.52,
       "type": "daily"
     },
     {
       "date": "2020-09-04",
-      "equity": 1054382.81,
+      "equity": 1029976.56,
       "type": "daily"
     },
     {
       "date": "2020-09-07",
-      "equity": 1057366.33,
+      "equity": 1035107.64,
       "type": "daily"
     },
     {
       "date": "2020-09-08",
-      "equity": 1053635.58,
+      "equity": 1035981.1,
       "type": "daily"
     },
     {
       "date": "2020-09-09",
-      "equity": 1059640.14,
+      "equity": 1039859.72,
       "type": "daily"
     },
     {
       "date": "2020-09-10",
-      "equity": 1059304.04,
+      "equity": 1039032.41,
       "type": "daily"
     },
     {
       "date": "2020-09-11",
-      "equity": 1055765.19,
+      "equity": 1034773.82,
       "type": "daily"
     },
     {
       "date": "2020-09-14",
-      "equity": 1055432.71,
+      "equity": 1036664.09,
       "type": "daily"
     },
     {
       "date": "2020-09-15",
-      "equity": 1055793.86,
+      "equity": 1036228.84,
       "type": "daily"
     },
     {
       "date": "2020-09-16",
-      "equity": 1057959.21,
+      "equity": 1044185.36,
       "type": "daily"
     },
     {
       "date": "2020-09-17",
-      "equity": 1055918.93,
+      "equity": 1043603.8,
       "type": "daily"
     },
     {
       "date": "2020-09-18",
-      "equity": 1057730.47,
+      "equity": 1045487.66,
       "type": "daily"
     },
     {
       "date": "2020-09-21",
-      "equity": 1057035.64,
+      "equity": 1047648.04,
       "type": "daily"
     },
     {
       "date": "2020-09-22",
-      "equity": 1054446.96,
+      "equity": 1054086.38,
       "type": "daily"
     },
     {
       "date": "2020-09-23",
-      "equity": 1052117.79,
+      "equity": 1052010.51,
       "type": "hold"
     },
     {
       "date": "2020-09-24",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "crash"
     },
     {
       "date": "2020-09-25",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "hold"
     },
     {
       "date": "2020-09-28",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "hold"
     },
     {
       "date": "2020-09-29",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "hold"
     },
     {
       "date": "2020-09-30",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "hold"
     },
     {
       "date": "2020-10-05",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "hold"
     },
     {
       "date": "2020-10-06",
-      "equity": 1037996.09,
+      "equity": 1037506.02,
       "type": "daily"
     },
     {
       "date": "2020-10-07",
-      "equity": 1038181.44,
+      "equity": 1036918.07,
       "type": "daily"
     },
     {
       "date": "2020-10-08",
-      "equity": 1040014.99,
+      "equity": 1037549.11,
       "type": "daily"
     },
     {
       "date": "2020-10-12",
-      "equity": 1034153.6,
+      "equity": 1039674.06,
       "type": "daily"
     },
     {
       "date": "2020-10-13",
-      "equity": 1031089.3,
+      "equity": 1040113.11,
       "type": "daily"
     },
     {
       "date": "2020-10-14",
-      "equity": 1031510.34,
+      "equity": 1050757.96,
       "type": "daily"
     },
     {
       "date": "2020-10-15",
-      "equity": 1029683.66,
+      "equity": 1050329.86,
       "type": "daily"
     },
     {
       "date": "2020-10-16",
-      "equity": 1018954.14,
+      "equity": 1040278.36,
       "type": "daily"
     },
     {
       "date": "2020-10-19",
-      "equity": 1016393.76,
+      "equity": 1044905.41,
       "type": "daily"
     },
     {
       "date": "2020-10-20",
-      "equity": 1012421.81,
+      "equity": 1042245.25,
       "type": "crash"
     },
     {
       "date": "2020-10-21",
-      "equity": 1012421.81,
+      "equity": 1042245.25,
       "type": "daily"
     },
     {
       "date": "2020-10-22",
-      "equity": 1012663.96,
+      "equity": 1045728.34,
       "type": "daily"
     },
     {
       "date": "2020-10-23",
-      "equity": 1014926.92,
+      "equity": 1044204.93,
       "type": "daily"
     },
     {
       "date": "2020-10-26",
-      "equity": 1013666.66,
+      "equity": 1049187.79,
       "type": "daily"
     },
     {
       "date": "2020-10-27",
-      "equity": 1012688.32,
+      "equity": 1055485.81,
       "type": "daily"
     },
     {
       "date": "2020-10-28",
-      "equity": 1016688.26,
+      "equity": 1052062.6,
       "type": "daily"
     },
     {
       "date": "2020-10-29",
-      "equity": 1011899.01,
+      "equity": 1047738.06,
       "type": "hold"
     },
     {
       "date": "2020-10-30",
-      "equity": 1006790.22,
+      "equity": 1041680.47,
       "type": "crash"
     },
     {
       "date": "2020-11-02",
-      "equity": 1006790.22,
+      "equity": 1041680.47,
       "type": "hold"
     },
     {
       "date": "2020-11-03",
-      "equity": 1006790.22,
+      "equity": 1041680.47,
       "type": "daily"
     },
     {
       "date": "2020-11-04",
-      "equity": 1008131.02,
+      "equity": 1043998.86,
       "type": "daily"
     },
     {
       "date": "2020-11-05",
-      "equity": 1008495.52,
+      "equity": 1043100.49,
       "type": "daily"
     },
     {
       "date": "2020-11-06",
-      "equity": 1006287.32,
+      "equity": 1042578.41,
       "type": "daily"
     },
     {
       "date": "2020-11-09",
-      "equity": 1015162.83,
+      "equity": 1050097.56,
       "type": "daily"
     },
     {
       "date": "2020-11-10",
-      "equity": 1005933.18,
+      "equity": 1049661.2,
       "type": "daily"
     },
     {
       "date": "2020-11-11",
-      "equity": 1006713.48,
+      "equity": 1056947.56,
       "type": "daily"
     },
     {
       "date": "2020-11-12",
-      "equity": 1005432.12,
+      "equity": 1053758.15,
       "type": "daily"
     },
     {
       "date": "2020-11-13",
-      "equity": 1010257.98,
+      "equity": 1061351.2,
       "type": "daily"
     },
     {
       "date": "2020-11-16",
-      "equity": 1013325.28,
+      "equity": 1067974.02,
       "type": "daily"
     },
     {
       "date": "2020-11-17",
-      "equity": 1015561.92,
+      "equity": 1077752.44,
       "type": "daily"
     },
     {
       "date": "2020-11-18",
-      "equity": 1015093.37,
+      "equity": 1076355.39,
       "type": "daily"
     },
     {
       "date": "2020-11-19",
-      "equity": 1014449.72,
+      "equity": 1079103.3,
       "type": "daily"
     },
     {
       "date": "2020-11-20",
-      "equity": 1009806.97,
+      "equity": 1077459.2,
       "type": "daily"
     },
     {
       "date": "2020-11-23",
-      "equity": 1010291.67,
+      "equity": 1076355.39,
       "type": "daily"
     },
     {
       "date": "2020-11-24",
-      "equity": 1022420.77,
+      "equity": 1095453.63,
       "type": "daily"
     },
     {
       "date": "2020-11-25",
-      "equity": 1033076.67,
+      "equity": 1103733.19,
       "type": "daily"
     },
     {
       "date": "2020-11-26",
-      "equity": 1035975.92,
+      "equity": 1109800.73,
       "type": "daily"
     },
     {
       "date": "2020-11-27",
-      "equity": 1040012.86,
+      "equity": 1113007.68,
       "type": "daily"
     },
     {
       "date": "2020-11-30",
-      "equity": 1037019.87,
+      "equity": 1111543.31,
       "type": "daily"
     },
     {
       "date": "2020-12-01",
-      "equity": 1041150.32,
+      "equity": 1117019.12,
       "type": "daily"
     },
     {
       "date": "2020-12-02",
-      "equity": 1037153.83,
+      "equity": 1118983.95,
       "type": "daily"
     },
     {
       "date": "2020-12-03",
-      "equity": 1043865.22,
+      "equity": 1121255.46,
       "type": "daily"
     },
     {
       "date": "2020-12-04",
-      "equity": 1038550.22,
+      "equity": 1130036.73,
       "type": "daily"
     },
     {
       "date": "2020-12-07",
-      "equity": 1039917.07,
+      "equity": 1130008.29,
       "type": "daily"
     },
     {
       "date": "2020-12-08",
-      "equity": 1041704.87,
+      "equity": 1131347.79,
       "type": "daily"
     },
     {
       "date": "2020-12-09",
-      "equity": 1042688.11,
+      "equity": 1129310.86,
       "type": "daily"
     },
     {
       "date": "2020-12-10",
-      "equity": 1039149.32,
+      "equity": 1124046.57,
       "type": "daily"
     },
     {
       "date": "2020-12-11",
-      "equity": 1030641.81,
+      "equity": 1121442.73,
       "type": "daily"
     },
     {
       "date": "2020-12-14",
-      "equity": 1041626.92,
+      "equity": 1135871.79,
       "type": "daily"
     },
     {
       "date": "2020-12-15",
-      "equity": 1034410.32,
+      "equity": 1135653.24,
       "type": "daily"
     },
     {
       "date": "2020-12-16",
-      "equity": 1043103.47,
+      "equity": 1149107.71,
       "type": "daily"
     },
     {
       "date": "2020-12-17",
-      "equity": 1046006.92,
+      "equity": 1148772.72,
       "type": "daily"
     },
     {
       "date": "2020-12-18",
-      "equity": 1045787.02,
+      "equity": 1149344.16,
       "type": "daily"
     },
     {
       "date": "2020-12-21",
-      "equity": 1051711.98,
+      "equity": 1165785.34,
       "type": "daily"
     },
     {
       "date": "2020-12-22",
-      "equity": 1041436.47,
+      "equity": 1155727.28,
       "type": "daily"
     },
     {
       "date": "2020-12-23",
-      "equity": 1049843.17,
+      "equity": 1164787.05,
       "type": "daily"
     },
     {
       "date": "2020-12-24",
-      "equity": 1062784.17,
+      "equity": 1169213.88,
       "type": "daily"
     },
     {
       "date": "2020-12-25",
-      "equity": 1063778.67,
+      "equity": 1168092.96,
       "type": "daily"
     },
     {
       "date": "2020-12-28",
-      "equity": 1065745.97,
+      "equity": 1165733.61,
       "type": "daily"
     },
     {
       "date": "2020-12-29",
-      "equity": 1066205.27,
+      "equity": 1164358.96,
       "type": "daily"
     },
     {
       "date": "2020-12-30",
-      "equity": 1064397.17,
+      "equity": 1162786.38,
       "type": "daily"
     },
     {
       "date": "2020-12-31",
-      "equity": 1063952.12,
+      "equity": 1164895.91,
       "type": "daily"
     }
   ],
   "missed_trades": [
     {
-      "date": "2020-06-05",
-      "ticker": "2614",
+      "date": "2020-01-30",
+      "ticker": "9937",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
+      "score": 111.6
     },
     {
-      "date": "2020-06-05",
-      "ticker": "6168",
+      "date": "2020-01-30",
+      "ticker": "3545",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
+      "score": 102.5
     },
     {
-      "date": "2020-06-05",
-      "ticker": "1315",
+      "date": "2020-01-30",
+      "ticker": "01007T",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.4
+      "score": 101.1
     },
     {
-      "date": "2020-06-05",
-      "ticker": "6257",
+      "date": "2020-01-30",
+      "ticker": "1232",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.0
+      "score": 99.1
     },
     {
-      "date": "2020-06-05",
-      "ticker": "4540",
+      "date": "2020-01-30",
+      "ticker": "2029",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.4
+      "score": 96.3
     },
     {
-      "date": "2020-06-05",
-      "ticker": "3588",
+      "date": "2020-01-30",
+      "ticker": "2889",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.0
+      "score": 91.3
     },
     {
-      "date": "2020-06-05",
-      "ticker": "2383",
+      "date": "2020-01-30",
+      "ticker": "1513",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.3
+      "score": 91.1
     },
     {
-      "date": "2020-06-05",
-      "ticker": "1717",
+      "date": "2020-01-30",
+      "ticker": "6415",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 10.3
+      "score": 86.6
     },
     {
-      "date": "2020-06-05",
-      "ticker": "1539",
+      "date": "2020-01-31",
+      "ticker": "01004T",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.1
+      "score": 106.7
     },
     {
-      "date": "2020-06-05",
-      "ticker": "2114",
+      "date": "2020-01-31",
+      "ticker": "1232",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.8
+      "score": 98.2
     },
     {
-      "date": "2020-06-11",
-      "ticker": "2903",
+      "date": "2020-01-31",
+      "ticker": "3023",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.9
+      "score": 97.0
     },
     {
-      "date": "2020-06-11",
-      "ticker": "4540",
+      "date": "2020-01-31",
+      "ticker": "2029",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.9
+      "score": 95.5
     },
     {
-      "date": "2020-06-11",
-      "ticker": "2383",
+      "date": "2020-01-31",
+      "ticker": "6201",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 17.7
+      "score": 94.5
     },
     {
-      "date": "2020-06-11",
-      "ticker": "2535",
+      "date": "2020-01-31",
+      "ticker": "00647L",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 17.2
+      "score": 93.3
     },
     {
-      "date": "2020-06-11",
-      "ticker": "5607",
+      "date": "2020-01-31",
+      "ticker": "2031",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
+      "score": 92.1
     },
     {
-      "date": "2020-06-11",
-      "ticker": "1514",
+      "date": "2020-02-03",
+      "ticker": "01007T",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
+      "score": 100.7
     },
     {
-      "date": "2020-06-11",
-      "ticker": "2059",
+      "date": "2020-02-03",
+      "ticker": "1232",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
+      "score": 99.6
     },
     {
-      "date": "2020-06-11",
-      "ticker": "4557",
+      "date": "2020-02-03",
+      "ticker": "1713",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
+      "score": 99.3
     },
     {
-      "date": "2020-06-11",
-      "ticker": "6184",
+      "date": "2020-02-03",
+      "ticker": "1110",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
+      "score": 97.3
     },
     {
-      "date": "2020-06-12",
-      "ticker": "2904",
+      "date": "2020-02-03",
+      "ticker": "2889",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.6
+      "score": 92.6
     },
     {
-      "date": "2020-06-12",
-      "ticker": "1611",
+      "date": "2020-02-03",
+      "ticker": "1513",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
+      "score": 89.6
     },
     {
-      "date": "2020-06-12",
-      "ticker": "3059",
+      "date": "2020-02-03",
+      "ticker": "00737",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.6
+      "score": 86.4
     },
     {
-      "date": "2020-06-12",
+      "date": "2020-02-03",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.1
+    },
+    {
+      "date": "2020-02-03",
+      "ticker": "2345",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.6
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.9
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "1713",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.4
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.4
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.0
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "00737",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.4
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.2
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "0051",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.0
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.8
+    },
+    {
+      "date": "2020-02-04",
+      "ticker": "2206",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.2
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.6
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.3
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "00647L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.8
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.3
+    },
+    {
+      "date": "2020-02-05",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.0
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.2
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "6172",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.1
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "00685L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.4
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "9926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.0
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.5
+    },
+    {
+      "date": "2020-02-06",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.5
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.3
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.5
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.9
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "1615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.0
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "0051",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.3
+    },
+    {
+      "date": "2020-02-07",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.9
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.3
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.7
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.2
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.3
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "0051",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.3
+    },
+    {
+      "date": "2020-02-10",
+      "ticker": "1615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.1
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.0
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.7
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.9
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.2
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.6
+    },
+    {
+      "date": "2020-02-11",
       "ticker": "006204",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
+      "score": 90.1
+    },
+    {
+      "date": "2020-02-11",
+      "ticker": "2471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.2
+    },
+    {
+      "date": "2020-02-17",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.1
+    },
+    {
+      "date": "2020-02-17",
+      "ticker": "1713",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.7
+    },
+    {
+      "date": "2020-02-17",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.0
+    },
+    {
+      "date": "2020-02-17",
+      "ticker": "0052",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.8
+    },
+    {
+      "date": "2020-02-17",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-02-17",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-02-18",
+      "ticker": "00735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 130.2
+    },
+    {
+      "date": "2020-02-18",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.6
+    },
+    {
+      "date": "2020-02-18",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-02-18",
+      "ticker": "00663L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.0
+    },
+    {
+      "date": "2020-02-18",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.3
+    },
+    {
+      "date": "2020-02-18",
+      "ticker": "00850",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.1
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.9
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "00663L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.7
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.6
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.4
+    },
+    {
+      "date": "2020-02-19",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.1
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.9
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.6
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "0057",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.9
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.7
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.8
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "006203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-02-20",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.4
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.5
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "00675L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.5
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.0
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "00735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.0
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.2
+    },
+    {
+      "date": "2020-02-21",
+      "ticker": "0051",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.0
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 132.7
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.6
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "3545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.2
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.5
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.6
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.7
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.2
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "1232",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.0
+    },
+    {
+      "date": "2020-02-25",
+      "ticker": "6477",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.8
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 133.5
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "1475",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.4
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.9
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "3545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.1
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.9
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "3050",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.0
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.0
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.7
+    },
+    {
+      "date": "2020-02-26",
+      "ticker": "2029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.0
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.1
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "3050",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.7
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "3545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.6
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.1
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "9926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.0
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "1802",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.9
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.9
+    },
+    {
+      "date": "2020-02-27",
+      "ticker": "2013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.5
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.7
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.3
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.3
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.9
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "1802",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.3
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "2013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.4
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "2481",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.5
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.1
+    },
+    {
+      "date": "2020-03-02",
+      "ticker": "1457",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.0
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "2303",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.2
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.4
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.2
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.1
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "3059",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.4
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "0052",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.3
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.6
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "2013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.1
+    },
+    {
+      "date": "2020-03-03",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.2
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "2303",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.6
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.5
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "3545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.4
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.3
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "2603",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.5
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.2
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.4
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.1
+    },
+    {
+      "date": "2020-03-04",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.7
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.3
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.5
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.9
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.7
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.3
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.6
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "2415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.8
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "1615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.0
+    },
+    {
+      "date": "2020-03-05",
+      "ticker": "2013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.2
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 134.7
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.5
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.8
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.2
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.1
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.2
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "0053",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "9926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
+    },
+    {
+      "date": "2020-03-06",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.4
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "3545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.0
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2603",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.0
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.7
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.4
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2607",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.4
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.7
+    },
+    {
+      "date": "2020-03-09",
+      "ticker": "2034",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.3
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 130.1
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.7
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "1713",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.9
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "2603",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.5
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "1590",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.5
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.3
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "1232",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.4
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "9926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.2
+    },
+    {
+      "date": "2020-03-10",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.4
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.3
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.2
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "2029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.7
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.7
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.4
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.2
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "4722",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.3
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "2727",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.9
+    },
+    {
+      "date": "2020-03-11",
+      "ticker": "2471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.5
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.3
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.8
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "4722",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.4
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.4
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.4
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.5
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "2727",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.3
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "2206",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.1
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "6183",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.5
+    },
+    {
+      "date": "2020-03-12",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.2
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.3
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.5
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.4
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.9
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.2
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "2206",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.4
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "2382",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.9
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.9
+    },
+    {
+      "date": "2020-03-13",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 46.8
+    },
+    {
+      "date": "2020-03-16",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.6
+    },
+    {
+      "date": "2020-03-16",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.5
+    },
+    {
+      "date": "2020-03-16",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.2
+    },
+    {
+      "date": "2020-03-16",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.0
+    },
+    {
+      "date": "2020-03-16",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.1
+    },
+    {
+      "date": "2020-03-17",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.6
+    },
+    {
+      "date": "2020-03-17",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.7
+    },
+    {
+      "date": "2020-03-17",
+      "ticker": "2368",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 52.1
+    },
+    {
+      "date": "2020-03-17",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -27.3
+    },
+    {
+      "date": "2020-03-18",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.8
+    },
+    {
+      "date": "2020-03-18",
+      "ticker": "4722",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.6
+    },
+    {
+      "date": "2020-03-18",
+      "ticker": "0061",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.2
+    },
+    {
+      "date": "2020-03-18",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -26.9
+    },
+    {
+      "date": "2020-03-19",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.1
+    },
+    {
+      "date": "2020-03-20",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-03-20",
+      "ticker": "1713",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-03-20",
+      "ticker": "2462",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.5
+    },
+    {
+      "date": "2020-03-23",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2020-03-23",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.8
+    },
+    {
+      "date": "2020-03-23",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4
+    },
+    {
+      "date": "2020-03-23",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.6
+    },
+    {
+      "date": "2020-03-23",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -26.8
+    },
+    {
+      "date": "2020-03-24",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.0
+    },
+    {
+      "date": "2020-03-24",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-03-24",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.0
+    },
+    {
+      "date": "2020-03-24",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -26.2
+    },
+    {
+      "date": "2020-03-25",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.6
+    },
+    {
+      "date": "2020-03-25",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.3
+    },
+    {
+      "date": "2020-03-25",
+      "ticker": "4722",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.3
+    },
+    {
+      "date": "2020-03-25",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.8
+    },
+    {
+      "date": "2020-03-25",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.5
+    },
+    {
+      "date": "2020-03-26",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-03-26",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.7
+    },
+    {
+      "date": "2020-03-26",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.3
+    },
+    {
+      "date": "2020-03-26",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.4
+    },
+    {
+      "date": "2020-03-26",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.4
+    },
+    {
+      "date": "2020-03-27",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-03-27",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -26.2
+    },
+    {
+      "date": "2020-03-30",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.5
+    },
+    {
+      "date": "2020-03-30",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -26.5
+    },
+    {
+      "date": "2020-03-31",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2020-03-31",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-03-31",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.1
+    },
+    {
+      "date": "2020-04-06",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.6
+    },
+    {
+      "date": "2020-04-06",
+      "ticker": "2373",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.9
+    },
+    {
+      "date": "2020-04-07",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-04-07",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.8
+    },
+    {
+      "date": "2020-04-07",
+      "ticker": "2462",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.2
+    },
+    {
+      "date": "2020-04-07",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.3
+    },
+    {
+      "date": "2020-04-07",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.4
+    },
+    {
+      "date": "2020-04-08",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.4
+    },
+    {
+      "date": "2020-04-08",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.3
+    },
+    {
+      "date": "2020-04-08",
+      "ticker": "2462",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.2
+    },
+    {
+      "date": "2020-04-08",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.4
+    },
+    {
+      "date": "2020-04-08",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.3
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.3
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.2
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "2462",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.8
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.5
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "2855",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.5
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.3
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.5
+    },
+    {
+      "date": "2020-04-09",
+      "ticker": "2542",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.9
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.2
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "2206",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.9
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "2462",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.3
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.9
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.6
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.5
+    },
+    {
+      "date": "2020-04-10",
+      "ticker": "1776",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.5
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.2
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.6
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "2462",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.3
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.5
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.4
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "2329",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.4
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.6
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.0
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "2542",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.8
+    },
+    {
+      "date": "2020-04-13",
+      "ticker": "2488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.8
+    },
+    {
+      "date": "2020-04-14",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.1
+    },
+    {
+      "date": "2020-04-14",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.6
+    },
+    {
+      "date": "2020-04-14",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.7
+    },
+    {
+      "date": "2020-04-14",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.2
+    },
+    {
+      "date": "2020-04-14",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.9
+    },
+    {
+      "date": "2020-04-15",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.3
+    },
+    {
+      "date": "2020-04-15",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.0
+    },
+    {
+      "date": "2020-04-15",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.3
+    },
+    {
+      "date": "2020-04-15",
+      "ticker": "0061",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.4
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.5
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.5
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "1219",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.3
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.9
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.3
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.3
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "6409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.7
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "00652",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.8
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "1235",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.4
+    },
+    {
+      "date": "2020-04-16",
+      "ticker": "00660",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 53.4
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.5
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.7
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "3704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.3
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.1
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "3034",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.6
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "1615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.2
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.5
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.1
+    },
+    {
+      "date": "2020-04-17",
+      "ticker": "0061",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.6
+    },
+    {
+      "date": "2020-04-20",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.4
+    },
+    {
+      "date": "2020-04-20",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.6
+    },
+    {
+      "date": "2020-04-20",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.5
+    },
+    {
+      "date": "2020-04-20",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.5
+    },
+    {
+      "date": "2020-04-20",
+      "ticker": "1452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 53.8
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.2
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.3
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "00675L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.3
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "00663L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.9
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.9
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "00631L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.5
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.5
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "00685L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.4
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-04-21",
+      "ticker": "2029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.7
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.7
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.4
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.6
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.1
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "6491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.1
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.1
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.9
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "006204",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.1
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.0
+    },
+    {
+      "date": "2020-04-22",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.4
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.2
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.0
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.9
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.7
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "6491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.3
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.8
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.0
+    },
+    {
+      "date": "2020-04-23",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.1
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.1
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.3
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "2415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.1
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.9
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "3356",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.3
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "3059",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.4
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.6
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.5
+    },
+    {
+      "date": "2020-04-24",
+      "ticker": "006204",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.8
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.4
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.9
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.1
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "2024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.1
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "3034",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.4
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.7
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "3454",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.7
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.5
+    },
+    {
+      "date": "2020-04-27",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.4
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.8
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "2303",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.3
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "3545",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.6
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.4
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.3
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.9
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.8
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.7
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.0
+    },
+    {
+      "date": "2020-04-28",
+      "ticker": "6183",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.9
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.6
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.3
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "2012",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.6
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "6183",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.2
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.7
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.2
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "9929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 53.4
+    },
+    {
+      "date": "2020-04-29",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 51.5
+    },
+    {
+      "date": "2020-04-30",
+      "ticker": "8497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.6
+    },
+    {
+      "date": "2020-04-30",
+      "ticker": "6183",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4
+    },
+    {
+      "date": "2020-04-30",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.0
+    },
+    {
+      "date": "2020-04-30",
+      "ticker": "2371",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.6
+    },
+    {
+      "date": "2020-04-30",
+      "ticker": "00684R",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.4
+    },
+    {
+      "date": "2020-04-30",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 48.0
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "2415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.5
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "00850",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.2
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.6
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.5
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "00830",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.1
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.4
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "00737",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.3
+    },
+    {
+      "date": "2020-05-04",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.5
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.3
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.8
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "2415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.3
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.9
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.4
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "2114",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.1
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.0
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "2612",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.7
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "8488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.9
+    },
+    {
+      "date": "2020-05-05",
+      "ticker": "00653L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.1
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.2
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.9
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "2415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.0
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.5
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.9
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "6183",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.3
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.5
+    },
+    {
+      "date": "2020-05-06",
+      "ticker": "2612",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.2
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "3025",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.0
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.0
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.4
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "2612",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.7
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "8112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.7
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "2904",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.3
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "2455",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.3
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "1605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.9
+    },
+    {
+      "date": "2020-05-07",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.8
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "4976",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.3
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.9
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.0
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "2352",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.8
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.7
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "2345",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.2
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "3356",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.2
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.3
+    },
+    {
+      "date": "2020-05-08",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.3
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.7
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.7
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.5
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.3
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "2201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.3
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.6
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "2415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.8
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.5
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "2345",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.5
+    },
+    {
+      "date": "2020-05-11",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.2
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.3
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "1590",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.2
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.8
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.3
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.1
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.4
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "5264",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.9
+    },
+    {
+      "date": "2020-05-12",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.1
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "1590",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.8
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.6
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "3311",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "2345",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.5
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.8
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "8110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.8
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "3622",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.5
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.9
+    },
+    {
+      "date": "2020-05-13",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.6
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.9
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "00663L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "6477",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.4
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.8
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "00685L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.7
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "8046",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.5
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "3025",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.6
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "006204",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.1
+    },
+    {
+      "date": "2020-05-14",
+      "ticker": "2345",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.4
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.7
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.4
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "1590",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.9
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "5243",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.7
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "6477",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.1
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.1
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.9
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "2910",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.8
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.6
+    },
+    {
+      "date": "2020-05-15",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.1
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "1475",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.0
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.2
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "00675L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "00663L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.8
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "6477",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.5
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.9
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "2029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.5
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.0
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "0053",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-05-18",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.6
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.4
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.2
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "6477",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.8
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "6491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.1
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.4
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "3311",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.2
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.4
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2020-05-19",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.6
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.3
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.8
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "6477",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.7
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.2
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "6491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.6
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.6
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.0
+    },
+    {
+      "date": "2020-05-20",
+      "ticker": "0050",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.5
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.7
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "2540",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.5
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.2
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.3
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "6491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.3
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.1
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.6
+    },
+    {
+      "date": "2020-05-21",
+      "ticker": "3006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.3
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "2540",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.8
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.0
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "3588",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.3
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.6
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.0
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.7
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "006204",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.4
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "6491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4
+    },
+    {
+      "date": "2020-05-22",
+      "ticker": "6251",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "1475",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.3
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.9
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.6
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "2540",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.1
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.6
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "0053",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.8
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "2013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.8
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.5
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "0057",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.2
+    },
+    {
+      "date": "2020-05-25",
+      "ticker": "006203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.8
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.0
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.2
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "2344",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.4
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "3006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.4
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "2607",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.9
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.8
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.3
+    },
+    {
+      "date": "2020-05-26",
+      "ticker": "2472",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.6
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.4
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.5
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.2
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.4
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "1615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.2
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "0053",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.6
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "2363",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.1
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.3
+    },
+    {
+      "date": "2020-05-27",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.3
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.2
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "2436",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.4
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.4
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "2331",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.0
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.3
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.2
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.8
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "0053",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-05-28",
+      "ticker": "1615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 131.0
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.5
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.9
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.8
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "2603",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.8
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "2015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.5
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "3311",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.9
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.5
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.0
+    },
+    {
+      "date": "2020-05-29",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.3
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.8
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.7
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "3311",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.8
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.1
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "6224",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.7
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.3
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "3006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "2363",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.9
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.0
+    },
+    {
+      "date": "2020-06-01",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.8
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.7
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "1713",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "3311",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.6
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "6224",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.0
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "1457",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "2345",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.9
+    },
+    {
+      "date": "2020-06-02",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.7
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "5906",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.4
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.5
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.2
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.6
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "1513",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.5
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "1110",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.9
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "3356",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.2
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.9
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "3010",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.0
+    },
+    {
+      "date": "2020-06-03",
+      "ticker": "2472",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.9
     },
     {
       "date": "2020-06-12",
-      "ticker": "3380",
+      "ticker": "00675L",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
+      "score": 106.0
     },
     {
       "date": "2020-06-12",
-      "ticker": "2530",
+      "ticker": "00631L",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
+      "score": 104.6
+    },
+    {
+      "date": "2020-06-12",
+      "ticker": "0053",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.7
     },
     {
       "date": "2020-06-12",
       "ticker": "00685L",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
+      "score": 102.3
     },
     {
       "date": "2020-06-12",
-      "ticker": "1615",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
-    },
-    {
-      "date": "2020-06-12",
-      "ticker": "4557",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
-    },
-    {
-      "date": "2020-06-12",
-      "ticker": "2524",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.9
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "1325",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.8
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "6197",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.6
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "4540",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.0
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "6504",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 16.6
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "1717",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 16.3
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "2904",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "1611",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "4104",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "006204",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
-    },
-    {
-      "date": "2020-06-15",
-      "ticker": "2482",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.9
-    },
-    {
-      "date": "2020-06-16",
-      "ticker": "4755",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-06-16",
-      "ticker": "9924",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
-    },
-    {
-      "date": "2020-06-16",
-      "ticker": "3694",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
-    },
-    {
-      "date": "2020-06-16",
-      "ticker": "2013",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
-    },
-    {
-      "date": "2020-06-16",
-      "ticker": "6197",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
-    },
-    {
-      "date": "2020-06-16",
       "ticker": "8261",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
+      "score": 102.1
     },
     {
-      "date": "2020-06-16",
-      "ticker": "2748",
+      "date": "2020-06-12",
+      "ticker": "6477",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.5
+      "score": 100.9
     },
     {
-      "date": "2020-06-16",
+      "date": "2020-06-12",
       "ticker": "00735",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.5
+      "score": 100.8
     },
     {
-      "date": "2020-06-16",
-      "ticker": "1449",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.5
-    },
-    {
-      "date": "2020-06-16",
-      "ticker": "2006",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.4
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "2496",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "2006",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "1609",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "8261",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "1717",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "4540",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "6197",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "8926",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "3015",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.2
-    },
-    {
-      "date": "2020-06-17",
-      "ticker": "6283",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.2
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "3380",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.8
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "2722",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "3094",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "00742",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "6197",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.9
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "1449",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.6
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "2013",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.5
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "2480",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.0
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "8926",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.8
-    },
-    {
-      "date": "2020-06-18",
-      "ticker": "1215",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.6
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "3694",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 17.6
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "3380",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 17.1
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "1504",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "2616",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "2015",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "6504",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "9918",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.6
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "3016",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.4
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "00742",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.1
-    },
-    {
-      "date": "2020-06-19",
-      "ticker": "3094",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.0
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "8926",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 18.4
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "6214",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 15.0
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "2535",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "2903",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "3416",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "6183",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.9
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "8473",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.8
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "9918",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.2
-    },
-    {
-      "date": "2020-06-22",
-      "ticker": "2008",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.2
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "3380",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 18.7
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "3416",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 15.0
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "020008",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "4557",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "00742",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.7
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "2383",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.6
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "2453",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "1615",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "2535",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.1
-    },
-    {
-      "date": "2020-06-23",
-      "ticker": "2705",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
-    },
-    {
-      "date": "2020-06-29",
-      "ticker": "006204",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 20.0
-    },
-    {
-      "date": "2020-06-29",
-      "ticker": "020008",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 15.0
-    },
-    {
-      "date": "2020-06-29",
-      "ticker": "1558",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
-    },
-    {
-      "date": "2020-06-29",
-      "ticker": "4557",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
-    },
-    {
-      "date": "2020-06-29",
+      "date": "2020-06-12",
       "ticker": "00663L",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
+      "score": 100.6
     },
     {
-      "date": "2020-06-29",
-      "ticker": "1605",
+      "date": "2020-06-12",
+      "ticker": "00850",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
+      "score": 98.6
     },
     {
-      "date": "2020-06-29",
-      "ticker": "2606",
+      "date": "2020-09-23",
+      "ticker": "6491",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
+      "score": 131.1
     },
     {
-      "date": "2020-06-29",
-      "ticker": "2013",
+      "date": "2020-09-23",
+      "ticker": "2028",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.3
-    },
-    {
-      "date": "2020-06-29",
-      "ticker": "2705",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.3
-    },
-    {
-      "date": "2020-06-29",
-      "ticker": "2748",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.1
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "2535",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "00775B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "00851",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "1504",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.7
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "2748",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.7
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "00711B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.6
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "1529",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "8473",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "8464",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.9
-    },
-    {
-      "date": "2020-06-30",
-      "ticker": "2013",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.8
+      "score": 107.9
     },
     {
       "date": "2020-09-23",
       "ticker": "9931",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
+      "score": 102.6
+    },
+    {
+      "date": "2020-09-23",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.2
+    },
+    {
+      "date": "2020-09-23",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.7
     },
     {
       "date": "2020-09-23",
       "ticker": "1220",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.6
-    },
-    {
-      "date": "2020-09-23",
-      "ticker": "6491",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
-    },
-    {
-      "date": "2020-09-23",
-      "ticker": "3047",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
-    },
-    {
-      "date": "2020-09-23",
-      "ticker": "3416",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
+      "score": 98.5
     },
     {
       "date": "2020-09-23",
       "ticker": "2015",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.8
+      "score": 98.5
     },
     {
       "date": "2020-09-23",
-      "ticker": "0052",
+      "ticker": "2457",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.6
-    },
-    {
-      "date": "2020-09-23",
-      "ticker": "1808",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.1
-    },
-    {
-      "date": "2020-09-23",
-      "ticker": "2488",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.1
-    },
-    {
-      "date": "2020-09-23",
-      "ticker": "5515",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 10.9
+      "score": 98.4
     },
     {
       "date": "2020-09-25",
-      "ticker": "1762",
+      "ticker": "2302",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.2
+      "score": 134.1
     },
     {
       "date": "2020-09-25",
-      "ticker": "2705",
+      "ticker": "6172",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 17.3
+      "score": 131.9
     },
     {
       "date": "2020-09-25",
-      "ticker": "2392",
+      "ticker": "2303",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
+      "score": 130.0
     },
     {
       "date": "2020-09-25",
-      "ticker": "3686",
+      "ticker": "4976",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.1
-    },
-    {
-      "date": "2020-09-25",
-      "ticker": "2358",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.5
+      "score": 105.2
     },
     {
       "date": "2020-09-25",
       "ticker": "2908",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 10.7
+      "score": 100.1
     },
     {
       "date": "2020-09-25",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.3
+    },
+    {
+      "date": "2020-09-25",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.6
+    },
+    {
+      "date": "2020-09-25",
+      "ticker": "2910",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.9
+    },
+    {
+      "date": "2020-09-25",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.4
+    },
+    {
+      "date": "2020-09-25",
+      "ticker": "1220",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.7
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.5
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "2028",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.3
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "2460",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2020-09-28",
       "ticker": "4976",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 10.6
+      "score": 99.0
     },
     {
       "date": "2020-09-28",
+      "ticker": "00693U",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.4
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "1220",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.3
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.8
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.9
+    },
+    {
+      "date": "2020-09-28",
+      "ticker": "2332",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.9
+    },
+    {
+      "date": "2020-09-29",
+      "ticker": "2540",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 126.1
+    },
+    {
+      "date": "2020-09-29",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 126.0
+    },
+    {
+      "date": "2020-09-29",
+      "ticker": "2028",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.0
+    },
+    {
+      "date": "2020-09-29",
       "ticker": "9931",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.9
-    },
-    {
-      "date": "2020-09-28",
-      "ticker": "1762",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 18.9
-    },
-    {
-      "date": "2020-09-28",
-      "ticker": "2520",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.5
-    },
-    {
-      "date": "2020-09-28",
-      "ticker": "1609",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.6
-    },
-    {
-      "date": "2020-09-28",
-      "ticker": "1727",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.7
-    },
-    {
-      "date": "2020-09-28",
-      "ticker": "3686",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.7
-    },
-    {
-      "date": "2020-09-28",
-      "ticker": "1466",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 9.1
+      "score": 105.9
     },
     {
       "date": "2020-09-29",
-      "ticker": "3416",
+      "ticker": "042793",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.2
+      "score": 101.8
     },
     {
       "date": "2020-09-29",
-      "ticker": "9931",
+      "ticker": "2460",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 18.2
+      "score": 101.5
     },
     {
       "date": "2020-09-29",
-      "ticker": "1609",
+      "ticker": "1713",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.2
+      "score": 100.8
     },
     {
       "date": "2020-09-29",
-      "ticker": "3703",
+      "ticker": "3545",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.6
+      "score": 99.7
     },
     {
       "date": "2020-09-29",
-      "ticker": "1444",
+      "ticker": "1220",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 9.8
+      "score": 98.2
+    },
+    {
+      "date": "2020-09-29",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.8
     },
     {
       "date": "2020-09-30",
-      "ticker": "1727",
+      "ticker": "2540",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
+      "score": 129.3
     },
     {
       "date": "2020-09-30",
-      "ticker": "2357",
+      "ticker": "2008",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.0
+      "score": 128.9
     },
     {
       "date": "2020-09-30",
-      "ticker": "1444",
+      "ticker": "2013",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.5
+      "score": 117.3
     },
     {
       "date": "2020-09-30",
-      "ticker": "3686",
+      "ticker": "2006",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.9
+      "score": 105.2
     },
     {
       "date": "2020-09-30",
-      "ticker": "9958",
+      "ticker": "042793",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.6
+      "score": 101.5
     },
     {
       "date": "2020-09-30",
-      "ticker": "1762",
+      "ticker": "2460",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.1
+      "score": 100.9
+    },
+    {
+      "date": "2020-09-30",
+      "ticker": "2330",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.2
+    },
+    {
+      "date": "2020-09-30",
+      "ticker": "1590",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.0
     },
     {
       "date": "2020-09-30",
       "ticker": "8261",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 9.4
+      "score": 99.3
     },
     {
       "date": "2020-09-30",
-      "ticker": "2006",
+      "ticker": "4976",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 9.0
-    },
-    {
-      "date": "2020-10-05",
-      "ticker": "2006",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
-      "date": "2020-10-05",
-      "ticker": "1539",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.9
-    },
-    {
-      "date": "2020-10-05",
-      "ticker": "9958",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.0
-    },
-    {
-      "date": "2020-10-05",
-      "ticker": "1612",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 12.2
+      "score": 99.0
     },
     {
       "date": "2020-10-05",
       "ticker": "5906",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.9
+      "score": 135.5
     },
     {
       "date": "2020-10-05",
-      "ticker": "2442",
+      "ticker": "2302",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.0
+      "score": 134.7
     },
     {
       "date": "2020-10-05",
-      "ticker": "1417",
+      "ticker": "1612",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 9.2
+      "score": 134.2
     },
     {
-      "date": "2020-10-29",
-      "ticker": "1203",
+      "date": "2020-10-05",
+      "ticker": "1907",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.6
+      "score": 127.4
     },
     {
-      "date": "2020-10-29",
-      "ticker": "1609",
+      "date": "2020-10-05",
+      "ticker": "2540",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.8
+      "score": 125.3
     },
     {
-      "date": "2020-10-29",
-      "ticker": "2460",
+      "date": "2020-10-05",
+      "ticker": "3015",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
+      "score": 122.9
+    },
+    {
+      "date": "2020-10-05",
+      "ticker": "2013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.2
+    },
+    {
+      "date": "2020-10-05",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.1
+    },
+    {
+      "date": "2020-10-05",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.0
+    },
+    {
+      "date": "2020-10-05",
+      "ticker": "2010",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.3
     },
     {
       "date": "2020-10-29",
       "ticker": "4976",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.7
+      "score": 138.4
+    },
+    {
+      "date": "2020-10-29",
+      "ticker": "2486",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.8
+    },
+    {
+      "date": "2020-10-29",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.6
+    },
+    {
+      "date": "2020-10-29",
+      "ticker": "2460",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.5
     },
     {
       "date": "2020-10-29",
       "ticker": "00693U",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 11.4
+      "score": 102.9
     },
     {
       "date": "2020-10-29",
-      "ticker": "1446",
+      "ticker": "2457",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 10.4
+      "score": 100.5
     },
     {
-      "date": "2020-11-02",
-      "ticker": "1612",
+      "date": "2020-10-29",
+      "ticker": "1220",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
+      "score": 97.1
+    },
+    {
+      "date": "2020-10-29",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.7
     },
     {
       "date": "2020-11-02",
       "ticker": "5906",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.5
+      "score": 138.0
     },
     {
       "date": "2020-11-02",
-      "ticker": "6141",
+      "ticker": "2302",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
+      "score": 137.7
+    },
+    {
+      "date": "2020-11-02",
+      "ticker": "1612",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 136.7
+    },
+    {
+      "date": "2020-11-02",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 136.0
+    },
+    {
+      "date": "2020-11-02",
+      "ticker": "1309",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 133.5
+    },
+    {
+      "date": "2020-11-02",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 132.4
     },
     {
       "date": "2020-11-02",
       "ticker": "6491",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
+      "score": 131.2
     },
     {
       "date": "2020-11-02",
-      "ticker": "2006",
+      "ticker": "2331",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 13.0
+      "score": 127.6
+    },
+    {
+      "date": "2020-11-02",
+      "ticker": "3149",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.4
+    },
+    {
+      "date": "2020-11-02",
+      "ticker": "2028",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.2
     }
   ]
 }
