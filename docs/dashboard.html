@@ -202,7 +202,7 @@
 </div>
 
 <script>
-const SUMMARY_URL = './yearly_backtests/summary_v11.json';
+const SUMMARY_URL = './yearly_backtests/summary_v12.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
 let equityChart = null;
@@ -361,7 +361,7 @@ async function openYearDetail(year) {
     '<tr><td colspan="8" style="text-align:center;padding:20px;color:var(--text-dim);">載入中...</td></tr>';
 
   try {
-    const resp = await fetch(`./yearly_backtests/${year}_trades_v11.json`);
+    const resp = await fetch(`./yearly_backtests/${year}_trades_v12.json`);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     const trades = data.trades || [];

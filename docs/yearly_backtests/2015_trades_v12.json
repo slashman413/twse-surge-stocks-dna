@@ -1,0 +1,5160 @@
+{
+  "trades": [
+    {
+      "ticker": "1541",
+      "buy_date": "2015-04-22",
+      "buy_price": 21.9,
+      "sell_date": "2015-05-06",
+      "sell_price": 24.75,
+      "shares": 2283,
+      "pl": 6506.55,
+      "pl_pct": 13.01,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2477",
+      "buy_date": "2015-04-22",
+      "buy_price": 13.9,
+      "sell_date": "2015-05-06",
+      "sell_price": 12.84,
+      "shares": 3596,
+      "pl": -3807.69,
+      "pl_pct": -7.62,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "9905",
+      "buy_date": "2015-04-23",
+      "buy_price": 31.23,
+      "sell_date": "2015-05-06",
+      "sell_price": 31.23,
+      "shares": 1600,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2317",
+      "buy_date": "2015-04-23",
+      "buy_price": 86.4,
+      "sell_date": "2015-05-06",
+      "sell_price": 86.12,
+      "shares": 578,
+      "pl": -160.58,
+      "pl_pct": -0.32,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "085363",
+      "buy_date": "2015-04-24",
+      "buy_price": 10.9,
+      "sell_date": "2015-05-06",
+      "sell_price": 10.9,
+      "shares": 4587,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1726",
+      "buy_date": "2015-04-24",
+      "buy_price": 83.64,
+      "sell_date": "2015-05-06",
+      "sell_price": 85.84,
+      "shares": 597,
+      "pl": 1312.59,
+      "pl_pct": 2.63,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1473",
+      "buy_date": "2015-04-27",
+      "buy_price": 29.04,
+      "sell_date": "2015-05-06",
+      "sell_price": 29.66,
+      "shares": 1721,
+      "pl": 1058.18,
+      "pl_pct": 2.12,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1535",
+      "buy_date": "2015-04-27",
+      "buy_price": 71.09,
+      "sell_date": "2015-05-06",
+      "sell_price": 70.44,
+      "shares": 703,
+      "pl": -460.33,
+      "pl_pct": -0.92,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1702",
+      "buy_date": "2015-04-28",
+      "buy_price": 68.38,
+      "sell_date": "2015-05-06",
+      "sell_price": 65.1,
+      "shares": 731,
+      "pl": -2397.43,
+      "pl_pct": -4.8,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6128",
+      "buy_date": "2015-04-28",
+      "buy_price": 34.19,
+      "sell_date": "2015-05-06",
+      "sell_price": 34.23,
+      "shares": 1462,
+      "pl": 67.27,
+      "pl_pct": 0.13,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2015-01-05",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-06",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-07",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-08",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-09",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-12",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-13",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-14",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-15",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-16",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-19",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-20",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-21",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-22",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-23",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-26",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-27",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-28",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-29",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-01-30",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-02",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-03",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-04",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-05",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-06",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-09",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-10",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-11",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-12",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-13",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-24",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-25",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-02-26",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-02",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-03",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-04",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-05",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-06",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-09",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-10",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-11",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-12",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-13",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-16",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-17",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-18",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-19",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-20",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-23",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-24",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-25",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-26",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-27",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-30",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-03-31",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-01",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-02",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-07",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-08",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-09",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-10",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-13",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-14",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-15",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-16",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-17",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-20",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-21",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2015-04-22",
+      "equity": 1000000.0,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-23",
+      "equity": 999897.2,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-24",
+      "equity": 999620.54,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-27",
+      "equity": 1001907.27,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-28",
+      "equity": 999098.49,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-29",
+      "equity": 1003466.71,
+      "type": "daily"
+    },
+    {
+      "date": "2015-04-30",
+      "equity": 1006323.57,
+      "type": "daily"
+    },
+    {
+      "date": "2015-05-04",
+      "equity": 1000159.58,
+      "type": "daily"
+    },
+    {
+      "date": "2015-05-05",
+      "equity": 1000280.38,
+      "type": "daily"
+    },
+    {
+      "date": "2015-05-06",
+      "equity": 1002118.56,
+      "type": "crash"
+    },
+    {
+      "date": "2015-05-07",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-08",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-11",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-12",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-13",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-14",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-15",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-18",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-19",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-20",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-21",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-22",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-25",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-26",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-27",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-28",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-05-29",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-01",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-02",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-03",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-04",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-05",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-08",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-09",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-10",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-11",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-12",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-15",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-16",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-17",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-18",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-22",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-23",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-24",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-25",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-26",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-29",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-06-30",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-01",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-02",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-03",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-06",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-07",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-08",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-09",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-13",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-14",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-15",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-16",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-17",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-20",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-21",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-22",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-23",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-24",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-27",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-28",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-29",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-30",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-07-31",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-03",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-04",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-05",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-06",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-07",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-10",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-11",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-12",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-13",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-14",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-17",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-18",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-19",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-20",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-21",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-24",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-25",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-26",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-27",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-28",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-08-31",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-01",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-02",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-03",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-04",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-07",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-08",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-09",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-10",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-11",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-14",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-15",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-16",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-17",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-18",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-21",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-22",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-23",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-24",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-25",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-09-30",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-01",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-02",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-05",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-06",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-07",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-08",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-12",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-13",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-14",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-15",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-16",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-19",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-20",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-21",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-22",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-23",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-26",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-27",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-28",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-29",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-10-30",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-02",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-03",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-04",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-05",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-06",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-09",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-10",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-11",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-12",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-13",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-16",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-17",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-18",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-19",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-20",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-23",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-24",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-25",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-26",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-27",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-11-30",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-01",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-02",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-03",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-04",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-07",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-08",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-09",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-10",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-11",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-14",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-15",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-16",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-17",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-18",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-21",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-22",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-23",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-24",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-25",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-28",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-29",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-30",
+      "equity": 1002118.56,
+      "type": "hold"
+    },
+    {
+      "date": "2015-12-31",
+      "equity": 1002118.56,
+      "type": "hold"
+    }
+  ],
+  "missed_trades": [
+    {
+      "date": "2015-04-20",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "1521",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "2929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "1702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "2880",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "4733",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "1213",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "2231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-04-20",
+      "ticker": "2546",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "1726",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.7
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.4
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.3
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "2546",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "2354",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "2845",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "6504",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "9938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-04-21",
+      "ticker": "008201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.5
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "1726",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "2886",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "9955",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "2207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "2705",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "4536",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-07",
+      "ticker": "1721",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.1
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "2031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "2614",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "1519",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "1726",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "9955",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "1513",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-08",
+      "ticker": "2886",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "2012",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.7
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.6
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "6216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "3042",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "2812",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "4733",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "9938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "2880",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "5533",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-05-11",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "5533",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.2
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "2880",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "2886",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "2845",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "0055",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "2812",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "6285",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-12",
+      "ticker": "9945",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "2880",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "0055",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "1236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "01003T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "2207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "5533",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "1463",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "03012X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-05-13",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "083796",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "01003T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "006205",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "9955",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "6176",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "1476",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-05-14",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.2
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.8
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "01003T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "2031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.7
+    },
+    {
+      "date": "2015-05-15",
+      "ticker": "083796",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.2
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "5533",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "083796",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "6176",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "1536",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-05-18",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.5
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "2886",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.4
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "2207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "4733",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "0055",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "006205",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.3
+    },
+    {
+      "date": "2015-05-19",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.2
+    },
+    {
+      "date": "2015-05-20",
+      "ticker": "0055",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-20",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-05-20",
+      "ticker": "1402",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-05-20",
+      "ticker": "1463",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-05-20",
+      "ticker": "2886",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-05-20",
+      "ticker": "6409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-05-21",
+      "ticker": "9946",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.8
+    },
+    {
+      "date": "2015-05-21",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-05-21",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-21",
+      "ticker": "9929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-21",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-21",
+      "ticker": "9941",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "1773",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "1469",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "2317",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "5706",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "2705",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-05-22",
+      "ticker": "1312",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "3052",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "9946",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "1338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "2231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "9929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.4
+    },
+    {
+      "date": "2015-05-25",
+      "ticker": "5706",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.2
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "911609",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "1338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "5706",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-05-26",
+      "ticker": "2231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-05-27",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-05-27",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-27",
+      "ticker": "911609",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-27",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-27",
+      "ticker": "6184",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-27",
+      "ticker": "9929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.2
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "1402",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "6281",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "2231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "00633L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "6176",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "1229",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "085735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-05-28",
+      "ticker": "085255",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.9
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "03027X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.0
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "911609",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "006205",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "1229",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "6176",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "3052",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-05-29",
+      "ticker": "2929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "03010X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "006205",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "03012X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "2317",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "2929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "3481",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-06-01",
+      "ticker": "1229",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.4
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "911609",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.1
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "3042",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.0
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "2317",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "2727",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "01002T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "3559",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "6286",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-06-02",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "9908",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.4
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "085255",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.8
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "6285",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "1338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "2890",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "03027X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "4733",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-06-03",
+      "ticker": "9938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.6
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.4
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "2331",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "2228",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "1730",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "2347",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "2833",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.8
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "3706",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "0061",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.9
+    },
+    {
+      "date": "2015-06-04",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.6
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "6224",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "3023",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-06-05",
+      "ticker": "9938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.6
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "6224",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "2443",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "3042",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-06-08",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.7
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "4733",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.2
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "6224",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "2347",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "085255",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "1474",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.1
+    },
+    {
+      "date": "2015-06-09",
+      "ticker": "0061",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.5
+    },
+    {
+      "date": "2015-06-10",
+      "ticker": "085255",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-06-10",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-06-10",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-06-10",
+      "ticker": "2228",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.3
+    },
+    {
+      "date": "2015-06-10",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.0
+    },
+    {
+      "date": "2015-06-11",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-11",
+      "ticker": "085255",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-06-11",
+      "ticker": "1476",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-06-11",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -1.9
+    },
+    {
+      "date": "2015-06-12",
+      "ticker": "00633L",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-06-12",
+      "ticker": "1476",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-06-12",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-06-12",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-06-12",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-06-12",
+      "ticker": "083796",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-06-15",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-06-15",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 4.9
+    },
+    {
+      "date": "2015-06-15",
+      "ticker": "006205",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -1.1
+    },
+    {
+      "date": "2015-06-16",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-06-16",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-06-16",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-06-16",
+      "ticker": "03027X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-06-17",
+      "ticker": "6214",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-06-17",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-06-17",
+      "ticker": "2347",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-06-17",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2015-06-18",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-18",
+      "ticker": "2485",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2015-06-22",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-06-22",
+      "ticker": "2727",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-06-22",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2015-06-23",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-06-23",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-06-23",
+      "ticker": "2485",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-06-24",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-06-24",
+      "ticker": "2485",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-06-24",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-06-24",
+      "ticker": "1589",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-06-25",
+      "ticker": "6224",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-06-25",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-06-25",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-06-25",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-06-26",
+      "ticker": "1454",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-06-26",
+      "ticker": "2316",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-06-26",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-06-26",
+      "ticker": "8404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-06-29",
+      "ticker": "1455",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-06-29",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-06-29",
+      "ticker": "6176",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.8
+    },
+    {
+      "date": "2015-06-30",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-06-30",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-06-30",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-06-30",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -1.2
+    },
+    {
+      "date": "2015-07-01",
+      "ticker": "1707",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-07-01",
+      "ticker": "6176",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-07-02",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.9
+    },
+    {
+      "date": "2015-07-03",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-07-03",
+      "ticker": "6414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-07-03",
+      "ticker": "03007X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 3.0
+    },
+    {
+      "date": "2015-07-06",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-07-06",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.7
+    },
+    {
+      "date": "2015-07-06",
+      "ticker": "04363P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.3
+    },
+    {
+      "date": "2015-07-07",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.4
+    },
+    {
+      "date": "2015-07-07",
+      "ticker": "6269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-07-07",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-07-07",
+      "ticker": "2474",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.3
+    },
+    {
+      "date": "2015-07-08",
+      "ticker": "2485",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-07-08",
+      "ticker": "4737",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-07-08",
+      "ticker": "4137",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2015-07-08",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-07-08",
+      "ticker": "2506",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-07-08",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-07-09",
+      "ticker": "2506",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.7
+    },
+    {
+      "date": "2015-07-14",
+      "ticker": "3029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.8
+    },
+    {
+      "date": "2015-07-14",
+      "ticker": "04575P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-07-14",
+      "ticker": "2485",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-07-14",
+      "ticker": "2450",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -1.1
+    },
+    {
+      "date": "2015-07-15",
+      "ticker": "3029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-07-15",
+      "ticker": "04575P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-07-15",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-07-15",
+      "ticker": "04891P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.5
+    },
+    {
+      "date": "2015-07-16",
+      "ticker": "3561",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-07-20",
+      "ticker": "03033X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -1.7
+    },
+    {
+      "date": "2015-07-21",
+      "ticker": "2485",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-07-21",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.2
+    },
+    {
+      "date": "2015-07-22",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-07-22",
+      "ticker": "2712",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-07-22",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2015-07-22",
+      "ticker": "2228",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.5
+    },
+    {
+      "date": "2015-07-23",
+      "ticker": "4119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.9
+    },
+    {
+      "date": "2015-07-24",
+      "ticker": "6412",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-07-24",
+      "ticker": "9935",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-07-31",
+      "ticker": "04575P",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.6
+    },
+    {
+      "date": "2015-07-31",
+      "ticker": "9935",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-08-07",
+      "ticker": "03054X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-08-07",
+      "ticker": "4737",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-08-10",
+      "ticker": "03054X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.4
+    },
+    {
+      "date": "2015-08-10",
+      "ticker": "2847",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.3
+    },
+    {
+      "date": "2015-08-11",
+      "ticker": "1702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-08-12",
+      "ticker": "2847",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-08-12",
+      "ticker": "1702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-08-13",
+      "ticker": "1702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.0
+    },
+    {
+      "date": "2015-08-14",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-08-17",
+      "ticker": "03001X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.5
+    },
+    {
+      "date": "2015-08-18",
+      "ticker": "2488",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-08-18",
+      "ticker": "03001X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.7
+    },
+    {
+      "date": "2015-08-19",
+      "ticker": "1503",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-08-21",
+      "ticker": "03001X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.4
+    },
+    {
+      "date": "2015-08-21",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2015-08-21",
+      "ticker": "1702",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.8
+    },
+    {
+      "date": "2015-08-26",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.6
+    },
+    {
+      "date": "2015-08-27",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2015-08-28",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-09-08",
+      "ticker": "6165",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.0
+    },
+    {
+      "date": "2015-09-09",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-09-11",
+      "ticker": "9941",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -4.6
+    },
+    {
+      "date": "2015-09-18",
+      "ticker": "6165",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-09-21",
+      "ticker": "4536",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.0
+    },
+    {
+      "date": "2015-09-21",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.9
+    },
+    {
+      "date": "2015-09-23",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-09-23",
+      "ticker": "2108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-09-23",
+      "ticker": "1541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2015-09-23",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2015-09-23",
+      "ticker": "9924",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.0
+    },
+    {
+      "date": "2015-09-24",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-09-24",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.3
+    },
+    {
+      "date": "2015-09-24",
+      "ticker": "03001X",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.1
+    },
+    {
+      "date": "2015-09-25",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.4
+    },
+    {
+      "date": "2015-09-30",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-10-01",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-10-01",
+      "ticker": "1321",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2015-10-02",
+      "ticker": "1321",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.9
+    },
+    {
+      "date": "2015-10-05",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-05",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2015-10-06",
+      "ticker": "4912",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-06",
+      "ticker": "8210",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-06",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-10-06",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.6
+    },
+    {
+      "date": "2015-10-07",
+      "ticker": "8210",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-10-07",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-10-07",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-10-07",
+      "ticker": "1321",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2015-10-07",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.3
+    },
+    {
+      "date": "2015-10-08",
+      "ticker": "2423",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-10-08",
+      "ticker": "8222",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-10-08",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-10-08",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.3
+    },
+    {
+      "date": "2015-10-08",
+      "ticker": "1537",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.7
+    },
+    {
+      "date": "2015-10-08",
+      "ticker": "2476",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.3
+    },
+    {
+      "date": "2015-10-12",
+      "ticker": "1541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-10-12",
+      "ticker": "2362",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-10-12",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-12",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-10-12",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "6165",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-10-13",
+      "ticker": "5538",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.3
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "8940",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "1533",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "1541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "6205",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "1466",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-10-14",
+      "ticker": "5538",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "2362",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "1541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "4133",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "2115",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.6
+    },
+    {
+      "date": "2015-10-15",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.8
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.9
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "5538",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "4133",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "2601",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "2867",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "2376",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "2115",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.9
+    },
+    {
+      "date": "2015-10-16",
+      "ticker": "1541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "1515",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "4133",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "3338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.4
+    },
+    {
+      "date": "2015-10-19",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.6
+    },
+    {
+      "date": "2015-10-20",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-20",
+      "ticker": "1709",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-10-20",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-10-20",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-10-20",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.5
+    },
+    {
+      "date": "2015-10-20",
+      "ticker": "8105",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.0
+    },
+    {
+      "date": "2015-10-21",
+      "ticker": "1321",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-21",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-21",
+      "ticker": "2303",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-10-21",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-10-21",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-10-21",
+      "ticker": "6431",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.6
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "3406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.8
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "006203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.6
+    },
+    {
+      "date": "2015-10-22",
+      "ticker": "8996",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -5.0
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.1
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "2105",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.1
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "3406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "8261",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "2601",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-10-23",
+      "ticker": "4930",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.8
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "3406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "4930",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.9
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2015-10-26",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.9
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.5
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "2105",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "5538",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "006203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "2520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-10-27",
+      "ticker": "2031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.8
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "2114",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "006203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "2369",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "3338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.9
+    },
+    {
+      "date": "2015-10-28",
+      "ticker": "1541",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.9
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.7
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.0
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "3406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "2387",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "9945",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-10-29",
+      "ticker": "2369",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "1337",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "2520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "6139",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "3032",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "6168",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-10-30",
+      "ticker": "9945",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "5203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.8
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "2642",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "3035",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "3167",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2015-11-02",
+      "ticker": "006203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.8
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "6139",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "2601",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "3090",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "5203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "8341",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "6168",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-11-03",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.8
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.4
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "1103",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "2601",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "2613",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "4426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2015-11-04",
+      "ticker": "8213",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2015-11-05",
+      "ticker": "1337",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.1
+    },
+    {
+      "date": "2015-11-05",
+      "ticker": "2481",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-11-05",
+      "ticker": "4956",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-11-05",
+      "ticker": "3703",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2015-11-05",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.2
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "3703",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "006208",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "1909",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "4725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "5538",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "8215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "1337",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.8
+    },
+    {
+      "date": "2015-11-06",
+      "ticker": "5469",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.7
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "6452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.8
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "6112",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "1517",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "4916",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2015-11-09",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.1
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.5
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "2106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.1
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "1337",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.5
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "2439",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2015-11-10",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.6
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "1337",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "9911",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "2387",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "2493",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "1308",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "5521",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "3090",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "6442",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.5
+    },
+    {
+      "date": "2015-11-11",
+      "ticker": "2466",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.0
+    },
+    {
+      "date": "2015-11-13",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2015-11-13",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-11-13",
+      "ticker": "5225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-11-13",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-11-13",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-11-16",
+      "ticker": "910708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-11-16",
+      "ticker": "2439",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-16",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2015-11-16",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2015-11-17",
+      "ticker": "6452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2015-11-17",
+      "ticker": "6168",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-11-17",
+      "ticker": "2439",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2015-11-17",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2015-11-19",
+      "ticker": "2439",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-11-19",
+      "ticker": "8201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-11-20",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-11-20",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2015-11-23",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-11-23",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-11-23",
+      "ticker": "4755",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "6201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "9955",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2015-11-24",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.2
+    },
+    {
+      "date": "2015-11-25",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-11-26",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2015-11-27",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-11-27",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2015-11-27",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.3
+    },
+    {
+      "date": "2015-11-30",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.7
+    },
+    {
+      "date": "2015-11-30",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-11-30",
+      "ticker": "6452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2015-11-30",
+      "ticker": "2496",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2015-12-01",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-12-01",
+      "ticker": "4108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2015-12-01",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-12-01",
+      "ticker": "6452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-12-02",
+      "ticker": "8341",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-12-02",
+      "ticker": "3583",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.6
+    },
+    {
+      "date": "2015-12-03",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.7
+    },
+    {
+      "date": "2015-12-03",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2015-12-03",
+      "ticker": "3038",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2015-12-04",
+      "ticker": "1319",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-12-04",
+      "ticker": "6128",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2015-12-07",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2015-12-07",
+      "ticker": "6415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2015-12-07",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2015-12-08",
+      "ticker": "6452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2015-12-08",
+      "ticker": "3617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.8
+    },
+    {
+      "date": "2015-12-09",
+      "ticker": "4142",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-12-09",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.1
+    },
+    {
+      "date": "2015-12-10",
+      "ticker": "3605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 16.0
+    },
+    {
+      "date": "2015-12-11",
+      "ticker": "3579",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2015-12-14",
+      "ticker": "2496",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.6
+    },
+    {
+      "date": "2015-12-15",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2015-12-15",
+      "ticker": "2496",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2015-12-23",
+      "ticker": "4935",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2015-12-24",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2015-12-29",
+      "ticker": "4414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2015-12-30",
+      "ticker": "3015",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2015-12-31",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    }
+  ]
+}

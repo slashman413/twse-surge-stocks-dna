@@ -1,0 +1,3436 @@
+{
+  "trades": [
+    {
+      "ticker": "2425",
+      "buy_date": "2014-04-18",
+      "buy_price": 50.41,
+      "sell_date": "2014-04-24",
+      "sell_price": 45.28,
+      "shares": 991,
+      "pl": -5086.42,
+      "pl_pct": -10.18,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
+      "ticker": "8249",
+      "buy_date": "2014-04-16",
+      "buy_price": 26.08,
+      "sell_date": "2014-04-25",
+      "sell_price": 23.59,
+      "shares": 1916,
+      "pl": -4777.13,
+      "pl_pct": -9.56,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "1225",
+      "buy_date": "2014-04-17",
+      "buy_price": 14.35,
+      "sell_date": "2014-04-25",
+      "sell_price": 13.95,
+      "shares": 3484,
+      "pl": -1393.6,
+      "pl_pct": -2.79,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "3018",
+      "buy_date": "2014-04-18",
+      "buy_price": 17.7,
+      "sell_date": "2014-04-25",
+      "sell_price": 15.9,
+      "shares": 2824,
+      "pl": -5083.2,
+      "pl_pct": -10.17,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "1465",
+      "buy_date": "2014-04-24",
+      "buy_price": 17.01,
+      "sell_date": "2014-04-30",
+      "sell_price": 16.44,
+      "shares": 2939,
+      "pl": -1674.12,
+      "pl_pct": -3.35,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3518",
+      "buy_date": "2014-04-17",
+      "buy_price": 69.67,
+      "sell_date": "2014-05-08",
+      "sell_price": 84.86,
+      "shares": 358,
+      "pl": 5440.23,
+      "pl_pct": 21.81,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1540",
+      "buy_date": "2014-04-22",
+      "buy_price": 23.27,
+      "sell_date": "2014-05-13",
+      "sell_price": 20.35,
+      "shares": 2148,
+      "pl": -6272.9,
+      "pl_pct": -12.55,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+    },
+    {
+      "ticker": "2431",
+      "buy_date": "2014-04-30",
+      "buy_price": 27.75,
+      "sell_date": "2014-05-13",
+      "sell_price": 24.7,
+      "shares": 1801,
+      "pl": -5493.05,
+      "pl_pct": -10.99,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "2377",
+      "buy_date": "2014-04-21",
+      "buy_price": 32.15,
+      "sell_date": "2014-05-15",
+      "sell_price": 39.4,
+      "shares": 777,
+      "pl": 5633.25,
+      "pl_pct": 22.55,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1541",
+      "buy_date": "2014-05-13",
+      "buy_price": 19.75,
+      "sell_date": "2014-06-13",
+      "sell_price": 18.15,
+      "shares": 2531,
+      "pl": -4049.6,
+      "pl_pct": -8.1,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "2376",
+      "buy_date": "2014-05-13",
+      "buy_price": 46.39,
+      "sell_date": "2014-06-23",
+      "sell_price": 43.93,
+      "shares": 1077,
+      "pl": -2651.25,
+      "pl_pct": -5.31,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
+      "ticker": "2611",
+      "buy_date": "2014-04-16",
+      "buy_price": 11.18,
+      "sell_date": "2014-06-24",
+      "sell_price": 10.05,
+      "shares": 4471,
+      "pl": -5043.24,
+      "pl_pct": -10.09,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
+      "ticker": "3518",
+      "buy_date": "2014-04-17",
+      "buy_price": 69.67,
+      "sell_date": "2014-06-30",
+      "sell_price": 76.47,
+      "shares": 359,
+      "pl": 2444.32,
+      "pl_pct": 9.77,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+    },
+    {
+      "ticker": "9908",
+      "buy_date": "2014-06-13",
+      "buy_price": 23.37,
+      "sell_date": "2014-07-07",
+      "sell_price": 24.06,
+      "shares": 2139,
+      "pl": 1458.29,
+      "pl_pct": 2.92,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2377",
+      "buy_date": "2014-04-21",
+      "buy_price": 32.15,
+      "sell_date": "2014-07-16",
+      "sell_price": 46.75,
+      "shares": 778,
+      "pl": 11358.8,
+      "pl_pct": 45.41,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
+      "ticker": "2851",
+      "buy_date": "2014-04-25",
+      "buy_price": 15.0,
+      "sell_date": "2014-07-23",
+      "sell_price": 15.0,
+      "shares": 3333,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+    },
+    {
+      "ticker": "2454",
+      "buy_date": "2014-04-25",
+      "buy_price": 461.11,
+      "sell_date": "2014-07-23",
+      "sell_price": 461.11,
+      "shares": 108,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+    },
+    {
+      "ticker": "5515",
+      "buy_date": "2014-04-21",
+      "buy_price": 13.1,
+      "sell_date": "2014-08-01",
+      "sell_price": 12.78,
+      "shares": 3816,
+      "pl": -1240.91,
+      "pl_pct": -2.48,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1416",
+      "buy_date": "2014-04-22",
+      "buy_price": 17.93,
+      "sell_date": "2014-08-01",
+      "sell_price": 17.08,
+      "shares": 2788,
+      "pl": -2362.83,
+      "pl_pct": -4.73,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2615",
+      "buy_date": "2014-04-28",
+      "buy_price": 14.43,
+      "sell_date": "2014-08-01",
+      "sell_price": 15.0,
+      "shares": 3464,
+      "pl": 1973.43,
+      "pl_pct": 3.95,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "8103",
+      "buy_date": "2014-06-23",
+      "buy_price": 47.24,
+      "sell_date": "2014-08-01",
+      "sell_price": 50.6,
+      "shares": 1058,
+      "pl": 3556.9,
+      "pl_pct": 7.12,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "006204",
+      "buy_date": "2014-06-24",
+      "buy_price": 44.64,
+      "sell_date": "2014-08-01",
+      "sell_price": 45.66,
+      "shares": 1120,
+      "pl": 1136.33,
+      "pl_pct": 2.27,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1612",
+      "buy_date": "2014-06-30",
+      "buy_price": 10.21,
+      "sell_date": "2014-08-01",
+      "sell_price": 10.7,
+      "shares": 4895,
+      "pl": 2386.06,
+      "pl_pct": 4.77,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1702",
+      "buy_date": "2014-07-07",
+      "buy_price": 65.63,
+      "sell_date": "2014-08-01",
+      "sell_price": 68.0,
+      "shares": 761,
+      "pl": 1805.17,
+      "pl_pct": 3.61,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "5388",
+      "buy_date": "2014-07-16",
+      "buy_price": 70.4,
+      "sell_date": "2014-08-01",
+      "sell_price": 70.6,
+      "shares": 710,
+      "pl": 142.0,
+      "pl_pct": 0.28,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "9917",
+      "buy_date": "2014-07-24",
+      "buy_price": 76.31,
+      "sell_date": "2014-08-01",
+      "sell_price": 77.66,
+      "shares": 655,
+      "pl": 881.37,
+      "pl_pct": 1.76,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "9918",
+      "buy_date": "2014-07-24",
+      "buy_price": 33.79,
+      "sell_date": "2014-08-01",
+      "sell_price": 36.17,
+      "shares": 1479,
+      "pl": 3517.53,
+      "pl_pct": 7.04,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "4952",
+      "buy_date": "2014-08-27",
+      "buy_price": 43.0,
+      "sell_date": "2014-09-05",
+      "sell_price": 37.75,
+      "shares": 1162,
+      "pl": -6100.5,
+      "pl_pct": -12.21,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-17%)"
+    },
+    {
+      "ticker": "1452",
+      "buy_date": "2014-08-22",
+      "buy_price": 11.75,
+      "sell_date": "2014-09-12",
+      "sell_price": 12.1,
+      "shares": 4255,
+      "pl": 1489.25,
+      "pl_pct": 2.98,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2484",
+      "buy_date": "2014-08-22",
+      "buy_price": 20.8,
+      "sell_date": "2014-09-12",
+      "sell_price": 20.6,
+      "shares": 2403,
+      "pl": -480.6,
+      "pl_pct": -0.96,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3130",
+      "buy_date": "2014-08-25",
+      "buy_price": 129.0,
+      "sell_date": "2014-09-12",
+      "sell_price": 132.5,
+      "shares": 387,
+      "pl": 1354.5,
+      "pl_pct": 2.71,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6215",
+      "buy_date": "2014-08-25",
+      "buy_price": 24.8,
+      "sell_date": "2014-09-12",
+      "sell_price": 27.8,
+      "shares": 2016,
+      "pl": 6048.0,
+      "pl_pct": 12.1,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2324",
+      "buy_date": "2014-08-26",
+      "buy_price": 27.0,
+      "sell_date": "2014-09-12",
+      "sell_price": 24.15,
+      "shares": 1851,
+      "pl": -5275.35,
+      "pl_pct": -10.56,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1503",
+      "buy_date": "2014-08-26",
+      "buy_price": 41.1,
+      "sell_date": "2014-09-12",
+      "sell_price": 41.0,
+      "shares": 1216,
+      "pl": -121.6,
+      "pl_pct": -0.24,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3607",
+      "buy_date": "2014-08-27",
+      "buy_price": 53.4,
+      "sell_date": "2014-09-12",
+      "sell_price": 52.2,
+      "shares": 936,
+      "pl": -1123.2,
+      "pl_pct": -2.25,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2460",
+      "buy_date": "2014-08-28",
+      "buy_price": 14.6,
+      "sell_date": "2014-09-12",
+      "sell_price": 13.85,
+      "shares": 3424,
+      "pl": -2568.0,
+      "pl_pct": -5.14,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "4999",
+      "buy_date": "2014-08-28",
+      "buy_price": 70.4,
+      "sell_date": "2014-09-12",
+      "sell_price": 64.1,
+      "shares": 710,
+      "pl": -4473.0,
+      "pl_pct": -8.95,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2115",
+      "buy_date": "2014-09-05",
+      "buy_price": 59.3,
+      "sell_date": "2014-09-12",
+      "sell_price": 56.3,
+      "shares": 843,
+      "pl": -2529.0,
+      "pl_pct": -5.06,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2014-01-02",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-03",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-06",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-07",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-08",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-09",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-10",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-13",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-14",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-15",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-16",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-17",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-20",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-21",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-22",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-23",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-24",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-01-27",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-05",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-06",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-07",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-10",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-11",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-12",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-13",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-14",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-17",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-18",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-19",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-20",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-21",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-24",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-25",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-26",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-02-27",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-03",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-04",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-05",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-06",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-07",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-10",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-11",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-12",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-13",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-14",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-17",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-18",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-19",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-20",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-21",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-24",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-25",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-26",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-27",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-28",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-03-31",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-04-01",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-04-02",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-04-03",
+      "equity": 1000000,
+      "type": "hold"
+    },
+    {
+      "date": "2014-04-07",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-08",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-09",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-10",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-11",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-14",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-15",
+      "equity": 1000000,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-16",
+      "equity": 1000000.0,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-17",
+      "equity": 999632.53,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-18",
+      "equity": 1000488.23,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-21",
+      "equity": 1001085.51,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-22",
+      "equity": 1005917.18,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-23",
+      "equity": 1003836.62,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-24",
+      "equity": 994750.39,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-25",
+      "equity": 975529.11,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-28",
+      "equity": 981884.05,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-29",
+      "equity": 988777.73,
+      "type": "daily"
+    },
+    {
+      "date": "2014-04-30",
+      "equity": 984143.74,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-02",
+      "equity": 990379.85,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-05",
+      "equity": 991447.5,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-06",
+      "equity": 990544.1,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-07",
+      "equity": 992063.14,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-08",
+      "equity": 995651.16,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-09",
+      "equity": 995379.48,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-12",
+      "equity": 989850.79,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-13",
+      "equity": 985130.74,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-14",
+      "equity": 985688.65,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-15",
+      "equity": 987676.23,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-16",
+      "equity": 987327.51,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-19",
+      "equity": 986670.99,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-20",
+      "equity": 988024.78,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-21",
+      "equity": 986934.23,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-22",
+      "equity": 990876.37,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-23",
+      "equity": 990730.26,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-26",
+      "equity": 993337.67,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-27",
+      "equity": 996687.3,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-28",
+      "equity": 999429.54,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-29",
+      "equity": 996530.66,
+      "type": "daily"
+    },
+    {
+      "date": "2014-05-30",
+      "equity": 993199.07,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-03",
+      "equity": 990483.29,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-04",
+      "equity": 992024.92,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-05",
+      "equity": 993855.96,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-06",
+      "equity": 991344.86,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-09",
+      "equity": 992392.19,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-10",
+      "equity": 990866.03,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-11",
+      "equity": 990281.78,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-12",
+      "equity": 988871.12,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-13",
+      "equity": 986566.67,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-16",
+      "equity": 986285.29,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-17",
+      "equity": 988772.48,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-18",
+      "equity": 991972.2,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-19",
+      "equity": 993649.81,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-20",
+      "equity": 992069.37,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-23",
+      "equity": 989114.46,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-24",
+      "equity": 990188.77,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-25",
+      "equity": 989167.22,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-26",
+      "equity": 991719.83,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-27",
+      "equity": 989398.98,
+      "type": "daily"
+    },
+    {
+      "date": "2014-06-30",
+      "equity": 990425.08,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-01",
+      "equity": 991324.51,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-02",
+      "equity": 990514.44,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-03",
+      "equity": 994133.93,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-04",
+      "equity": 993269.95,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-07",
+      "equity": 996668.71,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-08",
+      "equity": 996321.29,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-09",
+      "equity": 1000114.74,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-10",
+      "equity": 1000900.17,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-11",
+      "equity": 993854.06,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-14",
+      "equity": 998083.32,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-15",
+      "equity": 999474.48,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-16",
+      "equity": 997621.64,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-17",
+      "equity": 997225.33,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-18",
+      "equity": 999372.15,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-21",
+      "equity": 1001338.88,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-22",
+      "equity": 1004865.76,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-23",
+      "equity": 984810.37,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-24",
+      "equity": 992901.75,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-25",
+      "equity": 990768.72,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-28",
+      "equity": 993029.45,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-29",
+      "equity": 993628.08,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-30",
+      "equity": 998366.73,
+      "type": "daily"
+    },
+    {
+      "date": "2014-07-31",
+      "equity": 996568.52,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-01",
+      "equity": 996605.4,
+      "type": "crash"
+    },
+    {
+      "date": "2014-08-04",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-05",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-06",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-07",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-08",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-11",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-12",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-13",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-14",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-15",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-18",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-19",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-20",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-21",
+      "equity": 996605.4,
+      "type": "hold"
+    },
+    {
+      "date": "2014-08-22",
+      "equity": 996605.4,
+      "type": "daily"
+    },
+    {
+      "date": "2014-08-25",
+      "equity": 998259.95,
+      "type": "daily"
+    },
+    {
+      "date": "2014-08-26",
+      "equity": 1000446.85,
+      "type": "daily"
+    },
+    {
+      "date": "2014-08-27",
+      "equity": 999462.86,
+      "type": "daily"
+    },
+    {
+      "date": "2014-08-28",
+      "equity": 1000164.0,
+      "type": "daily"
+    },
+    {
+      "date": "2014-08-29",
+      "equity": 1005155.9,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-01",
+      "equity": 1010858.75,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-02",
+      "equity": 1009837.3,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-03",
+      "equity": 1005411.35,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-04",
+      "equity": 1002987.8,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-05",
+      "equity": 987206.25,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-09",
+      "equity": 998798.1,
+      "type": "daily"
+    },
+    {
+      "date": "2014-09-10",
+      "equity": 994023.85,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-11",
+      "equity": 990015.5,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-12",
+      "equity": 982825.9,
+      "type": "crash"
+    },
+    {
+      "date": "2014-09-15",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-16",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-17",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-18",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-19",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-22",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-23",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-24",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-25",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-26",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-29",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-09-30",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-01",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-02",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-03",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-06",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-07",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-08",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-09",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-13",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-14",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-15",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-16",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-17",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-20",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-21",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-22",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-23",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-24",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-27",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-28",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-29",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-30",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-10-31",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-03",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-04",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-05",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-06",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-07",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-10",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-11",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-12",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-13",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-14",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-17",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-18",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-19",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-20",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-21",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-24",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-25",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-26",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-27",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-11-28",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-01",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-02",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-03",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-04",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-05",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-08",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-09",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-10",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-11",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-12",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-15",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-16",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-17",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-18",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-19",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-22",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-23",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-24",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-25",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-26",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-29",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-30",
+      "equity": 982825.9,
+      "type": "hold"
+    },
+    {
+      "date": "2014-12-31",
+      "equity": 982825.9,
+      "type": "hold"
+    }
+  ],
+  "missed_trades": [
+    {
+      "date": "2014-07-31",
+      "ticker": "2837",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.1
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "2409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.6
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "1326",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "3022",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "2029",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "5469",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2014-07-31",
+      "ticker": "2901",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "2801",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.6
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "1527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "2409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "9914",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "2845",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "1459",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.9
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.6
+    },
+    {
+      "date": "2014-08-04",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.3
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.5
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "1338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "1603",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "3026",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "6282",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "3022",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "2845",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2014-08-05",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.3
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "1727",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "6215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "3026",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "2459",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "01001T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-08-06",
+      "ticker": "1729",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "1527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.0
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "1452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "2459",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.9
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2014-08-07",
+      "ticker": "1729",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.0
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "1527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.0
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "1234",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "6281",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "2114",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "1452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "6415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-08-08",
+      "ticker": "9914",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2014-08-11",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-08-11",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-08-11",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-08-11",
+      "ticker": "6415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-08-11",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2014-08-12",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.3
+    },
+    {
+      "date": "2014-08-12",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-08-12",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2014-08-12",
+      "ticker": "1903",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2014-08-13",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-08-13",
+      "ticker": "6281",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-08-13",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-08-13",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.9
+    },
+    {
+      "date": "2014-08-13",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-08-13",
+      "ticker": "6415",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2014-08-14",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-08-14",
+      "ticker": "1904",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-08-14",
+      "ticker": "1708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-08-14",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-08-14",
+      "ticker": "0055",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2014-08-14",
+      "ticker": "070785",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.5
+    },
+    {
+      "date": "2014-08-15",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-08-15",
+      "ticker": "1452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-08-15",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-08-15",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "6215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "2409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "2484",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "1503",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-08-18",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "2845",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "2027",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "2484",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.6
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "1452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-08-19",
+      "ticker": "2030",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.0
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "2845",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "072704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "1452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2014-08-20",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "01008T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "2460",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "1904",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.8
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "072704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.6
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "4952",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.3
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "01007T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.2
+    },
+    {
+      "date": "2014-08-21",
+      "ticker": "070785",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.8
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.9
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "03282C",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "2617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "2409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "2107",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.9
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.1
+    },
+    {
+      "date": "2014-09-10",
+      "ticker": "2882",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.8
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "5269",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.3
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "5215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "03282C",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-09-11",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "2020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.5
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "074068",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "01004T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "2107",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "2312",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "2867",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.9
+    },
+    {
+      "date": "2014-09-15",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.2
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "2107",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "1307",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "6215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "2414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "03282C",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-09-16",
+      "ticker": "2312",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.7
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "008201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "9931",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "076479",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "0061",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.7
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "2207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "03282C",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "2024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2014-09-17",
+      "ticker": "8926",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-09-18",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-09-18",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-09-18",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-09-18",
+      "ticker": "6215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-09-18",
+      "ticker": "3019",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2014-09-18",
+      "ticker": "2312",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2014-09-19",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-09-19",
+      "ticker": "6215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-09-19",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-09-19",
+      "ticker": "2312",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-09-19",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-09-22",
+      "ticker": "2107",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-09-22",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-09-22",
+      "ticker": "008201",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-09-22",
+      "ticker": "03282C",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-09-22",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2014-09-23",
+      "ticker": "8249",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.6
+    },
+    {
+      "date": "2014-09-23",
+      "ticker": "2414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-09-23",
+      "ticker": "074068",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-09-23",
+      "ticker": "2107",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2014-09-24",
+      "ticker": "2002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-09-24",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-09-24",
+      "ticker": "2414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-09-24",
+      "ticker": "2107",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-09-24",
+      "ticker": "074068",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2014-09-24",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.7
+    },
+    {
+      "date": "2014-09-25",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-09-25",
+      "ticker": "03282C",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-09-25",
+      "ticker": "2331",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-09-25",
+      "ticker": "3044",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.0
+    },
+    {
+      "date": "2014-09-25",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2014-09-25",
+      "ticker": "076479",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2014-09-26",
+      "ticker": "3044",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-09-26",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2014-09-29",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.8
+    },
+    {
+      "date": "2014-09-29",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-09-29",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-09-29",
+      "ticker": "3044",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-09-29",
+      "ticker": "8103",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-09-30",
+      "ticker": "8103",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-09-30",
+      "ticker": "006207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-09-30",
+      "ticker": "2527",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-09-30",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    },
+    {
+      "date": "2014-09-30",
+      "ticker": "3044",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.5
+    },
+    {
+      "date": "2014-10-01",
+      "ticker": "8103",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-10-01",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-10-01",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.6
+    },
+    {
+      "date": "2014-10-02",
+      "ticker": "8103",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-10-02",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2014-10-06",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.9
+    },
+    {
+      "date": "2014-10-08",
+      "ticker": "1409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.0
+    },
+    {
+      "date": "2014-10-09",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-10-09",
+      "ticker": "1537",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-10-09",
+      "ticker": "2484",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-10-09",
+      "ticker": "4106",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-10-13",
+      "ticker": "1234",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-10-13",
+      "ticker": "9918",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2014-10-13",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.9
+    },
+    {
+      "date": "2014-10-13",
+      "ticker": "2115",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.4
+    },
+    {
+      "date": "2014-10-15",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.8
+    },
+    {
+      "date": "2014-10-16",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.1
+    },
+    {
+      "date": "2014-10-16",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-10-16",
+      "ticker": "01001T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.5
+    },
+    {
+      "date": "2014-10-17",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2014-10-20",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2014-10-20",
+      "ticker": "2115",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.1
+    },
+    {
+      "date": "2014-10-21",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-10-22",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.3
+    },
+    {
+      "date": "2014-10-22",
+      "ticker": "2115",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.1
+    },
+    {
+      "date": "2014-10-24",
+      "ticker": "1325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.6
+    },
+    {
+      "date": "2014-10-24",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-10-24",
+      "ticker": "2476",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
+    },
+    {
+      "date": "2014-10-27",
+      "ticker": "01001T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -0.2
+    },
+    {
+      "date": "2014-10-29",
+      "ticker": "2423",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.8
+    },
+    {
+      "date": "2014-10-31",
+      "ticker": "1410",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-11-05",
+      "ticker": "2482",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.8
+    },
+    {
+      "date": "2014-11-12",
+      "ticker": "2207",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-11-13",
+      "ticker": "01001T",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-11-13",
+      "ticker": "2482",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2014-11-14",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-11-17",
+      "ticker": "2543",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2014-11-18",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-11-20",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.8
+    },
+    {
+      "date": "2014-11-20",
+      "ticker": "2327",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-11-24",
+      "ticker": "6409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-11-25",
+      "ticker": "6409",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.4
+    },
+    {
+      "date": "2014-11-25",
+      "ticker": "1234",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.3
+    },
+    {
+      "date": "2014-11-26",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-11-27",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-11-27",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-11-28",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-12-01",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-12-04",
+      "ticker": "1225",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-12-04",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.0
+    },
+    {
+      "date": "2014-12-08",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-12-09",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-12-10",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.1
+    },
+    {
+      "date": "2014-12-10",
+      "ticker": "2506",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.0
+    },
+    {
+      "date": "2014-12-11",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-12-11",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2014-12-11",
+      "ticker": "2506",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.7
+    },
+    {
+      "date": "2014-12-12",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-12-12",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.5
+    },
+    {
+      "date": "2014-12-15",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.7
+    },
+    {
+      "date": "2014-12-15",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2014-12-16",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-12-17",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-12-17",
+      "ticker": "2438",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.6
+    },
+    {
+      "date": "2014-12-17",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
+    },
+    {
+      "date": "2014-12-17",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2014-12-18",
+      "ticker": "2506",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.3
+    },
+    {
+      "date": "2014-12-18",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.9
+    },
+    {
+      "date": "2014-12-18",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-12-18",
+      "ticker": "2611",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 9.5
+    },
+    {
+      "date": "2014-12-19",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 17.2
+    },
+    {
+      "date": "2014-12-19",
+      "ticker": "2610",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.5
+    },
+    {
+      "date": "2014-12-19",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.2
+    },
+    {
+      "date": "2014-12-19",
+      "ticker": "2424",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.8
+    },
+    {
+      "date": "2014-12-19",
+      "ticker": "2618",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-12-19",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.1
+    },
+    {
+      "date": "2014-12-22",
+      "ticker": "2611",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.9
+    },
+    {
+      "date": "2014-12-22",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.4
+    },
+    {
+      "date": "2014-12-23",
+      "ticker": "2491",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-12-23",
+      "ticker": "2424",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
+    },
+    {
+      "date": "2014-12-24",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.2
+    },
+    {
+      "date": "2014-12-25",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    },
+    {
+      "date": "2014-12-25",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.1
+    },
+    {
+      "date": "2014-12-25",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.7
+    },
+    {
+      "date": "2014-12-26",
+      "ticker": "2506",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.1
+    },
+    {
+      "date": "2014-12-26",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-12-26",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2014-12-29",
+      "ticker": "3432",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.4
+    },
+    {
+      "date": "2014-12-29",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.3
+    },
+    {
+      "date": "2014-12-30",
+      "ticker": "6177",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
+    },
+    {
+      "date": "2014-12-31",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 14.7
+    }
+  ]
+}
