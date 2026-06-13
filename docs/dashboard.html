@@ -321,11 +321,14 @@ function renderYearly(data) {
     `報告產生: ${new Date().toISOString().slice(0, 10)} | 回測區間: 2004-2026`;
 
   // ── Compute overall stats ──
-  let compounded = 1000000;
-  let peak = 1000000;
+  const INITIAL = 3000000;
+  let compounded = INITIAL;
+  let peak = INITIAL;
   let mdd = 0;
+  const compoundedEquity = [];
   data.forEach(s => {
     compounded *= (1 + s.total_return_pct / 100);
+    compoundedEquity.push(Math.round(compounded));
     if (compounded > peak) peak = compounded;
     const dd = (peak - compounded) / peak * 100;
     if (dd > mdd) mdd = dd;
@@ -335,14 +338,14 @@ function renderYearly(data) {
   const winYears = data.filter(s => s.total_return_pct > 0).length;
   const avgWinRate = data.reduce((a, s) => a + s.trade_win_rate, 0) / data.length;
   const nYears = data.length;
-  const cagr = (((compounded / 1000000) ** (1.0 / nYears)) - 1) * 100;
-  const totalReturnPct = (compounded - 1000000) / 1000000 * 100;
+  const cagr = (((compounded / INITIAL) ** (1.0 / nYears)) - 1) * 100;
+  const totalReturnPct = (compounded - INITIAL) / INITIAL * 100;
   const avgReturn = data.reduce((a, s) => a + s.total_return_pct, 0) / data.length;
 
   document.getElementById('sum-final-equity').textContent =
     `NT$${Math.round(compounded).toLocaleString()}`;
-  document.getElementById('sum-final-equity').style.color = compounded >= 1000000 ? 'var(--green)' : 'var(--red)';
-  document.getElementById('sum-final-equity-card').style.borderLeft = `3px solid ${compounded >= 1000000 ? 'var(--green)' : 'var(--red)'}`;
+  document.getElementById('sum-final-equity').style.color = compounded >= INITIAL ? 'var(--green)' : 'var(--red)';
+  document.getElementById('sum-final-equity-card').style.borderLeft = `3px solid ${compounded >= INITIAL ? 'var(--green)' : 'var(--red)'}`;
 
   document.getElementById('sum-cagr').textContent = `${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%`;
   document.getElementById('sum-cagr').style.color = cagr >= 0 ? 'var(--green)' : 'var(--red)';
@@ -407,8 +410,8 @@ function renderYearly(data) {
     data: {
       labels: data.map(s => s.year),
       datasets: [{
-        label: '最終權益 (NT$)',
-        data: data.map(s => s.final_equity),
+        label: '複利最終權益 (NT$)',
+        data: compoundedEquity,
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.1)',
         fill: true, tension: 0.3, pointRadius: 3,
