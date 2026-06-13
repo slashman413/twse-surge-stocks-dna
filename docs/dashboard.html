@@ -807,10 +807,11 @@ async function openKline(ticker) {
     const ma20Data = targetDays.map(p => p.ma20);
     const ma50Data = targetDays.map(p => p.ma50);
 
-    // Buy/sell marker arrays (parallel to targetDays)
+    // Buy/sell marker arrays — FULL length matching targetDays
+    const len = targetDays.length;
     const buyIdx = [];
     const sellIdx = [];
-    for (let i = 2; i < targetDays.length; i++) {
+    for (let i = 2; i < len; i++) {
       const p = targetDays[i];
       const prev = targetDays[i - 1];
       if (p.dist_ma20 >= -2 && p.dist_ma20 <= 1 && p.rsi14 >= 30 && p.rsi14 <= 60 && p.dist_ma50 > -3)
@@ -820,8 +821,13 @@ async function openKline(ticker) {
       if (p.dist_ma20 < -5 && prev.dist_ma20 >= -5)
         sellIdx.push(i);
     }
-    const buyPts = buyIdx.map(i => priceData[i]);
-    const sellPts = sellIdx.map(i => priceData[i]);
+    // Full-length arrays: 0 at non-signal, >0 at signal
+    const buyRad = new Array(len).fill(0);
+    const sellRad = new Array(len).fill(0);
+    const buyCol = new Array(len).fill('transparent');
+    const sellCol = new Array(len).fill('transparent');
+    buyIdx.forEach(i => { buyRad[i] = 9; buyCol[i] = '#22c55e'; });
+    sellIdx.forEach(i => { sellRad[i] = 9; sellCol[i] = '#ef4444'; });
 
     klineChart = new Chart(ctx, {
       type: 'line',
@@ -831,8 +837,8 @@ async function openKline(ticker) {
           { label: `${ticker} 收盤價`, data: priceData, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.15, pointRadius: 0, borderWidth: 2 },
           { label: 'MA20', data: ma20Data, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
           { label: 'MA50', data: ma50Data, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
-          { label: '🟢買進', data: priceData, borderColor: 'transparent', pointRadius: buyIdx.map(i => 7), pointBackgroundColor: buyIdx.map(() => '#22c55e'), pointStyle: 'triangle', pointRotation: 0, showLine: false },
-          { label: '🔴出場', data: priceData, borderColor: 'transparent', pointRadius: sellIdx.map(i => 7), pointBackgroundColor: sellIdx.map(() => '#ef4444'), pointStyle: 'triangle', pointRotation: 180, showLine: false },
+          { label: '🟢買進', data: priceData, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
+          { label: '🔴出場', data: priceData, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
         ]
       },
       options: {
