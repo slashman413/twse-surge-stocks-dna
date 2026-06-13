@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>大飆股DNA - 台股量化回測報告</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.umd.min.js"></script>
 <style>
   :root {
     --bg: #0f172a; --card: #1e293b; --border: #334155;
@@ -208,85 +210,33 @@
   <!-- ═══ 即時訊號 Tab ═══ -->
   <div id="tab-signals" class="tab-content">
     <h2 style="margin-bottom:8px;">🔍 即時篩選訊號</h2>
-    <p style="color:var(--text-dim);font-size:0.85rem;margin-bottom:16px;">📅 最新交易日: 2026-06-12 | 大盤: 多頭 趨勢向上 | 最多可取 2 檔</p>
-    <div id="signals-list">
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">1</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">9933</span> <span class="signal-score">119.5</span></div>
-          <div class="signal-detail">價格 40.95 | 距20MA -1.34% | RSI14 50 | 中鼎</div>
+    <div id="signals-market-info" style="color:var(--text-dim);font-size:0.85rem;margin-bottom:16px;">載入中...</div>
+    <div id="signals-list"></div>
+
+    <!-- K-line detail panel -->
+    <div id="kline-detail-section" class="table-section" style="display:none;margin-top:20px;">
+      <h2 id="kline-detail-title">📈 K線分析</h2>
+      <button class="tab-btn" onclick="closeKline()" style="margin-bottom:12px;">✕ 關閉</button>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;">
+        <div class="chart-card">
+          <h3>📊 K線 + 均線</h3>
+          <div style="position:relative;height:350px;">
+            <canvas id="klineChart"></canvas>
+          </div>
         </div>
-        <div style="text-align:right;">
-          <span class="badge badge-buy">買入訊號</span>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">2</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">2347</span> <span class="signal-score">117.6</span></div>
-          <div class="signal-detail">價格 89.10 | 距20MA -0.73% | RSI14 52 | 聯強</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="badge badge-buy">買入訊號</span>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">3</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">6197</span> <span class="signal-score">114.7</span></div>
-          <div class="signal-detail">價格 327.50 | 距20MA +0.77% | RSI14 60 | 佳必琪</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">4</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">2816</span> <span class="signal-score">101.2</span></div>
-          <div class="signal-detail">價格 33.20 | 距20MA -1.79% | RSI14 48 | 旺旺友聯</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">5</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">3033</span> <span class="signal-score">100.7</span></div>
-          <div class="signal-detail">價格 49.60 | 距20MA -0.59% | RSI14 48 | 威健</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">6</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">2832</span> <span class="signal-score">95.6</span></div>
-          <div class="signal-detail">價格 54.90 | 距20MA +0.56% | RSI14 57 | 台產</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">7</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">3321</span> <span class="signal-score">95.6</span></div>
-          <div class="signal-detail">價格 20.45 | 距20MA +0.62% | RSI14 56 | 同泰</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">8</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">5285</span> <span class="signal-score">91.6</span></div>
-          <div class="signal-detail">價格 89.70 | 距20MA -0.93% | RSI14 53 | 界霖</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">9</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">2603</span> <span class="signal-score">88.8</span></div>
-          <div class="signal-detail">價格 228.00 | 距20MA -0.68% | RSI14 58 | 長榮</div>
-        </div>
-      </div>
-      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
-        <div class="signal-rank">10</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">6166</span> <span class="signal-score">85.8</span></div>
-          <div class="signal-detail">價格 128.50 | 距20MA -1.19% | RSI14 49 | 凌華</div>
+        <div class="chart-card">
+          <h3>📉 技術指標</h3>
+          <div style="position:relative;height:150px;margin-bottom:8px;">
+            <canvas id="rsiChart"></canvas>
+          </div>
+          <div style="position:relative;height:100px;">
+            <canvas id="volumeChart"></canvas>
+          </div>
+          <div id="kline-summary" style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(51,65,85,0.3);font-size:0.8rem;color:var(--text-dim);"></div>
         </div>
       </div>
     </div>
+
     <div class="table-section" style="margin-top:24px;">
       <h2>📌 策略說明</h2>
       <div style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;font-size:0.9rem;color:var(--text-dim);line-height:1.8;">
@@ -319,9 +269,14 @@
 
 <script>
 const SUMMARY_URL = './yearly_backtests/summary_v12.json';
+const SIGNALS_URL = './yearly_backtests/signals_data.json';
+const KLINE_URL = './yearly_backtests/kline_data.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
 let equityChart = null;
+let klineChart = null;
+let rsiChart = null;
+let volumeChart = null;
 
 function switchTab(name, btn) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
@@ -580,7 +535,242 @@ function closeYearDetail() {
   if (equityChart) { equityChart.destroy(); equityChart = null; }
 }
 
+// ═══ Signals & K-line ═══
+async function loadSignals() {
+  try {
+    const resp = await fetch(SIGNALS_URL);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+
+    const mk = data.market_bullish && data.market_trend_up ? '多頭' : data.market_crash ? '崩跌' : '盤整';
+    document.getElementById('signals-market-info').innerHTML =
+      `📅 最新交易日: ${data.date} | 大盤: <strong style="color:${data.market_bullish && data.market_trend_up ? 'var(--green)' : 'var(--red)'}">${mk}</strong> 趨勢${data.market_trend_up ? '向上' : '向下'} | 最多可取 2 檔`;
+
+    const list = document.getElementById('signals-list');
+    list.innerHTML = data.signals.map((s, i) => {
+      const distColor = s.dist_ma20 < 0 ? 'var(--green)' : s.dist_ma20 > 1 ? 'var(--red)' : 'var(--yellow)';
+      return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openKline('${s.ticker}')">
+        <div class="signal-rank">${i + 1}</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">${s.ticker}</span> <span class="signal-score">${s.score}</span></div>
+          <div class="signal-detail">價格 ${s.close.toLocaleString()} | 距20MA <span style="color:${distColor}">${s.dist_ma20 >= 0 ? '+' : ''}${s.dist_ma20}%</span> | RSI14 ${Math.round(s.rsi14)} | 品質 ${s.quality} 加分 ${s.bonus}</div>
+        </div>
+        <div style="text-align:right;">
+          <span class="badge badge-buy">📈 K線</span>
+        </div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('signals-market-info').textContent = '⚠️ 無法載入訊號資料';
+  }
+}
+
+function closeKline() {
+  document.getElementById('kline-detail-section').style.display = 'none';
+  if (klineChart) { klineChart.destroy(); klineChart = null; }
+  if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
+  if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
+}
+
+async function openKline(ticker) {
+  closeKline();
+  document.getElementById('kline-detail-title').textContent = `📈 ${ticker} K線分析`;
+  document.getElementById('kline-detail-section').style.display = 'block';
+  document.getElementById('kline-summary').textContent = '載入中...';
+
+  try {
+    const resp = await fetch(KLINE_URL);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const allData = await resp.json();
+    const data = allData[ticker];
+    if (!data) throw new Error(`無 ${ticker} K線資料`);
+
+    const kline = data.kline;
+    if (kline.length < 10) throw new Error('K線資料不足');
+
+    const targetDays = kline.filter(p => p.d >= '2026-01-01');
+    const labels = targetDays.map(p => p.d);
+
+    // Candlestick + MA chart
+    const ctx = document.getElementById('klineChart').getContext('2d');
+    if (klineChart) { klineChart.destroy(); klineChart = null; }
+    // Reset canvas
+    const canvas = document.getElementById('klineChart');
+    canvas.removeAttribute('style');
+    canvas.width = canvas.parentElement.clientWidth || 600;
+    canvas.height = 350;
+
+    // Build candlestick data
+    const candleData = targetDays.map(p => ({
+      x: new Date(p.d).getTime(),
+      o: p.o, h: p.h, l: p.l, c: p.c,
+    }));
+
+    const ma20Data = targetDays.map(p => ({
+      x: new Date(p.d).getTime(),
+      y: p.ma20,
+    }));
+
+    const ma50Data = targetDays.map(p => ({
+      x: new Date(p.d).getTime(),
+      y: p.ma50,
+    }));
+
+    klineChart = new Chart(ctx, {
+      type: 'candlestick',
+      data: {
+        datasets: [
+          {
+            label: ticker,
+            data: candleData,
+            color: {
+              up: '#22c55e',
+              down: '#ef4444',
+              unchanged: '#94a3b8',
+            },
+            borderColor: {
+              up: '#22c55e',
+              down: '#ef4444',
+              unchanged: '#94a3b8',
+            },
+          },
+          {
+            label: 'MA20',
+            data: ma20Data,
+            type: 'line',
+            borderColor: '#eab308',
+            borderWidth: 1.5,
+            pointRadius: 0,
+            fill: false,
+          },
+          {
+            label: 'MA50',
+            data: ma50Data,
+            type: 'line',
+            borderColor: '#a855f7',
+            borderWidth: 1.5,
+            pointRadius: 0,
+            fill: false,
+          },
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: { color: '#94a3b8', boxWidth: 12, font: { size: 10 } }
+          },
+          tooltip: {
+            callbacks: {
+              title: items => {
+                const d = candleData[items[0].dataIndex];
+                return new Date(d.x).toISOString().slice(0, 10);
+              },
+              label: ctx => {
+                if (ctx.dataset.type === 'line') return `${ctx.dataset.label}: ${ctx.parsed.y}`;
+                const d = candleData[ctx.dataIndex];
+                return `O:${d.o} H:${d.h} L:${d.l} C:${d.c}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            type: 'time',
+            time: { unit: 'day', displayFormats: { day: 'MM/dd' } },
+            ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 15 },
+            grid: { display: false },
+          },
+          y: {
+            ticks: { color: '#94a3b8', font: { size: 9 } },
+            grid: { color: '#1e293b' },
+          }
+        }
+      }
+    });
+
+    // RSI chart
+    const rsiCtx = document.getElementById('rsiChart').getContext('2d');
+    if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
+    const rsi = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.rsi14 }));
+    rsiChart = new Chart(rsiCtx, {
+      type: 'line',
+      data: {
+        datasets: [{
+          label: 'RSI14',
+          data: rsi,
+          borderColor: '#3b82f6',
+          borderWidth: 1.5,
+          pointRadius: 0,
+          fill: false,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { display: false }, grid: { display: false } },
+          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 } }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+
+    // Volume chart
+    const volCtx = document.getElementById('volumeChart').getContext('2d');
+    if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
+    const vol = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.v }));
+    const volColor = targetDays.map(p => p.c >= p.o ? 'rgba(34,197,94,0.5)' : 'rgba(239,68,68,0.5)');
+    volumeChart = new Chart(volCtx, {
+      type: 'bar',
+      data: {
+        datasets: [{
+          label: '成交量',
+          data: vol,
+          backgroundColor: volColor,
+          borderRadius: 1,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { display: false }, grid: { display: false } },
+          y: { ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => (v/1000).toFixed(0) + 'k' }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+
+    // Summary
+    const last = targetDays[targetDays.length - 1];
+    const entryZone = last.dist_ma20 >= -2 && last.dist_ma20 <= 1;
+    document.getElementById('kline-summary').innerHTML = `
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+        <div>收盤: <strong>${last.c}</strong></div>
+        <div>距MA20: <strong style="color:${entryZone ? 'var(--green)' : 'var(--yellow)'}">${last.dist_ma20 >= 0 ? '+' : ''}${last.dist_ma20}%</strong></div>
+        <div>MA20: <strong>${last.ma20}</strong></div>
+        <div>RSI14: <strong style="color:${last.rsi14 >= 30 && last.rsi14 <= 60 ? 'var(--green)' : 'var(--red)'}">${last.rsi14}</strong></div>
+        <div>MA50: <strong>${last.ma50}</strong></div>
+        <div>月RSI4: <strong>${data.m_rsi4}</strong></div>
+        <div>ADX: <strong>${last.adx}</strong></div>
+        <div>月ADX1: <strong>${data.m_adx1}</strong></div>
+      </div>
+      <div style="margin-top:6px;padding-top:6px;border-top:1px solid #334155;">
+        ${entryZone ? '✅ 在進場區間' : last.dist_ma20 < -2 ? '⚠️ 跌破MA20過多' : '⚠️ 偏離MA20'}
+        ${last.rsi14 >= 30 && last.rsi14 <= 60 ? ' | RSI合理' : ' | RSI偏高/偏低'}
+        ${last.dist_ma50 > -3 ? ' | 在MA50之上' : ' | 在MA50之下'}
+      </div>`;
+
+  } catch(e) {
+    document.getElementById('kline-summary').innerHTML = `<span style="color:var(--red);">⚠️ ${e.message}</span>`;
+  }
+}
+
 loadData();
+// Also load signals
+setTimeout(loadSignals, 100);
 
 // Page view counter
 (async function() {
