@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>大飆股DNA - 台股量化回測報告</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.umd.min.js"></script>
 <style>
   :root {
     --bg: #0f172a; --card: #1e293b; --border: #334155;
@@ -792,192 +791,131 @@ async function openKline(ticker) {
     if (kline.length < 10) throw new Error('K線資料不足');
 
     const targetDays = kline.filter(p => p.d >= '2026-01-01');
-    const labels = targetDays.map(p => p.d);
+    const labels = targetDays.map(p => p.d.slice(5));  // MM-DD
 
+    // Destroy old charts & reset canvas
+    [klineChart, rsiChart, volumeChart].forEach(c => { if (c) { c.destroy(); } });
+    klineChart = null; rsiChart = null; volumeChart = null;
+
+    // --- Kline price chart ---
     const ctx = document.getElementById('klineChart');
-    if (klineChart) { klineChart.destroy(); klineChart = null; }
     ctx.removeAttribute('style');
     ctx.width = ctx.parentElement.clientWidth || 600;
     ctx.height = 350;
 
-    // Detect buy/sell signals on the chart
-    const buyMarkers = [];
-    const sellMarkers = [];
+    const priceData = targetDays.map(p => p.c);
+    const ma20Data = targetDays.map(p => p.ma20);
+    const ma50Data = targetDays.map(p => p.ma50);
+
+    // Buy/sell marker arrays (parallel to targetDays)
+    const buyIdx = [];
+    const sellIdx = [];
     for (let i = 2; i < targetDays.length; i++) {
       const p = targetDays[i];
       const prev = targetDays[i - 1];
-      // Buy condition: pullback to MA20 + RSI 30-60 + above MA50
-      if (p.dist_ma20 >= -2 && p.dist_ma20 <= 1 &&
-          p.rsi14 >= 30 && p.rsi14 <= 60 &&
-          p.dist_ma50 > -3) {
-        buyMarkers.push({ x: new Date(p.d).getTime(), y: p.c, reason: '拉回MA20+' });
-      }
-      // Sell/stoploss: RSI < 35
-      if (p.rsi14 < 35 && prev.rsi14 >= 35) {
-        sellMarkers.push({ x: new Date(p.d).getTime(), y: p.c, reason: `RSI<35(${p.rsi14})` });
-      }
-      // Sell :跌破MA20過多
-      if (p.dist_ma20 < -5 && prev.dist_ma20 >= -5) {
-        sellMarkers.push({ x: new Date(p.d).getTime(), y: p.c, reason: '跌破MA20' });
-      }
+      if (p.dist_ma20 >= -2 && p.dist_ma20 <= 1 && p.rsi14 >= 30 && p.rsi14 <= 60 && p.dist_ma50 > -3)
+        buyIdx.push(i);
+      if (p.rsi14 < 35 && prev.rsi14 >= 35)
+        sellIdx.push(i);
+      if (p.dist_ma20 < -5 && prev.dist_ma20 >= -5)
+        sellIdx.push(i);
     }
-
-    // Price line chart (no candlestick - simpler & reliable)
-    const priceData = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.c }));
-    const ma20Data = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.ma20 }));
-    const ma50Data = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.ma50 }));
+    const buyPts = buyIdx.map(i => priceData[i]);
+    const sellPts = sellIdx.map(i => priceData[i]);
 
     klineChart = new Chart(ctx, {
       type: 'line',
       data: {
+        labels,
         datasets: [
-          {
-            label: `${ticker} 收盤價`,
-            data: priceData,
-            borderColor: '#3b82f6',
-            backgroundColor: 'rgba(59,130,246,0.08)',
-            fill: true, tension: 0.15, pointRadius: 0,
-            borderWidth: 2,
-          },
-          {
-            label: 'MA20',
-            data: ma20Data,
-            type: 'line',
-            borderColor: '#eab308',
-            borderWidth: 1.5, pointRadius: 0, fill: false,
-            borderDash: [4, 3],
-          },
-          {
-            label: 'MA50',
-            data: ma50Data,
-            type: 'line',
-            borderColor: '#a855f7',
-            borderWidth: 1.5, pointRadius: 0, fill: false,
-            borderDash: [4, 3],
-          },
-          // Buy markers
-          {
-            label: '買進訊號',
-            data: buyMarkers,
-            type: 'line',
-            borderColor: 'transparent',
-            pointRadius: 7,
-            pointBackgroundColor: buyMarkers.map(() => '#22c55e'),
-            pointStyle: 'triangle',
-            pointRotation: 0,
-            showLine: false,
-          },
-          // Sell/exit markers
-          {
-            label: '出場訊號',
-            data: sellMarkers,
-            type: 'line',
-            borderColor: 'transparent',
-            pointRadius: 7,
-            pointBackgroundColor: sellMarkers.map(() => '#ef4444'),
-            pointStyle: 'triangle',
-            pointRotation: 180,
-            showLine: false,
-          },
+          { label: `${ticker} 收盤價`, data: priceData, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.15, pointRadius: 0, borderWidth: 2 },
+          { label: 'MA20', data: ma20Data, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
+          { label: 'MA50', data: ma50Data, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
+          { label: '🟢買進', data: priceData, borderColor: 'transparent', pointRadius: buyIdx.map(i => 7), pointBackgroundColor: buyIdx.map(() => '#22c55e'), pointStyle: 'triangle', pointRotation: 0, showLine: false },
+          { label: '🔴出場', data: priceData, borderColor: 'transparent', pointRadius: sellIdx.map(i => 7), pointBackgroundColor: sellIdx.map(() => '#ef4444'), pointStyle: 'triangle', pointRotation: 180, showLine: false },
         ]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
-        interaction: { mode: 'index', intersect: false },
         plugins: {
           legend: { position: 'top', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 10 } } },
           tooltip: {
             callbacks: {
-              title: items => new Date(items[0].parsed.x).toISOString().slice(0, 10),
               label: ctx => {
                 const d = targetDays[ctx.dataIndex];
-                if (!d) return `${ctx.dataset.label}: ${ctx.parsed.y}`;
-                if (ctx.datasetIndex === 3) return `🟢 買進: ${buyMarkers[ctx.dataIndex]?.reason || ''}`;
-                if (ctx.datasetIndex === 4) return `🔴 出場: ${sellMarkers[ctx.dataIndex]?.reason || ''}`;
-                return `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}`;
+                if (!d) return '';
+                if (ctx.datasetIndex === 3) return '🟢 買進訊號 (拉回MA20+RSI合理)';
+                if (ctx.datasetIndex === 4) return '🔴 出場訊號';
+                return `${ctx.dataset.label}: ${d.c}`;
               },
               afterBody: items => {
                 const d = targetDays[items[0].dataIndex];
                 if (!d) return '';
-                return `開:${d.o} 高:${d.h} 低:${d.l} 收:${d.c} 量:${(d.v/1000).toFixed(0)}k`;
+                return `開:${d.o} 高:${d.h} 低:${d.l} 量:${(d.v/1000).toFixed(0)}k | RSI:${d.rsi14} 距MA20:${d.dist_ma20 >= 0 ? '+' : ''}${d.dist_ma20}%`;
               }
             }
           }
         },
         scales: {
-          x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 12 }, grid: { display: false } },
+          x: { ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 12 }, grid: { display: false } },
           y: { ticks: { color: '#94a3b8', font: { size: 9 } }, grid: { color: '#1e293b' } }
         }
       }
     });
 
-    // RSI chart
-    const rsiCtx = document.getElementById('rsiChart');
-    if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
-    rsiCtx.removeAttribute('style');
-    rsiCtx.width = rsiCtx.parentElement.clientWidth || 300;
-    rsiCtx.height = 150;
-    const rsiData = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.rsi14 }));
-    rsiChart = new Chart(rsiCtx, {
+    // --- RSI chart ---
+    const rsiEl = document.getElementById('rsiChart');
+    rsiEl.removeAttribute('style');
+    rsiEl.width = rsiEl.parentElement.clientWidth || 300;
+    rsiEl.height = 150;
+    const rsiData = targetDays.map(p => p.rsi14);
+    rsiChart = new Chart(rsiEl, {
       type: 'line',
       data: {
-        datasets: [{
-          label: 'RSI14',
-          data: rsiData,
-          borderColor: '#3b82f6', borderWidth: 1.5, pointRadius: 0, fill: false,
-        }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          annotation: false,
-        },
-        scales: {
-          x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { display: false }, grid: { display: false } },
-          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => v }, grid: { color: '#1e293b' } }
-        }
-      }
-    });
-
-    // Volume chart
-    const volCtx = document.getElementById('volumeChart');
-    if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
-    volCtx.removeAttribute('style');
-    volCtx.width = volCtx.parentElement.clientWidth || 300;
-    volCtx.height = 100;
-    const volData = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.v }));
-    const volColor = targetDays.map(p => p.c >= p.o ? 'rgba(34,197,94,0.5)' : 'rgba(239,68,68,0.5)');
-    volumeChart = new Chart(volCtx, {
-      type: 'bar',
-      data: {
-        datasets: [{
-          label: '成交量',
-          data: volData,
-          backgroundColor: volColor,
-          borderRadius: 1,
-        }]
+        labels,
+        datasets: [{ label: 'RSI14', data: rsiData, borderColor: '#3b82f6', borderWidth: 1.5, pointRadius: 0, fill: false }]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
         plugins: { legend: { display: false } },
         scales: {
-          x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { display: false }, grid: { display: false } },
+          x: { ticks: { display: false }, grid: { display: false } },
+          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 } }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+
+    // --- Volume chart ---
+    const volEl = document.getElementById('volumeChart');
+    volEl.removeAttribute('style');
+    volEl.width = volEl.parentElement.clientWidth || 300;
+    volEl.height = 100;
+    const volData = targetDays.map(p => p.v);
+    const volColors = targetDays.map((p, i) => i > 0 && p.c >= targetDays[i-1].c ? 'rgba(34,197,94,0.5)' : 'rgba(239,68,68,0.5)');
+    volumeChart = new Chart(volEl, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{ label: '成交量', data: volData, backgroundColor: volColors, borderRadius: 1 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { display: false }, grid: { display: false } },
           y: { ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => (v/1000).toFixed(0) + 'k' }, grid: { color: '#1e293b' } }
         }
       }
     });
 
-    // Summary with entry/exit reasons
+    // --- Summary with entry/exit reasons ---
     const last = targetDays[targetDays.length - 1];
-    const entryZone = last.dist_ma20 >= -2 && last.dist_ma20 <= 1;
     const exitRsi = last.rsi14 < 35;
     const exitBreak = last.dist_ma20 < -5;
-    const exitConsec = targetDays.length >= 4 &&
-      targetDays.slice(-4).every((p, i, arr) => i === 0 || p.c <= arr[i - 1].c);
+    const exitConsec = targetDays.length >= 4 && targetDays.slice(-4).every((p, i, a) => i === 0 || p.c <= a[i-1].c);
 
     const entryReasons = [];
-    if (entryZone && last.rsi14 >= 30 && last.rsi14 <= 60 && last.dist_ma50 > -3) {
+    if (last.dist_ma20 >= -2 && last.dist_ma20 <= 1 && last.rsi14 >= 30 && last.rsi14 <= 60 && last.dist_ma50 > -3) {
       entryReasons.push('✅ 拉回MA20(-2%~+1%)');
       entryReasons.push('✅ RSI14在30~60');
       entryReasons.push('✅ 在MA50之上');
@@ -992,16 +930,16 @@ async function openKline(ticker) {
     document.getElementById('kline-summary').innerHTML = `
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px;">
         <div>收盤: <strong>${last.c}</strong></div>
-        <div>距MA20: <strong style="color:${entryZone ? 'var(--green)' : 'var(--yellow)'}">${last.dist_ma20 >= 0 ? '+' : ''}${last.dist_ma20}%</strong></div>
+        <div>距MA20: <strong style="color:${last.dist_ma20 >= -2 && last.dist_ma20 <= 1 ? 'var(--green)' : 'var(--yellow)'}">${last.dist_ma20 >= 0 ? '+' : ''}${last.dist_ma20}%</strong></div>
         <div>MA20: <strong>${last.ma20}</strong></div>
         <div>RSI14: <strong style="color:${last.rsi14 >= 30 && last.rsi14 <= 60 ? 'var(--green)' : 'var(--red)'}">${last.rsi14}</strong></div>
         <div>MA50: <strong>${last.ma50}</strong></div>
         <div>月RSI4: <strong>${data.m_rsi4}</strong></div>
         <div>ADX: <strong>${last.adx}</strong></div>
-        <div>月ADX1: <strong>${data.m_adx1}</strong></div>
+        <div>PDI/MDI: <strong>${last.pdi}/${last.mdi}</strong></div>
       </div>
-      ${entryReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--green);">🟢 進場原因<br>${entryReasons.join('<br>')}</div>` : ''}
-      ${exitReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--red);">🔴 出場原因<br>${exitReasons.join('<br>')}</div>` : ''}
+      ${entryReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--green);font-size:0.85rem;">🟢 進場原因<br>${entryReasons.join('<br>')}</div>` : ''}
+      ${exitReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--red);font-size:0.85rem;">🔴 出場原因<br>${exitReasons.join('<br>')}</div>` : ''}
       ${entryReasons.length === 0 && exitReasons.length === 0 ? '<div style="color:var(--text-dim);font-size:0.8rem;border-top:1px solid #334155;padding-top:4px;">目前無明顯進出場訊號</div>' : ''}
       <div style="margin-top:4px;font-size:0.75rem;color:var(--text-dim);border-top:1px solid #334155;padding-top:4px;">
         🟢倒三角=買進訊號 | 🔴倒三角=出場訊號（圖上標記僅供參考）
