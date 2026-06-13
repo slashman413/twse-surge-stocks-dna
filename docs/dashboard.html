@@ -139,13 +139,13 @@
     <!-- ═══ 回測模擬操作總結 ═══ -->
     <div class="stats-grid" id="summary-stats-grid">
       <div class="stat-card info"><div class="value">300 萬</div><div class="label">初始資金</div></div>
-      <div class="stat-card" id="sum-final-equity-card"><div class="value" id="sum-final-equity">--</div><div class="label">複利最終權益</div></div>
-      <div class="stat-card" id="sum-cagr-card"><div class="value" id="sum-cagr">--</div><div class="label">年化報酬率 (CAGR)</div></div>
-      <div class="stat-card" id="sum-total-return-card"><div class="value" id="sum-total-return">--</div><div class="label">總報酬率</div></div>
-      <div class="stat-card" id="sum-max-dd-card"><div class="value" id="sum-max-dd">--</div><div class="label">最大回撤 (MDD)</div></div>
-      <div class="stat-card info"><div class="value" id="sum-win-years">--</div><div class="label">正報酬年數</div></div>
-      <div class="stat-card info"><div class="value" id="sum-total-trades">--</div><div class="label">總交易次數</div></div>
-      <div class="stat-card" id="sum-avg-win-card"><div class="value" id="sum-avg-win">--</div><div class="label">平均勝率</div></div>
+      <div class="stat-card" id="sum-final-equity-card" style="cursor:pointer;" onclick="showStatInfo('finalEquity')"><div class="value" id="sum-final-equity">--</div><div class="label">複利最終權益</div></div>
+      <div class="stat-card" id="sum-cagr-card" style="cursor:pointer;" onclick="showStatInfo('cagr')"><div class="value" id="sum-cagr">--</div><div class="label">年化報酬率 (CAGR)</div></div>
+      <div class="stat-card" id="sum-total-return-card" style="cursor:pointer;" onclick="showStatInfo('totalReturn')"><div class="value" id="sum-total-return">--</div><div class="label">總報酬率</div></div>
+      <div class="stat-card" id="sum-max-dd-card" style="cursor:pointer;" onclick="showStatInfo('mdd')"><div class="value" id="sum-max-dd">--</div><div class="label">最大回撤 (MDD)</div></div>
+      <div class="stat-card info" style="cursor:pointer;" onclick="showStatInfo('winYears')"><div class="value" id="sum-win-years">--</div><div class="label">正報酬年數</div></div>
+      <div class="stat-card info" style="cursor:pointer;" onclick="showStatInfo('totalTrades')"><div class="value" id="sum-total-trades">--</div><div class="label">總交易次數</div></div>
+      <div class="stat-card" id="sum-avg-win-card" style="cursor:pointer;" onclick="showStatInfo('avgWinRate')"><div class="value" id="sum-avg-win">--</div><div class="label">平均勝率</div></div>
     </div>
 
     <!-- Charts Row -->
@@ -270,6 +270,15 @@
     <button class="close-btn" onclick="document.getElementById('sponsor-modal').classList.remove('open')">&times;</button>
     <img src="qr_sponsor.webp" alt="贊助QR Code">
     <p>☕ 覺得這個儀表板好用嗎？<br>歡迎請我喝杯咖啡，支持我繼續開發與維護！</p>
+  </div>
+</div>
+
+<!-- ═══ 統計說明 Modal ═══ -->
+<div id="stat-info-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)closeStatInfo()">
+  <div class="sponsor-modal" style="max-width:500px;text-align:left;">
+    <button class="close-btn" onclick="closeStatInfo()">&times;</button>
+    <h3 id="stat-info-title" style="margin-bottom:12px;text-align:center;"></h3>
+    <div id="stat-info-body" style="color:#cbd5e1;font-size:0.9rem;line-height:1.7;"></div>
   </div>
 </div>
 
@@ -660,6 +669,74 @@ function closeKline() {
   if (klineChart) { klineChart.destroy(); klineChart = null; }
   if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
   if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
+}
+
+// ═══ Stat info modal ═══
+const STAT_INFO = {
+  finalEquity: {
+    title: '複利最終權益',
+    body: `<p><strong>說明：</strong>將每年報酬率連續複利計算後的總資產金額。</p>
+<p><strong>公式：</strong>初始資金 × (1 + r₁) × (1 + r₂) × ⋯ × (1 + rₙ)<br>
+其中 r₁~rₙ 為各年報酬率（小數）。</p>
+<p><strong>範例：</strong>300萬 × (1-0.0554) × (1+0.2502) × ⋯ = 最終權益</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">⚠️ 非簡單加總各年損益，而是真實複利滾存效果。</p>`
+  },
+  cagr: {
+    title: '年化報酬率 (CAGR)',
+    body: `<p><strong>說明：</strong>年均複合增長率，反映策略的長期穩定報酬能力。</p>
+<p><strong>公式：</strong>CAGR = (最終權益 ÷ 初始資金)<sup>(1 ÷ 年數)</sup> − 1</p>
+<p><strong>範例：</strong>(48,462,179 ÷ 3,000,000)<sup>(1/23)</sup> − 1 = +18.38%</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 CAGR 越高代表每年平均賺越多，且波動對複利影響較小。</p>`
+  },
+  totalReturn: {
+    title: '總報酬率',
+    body: `<p><strong>說明：</strong>整個回測期間的總累積報酬率。</p>
+<p><strong>公式：</strong>(最終權益 − 初始資金) ÷ 初始資金 × 100%</p>
+<p><strong>範例：</strong>(48,462,179 − 3,000,000) ÷ 3,000,000 × 100% = +4,746.22%</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 總報酬率受複利效應放大，長期可達數十倍。</p>`
+  },
+  mdd: {
+    title: '最大回撤 (MDD)',
+    body: `<p><strong>說明：</strong>回測期間內，從最高點到最低點的最大跌幅，衡量策略的最大風險。</p>
+<p><strong>計算方式：</strong>每日追蹤複利權益曲線，計算每個歷史高點到後續低點的跌幅，取最大值。</p>
+<p><strong>公式：</strong>MDD = max( (峰值 − 谷值) ÷ 峰值 × 100% )</p>
+<p><strong>範例：</strong>-5.68% 代表在 worst year 從年度高點最多跌了 5.68%。</p>
+<p style="color:var(--red);font-size:0.85rem;margin-top:8px;">⚠️ MDD 越低（絕對值越小）代表策略抗跌能力越強。</p>`
+  },
+  winYears: {
+    title: '正報酬年數',
+    body: `<p><strong>說明：</strong>23 年回測中，有多少年份最終報酬為正。</p>
+<p><strong>計算：</strong>每年 final_equity > initial_capital 的年份計數。</p>
+<p><strong>解讀：</strong>19/23 = 82.6% 的年份賺錢，代表策略在多數市場環境下都能獲利。</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 僅 4 年虧損（2004、2008、2011、2012），且虧損幅度控制在 5.54% 內。</p>`
+  },
+  totalTrades: {
+    title: '總交易次數',
+    body: `<p><strong>說明：</strong>23 年回測總共執行多少筆交易（含停損、停利、年終結算）。</p>
+<p><strong>計算：</strong>各年 trade_count 加總。</p>
+<p><strong>解讀：</strong>平均每年約 63 筆，每月約 5-6 筆 — 屬於中頻率策略。</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 太少則錯失機會，太多則手續費侵蝕獲利。</p>`
+  },
+  avgWinRate: {
+    title: '平均勝率',
+    body: `<p><strong>說明：</strong>所有交易的獲利筆數佔比（各年勝率的簡單平均）。</p>
+<p><strong>公式：</strong>勝率 = 獲利交易筆數 ÷ 總交易筆數 × 100%<br>
+年均勝率 = 各年勝率之和 ÷ 23</p>
+<p><strong>解讀：</strong>56.9% 代表每 10 筆交易約有 5.7 筆獲利。</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 搭配正期望值（賺的比賠的多），56.9% 已屬優良。</p>`
+  },
+};
+
+function showStatInfo(key) {
+  const info = STAT_INFO[key];
+  if (!info) return;
+  document.getElementById('stat-info-title').textContent = info.title;
+  document.getElementById('stat-info-body').innerHTML = info.body;
+  document.getElementById('stat-info-modal').classList.add('open');
+}
+
+function closeStatInfo() {
+  document.getElementById('stat-info-modal').classList.remove('open');
 }
 
 async function openKline(ticker) {
