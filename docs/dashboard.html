@@ -73,6 +73,15 @@
 
   .tab-btn { padding: 8px 20px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text-dim); cursor: pointer; font-size: 0.9rem; transition: all 0.2s; }
   .tab-btn:hover { border-color: var(--blue); color: var(--text); }
+  .tab-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .tab-bar { display: flex; gap: 8px; margin-bottom: 24px; justify-content: center; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .signal-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+  .signal-rank { font-size: 1.2rem; font-weight: 700; color: var(--blue); min-width: 32px; }
+  .signal-ticker { font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; }
+  .signal-score { font-size: 0.95rem; color: var(--green); font-weight: 600; }
+  .signal-detail { font-size: 0.85rem; color: var(--text-dim); }
 
   .table-section { margin-bottom: 30px; }
   .table-section h2 { font-size: 1.2rem; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
@@ -109,12 +118,20 @@
     <div class="subtitle" id="report-date" style="margin-top:4px;">載入中...</div>
   </div>
 
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('backtest',this)">📊 回測報告</button>
+    <button class="tab-btn" onclick="switchTab('signals',this)">🔍 即時訊號</button>
+  </div>
+
   <div id="loading" class="loading">
     <div class="spinner"></div>
     <div>載入回測資料...</div>
   </div>
 
   <div id="content" style="display:none;">
+
+  <!-- ═══ 回測報告 Tab ═══ -->
+  <div id="tab-backtest" class="tab-content active">
 
     <!-- ═══ 回測模擬操作總結 ═══ -->
     <div class="stats-grid" id="summary-stats-grid">
@@ -184,7 +201,101 @@
       <div id="yearly-insights" style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;line-height:1.8;font-size:0.9rem;color:var(--text-dim);"></div>
     </div>
 
-  </div><!-- /content -->
+  </div><!-- /tab-backtest -->
+
+  <!-- ═══ 即時訊號 Tab ═══ -->
+  <div id="tab-signals" class="tab-content">
+    <h2 style="margin-bottom:8px;">🔍 即時篩選訊號</h2>
+    <p style="color:var(--text-dim);font-size:0.85rem;margin-bottom:16px;">📅 最新交易日: 2026-06-12 | 大盤: 多頭 趨勢向上 | 最多可取 2 檔</p>
+    <div id="signals-list">
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">1</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">9933</span> <span class="signal-score">119.5</span></div>
+          <div class="signal-detail">價格 40.95 | 距20MA -1.34% | RSI14 50 | 中鼎</div>
+        </div>
+        <div style="text-align:right;">
+          <span class="badge badge-buy">買入訊號</span>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">2</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">2347</span> <span class="signal-score">117.6</span></div>
+          <div class="signal-detail">價格 89.10 | 距20MA -0.73% | RSI14 52 | 聯強</div>
+        </div>
+        <div style="text-align:right;">
+          <span class="badge badge-buy">買入訊號</span>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">3</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">6197</span> <span class="signal-score">114.7</span></div>
+          <div class="signal-detail">價格 327.50 | 距20MA +0.77% | RSI14 60 | 佳必琪</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">4</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">2816</span> <span class="signal-score">101.2</span></div>
+          <div class="signal-detail">價格 33.20 | 距20MA -1.79% | RSI14 48 | 旺旺友聯</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">5</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">3033</span> <span class="signal-score">100.7</span></div>
+          <div class="signal-detail">價格 49.60 | 距20MA -0.59% | RSI14 48 | 威健</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">6</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">2832</span> <span class="signal-score">95.6</span></div>
+          <div class="signal-detail">價格 54.90 | 距20MA +0.56% | RSI14 57 | 台產</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">7</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">3321</span> <span class="signal-score">95.6</span></div>
+          <div class="signal-detail">價格 20.45 | 距20MA +0.62% | RSI14 56 | 同泰</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">8</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">5285</span> <span class="signal-score">91.6</span></div>
+          <div class="signal-detail">價格 89.70 | 距20MA -0.93% | RSI14 53 | 界霖</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">9</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">2603</span> <span class="signal-score">88.8</span></div>
+          <div class="signal-detail">價格 228.00 | 距20MA -0.68% | RSI14 58 | 長榮</div>
+        </div>
+      </div>
+      <div class="signal-card" style="display:flex;align-items:center;gap:12px;">
+        <div class="signal-rank">10</div>
+        <div style="flex:1;">
+          <div><span class="signal-ticker">6166</span> <span class="signal-score">85.8</span></div>
+          <div class="signal-detail">價格 128.50 | 距20MA -1.19% | RSI14 49 | 凌華</div>
+        </div>
+      </div>
+    </div>
+    <div class="table-section" style="margin-top:24px;">
+      <h2>📌 策略說明</h2>
+      <div style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;font-size:0.9rem;color:var(--text-dim);line-height:1.8;">
+        <p>篩選條件：買進日大盤多頭 + 趨勢向上 + 個股拉回20MA(-2%~+1%) + RSI14(30~60) + 加分≥2</p>
+        <p>出場規則：停損-15% / 移動停利-10% / RSI<35 / 分批停利50% / 大盤崩跌清倉</p>
+        <p style="margin-top:8px;color:var(--yellow);">⚠️ 以上訊號為策略篩選結果，僅供參考，並非投資建議。</p>
+      </div>
+    </div>
+  </div><!-- /tab-signals -->
+
+</div><!-- /content -->
 
   <div class="footer">
     <p>大飆股DNA — TWSE Quant Screener | 趨勢拉回20MA + 停損/停利/RSI出場 + 月線強勢過濾</p>
@@ -206,6 +317,13 @@ const SUMMARY_URL = './yearly_backtests/summary_v12.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
 let equityChart = null;
+
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
 
 async function loadData() {
   try {
