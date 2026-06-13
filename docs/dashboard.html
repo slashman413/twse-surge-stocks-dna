@@ -862,16 +862,11 @@ loadData();
 // Also load signals
 setTimeout(loadSignals, 100);
 
-// Page view counter
-(async function() {
-  try {
-    const resp = await fetch('https://api.countapi.xyz/hit/slashman413-twse-surge-stocks-dna/views');
-    const data = await resp.json();
-    document.getElementById('pageview-count').textContent = data.value.toLocaleString();
-  } catch(e) {
-    document.getElementById('pageview-count').textContent = 'N/A';
-  }
-})();
+// Page view counter (localStorage - 最簡易)
+const vk = 'twse_dna_visits';
+let vc = parseInt(localStorage.getItem(vk) || '0') + 1;
+localStorage.setItem(vk, vc);
+document.getElementById('pageview-count').textContent = vc.toLocaleString();
 </script>
 
 </body>
