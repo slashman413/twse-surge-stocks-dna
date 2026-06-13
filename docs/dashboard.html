@@ -185,6 +185,12 @@
             <canvas id="equityCurveChart"></canvas>
           </div>
         </div>
+        <div class="chart-card" style="margin-bottom:16px;">
+          <h3>📊 加權指數走勢</h3>
+          <div style="position:relative;height:150px;">
+            <canvas id="twiiChart"></canvas>
+          </div>
+        </div>
         <div style="max-height:500px;overflow-y:auto;">
           <table style="font-size:0.85rem;">
             <thead>
@@ -274,6 +280,7 @@ const KLINE_URL = './yearly_backtests/kline_data.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
 let equityChart = null;
+let twiiChart = null;
 let klineChart = null;
 let rsiChart = null;
 let volumeChart = null;
@@ -433,6 +440,7 @@ function renderYearly(data) {
 // ═══ Year detail ═══
 async function openYearDetail(year) {
   if (equityChart) { equityChart.destroy(); equityChart = null; }
+  if (twiiChart) { twiiChart.destroy(); twiiChart = null; }
   // Fully reset canvas: wrapper has fixed height 200px
   const canvas = document.getElementById('equityCurveChart');
   canvas.removeAttribute('style');
@@ -489,6 +497,9 @@ async function openYearDetail(year) {
           }
         }
       });
+
+      // Load TWII chart
+      loadTwiiChart(year);
     }
 
     if (trades.length === 0) {
@@ -533,6 +544,85 @@ async function openYearDetail(year) {
 function closeYearDetail() {
   document.getElementById('year-detail-section').style.display = 'none';
   if (equityChart) { equityChart.destroy(); equityChart = null; }
+  if (twiiChart) { twiiChart.destroy(); twiiChart = null; }
+}
+
+async function loadTwiiChart(year) {
+  if (twiiChart) { twiiChart.destroy(); twiiChart = null; }
+  try {
+    const resp = await fetch(`./yearly_backtests/twii_${year}.json`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    if (data.length < 5) return;
+
+    const canvas = document.getElementById('twiiChart');
+    canvas.removeAttribute('style');
+    canvas.width = canvas.parentElement.clientWidth || 600;
+    canvas.height = 150;
+
+    const ctx = canvas.getContext('2d');
+    const labels = data.map(p => p.d.slice(5));
+    const close = data.map(p => p.c);
+    const ma20 = data.map(p => p.ma20);
+    const ma60 = data.map(p => p.ma60);
+    const startVal = close[0];
+    const endVal = close[close.length - 1];
+    const chg = ((endVal - startVal) / startVal * 100).toFixed(2);
+
+    twiiChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '加權指數',
+            data: close,
+            borderColor: '#22c55e',
+            backgroundColor: 'rgba(34,197,94,0.08)',
+            fill: true, tension: 0.2, pointRadius: 0,
+            borderWidth: 1.5,
+          },
+          {
+            label: 'MA20',
+            data: ma20,
+            borderColor: '#eab308',
+            borderWidth: 1,
+            pointRadius: 0, fill: false,
+          },
+          {
+            label: 'MA60',
+            data: ma60,
+            borderColor: '#a855f7',
+            borderWidth: 1,
+            pointRadius: 0, fill: false,
+          },
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { color: '#94a3b8', boxWidth: 10, font: { size: 9 } } },
+          tooltip: {
+            callbacks: {
+              label: ctx => {
+                const v = ctx.parsed.y;
+                const chgVal = ((v - startVal) / startVal * 100).toFixed(2);
+                return `${ctx.dataset.label}: ${v.toLocaleString()} (${chgVal >= 0 ? '+' : ''}${chgVal}%)`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: { ticks: { color: '#94a3b8', font: { size: 8 }, maxTicksLimit: 8 }, grid: { display: false } },
+          y: { ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => (v/1000).toFixed(0) + 'k' }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+  } catch(e) {
+    // silently skip if TWII data not available
+    document.getElementById('twiiChart').parentElement.innerHTML =
+      '<div style="padding:20px;text-align:center;color:var(--text-dim);font-size:0.85rem;">加權指數資料未載入</div>';
+  }
 }
 
 // ═══ Signals & K-line ═══
