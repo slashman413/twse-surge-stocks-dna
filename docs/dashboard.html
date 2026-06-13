@@ -220,26 +220,28 @@
     <div id="signals-market-info" style="color:var(--text-dim);font-size:0.85rem;margin-bottom:16px;">載入中...</div>
     <div id="signals-list"></div>
 
-    <!-- K-line detail panel -->
-    <div id="kline-detail-section" class="table-section" style="display:none;margin-top:20px;">
-      <h2 id="kline-detail-title">📈 K線分析</h2>
-      <button class="tab-btn" onclick="closeKline()" style="margin-bottom:12px;">✕ 關閉</button>
-      <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;">
-        <div class="chart-card">
-          <h3>📊 K線 + 均線</h3>
-          <div style="position:relative;height:350px;">
-            <canvas id="klineChart"></canvas>
+    <!-- ═══ K線 Modal ═══ -->
+    <div id="kline-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)closeKline()">
+      <div class="sponsor-modal" style="max-width:900px;width:90%;padding:20px;">
+        <button class="close-btn" onclick="closeKline()">&times;</button>
+        <h2 id="kline-modal-title" style="margin-bottom:12px;">📈 K線分析</h2>
+        <div style="display:grid;grid-template-columns:2fr 1fr;gap:12px;">
+          <div class="chart-card" style="padding:12px;">
+            <h3>📊 K線 + 均線</h3>
+            <div style="position:relative;height:350px;">
+              <canvas id="klineChart"></canvas>
+            </div>
           </div>
-        </div>
-        <div class="chart-card">
-          <h3>📉 技術指標</h3>
-          <div style="position:relative;height:150px;margin-bottom:8px;">
-            <canvas id="rsiChart"></canvas>
+          <div class="chart-card" style="padding:12px;">
+            <h3>📉 技術指標</h3>
+            <div style="position:relative;height:150px;margin-bottom:8px;">
+              <canvas id="rsiChart"></canvas>
+            </div>
+            <div style="position:relative;height:100px;">
+              <canvas id="volumeChart"></canvas>
+            </div>
+            <div id="kline-summary" style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(51,65,85,0.3);font-size:0.8rem;color:var(--text-dim);"></div>
           </div>
-          <div style="position:relative;height:100px;">
-            <canvas id="volumeChart"></canvas>
-          </div>
-          <div id="kline-summary" style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(51,65,85,0.3);font-size:0.8rem;color:var(--text-dim);"></div>
         </div>
       </div>
     </div>
@@ -640,11 +642,11 @@ async function loadSignals() {
       return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openKline('${s.ticker}')">
         <div class="signal-rank">${i + 1}</div>
         <div style="flex:1;">
-          <div><span class="signal-ticker">${s.ticker}</span> <span class="signal-score">${s.score}</span></div>
-          <div class="signal-detail">價格 ${s.close.toLocaleString()} | 距20MA <span style="color:${distColor}">${s.dist_ma20 >= 0 ? '+' : ''}${s.dist_ma20}%</span> | RSI14 ${Math.round(s.rsi14)} | 品質 ${s.quality} 加分 ${s.bonus}</div>
+          <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''} <span class="signal-score">${s.score}</span></div>
+          <div class="signal-detail">價格 ${Math.round(s.close).toLocaleString()} | 距20MA <span style="color:${distColor}">${s.dist_ma20 >= 0 ? '+' : ''}${s.dist_ma20}%</span> | RSI14 ${Math.round(s.rsi14)} | 加分 ${s.bonus}</div>
         </div>
         <div style="text-align:right;">
-          <span class="badge badge-buy">📈 K線</span>
+          <span class="badge badge-buy">📈</span>
         </div>
       </div>`;
     }).join('');
@@ -654,7 +656,7 @@ async function loadSignals() {
 }
 
 function closeKline() {
-  document.getElementById('kline-detail-section').style.display = 'none';
+  document.getElementById('kline-modal').classList.remove('open');
   if (klineChart) { klineChart.destroy(); klineChart = null; }
   if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
   if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
@@ -662,8 +664,8 @@ function closeKline() {
 
 async function openKline(ticker) {
   closeKline();
-  document.getElementById('kline-detail-title').textContent = `📈 ${ticker} K線分析`;
-  document.getElementById('kline-detail-section').style.display = 'block';
+  document.getElementById('kline-modal-title').textContent = `📈 ${ticker}`;
+  document.getElementById('kline-modal').classList.add('open');
   document.getElementById('kline-summary').textContent = '載入中...';
 
   try {
