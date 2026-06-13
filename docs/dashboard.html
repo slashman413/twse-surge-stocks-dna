@@ -179,7 +179,9 @@
       <div id="year-detail-content" style="padding:0;">
         <div class="chart-card" style="margin-bottom:16px;">
           <h3>💰 資金曲線</h3>
-          <canvas id="equityCurveChart" style="height:200px;"></canvas>
+          <div style="position:relative;height:200px;">
+            <canvas id="equityCurveChart"></canvas>
+          </div>
         </div>
         <div style="max-height:500px;overflow-y:auto;">
           <table style="font-size:0.85rem;">
@@ -473,8 +475,9 @@ function renderYearly(data) {
 // ═══ Year detail ═══
 async function openYearDetail(year) {
   if (equityChart) { equityChart.destroy(); equityChart = null; }
-  // Reset canvas dimensions to prevent infinite height growth
+  // Fully reset canvas: wrapper has fixed height 200px
   const canvas = document.getElementById('equityCurveChart');
+  canvas.removeAttribute('style');
   canvas.width = canvas.parentElement.clientWidth || 600;
   canvas.height = 200;
   document.getElementById('year-detail-title').textContent = `📋 ${year} 年交易明細 (300萬資金模擬)`;
