@@ -457,7 +457,7 @@ function renderYearly(data) {
       <div><strong style="color:var(--text);">NT$${Math.round(compounded).toLocaleString()}</strong><br>複利最終權益</div>
       <div><strong style="color:${cagr >= 0 ? 'var(--green)' : 'var(--red)'}">${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%</strong><br>年化報酬率</div>
       <div><strong style="color:var(--red);">-${mdd.toFixed(2)}%</strong><br>最大回撤</div>
-      <div><strong style="color:var(--green);">${positiveYears}/${nYears}</strong><br>正報酬年數</div>
+      <div><strong style="color:var(--green);">${winYears}/${nYears}</strong><br>正報酬年數</div>
       <div><strong style="color:var(--green);">${bestYear.year}年 (${bestYear.total_return_pct >= 0 ? '+' : ''}${bestYear.total_return_pct}%)</strong><br>最佳年份</div>
       <div><strong style="color:var(--red);">${worstYear.year}年 (${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%)</strong><br>最差年份</div>
     </div>
@@ -473,6 +473,10 @@ function renderYearly(data) {
 // ═══ Year detail ═══
 async function openYearDetail(year) {
   if (equityChart) { equityChart.destroy(); equityChart = null; }
+  // Reset canvas dimensions to prevent infinite height growth
+  const canvas = document.getElementById('equityCurveChart');
+  canvas.width = canvas.parentElement.clientWidth || 600;
+  canvas.height = 200;
   document.getElementById('year-detail-title').textContent = `📋 ${year} 年交易明細 (300萬資金模擬)`;
   document.getElementById('year-detail-section').style.display = 'block';
   document.getElementById('year-detail-body').innerHTML =

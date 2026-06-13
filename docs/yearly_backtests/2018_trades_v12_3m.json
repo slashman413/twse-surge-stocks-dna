@@ -6,8 +6,8 @@
       "buy_price": 11.95,
       "sell_date": "2018-01-22",
       "sell_price": 10.73,
-      "shares": 25094,
-      "pl": -30810.59,
+      "shares": 12547,
+      "pl": -15405.29,
       "pl_pct": -10.27,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
@@ -17,9 +17,20 @@
       "buy_price": 15.76,
       "sell_date": "2018-02-01",
       "sell_price": 15.46,
-      "shares": 19036,
-      "pl": -5638.96,
+      "shares": 9518,
+      "pl": -2819.48,
       "pl_pct": -1.88,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2412",
+      "buy_date": "2018-01-22",
+      "buy_price": 76.72,
+      "sell_date": "2018-02-06",
+      "sell_price": 75.3,
+      "shares": 1955,
+      "pl": -2764.66,
+      "pl_pct": -1.84,
       "sell_reason": "RSI<35"
     },
     {
@@ -28,8 +39,8 @@
       "buy_price": 11.64,
       "sell_date": "2018-02-09",
       "sell_price": 11.52,
-      "shares": 25763,
-      "pl": -3174.58,
+      "shares": 12881,
+      "pl": -1587.23,
       "pl_pct": -1.06,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -39,8 +50,8 @@
       "buy_price": 31.67,
       "sell_date": "2018-02-09",
       "sell_price": 33.84,
-      "shares": 9473,
-      "pl": 20569.71,
+      "shares": 4736,
+      "pl": 10283.77,
       "pl_pct": 6.86,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -50,8 +61,8 @@
       "buy_price": 61.22,
       "sell_date": "2018-02-09",
       "sell_price": 57.33,
-      "shares": 4899,
-      "pl": -19071.31,
+      "shares": 2449,
+      "pl": -9533.71,
       "pl_pct": -6.36,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -61,8 +72,8 @@
       "buy_price": 21.64,
       "sell_date": "2018-02-09",
       "sell_price": 22.04,
-      "shares": 13863,
-      "pl": 5617.76,
+      "shares": 6931,
+      "pl": 2808.68,
       "pl_pct": 1.87,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -72,7 +83,7 @@
       "buy_price": 30.6,
       "sell_date": "2018-02-09",
       "sell_price": 30.6,
-      "shares": 9803,
+      "shares": 4901,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
@@ -83,8 +94,8 @@
       "buy_price": 36.05,
       "sell_date": "2018-02-09",
       "sell_price": 35.84,
-      "shares": 8322,
-      "pl": -1710.99,
+      "shares": 4161,
+      "pl": -855.5,
       "pl_pct": -0.57,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -94,8 +105,8 @@
       "buy_price": 50.0,
       "sell_date": "2018-02-09",
       "sell_price": 50.2,
-      "shares": 6000,
-      "pl": 1200.0,
+      "shares": 3000,
+      "pl": 600.0,
       "pl_pct": 0.4,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -105,8 +116,8 @@
       "buy_price": 19.79,
       "sell_date": "2018-02-09",
       "sell_price": 18.82,
-      "shares": 15157,
-      "pl": -14772.42,
+      "shares": 7578,
+      "pl": -7385.72,
       "pl_pct": -4.92,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -116,8 +127,8 @@
       "buy_price": 14.03,
       "sell_date": "2018-02-09",
       "sell_price": 13.26,
-      "shares": 21378,
-      "pl": -16446.66,
+      "shares": 10689,
+      "pl": -8223.33,
       "pl_pct": -5.48,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -127,8 +138,8 @@
       "buy_price": 31.46,
       "sell_date": "2018-03-07",
       "sell_price": 30.65,
-      "shares": 9535,
-      "pl": -7744.87,
+      "shares": 4767,
+      "pl": -3872.03,
       "pl_pct": -2.58,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -138,8 +149,8 @@
       "buy_price": 57.83,
       "sell_date": "2018-03-07",
       "sell_price": 56.62,
-      "shares": 5187,
-      "pl": -6241.3,
+      "shares": 2593,
+      "pl": -3120.05,
       "pl_pct": -2.08,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -149,10 +160,21 @@
       "buy_price": 13.97,
       "sell_date": "2018-03-19",
       "sell_price": 12.43,
-      "shares": 21473,
-      "pl": -33039.5,
+      "shares": 10736,
+      "pl": -16518.98,
       "pl_pct": -11.01,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+    },
+    {
+      "ticker": "2458",
+      "buy_date": "2018-03-16",
+      "buy_price": 25.61,
+      "sell_date": "2018-03-23",
+      "sell_price": 25.01,
+      "shares": 5857,
+      "pl": -3499.71,
+      "pl_pct": -2.33,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
     {
       "ticker": "6230",
@@ -160,8 +182,8 @@
       "buy_price": 82.92,
       "sell_date": "2018-04-17",
       "sell_price": 74.3,
-      "shares": 3617,
-      "pl": -31169.66,
+      "shares": 1808,
+      "pl": -15580.52,
       "pl_pct": -10.39,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
     },
@@ -171,7 +193,7 @@
       "buy_price": 50.7,
       "sell_date": "2018-04-26",
       "sell_price": 50.7,
-      "shares": 5917,
+      "shares": 2958,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
@@ -182,8 +204,8 @@
       "buy_price": 12.85,
       "sell_date": "2018-04-26",
       "sell_price": 12.95,
-      "shares": 23339,
-      "pl": 2166.01,
+      "shares": 11669,
+      "pl": 1082.96,
       "pl_pct": 0.72,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -193,8 +215,8 @@
       "buy_price": 56.84,
       "sell_date": "2018-04-26",
       "sell_price": 60.8,
-      "shares": 5278,
-      "pl": 20920.29,
+      "shares": 2639,
+      "pl": 10460.14,
       "pl_pct": 6.97,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -204,8 +226,8 @@
       "buy_price": 11.3,
       "sell_date": "2018-04-26",
       "sell_price": 11.58,
-      "shares": 26544,
-      "pl": 7441.65,
+      "shares": 13272,
+      "pl": 3720.82,
       "pl_pct": 2.48,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -215,8 +237,8 @@
       "buy_price": 10.5,
       "sell_date": "2018-04-26",
       "sell_price": 11.44,
-      "shares": 28578,
-      "pl": 26922.55,
+      "shares": 14289,
+      "pl": 13461.27,
       "pl_pct": 8.97,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -226,8 +248,8 @@
       "buy_price": 22.65,
       "sell_date": "2018-04-26",
       "sell_price": 22.53,
-      "shares": 13243,
-      "pl": -1609.97,
+      "shares": 6621,
+      "pl": -804.92,
       "pl_pct": -0.54,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -237,20 +259,31 @@
       "buy_price": 31.08,
       "sell_date": "2018-04-26",
       "sell_price": 34.17,
-      "shares": 9651,
-      "pl": 29788.52,
+      "shares": 4825,
+      "pl": 14892.72,
       "pl_pct": 9.93,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2458",
+      "ticker": "6176",
       "buy_date": "2018-03-20",
-      "buy_price": 25.49,
+      "buy_price": 35.06,
+      "sell_date": "2018-04-26",
+      "sell_price": 29.95,
+      "shares": 4278,
+      "pl": -21868.47,
+      "pl_pct": -14.58,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2458",
+      "buy_date": "2018-03-27",
+      "buy_price": 25.81,
       "sell_date": "2018-04-26",
       "sell_price": 24.44,
-      "shares": 11767,
-      "pl": -12388.11,
-      "pl_pct": -4.13,
+      "shares": 5812,
+      "pl": -7937.88,
+      "pl_pct": -5.29,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -259,8 +292,8 @@
       "buy_price": 19.88,
       "sell_date": "2018-04-26",
       "sell_price": 20.1,
-      "shares": 15092,
-      "pl": 3355.6,
+      "shares": 7546,
+      "pl": 1677.8,
       "pl_pct": 1.12,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -270,8 +303,8 @@
       "buy_price": 20.23,
       "sell_date": "2018-05-22",
       "sell_price": 20.01,
-      "shares": 14827,
-      "pl": -3296.68,
+      "shares": 7413,
+      "pl": -1648.23,
       "pl_pct": -1.1,
       "sell_reason": "RSI<35"
     },
@@ -281,8 +314,8 @@
       "buy_price": 35.25,
       "sell_date": "2018-05-23",
       "sell_price": 34.6,
-      "shares": 8510,
-      "pl": -5529.83,
+      "shares": 4255,
+      "pl": -2764.91,
       "pl_pct": -1.84,
       "sell_reason": "RSI<35"
     },
@@ -292,10 +325,21 @@
       "buy_price": 12.9,
       "sell_date": "2018-06-01",
       "sell_price": 12.71,
-      "shares": 23255,
-      "pl": -4316.44,
+      "shares": 11627,
+      "pl": -2158.13,
       "pl_pct": -1.44,
       "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3338",
+      "buy_date": "2018-05-17",
+      "buy_price": 16.74,
+      "sell_date": "2018-06-27",
+      "sell_price": 17.41,
+      "shares": 8959,
+      "pl": 5940.58,
+      "pl_pct": 3.96,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
     {
       "ticker": "1730",
@@ -303,8 +347,8 @@
       "buy_price": 37.13,
       "sell_date": "2018-06-28",
       "sell_price": 37.75,
-      "shares": 8080,
-      "pl": 5020.56,
+      "shares": 4040,
+      "pl": 2510.28,
       "pl_pct": 1.67,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -314,8 +358,8 @@
       "buy_price": 62.0,
       "sell_date": "2018-06-28",
       "sell_price": 61.37,
-      "shares": 4838,
-      "pl": -3081.91,
+      "shares": 2419,
+      "pl": -1540.95,
       "pl_pct": -1.03,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -325,8 +369,8 @@
       "buy_price": 11.69,
       "sell_date": "2018-06-28",
       "sell_price": 11.86,
-      "shares": 25668,
-      "pl": 4504.41,
+      "shares": 12834,
+      "pl": 2252.2,
       "pl_pct": 1.5,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -336,8 +380,8 @@
       "buy_price": 26.04,
       "sell_date": "2018-06-28",
       "sell_price": 30.05,
-      "shares": 11522,
-      "pl": 46225.84,
+      "shares": 5761,
+      "pl": 23112.92,
       "pl_pct": 15.41,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -347,8 +391,8 @@
       "buy_price": 11.67,
       "sell_date": "2018-06-28",
       "sell_price": 11.64,
-      "shares": 25695,
-      "pl": -864.54,
+      "shares": 12847,
+      "pl": -432.25,
       "pl_pct": -0.29,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -358,8 +402,8 @@
       "buy_price": 59.86,
       "sell_date": "2018-06-28",
       "sell_price": 60.89,
-      "shares": 5011,
-      "pl": 5127.69,
+      "shares": 2505,
+      "pl": 2563.33,
       "pl_pct": 1.71,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -369,8 +413,8 @@
       "buy_price": 20.01,
       "sell_date": "2018-06-28",
       "sell_price": 20.86,
-      "shares": 14991,
-      "pl": 12665.94,
+      "shares": 7495,
+      "pl": 6332.55,
       "pl_pct": 4.22,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -380,8 +424,8 @@
       "buy_price": 34.6,
       "sell_date": "2018-06-28",
       "sell_price": 35.58,
-      "shares": 8669,
-      "pl": 8449.72,
+      "shares": 4334,
+      "pl": 4224.37,
       "pl_pct": 2.82,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -391,8 +435,8 @@
       "buy_price": 12.71,
       "sell_date": "2018-06-28",
       "sell_price": 13.27,
-      "shares": 23595,
-      "pl": 13138.67,
+      "shares": 11797,
+      "pl": 6569.05,
       "pl_pct": 4.38,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -402,8 +446,8 @@
       "buy_price": 19.97,
       "sell_date": "2018-08-02",
       "sell_price": 19.7,
-      "shares": 15025,
-      "pl": -4008.85,
+      "shares": 7512,
+      "pl": -2004.29,
       "pl_pct": -1.34,
       "sell_reason": "RSI<35"
     },
@@ -413,8 +457,8 @@
       "buy_price": 43.57,
       "sell_date": "2018-08-13",
       "sell_price": 39.86,
-      "shares": 6885,
-      "pl": -25541.06,
+      "shares": 3442,
+      "pl": -12768.67,
       "pl_pct": -8.51,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
@@ -424,8 +468,8 @@
       "buy_price": 19.92,
       "sell_date": "2018-08-13",
       "sell_price": 19.57,
-      "shares": 15058,
-      "pl": -5356.85,
+      "shares": 7529,
+      "pl": -2678.43,
       "pl_pct": -1.79,
       "sell_reason": "RSI<35"
     },
@@ -435,8 +479,8 @@
       "buy_price": 13.04,
       "sell_date": "2018-08-16",
       "sell_price": 12.95,
-      "shares": 23007,
-      "pl": -2142.81,
+      "shares": 11503,
+      "pl": -1071.36,
       "pl_pct": -0.71,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -446,8 +490,8 @@
       "buy_price": 28.36,
       "sell_date": "2018-08-16",
       "sell_price": 29.34,
-      "shares": 10577,
-      "pl": 10312.29,
+      "shares": 5288,
+      "pl": 5155.66,
       "pl_pct": 3.44,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -457,8 +501,8 @@
       "buy_price": 53.6,
       "sell_date": "2018-08-16",
       "sell_price": 54.3,
-      "shares": 5597,
-      "pl": 3917.9,
+      "shares": 2798,
+      "pl": 1958.6,
       "pl_pct": 1.31,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -468,8 +512,8 @@
       "buy_price": 35.59,
       "sell_date": "2018-08-16",
       "sell_price": 36.44,
-      "shares": 8429,
-      "pl": 7203.76,
+      "shares": 4214,
+      "pl": 3601.45,
       "pl_pct": 2.4,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -479,8 +523,8 @@
       "buy_price": 62.92,
       "sell_date": "2018-08-16",
       "sell_price": 65.47,
-      "shares": 4767,
-      "pl": 12146.69,
+      "shares": 2383,
+      "pl": 6072.07,
       "pl_pct": 4.05,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -490,8 +534,8 @@
       "buy_price": 10.45,
       "sell_date": "2018-08-16",
       "sell_price": 10.7,
-      "shares": 28708,
-      "pl": 7177.0,
+      "shares": 14354,
+      "pl": 3588.5,
       "pl_pct": 2.39,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -501,8 +545,8 @@
       "buy_price": 12.35,
       "sell_date": "2018-08-16",
       "sell_price": 12.14,
-      "shares": 24284,
-      "pl": -5098.96,
+      "shares": 12142,
+      "pl": -2549.48,
       "pl_pct": -1.7,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -512,7 +556,7 @@
       "buy_price": 24.33,
       "sell_date": "2018-08-16",
       "sell_price": 24.33,
-      "shares": 12330,
+      "shares": 6165,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
@@ -523,8 +567,8 @@
       "buy_price": 66.52,
       "sell_date": "2018-09-06",
       "sell_price": 66.29,
-      "shares": 4510,
-      "pl": -1014.63,
+      "shares": 2255,
+      "pl": -507.32,
       "pl_pct": -0.34,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -534,8 +578,8 @@
       "buy_price": 19.1,
       "sell_date": "2018-09-06",
       "sell_price": 19.9,
-      "shares": 15706,
-      "pl": 12564.79,
+      "shares": 7853,
+      "pl": 6282.39,
       "pl_pct": 4.19,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     }
@@ -548,1222 +592,1222 @@
     },
     {
       "date": "2018-01-03",
-      "equity": 3001127.07,
+      "equity": 3000563.54,
       "type": "daily"
     },
     {
       "date": "2018-01-04",
-      "equity": 3004543.5,
+      "equity": 3002271.69,
       "type": "daily"
     },
     {
       "date": "2018-01-05",
-      "equity": 3006831.04,
+      "equity": 3003415.43,
       "type": "daily"
     },
     {
       "date": "2018-01-08",
-      "equity": 3010174.23,
+      "equity": 3005087.17,
       "type": "daily"
     },
     {
       "date": "2018-01-09",
-      "equity": 2995411.4,
+      "equity": 2997707.01,
       "type": "daily"
     },
     {
       "date": "2018-01-10",
-      "equity": 2984780.43,
+      "equity": 2992391.59,
       "type": "daily"
     },
     {
       "date": "2018-01-11",
-      "equity": 2989097.33,
+      "equity": 2994549.54,
       "type": "daily"
     },
     {
       "date": "2018-01-12",
-      "equity": 2995989.34,
+      "equity": 2997994.91,
       "type": "daily"
     },
     {
       "date": "2018-01-15",
-      "equity": 3002157.84,
+      "equity": 3001078.94,
       "type": "daily"
     },
     {
       "date": "2018-01-16",
-      "equity": 3009279.43,
+      "equity": 3004639.45,
       "type": "daily"
     },
     {
       "date": "2018-01-17",
-      "equity": 3016887.68,
+      "equity": 3008443.2,
       "type": "daily"
     },
     {
       "date": "2018-01-18",
-      "equity": 3014335.31,
+      "equity": 3007166.57,
       "type": "daily"
     },
     {
       "date": "2018-01-19",
-      "equity": 3006010.44,
+      "equity": 3003004.06,
       "type": "daily"
     },
     {
       "date": "2018-01-22",
-      "equity": 3006749.26,
+      "equity": 3003373.12,
       "type": "daily"
     },
     {
       "date": "2018-01-23",
-      "equity": 3001051.84,
+      "equity": 3001215.49,
       "type": "daily"
     },
     {
       "date": "2018-01-24",
-      "equity": 3002621.79,
+      "equity": 3001309.24,
       "type": "daily"
     },
     {
       "date": "2018-01-25",
-      "equity": 2990052.7,
+      "equity": 2995025.67,
       "type": "daily"
     },
     {
       "date": "2018-01-26",
-      "equity": 2988066.71,
+      "equity": 2994032.89,
       "type": "daily"
     },
     {
       "date": "2018-01-29",
-      "equity": 3001324.17,
+      "equity": 3002043.43,
       "type": "daily"
     },
     {
       "date": "2018-01-30",
-      "equity": 2992787.93,
+      "equity": 2995702.57,
       "type": "daily"
     },
     {
       "date": "2018-01-31",
-      "equity": 2994418.25,
+      "equity": 2997208.39,
       "type": "daily"
     },
     {
       "date": "2018-02-01",
-      "equity": 3001811.34,
+      "equity": 3001595.89,
       "type": "daily"
     },
     {
       "date": "2018-02-02",
-      "equity": 3003734.8,
+      "equity": 3002557.31,
       "type": "daily"
     },
     {
       "date": "2018-02-05",
-      "equity": 3001010.56,
+      "equity": 2999812.78,
       "type": "daily"
     },
     {
       "date": "2018-02-06",
-      "equity": 2917922.83,
+      "equity": 2956198.87,
       "type": "hold"
     },
     {
       "date": "2018-02-07",
-      "equity": 2950922.72,
+      "equity": 2972697.56,
       "type": "hold"
     },
     {
       "date": "2018-02-08",
-      "equity": 2946478.59,
+      "equity": 2970475.6,
       "type": "hold"
     },
     {
       "date": "2018-02-09",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "crash"
     },
     {
       "date": "2018-02-12",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "hold"
     },
     {
       "date": "2018-02-21",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "hold"
     },
     {
       "date": "2018-02-22",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "hold"
     },
     {
       "date": "2018-02-23",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "hold"
     },
     {
       "date": "2018-02-26",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "hold"
     },
     {
       "date": "2018-02-27",
-      "equity": 2935761.96,
+      "equity": 2965117.53,
       "type": "daily"
     },
     {
       "date": "2018-03-01",
-      "equity": 2935027.7,
+      "equity": 2964750.47,
       "type": "hold"
     },
     {
       "date": "2018-03-02",
-      "equity": 2933845.86,
+      "equity": 2964159.6,
       "type": "hold"
     },
     {
       "date": "2018-03-05",
-      "equity": 2921913.32,
+      "equity": 2958194.11,
       "type": "hold"
     },
     {
       "date": "2018-03-06",
-      "equity": 2924277.0,
+      "equity": 2959375.86,
       "type": "hold"
     },
     {
       "date": "2018-03-07",
-      "equity": 2921775.8,
+      "equity": 2958125.46,
       "type": "crash"
     },
     {
       "date": "2018-03-08",
-      "equity": 2921775.8,
+      "equity": 2958125.46,
       "type": "hold"
     },
     {
       "date": "2018-03-09",
-      "equity": 2921775.8,
+      "equity": 2958125.46,
       "type": "hold"
     },
     {
       "date": "2018-03-12",
-      "equity": 2921775.8,
+      "equity": 2958125.46,
       "type": "daily"
     },
     {
       "date": "2018-03-13",
-      "equity": 2925024.82,
+      "equity": 2959749.9,
       "type": "daily"
     },
     {
       "date": "2018-03-14",
-      "equity": 2932676.65,
+      "equity": 2963575.73,
       "type": "daily"
     },
     {
       "date": "2018-03-15",
-      "equity": 2937146.71,
+      "equity": 2965810.6,
       "type": "daily"
     },
     {
       "date": "2018-03-16",
-      "equity": 2941101.38,
+      "equity": 2967788.21,
       "type": "daily"
     },
     {
       "date": "2018-03-19",
-      "equity": 2944390.42,
+      "equity": 2985264.47,
       "type": "daily"
     },
     {
       "date": "2018-03-20",
-      "equity": 2906729.45,
+      "equity": 2949936.25,
       "type": "daily"
     },
     {
       "date": "2018-03-21",
-      "equity": 2934104.31,
+      "equity": 2963413.61,
       "type": "daily"
     },
     {
       "date": "2018-03-22",
-      "equity": 2928713.01,
+      "equity": 2960149.73,
       "type": "daily"
     },
     {
       "date": "2018-03-23",
-      "equity": 2911926.84,
+      "equity": 2949259.01,
       "type": "hold"
     },
     {
       "date": "2018-03-26",
-      "equity": 2938230.99,
+      "equity": 2960657.15,
       "type": "hold"
     },
     {
       "date": "2018-03-27",
-      "equity": 2951740.91,
+      "equity": 2964283.43,
       "type": "daily"
     },
     {
       "date": "2018-03-28",
-      "equity": 2945453.32,
+      "equity": 2954186.72,
       "type": "hold"
     },
     {
       "date": "2018-03-29",
-      "equity": 2944679.54,
+      "equity": 2952669.2,
       "type": "hold"
     },
     {
       "date": "2018-03-30",
-      "equity": 2944505.25,
+      "equity": 2952572.08,
       "type": "daily"
     },
     {
       "date": "2018-04-02",
-      "equity": 2948603.88,
+      "equity": 2957124.59,
       "type": "hold"
     },
     {
       "date": "2018-04-03",
-      "equity": 2947010.99,
+      "equity": 2955389.2,
       "type": "hold"
     },
     {
       "date": "2018-04-09",
-      "equity": 2940218.18,
+      "equity": 2949864.54,
       "type": "hold"
     },
     {
       "date": "2018-04-10",
-      "equity": 2952283.27,
+      "equity": 2960158.89,
       "type": "daily"
     },
     {
       "date": "2018-04-11",
-      "equity": 2929703.54,
+      "equity": 2948482.54,
       "type": "daily"
     },
     {
       "date": "2018-04-12",
-      "equity": 2947070.13,
+      "equity": 2955244.56,
       "type": "daily"
     },
     {
       "date": "2018-04-13",
-      "equity": 2939627.35,
+      "equity": 2952298.17,
       "type": "daily"
     },
     {
       "date": "2018-04-16",
-      "equity": 2943167.11,
+      "equity": 2954819.64,
       "type": "daily"
     },
     {
       "date": "2018-04-17",
-      "equity": 2922172.64,
+      "equity": 2941080.79,
       "type": "hold"
     },
     {
       "date": "2018-04-18",
-      "equity": 2943767.51,
+      "equity": 2953520.42,
       "type": "hold"
     },
     {
       "date": "2018-04-19",
-      "equity": 2938173.73,
+      "equity": 2951880.79,
       "type": "daily"
     },
     {
       "date": "2018-04-20",
-      "equity": 2958300.28,
+      "equity": 2962721.9,
       "type": "hold"
     },
     {
       "date": "2018-04-23",
-      "equity": 2958383.07,
+      "equity": 2959884.92,
       "type": "hold"
     },
     {
       "date": "2018-04-24",
-      "equity": 2941691.54,
+      "equity": 2950241.46,
       "type": "hold"
     },
     {
       "date": "2018-04-25",
-      "equity": 2938142.83,
+      "equity": 2946173.26,
       "type": "hold"
     },
     {
       "date": "2018-04-26",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "crash"
     },
     {
       "date": "2018-04-27",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-04-30",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-02",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-03",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-04",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-07",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-08",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-09",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-10",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "hold"
     },
     {
       "date": "2018-05-11",
-      "equity": 2934163.17,
+      "equity": 2937210.69,
       "type": "daily"
     },
     {
       "date": "2018-05-14",
-      "equity": 2933363.72,
+      "equity": 2936810.96,
       "type": "daily"
     },
     {
       "date": "2018-05-15",
-      "equity": 2935134.69,
+      "equity": 2937696.43,
       "type": "daily"
     },
     {
       "date": "2018-05-16",
-      "equity": 2935326.2,
+      "equity": 2937792.16,
       "type": "daily"
     },
     {
       "date": "2018-05-17",
-      "equity": 2932661.38,
+      "equity": 2936459.76,
       "type": "daily"
     },
     {
       "date": "2018-05-18",
-      "equity": 2930549.08,
+      "equity": 2934661.27,
       "type": "daily"
     },
     {
       "date": "2018-05-21",
-      "equity": 2925753.94,
+      "equity": 2930778.72,
       "type": "daily"
     },
     {
       "date": "2018-05-22",
-      "equity": 2918280.66,
+      "equity": 2928527.44,
       "type": "daily"
     },
     {
       "date": "2018-05-23",
-      "equity": 2921123.85,
+      "equity": 2929206.44,
       "type": "daily"
     },
     {
       "date": "2018-05-24",
-      "equity": 2934224.62,
+      "equity": 2935756.27,
       "type": "daily"
     },
     {
       "date": "2018-05-25",
-      "equity": 2925014.33,
+      "equity": 2931151.6,
       "type": "daily"
     },
     {
       "date": "2018-05-28",
-      "equity": 2936938.1,
+      "equity": 2944538.76,
       "type": "daily"
     },
     {
       "date": "2018-05-29",
-      "equity": 2934234.02,
+      "equity": 2943558.07,
       "type": "daily"
     },
     {
       "date": "2018-05-30",
-      "equity": 2923038.2,
+      "equity": 2934618.88,
       "type": "hold"
     },
     {
       "date": "2018-05-31",
-      "equity": 2942011.83,
+      "equity": 2944105.75,
       "type": "daily"
     },
     {
       "date": "2018-06-01",
-      "equity": 2945724.99,
+      "equity": 2945219.64,
       "type": "daily"
     },
     {
       "date": "2018-06-04",
-      "equity": 2966372.95,
+      "equity": 2957771.01,
       "type": "daily"
     },
     {
       "date": "2018-06-05",
-      "equity": 2958173.59,
+      "equity": 2958869.27,
       "type": "daily"
     },
     {
       "date": "2018-06-06",
-      "equity": 2965562.3,
+      "equity": 2961449.22,
       "type": "daily"
     },
     {
       "date": "2018-06-07",
-      "equity": 2963746.95,
+      "equity": 2963511.78,
       "type": "daily"
     },
     {
       "date": "2018-06-08",
-      "equity": 2968607.86,
+      "equity": 2970026.44,
       "type": "daily"
     },
     {
       "date": "2018-06-11",
-      "equity": 2990984.19,
+      "equity": 2989010.98,
       "type": "daily"
     },
     {
       "date": "2018-06-12",
-      "equity": 2982668.28,
+      "equity": 2983368.32,
       "type": "daily"
     },
     {
       "date": "2018-06-13",
-      "equity": 2976577.16,
+      "equity": 2974753.4,
       "type": "daily"
     },
     {
       "date": "2018-06-14",
-      "equity": 2970720.81,
+      "equity": 2972938.88,
       "type": "daily"
     },
     {
       "date": "2018-06-15",
-      "equity": 2969195.04,
+      "equity": 2969948.22,
       "type": "daily"
     },
     {
       "date": "2018-06-19",
-      "equity": 2956506.09,
+      "equity": 2963975.56,
       "type": "daily"
     },
     {
       "date": "2018-06-20",
-      "equity": 2956262.3,
+      "equity": 2966452.64,
       "type": "daily"
     },
     {
       "date": "2018-06-21",
-      "equity": 2967631.57,
+      "equity": 2969537.82,
       "type": "daily"
     },
     {
       "date": "2018-06-22",
-      "equity": 2975795.83,
+      "equity": 2973991.18,
       "type": "hold"
     },
     {
       "date": "2018-06-25",
-      "equity": 3005961.89,
+      "equity": 2982762.53,
       "type": "hold"
     },
     {
       "date": "2018-06-26",
-      "equity": 3025731.93,
+      "equity": 2990048.64,
       "type": "hold"
     },
     {
       "date": "2018-06-27",
-      "equity": 2994135.73,
+      "equity": 2973136.78,
       "type": "hold"
     },
     {
       "date": "2018-06-28",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "crash"
     },
     {
       "date": "2018-06-29",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-02",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-03",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-04",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-05",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-06",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-09",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-10",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-11",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-12",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-13",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-16",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-17",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-18",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-19",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-20",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-23",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-24",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-25",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "hold"
     },
     {
       "date": "2018-07-26",
-      "equity": 3012206.6,
+      "equity": 2982171.5,
       "type": "daily"
     },
     {
       "date": "2018-07-27",
-      "equity": 3011538.44,
+      "equity": 2981837.45,
       "type": "daily"
     },
     {
       "date": "2018-07-30",
-      "equity": 3006991.31,
+      "equity": 2979563.97,
       "type": "daily"
     },
     {
       "date": "2018-07-31",
-      "equity": 3011428.24,
+      "equity": 2981782.26,
       "type": "daily"
     },
     {
       "date": "2018-08-01",
-      "equity": 3027600.09,
+      "equity": 2989867.05,
       "type": "daily"
     },
     {
       "date": "2018-08-02",
-      "equity": 3007516.44,
+      "equity": 2979826.07,
       "type": "hold"
     },
     {
       "date": "2018-08-03",
-      "equity": 3022489.79,
+      "equity": 2987311.64,
       "type": "hold"
     },
     {
       "date": "2018-08-06",
-      "equity": 3036721.07,
+      "equity": 2994426.89,
       "type": "hold"
     },
     {
       "date": "2018-08-07",
-      "equity": 3016191.41,
+      "equity": 2984163.27,
       "type": "hold"
     },
     {
       "date": "2018-08-08",
-      "equity": 3042216.57,
+      "equity": 2997174.7,
       "type": "daily"
     },
     {
       "date": "2018-08-09",
-      "equity": 3037530.0,
+      "equity": 2994831.27,
       "type": "daily"
     },
     {
       "date": "2018-08-10",
-      "equity": 3050902.7,
+      "equity": 3001517.83,
       "type": "hold"
     },
     {
       "date": "2018-08-13",
-      "equity": 3006186.55,
+      "equity": 2979161.42,
       "type": "hold"
     },
     {
       "date": "2018-08-14",
-      "equity": 3015807.6,
+      "equity": 2983971.32,
       "type": "hold"
     },
     {
       "date": "2018-08-15",
-      "equity": 3021745.61,
+      "equity": 2986940.38,
       "type": "hold"
     },
     {
       "date": "2018-08-16",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "crash"
     },
     {
       "date": "2018-08-17",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-20",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-21",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-22",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-23",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-24",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-27",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-28",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-29",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "hold"
     },
     {
       "date": "2018-08-30",
-      "equity": 3010815.7,
+      "equity": 2981475.55,
       "type": "daily"
     },
     {
       "date": "2018-08-31",
-      "equity": 3014851.07,
+      "equity": 2983493.23,
       "type": "hold"
     },
     {
       "date": "2018-09-03",
-      "equity": 3003736.38,
+      "equity": 2977935.89,
       "type": "hold"
     },
     {
       "date": "2018-09-04",
-      "equity": 3006201.17,
+      "equity": 2979168.28,
       "type": "hold"
     },
     {
       "date": "2018-09-05",
-      "equity": 3022474.72,
+      "equity": 2987305.06,
       "type": "hold"
     },
     {
       "date": "2018-09-06",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "crash"
     },
     {
       "date": "2018-09-07",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-10",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-11",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-12",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-13",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-14",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-17",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-18",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-19",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-20",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-21",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-25",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-26",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-27",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-09-28",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-01",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-02",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-03",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-04",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-05",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-08",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-09",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-11",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-12",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-15",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-16",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-17",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-18",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-19",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-22",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-23",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-24",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-25",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-26",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-29",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-30",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-10-31",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-01",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-02",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-05",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-06",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-07",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-08",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-09",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-12",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-13",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-14",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-15",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-16",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-19",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-20",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-21",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-22",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-23",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-26",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-27",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-28",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-29",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-11-30",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-03",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-04",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-05",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-06",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-07",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-10",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-11",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-12",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-13",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-14",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-17",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-18",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-19",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-20",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-21",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-24",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-25",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-26",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-27",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     },
     {
       "date": "2018-12-28",
-      "equity": 3022365.85,
+      "equity": 2987250.63,
       "type": "hold"
     }
   ],
@@ -2484,12 +2528,6 @@
     },
     {
       "date": "2018-03-23",
-      "ticker": "6176",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 79.5
-    },
-    {
-      "date": "2018-03-23",
       "ticker": "9937",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.3
@@ -2541,12 +2579,6 @@
       "ticker": "4536",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.8
-    },
-    {
-      "date": "2018-03-26",
-      "ticker": "6176",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 79.4
     },
     {
       "date": "2018-03-26",
@@ -2874,12 +2906,6 @@
     },
     {
       "date": "2018-04-18",
-      "ticker": "6176",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 81.2
-    },
-    {
-      "date": "2018-04-18",
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 74.1
@@ -2928,12 +2954,6 @@
     },
     {
       "date": "2018-04-20",
-      "ticker": "6176",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 79.2
-    },
-    {
-      "date": "2018-04-20",
       "ticker": "2412",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 75.2
@@ -2961,12 +2981,6 @@
       "ticker": "2546",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 82.8
-    },
-    {
-      "date": "2018-04-23",
-      "ticker": "6176",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 78.5
     },
     {
       "date": "2018-04-23",

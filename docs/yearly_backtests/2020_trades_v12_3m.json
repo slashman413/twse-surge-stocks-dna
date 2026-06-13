@@ -6,8 +6,8 @@
       "buy_price": 11.39,
       "sell_date": "2020-01-08",
       "sell_price": 11.11,
-      "shares": 26327,
-      "pl": -7473.15,
+      "shares": 13163,
+      "pl": -3736.43,
       "pl_pct": -2.49,
       "sell_reason": "RSI<35"
     },
@@ -17,8 +17,8 @@
       "buy_price": 25.81,
       "sell_date": "2020-01-30",
       "sell_price": 21.82,
-      "shares": 11623,
-      "pl": -46343.15,
+      "shares": 5811,
+      "pl": -23169.58,
       "pl_pct": -15.45,
       "sell_reason": "\u505c\u640d(-15%)"
     },
@@ -28,8 +28,8 @@
       "buy_price": 20.77,
       "sell_date": "2020-01-30",
       "sell_price": 18.99,
-      "shares": 14443,
-      "pl": -25699.86,
+      "shares": 7221,
+      "pl": -12849.04,
       "pl_pct": -8.57,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
@@ -39,9 +39,20 @@
       "buy_price": 13.42,
       "sell_date": "2020-02-10",
       "sell_price": 13.1,
-      "shares": 22346,
-      "pl": -7142.56,
+      "shares": 11173,
+      "pl": -3571.28,
       "pl_pct": -2.38,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "1725",
+      "buy_date": "2020-01-09",
+      "buy_price": 11.65,
+      "sell_date": "2020-02-11",
+      "sell_price": 11.38,
+      "shares": 12879,
+      "pl": -3488.14,
+      "pl_pct": -2.33,
       "sell_reason": "RSI<35"
     },
     {
@@ -50,8 +61,8 @@
       "buy_price": 13.19,
       "sell_date": "2020-02-17",
       "sell_price": 13.1,
-      "shares": 22740,
-      "pl": -1982.33,
+      "shares": 11370,
+      "pl": -991.17,
       "pl_pct": -0.66,
       "sell_reason": "RSI<35"
     },
@@ -61,8 +72,8 @@
       "buy_price": 30.81,
       "sell_date": "2020-02-19",
       "sell_price": 28.97,
-      "shares": 9736,
-      "pl": -17951.06,
+      "shares": 4868,
+      "pl": -8975.53,
       "pl_pct": -5.98,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
     },
@@ -72,8 +83,8 @@
       "buy_price": 11.6,
       "sell_date": "2020-02-24",
       "sell_price": 11.07,
-      "shares": 25872,
-      "pl": -13595.11,
+      "shares": 12936,
+      "pl": -6797.55,
       "pl_pct": -4.53,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -83,8 +94,8 @@
       "buy_price": 12.03,
       "sell_date": "2020-02-24",
       "sell_price": 11.99,
-      "shares": 24927,
-      "pl": -1209.63,
+      "shares": 12463,
+      "pl": -604.79,
       "pl_pct": -0.4,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -94,8 +105,8 @@
       "buy_price": 280.14,
       "sell_date": "2020-02-24",
       "sell_price": 270.02,
-      "shares": 1070,
-      "pl": -10834.4,
+      "shares": 535,
+      "pl": -5417.2,
       "pl_pct": -3.61,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -105,8 +116,8 @@
       "buy_price": 21.06,
       "sell_date": "2020-02-24",
       "sell_price": 20.33,
-      "shares": 14248,
-      "pl": -10278.27,
+      "shares": 7124,
+      "pl": -5139.13,
       "pl_pct": -3.43,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -116,8 +127,8 @@
       "buy_price": 10.69,
       "sell_date": "2020-02-24",
       "sell_price": 11.43,
-      "shares": 28070,
-      "pl": 20731.38,
+      "shares": 14035,
+      "pl": 10365.69,
       "pl_pct": 6.91,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -127,8 +138,8 @@
       "buy_price": 26.41,
       "sell_date": "2020-02-24",
       "sell_price": 26.26,
-      "shares": 11357,
-      "pl": -1719.07,
+      "shares": 5678,
+      "pl": -859.46,
       "pl_pct": -0.57,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -138,9 +149,20 @@
       "buy_price": 24.83,
       "sell_date": "2020-02-24",
       "sell_price": 25.04,
-      "shares": 12082,
-      "pl": 2593.49,
+      "shares": 6041,
+      "pl": 1296.75,
       "pl_pct": 0.86,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2015",
+      "buy_date": "2020-02-13",
+      "buy_price": 33.98,
+      "sell_date": "2020-02-24",
+      "sell_price": 34.3,
+      "shares": 4413,
+      "pl": 1401.56,
+      "pl_pct": 0.93,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -149,8 +171,8 @@
       "buy_price": 13.2,
       "sell_date": "2020-06-12",
       "sell_price": 13.05,
-      "shares": 22735,
-      "pl": -3333.24,
+      "shares": 11367,
+      "pl": -1666.54,
       "pl_pct": -1.11,
       "sell_reason": "RSI<35"
     },
@@ -160,8 +182,8 @@
       "buy_price": 24.74,
       "sell_date": "2020-06-15",
       "sell_price": 22.0,
-      "shares": 12125,
-      "pl": -33192.63,
+      "shares": 6062,
+      "pl": -16594.94,
       "pl_pct": -11.07,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -171,8 +193,8 @@
       "buy_price": 13.23,
       "sell_date": "2020-06-18",
       "sell_price": 15.95,
-      "shares": 11341,
-      "pl": 30881.42,
+      "shares": 5670,
+      "pl": 15439.35,
       "pl_pct": 20.59,
       "sell_reason": "\u505c\u522950%"
     },
@@ -182,8 +204,8 @@
       "buy_price": 22.12,
       "sell_date": "2020-07-09",
       "sell_price": 27.31,
-      "shares": 6781,
-      "pl": 35164.2,
+      "shares": 3390,
+      "pl": 17579.51,
       "pl_pct": 23.44,
       "sell_reason": "\u505c\u522950%"
     },
@@ -193,8 +215,8 @@
       "buy_price": 57.08,
       "sell_date": "2020-07-10",
       "sell_price": 69.02,
-      "shares": 2627,
-      "pl": 31373.46,
+      "shares": 1313,
+      "pl": 15680.76,
       "pl_pct": 20.92,
       "sell_reason": "\u505c\u522950%"
     },
@@ -204,10 +226,21 @@
       "buy_price": 22.12,
       "sell_date": "2020-07-17",
       "sell_price": 24.1,
-      "shares": 6781,
-      "pl": 13430.67,
+      "shares": 3391,
+      "pl": 6716.32,
       "pl_pct": 8.95,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+    },
+    {
+      "ticker": "3311",
+      "buy_date": "2020-06-10",
+      "buy_price": 25.61,
+      "sell_date": "2020-07-20",
+      "sell_price": 22.99,
+      "shares": 5857,
+      "pl": -15344.82,
+      "pl_pct": -10.23,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
     {
       "ticker": "1309",
@@ -215,8 +248,8 @@
       "buy_price": 11.31,
       "sell_date": "2020-07-28",
       "sell_price": 10.09,
-      "shares": 26524,
-      "pl": -32277.43,
+      "shares": 13262,
+      "pl": -16138.72,
       "pl_pct": -10.76,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
     },
@@ -226,8 +259,8 @@
       "buy_price": 126.3,
       "sell_date": "2020-08-04",
       "sell_price": 156.09,
-      "shares": 1187,
-      "pl": 35358.48,
+      "shares": 593,
+      "pl": 17664.35,
       "pl_pct": 23.58,
       "sell_reason": "\u505c\u522950%"
     },
@@ -237,8 +270,8 @@
       "buy_price": 12.23,
       "sell_date": "2020-08-07",
       "sell_price": 11.94,
-      "shares": 24531,
-      "pl": -7142.65,
+      "shares": 12265,
+      "pl": -3571.18,
       "pl_pct": -2.38,
       "sell_reason": "RSI<35"
     },
@@ -248,8 +281,8 @@
       "buy_price": 154.85,
       "sell_date": "2020-08-12",
       "sell_price": 140.32,
-      "shares": 1937,
-      "pl": -28144.2,
+      "shares": 968,
+      "pl": -14064.83,
       "pl_pct": -9.38,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -259,8 +292,8 @@
       "buy_price": 34.16,
       "sell_date": "2020-08-14",
       "sell_price": 35.28,
-      "shares": 8781,
-      "pl": 9822.76,
+      "shares": 4390,
+      "pl": 4910.82,
       "pl_pct": 3.27,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
@@ -270,8 +303,8 @@
       "buy_price": 23.17,
       "sell_date": "2020-08-20",
       "sell_price": 23.63,
-      "shares": 12950,
-      "pl": 6037.13,
+      "shares": 6475,
+      "pl": 3018.56,
       "pl_pct": 2.01,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
     },
@@ -281,8 +314,8 @@
       "buy_price": 34.26,
       "sell_date": "2020-08-20",
       "sell_price": 32.61,
-      "shares": 8755,
-      "pl": -14495.95,
+      "shares": 4377,
+      "pl": -7247.15,
       "pl_pct": -4.83,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -292,7 +325,7 @@
       "buy_price": 13.23,
       "sell_date": "2020-08-21",
       "sell_price": 13.23,
-      "shares": 11341,
+      "shares": 5671,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-25%)"
@@ -303,8 +336,8 @@
       "buy_price": 110.65,
       "sell_date": "2020-08-28",
       "sell_price": 106.33,
-      "shares": 2711,
-      "pl": -11717.79,
+      "shares": 1355,
+      "pl": -5856.73,
       "pl_pct": -3.91,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
@@ -314,21 +347,32 @@
       "buy_price": 10.37,
       "sell_date": "2020-08-31",
       "sell_price": 12.52,
-      "shares": 14464,
-      "pl": 31033.16,
+      "shares": 7232,
+      "pl": 15516.58,
       "pl_pct": 20.69,
       "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "2006",
-      "buy_date": "2020-06-18",
-      "buy_price": 13.93,
-      "sell_date": "2020-08-31",
-      "sell_price": 16.9,
-      "shares": 10766,
-      "pl": 31972.11,
-      "pl_pct": 21.32,
+      "buy_date": "2020-08-20",
+      "buy_price": 15.67,
+      "sell_date": "2020-09-08",
+      "sell_price": 19.37,
+      "shares": 4786,
+      "pl": 17690.8,
+      "pl_pct": 23.59,
       "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2379",
+      "buy_date": "2020-08-12",
+      "buy_price": 284.22,
+      "sell_date": "2020-09-09",
+      "sell_price": 265.8,
+      "shares": 527,
+      "pl": -9706.38,
+      "pl_pct": -6.48,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
     {
       "ticker": "6224",
@@ -336,8 +380,8 @@
       "buy_price": 57.08,
       "sell_date": "2020-09-11",
       "sell_price": 64.37,
-      "shares": 2628,
-      "pl": 19154.34,
+      "shares": 1314,
+      "pl": 9577.17,
       "pl_pct": 12.77,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -347,8 +391,8 @@
       "buy_price": 10.37,
       "sell_date": "2020-09-11",
       "sell_price": 11.13,
-      "shares": 14465,
-      "pl": 10991.67,
+      "shares": 7232,
+      "pl": 5495.45,
       "pl_pct": 7.33,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -358,8 +402,8 @@
       "buy_price": 126.3,
       "sell_date": "2020-09-24",
       "sell_price": 155.66,
-      "shares": 1188,
-      "pl": 34871.74,
+      "shares": 594,
+      "pl": 17435.87,
       "pl_pct": 23.24,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -369,31 +413,20 @@
       "buy_price": 34.36,
       "sell_date": "2020-09-24",
       "sell_price": 37.65,
-      "shares": 8730,
-      "pl": 28664.17,
+      "shares": 4365,
+      "pl": 14332.08,
       "pl_pct": 9.55,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2006",
-      "buy_date": "2020-06-18",
-      "buy_price": 13.93,
-      "sell_date": "2020-09-24",
-      "sell_price": 18.17,
-      "shares": 10766,
-      "pl": 45577.26,
-      "pl_pct": 30.39,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "1725",
-      "buy_date": "2020-08-12",
-      "buy_price": 11.17,
+      "buy_date": "2020-07-20",
+      "buy_price": 11.29,
       "sell_date": "2020-09-24",
       "sell_price": 11.05,
-      "shares": 26857,
-      "pl": -3272.7,
-      "pl_pct": -1.09,
+      "shares": 13283,
+      "pl": -3237.24,
+      "pl_pct": -2.16,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -402,20 +435,20 @@
       "buy_price": 25.37,
       "sell_date": "2020-09-24",
       "sell_price": 25.9,
-      "shares": 11827,
-      "pl": 6306.25,
+      "shares": 5913,
+      "pl": 3152.86,
       "pl_pct": 2.1,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "9931",
+      "ticker": "2006",
       "buy_date": "2020-08-20",
-      "buy_price": 32.0,
+      "buy_price": 15.67,
       "sell_date": "2020-09-24",
-      "sell_price": 32.95,
-      "shares": 9374,
-      "pl": 8856.95,
-      "pl_pct": 2.95,
+      "sell_price": 18.17,
+      "shares": 4786,
+      "pl": 11945.07,
+      "pl_pct": 15.93,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -424,20 +457,31 @@
       "buy_price": 12.03,
       "sell_date": "2020-09-24",
       "sell_price": 12.13,
-      "shares": 24927,
-      "pl": 2419.33,
+      "shares": 12463,
+      "pl": 1209.62,
       "pl_pct": 0.81,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2379",
+      "ticker": "2330",
       "buy_date": "2020-08-28",
-      "buy_price": 281.32,
+      "buy_price": 385.43,
       "sell_date": "2020-09-24",
-      "sell_price": 272.89,
-      "shares": 1066,
-      "pl": -8985.0,
-      "pl_pct": -3.0,
+      "sell_price": 382.73,
+      "shares": 389,
+      "pl": -1047.84,
+      "pl_pct": -0.7,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6477",
+      "buy_date": "2020-09-09",
+      "buy_price": 35.55,
+      "sell_date": "2020-09-24",
+      "sell_price": 34.49,
+      "shares": 4219,
+      "pl": -4462.99,
+      "pl_pct": -2.98,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -446,8 +490,8 @@
       "buy_price": 157.75,
       "sell_date": "2020-09-24",
       "sell_price": 166.47,
-      "shares": 1901,
-      "pl": 16572.68,
+      "shares": 950,
+      "pl": 8281.98,
       "pl_pct": 5.53,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -457,8 +501,8 @@
       "buy_price": 15.49,
       "sell_date": "2020-09-24",
       "sell_price": 14.73,
-      "shares": 19369,
-      "pl": -14766.68,
+      "shares": 9684,
+      "pl": -7382.96,
       "pl_pct": -4.92,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -468,8 +512,8 @@
       "buy_price": 10.88,
       "sell_date": "2020-10-15",
       "sell_price": 9.39,
-      "shares": 27579,
-      "pl": -40887.1,
+      "shares": 13789,
+      "pl": -20442.81,
       "pl_pct": -13.63,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
     },
@@ -479,8 +523,8 @@
       "buy_price": 13.83,
       "sell_date": "2020-10-20",
       "sell_price": 14.56,
-      "shares": 21685,
-      "pl": 15789.31,
+      "shares": 10842,
+      "pl": 7894.29,
       "pl_pct": 5.26,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -490,8 +534,8 @@
       "buy_price": 18.29,
       "sell_date": "2020-10-20",
       "sell_price": 18.01,
-      "shares": 16400,
-      "pl": -4663.11,
+      "shares": 8200,
+      "pl": -2331.56,
       "pl_pct": -1.55,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -501,8 +545,8 @@
       "buy_price": 19.79,
       "sell_date": "2020-10-20",
       "sell_price": 21.8,
-      "shares": 15157,
-      "pl": 30379.66,
+      "shares": 7578,
+      "pl": 15188.83,
       "pl_pct": 10.13,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -512,8 +556,8 @@
       "buy_price": 12.96,
       "sell_date": "2020-10-20",
       "sell_price": 13.05,
-      "shares": 23153,
-      "pl": 2247.13,
+      "shares": 11576,
+      "pl": 1123.52,
       "pl_pct": 0.75,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -523,8 +567,8 @@
       "buy_price": 155.22,
       "sell_date": "2020-10-20",
       "sell_price": 166.09,
-      "shares": 1932,
-      "pl": 21000.47,
+      "shares": 966,
+      "pl": 10500.24,
       "pl_pct": 7.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -534,8 +578,8 @@
       "buy_price": 11.67,
       "sell_date": "2020-10-20",
       "sell_price": 11.62,
-      "shares": 25696,
-      "pl": -1376.09,
+      "shares": 12848,
+      "pl": -688.05,
       "pl_pct": -0.46,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -545,8 +589,8 @@
       "buy_price": 33.69,
       "sell_date": "2020-10-20",
       "sell_price": 33.36,
-      "shares": 8905,
-      "pl": -2926.56,
+      "shares": 4452,
+      "pl": -1463.11,
       "pl_pct": -0.98,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -556,8 +600,8 @@
       "buy_price": 13.67,
       "sell_date": "2020-10-20",
       "sell_price": 13.96,
-      "shares": 21947,
-      "pl": 6461.54,
+      "shares": 10973,
+      "pl": 3230.62,
       "pl_pct": 2.15,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -567,8 +611,8 @@
       "buy_price": 13.02,
       "sell_date": "2020-10-20",
       "sell_price": 13.37,
-      "shares": 23032,
-      "pl": 8014.99,
+      "shares": 11516,
+      "pl": 4007.5,
       "pl_pct": 2.67,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -578,8 +622,8 @@
       "buy_price": 26.61,
       "sell_date": "2020-10-20",
       "sell_price": 27.11,
-      "shares": 11275,
-      "pl": 5701.73,
+      "shares": 5637,
+      "pl": 2850.61,
       "pl_pct": 1.9,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -589,8 +633,8 @@
       "buy_price": 14.43,
       "sell_date": "2020-10-27",
       "sell_price": 18.34,
-      "shares": 10397,
-      "pl": 40690.22,
+      "shares": 5198,
+      "pl": 20343.15,
       "pl_pct": 27.13,
       "sell_reason": "\u505c\u522950%"
     },
@@ -600,8 +644,8 @@
       "buy_price": 14.43,
       "sell_date": "2020-10-29",
       "sell_price": 16.34,
-      "shares": 10398,
-      "pl": 19873.89,
+      "shares": 5199,
+      "pl": 9936.94,
       "pl_pct": 13.25,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -611,8 +655,8 @@
       "buy_price": 27.0,
       "sell_date": "2020-10-30",
       "sell_price": 26.57,
-      "shares": 11112,
-      "pl": -4754.8,
+      "shares": 5556,
+      "pl": -2377.4,
       "pl_pct": -1.59,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -622,8 +666,8 @@
       "buy_price": 411.69,
       "sell_date": "2020-10-30",
       "sell_price": 390.88,
-      "shares": 728,
-      "pl": -15150.03,
+      "shares": 364,
+      "pl": -7575.02,
       "pl_pct": -5.05,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -633,7 +677,7 @@
       "buy_price": 33.64,
       "sell_date": "2020-10-30",
       "sell_price": 33.64,
-      "shares": 8916,
+      "shares": 4458,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
@@ -644,8 +688,8 @@
       "buy_price": 32.02,
       "sell_date": "2020-10-30",
       "sell_price": 30.26,
-      "shares": 9368,
-      "pl": -16513.42,
+      "shares": 4684,
+      "pl": -8256.71,
       "pl_pct": -5.5,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -655,8 +699,8 @@
       "buy_price": 25.56,
       "sell_date": "2020-10-30",
       "sell_price": 24.89,
-      "shares": 11736,
-      "pl": -7894.62,
+      "shares": 5868,
+      "pl": -3947.31,
       "pl_pct": -2.63,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -666,8 +710,8 @@
       "buy_price": 41.15,
       "sell_date": "2020-10-30",
       "sell_price": 39.07,
-      "shares": 7291,
-      "pl": -15160.8,
+      "shares": 3645,
+      "pl": -7579.36,
       "pl_pct": -5.05,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -677,8 +721,8 @@
       "buy_price": 18.39,
       "sell_date": "2020-10-30",
       "sell_price": 18.19,
-      "shares": 16311,
-      "pl": -3347.26,
+      "shares": 8155,
+      "pl": -1673.53,
       "pl_pct": -1.12,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -688,8 +732,8 @@
       "buy_price": 166.09,
       "sell_date": "2020-10-30",
       "sell_price": 167.4,
-      "shares": 1806,
-      "pl": 2355.7,
+      "shares": 903,
+      "pl": 1177.85,
       "pl_pct": 0.79,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -699,8 +743,8 @@
       "buy_price": 13.37,
       "sell_date": "2020-10-30",
       "sell_price": 13.17,
-      "shares": 22433,
-      "pl": -4460.88,
+      "shares": 11216,
+      "pl": -2230.34,
       "pl_pct": -1.49,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
@@ -710,8 +754,8 @@
       "buy_price": 23.28,
       "sell_date": "2020-11-24",
       "sell_price": 28.07,
-      "shares": 6442,
-      "pl": 30804.59,
+      "shares": 3221,
+      "pl": 15402.3,
       "pl_pct": 20.54,
       "sell_reason": "\u505c\u522950%"
     },
@@ -721,8 +765,8 @@
       "buy_price": 15.47,
       "sell_date": "2020-11-24",
       "sell_price": 15.51,
-      "shares": 19397,
-      "pl": 867.04,
+      "shares": 9698,
+      "pl": 433.5,
       "pl_pct": 0.29,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
@@ -732,8 +776,8 @@
       "buy_price": 26.84,
       "sell_date": "2020-11-25",
       "sell_price": 32.87,
-      "shares": 5588,
-      "pl": 33692.72,
+      "shares": 2794,
+      "pl": 16846.36,
       "pl_pct": 22.46,
       "sell_reason": "\u505c\u522950%"
     },
@@ -743,8 +787,8 @@
       "buy_price": 10.28,
       "sell_date": "2020-12-04",
       "sell_price": 12.61,
-      "shares": 14594,
-      "pl": 34034.54,
+      "shares": 7297,
+      "pl": 17017.27,
       "pl_pct": 22.69,
       "sell_reason": "\u505c\u522950%"
     },
@@ -754,8 +798,8 @@
       "buy_price": 10.28,
       "sell_date": "2020-12-09",
       "sell_price": 11.49,
-      "shares": 14594,
-      "pl": 17746.59,
+      "shares": 7297,
+      "pl": 8873.29,
       "pl_pct": 11.83,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
     },
@@ -765,8 +809,8 @@
       "buy_price": 25.81,
       "sell_date": "2020-12-09",
       "sell_price": 33.34,
-      "shares": 5812,
-      "pl": 43787.5,
+      "shares": 2906,
+      "pl": 21893.75,
       "pl_pct": 29.19,
       "sell_reason": "\u505c\u522950%"
     },
@@ -776,8 +820,8 @@
       "buy_price": 35.16,
       "sell_date": "2020-12-14",
       "sell_price": 42.36,
-      "shares": 4266,
-      "pl": 30726.6,
+      "shares": 2133,
+      "pl": 15363.3,
       "pl_pct": 20.49,
       "sell_reason": "\u505c\u522950%"
     },
@@ -787,8 +831,8 @@
       "buy_price": 23.28,
       "sell_date": "2020-12-15",
       "sell_price": 32.37,
-      "shares": 6442,
-      "pl": 58528.71,
+      "shares": 3221,
+      "pl": 29264.35,
       "pl_pct": 39.02,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
     },
@@ -798,8 +842,8 @@
       "buy_price": 19.78,
       "sell_date": "2020-12-21",
       "sell_price": 24.17,
-      "shares": 7584,
-      "pl": 33304.44,
+      "shares": 3792,
+      "pl": 16652.22,
       "pl_pct": 22.2,
       "sell_reason": "\u505c\u522950%"
     },
@@ -809,8 +853,8 @@
       "buy_price": 25.81,
       "sell_date": "2020-12-22",
       "sell_price": 38.25,
-      "shares": 5812,
-      "pl": 72334.06,
+      "shares": 2906,
+      "pl": 36167.03,
       "pl_pct": 48.23,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
@@ -820,8 +864,8 @@
       "buy_price": 26.84,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 39.76,
-      "shares": 5588,
-      "pl": 72167.62,
+      "shares": 2794,
+      "pl": 36083.81,
       "pl_pct": 48.12,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -831,8 +875,8 @@
       "buy_price": 169.57,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 187.83,
-      "shares": 1769,
-      "pl": 32304.2,
+      "shares": 884,
+      "pl": 16142.97,
       "pl_pct": 10.77,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -842,8 +886,8 @@
       "buy_price": 35.16,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 45.36,
-      "shares": 4267,
-      "pl": 43539.56,
+      "shares": 2133,
+      "pl": 21764.68,
       "pl_pct": 29.02,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -853,8 +897,8 @@
       "buy_price": 32.95,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 36.15,
-      "shares": 9105,
-      "pl": 29174.69,
+      "shares": 4552,
+      "pl": 14585.74,
       "pl_pct": 9.73,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -864,8 +908,8 @@
       "buy_price": 27.96,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 30.09,
-      "shares": 10731,
-      "pl": 22912.71,
+      "shares": 5365,
+      "pl": 11455.29,
       "pl_pct": 7.64,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -875,8 +919,8 @@
       "buy_price": 15.88,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 18.5,
-      "shares": 18886,
-      "pl": 49313.42,
+      "shares": 9443,
+      "pl": 24656.71,
       "pl_pct": 16.44,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -886,8 +930,8 @@
       "buy_price": 19.78,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 23.06,
-      "shares": 7585,
-      "pl": 24921.72,
+      "shares": 3792,
+      "pl": 12459.22,
       "pl_pct": 16.61,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -897,8 +941,8 @@
       "buy_price": 57.4,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 64.48,
-      "shares": 5226,
-      "pl": 37015.05,
+      "shares": 2613,
+      "pl": 18507.52,
       "pl_pct": 12.34,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -908,8 +952,8 @@
       "buy_price": 15.62,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 17.25,
-      "shares": 19211,
-      "pl": 31444.76,
+      "shares": 9605,
+      "pl": 15721.56,
       "pl_pct": 10.48,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
@@ -919,7 +963,7 @@
       "buy_price": 11.97,
       "sell_date": "2020-12-31 (\u5e74\u7d42)",
       "sell_price": 11.97,
-      "shares": 25062,
+      "shares": 12531,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
@@ -933,1222 +977,1222 @@
     },
     {
       "date": "2020-01-03",
-      "equity": 2987495.26,
+      "equity": 2993747.98,
       "type": "daily"
     },
     {
       "date": "2020-01-06",
-      "equity": 2984811.04,
+      "equity": 2992405.98,
       "type": "daily"
     },
     {
       "date": "2020-01-07",
-      "equity": 2979725.39,
+      "equity": 2989863.21,
       "type": "daily"
     },
     {
       "date": "2020-01-08",
-      "equity": 2960938.81,
+      "equity": 2980470.18,
       "type": "daily"
     },
     {
       "date": "2020-01-09",
-      "equity": 2982131.51,
+      "equity": 2991066.43,
       "type": "daily"
     },
     {
       "date": "2020-01-10",
-      "equity": 2983818.86,
+      "equity": 2992408.31,
       "type": "daily"
     },
     {
       "date": "2020-01-13",
-      "equity": 3013867.65,
+      "equity": 3008927.08,
       "type": "daily"
     },
     {
       "date": "2020-01-14",
-      "equity": 3028423.48,
+      "equity": 3015208.45,
       "type": "daily"
     },
     {
       "date": "2020-01-15",
-      "equity": 2997739.3,
+      "equity": 3000365.13,
       "type": "daily"
     },
     {
       "date": "2020-01-16",
-      "equity": 3001384.21,
+      "equity": 3002187.54,
       "type": "daily"
     },
     {
       "date": "2020-01-17",
-      "equity": 2986373.05,
+      "equity": 2995180.42,
       "type": "daily"
     },
     {
       "date": "2020-01-20",
-      "equity": 2999519.45,
+      "equity": 3000258.6,
       "type": "daily"
     },
     {
       "date": "2020-01-30",
-      "equity": 2827563.96,
+      "equity": 2910296.89,
       "type": "hold"
     },
     {
       "date": "2020-01-31",
-      "equity": 2856668.12,
+      "equity": 2924848.97,
       "type": "hold"
     },
     {
       "date": "2020-02-03",
-      "equity": 2861959.28,
+      "equity": 2927494.33,
       "type": "hold"
     },
     {
       "date": "2020-02-04",
-      "equity": 2870887.76,
+      "equity": 2933453.71,
       "type": "hold"
     },
     {
       "date": "2020-02-05",
-      "equity": 2895310.6,
+      "equity": 2944668.52,
       "type": "hold"
     },
     {
       "date": "2020-02-06",
-      "equity": 2923635.27,
+      "equity": 2959329.16,
       "type": "hold"
     },
     {
       "date": "2020-02-07",
-      "equity": 2897793.19,
+      "equity": 2946408.12,
       "type": "hold"
     },
     {
       "date": "2020-02-10",
-      "equity": 2891256.71,
+      "equity": 2943139.88,
       "type": "hold"
     },
     {
       "date": "2020-02-11",
-      "equity": 2910370.06,
+      "equity": 2951699.94,
       "type": "hold"
     },
     {
       "date": "2020-02-12",
-      "equity": 2922487.77,
+      "equity": 2957758.77,
       "type": "daily"
     },
     {
       "date": "2020-02-13",
-      "equity": 2927846.98,
+      "equity": 2960438.2,
       "type": "daily"
     },
     {
       "date": "2020-02-14",
-      "equity": 2936462.6,
+      "equity": 2964465.85,
       "type": "daily"
     },
     {
       "date": "2020-02-17",
-      "equity": 2954159.85,
+      "equity": 2973594.74,
       "type": "hold"
     },
     {
       "date": "2020-02-18",
-      "equity": 2930369.99,
+      "equity": 2962540.84,
       "type": "hold"
     },
     {
       "date": "2020-02-19",
-      "equity": 2907429.72,
+      "equity": 2951350.97,
       "type": "hold"
     },
     {
       "date": "2020-02-20",
-      "equity": 2908155.2,
+      "equity": 2953115.25,
       "type": "hold"
     },
     {
       "date": "2020-02-21",
-      "equity": 2902688.95,
+      "equity": 2950382.14,
       "type": "hold"
     },
     {
       "date": "2020-02-24",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "crash"
     },
     {
       "date": "2020-02-25",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-02-26",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-02-27",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-02",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-03",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-04",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-05",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-06",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-09",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-10",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-11",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-12",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-13",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-16",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-17",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-18",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-19",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-20",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-23",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-24",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-25",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-26",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-27",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-30",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-03-31",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-01",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-06",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-07",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-08",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-09",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-10",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-13",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-14",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-15",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-16",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-17",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-20",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-21",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-22",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-23",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-24",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-27",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-28",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-29",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-04-30",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-04",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-05",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-06",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-07",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-08",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-11",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-12",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-13",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-14",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-15",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-18",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-19",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-20",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-21",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-22",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-25",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-26",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-27",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-28",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-05-29",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-06-01",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-06-02",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-06-03",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "hold"
     },
     {
       "date": "2020-06-04",
-      "equity": 2879096.3,
+      "equity": 2937464.7,
       "type": "daily"
     },
     {
       "date": "2020-06-05",
-      "equity": 2878539.68,
+      "equity": 2937186.27,
       "type": "daily"
     },
     {
       "date": "2020-06-08",
-      "equity": 2885293.91,
+      "equity": 2940563.11,
       "type": "daily"
     },
     {
       "date": "2020-06-09",
-      "equity": 2893675.59,
+      "equity": 2944753.43,
       "type": "daily"
     },
     {
       "date": "2020-06-10",
-      "equity": 2894040.4,
+      "equity": 2944934.9,
       "type": "daily"
     },
     {
       "date": "2020-06-11",
-      "equity": 2834095.13,
+      "equity": 2907789.29,
       "type": "daily"
     },
     {
       "date": "2020-06-12",
-      "equity": 2847692.77,
+      "equity": 2917557.67,
       "type": "hold"
     },
     {
       "date": "2020-06-15",
-      "equity": 2848816.11,
+      "equity": 2917130.53,
       "type": "daily"
     },
     {
       "date": "2020-06-16",
-      "equity": 2875143.55,
+      "equity": 2930787.47,
       "type": "daily"
     },
     {
       "date": "2020-06-17",
-      "equity": 2904756.48,
+      "equity": 2945594.05,
       "type": "daily"
     },
     {
       "date": "2020-06-18",
-      "equity": 2921245.73,
+      "equity": 2952848.55,
       "type": "daily"
     },
     {
       "date": "2020-06-19",
-      "equity": 2918135.05,
+      "equity": 2949161.26,
       "type": "daily"
     },
     {
       "date": "2020-06-22",
-      "equity": 2908524.1,
+      "equity": 2948563.38,
       "type": "daily"
     },
     {
       "date": "2020-06-23",
-      "equity": 2929431.6,
+      "equity": 2957993.73,
       "type": "daily"
     },
     {
       "date": "2020-06-24",
-      "equity": 2938076.21,
+      "equity": 2962810.14,
       "type": "daily"
     },
     {
       "date": "2020-06-29",
-      "equity": 2904382.27,
+      "equity": 2944572.88,
       "type": "daily"
     },
     {
       "date": "2020-06-30",
-      "equity": 2915122.88,
+      "equity": 2946912.07,
       "type": "daily"
     },
     {
       "date": "2020-07-01",
-      "equity": 2921273.9,
+      "equity": 2948626.15,
       "type": "daily"
     },
     {
       "date": "2020-07-02",
-      "equity": 2957380.7,
+      "equity": 2963925.04,
       "type": "daily"
     },
     {
       "date": "2020-07-03",
-      "equity": 2999075.18,
+      "equity": 2984339.71,
       "type": "daily"
     },
     {
       "date": "2020-07-06",
-      "equity": 3037774.05,
+      "equity": 3006036.74,
       "type": "daily"
     },
     {
       "date": "2020-07-07",
-      "equity": 2995129.85,
+      "equity": 2985427.29,
       "type": "daily"
     },
     {
       "date": "2020-07-08",
-      "equity": 3037837.73,
+      "equity": 3008017.12,
       "type": "daily"
     },
     {
       "date": "2020-07-09",
-      "equity": 3093317.31,
+      "equity": 3033342.5,
       "type": "daily"
     },
     {
       "date": "2020-07-10",
-      "equity": 3097300.32,
+      "equity": 3034059.72,
       "type": "daily"
     },
     {
       "date": "2020-07-13",
-      "equity": 3120647.03,
+      "equity": 3045455.22,
       "type": "daily"
     },
     {
       "date": "2020-07-14",
-      "equity": 3107593.13,
+      "equity": 3038462.64,
       "type": "daily"
     },
     {
       "date": "2020-07-15",
-      "equity": 3101556.42,
+      "equity": 3029691.03,
       "type": "daily"
     },
     {
       "date": "2020-07-16",
-      "equity": 3097887.26,
+      "equity": 3028846.81,
       "type": "daily"
     },
     {
       "date": "2020-07-17",
-      "equity": 3102128.67,
+      "equity": 3027996.85,
       "type": "daily"
     },
     {
       "date": "2020-07-20",
-      "equity": 3105077.53,
+      "equity": 3028975.69,
       "type": "daily"
     },
     {
       "date": "2020-07-21",
-      "equity": 3142879.61,
+      "equity": 3049694.14,
       "type": "daily"
     },
     {
       "date": "2020-07-22",
-      "equity": 3146281.56,
+      "equity": 3046373.48,
       "type": "daily"
     },
     {
       "date": "2020-07-23",
-      "equity": 3161785.77,
+      "equity": 3052084.37,
       "type": "daily"
     },
     {
       "date": "2020-07-24",
-      "equity": 3094709.43,
+      "equity": 3018091.26,
       "type": "daily"
     },
     {
       "date": "2020-07-27",
-      "equity": 3111674.77,
+      "equity": 3022054.22,
       "type": "daily"
     },
     {
       "date": "2020-07-28",
-      "equity": 3059889.43,
+      "equity": 3002578.31,
       "type": "daily"
     },
     {
       "date": "2020-07-29",
-      "equity": 3090134.82,
+      "equity": 3020114.62,
       "type": "daily"
     },
     {
       "date": "2020-07-30",
-      "equity": 3101943.48,
+      "equity": 3022781.52,
       "type": "daily"
     },
     {
       "date": "2020-07-31",
-      "equity": 3109712.93,
+      "equity": 3028824.71,
       "type": "daily"
     },
     {
       "date": "2020-08-03",
-      "equity": 3115506.37,
+      "equity": 3026502.88,
       "type": "daily"
     },
     {
       "date": "2020-08-04",
-      "equity": 3144935.7,
+      "equity": 3042634.98,
       "type": "daily"
     },
     {
       "date": "2020-08-05",
-      "equity": 3167525.85,
+      "equity": 3053390.99,
       "type": "daily"
     },
     {
       "date": "2020-08-06",
-      "equity": 3158895.83,
+      "equity": 3048875.57,
       "type": "daily"
     },
     {
       "date": "2020-08-07",
-      "equity": 3171446.73,
+      "equity": 3054752.53,
       "type": "daily"
     },
     {
       "date": "2020-08-10",
-      "equity": 3186944.62,
+      "equity": 3059582.34,
       "type": "daily"
     },
     {
       "date": "2020-08-11",
-      "equity": 3195630.56,
+      "equity": 3062284.35,
       "type": "daily"
     },
     {
       "date": "2020-08-12",
-      "equity": 3224657.16,
+      "equity": 3075917.13,
       "type": "daily"
     },
     {
       "date": "2020-08-13",
-      "equity": 3189549.16,
+      "equity": 3058699.97,
       "type": "daily"
     },
     {
       "date": "2020-08-14",
-      "equity": 3210038.75,
+      "equity": 3072932.35,
       "type": "daily"
     },
     {
       "date": "2020-08-17",
-      "equity": 3238846.73,
+      "equity": 3084238.3,
       "type": "daily"
     },
     {
       "date": "2020-08-18",
-      "equity": 3254682.59,
+      "equity": 3082567.24,
       "type": "daily"
     },
     {
       "date": "2020-08-19",
-      "equity": 3198970.03,
+      "equity": 3060424.69,
       "type": "daily"
     },
     {
       "date": "2020-08-20",
-      "equity": 3100463.79,
+      "equity": 3005017.14,
       "type": "daily"
     },
     {
       "date": "2020-08-21",
-      "equity": 3139646.11,
+      "equity": 3019048.7,
       "type": "daily"
     },
     {
       "date": "2020-08-24",
-      "equity": 3103747.08,
+      "equity": 3013822.66,
       "type": "daily"
     },
     {
       "date": "2020-08-25",
-      "equity": 3119454.11,
+      "equity": 3016427.09,
       "type": "daily"
     },
     {
       "date": "2020-08-26",
-      "equity": 3120153.52,
+      "equity": 3017706.95,
       "type": "daily"
     },
     {
       "date": "2020-08-27",
-      "equity": 3128191.79,
+      "equity": 3020788.35,
       "type": "daily"
     },
     {
       "date": "2020-08-28",
-      "equity": 3118561.4,
+      "equity": 3019295.69,
       "type": "daily"
     },
     {
       "date": "2020-08-31",
-      "equity": 3148884.67,
+      "equity": 3027102.19,
       "type": "daily"
     },
     {
       "date": "2020-09-01",
-      "equity": 3162332.56,
+      "equity": 3034942.19,
       "type": "daily"
     },
     {
       "date": "2020-09-02",
-      "equity": 3170299.28,
+      "equity": 3041170.49,
       "type": "daily"
     },
     {
       "date": "2020-09-03",
-      "equity": 3186390.36,
+      "equity": 3050299.62,
       "type": "daily"
     },
     {
       "date": "2020-09-04",
-      "equity": 3150507.95,
+      "equity": 3038268.5,
       "type": "daily"
     },
     {
       "date": "2020-09-07",
-      "equity": 3165795.79,
+      "equity": 3040365.48,
       "type": "daily"
     },
     {
       "date": "2020-09-08",
-      "equity": 3171391.85,
+      "equity": 3047533.67,
       "type": "daily"
     },
     {
       "date": "2020-09-09",
-      "equity": 3202004.87,
+      "equity": 3061095.78,
       "type": "daily"
     },
     {
       "date": "2020-09-10",
-      "equity": 3196088.69,
+      "equity": 3062660.65,
       "type": "daily"
     },
     {
       "date": "2020-09-11",
-      "equity": 3173149.23,
+      "equity": 3048661.21,
       "type": "daily"
     },
     {
       "date": "2020-09-14",
-      "equity": 3207033.75,
+      "equity": 3055891.44,
       "type": "daily"
     },
     {
       "date": "2020-09-15",
-      "equity": 3214207.79,
+      "equity": 3065568.95,
       "type": "daily"
     },
     {
       "date": "2020-09-16",
-      "equity": 3266242.47,
+      "equity": 3092268.42,
       "type": "daily"
     },
     {
       "date": "2020-09-17",
-      "equity": 3247680.13,
+      "equity": 3085350.54,
       "type": "daily"
     },
     {
       "date": "2020-09-18",
-      "equity": 3255592.84,
+      "equity": 3081070.26,
       "type": "daily"
     },
     {
       "date": "2020-09-21",
-      "equity": 3260932.7,
+      "equity": 3084073.78,
       "type": "daily"
     },
     {
       "date": "2020-09-22",
-      "equity": 3224582.74,
+      "equity": 3067526.54,
       "type": "daily"
     },
     {
       "date": "2020-09-23",
-      "equity": 3213481.56,
+      "equity": 3069444.87,
       "type": "hold"
     },
     {
       "date": "2020-09-24",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "crash"
     },
     {
       "date": "2020-09-25",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "hold"
     },
     {
       "date": "2020-09-28",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "hold"
     },
     {
       "date": "2020-09-29",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "hold"
     },
     {
       "date": "2020-09-30",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "hold"
     },
     {
       "date": "2020-10-05",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "hold"
     },
     {
       "date": "2020-10-06",
-      "equity": 3120255.79,
+      "equity": 3016789.52,
       "type": "daily"
     },
     {
       "date": "2020-10-07",
-      "equity": 3116727.76,
+      "equity": 3015025.54,
       "type": "daily"
     },
     {
       "date": "2020-10-08",
-      "equity": 3120513.41,
+      "equity": 3016918.43,
       "type": "daily"
     },
     {
       "date": "2020-10-12",
-      "equity": 3140032.17,
+      "equity": 3026677.34,
       "type": "daily"
     },
     {
       "date": "2020-10-13",
-      "equity": 3146590.44,
+      "equity": 3029956.33,
       "type": "daily"
     },
     {
       "date": "2020-10-14",
-      "equity": 3215173.47,
+      "equity": 3064246.3,
       "type": "daily"
     },
     {
       "date": "2020-10-15",
-      "equity": 3187472.9,
+      "equity": 3050396.81,
       "type": "daily"
     },
     {
       "date": "2020-10-16",
-      "equity": 3156988.4,
+      "equity": 3035155.28,
       "type": "daily"
     },
     {
       "date": "2020-10-19",
-      "equity": 3176349.57,
+      "equity": 3044834.98,
       "type": "daily"
     },
     {
       "date": "2020-10-20",
-      "equity": 3159997.75,
+      "equity": 3036659.59,
       "type": "crash"
     },
     {
       "date": "2020-10-21",
-      "equity": 3159997.75,
+      "equity": 3036659.59,
       "type": "daily"
     },
     {
       "date": "2020-10-22",
-      "equity": 3180898.81,
+      "equity": 3047109.59,
       "type": "daily"
     },
     {
       "date": "2020-10-23",
-      "equity": 3169816.34,
+      "equity": 3041568.5,
       "type": "daily"
     },
     {
       "date": "2020-10-26",
-      "equity": 3194799.43,
+      "equity": 3054059.29,
       "type": "daily"
     },
     {
       "date": "2020-10-27",
-      "equity": 3232755.66,
+      "equity": 3073036.51,
       "type": "daily"
     },
     {
       "date": "2020-10-28",
-      "equity": 3217018.71,
+      "equity": 3065168.46,
       "type": "daily"
     },
     {
       "date": "2020-10-29",
-      "equity": 3187012.9,
+      "equity": 3050166.17,
       "type": "hold"
     },
     {
       "date": "2020-10-30",
-      "equity": 3155635.75,
+      "equity": 3034477.87,
       "type": "crash"
     },
     {
       "date": "2020-11-02",
-      "equity": 3155635.75,
+      "equity": 3034477.87,
       "type": "hold"
     },
     {
       "date": "2020-11-03",
-      "equity": 3155635.75,
+      "equity": 3034477.87,
       "type": "daily"
     },
     {
       "date": "2020-11-04",
-      "equity": 3169547.57,
+      "equity": 3041433.78,
       "type": "daily"
     },
     {
       "date": "2020-11-05",
-      "equity": 3167297.36,
+      "equity": 3040307.43,
       "type": "daily"
     },
     {
       "date": "2020-11-06",
-      "equity": 3167230.34,
+      "equity": 3040273.33,
       "type": "daily"
     },
     {
       "date": "2020-11-09",
-      "equity": 3201245.65,
+      "equity": 3057279.3,
       "type": "daily"
     },
     {
       "date": "2020-11-10",
-      "equity": 3191596.11,
+      "equity": 3052457.7,
       "type": "daily"
     },
     {
       "date": "2020-11-11",
-      "equity": 3208457.07,
+      "equity": 3060887.64,
       "type": "daily"
     },
     {
       "date": "2020-11-12",
-      "equity": 3198212.41,
+      "equity": 3055765.76,
       "type": "daily"
     },
     {
       "date": "2020-11-13",
-      "equity": 3206583.46,
+      "equity": 3059951.36,
       "type": "daily"
     },
     {
       "date": "2020-11-16",
-      "equity": 3220243.56,
+      "equity": 3066780.57,
       "type": "daily"
     },
     {
       "date": "2020-11-17",
-      "equity": 3247623.12,
+      "equity": 3080469.72,
       "type": "daily"
     },
     {
       "date": "2020-11-18",
-      "equity": 3235452.33,
+      "equity": 3074385.28,
       "type": "daily"
     },
     {
       "date": "2020-11-19",
-      "equity": 3234188.3,
+      "equity": 3073755.0,
       "type": "daily"
     },
     {
       "date": "2020-11-20",
-      "equity": 3255189.45,
+      "equity": 3084255.06,
       "type": "daily"
     },
     {
       "date": "2020-11-23",
-      "equity": 3235452.33,
+      "equity": 3074385.28,
       "type": "daily"
     },
     {
       "date": "2020-11-24",
-      "equity": 3333114.91,
+      "equity": 3123216.68,
       "type": "daily"
     },
     {
       "date": "2020-11-25",
-      "equity": 3396767.8,
+      "equity": 3155040.16,
       "type": "daily"
     },
     {
       "date": "2020-11-26",
-      "equity": 3416311.97,
+      "equity": 3164811.55,
       "type": "daily"
     },
     {
       "date": "2020-11-27",
-      "equity": 3419384.64,
+      "equity": 3166348.32,
       "type": "daily"
     },
     {
       "date": "2020-11-30",
-      "equity": 3406147.26,
+      "equity": 3159730.28,
       "type": "daily"
     },
     {
       "date": "2020-12-01",
-      "equity": 3440434.13,
+      "equity": 3176870.76,
       "type": "daily"
     },
     {
       "date": "2020-12-02",
-      "equity": 3459584.27,
+      "equity": 3186444.33,
       "type": "daily"
     },
     {
       "date": "2020-12-03",
-      "equity": 3503611.85,
+      "equity": 3208456.97,
       "type": "daily"
     },
     {
       "date": "2020-12-04",
-      "equity": 3572680.99,
+      "equity": 3242992.37,
       "type": "daily"
     },
     {
       "date": "2020-12-07",
-      "equity": 3579782.05,
+      "equity": 3246545.32,
       "type": "daily"
     },
     {
       "date": "2020-12-08",
-      "equity": 3579972.94,
+      "equity": 3246640.83,
       "type": "daily"
     },
     {
       "date": "2020-12-09",
-      "equity": 3620256.15,
+      "equity": 3266780.7,
       "type": "daily"
     },
     {
       "date": "2020-12-10",
-      "equity": 3572253.7,
+      "equity": 3242781.87,
       "type": "daily"
     },
     {
       "date": "2020-12-11",
-      "equity": 3587845.45,
+      "equity": 3250576.81,
       "type": "daily"
     },
     {
       "date": "2020-12-14",
-      "equity": 3650073.84,
+      "equity": 3281685.97,
       "type": "daily"
     },
     {
       "date": "2020-12-15",
-      "equity": 3600842.26,
+      "equity": 3257071.63,
       "type": "daily"
     },
     {
       "date": "2020-12-16",
-      "equity": 3673810.21,
+      "equity": 3293551.91,
       "type": "daily"
     },
     {
       "date": "2020-12-17",
-      "equity": 3706518.29,
+      "equity": 3309906.71,
       "type": "daily"
     },
     {
       "date": "2020-12-18",
-      "equity": 3706050.89,
+      "equity": 3309673.97,
       "type": "daily"
     },
     {
       "date": "2020-12-21",
-      "equity": 3773704.29,
+      "equity": 3343495.5,
       "type": "daily"
     },
     {
       "date": "2020-12-22",
-      "equity": 3725577.07,
+      "equity": 3319433.02,
       "type": "daily"
     },
     {
       "date": "2020-12-23",
-      "equity": 3775274.91,
+      "equity": 3344280.6,
       "type": "daily"
     },
     {
       "date": "2020-12-24",
-      "equity": 3799011.7,
+      "equity": 3356149.26,
       "type": "daily"
     },
     {
       "date": "2020-12-25",
-      "equity": 3795884.54,
+      "equity": 3354585.51,
       "type": "daily"
     },
     {
       "date": "2020-12-28",
-      "equity": 3822633.36,
+      "equity": 3367958.99,
       "type": "daily"
     },
     {
       "date": "2020-12-29",
-      "equity": 3835645.68,
+      "equity": 3374463.72,
       "type": "daily"
     },
     {
       "date": "2020-12-30",
-      "equity": 3823675.77,
+      "equity": 3368478.62,
       "type": "daily"
     },
     {
       "date": "2020-12-31",
-      "equity": 3854256.27,
+      "equity": 3383768.74,
       "type": "daily"
     }
   ],
@@ -2400,12 +2444,6 @@
       "score": 92.8
     },
     {
-      "date": "2020-02-05",
-      "ticker": "1725",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.9
-    },
-    {
       "date": "2020-02-06",
       "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2467,12 +2505,6 @@
     },
     {
       "date": "2020-02-07",
-      "ticker": "1725",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 93.3
-    },
-    {
-      "date": "2020-02-07",
       "ticker": "1110",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 92.9
@@ -2524,12 +2556,6 @@
       "ticker": "6214",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 89.3
-    },
-    {
-      "date": "2020-02-10",
-      "ticker": "1725",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.2
     },
     {
       "date": "2020-02-10",
@@ -2608,12 +2634,6 @@
       "ticker": "1713",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.7
-    },
-    {
-      "date": "2020-02-17",
-      "ticker": "2015",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.3
     },
     {
       "date": "2020-02-17",
@@ -5959,9 +5979,9 @@
     },
     {
       "date": "2020-09-23",
-      "ticker": "2330",
+      "ticker": "9931",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 130.2
+      "score": 106.8
     },
     {
       "date": "2020-09-23",
