@@ -529,14 +529,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "01007T",
+      "ticker": "3015",
       "buy_date": "2009-08-11",
-      "buy_price": 10.0,
+      "buy_price": 26.4,
       "sell_date": "2009-08-21",
-      "sell_price": 9.98,
-      "shares": 4998,
-      "pl": -99.59,
-      "pl_pct": -0.2,
+      "sell_price": 27.7,
+      "shares": 1893,
+      "pl": 2460.9,
+      "pl_pct": 4.92,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -694,12 +694,12 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "01007T",
+      "ticker": "6112",
       "buy_date": "2009-09-04",
-      "buy_price": 10.06,
+      "buy_price": 15.5,
       "sell_date": "2009-09-28",
-      "sell_price": 10.06,
-      "shares": 4968,
+      "sell_price": 15.5,
+      "shares": 3225,
       "pl": 0.0,
       "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
@@ -771,6 +771,17 @@
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
     {
+      "ticker": "2437",
+      "buy_date": "2009-10-01",
+      "buy_price": 40.35,
+      "sell_date": "2009-10-30",
+      "sell_price": 41.0,
+      "shares": 1239,
+      "pl": 805.35,
+      "pl_pct": 1.61,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+    },
+    {
       "ticker": "2452",
       "buy_date": "2009-09-29",
       "buy_price": 69.3,
@@ -801,17 +812,6 @@
       "shares": 2272,
       "pl": 8860.8,
       "pl_pct": 17.73,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "01007T",
-      "buy_date": "2009-10-01",
-      "buy_price": 10.09,
-      "sell_date": "2009-11-02",
-      "sell_price": 10.58,
-      "shares": 4953,
-      "pl": 2418.1,
-      "pl_pct": 4.84,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1746,512 +1746,512 @@
     },
     {
       "date": "2009-08-12",
-      "equity": 1157770.49,
+      "equity": 1158388.19,
       "type": "daily"
     },
     {
       "date": "2009-08-13",
-      "equity": 1168167.7,
+      "equity": 1172093.2,
       "type": "daily"
     },
     {
       "date": "2009-08-14",
-      "equity": 1162613.49,
+      "equity": 1169517.99,
       "type": "daily"
     },
     {
       "date": "2009-08-17",
-      "equity": 1164957.13,
+      "equity": 1170307.33,
       "type": "daily"
     },
     {
       "date": "2009-08-18",
-      "equity": 1148720.82,
+      "equity": 1150474.32,
       "type": "daily"
     },
     {
       "date": "2009-08-19",
-      "equity": 1148467.61,
+      "equity": 1150908.73,
       "type": "daily"
     },
     {
       "date": "2009-08-20",
-      "equity": 1141030.87,
+      "equity": 1143143.19,
       "type": "hold"
     },
     {
       "date": "2009-08-21",
-      "equity": 1137892.41,
+      "equity": 1140452.91,
       "type": "crash"
     },
     {
       "date": "2009-08-24",
-      "equity": 1137892.41,
+      "equity": 1140452.91,
       "type": "daily"
     },
     {
       "date": "2009-08-25",
-      "equity": 1193038.3,
+      "equity": 1195598.79,
       "type": "crash"
     },
     {
       "date": "2009-08-26",
-      "equity": 1193038.3,
+      "equity": 1195598.79,
       "type": "hold"
     },
     {
       "date": "2009-08-27",
-      "equity": 1193038.3,
+      "equity": 1195598.79,
       "type": "hold"
     },
     {
       "date": "2009-08-28",
-      "equity": 1193038.3,
+      "equity": 1195598.79,
       "type": "hold"
     },
     {
       "date": "2009-08-31",
-      "equity": 1193038.3,
+      "equity": 1195598.79,
       "type": "hold"
     },
     {
       "date": "2009-09-01",
-      "equity": 1193038.3,
+      "equity": 1195598.79,
       "type": "daily"
     },
     {
       "date": "2009-09-02",
-      "equity": 1194047.89,
+      "equity": 1196608.39,
       "type": "daily"
     },
     {
       "date": "2009-09-03",
-      "equity": 1195792.3,
+      "equity": 1198352.79,
       "type": "daily"
     },
     {
       "date": "2009-09-04",
-      "equity": 1196334.56,
+      "equity": 1198895.05,
       "type": "daily"
     },
     {
       "date": "2009-09-07",
-      "equity": 1206385.7,
+      "equity": 1209193.69,
       "type": "daily"
     },
     {
       "date": "2009-09-08",
-      "equity": 1205055.05,
+      "equity": 1207938.04,
       "type": "daily"
     },
     {
       "date": "2009-09-09",
-      "equity": 1197836.95,
+      "equity": 1200098.94,
       "type": "daily"
     },
     {
       "date": "2009-09-10",
-      "equity": 1195107.95,
+      "equity": 1197717.94,
       "type": "daily"
     },
     {
       "date": "2009-09-11",
-      "equity": 1200648.04,
+      "equity": 1203208.54,
       "type": "daily"
     },
     {
       "date": "2009-09-14",
-      "equity": 1200117.95,
+      "equity": 1203024.94,
       "type": "daily"
     },
     {
       "date": "2009-09-15",
-      "equity": 1211795.0,
+      "equity": 1214503.99,
       "type": "daily"
     },
     {
       "date": "2009-09-16",
-      "equity": 1219467.15,
+      "equity": 1222027.64,
       "type": "daily"
     },
     {
       "date": "2009-09-17",
-      "equity": 1221950.49,
+      "equity": 1224510.98,
       "type": "daily"
     },
     {
       "date": "2009-09-18",
-      "equity": 1229398.95,
+      "equity": 1231959.44,
       "type": "daily"
     },
     {
       "date": "2009-09-21",
-      "equity": 1235761.99,
+      "equity": 1238322.49,
       "type": "daily"
     },
     {
       "date": "2009-09-22",
-      "equity": 1236152.89,
+      "equity": 1238713.39,
       "type": "daily"
     },
     {
       "date": "2009-09-23",
-      "equity": 1224045.19,
+      "equity": 1226556.19,
       "type": "daily"
     },
     {
       "date": "2009-09-24",
-      "equity": 1224971.29,
+      "equity": 1227531.78,
       "type": "daily"
     },
     {
       "date": "2009-09-25",
-      "equity": 1229368.64,
+      "equity": 1231929.14,
       "type": "daily"
     },
     {
       "date": "2009-09-28",
-      "equity": 1230388.6,
+      "equity": 1232949.1,
       "type": "crash"
     },
     {
       "date": "2009-09-29",
-      "equity": 1230388.6,
+      "equity": 1232949.1,
       "type": "daily"
     },
     {
       "date": "2009-09-30",
-      "equity": 1230893.3,
+      "equity": 1233453.8,
       "type": "daily"
     },
     {
       "date": "2009-10-01",
-      "equity": 1233856.35,
+      "equity": 1236416.84,
       "type": "daily"
     },
     {
       "date": "2009-10-02",
-      "equity": 1231910.15,
+      "equity": 1234780.4,
       "type": "daily"
     },
     {
       "date": "2009-10-05",
-      "equity": 1241272.05,
+      "equity": 1245257.4,
       "type": "daily"
     },
     {
       "date": "2009-10-06",
-      "equity": 1241593.45,
+      "equity": 1246148.95,
       "type": "daily"
     },
     {
       "date": "2009-10-07",
-      "equity": 1245299.1,
+      "equity": 1249446.15,
       "type": "daily"
     },
     {
       "date": "2009-10-08",
-      "equity": 1241338.0,
+      "equity": 1245696.1,
       "type": "daily"
     },
     {
       "date": "2009-10-09",
-      "equity": 1249337.0,
+      "equity": 1254265.26,
       "type": "daily"
     },
     {
       "date": "2009-10-12",
-      "equity": 1256112.34,
+      "equity": 1261215.95,
       "type": "daily"
     },
     {
       "date": "2009-10-13",
-      "equity": 1261398.93,
+      "equity": 1265995.4,
       "type": "daily"
     },
     {
       "date": "2009-10-14",
-      "equity": 1275166.28,
+      "equity": 1280246.8,
       "type": "daily"
     },
     {
       "date": "2009-10-15",
-      "equity": 1272190.18,
+      "equity": 1279898.85,
       "type": "daily"
     },
     {
       "date": "2009-10-16",
-      "equity": 1274585.26,
+      "equity": 1281081.2,
       "type": "daily"
     },
     {
       "date": "2009-10-19",
-      "equity": 1281385.55,
+      "equity": 1287969.69,
       "type": "daily"
     },
     {
       "date": "2009-10-20",
-      "equity": 1286856.01,
+      "equity": 1291422.05,
       "type": "daily"
     },
     {
       "date": "2009-10-21",
-      "equity": 1285970.59,
+      "equity": 1289670.39,
       "type": "daily"
     },
     {
       "date": "2009-10-22",
-      "equity": 1279414.0,
+      "equity": 1280264.1,
       "type": "daily"
     },
     {
       "date": "2009-10-23",
-      "equity": 1282533.05,
+      "equity": 1283581.6,
       "type": "daily"
     },
     {
       "date": "2009-10-26",
-      "equity": 1279651.44,
+      "equity": 1280452.19,
       "type": "daily"
     },
     {
       "date": "2009-10-27",
-      "equity": 1278462.09,
+      "equity": 1280006.24,
       "type": "daily"
     },
     {
       "date": "2009-10-28",
-      "equity": 1269648.45,
+      "equity": 1272332.89,
       "type": "daily"
     },
     {
       "date": "2009-10-29",
-      "equity": 1260404.44,
+      "equity": 1261453.0,
       "type": "hold"
     },
     {
       "date": "2009-10-30",
-      "equity": 1265878.5,
+      "equity": 1266579.5,
       "type": "hold"
     },
     {
       "date": "2009-11-02",
-      "equity": 1268514.4,
+      "equity": 1269462.15,
       "type": "crash"
     },
     {
       "date": "2009-11-03",
-      "equity": 1268514.4,
+      "equity": 1269462.15,
       "type": "hold"
     },
     {
       "date": "2009-11-04",
-      "equity": 1268514.4,
+      "equity": 1269462.15,
       "type": "hold"
     },
     {
       "date": "2009-11-05",
-      "equity": 1268514.4,
+      "equity": 1269462.15,
       "type": "hold"
     },
     {
       "date": "2009-11-06",
-      "equity": 1268514.4,
+      "equity": 1269462.15,
       "type": "hold"
     },
     {
       "date": "2009-11-09",
-      "equity": 1268514.4,
+      "equity": 1269462.15,
       "type": "daily"
     },
     {
       "date": "2009-11-10",
-      "equity": 1269497.95,
+      "equity": 1270445.69,
       "type": "daily"
     },
     {
       "date": "2009-11-11",
-      "equity": 1269657.7,
+      "equity": 1270605.44,
       "type": "daily"
     },
     {
       "date": "2009-11-12",
-      "equity": 1269474.55,
+      "equity": 1270422.29,
       "type": "daily"
     },
     {
       "date": "2009-11-13",
-      "equity": 1272267.16,
+      "equity": 1273214.9,
       "type": "daily"
     },
     {
       "date": "2009-11-16",
-      "equity": 1281664.45,
+      "equity": 1282612.2,
       "type": "daily"
     },
     {
       "date": "2009-11-17",
-      "equity": 1275504.26,
+      "equity": 1276452.0,
       "type": "daily"
     },
     {
       "date": "2009-11-18",
-      "equity": 1280664.55,
+      "equity": 1281612.3,
       "type": "daily"
     },
     {
       "date": "2009-11-19",
-      "equity": 1282124.35,
+      "equity": 1283072.09,
       "type": "daily"
     },
     {
       "date": "2009-11-20",
-      "equity": 1281759.25,
+      "equity": 1282706.99,
       "type": "daily"
     },
     {
       "date": "2009-11-23",
-      "equity": 1284225.16,
+      "equity": 1285172.9,
       "type": "daily"
     },
     {
       "date": "2009-11-24",
-      "equity": 1281246.81,
+      "equity": 1282194.55,
       "type": "daily"
     },
     {
       "date": "2009-11-25",
-      "equity": 1283380.95,
+      "equity": 1284328.69,
       "type": "daily"
     },
     {
       "date": "2009-11-26",
-      "equity": 1288225.16,
+      "equity": 1289172.9,
       "type": "daily"
     },
     {
       "date": "2009-11-27",
-      "equity": 1269715.5,
+      "equity": 1270663.25,
       "type": "hold"
     },
     {
       "date": "2009-11-30",
-      "equity": 1279449.25,
+      "equity": 1280397.0,
       "type": "daily"
     },
     {
       "date": "2009-12-01",
-      "equity": 1280225.56,
+      "equity": 1281173.3,
       "type": "daily"
     },
     {
       "date": "2009-12-02",
-      "equity": 1277106.16,
+      "equity": 1278053.9,
       "type": "daily"
     },
     {
       "date": "2009-12-03",
-      "equity": 1271995.66,
+      "equity": 1272943.4,
       "type": "daily"
     },
     {
       "date": "2009-12-04",
-      "equity": 1271607.81,
+      "equity": 1272555.55,
       "type": "daily"
     },
     {
       "date": "2009-12-07",
-      "equity": 1280550.96,
+      "equity": 1281498.7,
       "type": "daily"
     },
     {
       "date": "2009-12-08",
-      "equity": 1283217.76,
+      "equity": 1284165.5,
       "type": "daily"
     },
     {
       "date": "2009-12-09",
-      "equity": 1288954.0,
+      "equity": 1289901.74,
       "type": "daily"
     },
     {
       "date": "2009-12-10",
-      "equity": 1288793.81,
+      "equity": 1289741.55,
       "type": "daily"
     },
     {
       "date": "2009-12-11",
-      "equity": 1295987.1,
+      "equity": 1296934.85,
       "type": "daily"
     },
     {
       "date": "2009-12-14",
-      "equity": 1303682.51,
+      "equity": 1304630.25,
       "type": "daily"
     },
     {
       "date": "2009-12-15",
-      "equity": 1309770.95,
+      "equity": 1310718.7,
       "type": "daily"
     },
     {
       "date": "2009-12-16",
-      "equity": 1318833.9,
+      "equity": 1319781.65,
       "type": "daily"
     },
     {
       "date": "2009-12-17",
-      "equity": 1315726.65,
+      "equity": 1316674.39,
       "type": "daily"
     },
     {
       "date": "2009-12-18",
-      "equity": 1317932.9,
+      "equity": 1318880.65,
       "type": "daily"
     },
     {
       "date": "2009-12-21",
-      "equity": 1316849.5,
+      "equity": 1317797.24,
       "type": "daily"
     },
     {
       "date": "2009-12-22",
-      "equity": 1323589.31,
+      "equity": 1324537.06,
       "type": "daily"
     },
     {
       "date": "2009-12-23",
-      "equity": 1333800.45,
+      "equity": 1334748.2,
       "type": "daily"
     },
     {
       "date": "2009-12-24",
-      "equity": 1333444.85,
+      "equity": 1334392.59,
       "type": "daily"
     },
     {
       "date": "2009-12-25",
-      "equity": 1343205.74,
+      "equity": 1344153.49,
       "type": "daily"
     },
     {
       "date": "2009-12-28",
-      "equity": 1350842.85,
+      "equity": 1351790.59,
       "type": "daily"
     },
     {
       "date": "2009-12-29",
-      "equity": 1352574.09,
+      "equity": 1353521.83,
       "type": "daily"
     },
     {
       "date": "2009-12-30",
-      "equity": 1357685.9,
+      "equity": 1358633.64,
       "type": "daily"
     },
     {
       "date": "2009-12-31",
-      "equity": 1355375.1,
+      "equity": 1356322.84,
       "type": "daily"
     }
   ],
@@ -4466,12 +4466,6 @@
     },
     {
       "date": "2009-08-28",
-      "ticker": "01007T",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 98.2
-    },
-    {
-      "date": "2009-08-28",
       "ticker": "1711",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 94.9
@@ -4523,6 +4517,12 @@
       "ticker": "9933",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 58.7
+    },
+    {
+      "date": "2009-08-28",
+      "ticker": "1109",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.0
     },
     {
       "date": "2009-08-31",
