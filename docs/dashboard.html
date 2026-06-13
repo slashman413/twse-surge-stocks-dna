@@ -311,6 +311,9 @@
     <button class="close-btn" onclick="document.getElementById('sponsor-modal').classList.remove('open')">&times;</button>
     <img src="qr_sponsor.webp" alt="贊助QR Code">
     <p>☕ 覺得這個儀表板好用嗎？<br>歡迎請我喝杯咖啡，支持我繼續開發與維護！</p>
+    <div style="margin-top:16px;padding-top:12px;border-top:1px solid #334155;color:#94a3b8;font-size:0.85rem;">
+      👁️ 瀏覽次數: <strong id="pageview-count" style="color:#e2e8f0;">--</strong>
+    </div>
   </div>
 </div>
 
@@ -578,6 +581,17 @@ function closeYearDetail() {
 }
 
 loadData();
+
+// Page view counter
+(async function() {
+  try {
+    const resp = await fetch('https://api.countapi.xyz/hit/slashman413-twse-surge-stocks-dna/views');
+    const data = await resp.json();
+    document.getElementById('pageview-count').textContent = data.value.toLocaleString();
+  } catch(e) {
+    document.getElementById('pageview-count').textContent = 'N/A';
+  }
+})();
 </script>
 
 </body>
