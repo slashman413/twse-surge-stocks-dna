@@ -135,7 +135,7 @@
 
     <!-- ═══ 回測模擬操作總結 ═══ -->
     <div class="stats-grid" id="summary-stats-grid">
-      <div class="stat-card info"><div class="value">100 萬</div><div class="label">初始資金</div></div>
+      <div class="stat-card info"><div class="value">300 萬</div><div class="label">初始資金</div></div>
       <div class="stat-card" id="sum-final-equity-card"><div class="value" id="sum-final-equity">--</div><div class="label">複利最終權益</div></div>
       <div class="stat-card" id="sum-cagr-card"><div class="value" id="sum-cagr">--</div><div class="label">年化報酬率 (CAGR)</div></div>
       <div class="stat-card" id="sum-total-return-card"><div class="value" id="sum-total-return">--</div><div class="label">總報酬率</div></div>
@@ -462,7 +462,7 @@ function renderYearly(data) {
       <div><strong style="color:var(--red);">${worstYear.year}年 (${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%)</strong><br>最差年份</div>
     </div>
     <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
-      初始資金 100 萬，趨勢拉回20MA買進 + 停損-20%/移動停利-12%/RSI<35 + 月RSI4>70/ADX1>25 + 日量≥1000。
+      初始資金 300 萬，趨勢拉回20MA買進 + 停損-20%/移動停利-12%/RSI<35 + 月RSI4>70/ADX1>25 + 日量≥1000。
       策略在 <strong style="color:var(--green);">${bestYear.year}</strong> 年最佳（${bestYear.total_return_pct >= 0 ? '+' : ''}${bestYear.total_return_pct}%），
       <strong style="color:var(--red);">${worstYear.year}</strong> 年最差（${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%）。
       共 ${winYears}/${nYears} 年正報酬，年化報酬率 ${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%，
@@ -473,7 +473,7 @@ function renderYearly(data) {
 // ═══ Year detail ═══
 async function openYearDetail(year) {
   if (equityChart) { equityChart.destroy(); equityChart = null; }
-  document.getElementById('year-detail-title').textContent = `📋 ${year} 年交易明細 (100萬資金模擬)`;
+  document.getElementById('year-detail-title').textContent = `📋 ${year} 年交易明細 (300萬資金模擬)`;
   document.getElementById('year-detail-section').style.display = 'block';
   document.getElementById('year-detail-body').innerHTML =
     '<tr><td colspan="8" style="text-align:center;padding:20px;color:var(--text-dim);">載入中...</td></tr>';
