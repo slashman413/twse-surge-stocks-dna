@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>大飆股DNA - 台股量化回測報告</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.umd.min.js"></script>
 <style>
   :root {
@@ -659,6 +658,40 @@ async function loadSignals() {
         </div>
       </div>`;
     }).join('');
+
+    // Exit signals
+    try {
+      const kr = await fetch(KLINE_URL);
+      const kd = await kr.json();
+      const exitSignals = [];
+      for (const sig of data.signals) {
+        const k = kd[sig.ticker]?.kline || [];
+        const td = k.filter(p => p.d >= '2026-01-01');
+        if (td.length < 5) continue;
+        const last2 = td[td.length - 1];
+        const prev2 = td[td.length - 2] || last2;
+        const reasons = [];
+        if (last2.rsi14 < 35 && prev2.rsi14 >= 35) reasons.push(`RSI<35(${last2.rsi14})`);
+        if (last2.dist_ma20 < -5) reasons.push(`跌破MA20(${last2.dist_ma20}%)`);
+        if (last2.adx > 25 && last2.pdi < last2.mdi) reasons.push('DMI空頭');
+        if (td.length >= 4 && td.slice(-4).every((p, i, a) => i === 0 || p.c <= a[i-1].c)) reasons.push('連跌4天');
+        if (reasons.length > 0) {
+          exitSignals.push({ ticker: sig.ticker, name: sig.name, close: last2.c, dist_ma20: last2.dist_ma20, rsi14: last2.rsi14, reasons });
+        }
+      }
+      if (exitSignals.length > 0) {
+        list.innerHTML += `<div style="margin-top:20px;"><h3 style="font-size:1rem;margin-bottom:12px;">🔴 離場訊號 (${exitSignals.length})</h3>${exitSignals.map((s, i) => {
+          return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;border-left-color:var(--red);" onclick="openKline('${s.ticker}')">
+            <div class="signal-rank" style="color:var(--red);">${i + 1}</div>
+            <div style="flex:1;">
+              <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''}</div>
+              <div class="signal-detail" style="color:var(--red);">${s.reasons.join(' | ')}</div>
+            </div>
+            <div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📈</span></div>
+          </div>`;
+        }).join('')}</div>`;
+      }
+    } catch(e) {}
   } catch(e) {
     document.getElementById('signals-market-info').textContent = '⚠️ 無法載入訊號資料';
   }
@@ -758,144 +791,166 @@ async function openKline(ticker) {
     const targetDays = kline.filter(p => p.d >= '2026-01-01');
     const labels = targetDays.map(p => p.d);
 
-    // Candlestick + MA chart
-    const ctx = document.getElementById('klineChart').getContext('2d');
+    const ctx = document.getElementById('klineChart');
     if (klineChart) { klineChart.destroy(); klineChart = null; }
-    // Reset canvas
-    const canvas = document.getElementById('klineChart');
-    canvas.removeAttribute('style');
-    canvas.width = canvas.parentElement.clientWidth || 600;
-    canvas.height = 350;
+    ctx.removeAttribute('style');
+    ctx.width = ctx.parentElement.clientWidth || 600;
+    ctx.height = 350;
 
-    // Build candlestick data
-    const candleData = targetDays.map(p => ({
-      x: new Date(p.d).getTime(),
-      o: p.o, h: p.h, l: p.l, c: p.c,
-    }));
+    // Detect buy/sell signals on the chart
+    const buyMarkers = [];
+    const sellMarkers = [];
+    for (let i = 2; i < targetDays.length; i++) {
+      const p = targetDays[i];
+      const prev = targetDays[i - 1];
+      // Buy condition: pullback to MA20 + RSI 30-60 + above MA50
+      if (p.dist_ma20 >= -2 && p.dist_ma20 <= 1 &&
+          p.rsi14 >= 30 && p.rsi14 <= 60 &&
+          p.dist_ma50 > -3) {
+        buyMarkers.push({ x: new Date(p.d).getTime(), y: p.c, reason: '拉回MA20+' });
+      }
+      // Sell/stoploss: RSI < 35
+      if (p.rsi14 < 35 && prev.rsi14 >= 35) {
+        sellMarkers.push({ x: new Date(p.d).getTime(), y: p.c, reason: `RSI<35(${p.rsi14})` });
+      }
+      // Sell :跌破MA20過多
+      if (p.dist_ma20 < -5 && prev.dist_ma20 >= -5) {
+        sellMarkers.push({ x: new Date(p.d).getTime(), y: p.c, reason: '跌破MA20' });
+      }
+    }
 
-    const ma20Data = targetDays.map(p => ({
-      x: new Date(p.d).getTime(),
-      y: p.ma20,
-    }));
-
-    const ma50Data = targetDays.map(p => ({
-      x: new Date(p.d).getTime(),
-      y: p.ma50,
-    }));
+    // Price line chart (no candlestick - simpler & reliable)
+    const priceData = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.c }));
+    const ma20Data = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.ma20 }));
+    const ma50Data = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.ma50 }));
 
     klineChart = new Chart(ctx, {
-      type: 'candlestick',
+      type: 'line',
       data: {
         datasets: [
           {
-            label: ticker,
-            data: candleData,
-            color: {
-              up: '#22c55e',
-              down: '#ef4444',
-              unchanged: '#94a3b8',
-            },
-            borderColor: {
-              up: '#22c55e',
-              down: '#ef4444',
-              unchanged: '#94a3b8',
-            },
+            label: `${ticker} 收盤價`,
+            data: priceData,
+            borderColor: '#3b82f6',
+            backgroundColor: 'rgba(59,130,246,0.08)',
+            fill: true, tension: 0.15, pointRadius: 0,
+            borderWidth: 2,
           },
           {
             label: 'MA20',
             data: ma20Data,
             type: 'line',
             borderColor: '#eab308',
-            borderWidth: 1.5,
-            pointRadius: 0,
-            fill: false,
+            borderWidth: 1.5, pointRadius: 0, fill: false,
+            borderDash: [4, 3],
           },
           {
             label: 'MA50',
             data: ma50Data,
             type: 'line',
             borderColor: '#a855f7',
-            borderWidth: 1.5,
-            pointRadius: 0,
-            fill: false,
+            borderWidth: 1.5, pointRadius: 0, fill: false,
+            borderDash: [4, 3],
+          },
+          // Buy markers
+          {
+            label: '買進訊號',
+            data: buyMarkers,
+            type: 'line',
+            borderColor: 'transparent',
+            pointRadius: 7,
+            pointBackgroundColor: buyMarkers.map(() => '#22c55e'),
+            pointStyle: 'triangle',
+            pointRotation: 0,
+            showLine: false,
+          },
+          // Sell/exit markers
+          {
+            label: '出場訊號',
+            data: sellMarkers,
+            type: 'line',
+            borderColor: 'transparent',
+            pointRadius: 7,
+            pointBackgroundColor: sellMarkers.map(() => '#ef4444'),
+            pointStyle: 'triangle',
+            pointRotation: 180,
+            showLine: false,
           },
         ]
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         interaction: { mode: 'index', intersect: false },
         plugins: {
-          legend: {
-            position: 'top',
-            labels: { color: '#94a3b8', boxWidth: 12, font: { size: 10 } }
-          },
+          legend: { position: 'top', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 10 } } },
           tooltip: {
             callbacks: {
-              title: items => {
-                const d = candleData[items[0].dataIndex];
-                return new Date(d.x).toISOString().slice(0, 10);
-              },
+              title: items => new Date(items[0].parsed.x).toISOString().slice(0, 10),
               label: ctx => {
-                if (ctx.dataset.type === 'line') return `${ctx.dataset.label}: ${ctx.parsed.y}`;
-                const d = candleData[ctx.dataIndex];
-                return `O:${d.o} H:${d.h} L:${d.l} C:${d.c}`;
+                const d = targetDays[ctx.dataIndex];
+                if (!d) return `${ctx.dataset.label}: ${ctx.parsed.y}`;
+                if (ctx.datasetIndex === 3) return `🟢 買進: ${buyMarkers[ctx.dataIndex]?.reason || ''}`;
+                if (ctx.datasetIndex === 4) return `🔴 出場: ${sellMarkers[ctx.dataIndex]?.reason || ''}`;
+                return `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}`;
+              },
+              afterBody: items => {
+                const d = targetDays[items[0].dataIndex];
+                if (!d) return '';
+                return `開:${d.o} 高:${d.h} 低:${d.l} 收:${d.c} 量:${(d.v/1000).toFixed(0)}k`;
               }
             }
           }
         },
         scales: {
-          x: {
-            type: 'time',
-            time: { unit: 'day', displayFormats: { day: 'MM/dd' } },
-            ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 15 },
-            grid: { display: false },
-          },
-          y: {
-            ticks: { color: '#94a3b8', font: { size: 9 } },
-            grid: { color: '#1e293b' },
-          }
+          x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 12 }, grid: { display: false } },
+          y: { ticks: { color: '#94a3b8', font: { size: 9 } }, grid: { color: '#1e293b' } }
         }
       }
     });
 
     // RSI chart
-    const rsiCtx = document.getElementById('rsiChart').getContext('2d');
+    const rsiCtx = document.getElementById('rsiChart');
     if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
-    const rsi = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.rsi14 }));
+    rsiCtx.removeAttribute('style');
+    rsiCtx.width = rsiCtx.parentElement.clientWidth || 300;
+    rsiCtx.height = 150;
+    const rsiData = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.rsi14 }));
     rsiChart = new Chart(rsiCtx, {
       type: 'line',
       data: {
         datasets: [{
           label: 'RSI14',
-          data: rsi,
-          borderColor: '#3b82f6',
-          borderWidth: 1.5,
-          pointRadius: 0,
-          fill: false,
+          data: rsiData,
+          borderColor: '#3b82f6', borderWidth: 1.5, pointRadius: 0, fill: false,
         }]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
+        plugins: {
+          legend: { display: false },
+          annotation: false,
+        },
         scales: {
           x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MM/dd' } }, ticks: { display: false }, grid: { display: false } },
-          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 } }, grid: { color: '#1e293b' } }
+          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => v }, grid: { color: '#1e293b' } }
         }
       }
     });
 
     // Volume chart
-    const volCtx = document.getElementById('volumeChart').getContext('2d');
+    const volCtx = document.getElementById('volumeChart');
     if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
-    const vol = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.v }));
+    volCtx.removeAttribute('style');
+    volCtx.width = volCtx.parentElement.clientWidth || 300;
+    volCtx.height = 100;
+    const volData = targetDays.map(p => ({ x: new Date(p.d).getTime(), y: p.v }));
     const volColor = targetDays.map(p => p.c >= p.o ? 'rgba(34,197,94,0.5)' : 'rgba(239,68,68,0.5)');
     volumeChart = new Chart(volCtx, {
       type: 'bar',
       data: {
         datasets: [{
           label: '成交量',
-          data: vol,
+          data: volData,
           backgroundColor: volColor,
           borderRadius: 1,
         }]
@@ -910,11 +965,29 @@ async function openKline(ticker) {
       }
     });
 
-    // Summary
+    // Summary with entry/exit reasons
     const last = targetDays[targetDays.length - 1];
     const entryZone = last.dist_ma20 >= -2 && last.dist_ma20 <= 1;
+    const exitRsi = last.rsi14 < 35;
+    const exitBreak = last.dist_ma20 < -5;
+    const exitConsec = targetDays.length >= 4 &&
+      targetDays.slice(-4).every((p, i, arr) => i === 0 || p.c <= arr[i - 1].c);
+
+    const entryReasons = [];
+    if (entryZone && last.rsi14 >= 30 && last.rsi14 <= 60 && last.dist_ma50 > -3) {
+      entryReasons.push('✅ 拉回MA20(-2%~+1%)');
+      entryReasons.push('✅ RSI14在30~60');
+      entryReasons.push('✅ 在MA50之上');
+    }
+
+    const exitReasons = [];
+    if (exitRsi) exitReasons.push(`⚠️ RSI14=${last.rsi14}<35 出場`);
+    if (exitBreak) exitReasons.push(`⚠️ 距MA20=${last.dist_ma20}% < -5% 跌破`);
+    if (exitConsec) exitReasons.push('⚠️ 連續下跌中');
+    if (last.adx > 25 && last.pdi < last.mdi) exitReasons.push('⚠️ DMI空頭(PDI<MDI)');
+
     document.getElementById('kline-summary').innerHTML = `
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px;">
         <div>收盤: <strong>${last.c}</strong></div>
         <div>距MA20: <strong style="color:${entryZone ? 'var(--green)' : 'var(--yellow)'}">${last.dist_ma20 >= 0 ? '+' : ''}${last.dist_ma20}%</strong></div>
         <div>MA20: <strong>${last.ma20}</strong></div>
@@ -924,10 +997,11 @@ async function openKline(ticker) {
         <div>ADX: <strong>${last.adx}</strong></div>
         <div>月ADX1: <strong>${data.m_adx1}</strong></div>
       </div>
-      <div style="margin-top:6px;padding-top:6px;border-top:1px solid #334155;">
-        ${entryZone ? '✅ 在進場區間' : last.dist_ma20 < -2 ? '⚠️ 跌破MA20過多' : '⚠️ 偏離MA20'}
-        ${last.rsi14 >= 30 && last.rsi14 <= 60 ? ' | RSI合理' : ' | RSI偏高/偏低'}
-        ${last.dist_ma50 > -3 ? ' | 在MA50之上' : ' | 在MA50之下'}
+      ${entryReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--green);">🟢 進場原因<br>${entryReasons.join('<br>')}</div>` : ''}
+      ${exitReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--red);">🔴 出場原因<br>${exitReasons.join('<br>')}</div>` : ''}
+      ${entryReasons.length === 0 && exitReasons.length === 0 ? '<div style="color:var(--text-dim);font-size:0.8rem;border-top:1px solid #334155;padding-top:4px;">目前無明顯進出場訊號</div>' : ''}
+      <div style="margin-top:4px;font-size:0.75rem;color:var(--text-dim);border-top:1px solid #334155;padding-top:4px;">
+        🟢倒三角=買進訊號 | 🔴倒三角=出場訊號（圖上標記僅供參考）
       </div>`;
 
   } catch(e) {
