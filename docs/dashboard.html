@@ -350,25 +350,18 @@ function renderYearly(data) {
 
   // ── Compute overall stats ──
   const INITIAL = 3000000;
-  
-  // Each year starts with 3M independently. Total = additive P&L
   const totalPL = data.reduce((a, s) => a + s.total_pl, 0);
-  const finalEquity = INITIAL + totalPL;
-  const totalReturnPct = totalPL / INITIAL * 100;
   const totalTrades = data.reduce((a, s) => a + s.trade_count, 0);
   const winYears = data.filter(s => s.total_return_pct > 0).length;
   const avgWinRate = data.reduce((a, s) => a + s.trade_win_rate, 0) / data.length;
   const nYears = data.length;
-  const cagr = (((finalEquity / INITIAL) ** (1.0 / nYears)) - 1) * 100;
   
-  // MDD: simulate compounding equity curve using actual returns
+  // Compound: P&L rolls into next year's capital (position sizes scale with equity)
   let peak = INITIAL;
   let mdd = 0;
   let runningEq = INITIAL;
   const compoundedEquity = [];
   data.forEach(s => {
-    // Real return on running equity = year's P&L as % of INITIAL, but applied to running cap
-    // Since each year trades 10% of initial 3M, we scale the P&L by (runningEq / INITIAL)
     const equityRatio = runningEq / INITIAL;
     runningEq += s.total_pl * equityRatio;
     compoundedEquity.push(Math.round(runningEq));
@@ -376,6 +369,9 @@ function renderYearly(data) {
     const dd = (peak - runningEq) / peak * 100;
     if (dd > mdd) mdd = dd;
   });
+  const finalEquity = runningEq;
+  const totalReturnPct = (finalEquity / INITIAL - 1) * 100;
+  const cagr = (((finalEquity / INITIAL) ** (1.0 / nYears)) - 1) * 100;
 
   document.getElementById('sum-final-equity').textContent =
     `NT$${Math.round(finalEquity).toLocaleString()}`;
@@ -928,20 +924,20 @@ function closeKline() {
 const STAT_INFO = {
   finalEquity: {
     title: '複利最終權益',
-    body: '<p><strong>說明：</strong>每年獨立以 300 萬起始資金操作，最終權益 = 300 萬 + 各年損益加總。</p><p><strong>公式：</strong>初始資金 + Σ(各年 total_pl)</p><p><strong>範例：</strong>300萬 + (−16.6萬 + 75萬 + ⋯ + 136萬) = 16,761,019</p><p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 各年獨立起始，非複利滾存。總損益直接相加即為最終權益。</p>'
+    body: '<p><strong>說明：</strong>各年 P&L 滾入下一年本金，部位規模隨資產長大等比放大。</p><p><strong>公式：</strong>初始資金 × (1 + r₁) × (1 + r₂) × ⋯ × (1 + rₙ)<br>其中 rₓ = total_plₓ / 300萬（獨立年報酬率），但 P&L 實際金額 × (runningEq / 300萬)</p><p><strong>範例：</strong>300萬 → 283萬 → 354萬 → ⋯ → 1.45億</p><p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 本金越大，同一個 % 產生的獲利金額越大，複利效果顯著。</p>'
   },
   cagr: {
     title: '年化報酬率 (CAGR)',
     body: `<p><strong>說明：</strong>年均複合增長率，反映策略的長期穩定報酬能力。</p>
 <p><strong>公式：</strong>CAGR = (最終權益 ÷ 初始資金)<sup>(1 ÷ 年數)</sup> − 1</p>
-<p><strong>範例：</strong>(16,761,019 ÷ 3,000,000)<sup>(1/23)</sup> − 1 = +7.77%</p>
+<p><strong>範例：</strong>(145,369,725 ÷ 3,000,000)<sup>(1/23)</sup> − 1 = +18.38%</p>
 <p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 CAGR 越高代表每年平均賺越多，且波動對複利影響較小。</p>`
   },
   totalReturn: {
     title: '總報酬率',
     body: `<p><strong>說明：</strong>整個回測期間的總累積報酬率。</p>
 <p><strong>公式：</strong>(最終權益 − 初始資金) ÷ 初始資金 × 100%</p>
-<p><strong>範例：</strong>(16,761,019 − 3,000,000) ÷ 3,000,000 × 100% = +458.70%</p>
+<p><strong>範例：</strong>(145,369,725 − 3,000,000) ÷ 3,000,000 × 100% = +4,745.66%</p>
 <p style="color:var(--text-dim);font-size:0.85rem;margin-top:8px;">💡 總報酬率受複利效應放大，長期可達數十倍。</p>`
   },
   mdd: {
