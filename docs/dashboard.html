@@ -280,6 +280,26 @@
   </div>
 </div>
 
+<!-- ═══ 交易K線 Modal ═══ -->
+<div id="trade-chart-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)closeTradeChart()">
+  <div class="sponsor-modal" style="max-width:800px;width:90%;padding:20px;">
+    <button class="close-btn" onclick="closeTradeChart()">&times;</button>
+    <h3 id="trade-chart-title" style="margin-bottom:12px;">📈 交易區間K線</h3>
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:12px;">
+      <div class="chart-card" style="padding:12px;">
+        <h3>📊 K線 + 均線</h3>
+        <div style="position:relative;height:300px;"><canvas id="tradeKlineChart"></canvas></div>
+      </div>
+      <div class="chart-card" style="padding:12px;">
+        <h3>📉 技術指標</h3>
+        <div style="position:relative;height:130px;margin-bottom:6px;"><canvas id="tradeRsiChart"></canvas></div>
+        <div style="position:relative;height:90px;"><canvas id="tradeVolChart"></canvas></div>
+        <div id="trade-chart-info" style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(51,65,85,0.3);font-size:0.8rem;color:var(--text-dim);"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 const SUMMARY_URL = './yearly_backtests/summary_v12.json';
 const SIGNALS_URL = './yearly_backtests/signals_data.json';
@@ -291,6 +311,11 @@ let twiiChart = null;
 let klineChart = null;
 let rsiChart = null;
 let volumeChart = null;
+let tradeKlineChart = null;
+let tradeRsiChart = null;
+let tradeVolChart = null;
+let stockNames = {};
+let tradeChartsCache = {};
 
 function switchTab(name, btn) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
@@ -301,6 +326,10 @@ function switchTab(name, btn) {
 
 async function loadData() {
   try {
+    // Load stock names
+    const nameResp = await fetch('./yearly_backtests/stock_names.json');
+    if (nameResp.ok) stockNames = await nameResp.json();
+    
     const resp = await fetch(SUMMARY_URL);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
@@ -523,8 +552,9 @@ async function openYearDetail(year) {
       const plColor = t.pl >= 0 ? 'var(--green)' : 'var(--red)';
       const plSign = t.pl >= 0 ? '+' : '';
       const rpSign = t.pl_pct >= 0 ? '+' : '';
+      const name = stockNames[t.ticker] || '';
       return `<tr>
-        <td>${t.ticker}</td>
+        <td><a href="#" onclick="event.preventDefault();showTradeChart('${t.ticker}','${year}','${t.buy_date}','${t.sell_date}')" style="color:var(--blue);cursor:pointer;text-decoration:underline;">${t.ticker}${name ? ' ' + name : ''}</a></td>
         <td>${t.buy_date}</td>
         <td>${t.buy_price}</td>
         <td>${t.sell_date}</td>
@@ -555,6 +585,187 @@ function closeYearDetail() {
   document.getElementById('year-detail-section').style.display = 'none';
   if (equityChart) { equityChart.destroy(); equityChart = null; }
   if (twiiChart) { twiiChart.destroy(); twiiChart = null; }
+}
+
+function closeTradeChart() {
+  document.getElementById('trade-chart-modal').classList.remove('open');
+  [tradeKlineChart, tradeRsiChart, tradeVolChart].forEach(c => { if (c) { c.destroy(); } });
+  tradeKlineChart = null; tradeRsiChart = null; tradeVolChart = null;
+}
+
+async function showTradeChart(ticker, year, buyDate, sellDate) {
+  document.getElementById('trade-chart-title').textContent = `📈 ${ticker} ${stockNames[ticker] || ''} 交易區間K線 (${buyDate} ~ ${sellDate})`;
+  document.getElementById('trade-chart-modal').classList.add('open');
+  document.getElementById('trade-chart-info').textContent = '載入中...';
+  
+  try {
+    // Load trade chart data
+    if (!tradeChartsCache[year]) {
+      const resp = await fetch(`./yearly_backtests/trade_charts_${year}.json`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      tradeChartsCache[year] = await resp.json();
+    }
+    const allData = tradeChartsCache[year];
+    const data = allData[ticker];
+    if (!data || !data.kline || data.kline.length < 5) throw new Error('無K線資料');
+    
+    const kline = data.kline;
+    const labels = kline.map(p => p.d.slice(5)); // MM-DD
+    const prices = kline.map(p => p.c);
+    const vol = kline.map(p => p.v / 1000);
+    
+    // Destroy old charts
+    [tradeKlineChart, tradeRsiChart, tradeVolChart].forEach(c => { if (c) { c.destroy(); } });
+    tradeKlineChart = null; tradeRsiChart = null; tradeVolChart = null;
+    
+    // Calculate MA20, MA50, RSI14
+    const ma20 = prices.map((_, i) => {
+      if (i < 19) return null;
+      return prices.slice(i - 19, i + 1).reduce((a, b) => a + b, 0) / 20;
+    });
+    const ma50 = prices.map((_, i) => {
+      if (i < 49) return null;
+      return prices.slice(i - 49, i + 1).reduce((a, b) => a + b, 0) / 50;
+    });
+    
+    // RSI14
+    const rsi = prices.map((_, i) => {
+      if (i < 14) return null;
+      let gain = 0, loss = 0;
+      for (let j = i - 13; j <= i; j++) {
+        const diff = prices[j] - prices[j - 1];
+        if (diff > 0) gain += diff; else loss -= diff;
+      }
+      const avgGain = gain / 14, avgLoss = loss / 14;
+      if (avgLoss === 0) return 100;
+      return 100 - 100 / (1 + avgGain / avgLoss);
+    });
+    
+    // Get trade position indices
+    const buyIdx = kline.findIndex(p => p.d === buyDate);
+    const sellIdx = kline.findIndex(p => p.d === sellDate);
+    const buyRad = new Array(labels.length).fill(0);
+    const sellRad = new Array(labels.length).fill(0);
+    const buyCol = new Array(labels.length).fill('transparent');
+    const sellCol = new Array(labels.length).fill('transparent');
+    if (buyIdx >= 0) { buyRad[buyIdx] = 10; buyCol[buyIdx] = '#22c55e'; }
+    if (sellIdx >= 0) { sellRad[sellIdx] = 10; sellCol[sellIdx] = '#ef4444'; }
+    
+    // --- Price chart ---
+    const ctx = document.getElementById('tradeKlineChart');
+    ctx.removeAttribute('style');
+    ctx.width = ctx.parentElement.clientWidth || 600;
+    ctx.height = 300;
+    
+    tradeKlineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          { label: `${ticker} 收盤價`, data: prices, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.15, pointRadius: 0, borderWidth: 2 },
+          { label: 'MA20', data: ma20, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
+          { label: 'MA50', data: ma50, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
+          { label: '🟢買進', data: prices, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
+          { label: '🔴賣出', data: prices, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 10 } } },
+          tooltip: {
+            callbacks: {
+              label: ctx => {
+                const p = kline[ctx.dataIndex];
+                if (!p) return '';
+                if (ctx.datasetIndex === 3) return '🟢 買進';
+                if (ctx.datasetIndex === 4) return '🔴 賣出';
+                return `${ctx.dataset.label}: ${p.c}`;
+              },
+              afterBody: items => {
+                const p = kline[items[0].dataIndex];
+                if (!p) return '';
+                const r = rsi[items[0].dataIndex];
+                return `開:${p.o} 高:${p.h} 低:${p.l} 量:${(p.v/1000).toFixed(0)}k | RSI:${r !== null ? r.toFixed(1) : '-'}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: { ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 15 }, grid: { display: false } },
+          y: { ticks: { color: '#94a3b8', font: { size: 9 } }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+    
+    // --- RSI chart ---
+    const rsiCtx = document.getElementById('tradeRsiChart');
+    rsiCtx.removeAttribute('style');
+    rsiCtx.width = rsiCtx.parentElement.clientWidth || 300;
+    rsiCtx.height = 130;
+    
+    tradeRsiChart = new Chart(rsiCtx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'RSI14',
+          data: rsi,
+          borderColor: '#a855f7',
+          borderWidth: 2,
+          pointRadius: 0,
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { display: false },
+          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 }, stepSize: 25 }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+    
+    // --- Volume chart ---
+    const volCtx = document.getElementById('tradeVolChart');
+    volCtx.removeAttribute('style');
+    volCtx.width = volCtx.parentElement.clientWidth || 300;
+    volCtx.height = 90;
+    
+    const volColors = vol.map(v => v > 0 ? 'rgba(59,130,246,0.5)' : 'transparent');
+    
+    tradeVolChart = new Chart(volCtx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          label: '成交量',
+          data: vol,
+          backgroundColor: volColors,
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { display: false },
+          y: { ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => v + 'k' }, grid: { color: '#1e293b' } }
+        }
+      }
+    });
+    
+    // Info
+    const entryIdx = buyIdx >= 0 ? buyIdx : 0;
+    const entryP = kline[entryIdx];
+    const exitP = kline[sellIdx >= 0 ? sellIdx : kline.length - 1];
+    document.getElementById('trade-chart-info').innerHTML =
+      `買進: ${buyDate} @ ${entryP ? entryP.c : '?'} | 賣出: ${sellDate} @ ${exitP ? exitP.c : '?'} | 資料區間: ${kline[0].d} ~ ${kline[kline.length-1].d}`;
+      
+  } catch(e) {
+    document.getElementById('trade-chart-info').textContent = `⚠️ ${e.message}`;
+  }
 }
 
 async function loadTwiiChart(year) {
