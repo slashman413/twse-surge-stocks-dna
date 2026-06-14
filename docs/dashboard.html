@@ -655,8 +655,8 @@ async function showTradeChart(ticker, year, buyDate, sellDate) {
     const sellRad = new Array(labels.length).fill(0);
     const buyCol = new Array(labels.length).fill('transparent');
     const sellCol = new Array(labels.length).fill('transparent');
-    if (buyIdx >= 0) { buyRad[buyIdx] = 10; buyCol[buyIdx] = '#22c55e'; }
-    if (sellIdx >= 0) { sellRad[sellIdx] = 10; sellCol[sellIdx] = '#ef4444'; }
+    if (buyIdx >= 0) { buyRad[buyIdx] = 10; buyCol[buyIdx] = '#ef4444'; }
+    if (sellIdx >= 0) { sellRad[sellIdx] = 10; sellCol[sellIdx] = '#22c55e'; }
     
     // --- Price chart ---
     const ctx = document.getElementById('tradeKlineChart');
@@ -672,8 +672,8 @@ async function showTradeChart(ticker, year, buyDate, sellDate) {
           { label: `${ticker} 收盤價`, data: prices, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.15, pointRadius: 0, borderWidth: 2 },
           { label: 'MA20', data: ma20, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
           { label: 'MA50', data: ma50, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
-          { label: '🟢買進', data: prices, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
-          { label: '🔴賣出', data: prices, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
+          { label: '🔴買進', data: prices, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
+          { label: '🟢賣出', data: prices, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
         ]
       },
       options: {
@@ -685,8 +685,8 @@ async function showTradeChart(ticker, year, buyDate, sellDate) {
               label: ctx => {
                 const p = kline[ctx.dataIndex];
                 if (!p) return '';
-                if (ctx.datasetIndex === 3) return '🟢 買進';
-                if (ctx.datasetIndex === 4) return '🔴 賣出';
+                if (ctx.datasetIndex === 3) return '🔴 買進';
+                if (ctx.datasetIndex === 4) return '🟢 賣出';
                 return `${ctx.dataset.label}: ${p.c}`;
               },
               afterBody: items => {
@@ -1044,8 +1044,8 @@ async function openKline(ticker) {
     const sellRad = new Array(len).fill(0);
     const buyCol = new Array(len).fill('transparent');
     const sellCol = new Array(len).fill('transparent');
-    buyIdx.forEach(i => { buyRad[i] = 9; buyCol[i] = '#22c55e'; });
-    sellIdx.forEach(i => { sellRad[i] = 9; sellCol[i] = '#ef4444'; });
+    buyIdx.forEach(i => { buyRad[i] = 9; buyCol[i] = '#ef4444'; });
+    sellIdx.forEach(i => { sellRad[i] = 9; sellCol[i] = '#22c55e'; });
 
     klineChart = new Chart(ctx, {
       type: 'line',
@@ -1055,8 +1055,8 @@ async function openKline(ticker) {
           { label: `${ticker} 收盤價`, data: priceData, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.15, pointRadius: 0, borderWidth: 2 },
           { label: 'MA20', data: ma20Data, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
           { label: 'MA50', data: ma50Data, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
-          { label: '🟢買進', data: priceData, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
-          { label: '🔴出場', data: priceData, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
+          { label: '🔴買進', data: priceData, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
+          { label: '🟢出場', data: priceData, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
         ]
       },
       options: {
@@ -1068,8 +1068,8 @@ async function openKline(ticker) {
               label: ctx => {
                 const d = targetDays[ctx.dataIndex];
                 if (!d) return '';
-                if (ctx.datasetIndex === 3) return '🟢 買進訊號 (拉回MA20+RSI合理)';
-                if (ctx.datasetIndex === 4) return '🔴 出場訊號';
+                if (ctx.datasetIndex === 3) return '🔴 買進訊號 (拉回MA20+RSI合理)';
+                if (ctx.datasetIndex === 4) return '🟢 出場訊號';
                 return `${ctx.dataset.label}: ${d.c}`;
               },
               afterBody: items => {
