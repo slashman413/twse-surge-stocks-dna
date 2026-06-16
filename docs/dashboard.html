@@ -304,6 +304,7 @@
 const SUMMARY_URL = './yearly_backtests/summary_v12.json';
 const SIGNALS_URL = './yearly_backtests/signals_data.json';
 const KLINE_URL = './yearly_backtests/kline_data.json';
+const STOCK_PERF_URL = './yearly_backtests/stock_performance.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
 let equityChart = null;
@@ -858,10 +859,17 @@ async function loadSignals() {
 
     const mk = data.market_bullish && data.market_trend_up ? '多頭' : data.market_crash ? '崩跌' : '盤整';
     document.getElementById('signals-market-info').innerHTML =
-      `📅 最新交易日: ${data.date} | 大盤: <strong style="color:${data.market_bullish && data.market_trend_up ? 'var(--green)' : 'var(--red)'}">${mk}</strong> 趨勢${data.market_trend_up ? '向上' : '向下'} | 最多可取 2 檔`;
+      `📅 最新交易日: ${data.date} | 大盤: <strong style="color:${data.market_bullish && data.market_trend_up ? 'var(--green)' : 'var(--red)'}">${mk}</strong> 趨勢${data.market_trend_up ? '向上' : '向下'}`;
+
+    // ── 只顯示最新日期的訊號 ──
+    const latestDate = data.signals.reduce((a, s) => s.date > a ? s.date : a, '');
+    const recentSignals = data.signals.filter(s => s.date === latestDate);
+    const olderCount = data.signals.length - recentSignals.length;
 
     const list = document.getElementById('signals-list');
-    list.innerHTML = data.signals.map((s, i) => {
+    list.innerHTML = `<div style="color:var(--text-dim);font-size:0.85rem;margin-bottom:12px;">📌 ${latestDate} 進場訊號 (${recentSignals.length}檔${olderCount ? `，另有 ${olderCount} 檔舊訊號隱藏` : ''})</div>`;
+
+    list.innerHTML += recentSignals.map((s, i) => {
       const distColor = s.dist_ma20 < 0 ? 'var(--green)' : s.dist_ma20 > 1 ? 'var(--red)' : 'var(--yellow)';
       return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openKline('${s.ticker}')">
         <div class="signal-rank">${i + 1}</div>
@@ -870,12 +878,12 @@ async function loadSignals() {
           <div class="signal-detail">價格 ${Math.round(s.close).toLocaleString()} | 距20MA <span style="color:${distColor}">${s.dist_ma20 >= 0 ? '+' : ''}${s.dist_ma20}%</span> | RSI14 ${Math.round(s.rsi14)} | 加分 ${s.bonus}</div>
         </div>
         <div style="text-align:right;">
-          <span class="badge badge-buy">📈</span>
+          <span class="badge badge-buy">📈 BUY</span>
         </div>
       </div>`;
     }).join('');
 
-    // Exit signals
+    // ── 離場訊號（獨立卡片） ──
     try {
       const kr = await fetch(KLINE_URL);
       const kd = await kr.json();
@@ -896,16 +904,18 @@ async function loadSignals() {
         }
       }
       if (exitSignals.length > 0) {
-        list.innerHTML += `<div style="margin-top:20px;"><h3 style="font-size:1rem;margin-bottom:12px;">🔴 離場訊號 (${exitSignals.length})</h3>${exitSignals.map((s, i) => {
+        list.innerHTML += `<div style="margin-top:16px;"><h3 style="font-size:1rem;margin-bottom:8px;">🔴 離場訊號 (${exitSignals.length})</h3>`;
+        list.innerHTML += exitSignals.map((s, i) => {
           return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;border-left-color:var(--red);" onclick="openKline('${s.ticker}')">
             <div class="signal-rank" style="color:var(--red);">${i + 1}</div>
             <div style="flex:1;">
               <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''}</div>
               <div class="signal-detail" style="color:var(--red);">${s.reasons.join(' | ')}</div>
             </div>
-            <div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📈</span></div>
+            <div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📉 SELL</span></div>
           </div>`;
-        }).join('')}</div>`;
+        }).join('');
+        list.innerHTML += `</div>`;
       }
     } catch(e) {}
   } catch(e) {
@@ -1124,7 +1134,7 @@ async function openKline(ticker) {
       }
     });
 
-    // --- Summary with entry/exit reasons ---
+    // ── Summary with entry/exit reasons + historical performance ──
     const last = targetDays[targetDays.length - 1];
     const exitRsi = last.rsi14 < 35;
     const exitBreak = last.dist_ma20 < -5;
@@ -1143,6 +1153,29 @@ async function openKline(ticker) {
     if (exitConsec) exitReasons.push('⚠️ 連續下跌中');
     if (last.adx > 25 && last.pdi < last.mdi) exitReasons.push('⚠️ DMI空頭(PDI<MDI)');
 
+    // ── 載入歷史回測績效 ──
+    let perfHtml = '';
+    try {
+      const perfResp = await fetch(STOCK_PERF_URL);
+      if (perfResp.ok) {
+        const perfData = await perfResp.json();
+        const stock = perfData.find(p => p.ticker === ticker);
+        if (stock && stock.total_trades > 0) {
+          const plColor = stock.total_pl >= 0 ? 'var(--green)' : 'var(--red)';
+          perfHtml = `<div style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);">
+            <div style="font-weight:600;font-size:0.85rem;margin-bottom:4px;">📊 歷史回測績效 (2004-2026)</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;font-size:0.8rem;">
+              <div>交易次數: <strong>${stock.total_trades}</strong></div>
+              <div>總損益: <strong style="color:${plColor}">${stock.total_pl >= 0 ? '+' : ''}${stock.total_pl.toLocaleString()}</strong></div>
+              <div>勝率: <strong>${stock.win_rate}%</strong></div>
+              <div>平均每筆: <strong style="color:${plColor}">${stock.avg_pl_per_trade >= 0 ? '+' : ''}${stock.avg_pl_per_trade.toLocaleString()}</strong></div>
+              <div>獲利: <strong style="color:var(--green)">${stock.win_count}</strong> / 虧損: <strong style="color:var(--red)">${stock.loss_count}</strong></div>
+            </div>
+          </div>`;
+        }
+      }
+    } catch(e) {}
+
     document.getElementById('kline-summary').innerHTML = `
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px;">
         <div>收盤: <strong>${last.c}</strong></div>
@@ -1157,6 +1190,7 @@ async function openKline(ticker) {
       ${entryReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--green);font-size:0.85rem;">🟢 進場原因<br>${entryReasons.join('<br>')}</div>` : ''}
       ${exitReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--red);font-size:0.85rem;">🔴 出場原因<br>${exitReasons.join('<br>')}</div>` : ''}
       ${entryReasons.length === 0 && exitReasons.length === 0 ? '<div style="color:var(--text-dim);font-size:0.8rem;border-top:1px solid #334155;padding-top:4px;">目前無明顯進出場訊號</div>' : ''}
+      ${perfHtml}
       <div style="margin-top:4px;font-size:0.75rem;color:var(--text-dim);border-top:1px solid #334155;padding-top:4px;">
         🟢倒三角=買進訊號 | 🔴倒三角=出場訊號（圖上標記僅供參考）
       </div>`;
