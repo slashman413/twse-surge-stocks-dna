@@ -9,7 +9,6 @@ import os, sys, time, json, gc, math
 import pandas as pd
 import numpy as np
 import yfinance as yf
-sys.path.insert(0, r"D:\Hermes-Agent\大飆股DNA台股篩選")
 from indicators import macd_4arrows, dmi, wr, rsi
 from strategy import _safe_last
 
@@ -19,21 +18,21 @@ OUT_DIR = r"D:\twse-surge-stocks-dna\docs\yearly_backtests"
 os.makedirs(OUT_DIR, exist_ok=True)
 VERSION = "v12"
 
-INITIAL_CAPITAL = 1_000_000
-MAX_POSITIONS = 10       # more slots = less churn pressure
-MAX_DAILY_ENTRIES = 2    # C) max 2 buys/day
-POSITION_SIZE = INITIAL_CAPITAL // 20  # ~50k per position
+INITIAL_CAPITAL = 3_000_000
+MAX_POSITIONS = 10
+MAX_DAILY_ENTRIES = 2
+POSITION_SIZE = INITIAL_CAPITAL // 10  # ~300k per position (10%)
 MIN_PRICE = 10
 MIN_VOLUME = 1000
 STOP_LOSS_PCT = -15      # tighter stop
-TRAIL_STOP_PCT = -10     # tighter trail
+TRAIL_STOP_PCT = -15     # 放寬與硬停損一致
 TAKE_PROFIT_50 = 20
 RSI_EXIT = 35
 
 
 def load_market_data(year):
     twii = yf.Ticker("^TWII")
-    df = twii.history(start=f"{year}-01-01", end=f"{year+1}-01-01")
+    df = twii.history(start=f"{year-1}-01-01", end=f"{year+1}-01-01")
     if df.empty:
         return None
     df.index = pd.to_datetime(df.index.date)
@@ -41,7 +40,7 @@ def load_market_data(year):
     return df
 
 
-def compute_market_signals(mkt):
+def compute_market_signals(mkt, target_year):
     if mkt is None or len(mkt) < 100:
         return {}
     close = mkt["Close"].values.astype(np.float64)
@@ -72,6 +71,9 @@ def compute_market_signals(mkt):
     signals = {}
     for i in range(len(dates)):
         d = pd.Timestamp(dates[i]).strftime("%Y-%m-%d")
+        dt = pd.Timestamp(dates[i])
+        if dt.year != target_year:
+            continue  # only emit signals for target year
 
         bullish = False
         if (not np.isnan(n2_arr[i]) and close[i] > n2_arr[i] and
@@ -92,8 +94,34 @@ def compute_market_signals(mkt):
     return signals
 
 
-def compute_stock_signals(grp):
-    """Screen stocks with original indicators. Return HIGH-QUALITY candidates + daily prices."""
+def fix_bad_data(close, high, low, volume, threshold=0.30):
+    """Replace bad data points (single-day drop >threshold that recovers next day)."""
+    n = len(close)
+    ret = np.diff(close) / np.maximum(close[:-1], 1e-10)
+    bad_mask = np.zeros(n, dtype=bool)
+    for i in range(1, n - 1):
+        if ret[i - 1] < -threshold and close[i] > 0:
+            prev_val = close[i - 1]
+            next_val = close[i + 1]
+            if next_val > 0 and prev_val > 0:
+                recovery = (next_val - prev_val) / prev_val
+                if recovery > -0.10:
+                    bad_mask[i] = True
+    if bad_mask.any():
+        close = close.copy()
+        high = high.copy()
+        low = low.copy()
+        volume = volume.copy()
+        for i in np.where(bad_mask)[0]:
+            close[i] = close[i - 1]
+            high[i] = max(high[i - 1], high[i + 1] if i + 1 < n else high[i - 1])
+            low[i] = min(low[i - 1], low[i + 1] if i + 1 < n else low[i - 1])
+            volume[i] = volume[i - 1]
+    return close, high, low, volume
+
+
+def compute_stock_signals(grp, target_year):
+    """Screen stocks with original indicators using warmup data. Only emit signals for target_year."""
     grp = grp.reset_index(drop=True)
     close = grp["Adj_Close"].values.astype(np.float64)
     high = grp["Adj_High"].values.astype(np.float64)
@@ -102,18 +130,19 @@ def compute_stock_signals(grp):
     dates = grp["Date"].values
     n = len(close)
 
-    if n < 200:  # need more history for monthly indicators
+    if n < 200:
         return None
 
-    close = np.nan_to_num(close, nan=0.0)
-    high = np.nan_to_num(high, nan=0.0)
-    low = np.nan_to_num(low, nan=0.0)
+    close, high, low, volume = fix_bad_data(close, high, low, volume)
+    close = np.nan_to_num(close, nan=0.0, posinf=0.0, neginf=0.0)
+    high = np.nan_to_num(high, nan=0.0, posinf=0.0, neginf=0.0)
+    low = np.nan_to_num(low, nan=0.0, posinf=0.0, neginf=0.0)
+    volume = np.nan_to_num(volume, nan=0.0, posinf=0.0, neginf=0.0)
 
     close_s = pd.Series(close)
     high_s = pd.Series(high)
     low_s = pd.Series(low)
 
-    # Original indicators (long-term)
     m4 = macd_4arrows(close_s, fast=200, slow=209, signal=210)
     d4_arr = np.nan_to_num(m4["arrows_count"].values, nan=0)
     macd_line = m4.get("macd", pd.Series([np.nan] * n)).values
@@ -128,7 +157,6 @@ def compute_stock_signals(grp):
     wr_arr = np.nan_to_num(wr(high_s, low_s, close_s, 50).values, nan=0)
     wr14_arr = np.nan_to_num(wr(high_s, low_s, close_s, 14).values, nan=0)
 
-    # Key MAs for pullback entry
     ma20 = pd.Series(close).rolling(20).mean().values
     ma50 = pd.Series(close).rolling(50).mean().values
     high20 = pd.Series(high).rolling(20).max().values
@@ -136,7 +164,6 @@ def compute_stock_signals(grp):
     range20 = high20 - low20
     vol_ma20 = pd.Series(volume).rolling(20).mean().values
 
-    # Monthly indicators
     daily = pd.DataFrame({"Date": pd.to_datetime(dates), "Close": close, "High": high, "Low": low, "Volume": volume})
     monthly = daily.resample("ME", on="Date").agg({"Close": "last", "High": "max", "Low": "min"}).dropna()
     weekly = daily.resample("W", on="Date").agg({"Close": "last", "High": "max", "Low": "min", "Volume": "sum"}).dropna()
@@ -171,6 +198,9 @@ def compute_stock_signals(grp):
         d = pd.Timestamp(dates[i]).strftime("%Y-%m-%d")
         price_lookup[d] = float(close[i])
 
+        if pd.Timestamp(dates[i]).year != target_year:
+            continue
+
         d4_val = float(d4_arr[i])
         adx_val = float(adx_arr[i])
         pdi_val = float(pdi_arr[i])
@@ -179,27 +209,22 @@ def compute_stock_signals(grp):
         rsi60_val = float(rsi60_arr[i])
         rsi14_val = float(rsi14_arr[i])
 
-        # ── SCREEN: Original buy conditions (for identifying quality candidates) ──
         is_quality = False
         quality_score = 0
 
-        # Condition A: MACD 4 arrows >= 3 + ADX trending
         d4_ok = d4_val >= 3
         adx_ok = adx_val > 20
         di_ok = pdi_val > mdi_val
         if d4_ok and adx_ok and di_ok:
             quality_score += 30
 
-        # Condition B: Monthly strength
         monthly_bull = m_rsi4 > 70 and m_adx1 > 25
         if monthly_bull:
             quality_score += 25
 
-        # Condition C: WR50 < -20 (not oversold, showing strength)
         if wr_val < -20:
             quality_score += 15
 
-        # Condition D: Bonus conditions
         bonus = 0
         if rsi60_val > 57: bonus += 1
         if not np.isnan(vol_ma20[i]) and volume[i] > vol_ma20[i] * 1.3: bonus += 1
@@ -209,20 +234,15 @@ def compute_stock_signals(grp):
 
         is_quality = quality_score >= 40 and bonus >= 2
 
-        # ── ENTRY: Pullback to 20MA after quality signal ──
         entry_signal = False
         entry_price = 0.0
         entry_score = 0
 
         if is_quality and volume[i] >= MIN_VOLUME and close[i] >= MIN_PRICE:
-            # Distance from 20MA
             if not np.isnan(ma20[i]) and ma20[i] > 0:
                 dist_ma20 = (close[i] - ma20[i]) / ma20[i] * 100
                 dist_ma50 = (close[i] - ma50[i]) / ma50[i] * 100 if not np.isnan(ma50[i]) else 0
 
-                # Pullback condition: price within -2% to +1% of 20MA (tighter)
-                # AND above 50MA (still in uptrend)
-                # AND RSI(14) between 30-60 (room to run, not oversold bounce)
                 at_ma20 = -2 <= dist_ma20 <= 1
                 above_ma50 = dist_ma50 > -3
                 rsi_ok = 30 <= rsi14_val <= 60
@@ -230,7 +250,6 @@ def compute_stock_signals(grp):
                 if at_ma20 and above_ma50 and rsi_ok:
                     entry_signal = True
                     entry_price = close[i]
-                    # Score: prefer stocks closer to 20MA with stronger quality
                     entry_score = quality_score - abs(dist_ma20) * 3 + (m_rsi4 - 70) * 2
 
         if entry_signal:
@@ -255,18 +274,33 @@ def process_year(year):
         return None
 
     print(f"📂 載入 {year} 年資料...", flush=True)
+
+    warmup_path = os.path.join(TEMP_DIR, f"{year-1}.parquet")
+    warmup_df = None
+    if os.path.exists(warmup_path):
+        warmup_df = pd.read_parquet(warmup_path)
+        warmup_df["Date"] = pd.to_datetime(warmup_df["Date"])
+        warmup_df["Ticker"] = warmup_df["Ticker"].astype(str).str.zfill(4)
+        for col in ["Adj_Close", "Adj_High", "Adj_Low"]:
+            warmup_df = warmup_df[warmup_df[col].notna()]
+
     df = pd.read_parquet(f)
     df["Date"] = pd.to_datetime(df["Date"])
     df["Ticker"] = df["Ticker"].astype(str).str.zfill(4)
 
     for col in ["Adj_Close", "Adj_High", "Adj_Low"]:
         df = df[df[col].notna()]
+
+    if warmup_df is not None:
+        df = pd.concat([warmup_df, df], ignore_index=True)
+        print(f"  含 warmup {year-1}, 共 {len(df)} 筆", flush=True)
+
     df = df.sort_values(["Ticker", "Date"]).reset_index(drop=True)
     n_total = len(df)
 
     print(f"📊 載入大盤資料...", flush=True)
     mkt = load_market_data(year)
-    mkt_signals = compute_market_signals(mkt)
+    mkt_signals = compute_market_signals(mkt, year)
     if not mkt_signals:
         return None
 
@@ -278,7 +312,10 @@ def process_year(year):
     valid_tickers = ticker_counts[ticker_counts >= 200].index
 
     for ticker, grp in df[df["Ticker"].isin(valid_tickers)].groupby("Ticker", sort=False):
-        result = compute_stock_signals(grp)
+        t_str = str(ticker).zfill(4)
+        if t_str[:2] in ('00', '01', '02', '03', '04', '05', '06', '07', '08') or len(t_str) != 4:
+            continue
+        result = compute_stock_signals(grp, year)
         if result:
             t, sigs, prices = result
             stock_sigs[t] = sigs
@@ -287,7 +324,6 @@ def process_year(year):
 
     print(f"   {len(stock_sigs)} 檔有訊號", flush=True)
 
-    # Build per-date candidates
     date_candidates = {}
     for ticker, sigs in stock_sigs.items():
         for d, sig in sigs.items():
@@ -315,7 +351,7 @@ def process_year(year):
         trend_up = mkt_sig.get("trend_up", False)
         candidates = date_candidates.get(date, [])
 
-        # Crash liquidate
+        # Crash liquidate (immediate)
         if is_crash and positions:
             for pos in list(positions):
                 sp = price_lookup.get(pos["ticker"], {}).get(date, 0)
@@ -335,7 +371,6 @@ def process_year(year):
             equity_curve.append({"date": date, "equity": round(cash, 2), "type": "crash"})
             continue
 
-        # Per-position exit
         for pos in list(positions):
             sp = price_lookup.get(pos["ticker"], {}).get(date, 0)
             if sp <= 0:
@@ -348,22 +383,18 @@ def process_year(year):
 
             sell = False; reason = ""
 
-            # Stop loss
             if pl_pct <= STOP_LOSS_PCT:
                 sell = True; reason = f"停損({pl_pct:.0f}%)"
-            # Trailing stop
             elif "peak" in pos:
                 dd = (sp - pos["peak"]) / pos["peak"] * 100
                 if dd <= TRAIL_STOP_PCT:
                     sell = True; reason = f"移動停利({dd:.0f}%)"
-            # RSI exit (daily RSI < 35 after 5 days)
             if not sell:
                 days = (pd.Timestamp(date) - pd.Timestamp(pos["buy_date"])).days
                 sig = stock_sigs.get(pos["ticker"], {}).get(date, {})
                 rsi = sig.get("rsi14", 50) if isinstance(sig, dict) else 50
                 if days >= 5 and rsi < RSI_EXIT:
                     sell = True; reason = f"RSI<{RSI_EXIT}"
-            # Take profit half (unchanged)
             if not sell and pl_pct >= TAKE_PROFIT_50 and not pos.get("sold_half"):
                 pos["sold_half"] = True
                 half = pos["shares"] // 2
@@ -376,7 +407,7 @@ def process_year(year):
                         "sell_price": round(sp, 2), "shares": half,
                         "pl": round(half * (sp - pos["buy_price"]), 2),
                         "pl_pct": round((sp - pos["buy_price"]) / pos["buy_price"] * 100, 2),
-                        "sell_reason": f"停利50%"
+                        "sell_reason": "停利50%"
                     })
 
             if sell:
@@ -391,7 +422,6 @@ def process_year(year):
                 })
                 positions.remove(pos)
 
-        # Only buy in bullish + trending
         existing = {p["ticker"] for p in positions}
         if not (is_bullish and trend_up):
             for t, sc, _ in candidates[:MAX_POSITIONS]:
@@ -401,7 +431,6 @@ def process_year(year):
             equity_curve.append({"date": date, "equity": round(cash + pv, 2), "type": "hold"})
             continue
 
-        # Buy (limited entries per day)
         slots = min(MAX_POSITIONS - len(positions), MAX_DAILY_ENTRIES)
         for ticker, score, cp in candidates:
             if slots <= 0: break
@@ -417,7 +446,6 @@ def process_year(year):
         pv = sum(p["shares"] * (price_lookup.get(p["ticker"], {}).get(date, p["buy_price"]) or p["buy_price"]) for p in positions)
         equity_curve.append({"date": date, "equity": round(cash + pv, 2), "type": "daily"})
 
-    # Year-end close
     for pos in list(positions):
         ld = all_dates[-1]
         sp = price_lookup.get(pos["ticker"], {}).get(ld, 0)
@@ -493,7 +521,7 @@ def main():
     avg = sum(s["total_return_pct"] for s in all_summary) / len(all_summary)
 
     print(f"\n{'='*60}")
-    print(f"策略: 加分≥2 + 每日2筆 + 無排名輪動 + 停損-15%/移動停利-10%/RSI<35出場")
+    print(f"策略: 加分≥2 + 每日2筆 + 無排名輪動 + 停損-15%/移動停利-15%/RSI<35出場")
     print(f"初始資金: 1,000,000 | 持倉上限: 10檔 | 個股下限: NT$10 | 日量: ≥1000")
     print(f"{'='*60}")
     print(f"年均報酬率: {avg:>+10.2f}%")

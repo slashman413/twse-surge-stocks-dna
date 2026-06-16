@@ -161,13 +161,9 @@ class DailyScanner:
                 self._show_progress(i, len(tickers), ticker)
 
             try:
-                # 買進訊號
                 buy_result = self.buy_signal.evaluate(ticker)
-
-                # 賣出訊號
                 sell_result = self.sell_signal.evaluate(ticker)
 
-                # 跨週期對齊 (只對買進訊號)
                 if align_signals and buy_result.signal in (
                     TradeSignal.BUY, TradeSignal.STRONG_BUY,
                 ):
@@ -179,7 +175,6 @@ class DailyScanner:
                         monthly=tf["monthly"],
                     )
 
-                # 收集
                 if buy_result.signal in (
                     TradeSignal.BUY, TradeSignal.STRONG_BUY,
                 ):
@@ -242,13 +237,11 @@ class ReportGenerator:
         lines: list[str] = []
         sep = "=" * 60
 
-        # ── 標頭 ──
         lines.append(sep)
         lines.append(f"  TWSE 量化掃描報表 — {report.date}")
         lines.append(sep)
         lines.append("")
 
-        # ── 大盤狀態 ──
         lines.append("📊 大盤狀態")
         lines.append("-" * 40)
         m = report.market
@@ -259,7 +252,6 @@ class ReportGenerator:
             lines.append(f"  指標: {m.indicators}")
         lines.append("")
 
-        # ── 類股燈號 ──
         if report.sector_signals:
             lines.append("📊 類股燈號")
             lines.append("-" * 40)
@@ -267,11 +259,10 @@ class ReportGenerator:
                 lines.append(f"  {light.value} {sector}")
             lines.append("")
 
-        # ── 買進清單 ──
         lines.append(f"📈 建議買進 ({len(report.buy_list)} 檔)")
         lines.append("-" * 40)
         if report.buy_list:
-            for r in report.buy_list[:20]:  # 最多顯示 20 檔
+            for r in report.buy_list[:20]:
                 met = len(r.conditions_met)
                 total = met + len(r.conditions_failed)
                 icon = "🟢" if r.signal == TradeSignal.STRONG_BUY else "🟡"
@@ -287,7 +278,6 @@ class ReportGenerator:
             lines.append("  (無符合條件標的)")
         lines.append("")
 
-        # ── 賣出清單 ──
         lines.append(f"📉 建議減碼/賣出 ({len(report.sell_list)} 檔)")
         lines.append("-" * 40)
         if report.sell_list:
@@ -303,7 +293,6 @@ class ReportGenerator:
             lines.append("  (無符合條件標的)")
         lines.append("")
 
-        # ── 摘要 ──
         lines.append(sep)
         lines.append(report.summary)
         lines.append(sep)
@@ -500,52 +489,35 @@ def run_daily_scan(
 # CLI
 # ═══════════════════════════════════════════════════════════════
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="TWSE 每日量化掃描")
-    parser.add_argument("--watchlist", help="掃描清單 (逗號分隔)")
-    parser.add_argument("--all", action="store_true", help="掃描全市場")
-    parser.add_argument("--report", nargs="?", const="auto", help="輸出報表路徑")
-    parser.add_argument("--format", choices=["text", "html", "csv"],
-                        default="text", help="報表格式")
-    parser.add_argument("--cron", action="store_true",
-                        help="Cron 模式 (靜默執行，輸出 HTML 到 reports/)")
+def main() -> None:
+    parser = argparse.ArgumentParser(description="TWSE 量化交易掃描器")
+    parser.add_argument("--all", action="store_true", help="掃描所有可用股票")
+    parser.add_argument("--watchlist", default=None, help="逗號分隔清單")
+    parser.add_argument("--report", default=None, help="輸出 HTML 報表路徑")
+    parser.add_argument("--csv", default=None, help="輸出 CSV 報表路徑")
+    parser.add_argument("--no-progress", action="store_true", help="隱藏進度")
     args = parser.parse_args()
 
-    # 決定掃描清單
-    tickers = None
-    if args.watchlist:
+    tickers: list[str] | None = None
+    if args.all:
+        loader = TWSEStockLoader()
+        tickers = loader.list_available_tickers()
+        tickers = [t for t in tickers if not t[:2] in ('00','01','02','03','04','05','06','07','08')]
+    elif args.watchlist:
         tickers = [t.strip() for t in args.watchlist.split(",")]
-    elif args.all:
-        tickers = None  # Full market scan (needs ticker list)
 
-    # Cron 模式
-    if args.cron:
-        today = date.today().isoformat()
-        html_path = os.path.join(REPORT_DIR, f"scan_{today}.html")
-        csv_path = os.path.join(REPORT_DIR, f"scan_{today}.csv")
+    progress = not args.no_progress
 
-        print(f"[Cron] TWSE 掃描開始 {today}")
-        t0 = time.time()
-
-        run_daily_scan(tickers, output=html_path, fmt="html", progress=False)
-        run_daily_scan(tickers, output=csv_path, fmt="csv", progress=False)
-
-        elapsed = time.time() - t0
-        print(f"[Cron] 完成 ({elapsed:.0f}秒)")
-        print(f"  HTML: {html_path}")
-        print(f"  CSV:  {csv_path}")
-        sys.exit(0)
-
-    # 一般模式
-    output_path = None
     if args.report:
-        if args.report == "auto":
-            ext = {"text": "txt", "html": "html", "csv": "csv"}[args.format]
-            output_path = os.path.join(
-                REPORT_DIR, f"scan_{date.today().isoformat()}.{ext}",
-            )
-        else:
-            output_path = args.report
+        result = run_daily_scan(tickers, output=args.report, fmt="html", progress=progress)
+        print(f"📊 HTML 報表: {args.report}")
+    elif args.csv:
+        result = run_daily_scan(tickers, output=args.csv, fmt="csv", progress=progress)
+        print(f"📊 CSV 報表: {args.csv}")
+    else:
+        result = run_daily_scan(tickers, fmt="text", progress=progress)
+        print(result)
 
-    result = run_daily_scan(tickers, output=output_path, fmt=args.format)
-    print(result)
+
+if __name__ == "__main__":
+    main()

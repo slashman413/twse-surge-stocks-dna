@@ -1,47 +1,51 @@
-"""Replace 0050 with real TAIEX (^TWII) in all chart JSON files."""
+"""將 TAIEX (加權指數) 資料寫入 chart JSON 檔案中。
+
+用途：提供大盤走勢參考（已從 dashboard 獨立）。
+"""
+
 from __future__ import annotations
 import json, os, sys, time
 import yfinance as yf
 import pandas as pd
 
-CHART_DIR = "D:/twse-surge-stocks-dna/docs/charts"
-charts = sorted(f for f in os.listdir(CHART_DIR) if f.endswith(".json"))
+CHART_DIR = r"D:\twse-surge-stocks-dna\docs\charts"
 
-print(f"Loading ^TWII from yfinance...")
 t = time.time()
-twii = yf.Ticker("^TWII")
-hist = twii.history(start="2004-01-01", end="2008-12-31")
+hist = yf.Ticker("^TWII").history(period="max")
 hist.index = pd.to_datetime(hist.index).tz_localize(None)
-print(f"Loaded {len(hist)} rows in {time.time()-t:.1f}s")
 
-# Build price map
+
 def _r(v, nd=2):
-    try: return round(float(v), nd)
-    except: return 0.0
+    try:
+        return round(float(v), nd)
+    except Exception:
+        return 0.0
+
 
 taiex_rows = []
 for dt, row in hist.iterrows():
     taiex_rows.append({
-        "d": dt.strftime("%Y-%m-%d"),
-        "o": _r(row["Open"]), "h": _r(row["High"]),
-        "l": _r(row["Low"]), "c": _r(row["Close"]),
-        "v": int(row["Volume"]),
+        "date": dt.strftime("%Y-%m-%d"),
+        "close": _r(row["Close"]),
+        "high": _r(row["High"]),
+        "low": _r(row["Low"]),
+        "open": _r(row["Open"]),
+        "volume": int(row["Volume"]) if not pd.isna(row["Volume"]) else 0,
     })
-print(f"TAIEX rows: {len(taiex_rows)}")
+
+print(f"TAIEX: {len(taiex_rows)} 筆", flush=True)
 
 t0 = time.time()
+charts = [f for f in os.listdir(CHART_DIR) if f.endswith(".json") and "_" in f]
+
 for idx, fname in enumerate(charts):
     path = os.path.join(CHART_DIR, fname)
     with open(path) as f:
         data = json.load(f)
-    
     data["taiex"] = taiex_rows
-    
     with open(path, "w") as f:
-        json.dump(data, f, ensure_ascii=False, separators=(",",":"))
-    
+        json.dump(data, f, ensure_ascii=False, default=str)
     if (idx + 1) % 50 == 0:
-        print(f"[{idx+1}/{len(charts)}] updated")
+        print(f"  {idx+1}/{len(charts)} ({time.time()-t0:.0f}s)", flush=True)
 
-print(f"Done! {len(charts)} charts updated in {time.time()-t0:.1f}s")
-print(f"TAIEX data: {min(r['d'] for r in taiex_rows)} ~ {max(r['d'] for r in taiex_rows)}")
+print(f"✅ TAIEX 資料已寫入 {len(charts)} 檔 chart JSON ({time.time()-t:.0f}s)", flush=True)
