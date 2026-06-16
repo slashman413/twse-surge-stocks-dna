@@ -248,7 +248,7 @@
       <h2>📌 策略說明</h2>
       <div style="padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;font-size:0.9rem;color:var(--text-dim);line-height:1.8;">
         <p>篩選條件：買進日大盤多頭 + 趨勢向上 + 個股拉回20MA(-2%~+1%) + RSI14(30~60) + 加分≥2</p>
-        <p>出場規則：停損-15% / 移動停利-10% / RSI<35 / 分批停利50% / 大盤崩跌清倉</p>
+        <p>出場規則：停損-15% / 移動停利-15% / RSI<35 / 分批停利50% / 大盤崩跌清倉</p>
         <p style="margin-top:8px;color:var(--yellow);">⚠️ 以上訊號為策略篩選結果，僅供參考，並非投資建議。</p>
       </div>
     </div>
@@ -471,7 +471,7 @@ function renderYearly(data) {
       <div><strong style="color:var(--red);">${worstYear.year}年 (${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%)</strong><br>最差年份</div>
     </div>
     <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
-      初始資金 300 萬，趨勢拉回20MA買進 + 停損-20%/移動停利-12%/RSI<35 + 月RSI4>70/ADX1>25 + 日量≥1000。
+      初始資金 300 萬，趨勢拉回20MA買進 + 停損-15%/移動停利-15%/RSI<35 + 月RSI4>70/ADX1>25 + 加分≥2 + 日量≥1000。
       策略在 <strong style="color:var(--green);">${bestYear.year}</strong> 年最佳（${bestYear.total_return_pct >= 0 ? '+' : ''}${bestYear.total_return_pct}%），
       <strong style="color:var(--red);">${worstYear.year}</strong> 年最差（${worstYear.total_return_pct >= 0 ? '+' : ''}${worstYear.total_return_pct}%）。
       共 ${winYears}/${nYears} 年正報酬，年化報酬率 ${cagr >= 0 ? '+' : ''}${cagr.toFixed(2)}%，

@@ -1,17 +1,6 @@
 {
   "trades": [
     {
-      "ticker": "3054",
-      "buy_date": "2025-01-07",
-      "buy_price": 24.45,
-      "sell_date": "2025-01-10",
-      "sell_price": 22.4,
-      "shares": 12269,
-      "pl": -25151.46,
-      "pl_pct": -8.38,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
       "ticker": "2891",
       "buy_date": "2025-01-06",
       "buy_price": 37.65,
@@ -23,25 +12,25 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "4977",
-      "buy_date": "2025-01-09",
-      "buy_price": 145.72,
+      "ticker": "3054",
+      "buy_date": "2025-01-07",
+      "buy_price": 24.45,
       "sell_date": "2025-01-14",
-      "sell_price": 126.58,
-      "shares": 2058,
-      "pl": -39379.65,
-      "pl_pct": -13.13,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+      "sell_price": 21.0,
+      "shares": 12269,
+      "pl": -42328.06,
+      "pl_pct": -14.11,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
     },
     {
-      "ticker": "2838A",
+      "ticker": "3090",
       "buy_date": "2025-01-06",
-      "buy_price": 51.38,
+      "buy_price": 64.0,
       "sell_date": "2025-01-15",
-      "sell_price": 51.58,
-      "shares": 5838,
-      "pl": 1125.6,
-      "pl_pct": 0.38,
+      "sell_price": 61.09,
+      "shares": 4687,
+      "pl": -13614.76,
+      "pl_pct": -4.54,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -78,14 +67,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2441",
+      "ticker": "4977",
       "buy_date": "2025-01-09",
-      "buy_price": 57.34,
+      "buy_price": 145.72,
       "sell_date": "2025-01-15",
-      "sell_price": 58.21,
-      "shares": 5231,
-      "pl": 4567.84,
-      "pl_pct": 1.52,
+      "sell_price": 123.64,
+      "shares": 2058,
+      "pl": -45438.05,
+      "pl_pct": -15.15,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "8021",
+      "buy_date": "2025-01-09",
+      "buy_price": 31.95,
+      "sell_date": "2025-01-15",
+      "sell_price": 30.75,
+      "shares": 9388,
+      "pl": -11277.44,
+      "pl_pct": -3.76,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -98,17 +98,6 @@
       "pl": -5901.2,
       "pl_pct": -1.97,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "2383",
-      "buy_date": "2025-01-16",
-      "buy_price": 575.2,
-      "sell_date": "2025-02-04",
-      "sell_price": 533.2,
-      "shares": 521,
-      "pl": -21877.93,
-      "pl_pct": -7.3,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "6209",
@@ -133,6 +122,17 @@
       "sell_reason": "RSI<35"
     },
     {
+      "ticker": "2383",
+      "buy_date": "2025-01-16",
+      "buy_price": 575.2,
+      "sell_date": "2025-03-04",
+      "sell_price": 589.84,
+      "shares": 521,
+      "pl": 7631.84,
+      "pl_pct": 2.55,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "6209",
       "buy_date": "2025-01-16",
       "buy_price": 27.0,
@@ -144,25 +144,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "8112A",
+      "ticker": "3057",
       "buy_date": "2025-01-17",
-      "buy_price": 42.06,
+      "buy_price": 11.7,
       "sell_date": "2025-03-04",
-      "sell_price": 42.59,
-      "shares": 7132,
-      "pl": 3758.23,
-      "pl_pct": 1.25,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2836A",
-      "buy_date": "2025-01-20",
-      "buy_price": 21.71,
-      "sell_date": "2025-03-04",
-      "sell_price": 22.05,
-      "shares": 13818,
-      "pl": 4687.5,
-      "pl_pct": 1.56,
+      "sell_price": 11.9,
+      "shares": 25641,
+      "pl": 5128.19,
+      "pl_pct": 1.71,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -177,14 +166,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "3057",
-      "buy_date": "2025-01-21",
-      "buy_price": 11.7,
+      "ticker": "2880",
+      "buy_date": "2025-01-20",
+      "buy_price": 25.76,
       "sell_date": "2025-03-04",
-      "sell_price": 11.9,
-      "shares": 25641,
-      "pl": 5128.19,
-      "pl_pct": 1.71,
+      "sell_price": 26.1,
+      "shares": 11643,
+      "pl": 3852.9,
+      "pl_pct": 1.28,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -199,47 +188,47 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2887F",
-      "buy_date": "2025-01-22",
-      "buy_price": 45.21,
+      "ticker": "6136",
+      "buy_date": "2025-01-21",
+      "buy_price": 21.4,
       "sell_date": "2025-03-04",
-      "sell_price": 45.4,
-      "shares": 6636,
-      "pl": 1277.95,
-      "pl_pct": 0.43,
+      "sell_price": 22.56,
+      "shares": 14021,
+      "pl": 16374.63,
+      "pl_pct": 5.46,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6691",
+      "buy_date": "2025-01-22",
+      "buy_price": 421.19,
+      "sell_date": "2025-03-04",
+      "sell_price": 393.34,
+      "shares": 712,
+      "pl": -19824.54,
+      "pl_pct": -6.61,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
       "ticker": "4764",
-      "buy_date": "2025-02-05",
-      "buy_price": 41.59,
+      "buy_date": "2025-02-12",
+      "buy_price": 41.68,
       "sell_date": "2025-03-04",
       "sell_price": 41.77,
-      "shares": 7212,
-      "pl": 1292.94,
-      "pl_pct": 0.43,
+      "shares": 7197,
+      "pl": 645.13,
+      "pl_pct": 0.22,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2880",
-      "buy_date": "2025-02-12",
-      "buy_price": 26.24,
-      "sell_date": "2025-03-04",
-      "sell_price": 26.1,
-      "shares": 11434,
-      "pl": -1621.6,
-      "pl_pct": -0.54,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "6770",
+      "ticker": "6796",
       "buy_date": "2025-02-13",
-      "buy_price": 18.15,
+      "buy_price": 73.07,
       "sell_date": "2025-03-04",
-      "sell_price": 18.0,
-      "shares": 16528,
-      "pl": -2479.19,
-      "pl_pct": -0.83,
+      "sell_price": 70.13,
+      "shares": 4105,
+      "pl": -12066.37,
+      "pl_pct": -4.02,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -265,69 +254,25 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "2383",
-      "buy_date": "2025-07-30",
-      "buy_price": 981.45,
-      "sell_date": "2025-08-20",
-      "sell_price": 1123.05,
-      "shares": 153,
-      "pl": 21665.04,
-      "pl_pct": 14.43,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
       "ticker": "2607",
-      "buy_date": "2025-07-21",
-      "buy_price": 34.6,
+      "buy_date": "2025-07-18",
+      "buy_price": 34.7,
       "sell_date": "2025-08-25",
       "sell_price": 35.2,
-      "shares": 8670,
-      "pl": 5202.02,
-      "pl_pct": 1.73,
+      "shares": 8645,
+      "pl": 4322.5,
+      "pl_pct": 1.44,
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "3037",
-      "buy_date": "2025-08-13",
-      "buy_price": 132.59,
-      "sell_date": "2025-09-01",
-      "sell_price": 129.23,
-      "shares": 2262,
-      "pl": -7606.53,
-      "pl_pct": -2.54,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
-      "ticker": "8021",
-      "buy_date": "2025-08-25",
-      "buy_price": 87.74,
-      "sell_date": "2025-09-01",
-      "sell_price": 78.32,
-      "shares": 3419,
-      "pl": -32199.78,
-      "pl_pct": -10.73,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "2368",
-      "buy_date": "2025-08-20",
-      "buy_price": 443.5,
-      "sell_date": "2025-09-02",
-      "sell_price": 435.0,
-      "shares": 676,
-      "pl": -5746.0,
-      "pl_pct": -1.92,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
-    },
-    {
       "ticker": "6796",
-      "buy_date": "2025-07-30",
-      "buy_price": 66.18,
+      "buy_date": "2025-07-28",
+      "buy_price": 67.19,
       "sell_date": "2025-09-08",
       "sell_price": 67.04,
-      "shares": 4533,
-      "pl": 3910.24,
-      "pl_pct": 1.3,
+      "shares": 4465,
+      "pl": -648.26,
+      "pl_pct": -0.22,
       "sell_reason": "RSI<35"
     },
     {
@@ -342,6 +287,28 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
+      "ticker": "8021",
+      "buy_date": "2025-08-25",
+      "buy_price": 87.74,
+      "sell_date": "2025-09-15",
+      "sell_price": 80.34,
+      "shares": 3419,
+      "pl": -25299.83,
+      "pl_pct": -8.43,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
+    },
+    {
+      "ticker": "2329",
+      "buy_date": "2025-07-30",
+      "buy_price": 38.85,
+      "sell_date": "2025-09-17",
+      "sell_price": 47.69,
+      "shares": 3860,
+      "pl": 34093.24,
+      "pl_pct": 22.73,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
       "ticker": "2607",
       "buy_date": "2025-09-15",
       "buy_price": 34.7,
@@ -353,15 +320,37 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
+      "ticker": "2383",
+      "buy_date": "2025-07-30",
+      "buy_price": 981.45,
+      "sell_date": "2025-10-15",
+      "sell_price": 1140.0,
+      "shares": 153,
+      "pl": 24258.87,
+      "pl_pct": 16.16,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+    },
+    {
+      "ticker": "2408",
+      "buy_date": "2025-10-15",
+      "buy_price": 86.3,
+      "sell_date": "2025-10-17",
+      "sell_price": 104.0,
+      "shares": 1738,
+      "pl": 30762.59,
+      "pl_pct": 20.51,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
       "ticker": "6155",
-      "buy_date": "2025-09-01",
-      "buy_price": 22.6,
-      "sell_date": "2025-10-14",
-      "sell_price": 23.2,
-      "shares": 13274,
-      "pl": 7964.41,
-      "pl_pct": 2.65,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+      "buy_date": "2025-09-08",
+      "buy_price": 22.55,
+      "sell_date": "2025-10-21",
+      "sell_price": 29.5,
+      "shares": 6651,
+      "pl": 46224.46,
+      "pl_pct": 30.82,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "8422",
@@ -375,15 +364,37 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
+      "ticker": "3037",
+      "buy_date": "2025-08-13",
+      "buy_price": 132.59,
+      "sell_date": "2025-10-29",
+      "sell_price": 159.49,
+      "shares": 1131,
+      "pl": 30426.12,
+      "pl_pct": 20.29,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
       "ticker": "2801",
-      "buy_date": "2025-07-28",
-      "buy_price": 18.59,
+      "buy_date": "2025-07-21",
+      "buy_price": 18.73,
       "sell_date": "2025-10-31",
       "sell_price": 19.8,
-      "shares": 16135,
-      "pl": 19479.28,
-      "pl_pct": 6.49,
+      "shares": 16015,
+      "pl": 17106.74,
+      "pl_pct": 5.7,
       "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "6155",
+      "buy_date": "2025-09-08",
+      "buy_price": 22.55,
+      "sell_date": "2025-11-04",
+      "sell_price": 26.45,
+      "shares": 6652,
+      "pl": 25942.81,
+      "pl_pct": 17.29,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-17%)"
     },
     {
       "ticker": "2441",
@@ -408,25 +419,25 @@
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-25%)"
     },
     {
-      "ticker": "3535",
-      "buy_date": "2025-10-14",
-      "buy_price": 78.3,
+      "ticker": "8131",
+      "buy_date": "2025-11-04",
+      "buy_price": 36.25,
       "sell_date": "2025-11-10",
-      "sell_price": 70.9,
-      "shares": 3831,
-      "pl": -28349.41,
-      "pl_pct": -9.45,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
+      "sell_price": 44.3,
+      "shares": 4137,
+      "pl": 33302.85,
+      "pl_pct": 22.21,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "2836",
-      "buy_date": "2025-09-08",
-      "buy_price": 11.7,
+      "buy_date": "2025-11-06",
+      "buy_price": 12.25,
       "sell_date": "2025-11-17",
       "sell_price": 12.0,
-      "shares": 25641,
-      "pl": 7692.3,
-      "pl_pct": 2.56,
+      "shares": 24489,
+      "pl": -6122.25,
+      "pl_pct": -2.04,
       "sell_reason": "RSI<35"
     },
     {
@@ -441,48 +452,26 @@
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
     },
     {
-      "ticker": "8021",
-      "buy_date": "2025-11-10",
-      "buy_price": 114.84,
-      "sell_date": "2025-11-19",
-      "sell_price": 114.36,
-      "shares": 2612,
-      "pl": -1255.08,
-      "pl_pct": -0.42,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
-    },
-    {
-      "ticker": "2441",
-      "buy_date": "2025-08-14",
-      "buy_price": 60.25,
+      "ticker": "2408",
+      "buy_date": "2025-10-15",
+      "buy_price": 86.3,
       "sell_date": "2025-11-21",
-      "sell_price": 69.0,
-      "shares": 2490,
-      "pl": 21781.54,
-      "pl_pct": 14.52,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "sell_price": 140.0,
+      "shares": 1738,
+      "pl": 93330.59,
+      "pl_pct": 62.22,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
     },
     {
-      "ticker": "3037",
-      "buy_date": "2025-11-06",
-      "buy_price": 159.01,
-      "sell_date": "2025-12-01",
-      "sell_price": 197.0,
-      "shares": 943,
-      "pl": 35824.75,
-      "pl_pct": 23.89,
-      "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "8110",
-      "buy_date": "2025-11-20",
-      "buy_price": 35.8,
-      "sell_date": "2025-12-08",
-      "sell_price": 43.55,
-      "shares": 4189,
-      "pl": 32464.75,
-      "pl_pct": 21.65,
-      "sell_reason": "\u505c\u522950%"
+      "ticker": "8131",
+      "buy_date": "2025-11-04",
+      "buy_price": 36.25,
+      "sell_date": "2025-11-21",
+      "sell_price": 38.7,
+      "shares": 4138,
+      "pl": 10138.1,
+      "pl_pct": 6.76,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-20%)"
     },
     {
       "ticker": "8021",
@@ -529,17 +518,6 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "8112A",
-      "buy_date": "2025-07-18",
-      "buy_price": 42.6,
-      "sell_date": "2025-12-18",
-      "sell_price": 43.95,
-      "shares": 7042,
-      "pl": 9506.74,
-      "pl_pct": 3.17,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "2890",
       "buy_date": "2025-07-28",
       "buy_price": 23.63,
@@ -551,14 +529,36 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2887E",
-      "buy_date": "2025-09-02",
-      "buy_price": 48.5,
+      "ticker": "2329",
+      "buy_date": "2025-07-30",
+      "buy_price": 38.85,
       "sell_date": "2025-12-18",
-      "sell_price": 49.6,
-      "shares": 6185,
-      "pl": 6803.49,
-      "pl_pct": 2.27,
+      "sell_price": 51.31,
+      "shares": 3861,
+      "pl": 48087.76,
+      "pl_pct": 32.06,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3037",
+      "buy_date": "2025-08-13",
+      "buy_price": 132.59,
+      "sell_date": "2025-12-18",
+      "sell_price": 207.0,
+      "shares": 1131,
+      "pl": 84159.71,
+      "pl_pct": 56.12,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2441",
+      "buy_date": "2025-08-14",
+      "buy_price": 60.25,
+      "sell_date": "2025-12-18",
+      "sell_price": 83.4,
+      "shares": 2490,
+      "pl": 57637.54,
+      "pl_pct": 38.42,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -570,17 +570,6 @@
       "shares": 15151,
       "pl": 14393.46,
       "pl_pct": 4.8,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3037",
-      "buy_date": "2025-11-06",
-      "buy_price": 159.01,
-      "sell_date": "2025-12-18",
-      "sell_price": 207.0,
-      "shares": 943,
-      "pl": 45254.75,
-      "pl_pct": 30.18,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -606,17 +595,6 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "8110",
-      "buy_date": "2025-11-20",
-      "buy_price": 35.8,
-      "sell_date": "2025-12-18",
-      "sell_price": 51.6,
-      "shares": 4190,
-      "pl": 66202.0,
-      "pl_pct": 44.13,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "5521",
       "buy_date": "2025-11-26",
       "buy_price": 14.65,
@@ -625,6 +603,17 @@
       "shares": 10239,
       "pl": 65017.65,
       "pl_pct": 43.34,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2880",
+      "buy_date": "2025-11-26",
+      "buy_price": 29.2,
+      "sell_date": "2025-12-18",
+      "sell_price": 31.7,
+      "shares": 10273,
+      "pl": 25682.5,
+      "pl_pct": 8.56,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -637,17 +626,6 @@
       "pl": 645.09,
       "pl_pct": 0.22,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "8039",
-      "buy_date": "2025-12-22",
-      "buy_price": 95.0,
-      "sell_date": "2025-12-31",
-      "sell_price": 85.2,
-      "shares": 3157,
-      "pl": -30938.61,
-      "pl_pct": -10.32,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
     {
       "ticker": "2383",
@@ -669,6 +647,17 @@
       "shares": 4371,
       "pl": 47540.07,
       "pl_pct": 15.85,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "8039",
+      "buy_date": "2025-12-22",
+      "buy_price": 95.0,
+      "sell_date": "2025-12-31 (\u5e74\u7d42)",
+      "sell_price": 85.2,
+      "shares": 3157,
+      "pl": -30938.61,
+      "pl_pct": -10.32,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -705,17 +694,6 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "8112A",
-      "buy_date": "2025-12-24",
-      "buy_price": 44.1,
-      "sell_date": "2025-12-31 (\u5e74\u7d42)",
-      "sell_price": 44.8,
-      "shares": 6802,
-      "pl": 4761.4,
-      "pl_pct": 1.59,
-      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
-    },
-    {
       "ticker": "2801",
       "buy_date": "2025-12-24",
       "buy_price": 20.85,
@@ -724,6 +702,17 @@
       "shares": 14388,
       "pl": -5755.19,
       "pl_pct": -1.92,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2607",
+      "buy_date": "2025-12-24",
+      "buy_price": 58.0,
+      "sell_date": "2025-12-31 (\u5e74\u7d42)",
+      "sell_price": 57.7,
+      "shares": 5172,
+      "pl": -1551.6,
+      "pl_pct": -0.52,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -747,17 +736,6 @@
       "pl": 8131.06,
       "pl_pct": 2.71,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
-    },
-    {
-      "ticker": "6155",
-      "buy_date": "2025-12-31",
-      "buy_price": 44.05,
-      "sell_date": "2025-12-31 (\u5e74\u7d42)",
-      "sell_price": 44.05,
-      "shares": 6810,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     }
   ],
   "equity_curve": [
@@ -778,1202 +756,1202 @@
     },
     {
       "date": "2025-01-07",
-      "equity": 2998477.26,
+      "equity": 2996281.34,
       "type": "daily"
     },
     {
       "date": "2025-01-08",
-      "equity": 3000685.84,
+      "equity": 2997735.14,
       "type": "daily"
     },
     {
       "date": "2025-01-09",
-      "equity": 2949906.97,
+      "equity": 2940368.5,
       "type": "daily"
     },
     {
       "date": "2025-01-10",
-      "equity": 2961549.7,
+      "equity": 2947558.6,
       "type": "hold"
     },
     {
       "date": "2025-01-13",
-      "equity": 2919317.79,
+      "equity": 2867477.08,
       "type": "hold"
     },
     {
       "date": "2025-01-14",
-      "equity": 2907607.94,
+      "equity": 2863417.57,
       "type": "hold"
     },
     {
       "date": "2025-01-15",
-      "equity": 2914835.32,
+      "equity": 2861014.68,
       "type": "crash"
     },
     {
       "date": "2025-01-16",
-      "equity": 2914835.32,
+      "equity": 2861014.68,
       "type": "daily"
     },
     {
       "date": "2025-01-17",
-      "equity": 2913858.92,
+      "equity": 2860038.28,
       "type": "daily"
     },
     {
       "date": "2025-01-20",
-      "equity": 2920119.06,
+      "equity": 2863051.02,
       "type": "daily"
     },
     {
       "date": "2025-01-21",
-      "equity": 2916123.51,
+      "equity": 2864355.6,
       "type": "daily"
     },
     {
       "date": "2025-01-22",
-      "equity": 2942301.4,
+      "equity": 2894343.41,
       "type": "daily"
     },
     {
       "date": "2025-02-03",
-      "equity": 2888915.74,
+      "equity": 2844195.4,
       "type": "hold"
     },
     {
       "date": "2025-02-04",
-      "equity": 2893472.02,
+      "equity": 2834616.33,
       "type": "hold"
     },
     {
       "date": "2025-02-05",
-      "equity": 2916771.67,
+      "equity": 2874580.07,
       "type": "daily"
     },
     {
       "date": "2025-02-06",
-      "equity": 2944175.38,
+      "equity": 2915201.3,
       "type": "daily"
     },
     {
       "date": "2025-02-07",
-      "equity": 2962682.5,
+      "equity": 2938118.63,
       "type": "daily"
     },
     {
       "date": "2025-02-10",
-      "equity": 2943221.64,
+      "equity": 2914421.91,
       "type": "daily"
     },
     {
       "date": "2025-02-11",
-      "equity": 2942957.09,
+      "equity": 2906208.11,
       "type": "daily"
     },
     {
       "date": "2025-02-12",
-      "equity": 2979936.24,
+      "equity": 2934924.42,
       "type": "daily"
     },
     {
       "date": "2025-02-13",
-      "equity": 2983605.67,
+      "equity": 2943356.79,
       "type": "daily"
     },
     {
       "date": "2025-02-14",
-      "equity": 2989565.57,
+      "equity": 2934652.51,
       "type": "hold"
     },
     {
       "date": "2025-02-17",
-      "equity": 3005394.89,
+      "equity": 2956554.74,
       "type": "daily"
     },
     {
       "date": "2025-02-18",
-      "equity": 3022778.05,
+      "equity": 3017559.66,
       "type": "daily"
     },
     {
       "date": "2025-02-19",
-      "equity": 3035509.28,
+      "equity": 3042512.08,
       "type": "daily"
     },
     {
       "date": "2025-02-20",
-      "equity": 3014178.21,
+      "equity": 2998169.23,
       "type": "daily"
     },
     {
       "date": "2025-02-21",
-      "equity": 3023873.25,
+      "equity": 3006028.04,
       "type": "daily"
     },
     {
       "date": "2025-02-24",
-      "equity": 3004881.9,
+      "equity": 2995245.28,
       "type": "daily"
     },
     {
       "date": "2025-02-25",
-      "equity": 2990025.89,
+      "equity": 2952596.9,
       "type": "daily"
     },
     {
       "date": "2025-02-26",
-      "equity": 2994622.14,
+      "equity": 2981545.81,
       "type": "daily"
     },
     {
       "date": "2025-02-27",
-      "equity": 2992088.87,
+      "equity": 2968330.89,
       "type": "hold"
     },
     {
       "date": "2025-03-03",
-      "equity": 2959054.51,
+      "equity": 2935913.07,
       "type": "hold"
     },
     {
       "date": "2025-03-04",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "crash"
     },
     {
       "date": "2025-03-05",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-06",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-07",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-10",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-11",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-12",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-13",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-14",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-17",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-18",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-19",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-20",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-21",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-24",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-25",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-26",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-27",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-28",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-03-31",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-01",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-02",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-07",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-08",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-09",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-10",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-11",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-14",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-15",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-16",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-17",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-18",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-21",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-22",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-23",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-24",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-25",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-28",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-29",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-04-30",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-02",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-05",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-06",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-07",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-08",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-09",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-12",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-13",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-14",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-15",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-16",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-19",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-20",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-21",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-22",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-23",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-26",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-27",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-28",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-05-29",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-02",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-03",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-04",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-05",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-06",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-09",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-10",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-11",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-12",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-13",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-16",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-17",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-18",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-19",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-20",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-23",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-24",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-25",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-26",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-27",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-06-30",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-01",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-02",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-03",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-04",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-07",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-08",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-09",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-10",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-11",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-14",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-15",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-16",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-17",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "hold"
     },
     {
       "date": "2025-07-18",
-      "equity": 2978519.9,
+      "equity": 2936274.95,
       "type": "daily"
     },
     {
       "date": "2025-07-21",
-      "equity": 2981906.5,
+      "equity": 2939501.22,
       "type": "daily"
     },
     {
       "date": "2025-07-22",
-      "equity": 2973985.49,
+      "equity": 2932331.5,
       "type": "hold"
     },
     {
       "date": "2025-07-23",
-      "equity": 2990541.91,
+      "equity": 2949262.11,
       "type": "hold"
     },
     {
       "date": "2025-07-24",
-      "equity": 2995699.12,
+      "equity": 2952231.28,
       "type": "hold"
     },
     {
       "date": "2025-07-25",
-      "equity": 2989027.77,
+      "equity": 2944826.11,
       "type": "hold"
     },
     {
       "date": "2025-07-28",
-      "equity": 2988976.92,
+      "equity": 2943293.9,
       "type": "daily"
     },
     {
       "date": "2025-07-29",
-      "equity": 2979437.04,
+      "equity": 2928920.03,
       "type": "hold"
     },
     {
       "date": "2025-07-30",
-      "equity": 2989522.25,
+      "equity": 2939693.9,
       "type": "daily"
     },
     {
       "date": "2025-07-31",
-      "equity": 3014270.35,
+      "equity": 2967863.23,
       "type": "daily"
     },
     {
       "date": "2025-08-01",
-      "equity": 3035408.14,
+      "equity": 2987097.1,
       "type": "hold"
     },
     {
       "date": "2025-08-04",
-      "equity": 3069751.47,
+      "equity": 3017504.32,
       "type": "hold"
     },
     {
       "date": "2025-08-05",
-      "equity": 3071699.25,
+      "equity": 3025990.5,
       "type": "daily"
     },
     {
       "date": "2025-08-06",
-      "equity": 3073959.76,
+      "equity": 3018021.59,
       "type": "hold"
     },
     {
       "date": "2025-08-07",
-      "equity": 3081643.21,
+      "equity": 3021922.57,
       "type": "daily"
     },
     {
       "date": "2025-08-08",
-      "equity": 3091695.07,
+      "equity": 3046428.85,
       "type": "daily"
     },
     {
       "date": "2025-08-11",
-      "equity": 3078964.03,
+      "equity": 3037412.1,
       "type": "daily"
     },
     {
       "date": "2025-08-12",
-      "equity": 3082705.46,
+      "equity": 3041671.3,
       "type": "daily"
     },
     {
       "date": "2025-08-13",
-      "equity": 3085877.12,
+      "equity": 3041778.35,
       "type": "daily"
     },
     {
       "date": "2025-08-14",
-      "equity": 3098784.12,
+      "equity": 3060429.75,
       "type": "daily"
     },
     {
       "date": "2025-08-15",
-      "equity": 3095450.06,
+      "equity": 3056334.94,
       "type": "daily"
     },
     {
       "date": "2025-08-18",
-      "equity": 3114972.58,
+      "equity": 3083240.16,
       "type": "daily"
     },
     {
       "date": "2025-08-19",
-      "equity": 3091700.13,
+      "equity": 3053335.2,
       "type": "daily"
     },
     {
       "date": "2025-08-20",
-      "equity": 3046461.4,
+      "equity": 2995492.9,
       "type": "daily"
     },
     {
       "date": "2025-08-21",
-      "equity": 3061444.26,
+      "equity": 3028988.43,
       "type": "daily"
     },
     {
       "date": "2025-08-22",
-      "equity": 3069967.11,
+      "equity": 3029288.89,
       "type": "daily"
     },
     {
       "date": "2025-08-25",
-      "equity": 3081620.67,
+      "equity": 3064458.04,
       "type": "daily"
     },
     {
       "date": "2025-08-26",
-      "equity": 3054354.37,
+      "equity": 3048786.5,
       "type": "daily"
     },
     {
       "date": "2025-08-27",
-      "equity": 3114046.18,
+      "equity": 3098104.56,
       "type": "daily"
     },
     {
       "date": "2025-08-28",
-      "equity": 3117868.34,
+      "equity": 3098226.31,
       "type": "daily"
     },
     {
       "date": "2025-08-29",
-      "equity": 3138765.6,
+      "equity": 3100551.58,
       "type": "daily"
     },
     {
       "date": "2025-09-01",
-      "equity": 3060938.46,
+      "equity": 3038179.88,
       "type": "daily"
     },
     {
       "date": "2025-09-02",
-      "equity": 3050228.09,
+      "equity": 3031865.5,
       "type": "daily"
     },
     {
       "date": "2025-09-03",
-      "equity": 3048627.8,
+      "equity": 3053859.74,
       "type": "daily"
     },
     {
       "date": "2025-09-04",
-      "equity": 3053877.9,
+      "equity": 3029444.04,
       "type": "daily"
     },
     {
       "date": "2025-09-05",
-      "equity": 3068672.15,
+      "equity": 3061359.65,
       "type": "daily"
     },
     {
       "date": "2025-09-08",
-      "equity": 3098177.33,
+      "equity": 3134701.68,
       "type": "daily"
     },
     {
       "date": "2025-09-09",
-      "equity": 3091138.51,
+      "equity": 3150497.92,
       "type": "daily"
     },
     {
       "date": "2025-09-10",
-      "equity": 3088359.24,
+      "equity": 3155121.66,
       "type": "daily"
     },
     {
       "date": "2025-09-11",
-      "equity": 3065726.91,
+      "equity": 3113812.78,
       "type": "daily"
     },
     {
       "date": "2025-09-12",
-      "equity": 3092596.72,
+      "equity": 3133519.36,
       "type": "daily"
     },
     {
       "date": "2025-09-15",
-      "equity": 3119262.22,
+      "equity": 3148476.82,
       "type": "daily"
     },
     {
       "date": "2025-09-16",
-      "equity": 3119123.31,
+      "equity": 3173021.51,
       "type": "daily"
     },
     {
       "date": "2025-09-17",
-      "equity": 3107364.52,
+      "equity": 3190355.17,
       "type": "daily"
     },
     {
       "date": "2025-09-18",
-      "equity": 3139259.66,
+      "equity": 3221596.05,
       "type": "daily"
     },
     {
       "date": "2025-09-19",
-      "equity": 3176885.15,
+      "equity": 3278950.06,
       "type": "daily"
     },
     {
       "date": "2025-09-22",
-      "equity": 3184927.17,
+      "equity": 3290628.07,
       "type": "daily"
     },
     {
       "date": "2025-09-23",
-      "equity": 3190082.81,
+      "equity": 3301408.96,
       "type": "daily"
     },
     {
       "date": "2025-09-24",
-      "equity": 3205440.71,
+      "equity": 3300637.24,
       "type": "daily"
     },
     {
       "date": "2025-09-25",
-      "equity": 3172053.15,
+      "equity": 3255051.17,
       "type": "daily"
     },
     {
       "date": "2025-09-26",
-      "equity": 3156355.04,
+      "equity": 3210648.01,
       "type": "daily"
     },
     {
       "date": "2025-09-30",
-      "equity": 3193711.37,
+      "equity": 3263647.15,
       "type": "daily"
     },
     {
       "date": "2025-10-01",
-      "equity": 3182753.23,
+      "equity": 3257855.35,
       "type": "daily"
     },
     {
       "date": "2025-10-02",
-      "equity": 3216161.46,
+      "equity": 3297898.03,
       "type": "daily"
     },
     {
       "date": "2025-10-03",
-      "equity": 3233661.67,
+      "equity": 3324766.18,
       "type": "daily"
     },
     {
       "date": "2025-10-07",
-      "equity": 3489861.03,
+      "equity": 3578829.84,
       "type": "daily"
     },
     {
       "date": "2025-10-08",
-      "equity": 3489772.88,
+      "equity": 3571161.76,
       "type": "daily"
     },
     {
       "date": "2025-10-09",
-      "equity": 3501163.07,
+      "equity": 3608482.67,
       "type": "daily"
     },
     {
       "date": "2025-10-13",
-      "equity": 3479911.99,
+      "equity": 3558445.71,
       "type": "daily"
     },
     {
       "date": "2025-10-14",
-      "equity": 3466076.67,
+      "equity": 3504187.35,
       "type": "daily"
     },
     {
       "date": "2025-10-15",
-      "equity": 3468983.95,
+      "equity": 3537021.01,
       "type": "daily"
     },
     {
       "date": "2025-10-16",
-      "equity": 3494315.61,
+      "equity": 3617274.64,
       "type": "daily"
     },
     {
       "date": "2025-10-17",
-      "equity": 3484987.25,
+      "equity": 3639226.4,
       "type": "daily"
     },
     {
       "date": "2025-10-20",
-      "equity": 3514477.32,
+      "equity": 3714795.04,
       "type": "daily"
     },
     {
       "date": "2025-10-21",
-      "equity": 3526238.83,
+      "equity": 3759802.05,
       "type": "daily"
     },
     {
       "date": "2025-10-22",
-      "equity": 3552170.52,
+      "equity": 3795045.39,
       "type": "daily"
     },
     {
       "date": "2025-10-23",
-      "equity": 3529296.42,
+      "equity": 3763557.5,
       "type": "daily"
     },
     {
       "date": "2025-10-27",
-      "equity": 3553915.1,
+      "equity": 3840841.34,
       "type": "daily"
     },
     {
       "date": "2025-10-28",
-      "equity": 3553599.62,
+      "equity": 3851073.25,
       "type": "daily"
     },
     {
       "date": "2025-10-29",
-      "equity": 3569160.58,
+      "equity": 3854284.0,
       "type": "daily"
     },
     {
       "date": "2025-10-30",
-      "equity": 3570677.52,
+      "equity": 3850319.27,
       "type": "daily"
     },
     {
       "date": "2025-10-31",
-      "equity": 3561328.1,
+      "equity": 3832037.66,
       "type": "daily"
     },
     {
       "date": "2025-11-03",
-      "equity": 3610419.12,
+      "equity": 3891378.64,
       "type": "daily"
     },
     {
       "date": "2025-11-04",
-      "equity": 3582575.07,
+      "equity": 3832802.09,
       "type": "daily"
     },
     {
       "date": "2025-11-05",
-      "equity": 3596619.29,
+      "equity": 3876848.72,
       "type": "daily"
     },
     {
       "date": "2025-11-06",
-      "equity": 3584320.54,
+      "equity": 3905640.84,
       "type": "daily"
     },
     {
       "date": "2025-11-07",
-      "equity": 3610073.82,
+      "equity": 3932050.89,
       "type": "daily"
     },
     {
       "date": "2025-11-10",
-      "equity": 3629804.57,
+      "equity": 4038482.12,
       "type": "daily"
     },
     {
       "date": "2025-11-11",
-      "equity": 3669315.89,
+      "equity": 4082346.34,
       "type": "daily"
     },
     {
       "date": "2025-11-12",
-      "equity": 3745014.48,
+      "equity": 4129296.93,
       "type": "daily"
     },
     {
       "date": "2025-11-13",
-      "equity": 3816104.38,
+      "equity": 4201664.43,
       "type": "daily"
     },
     {
       "date": "2025-11-14",
-      "equity": 3731969.7,
+      "equity": 4112994.39,
       "type": "daily"
     },
     {
       "date": "2025-11-17",
-      "equity": 3737061.55,
+      "equity": 4136235.59,
       "type": "daily"
     },
     {
       "date": "2025-11-18",
-      "equity": 3654805.83,
+      "equity": 4047086.12,
       "type": "hold"
     },
     {
       "date": "2025-11-19",
-      "equity": 3617507.45,
+      "equity": 4019156.63,
       "type": "hold"
     },
     {
       "date": "2025-11-20",
-      "equity": 3691352.8,
+      "equity": 4069994.34,
       "type": "daily"
     },
     {
       "date": "2025-11-21",
-      "equity": 3586309.97,
+      "equity": 3949805.73,
       "type": "hold"
     },
     {
       "date": "2025-11-24",
-      "equity": 3627380.31,
+      "equity": 3979925.31,
       "type": "hold"
     },
     {
       "date": "2025-11-25",
-      "equity": 3706978.16,
+      "equity": 4038071.7,
       "type": "hold"
     },
     {
       "date": "2025-11-26",
-      "equity": 3694115.04,
+      "equity": 4037791.77,
       "type": "daily"
     },
     {
       "date": "2025-11-27",
-      "equity": 3750670.56,
+      "equity": 4065081.09,
       "type": "daily"
     },
     {
       "date": "2025-11-28",
-      "equity": 3768392.11,
+      "equity": 4079763.98,
       "type": "daily"
     },
     {
       "date": "2025-12-01",
-      "equity": 3799087.06,
+      "equity": 4065388.28,
       "type": "daily"
     },
     {
       "date": "2025-12-02",
-      "equity": 3814287.78,
+      "equity": 4099345.27,
       "type": "daily"
     },
     {
       "date": "2025-12-03",
-      "equity": 3799743.36,
+      "equity": 4094674.71,
       "type": "daily"
     },
     {
       "date": "2025-12-04",
-      "equity": 3794470.71,
+      "equity": 4092753.44,
       "type": "daily"
     },
     {
       "date": "2025-12-05",
-      "equity": 3830335.06,
+      "equity": 4116462.19,
       "type": "daily"
     },
     {
       "date": "2025-12-08",
-      "equity": 3883786.52,
+      "equity": 4140668.68,
       "type": "daily"
     },
     {
       "date": "2025-12-09",
-      "equity": 3920642.99,
+      "equity": 4166620.52,
       "type": "daily"
     },
     {
       "date": "2025-12-10",
-      "equity": 3954390.48,
+      "equity": 4210910.79,
       "type": "daily"
     },
     {
       "date": "2025-12-11",
-      "equity": 4030879.6,
+      "equity": 4278148.55,
       "type": "daily"
     },
     {
       "date": "2025-12-12",
-      "equity": 4077105.85,
+      "equity": 4333370.87,
       "type": "daily"
     },
     {
       "date": "2025-12-15",
-      "equity": 4093832.47,
+      "equity": 4347060.95,
       "type": "daily"
     },
     {
       "date": "2025-12-16",
-      "equity": 4059047.22,
+      "equity": 4330053.3,
       "type": "daily"
     },
     {
       "date": "2025-12-17",
-      "equity": 4072757.5,
+      "equity": 4365179.98,
       "type": "daily"
     },
     {
       "date": "2025-12-18",
-      "equity": 4058185.13,
+      "equity": 4340751.69,
       "type": "crash"
     },
     {
       "date": "2025-12-19",
-      "equity": 4058185.13,
+      "equity": 4340751.69,
       "type": "daily"
     },
     {
       "date": "2025-12-22",
-      "equity": 4075407.86,
+      "equity": 4357974.43,
       "type": "daily"
     },
     {
       "date": "2025-12-23",
-      "equity": 4074985.47,
+      "equity": 4357552.03,
       "type": "daily"
     },
     {
       "date": "2025-12-24",
-      "equity": 4076582.01,
+      "equity": 4359148.58,
       "type": "daily"
     },
     {
       "date": "2025-12-26",
-      "equity": 4086397.8,
+      "equity": 4372761.83,
       "type": "daily"
     },
     {
       "date": "2025-12-29",
-      "equity": 4038462.34,
+      "equity": 4318442.9,
       "type": "daily"
     },
     {
       "date": "2025-12-30",
-      "equity": 4060714.8,
+      "equity": 4335104.84,
       "type": "daily"
     },
     {
       "date": "2025-12-31",
-      "equity": 4057223.64,
+      "equity": 4333477.2,
       "type": "daily"
     }
   ],
@@ -2147,6 +2125,12 @@
       "score": 81.6
     },
     {
+      "date": "2025-01-10",
+      "ticker": "2885",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.7
+    },
+    {
       "date": "2025-01-13",
       "ticker": "8422",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2238,12 +2222,6 @@
     },
     {
       "date": "2025-01-14",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.9
-    },
-    {
-      "date": "2025-01-14",
       "ticker": "2313",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 57.8
@@ -2256,15 +2234,21 @@
     },
     {
       "date": "2025-01-14",
-      "ticker": "8033",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 47.4
-    },
-    {
-      "date": "2025-01-14",
       "ticker": "3450",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 44.1
+    },
+    {
+      "date": "2025-01-14",
+      "ticker": "2404",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 41.0
+    },
+    {
+      "date": "2025-01-14",
+      "ticker": "2466",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.4
     },
     {
       "date": "2025-02-03",
@@ -2277,12 +2261,6 @@
       "ticker": "8422",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.6
-    },
-    {
-      "date": "2025-02-03",
-      "ticker": "6691",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.8
     },
     {
       "date": "2025-02-03",
@@ -2309,10 +2287,16 @@
       "score": 81.0
     },
     {
-      "date": "2025-02-04",
-      "ticker": "6139",
+      "date": "2025-02-03",
+      "ticker": "2809",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 119.9
+      "score": 75.0
+    },
+    {
+      "date": "2025-02-03",
+      "ticker": "2887",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.2
     },
     {
       "date": "2025-02-04",
@@ -2325,6 +2309,12 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.5
+    },
+    {
+      "date": "2025-02-04",
+      "ticker": "6139",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.9
     },
     {
       "date": "2025-02-04",
@@ -2357,14 +2347,20 @@
       "score": 62.0
     },
     {
-      "date": "2025-02-14",
-      "ticker": "2607",
+      "date": "2025-02-04",
+      "ticker": "5522",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 94.9
+      "score": 60.6
     },
     {
       "date": "2025-02-14",
-      "ticker": "6796",
+      "ticker": "6770",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.4
+    },
+    {
+      "date": "2025-02-14",
+      "ticker": "2607",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 94.9
     },
@@ -2382,9 +2378,27 @@
     },
     {
       "date": "2025-02-14",
-      "ticker": "2887E",
+      "ticker": "2454",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
+      "score": 85.5
+    },
+    {
+      "date": "2025-02-14",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.0
+    },
+    {
+      "date": "2025-02-14",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.7
+    },
+    {
+      "date": "2025-02-14",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.8
     },
     {
       "date": "2025-02-27",
@@ -2429,28 +2443,22 @@
       "score": 101.8
     },
     {
-      "date": "2025-03-03",
-      "ticker": "6592B",
+      "date": "2025-02-27",
+      "ticker": "8039",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.8
+      "score": 100.9
+    },
+    {
+      "date": "2025-02-27",
+      "ticker": "6770",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.4
     },
     {
       "date": "2025-03-03",
       "ticker": "2607",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.8
-    },
-    {
-      "date": "2025-03-03",
-      "ticker": "6796",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.5
-    },
-    {
-      "date": "2025-03-03",
-      "ticker": "2402",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.3
     },
     {
       "date": "2025-03-03",
@@ -2466,9 +2474,27 @@
     },
     {
       "date": "2025-03-03",
-      "ticker": "2605",
+      "ticker": "2809",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 79.5
+      "score": 76.7
+    },
+    {
+      "date": "2025-03-03",
+      "ticker": "3090",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.7
+    },
+    {
+      "date": "2025-03-03",
+      "ticker": "2241",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.4
+    },
+    {
+      "date": "2025-03-03",
+      "ticker": "2406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.6
     },
     {
       "date": "2025-03-05",
@@ -2478,15 +2504,9 @@
     },
     {
       "date": "2025-03-05",
-      "ticker": "6592B",
+      "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.8
-    },
-    {
-      "date": "2025-03-05",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.0
+      "score": 125.9
     },
     {
       "date": "2025-03-05",
@@ -2499,12 +2519,6 @@
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 99.1
-    },
-    {
-      "date": "2025-03-05",
-      "ticker": "6796",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 95.9
     },
     {
       "date": "2025-03-05",
@@ -2531,28 +2545,16 @@
       "score": 79.0
     },
     {
-      "date": "2025-03-06",
-      "ticker": "2887F",
+      "date": "2025-03-05",
+      "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 114.6
+      "score": 75.8
     },
     {
-      "date": "2025-03-06",
-      "ticker": "8112A",
+      "date": "2025-03-05",
+      "ticker": "2809",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.1
-    },
-    {
-      "date": "2025-03-06",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.6
-    },
-    {
-      "date": "2025-03-06",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.1
+      "score": 74.2
     },
     {
       "date": "2025-03-06",
@@ -2574,12 +2576,6 @@
     },
     {
       "date": "2025-03-06",
-      "ticker": "2605",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.5
-    },
-    {
-      "date": "2025-03-06",
       "ticker": "3054",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.7
@@ -2591,16 +2587,34 @@
       "score": 83.4
     },
     {
-      "date": "2025-03-07",
-      "ticker": "2836A",
+      "date": "2025-03-06",
+      "ticker": "1587",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.1
+      "score": 81.9
     },
     {
-      "date": "2025-03-07",
-      "ticker": "8112A",
+      "date": "2025-03-06",
+      "ticker": "6443",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.2
+      "score": 81.5
+    },
+    {
+      "date": "2025-03-06",
+      "ticker": "3090",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.3
+    },
+    {
+      "date": "2025-03-06",
+      "ticker": "4764",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.5
+    },
+    {
+      "date": "2025-03-06",
+      "ticker": "2612",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.3
     },
     {
       "date": "2025-03-07",
@@ -2651,6 +2665,18 @@
       "score": 86.5
     },
     {
+      "date": "2025-03-07",
+      "ticker": "2637",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.7
+    },
+    {
+      "date": "2025-03-07",
+      "ticker": "2881",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.0
+    },
+    {
       "date": "2025-03-10",
       "ticker": "3090",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2667,12 +2693,6 @@
       "ticker": "2607",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 97.0
-    },
-    {
-      "date": "2025-03-10",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.6
     },
     {
       "date": "2025-03-10",
@@ -2711,6 +2731,12 @@
       "score": 78.2
     },
     {
+      "date": "2025-03-10",
+      "ticker": "3006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.6
+    },
+    {
       "date": "2025-03-11",
       "ticker": "8110",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2742,21 +2768,9 @@
     },
     {
       "date": "2025-03-11",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.2
-    },
-    {
-      "date": "2025-03-11",
       "ticker": "1587",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 82.6
-    },
-    {
-      "date": "2025-03-11",
-      "ticker": "9925",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 81.5
     },
     {
       "date": "2025-03-11",
@@ -2771,6 +2785,18 @@
       "score": 78.8
     },
     {
+      "date": "2025-03-11",
+      "ticker": "2612",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.6
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "3481",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.0
+    },
+    {
       "date": "2025-03-12",
       "ticker": "8110",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2781,12 +2807,6 @@
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 104.4
-    },
-    {
-      "date": "2025-03-12",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.3
     },
     {
       "date": "2025-03-12",
@@ -2814,12 +2834,6 @@
     },
     {
       "date": "2025-03-12",
-      "ticker": "2605",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.1
-    },
-    {
-      "date": "2025-03-12",
       "ticker": "1587",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 80.9
@@ -2831,22 +2845,28 @@
       "score": 80.4
     },
     {
-      "date": "2025-03-13",
-      "ticker": "8112A",
+      "date": "2025-03-12",
+      "ticker": "2491",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.6
+      "score": 79.4
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "4764",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.4
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "2413",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 125.4
     },
     {
       "date": "2025-03-13",
       "ticker": "4967",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 98.5
-    },
-    {
-      "date": "2025-03-13",
-      "ticker": "2413",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 95.4
     },
     {
       "date": "2025-03-13",
@@ -2862,21 +2882,9 @@
     },
     {
       "date": "2025-03-13",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.7
-    },
-    {
-      "date": "2025-03-13",
       "ticker": "5521",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 84.2
-    },
-    {
-      "date": "2025-03-13",
-      "ticker": "2605",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 81.2
     },
     {
       "date": "2025-03-13",
@@ -2891,22 +2899,28 @@
       "score": 75.0
     },
     {
+      "date": "2025-03-13",
+      "ticker": "3481",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.1
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.6
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.9
+    },
+    {
       "date": "2025-03-14",
       "ticker": "8422",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 136.9
-    },
-    {
-      "date": "2025-03-14",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.7
-    },
-    {
-      "date": "2025-03-14",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.0
     },
     {
       "date": "2025-03-14",
@@ -2919,12 +2933,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.5
-    },
-    {
-      "date": "2025-03-14",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.5
     },
     {
       "date": "2025-03-14",
@@ -2951,22 +2959,28 @@
       "score": 68.0
     },
     {
+      "date": "2025-03-14",
+      "ticker": "1735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.2
+    },
+    {
+      "date": "2025-03-14",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.0
+    },
+    {
+      "date": "2025-03-14",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.9
+    },
+    {
       "date": "2025-03-17",
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 98.3
-    },
-    {
-      "date": "2025-03-17",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.2
-    },
-    {
-      "date": "2025-03-17",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.6
     },
     {
       "date": "2025-03-17",
@@ -3000,15 +3014,27 @@
     },
     {
       "date": "2025-03-17",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 77.8
-    },
-    {
-      "date": "2025-03-17",
       "ticker": "6426",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 72.0
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "2406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.5
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.5
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.5
     },
     {
       "date": "2025-03-18",
@@ -3021,18 +3047,6 @@
       "ticker": "6155",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 97.5
-    },
-    {
-      "date": "2025-03-18",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.2
-    },
-    {
-      "date": "2025-03-18",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.5
     },
     {
       "date": "2025-03-18",
@@ -3071,16 +3085,22 @@
       "score": 68.1
     },
     {
+      "date": "2025-03-18",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.0
+    },
+    {
+      "date": "2025-03-18",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.3
+    },
+    {
       "date": "2025-03-19",
       "ticker": "6431",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 117.0
-    },
-    {
-      "date": "2025-03-19",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.1
     },
     {
       "date": "2025-03-19",
@@ -3096,12 +3116,6 @@
     },
     {
       "date": "2025-03-19",
-      "ticker": "1522A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.6
-    },
-    {
-      "date": "2025-03-19",
       "ticker": "8499",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 94.6
@@ -3114,21 +3128,33 @@
     },
     {
       "date": "2025-03-19",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.8
-    },
-    {
-      "date": "2025-03-19",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.5
-    },
-    {
-      "date": "2025-03-19",
       "ticker": "2605",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.6
+    },
+    {
+      "date": "2025-03-19",
+      "ticker": "6443",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.3
+    },
+    {
+      "date": "2025-03-19",
+      "ticker": "4764",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.0
+    },
+    {
+      "date": "2025-03-19",
+      "ticker": "2883",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.0
+    },
+    {
+      "date": "2025-03-19",
+      "ticker": "1516",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.5
     },
     {
       "date": "2025-03-20",
@@ -3168,12 +3194,6 @@
     },
     {
       "date": "2025-03-20",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.7
-    },
-    {
-      "date": "2025-03-20",
       "ticker": "6443",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.5
@@ -3189,6 +3209,12 @@
       "ticker": "1516",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 70.7
+    },
+    {
+      "date": "2025-03-20",
+      "ticker": "2883",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.3
     },
     {
       "date": "2025-03-21",
@@ -3228,12 +3254,6 @@
     },
     {
       "date": "2025-03-21",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.0
-    },
-    {
-      "date": "2025-03-21",
       "ticker": "2885",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.9
@@ -3251,10 +3271,10 @@
       "score": 79.7
     },
     {
-      "date": "2025-03-24",
-      "ticker": "2887F",
+      "date": "2025-03-21",
+      "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 114.2
+      "score": 78.3
     },
     {
       "date": "2025-03-24",
@@ -3267,12 +3287,6 @@
       "ticker": "8499",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 89.9
-    },
-    {
-      "date": "2025-03-24",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.0
     },
     {
       "date": "2025-03-24",
@@ -3311,16 +3325,22 @@
       "score": 68.4
     },
     {
+      "date": "2025-03-24",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.5
+    },
+    {
+      "date": "2025-03-24",
+      "ticker": "2402",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.3
+    },
+    {
       "date": "2025-03-25",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 121.6
-    },
-    {
-      "date": "2025-03-25",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 119.2
     },
     {
       "date": "2025-03-25",
@@ -3333,12 +3353,6 @@
       "ticker": "3054",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.1
-    },
-    {
-      "date": "2025-03-25",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.6
     },
     {
       "date": "2025-03-25",
@@ -3371,16 +3385,22 @@
       "score": 74.5
     },
     {
+      "date": "2025-03-25",
+      "ticker": "2406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.6
+    },
+    {
+      "date": "2025-03-25",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.7
+    },
+    {
       "date": "2025-03-26",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 122.8
-    },
-    {
-      "date": "2025-03-26",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 114.6
     },
     {
       "date": "2025-03-26",
@@ -3396,27 +3416,9 @@
     },
     {
       "date": "2025-03-26",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.5
-    },
-    {
-      "date": "2025-03-26",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.6
-    },
-    {
-      "date": "2025-03-26",
       "ticker": "6443",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 84.0
-    },
-    {
-      "date": "2025-03-26",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 77.3
     },
     {
       "date": "2025-03-26",
@@ -3431,16 +3433,34 @@
       "score": 74.2
     },
     {
+      "date": "2025-03-26",
+      "ticker": "4764",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.6
+    },
+    {
+      "date": "2025-03-26",
+      "ticker": "2406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.1
+    },
+    {
+      "date": "2025-03-26",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.1
+    },
+    {
+      "date": "2025-03-26",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.1
+    },
+    {
       "date": "2025-03-27",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 121.7
-    },
-    {
-      "date": "2025-03-27",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.0
     },
     {
       "date": "2025-03-27",
@@ -3456,12 +3476,6 @@
     },
     {
       "date": "2025-03-27",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.6
-    },
-    {
-      "date": "2025-03-27",
       "ticker": "2368",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 87.5
@@ -3471,12 +3485,6 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 80.5
-    },
-    {
-      "date": "2025-03-27",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 77.7
     },
     {
       "date": "2025-03-27",
@@ -3491,10 +3499,34 @@
       "score": 66.3
     },
     {
+      "date": "2025-03-27",
+      "ticker": "3025",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.3
+    },
+    {
+      "date": "2025-03-27",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.8
+    },
+    {
+      "date": "2025-03-27",
+      "ticker": "2313",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.7
+    },
+    {
       "date": "2025-03-28",
       "ticker": "2413",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 126.2
+    },
+    {
+      "date": "2025-03-28",
+      "ticker": "6796",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 117.6
     },
     {
       "date": "2025-03-28",
@@ -3507,24 +3539,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 87.9
-    },
-    {
-      "date": "2025-03-28",
-      "ticker": "6796",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.6
-    },
-    {
-      "date": "2025-03-28",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.6
-    },
-    {
-      "date": "2025-03-28",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.6
     },
     {
       "date": "2025-03-28",
@@ -3549,6 +3563,18 @@
       "ticker": "6271",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 75.3
+    },
+    {
+      "date": "2025-03-28",
+      "ticker": "4764",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.5
+    },
+    {
+      "date": "2025-03-28",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.1
     },
     {
       "date": "2025-03-31",
@@ -3594,12 +3620,6 @@
     },
     {
       "date": "2025-03-31",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.8
-    },
-    {
-      "date": "2025-03-31",
       "ticker": "2820",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.4
@@ -3609,6 +3629,12 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.7
+    },
+    {
+      "date": "2025-03-31",
+      "ticker": "2809",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.8
     },
     {
       "date": "2025-04-01",
@@ -3642,12 +3668,6 @@
     },
     {
       "date": "2025-04-01",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.3
-    },
-    {
-      "date": "2025-04-01",
       "ticker": "2820",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.7
@@ -3660,15 +3680,21 @@
     },
     {
       "date": "2025-04-01",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 77.3
-    },
-    {
-      "date": "2025-04-01",
       "ticker": "1437",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 71.3
+    },
+    {
+      "date": "2025-04-01",
+      "ticker": "2887",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.3
+    },
+    {
+      "date": "2025-04-01",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.3
     },
     {
       "date": "2025-04-02",
@@ -3696,18 +3722,6 @@
     },
     {
       "date": "2025-04-02",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.4
-    },
-    {
-      "date": "2025-04-02",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.4
-    },
-    {
-      "date": "2025-04-02",
       "ticker": "3090",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.7
@@ -3731,22 +3745,16 @@
       "score": 69.0
     },
     {
-      "date": "2025-04-07",
-      "ticker": "910322",
+      "date": "2025-04-02",
+      "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 35.7
+      "score": 68.3
     },
     {
-      "date": "2025-04-08",
-      "ticker": "2887Z1",
+      "date": "2025-04-02",
+      "ticker": "2402",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 76.8
-    },
-    {
-      "date": "2025-04-08",
-      "ticker": "2888B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 49.0
+      "score": 68.1
     },
     {
       "date": "2025-04-10",
@@ -3768,27 +3776,9 @@
     },
     {
       "date": "2025-04-10",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.8
-    },
-    {
-      "date": "2025-04-10",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 75.6
-    },
-    {
-      "date": "2025-04-10",
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 67.9
-    },
-    {
-      "date": "2025-04-10",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.6
     },
     {
       "date": "2025-04-10",
@@ -3804,18 +3794,6 @@
     },
     {
       "date": "2025-04-11",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.1
-    },
-    {
-      "date": "2025-04-11",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 77.2
-    },
-    {
-      "date": "2025-04-11",
       "ticker": "5007",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 69.2
@@ -3825,12 +3803,6 @@
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 66.9
-    },
-    {
-      "date": "2025-04-11",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.3
     },
     {
       "date": "2025-04-11",
@@ -3846,27 +3818,9 @@
     },
     {
       "date": "2025-04-14",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.1
-    },
-    {
-      "date": "2025-04-14",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.5
-    },
-    {
-      "date": "2025-04-14",
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 68.3
-    },
-    {
-      "date": "2025-04-14",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 65.7
     },
     {
       "date": "2025-04-14",
@@ -3881,76 +3835,16 @@
       "score": 87.5
     },
     {
-      "date": "2025-04-15",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.4
-    },
-    {
-      "date": "2025-04-15",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.0
-    },
-    {
       "date": "2025-04-16",
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.8
     },
     {
-      "date": "2025-04-16",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.1
-    },
-    {
-      "date": "2025-04-16",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.0
-    },
-    {
-      "date": "2025-04-17",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.0
-    },
-    {
-      "date": "2025-04-17",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 66.6
-    },
-    {
       "date": "2025-04-18",
       "ticker": "2809",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 75.5
-    },
-    {
-      "date": "2025-04-18",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 66.9
-    },
-    {
-      "date": "2025-04-21",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 67.0
-    },
-    {
-      "date": "2025-04-22",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.9
-    },
-    {
-      "date": "2025-04-22",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 22.0
     },
     {
       "date": "2025-04-23",
@@ -3966,45 +3860,15 @@
     },
     {
       "date": "2025-04-23",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.7
-    },
-    {
-      "date": "2025-04-23",
-      "ticker": "2888B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 50.6
-    },
-    {
-      "date": "2025-04-23",
       "ticker": "2884",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 49.1
     },
     {
       "date": "2025-04-24",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.7
-    },
-    {
-      "date": "2025-04-24",
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 84.4
-    },
-    {
-      "date": "2025-04-24",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.0
-    },
-    {
-      "date": "2025-04-24",
-      "ticker": "2888B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 53.1
     },
     {
       "date": "2025-04-24",
@@ -4038,12 +3902,6 @@
     },
     {
       "date": "2025-04-25",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.7
-    },
-    {
-      "date": "2025-04-25",
       "ticker": "2884",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 50.4
@@ -4065,12 +3923,6 @@
       "ticker": "9928",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 67.1
-    },
-    {
-      "date": "2025-04-28",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.8
     },
     {
       "date": "2025-04-28",
@@ -4110,12 +3962,6 @@
     },
     {
       "date": "2025-04-29",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.3
-    },
-    {
-      "date": "2025-04-29",
       "ticker": "2236",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 60.5
@@ -4152,18 +3998,6 @@
     },
     {
       "date": "2025-04-30",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
-    },
-    {
-      "date": "2025-04-30",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.5
-    },
-    {
-      "date": "2025-04-30",
       "ticker": "2905",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 73.6
@@ -4182,12 +4016,6 @@
     },
     {
       "date": "2025-04-30",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.8
-    },
-    {
-      "date": "2025-04-30",
       "ticker": "6794",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 56.8
@@ -4197,6 +4025,24 @@
       "ticker": "2834",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 53.9
+    },
+    {
+      "date": "2025-04-30",
+      "ticker": "2605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 53.0
+    },
+    {
+      "date": "2025-04-30",
+      "ticker": "9925",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 52.5
+    },
+    {
+      "date": "2025-04-30",
+      "ticker": "6024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 51.8
     },
     {
       "date": "2025-05-02",
@@ -4209,24 +4055,6 @@
       "ticker": "6431",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.5
-    },
-    {
-      "date": "2025-05-02",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.9
-    },
-    {
-      "date": "2025-05-02",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.5
-    },
-    {
-      "date": "2025-05-02",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.3
     },
     {
       "date": "2025-05-02",
@@ -4254,9 +4082,21 @@
     },
     {
       "date": "2025-05-02",
-      "ticker": "9941A",
+      "ticker": "6794",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.2
+      "score": 56.9
+    },
+    {
+      "date": "2025-05-02",
+      "ticker": "2834",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.2
+    },
+    {
+      "date": "2025-05-02",
+      "ticker": "6024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 51.5
     },
     {
       "date": "2025-05-05",
@@ -4290,21 +4130,9 @@
     },
     {
       "date": "2025-05-05",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.6
-    },
-    {
-      "date": "2025-05-05",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 90.4
-    },
-    {
-      "date": "2025-05-05",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.6
     },
     {
       "date": "2025-05-05",
@@ -4319,6 +4147,18 @@
       "score": 86.2
     },
     {
+      "date": "2025-05-05",
+      "ticker": "2882",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.2
+    },
+    {
+      "date": "2025-05-05",
+      "ticker": "6443",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.7
+    },
+    {
       "date": "2025-05-06",
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4326,21 +4166,9 @@
     },
     {
       "date": "2025-05-06",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.9
-    },
-    {
-      "date": "2025-05-06",
       "ticker": "2881",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 82.8
-    },
-    {
-      "date": "2025-05-06",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 82.2
     },
     {
       "date": "2025-05-06",
@@ -4379,6 +4207,18 @@
       "score": 65.8
     },
     {
+      "date": "2025-05-06",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.1
+    },
+    {
+      "date": "2025-05-06",
+      "ticker": "3060",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.7
+    },
+    {
       "date": "2025-05-07",
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4401,12 +4241,6 @@
       "ticker": "3037",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.2
-    },
-    {
-      "date": "2025-05-07",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 82.3
     },
     {
       "date": "2025-05-07",
@@ -4439,6 +4273,12 @@
       "score": 68.0
     },
     {
+      "date": "2025-05-07",
+      "ticker": "3048",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.6
+    },
+    {
       "date": "2025-05-08",
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4455,12 +4295,6 @@
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 87.9
-    },
-    {
-      "date": "2025-05-08",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.3
     },
     {
       "date": "2025-05-08",
@@ -4499,6 +4333,12 @@
       "score": 61.6
     },
     {
+      "date": "2025-05-08",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.2
+    },
+    {
       "date": "2025-05-09",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4515,12 +4355,6 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.4
-    },
-    {
-      "date": "2025-05-09",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 75.9
     },
     {
       "date": "2025-05-09",
@@ -4559,6 +4393,12 @@
       "score": 66.6
     },
     {
+      "date": "2025-05-09",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.5
+    },
+    {
       "date": "2025-05-12",
       "ticker": "8131",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4578,12 +4418,6 @@
     },
     {
       "date": "2025-05-12",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 75.4
-    },
-    {
-      "date": "2025-05-12",
       "ticker": "2548",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 67.7
@@ -4593,12 +4427,6 @@
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 67.6
-    },
-    {
-      "date": "2025-05-12",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 62.1
     },
     {
       "date": "2025-05-12",
@@ -4619,10 +4447,10 @@
       "score": 50.7
     },
     {
-      "date": "2025-05-13",
-      "ticker": "6592B",
+      "date": "2025-05-12",
+      "ticker": "4927",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.6
+      "score": 50.5
     },
     {
       "date": "2025-05-13",
@@ -4674,27 +4502,9 @@
     },
     {
       "date": "2025-05-13",
-      "ticker": "1312A",
+      "ticker": "1616",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 48.2
-    },
-    {
-      "date": "2025-05-14",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.4
-    },
-    {
-      "date": "2025-05-14",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.8
-    },
-    {
-      "date": "2025-05-14",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.1
+      "score": -27.6
     },
     {
       "date": "2025-05-14",
@@ -4727,22 +4537,10 @@
       "score": 58.2
     },
     {
-      "date": "2025-05-14",
-      "ticker": "8033",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 31.9
-    },
-    {
       "date": "2025-05-15",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 90.5
-    },
-    {
-      "date": "2025-05-15",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.4
     },
     {
       "date": "2025-05-15",
@@ -4791,6 +4589,12 @@
       "ticker": "5522",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 66.6
+    },
+    {
+      "date": "2025-05-15",
+      "ticker": "3060",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.3
     },
     {
       "date": "2025-05-16",
@@ -4860,21 +4664,9 @@
     },
     {
       "date": "2025-05-19",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.9
-    },
-    {
-      "date": "2025-05-19",
       "ticker": "6139",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.1
-    },
-    {
-      "date": "2025-05-19",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.9
     },
     {
       "date": "2025-05-19",
@@ -4913,6 +4705,18 @@
       "score": 63.8
     },
     {
+      "date": "2025-05-19",
+      "ticker": "2313",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.4
+    },
+    {
+      "date": "2025-05-19",
+      "ticker": "3025",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
       "date": "2025-05-20",
       "ticker": "6209",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4923,18 +4727,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.7
-    },
-    {
-      "date": "2025-05-20",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.9
-    },
-    {
-      "date": "2025-05-20",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.6
     },
     {
       "date": "2025-05-20",
@@ -4973,16 +4765,22 @@
       "score": 63.6
     },
     {
+      "date": "2025-05-20",
+      "ticker": "3025",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.3
+    },
+    {
+      "date": "2025-05-20",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.1
+    },
+    {
       "date": "2025-05-21",
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.1
-    },
-    {
-      "date": "2025-05-21",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
     },
     {
       "date": "2025-05-21",
@@ -5033,16 +4831,16 @@
       "score": 60.3
     },
     {
+      "date": "2025-05-21",
+      "ticker": "3060",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.8
+    },
+    {
       "date": "2025-05-22",
       "ticker": "6209",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 93.7
-    },
-    {
-      "date": "2025-05-22",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.7
     },
     {
       "date": "2025-05-22",
@@ -5055,12 +4853,6 @@
       "ticker": "1587",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.6
-    },
-    {
-      "date": "2025-05-22",
-      "ticker": "9941A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 67.7
     },
     {
       "date": "2025-05-22",
@@ -5093,6 +4885,18 @@
       "score": 63.1
     },
     {
+      "date": "2025-05-22",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.1
+    },
+    {
+      "date": "2025-05-22",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.4
+    },
+    {
       "date": "2025-05-23",
       "ticker": "6209",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -5103,18 +4907,6 @@
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 98.6
-    },
-    {
-      "date": "2025-05-23",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.9
-    },
-    {
-      "date": "2025-05-23",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
     },
     {
       "date": "2025-05-23",
@@ -5153,6 +4945,18 @@
       "score": 68.2
     },
     {
+      "date": "2025-05-23",
+      "ticker": "5007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.9
+    },
+    {
+      "date": "2025-05-23",
+      "ticker": "6133",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.9
+    },
+    {
       "date": "2025-05-26",
       "ticker": "6770",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -5169,12 +4973,6 @@
       "ticker": "2891",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 90.6
-    },
-    {
-      "date": "2025-05-26",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.9
     },
     {
       "date": "2025-05-26",
@@ -5213,16 +5011,16 @@
       "score": 68.6
     },
     {
+      "date": "2025-05-26",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.2
+    },
+    {
       "date": "2025-05-27",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.5
-    },
-    {
-      "date": "2025-05-27",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.5
     },
     {
       "date": "2025-05-27",
@@ -5268,9 +5066,15 @@
     },
     {
       "date": "2025-05-27",
-      "ticker": "9941A",
+      "ticker": "5522",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.9
+      "score": 59.7
+    },
+    {
+      "date": "2025-05-27",
+      "ticker": "2313",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.8
     },
     {
       "date": "2025-05-28",
@@ -5310,18 +5114,6 @@
     },
     {
       "date": "2025-05-28",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.9
-    },
-    {
-      "date": "2025-05-28",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.3
-    },
-    {
-      "date": "2025-05-28",
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 68.1
@@ -5331,6 +5123,18 @@
       "ticker": "3048",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 64.8
+    },
+    {
+      "date": "2025-05-28",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.3
+    },
+    {
+      "date": "2025-05-28",
+      "ticker": "1727",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.3
     },
     {
       "date": "2025-05-29",
@@ -5370,12 +5174,6 @@
     },
     {
       "date": "2025-05-29",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.1
-    },
-    {
-      "date": "2025-05-29",
       "ticker": "2881",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.4
@@ -5393,6 +5191,12 @@
       "score": 77.8
     },
     {
+      "date": "2025-05-29",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.3
+    },
+    {
       "date": "2025-06-02",
       "ticker": "2890",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -5400,21 +5204,9 @@
     },
     {
       "date": "2025-06-02",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.0
-    },
-    {
-      "date": "2025-06-02",
       "ticker": "5515",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.2
-    },
-    {
-      "date": "2025-06-02",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 78.3
     },
     {
       "date": "2025-06-02",
@@ -5451,6 +5243,18 @@
       "ticker": "5007",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 65.9
+    },
+    {
+      "date": "2025-06-02",
+      "ticker": "1735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.8
+    },
+    {
+      "date": "2025-06-02",
+      "ticker": "5522",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.2
     },
     {
       "date": "2025-06-03",
@@ -5562,15 +5366,15 @@
     },
     {
       "date": "2025-06-04",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.9
-    },
-    {
-      "date": "2025-06-04",
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.1
+    },
+    {
+      "date": "2025-06-04",
+      "ticker": "2809",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.7
     },
     {
       "date": "2025-06-05",
@@ -5724,12 +5528,6 @@
     },
     {
       "date": "2025-06-09",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.5
-    },
-    {
-      "date": "2025-06-09",
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 74.8
@@ -5751,6 +5549,12 @@
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 68.1
+    },
+    {
+      "date": "2025-06-09",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.7
     },
     {
       "date": "2025-06-10",
@@ -5832,33 +5636,15 @@
     },
     {
       "date": "2025-06-11",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.8
-    },
-    {
-      "date": "2025-06-11",
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 87.5
     },
     {
       "date": "2025-06-11",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
-    },
-    {
-      "date": "2025-06-11",
       "ticker": "5521",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.5
-    },
-    {
-      "date": "2025-06-11",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.6
     },
     {
       "date": "2025-06-11",
@@ -5871,6 +5657,24 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.7
+    },
+    {
+      "date": "2025-06-11",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.1
+    },
+    {
+      "date": "2025-06-11",
+      "ticker": "3025",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.6
+    },
+    {
+      "date": "2025-06-11",
+      "ticker": "1735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.2
     },
     {
       "date": "2025-06-12",
@@ -5976,12 +5780,6 @@
     },
     {
       "date": "2025-06-13",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.5
-    },
-    {
-      "date": "2025-06-13",
       "ticker": "6271",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 77.4
@@ -5991,6 +5789,12 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.2
+    },
+    {
+      "date": "2025-06-13",
+      "ticker": "2548",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.7
     },
     {
       "date": "2025-06-16",
@@ -6042,15 +5846,15 @@
     },
     {
       "date": "2025-06-16",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.9
-    },
-    {
-      "date": "2025-06-16",
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.7
+    },
+    {
+      "date": "2025-06-16",
+      "ticker": "6426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.7
     },
     {
       "date": "2025-06-17",
@@ -6084,18 +5888,6 @@
     },
     {
       "date": "2025-06-17",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
-    },
-    {
-      "date": "2025-06-17",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.3
-    },
-    {
-      "date": "2025-06-17",
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.1
@@ -6111,6 +5903,18 @@
       "ticker": "2548",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 70.4
+    },
+    {
+      "date": "2025-06-17",
+      "ticker": "2009",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.7
+    },
+    {
+      "date": "2025-06-17",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.6
     },
     {
       "date": "2025-06-18",
@@ -6162,15 +5966,15 @@
     },
     {
       "date": "2025-06-18",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.3
-    },
-    {
-      "date": "2025-06-18",
       "ticker": "6443",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.9
+    },
+    {
+      "date": "2025-06-18",
+      "ticker": "1587",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.6
     },
     {
       "date": "2025-06-19",
@@ -6252,12 +6056,6 @@
     },
     {
       "date": "2025-06-20",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.8
-    },
-    {
-      "date": "2025-06-20",
       "ticker": "8039",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.4
@@ -6291,6 +6089,12 @@
       "ticker": "4764",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.6
+    },
+    {
+      "date": "2025-06-20",
+      "ticker": "2809",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.0
     },
     {
       "date": "2025-06-23",
@@ -6408,9 +6212,9 @@
     },
     {
       "date": "2025-06-24",
-      "ticker": "9941A",
+      "ticker": "3048",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 67.4
+      "score": 67.0
     },
     {
       "date": "2025-06-25",
@@ -6516,21 +6320,21 @@
     },
     {
       "date": "2025-06-26",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
-    },
-    {
-      "date": "2025-06-26",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.6
-    },
-    {
-      "date": "2025-06-26",
       "ticker": "1303",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 82.0
+    },
+    {
+      "date": "2025-06-26",
+      "ticker": "1587",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.0
+    },
+    {
+      "date": "2025-06-26",
+      "ticker": "4977",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.8
     },
     {
       "date": "2025-06-27",
@@ -6549,12 +6353,6 @@
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 97.8
-    },
-    {
-      "date": "2025-06-27",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.8
     },
     {
       "date": "2025-06-27",
@@ -6591,6 +6389,12 @@
       "ticker": "4977",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.7
+    },
+    {
+      "date": "2025-06-27",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.2
     },
     {
       "date": "2025-06-30",
@@ -6738,18 +6542,6 @@
     },
     {
       "date": "2025-07-02",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.8
-    },
-    {
-      "date": "2025-07-02",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.1
-    },
-    {
-      "date": "2025-07-02",
       "ticker": "1587",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.3
@@ -6773,6 +6565,18 @@
       "score": 71.5
     },
     {
+      "date": "2025-07-02",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.0
+    },
+    {
+      "date": "2025-07-02",
+      "ticker": "1735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.6
+    },
+    {
       "date": "2025-07-03",
       "ticker": "6209",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -6783,12 +6587,6 @@
       "ticker": "5515",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.5
-    },
-    {
-      "date": "2025-07-03",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.5
     },
     {
       "date": "2025-07-03",
@@ -6831,6 +6629,12 @@
       "ticker": "3060",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 63.3
+    },
+    {
+      "date": "2025-07-03",
+      "ticker": "2402",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.3
     },
     {
       "date": "2025-07-04",
@@ -6900,18 +6704,6 @@
     },
     {
       "date": "2025-07-07",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.6
-    },
-    {
-      "date": "2025-07-07",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 78.4
-    },
-    {
-      "date": "2025-07-07",
       "ticker": "2406",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 75.6
@@ -6953,6 +6745,18 @@
       "score": 52.3
     },
     {
+      "date": "2025-07-07",
+      "ticker": "1802",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 48.7
+    },
+    {
+      "date": "2025-07-07",
+      "ticker": "4552",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 47.0
+    },
+    {
       "date": "2025-07-08",
       "ticker": "2607",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -6969,12 +6773,6 @@
       "ticker": "6155",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.1
-    },
-    {
-      "date": "2025-07-08",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.6
     },
     {
       "date": "2025-07-08",
@@ -7011,6 +6809,12 @@
       "ticker": "1735",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 63.6
+    },
+    {
+      "date": "2025-07-08",
+      "ticker": "2614",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.2
     },
     {
       "date": "2025-07-09",
@@ -7134,12 +6938,6 @@
     },
     {
       "date": "2025-07-11",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 133.2
-    },
-    {
-      "date": "2025-07-11",
       "ticker": "8422",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.9
@@ -7193,10 +6991,10 @@
       "score": 87.7
     },
     {
-      "date": "2025-07-14",
-      "ticker": "8112A",
+      "date": "2025-07-11",
+      "ticker": "8438",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 133.3
+      "score": 78.4
     },
     {
       "date": "2025-07-14",
@@ -7230,12 +7028,6 @@
     },
     {
       "date": "2025-07-14",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 77.5
-    },
-    {
-      "date": "2025-07-14",
       "ticker": "2406",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.6
@@ -7251,6 +7043,18 @@
       "ticker": "2399",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 71.9
+    },
+    {
+      "date": "2025-07-14",
+      "ticker": "6426",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.8
+    },
+    {
+      "date": "2025-07-14",
+      "ticker": "6136",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.5
     },
     {
       "date": "2025-07-15",
@@ -7374,12 +7178,6 @@
     },
     {
       "date": "2025-07-17",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.5
-    },
-    {
-      "date": "2025-07-17",
       "ticker": "6155",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.2
@@ -7431,6 +7229,12 @@
       "ticker": "8463",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 66.3
+    },
+    {
+      "date": "2025-07-17",
+      "ticker": "2236",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.1
     },
     {
       "date": "2025-07-22",
@@ -7536,12 +7340,6 @@
     },
     {
       "date": "2025-07-24",
-      "ticker": "2801",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.4
-    },
-    {
-      "date": "2025-07-24",
       "ticker": "6796",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.7
@@ -7596,12 +7394,6 @@
     },
     {
       "date": "2025-07-25",
-      "ticker": "2801",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.9
-    },
-    {
-      "date": "2025-07-25",
       "ticker": "6209",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.7
@@ -7641,12 +7433,6 @@
       "ticker": "8110",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 107.6
-    },
-    {
-      "date": "2025-07-29",
-      "ticker": "6796",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.8
     },
     {
       "date": "2025-07-29",
@@ -7764,15 +7550,15 @@
     },
     {
       "date": "2025-08-04",
-      "ticker": "2887Z1",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 78.0
-    },
-    {
-      "date": "2025-08-04",
       "ticker": "2399",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 74.0
+    },
+    {
+      "date": "2025-08-04",
+      "ticker": "3665",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.0
     },
     {
       "date": "2025-08-06",
@@ -7806,12 +7592,6 @@
     },
     {
       "date": "2025-08-06",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.4
-    },
-    {
-      "date": "2025-08-06",
       "ticker": "6139",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.2
@@ -7829,10 +7609,22 @@
       "score": 82.1
     },
     {
+      "date": "2025-08-06",
+      "ticker": "3535",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.1
+    },
+    {
       "date": "2025-11-18",
       "ticker": "2344",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 138.0
+    },
+    {
+      "date": "2025-11-18",
+      "ticker": "8021",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 133.5
     },
     {
       "date": "2025-11-18",
@@ -7866,27 +7658,21 @@
     },
     {
       "date": "2025-11-18",
-      "ticker": "6592B",
+      "ticker": "2905",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.2
+      "score": 75.0
     },
     {
-      "date": "2025-11-19",
-      "ticker": "8131",
+      "date": "2025-11-18",
+      "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.3
+      "score": 67.5
     },
     {
       "date": "2025-11-19",
       "ticker": "3057",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.9
-    },
-    {
-      "date": "2025-11-19",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.8
     },
     {
       "date": "2025-11-19",
@@ -7907,16 +7693,22 @@
       "score": 81.1
     },
     {
+      "date": "2025-11-19",
+      "ticker": "2360",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.8
+    },
+    {
+      "date": "2025-11-19",
+      "ticker": "2406",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.8
+    },
+    {
       "date": "2025-11-21",
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.9
-    },
-    {
-      "date": "2025-11-21",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.6
     },
     {
       "date": "2025-11-21",
@@ -7941,6 +7733,18 @@
       "ticker": "1802",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.0
+    },
+    {
+      "date": "2025-11-21",
+      "ticker": "2905",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.9
+    },
+    {
+      "date": "2025-11-21",
+      "ticker": "2360",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.6
     },
     {
       "date": "2025-11-24",
@@ -7974,9 +7778,15 @@
     },
     {
       "date": "2025-11-24",
-      "ticker": "6592B",
+      "ticker": "1802",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.7
+      "score": 79.5
+    },
+    {
+      "date": "2025-11-24",
+      "ticker": "3665",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.7
     },
     {
       "date": "2025-11-25",
@@ -7989,12 +7799,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.0
-    },
-    {
-      "date": "2025-11-25",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.5
     },
     {
       "date": "2025-11-25",
@@ -8031,6 +7835,12 @@
       "ticker": "6136",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 68.2
+    },
+    {
+      "date": "2025-11-25",
+      "ticker": "9928",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.6
     }
   ]
 }

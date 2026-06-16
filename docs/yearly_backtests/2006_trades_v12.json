@@ -4,110 +4,44 @@
       "ticker": "2434",
       "buy_date": "2006-01-02",
       "buy_price": 11.93,
-      "sell_date": "2006-01-12",
-      "sell_price": 12.24,
+      "sell_date": "2006-01-17",
+      "sell_price": 11.84,
       "shares": 25144,
-      "pl": 7692.14,
-      "pl_pct": 2.56,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+      "pl": -2197.74,
+      "pl_pct": -0.73,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
     },
     {
       "ticker": "2436",
       "buy_date": "2006-01-04",
       "buy_price": 10.81,
-      "sell_date": "2006-01-12",
-      "sell_price": 10.27,
+      "sell_date": "2006-01-18",
+      "sell_price": 9.48,
       "shares": 27752,
-      "pl": -14949.93,
-      "pl_pct": -4.98,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "3041",
-      "buy_date": "2006-01-05",
-      "buy_price": 29.27,
-      "sell_date": "2006-01-13",
-      "sell_price": 24.96,
-      "shares": 10250,
-      "pl": -44117.55,
-      "pl_pct": -14.71,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
-    },
-    {
-      "ticker": "3003",
-      "buy_date": "2006-01-03",
-      "buy_price": 11.67,
-      "sell_date": "2006-01-18",
-      "sell_price": 10.88,
-      "shares": 25699,
-      "pl": -20324.97,
-      "pl_pct": -6.78,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "2466",
-      "buy_date": "2006-01-06",
-      "buy_price": 11.65,
-      "sell_date": "2006-01-18",
-      "sell_price": 11.96,
-      "shares": 25754,
-      "pl": 7917.65,
-      "pl_pct": 2.64,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "9942",
-      "buy_date": "2006-01-13",
-      "buy_price": 15.56,
-      "sell_date": "2006-01-19",
-      "sell_price": 13.29,
-      "shares": 19275,
-      "pl": -43777.85,
-      "pl_pct": -14.59,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+      "pl": -36876.5,
+      "pl_pct": -12.29,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-18%)"
     },
     {
       "ticker": "6280",
       "buy_date": "2006-01-06",
       "buy_price": 75.3,
-      "sell_date": "2006-01-20",
-      "sell_price": 67.95,
+      "sell_date": "2006-01-23",
+      "sell_price": 65.13,
       "shares": 3983,
-      "pl": -29278.55,
-      "pl_pct": -9.76,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+      "pl": -40513.36,
+      "pl_pct": -13.51,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
     },
     {
-      "ticker": "2328",
-      "buy_date": "2006-01-12",
-      "buy_price": 34.18,
-      "sell_date": "2006-01-23",
-      "sell_price": 31.03,
-      "shares": 8776,
-      "pl": -27607.67,
-      "pl_pct": -9.2,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
-      "ticker": "3062",
-      "buy_date": "2006-01-18",
-      "buy_price": 30.47,
-      "sell_date": "2006-01-23",
-      "sell_price": 29.24,
-      "shares": 9846,
-      "pl": -12052.54,
-      "pl_pct": -4.02,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "1303",
-      "buy_date": "2006-01-19",
-      "buy_price": 19.6,
-      "sell_date": "2006-01-24",
-      "sell_price": 19.32,
-      "shares": 15306,
-      "pl": -4211.47,
-      "pl_pct": -1.4,
+      "ticker": "1473",
+      "buy_date": "2006-01-05",
+      "buy_price": 18.13,
+      "sell_date": "2006-02-08",
+      "sell_price": 17.35,
+      "shares": 16546,
+      "pl": -12974.54,
+      "pl_pct": -4.33,
       "sell_reason": "RSI<35"
     },
     {
@@ -120,6 +54,17 @@
       "pl": 39428.04,
       "pl_pct": 13.14,
       "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2466",
+      "buy_date": "2006-01-06",
+      "buy_price": 11.65,
+      "sell_date": "2006-02-13",
+      "sell_price": 14.52,
+      "shares": 12877,
+      "pl": 36948.99,
+      "pl_pct": 24.63,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "2825",
@@ -145,57 +90,46 @@
     },
     {
       "ticker": "3062",
-      "buy_date": "2006-01-25",
-      "buy_price": 31.15,
-      "sell_date": "2006-02-17",
-      "sell_price": 31.35,
-      "shares": 9631,
-      "pl": 1964.89,
-      "pl_pct": 0.66,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "6239",
-      "buy_date": "2006-01-20",
-      "buy_price": 40.23,
+      "buy_date": "2006-01-18",
+      "buy_price": 30.47,
       "sell_date": "2006-02-22",
-      "sell_price": 37.78,
-      "shares": 7457,
-      "pl": -18260.52,
-      "pl_pct": -6.09,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
+      "sell_price": 29.72,
+      "shares": 9846,
+      "pl": -7365.43,
+      "pl_pct": -2.46,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
     },
     {
       "ticker": "1303",
-      "buy_date": "2006-02-16",
-      "buy_price": 20.0,
+      "buy_date": "2006-02-08",
+      "buy_price": 20.02,
       "sell_date": "2006-03-03",
       "sell_price": 19.43,
-      "shares": 14998,
-      "pl": -8570.91,
-      "pl_pct": -2.86,
+      "shares": 14983,
+      "pl": -8879.45,
+      "pl_pct": -2.96,
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "2002A",
-      "buy_date": "2006-02-17",
-      "buy_price": 12.91,
+      "ticker": "2497",
+      "buy_date": "2006-02-13",
+      "buy_price": 11.92,
       "sell_date": "2006-03-10",
-      "sell_price": 13.1,
-      "shares": 23238,
-      "pl": 4440.73,
-      "pl_pct": 1.48,
+      "sell_price": 11.32,
+      "shares": 25158,
+      "pl": -15228.08,
+      "pl_pct": -5.08,
       "sell_reason": "RSI<35"
     },
     {
       "ticker": "1704",
-      "buy_date": "2006-02-03",
-      "buy_price": 15.25,
+      "buy_date": "2006-01-25",
+      "buy_price": 15.31,
       "sell_date": "2006-03-17",
       "sell_price": 14.55,
-      "shares": 19676,
-      "pl": -13807.45,
-      "pl_pct": -4.6,
+      "shares": 19594,
+      "pl": -14999.9,
+      "pl_pct": -5.0,
       "sell_reason": "RSI<35"
     },
     {
@@ -210,6 +144,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "3003",
+      "buy_date": "2006-01-03",
+      "buy_price": 11.67,
+      "sell_date": "2006-03-23",
+      "sell_price": 11.83,
+      "shares": 25699,
+      "pl": 4064.99,
+      "pl_pct": 1.36,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "2825",
       "buy_date": "2006-01-03",
       "buy_price": 12.0,
@@ -221,25 +166,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2883A",
-      "buy_date": "2006-01-18",
-      "buy_price": 15.49,
+      "ticker": "2466",
+      "buy_date": "2006-01-06",
+      "buy_price": 11.65,
       "sell_date": "2006-03-23",
-      "sell_price": 15.49,
-      "shares": 19365,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3003",
-      "buy_date": "2006-01-25",
-      "buy_price": 11.04,
-      "sell_date": "2006-03-23",
-      "sell_price": 11.83,
-      "shares": 27172,
-      "pl": 21489.94,
-      "pl_pct": 7.16,
+      "sell_price": 17.05,
+      "shares": 12877,
+      "pl": 69499.3,
+      "pl_pct": 46.33,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -288,13 +222,13 @@
     },
     {
       "ticker": "2901",
-      "buy_date": "2006-03-31",
-      "buy_price": 11.61,
+      "buy_date": "2006-04-06",
+      "buy_price": 11.65,
       "sell_date": "2006-04-25",
       "sell_price": 14.72,
-      "shares": 12923,
-      "pl": 40255.07,
-      "pl_pct": 26.84,
+      "shares": 12876,
+      "pl": 39559.24,
+      "pl_pct": 26.37,
       "sell_reason": "\u505c\u522950%"
     },
     {
@@ -320,17 +254,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "2002A",
-      "buy_date": "2006-04-07",
-      "buy_price": 13.59,
-      "sell_date": "2006-04-28",
-      "sell_price": 13.93,
-      "shares": 22076,
-      "pl": 7499.85,
-      "pl_pct": 2.5,
-      "sell_reason": "RSI<35"
-    },
-    {
       "ticker": "1477",
       "buy_date": "2006-04-04",
       "buy_price": 14.49,
@@ -339,17 +262,6 @@
       "shares": 20704,
       "pl": 15771.78,
       "pl_pct": 5.26,
-      "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "1537",
-      "buy_date": "2006-04-28",
-      "buy_price": 10.37,
-      "sell_date": "2006-05-09",
-      "sell_price": 10.15,
-      "shares": 28940,
-      "pl": -6172.7,
-      "pl_pct": -2.06,
       "sell_reason": "RSI<35"
     },
     {
@@ -364,14 +276,14 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "2901",
+      "ticker": "2482",
       "buy_date": "2006-03-31",
-      "buy_price": 11.61,
+      "buy_price": 11.26,
       "sell_date": "2006-05-16",
-      "sell_price": 19.03,
-      "shares": 12924,
-      "pl": 95957.87,
-      "pl_pct": 63.97,
+      "sell_price": 11.72,
+      "shares": 26650,
+      "pl": 12225.5,
+      "pl_pct": 4.08,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -408,6 +320,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "2901",
+      "buy_date": "2006-04-06",
+      "buy_price": 11.65,
+      "sell_date": "2006-05-16",
+      "sell_price": 19.03,
+      "shares": 12876,
+      "pl": 95052.06,
+      "pl_pct": 63.37,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "2707",
       "buy_date": "2006-04-06",
       "buy_price": 21.96,
@@ -419,25 +342,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2434",
-      "buy_date": "2006-04-06",
-      "buy_price": 12.76,
+      "ticker": "4526",
+      "buy_date": "2006-04-07",
+      "buy_price": 25.31,
       "sell_date": "2006-05-16",
-      "sell_price": 13.07,
-      "shares": 23508,
-      "pl": 7191.63,
-      "pl_pct": 2.4,
+      "sell_price": 24.68,
+      "shares": 11852,
+      "pl": -7514.07,
+      "pl_pct": -2.5,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1530",
-      "buy_date": "2006-04-14",
-      "buy_price": 23.57,
+      "ticker": "3058",
+      "buy_date": "2006-04-07",
+      "buy_price": 12.01,
       "sell_date": "2006-05-16",
-      "sell_price": 22.35,
-      "shares": 12726,
-      "pl": -15507.76,
-      "pl_pct": -5.17,
+      "sell_price": 11.18,
+      "shares": 24972,
+      "pl": -20854.93,
+      "pl_pct": -6.95,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -463,17 +386,6 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "9904",
-      "buy_date": "2006-05-09",
-      "buy_price": 12.73,
-      "sell_date": "2006-05-16",
-      "sell_price": 13.78,
-      "shares": 23565,
-      "pl": 24626.41,
-      "pl_pct": 8.21,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "2545",
       "buy_date": "2006-05-19",
       "buy_price": 10.78,
@@ -483,17 +395,6 @@
       "pl": 38432.86,
       "pl_pct": 25.62,
       "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "2206",
-      "buy_date": "2006-05-22",
-      "buy_price": 12.27,
-      "sell_date": "2006-05-30",
-      "sell_price": 11.55,
-      "shares": 24451,
-      "pl": -17696.48,
-      "pl_pct": -5.9,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
     },
     {
       "ticker": "1477",
@@ -507,48 +408,37 @@
       "sell_reason": "RSI<35"
     },
     {
+      "ticker": "2206",
+      "buy_date": "2006-05-22",
+      "buy_price": 12.27,
+      "sell_date": "2006-06-05",
+      "sell_price": 11.03,
+      "shares": 24451,
+      "pl": -30336.83,
+      "pl_pct": -10.11,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
+    },
+    {
       "ticker": "3356",
       "buy_date": "2006-05-17",
       "buy_price": 41.7,
-      "sell_date": "2006-06-05",
-      "sell_price": 38.92,
+      "sell_date": "2006-06-08",
+      "sell_price": 36.14,
       "shares": 7194,
-      "pl": -19998.42,
-      "pl_pct": -6.67,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "pl": -39996.85,
+      "pl_pct": -13.33,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-18%)"
     },
     {
       "ticker": "1903",
       "buy_date": "2006-05-19",
       "buy_price": 46.05,
-      "sell_date": "2006-06-05",
-      "sell_price": 43.15,
+      "sell_date": "2006-06-08",
+      "sell_price": 38.55,
       "shares": 6514,
-      "pl": -18890.58,
-      "pl_pct": -6.3,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "9904",
-      "buy_date": "2006-05-17",
-      "buy_price": 13.3,
-      "sell_date": "2006-06-08",
-      "sell_price": 12.11,
-      "shares": 22555,
-      "pl": -26785.12,
-      "pl_pct": -8.93,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
-      "ticker": "2545",
-      "buy_date": "2006-05-19",
-      "buy_price": 10.78,
-      "sell_date": "2006-06-08",
-      "sell_price": 11.86,
-      "shares": 13914,
-      "pl": 14966.08,
-      "pl_pct": 9.98,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+      "pl": -48855.0,
+      "pl_pct": -16.29,
+      "sell_reason": "\u505c\u640d(-16%)"
     },
     {
       "ticker": "9940",
@@ -562,6 +452,17 @@
       "sell_reason": "RSI<35"
     },
     {
+      "ticker": "9904",
+      "buy_date": "2006-05-17",
+      "buy_price": 13.3,
+      "sell_date": "2006-07-17",
+      "sell_price": 12.04,
+      "shares": 22555,
+      "pl": -28392.23,
+      "pl_pct": -9.46,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "1473",
       "buy_date": "2006-05-18",
       "buy_price": 20.01,
@@ -570,6 +471,17 @@
       "shares": 14994,
       "pl": -12826.39,
       "pl_pct": -4.28,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2545",
+      "buy_date": "2006-05-19",
+      "buy_price": 10.78,
+      "sell_date": "2006-07-17",
+      "sell_price": 15.67,
+      "shares": 13914,
+      "pl": 68027.63,
+      "pl_pct": 45.35,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -675,22 +587,44 @@
       "ticker": "1726",
       "buy_date": "2006-09-18",
       "buy_price": 24.72,
-      "sell_date": "2006-10-18",
-      "sell_price": 28.98,
+      "sell_date": "2006-11-02",
+      "sell_price": 29.91,
       "shares": 6068,
-      "pl": 25882.5,
-      "pl_pct": 17.26,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "pl": 31495.57,
+      "pl_pct": 21.0,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "1903",
+      "buy_date": "2006-09-18",
+      "buy_price": 37.8,
+      "sell_date": "2006-11-09",
+      "sell_price": 45.5,
+      "shares": 3968,
+      "pl": 30553.6,
+      "pl_pct": 20.37,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3003",
+      "buy_date": "2006-11-02",
+      "buy_price": 20.15,
+      "sell_date": "2006-11-09",
+      "sell_price": 19.93,
+      "shares": 14887,
+      "pl": -3296.7,
+      "pl_pct": -1.1,
+      "sell_reason": "RSI<35"
     },
     {
       "ticker": "2461",
-      "buy_date": "2006-09-18",
-      "buy_price": 13.02,
-      "sell_date": "2006-11-14",
-      "sell_price": 15.66,
-      "shares": 11524,
-      "pl": 30517.31,
-      "pl_pct": 20.35,
+      "buy_date": "2006-09-11",
+      "buy_price": 13.27,
+      "sell_date": "2006-11-15",
+      "sell_price": 16.73,
+      "shares": 11304,
+      "pl": 39169.91,
+      "pl_pct": 26.11,
       "sell_reason": "\u505c\u522950%"
     },
     {
@@ -706,13 +640,24 @@
     },
     {
       "ticker": "9914",
-      "buy_date": "2006-11-15",
-      "buy_price": 13.09,
+      "buy_date": "2006-11-09",
+      "buy_price": 12.75,
       "sell_date": "2006-11-20",
       "sell_price": 12.72,
-      "shares": 22915,
-      "pl": -8415.53,
-      "pl_pct": -2.81,
+      "shares": 23537,
+      "pl": -508.46,
+      "pl_pct": -0.17,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "1903",
+      "buy_date": "2006-09-18",
+      "buy_price": 37.8,
+      "sell_date": "2006-11-21",
+      "sell_price": 44.0,
+      "shares": 3968,
+      "pl": 24601.6,
+      "pl_pct": 16.4,
       "sell_reason": "RSI<35"
     },
     {
@@ -725,28 +670,6 @@
       "pl": 14831.97,
       "pl_pct": 4.94,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "2002A",
-      "buy_date": "2006-09-11",
-      "buy_price": 15.08,
-      "sell_date": "2006-11-29",
-      "sell_price": 16.76,
-      "shares": 19892,
-      "pl": 33442.29,
-      "pl_pct": 11.15,
-      "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "2601",
-      "buy_date": "2006-10-18",
-      "buy_price": 17.66,
-      "sell_date": "2006-12-06",
-      "sell_price": 22.6,
-      "shares": 8495,
-      "pl": 42022.8,
-      "pl_pct": 28.02,
-      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "2497",
@@ -794,13 +717,13 @@
     },
     {
       "ticker": "2461",
-      "buy_date": "2006-09-18",
-      "buy_price": 13.02,
+      "buy_date": "2006-09-11",
+      "buy_price": 13.27,
       "sell_date": "2006-12-12",
       "sell_price": 16.71,
-      "shares": 11525,
-      "pl": 42533.14,
-      "pl_pct": 28.35,
+      "shares": 11305,
+      "pl": 38854.89,
+      "pl_pct": 25.9,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -826,25 +749,36 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2601",
-      "buy_date": "2006-10-18",
-      "buy_price": 17.66,
+      "ticker": "1232",
+      "buy_date": "2006-11-15",
+      "buy_price": 10.13,
       "sell_date": "2006-12-12",
-      "sell_price": 22.26,
-      "shares": 8496,
-      "pl": 39118.13,
-      "pl_pct": 26.08,
+      "sell_price": 10.39,
+      "shares": 29626,
+      "pl": 7812.41,
+      "pl_pct": 2.6,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1232",
+      "ticker": "1537",
       "buy_date": "2006-11-20",
-      "buy_price": 10.21,
+      "buy_price": 11.73,
       "sell_date": "2006-12-12",
-      "sell_price": 10.39,
-      "shares": 29396,
-      "pl": 5426.23,
-      "pl_pct": 1.81,
+      "sell_price": 14.31,
+      "shares": 25573,
+      "pl": 65999.92,
+      "pl_pct": 22.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1473",
+      "buy_date": "2006-11-21",
+      "buy_price": 23.08,
+      "sell_date": "2006-12-12",
+      "sell_price": 24.52,
+      "shares": 12996,
+      "pl": 18707.98,
+      "pl_pct": 6.24,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -856,17 +790,6 @@
       "shares": 26533,
       "pl": -4374.9,
       "pl_pct": -1.46,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "9942",
-      "buy_date": "2006-11-29",
-      "buy_price": 19.19,
-      "sell_date": "2006-12-12",
-      "sell_price": 19.61,
-      "shares": 15636,
-      "pl": 6629.78,
-      "pl_pct": 2.21,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -901,17 +824,6 @@
       "pl": 35517.01,
       "pl_pct": 23.68,
       "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "2527",
-      "buy_date": "2006-12-21",
-      "buy_price": 10.07,
-      "sell_date": "2006-12-28",
-      "sell_price": 9.5,
-      "shares": 29789,
-      "pl": -17084.02,
-      "pl_pct": -5.69,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "2601",
@@ -1013,14 +925,14 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "1609",
-      "buy_date": "2006-12-28",
-      "buy_price": 10.78,
+      "ticker": "2527",
+      "buy_date": "2006-12-21",
+      "buy_price": 10.07,
       "sell_date": "2006-12-29 (\u5e74\u7d42)",
-      "sell_price": 10.91,
-      "shares": 27838,
-      "pl": 3821.52,
-      "pl_pct": 1.27,
+      "sell_price": 9.5,
+      "shares": 29789,
+      "pl": -17084.02,
+      "pl_pct": -5.69,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     }
   ],
@@ -1047,1217 +959,1217 @@
     },
     {
       "date": "2006-01-06",
-      "equity": 3046241.3,
+      "equity": 3059207.56,
       "type": "daily"
     },
     {
       "date": "2006-01-09",
-      "equity": 3038644.37,
+      "equity": 3058397.94,
       "type": "daily"
     },
     {
       "date": "2006-01-10",
-      "equity": 3060131.69,
+      "equity": 3077062.72,
       "type": "daily"
     },
     {
       "date": "2006-01-11",
-      "equity": 3070558.51,
+      "equity": 3092919.4,
       "type": "daily"
     },
     {
       "date": "2006-01-12",
-      "equity": 3005598.86,
+      "equity": 3029888.36,
       "type": "daily"
     },
     {
       "date": "2006-01-13",
-      "equity": 2984404.83,
+      "equity": 3027055.67,
       "type": "daily"
     },
     {
       "date": "2006-01-16",
-      "equity": 3023193.68,
+      "equity": 3047950.96,
       "type": "daily"
     },
     {
       "date": "2006-01-17",
-      "equity": 2982944.29,
+      "equity": 3010859.17,
       "type": "daily"
     },
     {
       "date": "2006-01-18",
-      "equity": 2894313.02,
+      "equity": 2935412.76,
       "type": "daily"
     },
     {
       "date": "2006-01-19",
-      "equity": 2890045.76,
+      "equity": 2941842.39,
       "type": "daily"
     },
     {
       "date": "2006-01-20",
-      "equity": 2886809.9,
+      "equity": 2942228.23,
       "type": "daily"
     },
     {
       "date": "2006-01-23",
-      "equity": 2848009.49,
+      "equity": 2926173.79,
       "type": "hold"
     },
     {
       "date": "2006-01-24",
-      "equity": 2886850.89,
+      "equity": 2987386.95,
       "type": "hold"
     },
     {
       "date": "2006-01-25",
-      "equity": 2905724.48,
+      "equity": 3008451.81,
       "type": "daily"
     },
     {
       "date": "2006-02-03",
-      "equity": 2874941.15,
+      "equity": 2985957.14,
       "type": "daily"
     },
     {
       "date": "2006-02-06",
-      "equity": 2947638.04,
+      "equity": 3051621.46,
       "type": "daily"
     },
     {
       "date": "2006-02-07",
-      "equity": 2969965.01,
+      "equity": 3066121.48,
       "type": "daily"
     },
     {
       "date": "2006-02-08",
-      "equity": 2932179.58,
+      "equity": 3044134.55,
       "type": "daily"
     },
     {
       "date": "2006-02-09",
-      "equity": 2916250.76,
+      "equity": 3032037.41,
       "type": "daily"
     },
     {
       "date": "2006-02-10",
-      "equity": 2893787.79,
+      "equity": 3017492.6,
       "type": "daily"
     },
     {
       "date": "2006-02-13",
-      "equity": 2913722.85,
+      "equity": 3049053.98,
       "type": "daily"
     },
     {
       "date": "2006-02-14",
-      "equity": 2947245.69,
+      "equity": 3090602.88,
       "type": "daily"
     },
     {
       "date": "2006-02-15",
-      "equity": 2920017.01,
+      "equity": 3103932.29,
       "type": "daily"
     },
     {
       "date": "2006-02-16",
-      "equity": 2958951.68,
+      "equity": 3131231.69,
       "type": "daily"
     },
     {
       "date": "2006-02-17",
-      "equity": 2936083.08,
+      "equity": 3122272.69,
       "type": "daily"
     },
     {
       "date": "2006-02-20",
-      "equity": 2956403.29,
+      "equity": 3113629.99,
       "type": "daily"
     },
     {
       "date": "2006-02-21",
-      "equity": 2936741.14,
+      "equity": 3106268.3,
       "type": "daily"
     },
     {
       "date": "2006-02-22",
-      "equity": 2915596.51,
+      "equity": 3074031.76,
       "type": "hold"
     },
     {
       "date": "2006-02-23",
-      "equity": 2914827.74,
+      "equity": 3070044.01,
       "type": "hold"
     },
     {
       "date": "2006-02-24",
-      "equity": 2938875.5,
+      "equity": 3105159.52,
       "type": "hold"
     },
     {
       "date": "2006-02-27",
-      "equity": 2936202.4,
+      "equity": 3081180.0,
       "type": "hold"
     },
     {
       "date": "2006-03-01",
-      "equity": 2940046.04,
+      "equity": 3088121.72,
       "type": "daily"
     },
     {
       "date": "2006-03-02",
-      "equity": 2936998.22,
+      "equity": 3084334.14,
       "type": "daily"
     },
     {
       "date": "2006-03-03",
-      "equity": 2911633.91,
+      "equity": 3067798.5,
       "type": "hold"
     },
     {
       "date": "2006-03-06",
-      "equity": 2929477.08,
+      "equity": 3079342.13,
       "type": "hold"
     },
     {
       "date": "2006-03-07",
-      "equity": 2930317.7,
+      "equity": 3076294.07,
       "type": "hold"
     },
     {
       "date": "2006-03-08",
-      "equity": 2933814.91,
+      "equity": 3097911.06,
       "type": "hold"
     },
     {
       "date": "2006-03-09",
-      "equity": 2936237.45,
+      "equity": 3117226.73,
       "type": "hold"
     },
     {
       "date": "2006-03-10",
-      "equity": 2939578.63,
+      "equity": 3099205.5,
       "type": "hold"
     },
     {
       "date": "2006-03-13",
-      "equity": 2939073.44,
+      "equity": 3097054.95,
       "type": "hold"
     },
     {
       "date": "2006-03-14",
-      "equity": 2939137.25,
+      "equity": 3094461.24,
       "type": "hold"
     },
     {
       "date": "2006-03-15",
-      "equity": 2918011.55,
+      "equity": 3082312.79,
       "type": "hold"
     },
     {
       "date": "2006-03-16",
-      "equity": 2934639.26,
+      "equity": 3089841.74,
       "type": "hold"
     },
     {
       "date": "2006-03-17",
-      "equity": 2924155.62,
+      "equity": 3088467.31,
       "type": "hold"
     },
     {
       "date": "2006-03-20",
-      "equity": 2919413.39,
+      "equity": 3088170.37,
       "type": "hold"
     },
     {
       "date": "2006-03-21",
-      "equity": 2920208.48,
+      "equity": 3086326.26,
       "type": "hold"
     },
     {
       "date": "2006-03-22",
-      "equity": 2913474.35,
+      "equity": 3079778.53,
       "type": "hold"
     },
     {
       "date": "2006-03-23",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "crash"
     },
     {
       "date": "2006-03-24",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "hold"
     },
     {
       "date": "2006-03-27",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "hold"
     },
     {
       "date": "2006-03-28",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "hold"
     },
     {
       "date": "2006-03-29",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "hold"
     },
     {
       "date": "2006-03-30",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "hold"
     },
     {
       "date": "2006-03-31",
-      "equity": 2939112.43,
+      "equity": 3104044.76,
       "type": "daily"
     },
     {
       "date": "2006-04-03",
-      "equity": 2934409.61,
+      "equity": 3110011.59,
       "type": "daily"
     },
     {
       "date": "2006-04-04",
-      "equity": 2936831.58,
+      "equity": 3107406.45,
       "type": "daily"
     },
     {
       "date": "2006-04-06",
-      "equity": 2961282.94,
+      "equity": 3135457.02,
       "type": "daily"
     },
     {
       "date": "2006-04-07",
-      "equity": 2975375.46,
+      "equity": 3143464.14,
       "type": "daily"
     },
     {
       "date": "2006-04-10",
-      "equity": 2978401.22,
+      "equity": 3132166.04,
       "type": "daily"
     },
     {
       "date": "2006-04-11",
-      "equity": 2986779.36,
+      "equity": 3135088.23,
       "type": "daily"
     },
     {
       "date": "2006-04-12",
-      "equity": 3021748.07,
+      "equity": 3172843.26,
       "type": "daily"
     },
     {
       "date": "2006-04-13",
-      "equity": 3090796.13,
+      "equity": 3257225.77,
       "type": "daily"
     },
     {
       "date": "2006-04-14",
-      "equity": 3159376.58,
+      "equity": 3305264.39,
       "type": "daily"
     },
     {
       "date": "2006-04-17",
-      "equity": 3212824.26,
+      "equity": 3338738.23,
       "type": "daily"
     },
     {
       "date": "2006-04-18",
-      "equity": 3200388.8,
+      "equity": 3356372.01,
       "type": "daily"
     },
     {
       "date": "2006-04-19",
-      "equity": 3236476.72,
+      "equity": 3388710.71,
       "type": "daily"
     },
     {
       "date": "2006-04-20",
-      "equity": 3221558.21,
+      "equity": 3382104.96,
       "type": "daily"
     },
     {
       "date": "2006-04-21",
-      "equity": 3169131.25,
+      "equity": 3328542.63,
       "type": "daily"
     },
     {
       "date": "2006-04-24",
-      "equity": 3217751.52,
+      "equity": 3381470.78,
       "type": "daily"
     },
     {
       "date": "2006-04-25",
-      "equity": 3269875.15,
+      "equity": 3401814.38,
       "type": "daily"
     },
     {
       "date": "2006-04-26",
-      "equity": 3276234.9,
+      "equity": 3426370.45,
       "type": "daily"
     },
     {
       "date": "2006-04-27",
-      "equity": 3271299.5,
+      "equity": 3418317.47,
       "type": "daily"
     },
     {
       "date": "2006-04-28",
-      "equity": 3245618.43,
+      "equity": 3406228.42,
       "type": "daily"
     },
     {
       "date": "2006-05-02",
-      "equity": 3253798.7,
+      "equity": 3405516.03,
       "type": "daily"
     },
     {
       "date": "2006-05-03",
-      "equity": 3245517.9,
+      "equity": 3402756.98,
       "type": "daily"
     },
     {
       "date": "2006-05-04",
-      "equity": 3271940.83,
+      "equity": 3423611.05,
       "type": "daily"
     },
     {
       "date": "2006-05-05",
-      "equity": 3291273.13,
+      "equity": 3434020.35,
       "type": "daily"
     },
     {
       "date": "2006-05-08",
-      "equity": 3316813.87,
+      "equity": 3457487.36,
       "type": "daily"
     },
     {
       "date": "2006-05-09",
-      "equity": 3347421.64,
+      "equity": 3497701.77,
       "type": "daily"
     },
     {
       "date": "2006-05-10",
-      "equity": 3347875.72,
+      "equity": 3489380.89,
       "type": "daily"
     },
     {
       "date": "2006-05-11",
-      "equity": 3400950.99,
+      "equity": 3530813.34,
       "type": "daily"
     },
     {
       "date": "2006-05-12",
-      "equity": 3387737.0,
+      "equity": 3530771.9,
       "type": "daily"
     },
     {
       "date": "2006-05-15",
-      "equity": 3412766.78,
+      "equity": 3536010.07,
       "type": "daily"
     },
     {
       "date": "2006-05-16",
-      "equity": 3393564.69,
+      "equity": 3523114.45,
       "type": "crash"
     },
     {
       "date": "2006-05-17",
-      "equity": 3393564.69,
+      "equity": 3523114.45,
       "type": "daily"
     },
     {
       "date": "2006-05-18",
-      "equity": 3397095.85,
+      "equity": 3526645.61,
       "type": "daily"
     },
     {
       "date": "2006-05-19",
-      "equity": 3403045.18,
+      "equity": 3532594.95,
       "type": "daily"
     },
     {
       "date": "2006-05-22",
-      "equity": 3353554.65,
+      "equity": 3483104.41,
       "type": "daily"
     },
     {
       "date": "2006-05-23",
-      "equity": 3352932.59,
+      "equity": 3482482.35,
       "type": "hold"
     },
     {
       "date": "2006-05-24",
-      "equity": 3408700.07,
+      "equity": 3538249.84,
       "type": "hold"
     },
     {
       "date": "2006-05-25",
-      "equity": 3484605.42,
+      "equity": 3614155.19,
       "type": "hold"
     },
     {
       "date": "2006-05-26",
-      "equity": 3478159.9,
+      "equity": 3607709.66,
       "type": "hold"
     },
     {
       "date": "2006-05-29",
-      "equity": 3498890.57,
+      "equity": 3628440.34,
       "type": "hold"
     },
     {
       "date": "2006-05-30",
-      "equity": 3435350.19,
+      "equity": 3564899.95,
       "type": "hold"
     },
     {
       "date": "2006-06-01",
-      "equity": 3454691.94,
+      "equity": 3588455.16,
       "type": "hold"
     },
     {
       "date": "2006-06-02",
-      "equity": 3466082.73,
+      "equity": 3603216.72,
       "type": "hold"
     },
     {
       "date": "2006-06-05",
-      "equity": 3379150.5,
+      "equity": 3496059.91,
       "type": "hold"
     },
     {
       "date": "2006-06-06",
-      "equity": 3383969.27,
+      "equity": 3491701.23,
       "type": "hold"
     },
     {
       "date": "2006-06-07",
-      "equity": 3372082.74,
+      "equity": 3476481.63,
       "type": "hold"
     },
     {
       "date": "2006-06-08",
-      "equity": 3343715.84,
+      "equity": 3410662.41,
       "type": "hold"
     },
     {
       "date": "2006-06-09",
-      "equity": 3343003.27,
+      "equity": 3417279.62,
       "type": "hold"
     },
     {
       "date": "2006-06-12",
-      "equity": 3345141.0,
+      "equity": 3430811.97,
       "type": "hold"
     },
     {
       "date": "2006-06-13",
-      "equity": 3344428.43,
+      "equity": 3423467.02,
       "type": "hold"
     },
     {
       "date": "2006-06-14",
-      "equity": 3345141.0,
+      "equity": 3437181.01,
       "type": "hold"
     },
     {
       "date": "2006-06-15",
-      "equity": 3345141.0,
+      "equity": 3441169.09,
       "type": "hold"
     },
     {
       "date": "2006-06-16",
-      "equity": 3347991.32,
+      "equity": 3468049.84,
       "type": "hold"
     },
     {
       "date": "2006-06-19",
-      "equity": 3347635.01,
+      "equity": 3497370.13,
       "type": "hold"
     },
     {
       "date": "2006-06-20",
-      "equity": 3340509.23,
+      "equity": 3472957.28,
       "type": "hold"
     },
     {
       "date": "2006-06-21",
-      "equity": 3343359.55,
+      "equity": 3451343.46,
       "type": "hold"
     },
     {
       "date": "2006-06-22",
-      "equity": 3344784.71,
+      "equity": 3465999.82,
       "type": "hold"
     },
     {
       "date": "2006-06-23",
-      "equity": 3341221.83,
+      "equity": 3477045.47,
       "type": "hold"
     },
     {
       "date": "2006-06-26",
-      "equity": 3343003.27,
+      "equity": 3478299.6,
       "type": "hold"
     },
     {
       "date": "2006-06-27",
-      "equity": 3344428.43,
+      "equity": 3479903.53,
       "type": "hold"
     },
     {
       "date": "2006-06-28",
-      "equity": 3347278.72,
+      "equity": 3481053.14,
       "type": "hold"
     },
     {
       "date": "2006-06-29",
-      "equity": 3345853.56,
+      "equity": 3499466.39,
       "type": "hold"
     },
     {
       "date": "2006-06-30",
-      "equity": 3346922.44,
+      "equity": 3508936.72,
       "type": "hold"
     },
     {
       "date": "2006-07-03",
-      "equity": 3346209.87,
+      "equity": 3523334.81,
       "type": "hold"
     },
     {
       "date": "2006-07-04",
-      "equity": 3346566.16,
+      "equity": 3531318.7,
       "type": "hold"
     },
     {
       "date": "2006-07-05",
-      "equity": 3347278.72,
+      "equity": 3531869.9,
       "type": "hold"
     },
     {
       "date": "2006-07-06",
-      "equity": 3347991.32,
+      "equity": 3529903.99,
       "type": "hold"
     },
     {
       "date": "2006-07-07",
-      "equity": 3352266.77,
+      "equity": 3512835.93,
       "type": "hold"
     },
     {
       "date": "2006-07-10",
-      "equity": 3352266.77,
+      "equity": 3527470.26,
       "type": "hold"
     },
     {
       "date": "2006-07-11",
-      "equity": 3352266.77,
+      "equity": 3515216.89,
       "type": "hold"
     },
     {
       "date": "2006-07-12",
-      "equity": 3350129.04,
+      "equity": 3497526.4,
       "type": "hold"
     },
     {
       "date": "2006-07-13",
-      "equity": 3350129.04,
+      "equity": 3498206.66,
       "type": "hold"
     },
     {
       "date": "2006-07-14",
-      "equity": 3347278.72,
+      "equity": 3491649.03,
       "type": "hold"
     },
     {
       "date": "2006-07-17",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "crash"
     },
     {
       "date": "2006-07-18",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-19",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-20",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-21",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-24",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-25",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-26",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-27",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-28",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-07-31",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-01",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-02",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-03",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-04",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-07",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-08",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-09",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-10",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-11",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-14",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-15",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "hold"
     },
     {
       "date": "2006-08-16",
-      "equity": 3347278.72,
+      "equity": 3465679.74,
       "type": "daily"
     },
     {
       "date": "2006-08-17",
-      "equity": 3347325.27,
+      "equity": 3465726.29,
       "type": "daily"
     },
     {
       "date": "2006-08-18",
-      "equity": 3355300.0,
+      "equity": 3473701.02,
       "type": "daily"
     },
     {
       "date": "2006-08-21",
-      "equity": 3305251.26,
+      "equity": 3423652.28,
       "type": "hold"
     },
     {
       "date": "2006-08-22",
-      "equity": 3328962.06,
+      "equity": 3447363.08,
       "type": "hold"
     },
     {
       "date": "2006-08-23",
-      "equity": 3316468.82,
+      "equity": 3434869.84,
       "type": "hold"
     },
     {
       "date": "2006-08-24",
-      "equity": 3329452.53,
+      "equity": 3447853.55,
       "type": "hold"
     },
     {
       "date": "2006-08-25",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "crash"
     },
     {
       "date": "2006-08-28",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "hold"
     },
     {
       "date": "2006-08-29",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "hold"
     },
     {
       "date": "2006-08-30",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "hold"
     },
     {
       "date": "2006-08-31",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "hold"
     },
     {
       "date": "2006-09-01",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "hold"
     },
     {
       "date": "2006-09-04",
-      "equity": 3328199.37,
+      "equity": 3446600.39,
       "type": "daily"
     },
     {
       "date": "2006-09-05",
-      "equity": 3327720.91,
+      "equity": 3446121.93,
       "type": "daily"
     },
     {
       "date": "2006-09-06",
-      "equity": 3327728.02,
+      "equity": 3446129.04,
       "type": "hold"
     },
     {
       "date": "2006-09-07",
-      "equity": 3327540.28,
+      "equity": 3445941.3,
       "type": "hold"
     },
     {
       "date": "2006-09-08",
-      "equity": 3322324.74,
+      "equity": 3440725.76,
       "type": "hold"
     },
     {
       "date": "2006-09-11",
-      "equity": 3324760.38,
+      "equity": 3443161.4,
       "type": "daily"
     },
     {
       "date": "2006-09-12",
-      "equity": 3321025.92,
+      "equity": 3431961.22,
       "type": "hold"
     },
     {
       "date": "2006-09-13",
-      "equity": 3323231.48,
+      "equity": 3436133.98,
       "type": "hold"
     },
     {
       "date": "2006-09-14",
-      "equity": 3305180.79,
+      "equity": 3411302.51,
       "type": "hold"
     },
     {
       "date": "2006-09-15",
-      "equity": 3317182.49,
+      "equity": 3422610.86,
       "type": "hold"
     },
     {
       "date": "2006-09-18",
-      "equity": 3334938.78,
+      "equity": 3449082.77,
       "type": "daily"
     },
     {
       "date": "2006-09-19",
-      "equity": 3339845.83,
+      "equity": 3454932.41,
       "type": "daily"
     },
     {
       "date": "2006-09-20",
-      "equity": 3347625.6,
+      "equity": 3471503.78,
       "type": "daily"
     },
     {
       "date": "2006-09-21",
-      "equity": 3363072.06,
+      "equity": 3483399.91,
       "type": "daily"
     },
     {
       "date": "2006-09-22",
-      "equity": 3372232.84,
+      "equity": 3480703.18,
       "type": "daily"
     },
     {
       "date": "2006-09-25",
-      "equity": 3401558.19,
+      "equity": 3522713.75,
       "type": "daily"
     },
     {
       "date": "2006-09-26",
-      "equity": 3389502.29,
+      "equity": 3505842.6,
       "type": "daily"
     },
     {
       "date": "2006-09-27",
-      "equity": 3403887.92,
+      "equity": 3540047.85,
       "type": "daily"
     },
     {
       "date": "2006-09-28",
-      "equity": 3372372.08,
+      "equity": 3508486.33,
       "type": "daily"
     },
     {
       "date": "2006-09-29",
-      "equity": 3374489.03,
+      "equity": 3494892.94,
       "type": "daily"
     },
     {
       "date": "2006-10-02",
-      "equity": 3409858.4,
+      "equity": 3535569.57,
       "type": "daily"
     },
     {
       "date": "2006-10-03",
-      "equity": 3421087.86,
+      "equity": 3542289.89,
       "type": "daily"
     },
     {
       "date": "2006-10-04",
-      "equity": 3430941.73,
+      "equity": 3545712.12,
       "type": "daily"
     },
     {
       "date": "2006-10-05",
-      "equity": 3487383.17,
+      "equity": 3596884.07,
       "type": "daily"
     },
     {
       "date": "2006-10-11",
-      "equity": 3514911.23,
+      "equity": 3636080.16,
       "type": "daily"
     },
     {
       "date": "2006-10-12",
-      "equity": 3497328.51,
+      "equity": 3613364.17,
       "type": "daily"
     },
     {
       "date": "2006-10-13",
-      "equity": 3506279.3,
+      "equity": 3637765.72,
       "type": "daily"
     },
     {
       "date": "2006-10-16",
-      "equity": 3565025.16,
+      "equity": 3707518.05,
       "type": "daily"
     },
     {
       "date": "2006-10-17",
-      "equity": 3561605.52,
+      "equity": 3696637.98,
       "type": "daily"
     },
     {
       "date": "2006-10-18",
-      "equity": 3547802.12,
+      "equity": 3688484.89,
       "type": "daily"
     },
     {
       "date": "2006-10-19",
-      "equity": 3532986.91,
+      "equity": 3684589.37,
       "type": "daily"
     },
     {
       "date": "2006-10-20",
-      "equity": 3553366.59,
+      "equity": 3699362.27,
       "type": "daily"
     },
     {
       "date": "2006-10-23",
-      "equity": 3571626.74,
+      "equity": 3728073.72,
       "type": "daily"
     },
     {
       "date": "2006-10-24",
-      "equity": 3570955.94,
+      "equity": 3726730.55,
       "type": "daily"
     },
     {
       "date": "2006-10-25",
-      "equity": 3560420.51,
+      "equity": 3709285.14,
       "type": "daily"
     },
     {
       "date": "2006-10-26",
-      "equity": 3592174.4,
+      "equity": 3731811.61,
       "type": "daily"
     },
     {
       "date": "2006-10-27",
-      "equity": 3576308.35,
+      "equity": 3716050.25,
       "type": "daily"
     },
     {
       "date": "2006-10-30",
-      "equity": 3545680.3,
+      "equity": 3694284.61,
       "type": "daily"
     },
     {
       "date": "2006-10-31",
-      "equity": 3557027.38,
+      "equity": 3706649.42,
       "type": "daily"
     },
     {
       "date": "2006-11-01",
-      "equity": 3578812.11,
+      "equity": 3715984.62,
       "type": "daily"
     },
     {
       "date": "2006-11-02",
-      "equity": 3590697.34,
+      "equity": 3718144.54,
       "type": "daily"
     },
     {
       "date": "2006-11-03",
-      "equity": 3626460.83,
+      "equity": 3744535.29,
       "type": "daily"
     },
     {
       "date": "2006-11-06",
-      "equity": 3625909.3,
+      "equity": 3729686.95,
       "type": "daily"
     },
     {
       "date": "2006-11-07",
-      "equity": 3630857.81,
+      "equity": 3761276.08,
       "type": "daily"
     },
     {
       "date": "2006-11-08",
-      "equity": 3668124.13,
+      "equity": 3774089.89,
       "type": "daily"
     },
     {
       "date": "2006-11-09",
-      "equity": 3671731.83,
+      "equity": 3790000.6,
       "type": "daily"
     },
     {
       "date": "2006-11-10",
-      "equity": 3666011.6,
+      "equity": 3802901.47,
       "type": "daily"
     },
     {
       "date": "2006-11-13",
-      "equity": 3663714.97,
+      "equity": 3803244.94,
       "type": "daily"
     },
     {
       "date": "2006-11-14",
-      "equity": 3685519.71,
+      "equity": 3830494.63,
       "type": "daily"
     },
     {
       "date": "2006-11-15",
-      "equity": 3692915.69,
+      "equity": 3856618.61,
       "type": "daily"
     },
     {
       "date": "2006-11-16",
-      "equity": 3685021.21,
+      "equity": 3850470.42,
       "type": "daily"
     },
     {
       "date": "2006-11-17",
-      "equity": 3694270.34,
+      "equity": 3862259.52,
       "type": "daily"
     },
     {
       "date": "2006-11-20",
-      "equity": 3682214.21,
+      "equity": 3842159.96,
       "type": "daily"
     },
     {
       "date": "2006-11-21",
-      "equity": 3696337.76,
+      "equity": 3867302.78,
       "type": "daily"
     },
     {
       "date": "2006-11-22",
-      "equity": 3707629.43,
+      "equity": 3884823.4,
       "type": "daily"
     },
     {
       "date": "2006-11-23",
-      "equity": 3726717.88,
+      "equity": 3894160.41,
       "type": "daily"
     },
     {
       "date": "2006-11-24",
-      "equity": 3745654.75,
+      "equity": 3922959.18,
       "type": "daily"
     },
     {
       "date": "2006-11-27",
-      "equity": 3744810.54,
+      "equity": 3938949.1,
       "type": "daily"
     },
     {
       "date": "2006-11-28",
-      "equity": 3754841.44,
+      "equity": 3958493.1,
       "type": "daily"
     },
     {
       "date": "2006-11-29",
-      "equity": 3720673.18,
+      "equity": 3932460.56,
       "type": "daily"
     },
     {
       "date": "2006-11-30",
-      "equity": 3739409.77,
+      "equity": 3950746.29,
       "type": "daily"
     },
     {
       "date": "2006-12-01",
-      "equity": 3782822.79,
+      "equity": 3977882.26,
       "type": "daily"
     },
     {
       "date": "2006-12-04",
-      "equity": 3859148.35,
+      "equity": 4041875.45,
       "type": "daily"
     },
     {
       "date": "2006-12-05",
-      "equity": 3847594.91,
+      "equity": 3996769.71,
       "type": "daily"
     },
     {
       "date": "2006-12-06",
-      "equity": 3890301.62,
+      "equity": 4013214.21,
       "type": "daily"
     },
     {
       "date": "2006-12-07",
-      "equity": 3885782.66,
+      "equity": 4015451.61,
       "type": "daily"
     },
     {
       "date": "2006-12-08",
-      "equity": 3889642.76,
+      "equity": 4029692.79,
       "type": "daily"
     },
     {
       "date": "2006-12-11",
-      "equity": 3910079.42,
+      "equity": 4056133.28,
       "type": "daily"
     },
     {
       "date": "2006-12-12",
-      "equity": 3896912.39,
+      "equity": 4051547.47,
       "type": "crash"
     },
     {
       "date": "2006-12-13",
-      "equity": 3896912.39,
+      "equity": 4051547.47,
       "type": "daily"
     },
     {
       "date": "2006-12-14",
-      "equity": 3887667.1,
+      "equity": 4042302.19,
       "type": "crash"
     },
     {
       "date": "2006-12-15",
-      "equity": 3887667.1,
+      "equity": 4042302.19,
       "type": "daily"
     },
     {
       "date": "2006-12-18",
-      "equity": 3892428.77,
+      "equity": 4047063.86,
       "type": "daily"
     },
     {
       "date": "2006-12-19",
-      "equity": 3866371.13,
+      "equity": 4021006.21,
       "type": "daily"
     },
     {
       "date": "2006-12-20",
-      "equity": 3896530.79,
+      "equity": 4051165.87,
       "type": "daily"
     },
     {
       "date": "2006-12-21",
-      "equity": 3849439.68,
+      "equity": 4004074.77,
       "type": "daily"
     },
     {
       "date": "2006-12-22",
-      "equity": 3899770.96,
+      "equity": 4054406.05,
       "type": "daily"
     },
     {
       "date": "2006-12-25",
-      "equity": 3974996.58,
+      "equity": 4129631.67,
       "type": "daily"
     },
     {
       "date": "2006-12-26",
-      "equity": 4080600.48,
+      "equity": 4235235.56,
       "type": "daily"
     },
     {
       "date": "2006-12-27",
-      "equity": 4035989.75,
+      "equity": 4190624.84,
       "type": "daily"
     },
     {
       "date": "2006-12-28",
-      "equity": 4022282.91,
+      "equity": 4176918.0,
       "type": "daily"
     },
     {
       "date": "2006-12-29",
-      "equity": 4074710.58,
+      "equity": 4225524.14,
       "type": "daily"
     }
   ],
@@ -2294,12 +2206,6 @@
     },
     {
       "date": "2006-01-24",
-      "ticker": "3062",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 126.6
-    },
-    {
-      "date": "2006-01-24",
       "ticker": "9925",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 123.9
@@ -2321,6 +2227,12 @@
       "ticker": "5854",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.1
+    },
+    {
+      "date": "2006-01-24",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.7
     },
     {
       "date": "2006-01-24",
@@ -2372,12 +2284,6 @@
     },
     {
       "date": "2006-02-22",
-      "ticker": "2497",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 94.6
-    },
-    {
-      "date": "2006-02-22",
       "ticker": "1903",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 89.4
@@ -2401,16 +2307,16 @@
       "score": 75.4
     },
     {
+      "date": "2006-02-22",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.3
+    },
+    {
       "date": "2006-02-23",
       "ticker": "9904",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.2
-    },
-    {
-      "date": "2006-02-23",
-      "ticker": "2497",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.6
     },
     {
       "date": "2006-02-23",
@@ -2447,6 +2353,12 @@
       "ticker": "2881",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 50.5
+    },
+    {
+      "date": "2006-02-23",
+      "ticker": "2912",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 47.9
     },
     {
       "date": "2006-02-24",
@@ -2491,10 +2403,10 @@
       "score": 70.6
     },
     {
-      "date": "2006-02-27",
-      "ticker": "2466",
+      "date": "2006-02-24",
+      "ticker": "2428",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.2
+      "score": 64.2
     },
     {
       "date": "2006-02-27",
@@ -2531,6 +2443,12 @@
       "ticker": "2428",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 65.5
+    },
+    {
+      "date": "2006-02-27",
+      "ticker": "2397",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.1
     },
     {
       "date": "2006-03-03",
@@ -2575,6 +2493,12 @@
       "score": 79.9
     },
     {
+      "date": "2006-03-03",
+      "ticker": "3007",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.8
+    },
+    {
       "date": "2006-03-06",
       "ticker": "1303",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2612,9 +2536,9 @@
     },
     {
       "date": "2006-03-06",
-      "ticker": "2466",
+      "ticker": "6166",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 74.8
+      "score": 64.8
     },
     {
       "date": "2006-03-07",
@@ -2645,12 +2569,6 @@
       "ticker": "2412",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.9
-    },
-    {
-      "date": "2006-03-07",
-      "ticker": "2497",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.1
     },
     {
       "date": "2006-03-07",
@@ -2773,10 +2691,10 @@
       "score": 84.8
     },
     {
-      "date": "2006-03-10",
-      "ticker": "2002A",
+      "date": "2006-03-09",
+      "ticker": "2474",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 136.2
+      "score": 80.6
     },
     {
       "date": "2006-03-10",
@@ -2827,6 +2745,12 @@
       "score": 95.1
     },
     {
+      "date": "2006-03-10",
+      "ticker": "2328",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.7
+    },
+    {
       "date": "2006-03-13",
       "ticker": "2413",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2867,12 +2791,6 @@
       "ticker": "2464",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 75.0
-    },
-    {
-      "date": "2006-03-14",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 136.9
     },
     {
       "date": "2006-03-14",
@@ -2917,10 +2835,10 @@
       "score": 96.8
     },
     {
-      "date": "2006-03-15",
-      "ticker": "2002A",
+      "date": "2006-03-14",
+      "ticker": "2412",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 138.0
+      "score": 92.2
     },
     {
       "date": "2006-03-15",
@@ -2963,6 +2881,12 @@
       "ticker": "3020",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 81.6
+    },
+    {
+      "date": "2006-03-15",
+      "ticker": "2807",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.2
     },
     {
       "date": "2006-03-16",
@@ -3014,12 +2938,6 @@
     },
     {
       "date": "2006-03-17",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 142.2
-    },
-    {
-      "date": "2006-03-17",
       "ticker": "2413",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 118.4
@@ -3067,10 +2985,10 @@
       "score": 84.3
     },
     {
-      "date": "2006-03-20",
-      "ticker": "2002A",
+      "date": "2006-03-17",
+      "ticker": "2854",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 142.0
+      "score": 81.5
     },
     {
       "date": "2006-03-20",
@@ -3121,10 +3039,10 @@
       "score": 81.4
     },
     {
-      "date": "2006-03-21",
-      "ticker": "2002A",
+      "date": "2006-03-20",
+      "ticker": "4906",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.1
+      "score": 79.7
     },
     {
       "date": "2006-03-21",
@@ -3167,6 +3085,12 @@
       "ticker": "6192",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.8
+    },
+    {
+      "date": "2006-03-21",
+      "ticker": "2388",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.9
     },
     {
       "date": "2006-03-22",
@@ -3217,12 +3141,6 @@
       "score": 75.4
     },
     {
-      "date": "2006-03-22",
-      "ticker": "2466",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 74.7
-    },
-    {
       "date": "2006-03-24",
       "ticker": "2464",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3266,12 +3184,6 @@
     },
     {
       "date": "2006-03-24",
-      "ticker": "2452",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.4
-    },
-    {
-      "date": "2006-03-24",
       "ticker": "1903",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.6
@@ -3281,6 +3193,12 @@
       "ticker": "4906",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 81.0
+    },
+    {
+      "date": "2006-03-24",
+      "ticker": "6192",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.3
     },
     {
       "date": "2006-03-27",
@@ -3440,12 +3358,6 @@
     },
     {
       "date": "2006-03-29",
-      "ticker": "2452",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.4
-    },
-    {
-      "date": "2006-03-29",
       "ticker": "2497",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 89.1
@@ -3461,6 +3373,12 @@
       "ticker": "2388",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.3
+    },
+    {
+      "date": "2006-03-29",
+      "ticker": "6192",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.1
     },
     {
       "date": "2006-03-30",
@@ -3746,12 +3664,6 @@
     },
     {
       "date": "2006-05-30",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.8
-    },
-    {
-      "date": "2006-05-30",
       "ticker": "2447",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 104.5
@@ -3797,6 +3709,12 @@
       "ticker": "6192",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 80.0
+    },
+    {
+      "date": "2006-05-30",
+      "ticker": "2371",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.6
     },
     {
       "date": "2006-06-01",
@@ -3968,12 +3886,6 @@
     },
     {
       "date": "2006-06-06",
-      "ticker": "2883A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 88.7
-    },
-    {
-      "date": "2006-06-06",
       "ticker": "2497",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 84.6
@@ -4007,6 +3919,12 @@
       "ticker": "2704",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 56.0
+    },
+    {
+      "date": "2006-06-06",
+      "ticker": "2351",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.0
     },
     {
       "date": "2006-06-07",
@@ -4142,12 +4060,6 @@
     },
     {
       "date": "2006-06-12",
-      "ticker": "2883A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.0
-    },
-    {
-      "date": "2006-06-12",
       "ticker": "2412",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.5
@@ -4280,12 +4192,6 @@
     },
     {
       "date": "2006-06-15",
-      "ticker": "2883A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.0
-    },
-    {
-      "date": "2006-06-15",
       "ticker": "2206",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.1
@@ -4313,12 +4219,6 @@
       "ticker": "1437",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 93.3
-    },
-    {
-      "date": "2006-06-16",
-      "ticker": "2883A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.0
     },
     {
       "date": "2006-06-16",
@@ -4355,12 +4255,6 @@
       "ticker": "2702",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 55.2
-    },
-    {
-      "date": "2006-06-19",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.1
     },
     {
       "date": "2006-06-19",
@@ -4472,18 +4366,6 @@
     },
     {
       "date": "2006-06-21",
-      "ticker": "2545",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 117.0
-    },
-    {
-      "date": "2006-06-21",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.5
-    },
-    {
-      "date": "2006-06-21",
       "ticker": "2526",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 104.5
@@ -4529,6 +4411,12 @@
       "ticker": "1321",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.0
+    },
+    {
+      "date": "2006-06-21",
+      "ticker": "1726",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.7
     },
     {
       "date": "2006-06-22",
@@ -4649,12 +4537,6 @@
       "ticker": "2497",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.0
-    },
-    {
-      "date": "2006-06-26",
-      "ticker": "2545",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 118.9
     },
     {
       "date": "2006-06-26",
@@ -4886,12 +4768,6 @@
     },
     {
       "date": "2006-06-30",
-      "ticker": "9904",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 131.0
-    },
-    {
-      "date": "2006-06-30",
       "ticker": "2825",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.7
@@ -4922,12 +4798,6 @@
     },
     {
       "date": "2006-06-30",
-      "ticker": "2883A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.2
-    },
-    {
-      "date": "2006-06-30",
       "ticker": "2101",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 89.0
@@ -4945,10 +4815,10 @@
       "score": 73.2
     },
     {
-      "date": "2006-07-03",
-      "ticker": "9937",
+      "date": "2006-06-30",
+      "ticker": "2704",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 99.5
+      "score": 62.2
     },
     {
       "date": "2006-07-03",
@@ -4991,6 +4861,12 @@
       "ticker": "2464",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 74.8
+    },
+    {
+      "date": "2006-07-03",
+      "ticker": "9937",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.5
     },
     {
       "date": "2006-07-03",
@@ -5132,12 +5008,6 @@
     },
     {
       "date": "2006-07-06",
-      "ticker": "2102",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.3
-    },
-    {
-      "date": "2006-07-06",
       "ticker": "1201",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 97.4
@@ -5177,6 +5047,12 @@
       "ticker": "2497",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.9
+    },
+    {
+      "date": "2006-07-06",
+      "ticker": "2102",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.3
     },
     {
       "date": "2006-07-06",
@@ -5246,12 +5122,6 @@
     },
     {
       "date": "2006-07-10",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 143.1
-    },
-    {
-      "date": "2006-07-10",
       "ticker": "2526",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 111.2
@@ -5303,6 +5173,12 @@
       "ticker": "2412",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.8
+    },
+    {
+      "date": "2006-07-10",
+      "ticker": "1321",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.6
     },
     {
       "date": "2006-07-11",
@@ -5366,12 +5242,6 @@
     },
     {
       "date": "2006-07-12",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.1
-    },
-    {
-      "date": "2006-07-12",
       "ticker": "1723",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 105.3
@@ -5396,12 +5266,6 @@
     },
     {
       "date": "2006-07-12",
-      "ticker": "2308",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 97.4
-    },
-    {
-      "date": "2006-07-12",
       "ticker": "6505",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.6
@@ -5423,6 +5287,18 @@
       "ticker": "2379",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 94.1
+    },
+    {
+      "date": "2006-07-12",
+      "ticker": "9944",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.5
+    },
+    {
+      "date": "2006-07-12",
+      "ticker": "5471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.6
     },
     {
       "date": "2006-07-13",
@@ -5537,12 +5413,6 @@
       "ticker": "5854",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 92.3
-    },
-    {
-      "date": "2006-07-14",
-      "ticker": "2545",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.1
     },
     {
       "date": "2006-07-18",
@@ -6074,12 +5944,6 @@
     },
     {
       "date": "2006-07-31",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 136.3
-    },
-    {
-      "date": "2006-07-31",
       "ticker": "3003",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 105.1
@@ -6133,10 +5997,10 @@
       "score": 83.6
     },
     {
-      "date": "2006-08-01",
-      "ticker": "2002A",
+      "date": "2006-07-31",
+      "ticker": "6192",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 136.7
+      "score": 80.6
     },
     {
       "date": "2006-08-01",
@@ -6193,6 +6057,12 @@
       "score": 86.3
     },
     {
+      "date": "2006-08-01",
+      "ticker": "1216",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.2
+    },
+    {
       "date": "2006-08-02",
       "ticker": "3003",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -6209,12 +6079,6 @@
       "ticker": "1477",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 133.5
-    },
-    {
-      "date": "2006-08-02",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.1
     },
     {
       "date": "2006-08-02",
@@ -6251,6 +6115,12 @@
       "ticker": "5471",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 87.1
+    },
+    {
+      "date": "2006-08-02",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.4
     },
     {
       "date": "2006-08-03",
@@ -6314,12 +6184,6 @@
     },
     {
       "date": "2006-08-04",
-      "ticker": "2526",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 140.8
-    },
-    {
-      "date": "2006-08-04",
       "ticker": "1311",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 134.2
@@ -6329,6 +6193,12 @@
       "ticker": "5531",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 130.0
+    },
+    {
+      "date": "2006-08-04",
+      "ticker": "2526",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.8
     },
     {
       "date": "2006-08-04",
@@ -6434,12 +6304,6 @@
     },
     {
       "date": "2006-08-08",
-      "ticker": "2526",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 143.9
-    },
-    {
-      "date": "2006-08-08",
       "ticker": "1723",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 140.2
@@ -6449,6 +6313,12 @@
       "ticker": "5531",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 130.4
+    },
+    {
+      "date": "2006-08-08",
+      "ticker": "2526",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 113.9
     },
     {
       "date": "2006-08-08",
@@ -6506,12 +6376,6 @@
     },
     {
       "date": "2006-08-09",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.0
-    },
-    {
-      "date": "2006-08-09",
       "ticker": "2029",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.6
@@ -6553,6 +6417,12 @@
       "score": 90.2
     },
     {
+      "date": "2006-08-09",
+      "ticker": "6277",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.4
+    },
+    {
       "date": "2006-08-10",
       "ticker": "5531",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -6563,12 +6433,6 @@
       "ticker": "2526",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 113.7
-    },
-    {
-      "date": "2006-08-10",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 113.0
     },
     {
       "date": "2006-08-10",
@@ -6613,6 +6477,12 @@
       "score": 88.0
     },
     {
+      "date": "2006-08-10",
+      "ticker": "2206",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.2
+    },
+    {
       "date": "2006-08-11",
       "ticker": "1723",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -6629,12 +6499,6 @@
       "ticker": "2526",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 113.1
-    },
-    {
-      "date": "2006-08-11",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 113.0
     },
     {
       "date": "2006-08-11",
@@ -6671,6 +6535,12 @@
       "ticker": "5531",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.6
+    },
+    {
+      "date": "2006-08-11",
+      "ticker": "2482",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
     },
     {
       "date": "2006-08-14",
@@ -6794,12 +6664,6 @@
     },
     {
       "date": "2006-08-21",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 112.3
-    },
-    {
-      "date": "2006-08-21",
       "ticker": "1723",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 109.4
@@ -6841,10 +6705,10 @@
       "score": 82.0
     },
     {
-      "date": "2006-08-22",
-      "ticker": "2002A",
+      "date": "2006-08-21",
+      "ticker": "6277",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 137.9
+      "score": 80.4
     },
     {
       "date": "2006-08-22",
@@ -6881,6 +6745,12 @@
       "ticker": "2412",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.4
+    },
+    {
+      "date": "2006-08-22",
+      "ticker": "3041",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.1
     },
     {
       "date": "2006-08-23",
@@ -7136,12 +7006,6 @@
     },
     {
       "date": "2006-08-30",
-      "ticker": "2883A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.5
-    },
-    {
-      "date": "2006-08-30",
       "ticker": "9944",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.5
@@ -7157,6 +7021,12 @@
       "ticker": "6277",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 84.0
+    },
+    {
+      "date": "2006-08-30",
+      "ticker": "2497",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.9
     },
     {
       "date": "2006-08-31",
@@ -7220,12 +7090,6 @@
     },
     {
       "date": "2006-09-01",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 141.0
-    },
-    {
-      "date": "2006-09-01",
       "ticker": "6184",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 135.1
@@ -7277,6 +7141,12 @@
       "ticker": "4906",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 80.5
+    },
+    {
+      "date": "2006-09-01",
+      "ticker": "2466",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.9
     },
     {
       "date": "2006-09-06",
@@ -7364,12 +7234,6 @@
     },
     {
       "date": "2006-09-08",
-      "ticker": "2002A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 122.7
-    },
-    {
-      "date": "2006-09-08",
       "ticker": "1726",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 110.6
@@ -7391,6 +7255,12 @@
       "ticker": "3062",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.5
+    },
+    {
+      "date": "2006-09-08",
+      "ticker": "1704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.2
     },
     {
       "date": "2006-09-12",

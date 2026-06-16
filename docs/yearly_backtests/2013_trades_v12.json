@@ -199,17 +199,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "2406",
-      "buy_date": "2013-03-12",
-      "buy_price": 20.97,
-      "sell_date": "2013-03-22",
-      "sell_price": 18.86,
-      "shares": 14304,
-      "pl": -30251.08,
-      "pl_pct": -10.08,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
       "ticker": "2439",
       "buy_date": "2013-01-29",
       "buy_price": 23.86,
@@ -221,17 +210,6 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "2833",
-      "buy_date": "2013-02-25",
-      "buy_price": 22.54,
-      "sell_date": "2013-04-08",
-      "sell_price": 20.74,
-      "shares": 13312,
-      "pl": -23849.14,
-      "pl_pct": -7.95,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
       "ticker": "6202",
       "buy_date": "2013-03-29",
       "buy_price": 17.75,
@@ -241,17 +219,6 @@
       "pl": -6391.92,
       "pl_pct": -2.13,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "1730",
-      "buy_date": "2013-01-31",
-      "buy_price": 10.63,
-      "sell_date": "2013-04-11",
-      "sell_price": 11.02,
-      "shares": 28217,
-      "pl": 10833.25,
-      "pl_pct": 3.61,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "1589",
@@ -277,13 +244,13 @@
     },
     {
       "ticker": "1730",
-      "buy_date": "2013-04-24",
-      "buy_price": 11.31,
+      "buy_date": "2013-01-31",
+      "buy_price": 10.63,
       "sell_date": "2013-05-07",
       "sell_price": 11.13,
-      "shares": 26522,
-      "pl": -4699.6,
-      "pl_pct": -1.57,
+      "shares": 28217,
+      "pl": 14166.57,
+      "pl_pct": 4.72,
       "sell_reason": "RSI<35"
     },
     {
@@ -309,17 +276,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "3027",
-      "buy_date": "2013-05-16",
-      "buy_price": 13.41,
-      "sell_date": "2013-05-24",
-      "sell_price": 16.32,
-      "shares": 11183,
-      "pl": 32490.02,
-      "pl_pct": 21.66,
-      "sell_reason": "\u505c\u522950%"
-    },
-    {
       "ticker": "2439",
       "buy_date": "2013-01-29",
       "buy_price": 23.86,
@@ -339,6 +295,28 @@
       "shares": 5326,
       "pl": 33035.64,
       "pl_pct": 22.02,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2833",
+      "buy_date": "2013-02-25",
+      "buy_price": 22.54,
+      "sell_date": "2013-06-06",
+      "sell_price": 22.35,
+      "shares": 13312,
+      "pl": -2510.42,
+      "pl_pct": -0.84,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2406",
+      "buy_date": "2013-03-12",
+      "buy_price": 20.97,
+      "sell_date": "2013-06-06",
+      "sell_price": 18.46,
+      "shares": 14304,
+      "pl": -35923.14,
+      "pl_pct": -11.97,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -364,36 +342,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "6605",
-      "buy_date": "2013-04-03",
-      "buy_price": 51.27,
+      "ticker": "1533",
+      "buy_date": "2013-04-24",
+      "buy_price": 13.99,
       "sell_date": "2013-06-06",
-      "sell_price": 57.15,
-      "shares": 5851,
-      "pl": 34430.55,
-      "pl_pct": 11.48,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2433",
-      "buy_date": "2013-04-25",
-      "buy_price": 15.88,
-      "sell_date": "2013-06-06",
-      "sell_price": 16.16,
-      "shares": 18887,
-      "pl": 5142.68,
-      "pl_pct": 1.71,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3257",
-      "buy_date": "2013-04-25",
-      "buy_price": 16.79,
-      "sell_date": "2013-06-06",
-      "sell_price": 19.51,
-      "shares": 17863,
-      "pl": 48484.23,
-      "pl_pct": 16.16,
+      "sell_price": 14.16,
+      "shares": 21440,
+      "pl": 3550.16,
+      "pl_pct": 1.18,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -419,14 +375,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "3027",
+      "ticker": "3257",
       "buy_date": "2013-05-16",
-      "buy_price": 13.41,
+      "buy_price": 17.18,
       "sell_date": "2013-06-06",
-      "sell_price": 15.2,
-      "shares": 11183,
-      "pl": 20035.51,
-      "pl_pct": 13.36,
+      "sell_price": 19.51,
+      "shares": 17466,
+      "pl": 40740.11,
+      "pl_pct": 13.58,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -628,28 +584,6 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "1730",
-      "buy_date": "2013-10-08",
-      "buy_price": 13.28,
-      "sell_date": "2013-11-05",
-      "sell_price": 15.21,
-      "shares": 11297,
-      "pl": 21838.19,
-      "pl_pct": 14.56,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "1104",
-      "buy_date": "2013-10-09",
-      "buy_price": 13.54,
-      "sell_date": "2013-11-06",
-      "sell_price": 12.29,
-      "shares": 22156,
-      "pl": -27777.54,
-      "pl_pct": -9.26,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
       "ticker": "2910",
       "buy_date": "2013-10-09",
       "buy_price": 22.59,
@@ -661,17 +595,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "1533",
-      "buy_date": "2013-10-24",
-      "buy_price": 32.29,
-      "sell_date": "2013-11-11",
-      "sell_price": 28.65,
-      "shares": 9291,
-      "pl": -33845.94,
-      "pl_pct": -11.28,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
       "ticker": "2497",
       "buy_date": "2013-10-03",
       "buy_price": 34.24,
@@ -681,17 +604,6 @@
       "pl": 31336.66,
       "pl_pct": 20.89,
       "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "2206",
-      "buy_date": "2013-10-17",
-      "buy_price": 34.92,
-      "sell_date": "2013-11-21",
-      "sell_price": 31.93,
-      "shares": 8592,
-      "pl": -25661.09,
-      "pl_pct": -8.55,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
     },
     {
       "ticker": "1525",
@@ -716,14 +628,14 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "1339",
-      "buy_date": "2013-11-29",
-      "buy_price": 24.3,
+      "ticker": "1104",
+      "buy_date": "2013-10-09",
+      "buy_price": 13.54,
       "sell_date": "2013-12-05",
-      "sell_price": 29.72,
-      "shares": 6173,
-      "pl": 33450.25,
-      "pl_pct": 22.3,
+      "sell_price": 16.27,
+      "shares": 11078,
+      "pl": 30277.52,
+      "pl_pct": 20.19,
       "sell_reason": "\u505c\u522950%"
     },
     {
@@ -747,17 +659,6 @@
       "pl": 35942.99,
       "pl_pct": 23.96,
       "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "3494",
-      "buy_date": "2013-11-29",
-      "buy_price": 27.04,
-      "sell_date": "2013-12-11",
-      "sell_price": 25.11,
-      "shares": 11093,
-      "pl": -21427.27,
-      "pl_pct": -7.14,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
     {
       "ticker": "2034",
@@ -804,6 +705,50 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "1730",
+      "buy_date": "2013-10-08",
+      "buy_price": 13.28,
+      "sell_date": "2013-12-12",
+      "sell_price": 16.23,
+      "shares": 11297,
+      "pl": 33294.3,
+      "pl_pct": 22.2,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1104",
+      "buy_date": "2013-10-09",
+      "buy_price": 13.54,
+      "sell_date": "2013-12-12",
+      "sell_price": 14.84,
+      "shares": 11078,
+      "pl": 14444.32,
+      "pl_pct": 9.63,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2206",
+      "buy_date": "2013-10-17",
+      "buy_price": 34.92,
+      "sell_date": "2013-12-12",
+      "sell_price": 32.43,
+      "shares": 8592,
+      "pl": -21384.26,
+      "pl_pct": -7.13,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1533",
+      "buy_date": "2013-10-24",
+      "buy_price": 32.29,
+      "sell_date": "2013-12-12",
+      "sell_price": 36.3,
+      "shares": 9291,
+      "pl": 37307.43,
+      "pl_pct": 12.44,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "2910",
       "buy_date": "2013-11-28",
       "buy_price": 25.98,
@@ -823,50 +768,6 @@
       "shares": 5026,
       "pl": 37023.97,
       "pl_pct": 24.68,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1339",
-      "buy_date": "2013-11-29",
-      "buy_price": 24.3,
-      "sell_date": "2013-12-12",
-      "sell_price": 29.66,
-      "shares": 6174,
-      "pl": 33095.93,
-      "pl_pct": 22.06,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1472",
-      "buy_date": "2013-12-02",
-      "buy_price": 35.01,
-      "sell_date": "2013-12-12",
-      "sell_price": 34.17,
-      "shares": 8568,
-      "pl": -7199.7,
-      "pl_pct": -2.4,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2608",
-      "buy_date": "2013-12-02",
-      "buy_price": 28.42,
-      "sell_date": "2013-12-12",
-      "sell_price": 29.46,
-      "shares": 10556,
-      "pl": 10958.03,
-      "pl_pct": 3.65,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1590",
-      "buy_date": "2013-12-11",
-      "buy_price": 175.19,
-      "sell_date": "2013-12-12",
-      "sell_price": 171.37,
-      "shares": 1712,
-      "pl": -6546.17,
-      "pl_pct": -2.18,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1255,972 +1156,972 @@
     },
     {
       "date": "2013-03-25",
-      "equity": 3091684.65,
+      "equity": 3094835.8,
       "type": "hold"
     },
     {
       "date": "2013-03-26",
-      "equity": 3088438.79,
+      "equity": 3085917.88,
       "type": "hold"
     },
     {
       "date": "2013-03-27",
-      "equity": 3091837.59,
+      "equity": 3094988.75,
       "type": "hold"
     },
     {
       "date": "2013-03-28",
-      "equity": 3097180.97,
+      "equity": 3096550.75,
       "type": "hold"
     },
     {
       "date": "2013-03-29",
-      "equity": 3107681.75,
+      "equity": 3119656.14,
       "type": "daily"
     },
     {
       "date": "2013-04-01",
-      "equity": 3107065.21,
+      "equity": 3112737.3,
       "type": "daily"
     },
     {
       "date": "2013-04-02",
-      "equity": 3104453.45,
+      "equity": 3108865.07,
       "type": "daily"
     },
     {
       "date": "2013-04-03",
-      "equity": 3120020.52,
+      "equity": 3125062.36,
       "type": "daily"
     },
     {
       "date": "2013-04-08",
-      "equity": 3069167.02,
+      "equity": 3069519.32,
       "type": "hold"
     },
     {
       "date": "2013-04-09",
-      "equity": 3046322.03,
+      "equity": 3039580.53,
       "type": "hold"
     },
     {
       "date": "2013-04-10",
-      "equity": 3048437.02,
+      "equity": 3041751.23,
       "type": "hold"
     },
     {
       "date": "2013-04-11",
-      "equity": 3047730.08,
+      "equity": 3048533.84,
       "type": "hold"
     },
     {
       "date": "2013-04-12",
-      "equity": 3039601.39,
+      "equity": 3040166.23,
       "type": "hold"
     },
     {
       "date": "2013-04-15",
-      "equity": 3026704.98,
+      "equity": 3029972.81,
       "type": "hold"
     },
     {
       "date": "2013-04-16",
-      "equity": 3029613.8,
+      "equity": 3018241.67,
       "type": "hold"
     },
     {
       "date": "2013-04-17",
-      "equity": 3035827.75,
+      "equity": 3026817.14,
       "type": "hold"
     },
     {
       "date": "2013-04-18",
-      "equity": 3032359.56,
+      "equity": 3027880.75,
       "type": "hold"
     },
     {
       "date": "2013-04-19",
-      "equity": 3041216.23,
+      "equity": 3047058.1,
       "type": "hold"
     },
     {
       "date": "2013-04-22",
-      "equity": 3040189.44,
+      "equity": 3037621.93,
       "type": "hold"
     },
     {
       "date": "2013-04-23",
-      "equity": 3046816.71,
+      "equity": 3050079.22,
       "type": "hold"
     },
     {
       "date": "2013-04-24",
-      "equity": 3045261.69,
+      "equity": 3055709.42,
       "type": "daily"
     },
     {
       "date": "2013-04-25",
-      "equity": 3058867.02,
+      "equity": 3069446.83,
       "type": "daily"
     },
     {
       "date": "2013-04-26",
-      "equity": 3057995.27,
+      "equity": 3072732.76,
       "type": "daily"
     },
     {
       "date": "2013-04-29",
-      "equity": 3069342.22,
+      "equity": 3083518.76,
       "type": "daily"
     },
     {
       "date": "2013-04-30",
-      "equity": 3091415.14,
+      "equity": 3085710.78,
       "type": "daily"
     },
     {
       "date": "2013-05-02",
-      "equity": 3107921.12,
+      "equity": 3091001.84,
       "type": "daily"
     },
     {
       "date": "2013-05-03",
-      "equity": 3101870.32,
+      "equity": 3086195.47,
       "type": "daily"
     },
     {
       "date": "2013-05-06",
-      "equity": 3084575.08,
+      "equity": 3075464.1,
       "type": "daily"
     },
     {
       "date": "2013-05-07",
-      "equity": 3091179.86,
+      "equity": 3072857.86,
       "type": "daily"
     },
     {
       "date": "2013-05-08",
-      "equity": 3118692.31,
+      "equity": 3101398.34,
       "type": "daily"
     },
     {
       "date": "2013-05-09",
-      "equity": 3131106.74,
+      "equity": 3119667.53,
       "type": "daily"
     },
     {
       "date": "2013-05-10",
-      "equity": 3134132.34,
+      "equity": 3122803.86,
       "type": "daily"
     },
     {
       "date": "2013-05-13",
-      "equity": 3102402.58,
+      "equity": 3099035.53,
       "type": "daily"
     },
     {
       "date": "2013-05-14",
-      "equity": 3102634.53,
+      "equity": 3102054.1,
       "type": "daily"
     },
     {
       "date": "2013-05-15",
-      "equity": 3130335.64,
+      "equity": 3129518.75,
       "type": "daily"
     },
     {
       "date": "2013-05-16",
-      "equity": 3169842.34,
+      "equity": 3167629.05,
       "type": "daily"
     },
     {
       "date": "2013-05-17",
-      "equity": 3176101.87,
+      "equity": 3168117.45,
       "type": "daily"
     },
     {
       "date": "2013-05-20",
-      "equity": 3208117.9,
+      "equity": 3180583.01,
       "type": "daily"
     },
     {
       "date": "2013-05-21",
-      "equity": 3223020.91,
+      "equity": 3173592.23,
       "type": "daily"
     },
     {
       "date": "2013-05-22",
-      "equity": 3237703.27,
+      "equity": 3187985.29,
       "type": "daily"
     },
     {
       "date": "2013-05-23",
-      "equity": 3200978.51,
+      "equity": 3143586.9,
       "type": "daily"
     },
     {
       "date": "2013-05-24",
-      "equity": 3192944.15,
+      "equity": 3123161.35,
       "type": "daily"
     },
     {
       "date": "2013-05-27",
-      "equity": 3212881.02,
+      "equity": 3138140.5,
       "type": "daily"
     },
     {
       "date": "2013-05-28",
-      "equity": 3219750.39,
+      "equity": 3148288.35,
       "type": "daily"
     },
     {
       "date": "2013-05-29",
-      "equity": 3242008.17,
+      "equity": 3170302.96,
       "type": "daily"
     },
     {
       "date": "2013-05-30",
-      "equity": 3241695.82,
+      "equity": 3164406.95,
       "type": "daily"
     },
     {
       "date": "2013-05-31",
-      "equity": 3266959.77,
+      "equity": 3182701.49,
       "type": "daily"
     },
     {
       "date": "2013-06-03",
-      "equity": 3274464.25,
+      "equity": 3205395.28,
       "type": "daily"
     },
     {
       "date": "2013-06-04",
-      "equity": 3263130.9,
+      "equity": 3192931.12,
       "type": "daily"
     },
     {
       "date": "2013-06-05",
-      "equity": 3264995.72,
+      "equity": 3208246.62,
       "type": "daily"
     },
     {
       "date": "2013-06-06",
-      "equity": 3261651.89,
+      "equity": 3189058.75,
       "type": "crash"
     },
     {
       "date": "2013-06-07",
-      "equity": 3261651.89,
+      "equity": 3189058.75,
       "type": "daily"
     },
     {
       "date": "2013-06-10",
-      "equity": 3262174.52,
+      "equity": 3189581.38,
       "type": "crash"
     },
     {
       "date": "2013-06-11",
-      "equity": 3262174.52,
+      "equity": 3189581.38,
       "type": "daily"
     },
     {
       "date": "2013-06-13",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "crash"
     },
     {
       "date": "2013-06-14",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-17",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-18",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-19",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-20",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-21",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-24",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-25",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-26",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-27",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-06-28",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-01",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-02",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-03",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-04",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-05",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-08",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-09",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-10",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-11",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "hold"
     },
     {
       "date": "2013-07-12",
-      "equity": 3242347.57,
+      "equity": 3169754.43,
       "type": "daily"
     },
     {
       "date": "2013-07-15",
-      "equity": 3245201.92,
+      "equity": 3172608.77,
       "type": "daily"
     },
     {
       "date": "2013-07-16",
-      "equity": 3244444.29,
+      "equity": 3171851.14,
       "type": "daily"
     },
     {
       "date": "2013-07-17",
-      "equity": 3258533.71,
+      "equity": 3185940.57,
       "type": "daily"
     },
     {
       "date": "2013-07-18",
-      "equity": 3262965.04,
+      "equity": 3190371.9,
       "type": "daily"
     },
     {
       "date": "2013-07-19",
-      "equity": 3241409.87,
+      "equity": 3168816.73,
       "type": "hold"
     },
     {
       "date": "2013-07-22",
-      "equity": 3224296.11,
+      "equity": 3151702.97,
       "type": "hold"
     },
     {
       "date": "2013-07-23",
-      "equity": 3239699.61,
+      "equity": 3167106.47,
       "type": "hold"
     },
     {
       "date": "2013-07-24",
-      "equity": 3238193.24,
+      "equity": 3165600.1,
       "type": "hold"
     },
     {
       "date": "2013-07-25",
-      "equity": 3245409.07,
+      "equity": 3172815.93,
       "type": "hold"
     },
     {
       "date": "2013-07-26",
-      "equity": 3234611.21,
+      "equity": 3162018.07,
       "type": "hold"
     },
     {
       "date": "2013-07-29",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "crash"
     },
     {
       "date": "2013-07-30",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-07-31",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-01",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-02",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-05",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-06",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-07",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-08",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-09",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-12",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-13",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-14",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-15",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-16",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-19",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-20",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-22",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-23",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-26",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-27",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-28",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-29",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-08-30",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-02",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-03",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-04",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-05",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-06",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-09",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-10",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-11",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-12",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-13",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-16",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-17",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-18",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-23",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-24",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-25",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-26",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-27",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-09-30",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-10-01",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-10-02",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "hold"
     },
     {
       "date": "2013-10-03",
-      "equity": 3249416.98,
+      "equity": 3176823.83,
       "type": "daily"
     },
     {
       "date": "2013-10-04",
-      "equity": 3246548.41,
+      "equity": 3173955.27,
       "type": "daily"
     },
     {
       "date": "2013-10-07",
-      "equity": 3239671.95,
+      "equity": 3167078.8,
       "type": "daily"
     },
     {
       "date": "2013-10-08",
-      "equity": 3240457.77,
+      "equity": 3167864.63,
       "type": "daily"
     },
     {
       "date": "2013-10-09",
-      "equity": 3220379.9,
+      "equity": 3147786.75,
       "type": "daily"
     },
     {
       "date": "2013-10-11",
-      "equity": 3227863.15,
+      "equity": 3155270.0,
       "type": "daily"
     },
     {
       "date": "2013-10-14",
-      "equity": 3201602.0,
+      "equity": 3129008.86,
       "type": "hold"
     },
     {
       "date": "2013-10-15",
-      "equity": 3290005.8,
+      "equity": 3217412.65,
       "type": "daily"
     },
     {
       "date": "2013-10-16",
-      "equity": 3306699.66,
+      "equity": 3234106.52,
       "type": "daily"
     },
     {
       "date": "2013-10-17",
-      "equity": 3318115.93,
+      "equity": 3245522.79,
       "type": "daily"
     },
     {
       "date": "2013-10-18",
-      "equity": 3371333.39,
+      "equity": 3298740.25,
       "type": "daily"
     },
     {
       "date": "2013-10-21",
-      "equity": 3366397.25,
+      "equity": 3293804.1,
       "type": "daily"
     },
     {
       "date": "2013-10-22",
-      "equity": 3374749.42,
+      "equity": 3302156.28,
       "type": "daily"
     },
     {
       "date": "2013-10-23",
-      "equity": 3382930.7,
+      "equity": 3310337.56,
       "type": "daily"
     },
     {
       "date": "2013-10-24",
-      "equity": 3401840.05,
+      "equity": 3329246.9,
       "type": "daily"
     },
     {
       "date": "2013-10-25",
-      "equity": 3417036.36,
+      "equity": 3344443.22,
       "type": "daily"
     },
     {
       "date": "2013-10-28",
-      "equity": 3390998.13,
+      "equity": 3318404.98,
       "type": "daily"
     },
     {
       "date": "2013-10-29",
-      "equity": 3397602.65,
+      "equity": 3325009.5,
       "type": "daily"
     },
     {
       "date": "2013-10-30",
-      "equity": 3406773.26,
+      "equity": 3334180.11,
       "type": "daily"
     },
     {
       "date": "2013-10-31",
-      "equity": 3398122.43,
+      "equity": 3325529.29,
       "type": "daily"
     },
     {
       "date": "2013-11-01",
-      "equity": 3422218.99,
+      "equity": 3349625.84,
       "type": "daily"
     },
     {
       "date": "2013-11-04",
-      "equity": 3386616.31,
+      "equity": 3314023.17,
       "type": "daily"
     },
     {
       "date": "2013-11-05",
-      "equity": 3350373.46,
+      "equity": 3277780.32,
       "type": "hold"
     },
     {
       "date": "2013-11-06",
-      "equity": 3324660.19,
+      "equity": 3252067.04,
       "type": "hold"
     },
     {
       "date": "2013-11-07",
-      "equity": 3328453.39,
+      "equity": 3263921.78,
       "type": "hold"
     },
     {
       "date": "2013-11-08",
-      "equity": 3333755.66,
+      "equity": 3264532.91,
       "type": "hold"
     },
     {
       "date": "2013-11-11",
-      "equity": 3341232.8,
+      "equity": 3279528.11,
       "type": "hold"
     },
     {
       "date": "2013-11-12",
-      "equity": 3345126.69,
+      "equity": 3284746.0,
       "type": "hold"
     },
     {
       "date": "2013-11-13",
-      "equity": 3335697.62,
+      "equity": 3269377.59,
       "type": "hold"
     },
     {
       "date": "2013-11-14",
-      "equity": 3336720.13,
+      "equity": 3280582.26,
       "type": "hold"
     },
     {
       "date": "2013-11-15",
-      "equity": 3341949.49,
+      "equity": 3293739.29,
       "type": "hold"
     },
     {
       "date": "2013-11-18",
-      "equity": 3368607.21,
+      "equity": 3319787.45,
       "type": "hold"
     },
     {
       "date": "2013-11-19",
-      "equity": 3388932.44,
+      "equity": 3347260.67,
       "type": "hold"
     },
     {
       "date": "2013-11-20",
-      "equity": 3404828.49,
+      "equity": 3382163.2,
       "type": "hold"
     },
     {
       "date": "2013-11-21",
-      "equity": 3385213.44,
+      "equity": 3355362.3,
       "type": "hold"
     },
     {
       "date": "2013-11-22",
-      "equity": 3379915.7,
+      "equity": 3342728.06,
       "type": "hold"
     },
     {
       "date": "2013-11-25",
-      "equity": 3394466.74,
+      "equity": 3378994.34,
       "type": "hold"
     },
     {
       "date": "2013-11-26",
-      "equity": 3397211.73,
+      "equity": 3407814.54,
       "type": "hold"
     },
     {
       "date": "2013-11-27",
-      "equity": 3400989.09,
+      "equity": 3408346.48,
       "type": "hold"
     },
     {
       "date": "2013-11-28",
-      "equity": 3424339.45,
+      "equity": 3451648.04,
       "type": "daily"
     },
     {
       "date": "2013-11-29",
-      "equity": 3449702.17,
+      "equity": 3498052.33,
       "type": "daily"
     },
     {
       "date": "2013-12-02",
-      "equity": 3496042.29,
+      "equity": 3552735.23,
       "type": "daily"
     },
     {
       "date": "2013-12-03",
-      "equity": 3559113.44,
+      "equity": 3627600.54,
       "type": "daily"
     },
     {
       "date": "2013-12-04",
-      "equity": 3573728.36,
+      "equity": 3623750.34,
       "type": "daily"
     },
     {
       "date": "2013-12-05",
-      "equity": 3639699.54,
+      "equity": 3638272.95,
       "type": "daily"
     },
     {
       "date": "2013-12-06",
-      "equity": 3650511.76,
+      "equity": 3649215.48,
       "type": "daily"
     },
     {
       "date": "2013-12-09",
-      "equity": 3635700.01,
+      "equity": 3632855.02,
       "type": "daily"
     },
     {
       "date": "2013-12-10",
-      "equity": 3624196.42,
+      "equity": 3632292.68,
       "type": "daily"
     },
     {
       "date": "2013-12-11",
-      "equity": 3607752.58,
+      "equity": 3645455.91,
       "type": "daily"
     },
     {
       "date": "2013-12-12",
-      "equity": 3613969.61,
+      "equity": 3658431.09,
       "type": "crash"
     },
     {
       "date": "2013-12-13",
-      "equity": 3613969.61,
+      "equity": 3658431.09,
       "type": "daily"
     },
     {
       "date": "2013-12-16",
-      "equity": 3607351.45,
+      "equity": 3651812.92,
       "type": "daily"
     },
     {
       "date": "2013-12-17",
-      "equity": 3640551.86,
+      "equity": 3685013.34,
       "type": "daily"
     },
     {
       "date": "2013-12-18",
-      "equity": 3627035.4,
+      "equity": 3671496.88,
       "type": "daily"
     },
     {
       "date": "2013-12-19",
-      "equity": 3653928.02,
+      "equity": 3698389.5,
       "type": "daily"
     },
     {
       "date": "2013-12-20",
-      "equity": 3665521.91,
+      "equity": 3709983.39,
       "type": "daily"
     },
     {
       "date": "2013-12-23",
-      "equity": 3675760.71,
+      "equity": 3720222.19,
       "type": "daily"
     },
     {
       "date": "2013-12-24",
-      "equity": 3696186.32,
+      "equity": 3740647.79,
       "type": "daily"
     },
     {
       "date": "2013-12-25",
-      "equity": 3716583.24,
+      "equity": 3761044.72,
       "type": "daily"
     },
     {
       "date": "2013-12-26",
-      "equity": 3746084.45,
+      "equity": 3790545.92,
       "type": "daily"
     },
     {
       "date": "2013-12-27",
-      "equity": 3814435.68,
+      "equity": 3858897.16,
       "type": "daily"
     },
     {
       "date": "2013-12-30",
-      "equity": 3877060.09,
+      "equity": 3921521.56,
       "type": "daily"
     },
     {
       "date": "2013-12-31",
-      "equity": 3881550.83,
+      "equity": 3926012.31,
       "type": "daily"
     }
   ],
@@ -3073,6 +2974,12 @@
     },
     {
       "date": "2013-04-10",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.3
+    },
+    {
+      "date": "2013-04-10",
       "ticker": "6202",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.4
@@ -3112,6 +3019,12 @@
       "ticker": "6202",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.5
+    },
+    {
+      "date": "2013-04-11",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
     },
     {
       "date": "2013-04-11",
@@ -3160,6 +3073,12 @@
       "ticker": "1533",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.9
+    },
+    {
+      "date": "2013-04-12",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.9
     },
     {
       "date": "2013-04-12",
@@ -3259,12 +3178,6 @@
     },
     {
       "date": "2013-04-16",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.6
-    },
-    {
-      "date": "2013-04-16",
       "ticker": "6202",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.3
@@ -3301,12 +3214,6 @@
     },
     {
       "date": "2013-04-17",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.6
-    },
-    {
-      "date": "2013-04-17",
       "ticker": "6202",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.6
@@ -3316,6 +3223,12 @@
       "ticker": "1533",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.0
+    },
+    {
+      "date": "2013-04-17",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.0
     },
     {
       "date": "2013-04-17",
@@ -3334,12 +3247,6 @@
       "ticker": "2433",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.3
-    },
-    {
-      "date": "2013-04-18",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.1
     },
     {
       "date": "2013-04-18",
@@ -3366,28 +3273,10 @@
       "score": 95.4
     },
     {
-      "date": "2013-04-18",
-      "ticker": "2406",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 93.5
-    },
-    {
-      "date": "2013-04-18",
-      "ticker": "2833",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.9
-    },
-    {
       "date": "2013-04-19",
       "ticker": "2433",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 105.5
-    },
-    {
-      "date": "2013-04-19",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.8
     },
     {
       "date": "2013-04-19",
@@ -3457,12 +3346,6 @@
     },
     {
       "date": "2013-04-22",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.0
-    },
-    {
-      "date": "2013-04-22",
       "ticker": "6189",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.7
@@ -3526,12 +3409,6 @@
       "ticker": "6189",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.7
-    },
-    {
-      "date": "2013-04-23",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 99.6
     },
     {
       "date": "2013-04-23",
@@ -6247,12 +6124,6 @@
     },
     {
       "date": "2013-08-28",
-      "ticker": "2420",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 111.5
-    },
-    {
-      "date": "2013-08-28",
       "ticker": "2472",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 111.5
@@ -6262,6 +6133,12 @@
       "ticker": "2439",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.7
+    },
+    {
+      "date": "2013-08-28",
+      "ticker": "1590",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.4
     },
     {
       "date": "2013-08-29",
@@ -6883,12 +6760,6 @@
     },
     {
       "date": "2013-09-12",
-      "ticker": "6202",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 133.6
-    },
-    {
-      "date": "2013-09-12",
       "ticker": "2437",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 121.8
@@ -6916,6 +6787,12 @@
       "ticker": "1730",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.8
+    },
+    {
+      "date": "2013-09-12",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.6
     },
     {
       "date": "2013-09-12",
@@ -7783,12 +7660,6 @@
     },
     {
       "date": "2013-11-07",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 133.9
-    },
-    {
-      "date": "2013-11-07",
       "ticker": "2395",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 117.0
@@ -7954,12 +7825,6 @@
       "ticker": "1469",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.4
-    },
-    {
-      "date": "2013-11-12",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 137.0
     },
     {
       "date": "2013-11-12",
@@ -8143,12 +8008,6 @@
     },
     {
       "date": "2013-11-15",
-      "ticker": "1339",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 131.6
-    },
-    {
-      "date": "2013-11-15",
       "ticker": "2433",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 107.5
@@ -8158,6 +8017,12 @@
       "ticker": "6214",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.3
+    },
+    {
+      "date": "2013-11-15",
+      "ticker": "1339",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.6
     },
     {
       "date": "2013-11-15",
@@ -8185,21 +8050,9 @@
     },
     {
       "date": "2013-11-18",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 136.7
-    },
-    {
-      "date": "2013-11-18",
       "ticker": "4733",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 134.6
-    },
-    {
-      "date": "2013-11-18",
-      "ticker": "1339",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.5
     },
     {
       "date": "2013-11-18",
@@ -8218,6 +8071,12 @@
       "ticker": "2433",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 107.1
+    },
+    {
+      "date": "2013-11-18",
+      "ticker": "1339",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.5
     },
     {
       "date": "2013-11-18",
@@ -8347,12 +8206,6 @@
     },
     {
       "date": "2013-11-21",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 136.0
-    },
-    {
-      "date": "2013-11-21",
       "ticker": "3576",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 126.1
@@ -8395,12 +8248,6 @@
     },
     {
       "date": "2013-11-22",
-      "ticker": "1339",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 140.9
-    },
-    {
-      "date": "2013-11-22",
       "ticker": "1713",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 133.6
@@ -8425,6 +8272,12 @@
     },
     {
       "date": "2013-11-22",
+      "ticker": "1339",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.9
+    },
+    {
+      "date": "2013-11-22",
       "ticker": "6202",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.7
@@ -8440,12 +8293,6 @@
       "ticker": "3454",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.9
-    },
-    {
-      "date": "2013-11-25",
-      "ticker": "1339",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.9
     },
     {
       "date": "2013-11-25",
@@ -8467,12 +8314,6 @@
     },
     {
       "date": "2013-11-25",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.3
-    },
-    {
-      "date": "2013-11-25",
       "ticker": "8215",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 105.0
@@ -8482,6 +8323,12 @@
       "ticker": "6202",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.0
+    },
+    {
+      "date": "2013-11-25",
+      "ticker": "1339",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.9
     },
     {
       "date": "2013-11-25",
@@ -8506,12 +8353,6 @@
       "ticker": "3576",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 125.1
-    },
-    {
-      "date": "2013-11-26",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 122.7
     },
     {
       "date": "2013-11-26",
@@ -8554,12 +8395,6 @@
       "ticker": "3494",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 116.5
-    },
-    {
-      "date": "2013-11-27",
-      "ticker": "1730",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 109.1
     },
     {
       "date": "2013-11-27",

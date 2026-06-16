@@ -1,26 +1,15 @@
 {
   "trades": [
     {
-      "ticker": "1312A",
+      "ticker": "2472",
       "buy_date": "2017-01-03",
-      "buy_price": 18.97,
-      "sell_date": "2017-01-16",
-      "sell_price": 18.94,
-      "shares": 15811,
-      "pl": -576.87,
-      "pl_pct": -0.19,
+      "buy_price": 26.09,
+      "sell_date": "2017-01-12",
+      "sell_price": 26.16,
+      "shares": 11498,
+      "pl": 769.2,
+      "pl_pct": 0.26,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "910322",
-      "buy_date": "2017-01-03",
-      "buy_price": 12.11,
-      "sell_date": "2017-01-17",
-      "sell_price": 10.83,
-      "shares": 24782,
-      "pl": -31700.02,
-      "pl_pct": -10.57,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "4725",
@@ -46,25 +35,14 @@
     },
     {
       "ticker": "5234",
-      "buy_date": "2017-01-18",
-      "buy_price": 24.11,
+      "buy_date": "2017-01-12",
+      "buy_price": 24.27,
       "sell_date": "2017-03-01",
       "sell_price": 24.99,
-      "shares": 12441,
-      "pl": 10936.85,
-      "pl_pct": 3.65,
+      "shares": 12361,
+      "pl": 8926.07,
+      "pl_pct": 2.98,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "5534",
-      "buy_date": "2017-01-05",
-      "buy_price": 33.6,
-      "sell_date": "2017-03-02",
-      "sell_price": 35.91,
-      "shares": 8928,
-      "pl": 20656.74,
-      "pl_pct": 6.89,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
     },
     {
       "ticker": "5285",
@@ -89,17 +67,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "6257",
-      "buy_date": "2017-01-17",
-      "buy_price": 13.8,
-      "sell_date": "2017-03-13",
-      "sell_price": 15.62,
-      "shares": 21738,
-      "pl": 39621.49,
-      "pl_pct": 13.21,
-      "sell_reason": "RSI<35"
-    },
-    {
       "ticker": "3026",
       "buy_date": "2017-01-04",
       "buy_price": 17.54,
@@ -111,15 +78,26 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "2816",
-      "buy_date": "2017-03-02",
-      "buy_price": 11.66,
-      "sell_date": "2017-03-28",
-      "sell_price": 10.63,
-      "shares": 25737,
-      "pl": -26331.62,
-      "pl_pct": -8.78,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+      "ticker": "9917",
+      "buy_date": "2017-03-13",
+      "buy_price": 68.53,
+      "sell_date": "2017-03-27",
+      "sell_price": 67.84,
+      "shares": 4377,
+      "pl": -2982.78,
+      "pl_pct": -0.99,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "1704",
+      "buy_date": "2017-01-03",
+      "buy_price": 39.6,
+      "sell_date": "2017-03-29",
+      "sell_price": 40.14,
+      "shares": 7576,
+      "pl": 4128.12,
+      "pl_pct": 1.38,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
       "ticker": "3026",
@@ -144,14 +122,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2881A",
+      "ticker": "5534",
       "buy_date": "2017-01-05",
-      "buy_price": 45.73,
+      "buy_price": 33.6,
       "sell_date": "2017-03-29",
-      "sell_price": 46.84,
-      "shares": 6560,
-      "pl": 7269.76,
-      "pl_pct": 2.42,
+      "sell_price": 38.54,
+      "shares": 8928,
+      "pl": 44130.3,
+      "pl_pct": 14.71,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2015",
+      "buy_date": "2017-01-05",
+      "buy_price": 23.92,
+      "sell_date": "2017-03-29",
+      "sell_price": 27.84,
+      "shares": 12541,
+      "pl": 49162.75,
+      "pl_pct": 16.39,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -188,47 +177,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2480",
-      "buy_date": "2017-03-10",
-      "buy_price": 19.89,
+      "ticker": "2816",
+      "buy_date": "2017-03-02",
+      "buy_price": 11.66,
       "sell_date": "2017-03-29",
-      "sell_price": 19.58,
-      "shares": 15085,
-      "pl": -4702.07,
-      "pl_pct": -1.57,
+      "sell_price": 10.63,
+      "shares": 25737,
+      "pl": -26331.62,
+      "pl_pct": -8.78,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2015",
-      "buy_date": "2017-03-13",
-      "buy_price": 27.09,
+      "ticker": "5234",
+      "buy_date": "2017-03-27",
+      "buy_price": 26.28,
       "sell_date": "2017-03-29",
-      "sell_price": 27.84,
-      "shares": 11072,
-      "pl": 8267.44,
-      "pl_pct": 2.76,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3645",
-      "buy_date": "2017-03-13",
-      "buy_price": 33.37,
-      "sell_date": "2017-03-29",
-      "sell_price": 33.84,
-      "shares": 8989,
-      "pl": 4166.38,
-      "pl_pct": 1.39,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3550",
-      "buy_date": "2017-03-28",
-      "buy_price": 12.04,
-      "sell_date": "2017-03-29",
-      "sell_price": 11.94,
-      "shares": 24926,
-      "pl": -2458.95,
-      "pl_pct": -0.82,
+      "sell_price": 26.44,
+      "shares": 11416,
+      "pl": 1792.11,
+      "pl_pct": 0.6,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -353,17 +320,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "2472",
-      "buy_date": "2017-04-27",
-      "buy_price": 28.0,
-      "sell_date": "2017-05-11",
-      "sell_price": 24.89,
-      "shares": 10715,
-      "pl": -33332.68,
-      "pl_pct": -11.11,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
       "ticker": "2546",
       "buy_date": "2017-04-26",
       "buy_price": 10.48,
@@ -373,17 +329,6 @@
       "pl": -2374.66,
       "pl_pct": -0.79,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "3550",
-      "buy_date": "2017-04-13",
-      "buy_price": 12.17,
-      "sell_date": "2017-05-15",
-      "sell_price": 11.28,
-      "shares": 24657,
-      "pl": -21891.75,
-      "pl_pct": -7.3,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "8926",
@@ -397,6 +342,17 @@
       "sell_reason": "RSI<35"
     },
     {
+      "ticker": "3550",
+      "buy_date": "2017-04-13",
+      "buy_price": 12.17,
+      "sell_date": "2017-05-19",
+      "sell_price": 11.31,
+      "shares": 24657,
+      "pl": -21080.92,
+      "pl_pct": -7.03,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "1727",
       "buy_date": "2017-04-26",
       "buy_price": 10.57,
@@ -405,6 +361,17 @@
       "shares": 28372,
       "pl": -17517.64,
       "pl_pct": -5.84,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2472",
+      "buy_date": "2017-04-27",
+      "buy_price": 28.0,
+      "sell_date": "2017-05-19",
+      "sell_price": 25.02,
+      "shares": 10715,
+      "pl": -31899.01,
+      "pl_pct": -10.63,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -463,17 +430,6 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "9908",
-      "buy_date": "2017-05-11",
-      "buy_price": 19.94,
-      "sell_date": "2017-05-19",
-      "sell_price": 19.9,
-      "shares": 15042,
-      "pl": -594.04,
-      "pl_pct": -0.2,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "2375",
       "buy_date": "2017-05-12",
       "buy_price": 17.67,
@@ -496,17 +452,6 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "8926",
-      "buy_date": "2017-05-15",
-      "buy_price": 15.7,
-      "sell_date": "2017-05-19",
-      "sell_price": 15.76,
-      "shares": 19112,
-      "pl": 1298.71,
-      "pl_pct": 0.43,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "2546",
       "buy_date": "2017-05-25",
       "buy_price": 10.4,
@@ -515,17 +460,6 @@
       "shares": 28859,
       "pl": -1595.67,
       "pl_pct": -0.53,
-      "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "910322",
-      "buy_date": "2017-05-26",
-      "buy_price": 11.45,
-      "sell_date": "2017-06-13",
-      "sell_price": 11.29,
-      "shares": 26200,
-      "pl": -4087.06,
-      "pl_pct": -1.36,
       "sell_reason": "RSI<35"
     },
     {
@@ -548,6 +482,17 @@
       "shares": 11299,
       "pl": 0.0,
       "pl_pct": 0.0,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "4725",
+      "buy_date": "2017-05-26",
+      "buy_price": 20.85,
+      "sell_date": "2017-06-27",
+      "sell_price": 20.8,
+      "shares": 14388,
+      "pl": -719.42,
+      "pl_pct": -0.24,
       "sell_reason": "RSI<35"
     },
     {
@@ -595,17 +540,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "910322",
-      "buy_date": "2017-06-13",
-      "buy_price": 11.29,
-      "sell_date": "2017-07-14",
-      "sell_price": 11.04,
-      "shares": 26562,
-      "pl": -6629.64,
-      "pl_pct": -2.21,
-      "sell_reason": "RSI<35"
-    },
-    {
       "ticker": "2809",
       "buy_date": "2017-07-10",
       "buy_price": 22.53,
@@ -617,15 +551,26 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "2881A",
-      "buy_date": "2017-05-26",
-      "buy_price": 46.4,
-      "sell_date": "2017-07-26",
-      "sell_price": 47.29,
-      "shares": 6466,
-      "pl": 5763.39,
-      "pl_pct": 1.92,
+      "ticker": "3026",
+      "buy_date": "2017-07-12",
+      "buy_price": 22.04,
+      "sell_date": "2017-07-24",
+      "sell_price": 21.66,
+      "shares": 13614,
+      "pl": -5104.69,
+      "pl_pct": -1.7,
       "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3018",
+      "buy_date": "2017-05-26",
+      "buy_price": 22.02,
+      "sell_date": "2017-08-02",
+      "sell_price": 26.57,
+      "shares": 6812,
+      "pl": 31000.0,
+      "pl_pct": 20.67,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "8926",
@@ -636,17 +581,6 @@
       "shares": 18826,
       "pl": 2534.74,
       "pl_pct": 0.84,
-      "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "2015",
-      "buy_date": "2017-07-12",
-      "buy_price": 28.59,
-      "sell_date": "2017-08-10",
-      "sell_price": 29.1,
-      "shares": 10492,
-      "pl": 5314.52,
-      "pl_pct": 1.77,
       "sell_reason": "RSI<35"
     },
     {
@@ -672,6 +606,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "3018",
+      "buy_date": "2017-05-26",
+      "buy_price": 22.02,
+      "sell_date": "2017-08-14",
+      "sell_price": 28.62,
+      "shares": 6813,
+      "pl": 44983.48,
+      "pl_pct": 29.99,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "1229",
       "buy_date": "2017-06-09",
       "buy_price": 12.13,
@@ -694,25 +639,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1312A",
-      "buy_date": "2017-07-03",
-      "buy_price": 20.21,
+      "ticker": "3550",
+      "buy_date": "2017-06-27",
+      "buy_price": 11.38,
       "sell_date": "2017-08-14",
-      "sell_price": 20.97,
-      "shares": 14841,
-      "pl": 11231.74,
-      "pl_pct": 3.74,
+      "sell_price": 11.08,
+      "shares": 26367,
+      "pl": -7753.84,
+      "pl_pct": -2.58,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "5234",
-      "buy_date": "2017-07-14",
-      "buy_price": 28.91,
+      "ticker": "2472",
+      "buy_date": "2017-07-03",
+      "buy_price": 26.69,
       "sell_date": "2017-08-14",
-      "sell_price": 28.6,
-      "shares": 10377,
-      "pl": -3150.25,
-      "pl_pct": -1.05,
+      "sell_price": 27.13,
+      "shares": 11238,
+      "pl": 4918.54,
+      "pl_pct": 1.64,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -727,36 +672,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2478",
-      "buy_date": "2017-07-26",
-      "buy_price": 14.73,
+      "ticker": "6505",
+      "buy_date": "2017-07-24",
+      "buy_price": 84.23,
       "sell_date": "2017-08-14",
-      "sell_price": 14.1,
-      "shares": 20359,
-      "pl": -12875.67,
-      "pl_pct": -4.29,
+      "sell_price": 83.83,
+      "shares": 3561,
+      "pl": -1435.13,
+      "pl_pct": -0.48,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2492",
+      "ticker": "5234",
       "buy_date": "2017-08-10",
-      "buy_price": 42.94,
+      "buy_price": 29.38,
       "sell_date": "2017-08-14",
-      "sell_price": 41.54,
-      "shares": 6986,
-      "pl": -9793.03,
-      "pl_pct": -3.26,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2472",
-      "buy_date": "2017-08-10",
-      "buy_price": 27.09,
-      "sell_date": "2017-08-14",
-      "sell_price": 27.13,
-      "shares": 11072,
-      "pl": 401.62,
-      "pl_pct": 0.13,
+      "sell_price": 28.6,
+      "shares": 10211,
+      "pl": -7921.9,
+      "pl_pct": -2.64,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -769,28 +703,6 @@
       "pl": -14850.9,
       "pl_pct": -4.95,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
-    },
-    {
-      "ticker": "1531",
-      "buy_date": "2017-08-28",
-      "buy_price": 16.82,
-      "sell_date": "2017-09-06",
-      "sell_price": 15.94,
-      "shares": 17833,
-      "pl": -15788.92,
-      "pl_pct": -5.26,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
-      "ticker": "2723",
-      "buy_date": "2017-08-25",
-      "buy_price": 256.68,
-      "sell_date": "2017-09-20",
-      "sell_price": 227.69,
-      "shares": 1168,
-      "pl": -33862.2,
-      "pl_pct": -11.29,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
     },
     {
       "ticker": "2809",
@@ -815,25 +727,47 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "910322",
+      "ticker": "2723",
       "buy_date": "2017-08-25",
-      "buy_price": 12.51,
+      "buy_price": 256.68,
       "sell_date": "2017-09-26",
-      "sell_price": 13.79,
-      "shares": 23979,
-      "pl": 30672.9,
-      "pl_pct": 10.22,
+      "sell_price": 228.75,
+      "shares": 1168,
+      "pl": -32623.34,
+      "pl_pct": -10.88,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2881A",
-      "buy_date": "2017-08-28",
-      "buy_price": 47.36,
+      "ticker": "1531",
+      "buy_date": "2017-08-25",
+      "buy_price": 16.82,
       "sell_date": "2017-09-26",
-      "sell_price": 47.75,
-      "shares": 6333,
-      "pl": 2415.11,
-      "pl_pct": 0.81,
+      "sell_price": 15.4,
+      "shares": 17833,
+      "pl": -25399.58,
+      "pl_pct": -8.47,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1304",
+      "buy_date": "2017-08-28",
+      "buy_price": 11.54,
+      "sell_date": "2017-09-26",
+      "sell_price": 11.54,
+      "shares": 25985,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3055",
+      "buy_date": "2017-08-28",
+      "buy_price": 15.47,
+      "sell_date": "2017-09-26",
+      "sell_price": 16.02,
+      "shares": 19386,
+      "pl": 10659.66,
+      "pl_pct": 3.55,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -881,17 +815,6 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2375",
-      "buy_date": "2017-09-06",
-      "buy_price": 20.88,
-      "sell_date": "2017-09-26",
-      "sell_price": 21.33,
-      "shares": 14364,
-      "pl": 6360.13,
-      "pl_pct": 2.12,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "5234",
       "buy_date": "2017-09-20",
       "buy_price": 33.73,
@@ -900,17 +823,6 @@
       "shares": 8893,
       "pl": -17398.44,
       "pl_pct": -5.8,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1312A",
-      "buy_date": "2017-09-20",
-      "buy_price": 22.03,
-      "sell_date": "2017-09-26",
-      "sell_price": 21.88,
-      "shares": 13619,
-      "pl": -2054.69,
-      "pl_pct": -0.68,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -925,28 +837,6 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "910322",
-      "buy_date": "2017-10-06",
-      "buy_price": 14.16,
-      "sell_date": "2017-10-25",
-      "sell_price": 14.16,
-      "shares": 21179,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "3583",
-      "buy_date": "2017-10-17",
-      "buy_price": 62.09,
-      "sell_date": "2017-10-30",
-      "sell_price": 62.09,
-      "shares": 4831,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
       "ticker": "1526",
       "buy_date": "2017-10-12",
       "buy_price": 30.72,
@@ -956,17 +846,6 @@
       "pl": 33189.78,
       "pl_pct": 22.13,
       "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "3055",
-      "buy_date": "2017-10-06",
-      "buy_price": 16.73,
-      "sell_date": "2017-11-07",
-      "sell_price": 15.0,
-      "shares": 17930,
-      "pl": -30985.63,
-      "pl_pct": -10.33,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
     {
       "ticker": "8926",
@@ -983,12 +862,12 @@
       "ticker": "1526",
       "buy_date": "2017-10-12",
       "buy_price": 30.72,
-      "sell_date": "2017-11-08",
-      "sell_price": 36.1,
+      "sell_date": "2017-11-09",
+      "sell_price": 33.61,
       "shares": 4883,
-      "pl": 26297.91,
-      "pl_pct": 17.53,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+      "pl": 14146.47,
+      "pl_pct": 9.43,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
     },
     {
       "ticker": "1229",
@@ -1010,6 +889,28 @@
       "shares": 7758,
       "pl": 8877.81,
       "pl_pct": 2.96,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3055",
+      "buy_date": "2017-10-06",
+      "buy_price": 16.73,
+      "sell_date": "2017-11-13",
+      "sell_price": 14.92,
+      "shares": 17930,
+      "pl": -32394.08,
+      "pl_pct": -10.8,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2375",
+      "buy_date": "2017-10-06",
+      "buy_price": 21.62,
+      "sell_date": "2017-11-13",
+      "sell_price": 21.36,
+      "shares": 13874,
+      "pl": -3583.5,
+      "pl_pct": -1.19,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1046,58 +947,36 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "6431",
-      "buy_date": "2017-10-25",
-      "buy_price": 11.47,
+      "ticker": "3583",
+      "buy_date": "2017-10-17",
+      "buy_price": 62.09,
       "sell_date": "2017-11-13",
-      "sell_price": 11.52,
-      "shares": 26158,
-      "pl": 1293.04,
-      "pl_pct": 0.43,
+      "sell_price": 61.6,
+      "shares": 4831,
+      "pl": -2361.8,
+      "pl_pct": -0.79,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
       "ticker": "5285",
-      "buy_date": "2017-10-30",
-      "buy_price": 57.02,
+      "buy_date": "2017-11-08",
+      "buy_price": 58.78,
       "sell_date": "2017-11-13",
       "sell_price": 54.69,
-      "shares": 5261,
-      "pl": -12220.91,
-      "pl_pct": -4.07,
+      "shares": 5104,
+      "pl": -20838.18,
+      "pl_pct": -6.95,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2472",
-      "buy_date": "2017-11-07",
-      "buy_price": 36.78,
+      "ticker": "1323",
+      "buy_date": "2017-11-09",
+      "buy_price": 24.94,
       "sell_date": "2017-11-13",
-      "sell_price": 35.44,
-      "shares": 8156,
-      "pl": -10945.59,
-      "pl_pct": -3.65,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "1313",
-      "buy_date": "2017-11-08",
-      "buy_price": 12.81,
-      "sell_date": "2017-11-13",
-      "sell_price": 12.62,
-      "shares": 23420,
-      "pl": -4373.04,
-      "pl_pct": -1.46,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2881A",
-      "buy_date": "2017-11-08",
-      "buy_price": 48.28,
-      "sell_date": "2017-11-13",
-      "sell_price": 48.28,
-      "shares": 6213,
-      "pl": 0.0,
-      "pl_pct": 0.0,
+      "sell_price": 25.01,
+      "shares": 12031,
+      "pl": 911.83,
+      "pl_pct": 0.3,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1134,14 +1013,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "1312A",
+      "ticker": "8926",
       "buy_date": "2017-11-16",
-      "buy_price": 22.67,
+      "buy_price": 16.74,
       "sell_date": "2017-11-20",
-      "sell_price": 22.93,
-      "shares": 13234,
-      "pl": 3494.05,
-      "pl_pct": 1.16,
+      "sell_price": 16.84,
+      "shares": 17922,
+      "pl": 1894.71,
+      "pl_pct": 0.63,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1179,47 +1058,47 @@
     },
     {
       "ticker": "2367",
-      "buy_date": "2017-11-24",
-      "buy_price": 13.25,
+      "buy_date": "2017-11-22",
+      "buy_price": 13.51,
       "sell_date": "2017-12-04",
       "sell_price": 16.3,
-      "shares": 11322,
-      "pl": 34537.49,
-      "pl_pct": 23.03,
+      "shares": 11103,
+      "pl": 30966.34,
+      "pl_pct": 20.65,
       "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "2492",
       "buy_date": "2017-11-23",
       "buy_price": 62.49,
-      "sell_date": "2017-12-05",
-      "sell_price": 70.98,
+      "sell_date": "2017-12-06",
+      "sell_price": 69.87,
       "shares": 2400,
-      "pl": 20363.09,
-      "pl_pct": 13.58,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
+      "pl": 17707.04,
+      "pl_pct": 11.81,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
     },
     {
       "ticker": "3026",
       "buy_date": "2017-11-27",
       "buy_price": 47.48,
-      "sell_date": "2017-12-05",
-      "sell_price": 44.88,
+      "sell_date": "2017-12-07",
+      "sell_price": 43.44,
       "shares": 6319,
-      "pl": -16403.33,
-      "pl_pct": -5.47,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+      "pl": -25516.29,
+      "pl_pct": -8.51,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-18%)"
     },
     {
       "ticker": "5234",
       "buy_date": "2017-11-22",
       "buy_price": 37.58,
-      "sell_date": "2017-12-08",
-      "sell_price": 39.13,
-      "shares": 7983,
-      "pl": 12386.76,
-      "pl_pct": 4.13,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
+      "sell_date": "2017-12-14",
+      "sell_price": 46.75,
+      "shares": 3991,
+      "pl": 36617.15,
+      "pl_pct": 24.42,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "6431",
@@ -1277,14 +1156,25 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "1312A",
+      "ticker": "5234",
       "buy_date": "2017-11-22",
-      "buy_price": 22.78,
+      "buy_price": 37.58,
       "sell_date": "2017-12-29 (\u5e74\u7d42)",
-      "sell_price": 25.61,
-      "shares": 13168,
-      "pl": 37249.54,
-      "pl_pct": 12.42,
+      "sell_price": 45.74,
+      "shares": 3992,
+      "pl": 32586.66,
+      "pl_pct": 21.72,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2367",
+      "buy_date": "2017-11-22",
+      "buy_price": 13.51,
+      "sell_date": "2017-12-29 (\u5e74\u7d42)",
+      "sell_price": 20.22,
+      "shares": 11104,
+      "pl": 74519.45,
+      "pl_pct": 49.68,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -1299,17 +1189,6 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "2367",
-      "buy_date": "2017-11-24",
-      "buy_price": 13.25,
-      "sell_date": "2017-12-29 (\u5e74\u7d42)",
-      "sell_price": 20.22,
-      "shares": 11323,
-      "pl": 78949.78,
-      "pl_pct": 52.63,
-      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
-    },
-    {
       "ticker": "6431",
       "buy_date": "2017-11-24",
       "buy_price": 11.86,
@@ -1318,6 +1197,17 @@
       "shares": 12643,
       "pl": 38123.66,
       "pl_pct": 25.42,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "1528",
+      "buy_date": "2017-11-24",
+      "buy_price": 12.8,
+      "sell_date": "2017-12-29 (\u5e74\u7d42)",
+      "sell_price": 13.16,
+      "shares": 23434,
+      "pl": 8391.51,
+      "pl_pct": 2.8,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -1340,1212 +1230,1212 @@
     },
     {
       "date": "2017-01-04",
-      "equity": 2999226.84,
+      "equity": 3006031.95,
       "type": "daily"
     },
     {
       "date": "2017-01-05",
-      "equity": 3000482.98,
+      "equity": 3022458.27,
       "type": "daily"
     },
     {
       "date": "2017-01-06",
-      "equity": 2998931.92,
+      "equity": 3026699.42,
       "type": "daily"
     },
     {
       "date": "2017-01-09",
-      "equity": 2994710.98,
+      "equity": 3014485.1,
       "type": "daily"
     },
     {
       "date": "2017-01-10",
-      "equity": 2991274.87,
+      "equity": 3019519.38,
       "type": "daily"
     },
     {
       "date": "2017-01-11",
-      "equity": 2974976.76,
+      "equity": 3021078.26,
       "type": "daily"
     },
     {
       "date": "2017-01-12",
-      "equity": 2980665.05,
+      "equity": 3016692.28,
       "type": "daily"
     },
     {
       "date": "2017-01-13",
-      "equity": 2976631.63,
+      "equity": 3013059.79,
       "type": "daily"
     },
     {
       "date": "2017-01-16",
-      "equity": 2957667.57,
+      "equity": 2983643.56,
       "type": "daily"
     },
     {
       "date": "2017-01-17",
-      "equity": 2958316.13,
+      "equity": 2995980.29,
       "type": "daily"
     },
     {
       "date": "2017-01-18",
-      "equity": 2976049.67,
+      "equity": 3025303.99,
       "type": "daily"
     },
     {
       "date": "2017-01-19",
-      "equity": 2973146.63,
+      "equity": 3019218.38,
       "type": "daily"
     },
     {
       "date": "2017-01-20",
-      "equity": 2983866.54,
+      "equity": 3027466.84,
       "type": "daily"
     },
     {
       "date": "2017-01-23",
-      "equity": 2984952.72,
+      "equity": 3035381.89,
       "type": "daily"
     },
     {
       "date": "2017-01-24",
-      "equity": 2994301.85,
+      "equity": 3045455.73,
       "type": "daily"
     },
     {
       "date": "2017-02-02",
-      "equity": 3018216.1,
+      "equity": 3073049.66,
       "type": "daily"
     },
     {
       "date": "2017-02-03",
-      "equity": 3034876.09,
+      "equity": 3089055.62,
       "type": "daily"
     },
     {
       "date": "2017-02-06",
-      "equity": 3108873.79,
+      "equity": 3163108.22,
       "type": "daily"
     },
     {
       "date": "2017-02-07",
-      "equity": 3112777.62,
+      "equity": 3166778.33,
       "type": "daily"
     },
     {
       "date": "2017-02-08",
-      "equity": 3115397.41,
+      "equity": 3159967.1,
       "type": "daily"
     },
     {
       "date": "2017-02-09",
-      "equity": 3117656.02,
+      "equity": 3161927.65,
       "type": "daily"
     },
     {
       "date": "2017-02-10",
-      "equity": 3098289.39,
+      "equity": 3143301.13,
       "type": "daily"
     },
     {
       "date": "2017-02-13",
-      "equity": 3089803.17,
+      "equity": 3131488.6,
       "type": "daily"
     },
     {
       "date": "2017-02-14",
-      "equity": 3080901.14,
+      "equity": 3125959.6,
       "type": "daily"
     },
     {
       "date": "2017-02-15",
-      "equity": 3101944.57,
+      "equity": 3150419.02,
       "type": "daily"
     },
     {
       "date": "2017-02-16",
-      "equity": 3091971.35,
+      "equity": 3134781.92,
       "type": "daily"
     },
     {
       "date": "2017-02-17",
-      "equity": 3097935.12,
+      "equity": 3132770.58,
       "type": "daily"
     },
     {
       "date": "2017-02-20",
-      "equity": 3092157.68,
+      "equity": 3121661.29,
       "type": "daily"
     },
     {
       "date": "2017-02-21",
-      "equity": 3111856.04,
+      "equity": 3142032.59,
       "type": "daily"
     },
     {
       "date": "2017-02-22",
-      "equity": 3124893.73,
+      "equity": 3154052.6,
       "type": "daily"
     },
     {
       "date": "2017-02-23",
-      "equity": 3105549.3,
+      "equity": 3133302.07,
       "type": "daily"
     },
     {
       "date": "2017-02-24",
-      "equity": 3107726.92,
+      "equity": 3138853.45,
       "type": "daily"
     },
     {
       "date": "2017-03-01",
-      "equity": 3104128.3,
+      "equity": 3126458.92,
       "type": "daily"
     },
     {
       "date": "2017-03-02",
-      "equity": 3100475.96,
+      "equity": 3129495.54,
       "type": "daily"
     },
     {
       "date": "2017-03-03",
-      "equity": 3110958.09,
+      "equity": 3128942.94,
       "type": "daily"
     },
     {
       "date": "2017-03-06",
-      "equity": 3110309.81,
+      "equity": 3131106.28,
       "type": "daily"
     },
     {
       "date": "2017-03-07",
-      "equity": 3107115.75,
+      "equity": 3139753.59,
       "type": "daily"
     },
     {
       "date": "2017-03-08",
-      "equity": 3119254.41,
+      "equity": 3155398.69,
       "type": "daily"
     },
     {
       "date": "2017-03-09",
-      "equity": 3090418.39,
+      "equity": 3116661.77,
       "type": "daily"
     },
     {
       "date": "2017-03-10",
-      "equity": 3084472.81,
+      "equity": 3105288.13,
       "type": "daily"
     },
     {
       "date": "2017-03-13",
-      "equity": 3105688.5,
+      "equity": 3143961.79,
       "type": "daily"
     },
     {
       "date": "2017-03-14",
-      "equity": 3102506.74,
+      "equity": 3136396.9,
       "type": "daily"
     },
     {
       "date": "2017-03-15",
-      "equity": 3096472.61,
+      "equity": 3124447.13,
       "type": "daily"
     },
     {
       "date": "2017-03-16",
-      "equity": 3125383.65,
+      "equity": 3162519.41,
       "type": "daily"
     },
     {
       "date": "2017-03-17",
-      "equity": 3158568.6,
+      "equity": 3200404.83,
       "type": "daily"
     },
     {
       "date": "2017-03-20",
-      "equity": 3169498.12,
+      "equity": 3197267.31,
       "type": "daily"
     },
     {
       "date": "2017-03-21",
-      "equity": 3165700.67,
+      "equity": 3200018.0,
       "type": "daily"
     },
     {
       "date": "2017-03-22",
-      "equity": 3158023.26,
+      "equity": 3192803.49,
       "type": "daily"
     },
     {
       "date": "2017-03-23",
-      "equity": 3161132.72,
+      "equity": 3193319.65,
       "type": "daily"
     },
     {
       "date": "2017-03-24",
-      "equity": 3165993.03,
+      "equity": 3188751.03,
       "type": "daily"
     },
     {
       "date": "2017-03-27",
-      "equity": 3128551.94,
+      "equity": 3171789.32,
       "type": "daily"
     },
     {
       "date": "2017-03-28",
-      "equity": 3114275.75,
+      "equity": 3166724.92,
       "type": "daily"
     },
     {
       "date": "2017-03-29",
-      "equity": 3109473.53,
+      "equity": 3163918.54,
       "type": "crash"
     },
     {
       "date": "2017-03-30",
-      "equity": 3109473.53,
+      "equity": 3163918.54,
       "type": "daily"
     },
     {
       "date": "2017-03-31",
-      "equity": 3122516.93,
+      "equity": 3176961.93,
       "type": "crash"
     },
     {
       "date": "2017-04-05",
-      "equity": 3122516.93,
+      "equity": 3176961.93,
       "type": "daily"
     },
     {
       "date": "2017-04-06",
-      "equity": 3133994.89,
+      "equity": 3188439.9,
       "type": "crash"
     },
     {
       "date": "2017-04-07",
-      "equity": 3133994.89,
+      "equity": 3188439.9,
       "type": "daily"
     },
     {
       "date": "2017-04-10",
-      "equity": 3141080.07,
+      "equity": 3195525.08,
       "type": "crash"
     },
     {
       "date": "2017-04-11",
-      "equity": 3141080.07,
+      "equity": 3195525.08,
       "type": "daily"
     },
     {
       "date": "2017-04-12",
-      "equity": 3133482.6,
+      "equity": 3187927.61,
       "type": "crash"
     },
     {
       "date": "2017-04-13",
-      "equity": 3133482.6,
+      "equity": 3187927.61,
       "type": "daily"
     },
     {
       "date": "2017-04-14",
-      "equity": 3123106.16,
+      "equity": 3177551.16,
       "type": "hold"
     },
     {
       "date": "2017-04-17",
-      "equity": 3136983.53,
+      "equity": 3191428.53,
       "type": "hold"
     },
     {
       "date": "2017-04-18",
-      "equity": 3131654.71,
+      "equity": 3186099.72,
       "type": "hold"
     },
     {
       "date": "2017-04-19",
-      "equity": 3124821.45,
+      "equity": 3179266.45,
       "type": "hold"
     },
     {
       "date": "2017-04-20",
-      "equity": 3124821.45,
+      "equity": 3179266.45,
       "type": "hold"
     },
     {
       "date": "2017-04-21",
-      "equity": 3125632.24,
+      "equity": 3180077.25,
       "type": "hold"
     },
     {
       "date": "2017-04-24",
-      "equity": 3121578.21,
+      "equity": 3176023.22,
       "type": "hold"
     },
     {
       "date": "2017-04-25",
-      "equity": 3123199.83,
+      "equity": 3177644.84,
       "type": "daily"
     },
     {
       "date": "2017-04-26",
-      "equity": 3127769.5,
+      "equity": 3182214.51,
       "type": "daily"
     },
     {
       "date": "2017-04-27",
-      "equity": 3128726.41,
+      "equity": 3183171.42,
       "type": "daily"
     },
     {
       "date": "2017-04-28",
-      "equity": 3135026.14,
+      "equity": 3189471.15,
       "type": "daily"
     },
     {
       "date": "2017-05-02",
-      "equity": 3129045.34,
+      "equity": 3183490.35,
       "type": "daily"
     },
     {
       "date": "2017-05-03",
-      "equity": 3123003.71,
+      "equity": 3177448.71,
       "type": "daily"
     },
     {
       "date": "2017-05-04",
-      "equity": 3134201.41,
+      "equity": 3188646.41,
       "type": "daily"
     },
     {
       "date": "2017-05-05",
-      "equity": 3112826.53,
+      "equity": 3167271.53,
       "type": "daily"
     },
     {
       "date": "2017-05-08",
-      "equity": 3102098.56,
+      "equity": 3156543.56,
       "type": "daily"
     },
     {
       "date": "2017-05-09",
-      "equity": 3051316.87,
+      "equity": 3105761.88,
       "type": "daily"
     },
     {
       "date": "2017-05-10",
-      "equity": 3059959.23,
+      "equity": 3114404.23,
       "type": "daily"
     },
     {
       "date": "2017-05-11",
-      "equity": 3056246.98,
+      "equity": 3110691.98,
       "type": "daily"
     },
     {
       "date": "2017-05-12",
-      "equity": 3039160.8,
+      "equity": 3092417.71,
       "type": "daily"
     },
     {
       "date": "2017-05-15",
-      "equity": 3052342.51,
+      "equity": 3102977.66,
       "type": "daily"
     },
     {
       "date": "2017-05-16",
-      "equity": 3061773.6,
+      "equity": 3113531.68,
       "type": "daily"
     },
     {
       "date": "2017-05-17",
-      "equity": 3050554.98,
+      "equity": 3107225.59,
       "type": "daily"
     },
     {
       "date": "2017-05-18",
-      "equity": 3031002.54,
+      "equity": 3079972.94,
       "type": "daily"
     },
     {
       "date": "2017-05-19",
-      "equity": 3040343.48,
+      "equity": 3096328.31,
       "type": "crash"
     },
     {
       "date": "2017-05-22",
-      "equity": 3040343.48,
+      "equity": 3096328.31,
       "type": "daily"
     },
     {
       "date": "2017-05-23",
-      "equity": 3038981.67,
+      "equity": 3094966.5,
       "type": "daily"
     },
     {
       "date": "2017-05-24",
-      "equity": 3040277.68,
+      "equity": 3096262.51,
       "type": "daily"
     },
     {
       "date": "2017-05-25",
-      "equity": 3043362.4,
+      "equity": 3099347.23,
       "type": "daily"
     },
     {
       "date": "2017-05-26",
-      "equity": 3042209.5,
+      "equity": 3098194.33,
       "type": "daily"
     },
     {
       "date": "2017-05-31",
-      "equity": 3053323.08,
+      "equity": 3103488.32,
       "type": "daily"
     },
     {
       "date": "2017-06-01",
-      "equity": 3048478.46,
+      "equity": 3101936.35,
       "type": "daily"
     },
     {
       "date": "2017-06-02",
-      "equity": 3050865.67,
+      "equity": 3105184.06,
       "type": "daily"
     },
     {
       "date": "2017-06-05",
-      "equity": 3089816.2,
+      "equity": 3173696.12,
       "type": "daily"
     },
     {
       "date": "2017-06-06",
-      "equity": 3082348.68,
+      "equity": 3171780.31,
       "type": "daily"
     },
     {
       "date": "2017-06-07",
-      "equity": 3056387.56,
+      "equity": 3145205.56,
       "type": "daily"
     },
     {
       "date": "2017-06-08",
-      "equity": 3071407.62,
+      "equity": 3165913.57,
       "type": "daily"
     },
     {
       "date": "2017-06-09",
-      "equity": 3060702.07,
+      "equity": 3163513.49,
       "type": "daily"
     },
     {
       "date": "2017-06-12",
-      "equity": 3045403.97,
+      "equity": 3150726.81,
       "type": "daily"
     },
     {
       "date": "2017-06-13",
-      "equity": 3047344.05,
+      "equity": 3144145.02,
       "type": "daily"
     },
     {
       "date": "2017-06-14",
-      "equity": 3033006.24,
+      "equity": 3114707.77,
       "type": "daily"
     },
     {
       "date": "2017-06-15",
-      "equity": 3005184.64,
+      "equity": 3091507.58,
       "type": "daily"
     },
     {
       "date": "2017-06-16",
-      "equity": 3029729.15,
+      "equity": 3117236.57,
       "type": "daily"
     },
     {
       "date": "2017-06-19",
-      "equity": 3051544.12,
+      "equity": 3135825.9,
       "type": "daily"
     },
     {
       "date": "2017-06-20",
-      "equity": 3050347.91,
+      "equity": 3123620.61,
       "type": "daily"
     },
     {
       "date": "2017-06-21",
-      "equity": 3093039.11,
+      "equity": 3167156.01,
       "type": "daily"
     },
     {
       "date": "2017-06-22",
-      "equity": 3097551.93,
+      "equity": 3167845.81,
       "type": "daily"
     },
     {
       "date": "2017-06-23",
-      "equity": 3084276.27,
+      "equity": 3147221.12,
       "type": "daily"
     },
     {
       "date": "2017-06-26",
-      "equity": 3091343.12,
+      "equity": 3169278.04,
       "type": "daily"
     },
     {
       "date": "2017-06-27",
-      "equity": 3080939.71,
+      "equity": 3157046.93,
       "type": "daily"
     },
     {
       "date": "2017-06-28",
-      "equity": 3079489.35,
+      "equity": 3148966.94,
       "type": "daily"
     },
     {
       "date": "2017-06-29",
-      "equity": 3076506.41,
+      "equity": 3147321.34,
       "type": "daily"
     },
     {
       "date": "2017-06-30",
-      "equity": 3092619.14,
+      "equity": 3158112.63,
       "type": "daily"
     },
     {
       "date": "2017-07-03",
-      "equity": 3086327.46,
+      "equity": 3157381.59,
       "type": "daily"
     },
     {
       "date": "2017-07-04",
-      "equity": 3085595.99,
+      "equity": 3166206.12,
       "type": "daily"
     },
     {
       "date": "2017-07-05",
-      "equity": 3109415.37,
+      "equity": 3190485.84,
       "type": "daily"
     },
     {
       "date": "2017-07-06",
-      "equity": 3103291.79,
+      "equity": 3210938.69,
       "type": "daily"
     },
     {
       "date": "2017-07-07",
-      "equity": 3101895.18,
+      "equity": 3180910.04,
       "type": "daily"
     },
     {
       "date": "2017-07-10",
-      "equity": 3083058.26,
+      "equity": 3158435.64,
       "type": "daily"
     },
     {
       "date": "2017-07-11",
-      "equity": 3074082.31,
+      "equity": 3151546.3,
       "type": "daily"
     },
     {
       "date": "2017-07-12",
-      "equity": 3078268.46,
+      "equity": 3163737.4,
       "type": "daily"
     },
     {
       "date": "2017-07-13",
-      "equity": 3072095.25,
+      "equity": 3177342.03,
       "type": "daily"
     },
     {
       "date": "2017-07-14",
-      "equity": 3072197.66,
+      "equity": 3191495.15,
       "type": "daily"
     },
     {
       "date": "2017-07-17",
-      "equity": 3073090.28,
+      "equity": 3194391.21,
       "type": "daily"
     },
     {
       "date": "2017-07-18",
-      "equity": 3074883.69,
+      "equity": 3191243.15,
       "type": "daily"
     },
     {
       "date": "2017-07-19",
-      "equity": 3081475.77,
+      "equity": 3195196.62,
       "type": "daily"
     },
     {
       "date": "2017-07-20",
-      "equity": 3077636.84,
+      "equity": 3186244.34,
       "type": "daily"
     },
     {
       "date": "2017-07-21",
-      "equity": 3081799.98,
+      "equity": 3184981.62,
       "type": "daily"
     },
     {
       "date": "2017-07-24",
-      "equity": 3074026.83,
+      "equity": 3173616.13,
       "type": "daily"
     },
     {
       "date": "2017-07-25",
-      "equity": 3074913.8,
+      "equity": 3191731.9,
       "type": "daily"
     },
     {
       "date": "2017-07-26",
-      "equity": 3077079.24,
+      "equity": 3194635.46,
       "type": "daily"
     },
     {
       "date": "2017-07-27",
-      "equity": 3078959.16,
+      "equity": 3199041.38,
       "type": "daily"
     },
     {
       "date": "2017-07-28",
-      "equity": 3075198.73,
+      "equity": 3185061.18,
       "type": "daily"
     },
     {
       "date": "2017-07-31",
-      "equity": 3070398.29,
+      "equity": 3185487.71,
       "type": "daily"
     },
     {
       "date": "2017-08-01",
-      "equity": 3080668.55,
+      "equity": 3189444.8,
       "type": "daily"
     },
     {
       "date": "2017-08-02",
-      "equity": 3091306.51,
+      "equity": 3203750.91,
       "type": "daily"
     },
     {
       "date": "2017-08-03",
-      "equity": 3088183.35,
+      "equity": 3197198.47,
       "type": "daily"
     },
     {
       "date": "2017-08-04",
-      "equity": 3094457.7,
+      "equity": 3217952.92,
       "type": "daily"
     },
     {
       "date": "2017-08-07",
-      "equity": 3126880.36,
+      "equity": 3247019.14,
       "type": "daily"
     },
     {
       "date": "2017-08-08",
-      "equity": 3132327.84,
+      "equity": 3249574.29,
       "type": "daily"
     },
     {
       "date": "2017-08-09",
-      "equity": 3112605.51,
+      "equity": 3231049.02,
       "type": "daily"
     },
     {
       "date": "2017-08-10",
-      "equity": 3070754.02,
+      "equity": 3194384.65,
       "type": "daily"
     },
     {
       "date": "2017-08-11",
-      "equity": 3093948.83,
+      "equity": 3218932.22,
       "type": "hold"
     },
     {
       "date": "2017-08-14",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "crash"
     },
     {
       "date": "2017-08-15",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-16",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-17",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-18",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-21",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-22",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-23",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "hold"
     },
     {
       "date": "2017-08-24",
-      "equity": 3065054.63,
+      "equity": 3192830.88,
       "type": "daily"
     },
     {
       "date": "2017-08-25",
-      "equity": 3080973.0,
+      "equity": 3208749.25,
       "type": "daily"
     },
     {
       "date": "2017-08-28",
-      "equity": 3107733.9,
+      "equity": 3237754.5,
       "type": "daily"
     },
     {
       "date": "2017-08-29",
-      "equity": 3095815.94,
+      "equity": 3225627.03,
       "type": "daily"
     },
     {
       "date": "2017-08-30",
-      "equity": 3085632.23,
+      "equity": 3223030.83,
       "type": "daily"
     },
     {
       "date": "2017-08-31",
-      "equity": 3103548.17,
+      "equity": 3246058.93,
       "type": "daily"
     },
     {
       "date": "2017-09-01",
-      "equity": 3086499.9,
+      "equity": 3225508.92,
       "type": "daily"
     },
     {
       "date": "2017-09-04",
-      "equity": 3078922.66,
+      "equity": 3217443.51,
       "type": "daily"
     },
     {
       "date": "2017-09-05",
-      "equity": 3089425.91,
+      "equity": 3231475.13,
       "type": "daily"
     },
     {
       "date": "2017-09-06",
-      "equity": 3097621.02,
+      "equity": 3223667.5,
       "type": "daily"
     },
     {
       "date": "2017-09-07",
-      "equity": 3087859.61,
+      "equity": 3252432.83,
       "type": "daily"
     },
     {
       "date": "2017-09-08",
-      "equity": 3163298.2,
+      "equity": 3303159.09,
       "type": "daily"
     },
     {
       "date": "2017-09-11",
-      "equity": 3173840.21,
+      "equity": 3298074.29,
       "type": "daily"
     },
     {
       "date": "2017-09-12",
-      "equity": 3146029.32,
+      "equity": 3279792.7,
       "type": "daily"
     },
     {
       "date": "2017-09-13",
-      "equity": 3142304.55,
+      "equity": 3257510.05,
       "type": "daily"
     },
     {
       "date": "2017-09-14",
-      "equity": 3171343.45,
+      "equity": 3261549.56,
       "type": "daily"
     },
     {
       "date": "2017-09-15",
-      "equity": 3188266.59,
+      "equity": 3284071.33,
       "type": "daily"
     },
     {
       "date": "2017-09-18",
-      "equity": 3199387.3,
+      "equity": 3293963.86,
       "type": "daily"
     },
     {
       "date": "2017-09-19",
-      "equity": 3172214.07,
+      "equity": 3274240.59,
       "type": "daily"
     },
     {
       "date": "2017-09-20",
-      "equity": 3141844.88,
+      "equity": 3237131.28,
       "type": "daily"
     },
     {
       "date": "2017-09-21",
-      "equity": 3207046.83,
+      "equity": 3296188.28,
       "type": "daily"
     },
     {
       "date": "2017-09-22",
-      "equity": 3177088.1,
+      "equity": 3267588.57,
       "type": "hold"
     },
     {
       "date": "2017-09-25",
-      "equity": 3107825.64,
+      "equity": 3194508.75,
       "type": "hold"
     },
     {
       "date": "2017-09-26",
-      "equity": 3064673.53,
+      "equity": 3157344.19,
       "type": "crash"
     },
     {
       "date": "2017-09-27",
-      "equity": 3064673.53,
+      "equity": 3157344.19,
       "type": "hold"
     },
     {
       "date": "2017-09-28",
-      "equity": 3064673.53,
+      "equity": 3157344.19,
       "type": "hold"
     },
     {
       "date": "2017-09-29",
-      "equity": 3064673.53,
+      "equity": 3157344.19,
       "type": "hold"
     },
     {
       "date": "2017-10-02",
-      "equity": 3064673.53,
+      "equity": 3157344.19,
       "type": "hold"
     },
     {
       "date": "2017-10-03",
-      "equity": 3064673.53,
+      "equity": 3157344.19,
       "type": "daily"
     },
     {
       "date": "2017-10-05",
-      "equity": 3065102.07,
+      "equity": 3157772.72,
       "type": "daily"
     },
     {
       "date": "2017-10-06",
-      "equity": 3069555.86,
+      "equity": 3162226.51,
       "type": "daily"
     },
     {
       "date": "2017-10-11",
-      "equity": 3085226.76,
+      "equity": 3159265.24,
       "type": "daily"
     },
     {
       "date": "2017-10-12",
-      "equity": 3068410.7,
+      "equity": 3146479.18,
       "type": "daily"
     },
     {
       "date": "2017-10-13",
-      "equity": 3078826.16,
+      "equity": 3162115.29,
       "type": "daily"
     },
     {
       "date": "2017-10-16",
-      "equity": 3093003.03,
+      "equity": 3162862.66,
       "type": "daily"
     },
     {
       "date": "2017-10-17",
-      "equity": 3070843.15,
+      "equity": 3149804.6,
       "type": "daily"
     },
     {
       "date": "2017-10-18",
-      "equity": 3084177.39,
+      "equity": 3165269.98,
       "type": "daily"
     },
     {
       "date": "2017-10-19",
-      "equity": 3108928.66,
+      "equity": 3187973.52,
       "type": "daily"
     },
     {
       "date": "2017-10-20",
-      "equity": 3126201.81,
+      "equity": 3204288.25,
       "type": "daily"
     },
     {
       "date": "2017-10-23",
-      "equity": 3149644.8,
+      "equity": 3246244.14,
       "type": "daily"
     },
     {
       "date": "2017-10-24",
-      "equity": 3158117.81,
+      "equity": 3249383.56,
       "type": "daily"
     },
     {
       "date": "2017-10-25",
-      "equity": 3167180.8,
+      "equity": 3263434.98,
       "type": "daily"
     },
     {
       "date": "2017-10-26",
-      "equity": 3174082.77,
+      "equity": 3274216.14,
       "type": "daily"
     },
     {
       "date": "2017-10-27",
-      "equity": 3127288.45,
+      "equity": 3231596.68,
       "type": "daily"
     },
     {
       "date": "2017-10-30",
-      "equity": 3127790.43,
+      "equity": 3229539.01,
       "type": "daily"
     },
     {
       "date": "2017-10-31",
-      "equity": 3141492.76,
+      "equity": 3240525.8,
       "type": "daily"
     },
     {
       "date": "2017-11-01",
-      "equity": 3162179.38,
+      "equity": 3248039.03,
       "type": "daily"
     },
     {
       "date": "2017-11-02",
-      "equity": 3159922.86,
+      "equity": 3265247.0,
       "type": "daily"
     },
     {
       "date": "2017-11-03",
-      "equity": 3184770.45,
+      "equity": 3281220.82,
       "type": "daily"
     },
     {
       "date": "2017-11-06",
-      "equity": 3214203.03,
+      "equity": 3295020.5,
       "type": "daily"
     },
     {
       "date": "2017-11-07",
-      "equity": 3224626.04,
+      "equity": 3289610.51,
       "type": "daily"
     },
     {
       "date": "2017-11-08",
-      "equity": 3191774.42,
+      "equity": 3270228.7,
       "type": "daily"
     },
     {
       "date": "2017-11-09",
-      "equity": 3160952.46,
+      "equity": 3208528.99,
       "type": "daily"
     },
     {
       "date": "2017-11-10",
-      "equity": 3165741.79,
+      "equity": 3227735.32,
       "type": "daily"
     },
     {
       "date": "2017-11-13",
-      "equity": 3149596.29,
+      "equity": 3229081.92,
       "type": "crash"
     },
     {
       "date": "2017-11-14",
-      "equity": 3149596.29,
+      "equity": 3229081.92,
       "type": "daily"
     },
     {
       "date": "2017-11-15",
-      "equity": 3144082.97,
+      "equity": 3223568.59,
       "type": "crash"
     },
     {
       "date": "2017-11-16",
-      "equity": 3144082.97,
+      "equity": 3223568.59,
       "type": "daily"
     },
     {
       "date": "2017-11-17",
-      "equity": 3149400.04,
+      "equity": 3228284.62,
       "type": "daily"
     },
     {
       "date": "2017-11-20",
-      "equity": 3149929.33,
+      "equity": 3227815.6,
       "type": "crash"
     },
     {
       "date": "2017-11-21",
-      "equity": 3149929.33,
+      "equity": 3227815.6,
       "type": "daily"
     },
     {
       "date": "2017-11-22",
-      "equity": 3149177.44,
+      "equity": 3227063.71,
       "type": "daily"
     },
     {
       "date": "2017-11-23",
-      "equity": 3186307.71,
+      "equity": 3249498.83,
       "type": "daily"
     },
     {
       "date": "2017-11-24",
-      "equity": 3202529.42,
+      "equity": 3274609.25,
       "type": "daily"
     },
     {
       "date": "2017-11-27",
-      "equity": 3235008.35,
+      "equity": 3301013.74,
       "type": "daily"
     },
     {
       "date": "2017-11-28",
-      "equity": 3312132.83,
+      "equity": 3384661.3,
       "type": "daily"
     },
     {
       "date": "2017-11-29",
-      "equity": 3375710.1,
+      "equity": 3444699.5,
       "type": "daily"
     },
     {
       "date": "2017-11-30",
-      "equity": 3401000.9,
+      "equity": 3469290.89,
       "type": "hold"
     },
     {
       "date": "2017-12-01",
-      "equity": 3346596.25,
+      "equity": 3445261.36,
       "type": "hold"
     },
     {
       "date": "2017-12-04",
-      "equity": 3403061.96,
+      "equity": 3476737.82,
       "type": "hold"
     },
     {
       "date": "2017-12-05",
-      "equity": 3356150.5,
+      "equity": 3420121.99,
       "type": "hold"
     },
     {
       "date": "2017-12-06",
-      "equity": 3323845.69,
+      "equity": 3393247.6,
       "type": "hold"
     },
     {
       "date": "2017-12-07",
-      "equity": 3343330.14,
+      "equity": 3397377.73,
       "type": "hold"
     },
     {
       "date": "2017-12-08",
-      "equity": 3358397.37,
+      "equity": 3393374.11,
       "type": "hold"
     },
     {
       "date": "2017-12-11",
-      "equity": 3366821.53,
+      "equity": 3426732.06,
       "type": "hold"
     },
     {
       "date": "2017-12-12",
-      "equity": 3388792.38,
+      "equity": 3459092.53,
       "type": "hold"
     },
     {
       "date": "2017-12-13",
-      "equity": 3405713.56,
+      "equity": 3477188.16,
       "type": "hold"
     },
     {
       "date": "2017-12-14",
-      "equity": 3415150.3,
+      "equity": 3521216.21,
       "type": "hold"
     },
     {
       "date": "2017-12-15",
-      "equity": 3390170.14,
+      "equity": 3497922.28,
       "type": "hold"
     },
     {
       "date": "2017-12-18",
-      "equity": 3422857.06,
+      "equity": 3519497.31,
       "type": "hold"
     },
     {
       "date": "2017-12-19",
-      "equity": 3422057.7,
+      "equity": 3513697.72,
       "type": "hold"
     },
     {
       "date": "2017-12-20",
-      "equity": 3487088.16,
+      "equity": 3586530.02,
       "type": "hold"
     },
     {
       "date": "2017-12-21",
-      "equity": 3523248.04,
+      "equity": 3619603.72,
       "type": "hold"
     },
     {
       "date": "2017-12-22",
-      "equity": 3543592.51,
+      "equity": 3654942.16,
       "type": "hold"
     },
     {
       "date": "2017-12-25",
-      "equity": 3627640.76,
+      "equity": 3734802.55,
       "type": "hold"
     },
     {
       "date": "2017-12-26",
-      "equity": 3605156.52,
+      "equity": 3700282.03,
       "type": "hold"
     },
     {
       "date": "2017-12-27",
-      "equity": 3647976.96,
+      "equity": 3728725.96,
       "type": "hold"
     },
     {
       "date": "2017-12-28",
-      "equity": 3642375.02,
+      "equity": 3732428.75,
       "type": "hold"
     },
     {
       "date": "2017-12-29",
-      "equity": 3646845.88,
+      "equity": 3732920.68,
       "type": "hold"
     }
   ],
@@ -2684,12 +2574,6 @@
     },
     {
       "date": "2017-04-18",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.1
-    },
-    {
-      "date": "2017-04-18",
       "ticker": "2546",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 98.4
@@ -2711,6 +2595,12 @@
       "ticker": "1304",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 83.4
+    },
+    {
+      "date": "2017-04-18",
+      "ticker": "1323",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.2
     },
     {
       "date": "2017-04-19",
@@ -2852,12 +2742,6 @@
     },
     {
       "date": "2017-04-21",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.3
-    },
-    {
-      "date": "2017-04-21",
       "ticker": "5285",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 101.7
@@ -2867,12 +2751,6 @@
       "ticker": "2546",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.8
-    },
-    {
-      "date": "2017-04-21",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.5
     },
     {
       "date": "2017-04-21",
@@ -2891,6 +2769,18 @@
       "ticker": "1304",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 84.4
+    },
+    {
+      "date": "2017-04-21",
+      "ticker": "1323",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.4
+    },
+    {
+      "date": "2017-04-21",
+      "ticker": "6277",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4
     },
     {
       "date": "2017-04-24",
@@ -3001,22 +2891,16 @@
       "score": 81.6
     },
     {
+      "date": "2017-08-11",
+      "ticker": "1560",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.7
+    },
+    {
       "date": "2017-08-15",
       "ticker": "8039",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 114.5
-    },
-    {
-      "date": "2017-08-15",
-      "ticker": "2492",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.7
-    },
-    {
-      "date": "2017-08-15",
-      "ticker": "1312A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.0
     },
     {
       "date": "2017-08-15",
@@ -3056,15 +2940,21 @@
     },
     {
       "date": "2017-08-15",
+      "ticker": "2492",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.7
+    },
+    {
+      "date": "2017-08-15",
       "ticker": "1469",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 64.6
     },
     {
-      "date": "2017-08-16",
-      "ticker": "1312A",
+      "date": "2017-08-15",
+      "ticker": "9929",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.0
+      "score": 57.5
     },
     {
       "date": "2017-08-16",
@@ -3121,10 +3011,10 @@
       "score": 50.2
     },
     {
-      "date": "2017-08-17",
-      "ticker": "1312A",
+      "date": "2017-08-16",
+      "ticker": "1442",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.6
+      "score": 49.5
     },
     {
       "date": "2017-08-17",
@@ -3181,10 +3071,10 @@
       "score": 51.1
     },
     {
-      "date": "2017-08-18",
-      "ticker": "2881A",
+      "date": "2017-08-17",
+      "ticker": "1305",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.6
+      "score": 50.7
     },
     {
       "date": "2017-08-18",
@@ -3239,6 +3129,12 @@
       "ticker": "6176",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 39.9
+    },
+    {
+      "date": "2017-08-18",
+      "ticker": "2401",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 24.6
     },
     {
       "date": "2017-08-21",
@@ -3308,12 +3204,6 @@
     },
     {
       "date": "2017-08-22",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.4
-    },
-    {
-      "date": "2017-08-22",
       "ticker": "1531",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.8
@@ -3323,12 +3213,6 @@
       "ticker": "1704",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.4
-    },
-    {
-      "date": "2017-08-22",
-      "ticker": "9927",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 88.2
     },
     {
       "date": "2017-08-22",
@@ -3361,6 +3245,18 @@
       "score": 79.9
     },
     {
+      "date": "2017-08-22",
+      "ticker": "2006",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.8
+    },
+    {
+      "date": "2017-08-22",
+      "ticker": "2739",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.1
+    },
+    {
       "date": "2017-08-23",
       "ticker": "3026",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3368,21 +3264,9 @@
     },
     {
       "date": "2017-08-23",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.5
-    },
-    {
-      "date": "2017-08-23",
       "ticker": "6257",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.1
-    },
-    {
-      "date": "2017-08-23",
-      "ticker": "9927",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 89.1
     },
     {
       "date": "2017-08-23",
@@ -3421,6 +3305,18 @@
       "score": 80.9
     },
     {
+      "date": "2017-08-23",
+      "ticker": "1101",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.3
+    },
+    {
+      "date": "2017-08-23",
+      "ticker": "3035",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.8
+    },
+    {
       "date": "2017-09-22",
       "ticker": "1526",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3443,6 +3339,18 @@
       "ticker": "6120",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.6
+    },
+    {
+      "date": "2017-09-22",
+      "ticker": "2375",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.4
+    },
+    {
+      "date": "2017-09-22",
+      "ticker": "6278",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.1
     },
     {
       "date": "2017-09-25",
@@ -3493,6 +3401,12 @@
       "score": 87.8
     },
     {
+      "date": "2017-09-25",
+      "ticker": "3013",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.6
+    },
+    {
       "date": "2017-09-27",
       "ticker": "1313",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3512,21 +3426,9 @@
     },
     {
       "date": "2017-09-27",
-      "ticker": "1312A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.6
-    },
-    {
-      "date": "2017-09-27",
       "ticker": "2546",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 97.8
-    },
-    {
-      "date": "2017-09-27",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.7
     },
     {
       "date": "2017-09-27",
@@ -3553,6 +3455,18 @@
       "score": 80.1
     },
     {
+      "date": "2017-09-27",
+      "ticker": "2476",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.8
+    },
+    {
+      "date": "2017-09-27",
+      "ticker": "6277",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.8
+    },
+    {
       "date": "2017-09-28",
       "ticker": "1313",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3569,12 +3483,6 @@
       "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 117.6
-    },
-    {
-      "date": "2017-09-28",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.4
     },
     {
       "date": "2017-09-28",
@@ -3613,6 +3521,12 @@
       "score": 82.4
     },
     {
+      "date": "2017-09-28",
+      "ticker": "6277",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4
+    },
+    {
       "date": "2017-09-29",
       "ticker": "3026",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3635,12 +3549,6 @@
       "ticker": "5285",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 127.1
-    },
-    {
-      "date": "2017-09-29",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.2
     },
     {
       "date": "2017-09-29",
@@ -3673,6 +3581,12 @@
       "score": 79.9
     },
     {
+      "date": "2017-09-29",
+      "ticker": "2534",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.2
+    },
+    {
       "date": "2017-10-02",
       "ticker": "1229",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3695,12 +3609,6 @@
       "ticker": "1735",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 109.0
-    },
-    {
-      "date": "2017-10-02",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.2
     },
     {
       "date": "2017-10-02",
@@ -3733,6 +3641,12 @@
       "score": 78.6
     },
     {
+      "date": "2017-10-02",
+      "ticker": "9917",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.5
+    },
+    {
       "date": "2017-11-30",
       "ticker": "1229",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3743,12 +3657,6 @@
       "ticker": "2546",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 132.6
-    },
-    {
-      "date": "2017-11-30",
-      "ticker": "2478",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 131.9
     },
     {
       "date": "2017-11-30",
@@ -3770,9 +3678,9 @@
     },
     {
       "date": "2017-11-30",
-      "ticker": "2881A",
+      "ticker": "2478",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.6
+      "score": 101.9
     },
     {
       "date": "2017-11-30",
@@ -3782,15 +3690,21 @@
     },
     {
       "date": "2017-11-30",
-      "ticker": "1531",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 94.5
-    },
-    {
-      "date": "2017-11-30",
       "ticker": "6505",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.2
+    },
+    {
+      "date": "2017-11-30",
+      "ticker": "1802",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.5
+    },
+    {
+      "date": "2017-11-30",
+      "ticker": "2049",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.3
     },
     {
       "date": "2017-12-01",
@@ -3866,15 +3780,15 @@
     },
     {
       "date": "2017-12-04",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.0
-    },
-    {
-      "date": "2017-12-04",
       "ticker": "1727",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 99.8
+    },
+    {
+      "date": "2017-12-04",
+      "ticker": "9940",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.0
     },
     {
       "date": "2017-12-05",
@@ -3893,12 +3807,6 @@
       "ticker": "2353",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 125.9
-    },
-    {
-      "date": "2017-12-05",
-      "ticker": "1528",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 109.0
     },
     {
       "date": "2017-12-05",
@@ -3979,6 +3887,12 @@
       "score": 108.6
     },
     {
+      "date": "2017-12-06",
+      "ticker": "1735",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.2
+    },
+    {
       "date": "2017-12-07",
       "ticker": "1235",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -3998,21 +3912,9 @@
     },
     {
       "date": "2017-12-07",
-      "ticker": "3130",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 115.4
-    },
-    {
-      "date": "2017-12-07",
       "ticker": "2376",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 111.9
-    },
-    {
-      "date": "2017-12-07",
-      "ticker": "1528",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.8
     },
     {
       "date": "2017-12-07",
@@ -4031,6 +3933,18 @@
       "ticker": "1304",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 90.3
+    },
+    {
+      "date": "2017-12-07",
+      "ticker": "1467",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.6
+    },
+    {
+      "date": "2017-12-07",
+      "ticker": "3130",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.4
     },
     {
       "date": "2017-12-08",
@@ -4070,12 +3984,6 @@
     },
     {
       "date": "2017-12-08",
-      "ticker": "910322",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.5
-    },
-    {
-      "date": "2017-12-08",
       "ticker": "9908",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 104.1
@@ -4087,10 +3995,10 @@
       "score": 100.8
     },
     {
-      "date": "2017-12-11",
-      "ticker": "5234",
+      "date": "2017-12-08",
+      "ticker": "4137",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 135.5
+      "score": 99.2
     },
     {
       "date": "2017-12-11",
@@ -4135,6 +4043,12 @@
       "score": 83.1
     },
     {
+      "date": "2017-12-11",
+      "ticker": "2891",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.3
+    },
+    {
       "date": "2017-12-12",
       "ticker": "2809",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4172,12 +4086,6 @@
     },
     {
       "date": "2017-12-12",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.4
-    },
-    {
-      "date": "2017-12-12",
       "ticker": "9940",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.2
@@ -4187,6 +4095,18 @@
       "ticker": "2015",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 89.8
+    },
+    {
+      "date": "2017-12-12",
+      "ticker": "9930",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.1
+    },
+    {
+      "date": "2017-12-12",
+      "ticker": "2820",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.7
     },
     {
       "date": "2017-12-13",
@@ -4243,6 +4163,12 @@
       "score": 95.1
     },
     {
+      "date": "2017-12-13",
+      "ticker": "1472",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.6
+    },
+    {
       "date": "2017-12-14",
       "ticker": "2375",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4286,9 +4212,9 @@
     },
     {
       "date": "2017-12-14",
-      "ticker": "2881A",
+      "ticker": "9940",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.5
+      "score": 94.8
     },
     {
       "date": "2017-12-15",
@@ -4381,6 +4307,12 @@
       "score": 80.4
     },
     {
+      "date": "2017-12-18",
+      "ticker": "2739",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.1
+    },
+    {
       "date": "2017-12-19",
       "ticker": "1313",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4421,6 +4353,12 @@
       "ticker": "1802",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 115.5
+    },
+    {
+      "date": "2017-12-19",
+      "ticker": "1323",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 114.1
     },
     {
       "date": "2017-12-20",
@@ -4471,6 +4409,12 @@
       "score": 109.3
     },
     {
+      "date": "2017-12-20",
+      "ticker": "2617",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.6
+    },
+    {
       "date": "2017-12-21",
       "ticker": "2472",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4481,12 +4425,6 @@
       "ticker": "1313",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 135.3
-    },
-    {
-      "date": "2017-12-21",
-      "ticker": "5234",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 134.0
     },
     {
       "date": "2017-12-21",
@@ -4517,6 +4455,12 @@
       "ticker": "2850",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 97.3
+    },
+    {
+      "date": "2017-12-21",
+      "ticker": "4137",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
     },
     {
       "date": "2017-12-22",
@@ -4567,6 +4511,12 @@
       "score": 91.1
     },
     {
+      "date": "2017-12-22",
+      "ticker": "1304",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.2
+    },
+    {
       "date": "2017-12-25",
       "ticker": "1229",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4613,6 +4563,12 @@
       "ticker": "1605",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.5
+    },
+    {
+      "date": "2017-12-25",
+      "ticker": "2305",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.3
     },
     {
       "date": "2017-12-26",
@@ -4667,12 +4623,6 @@
       "ticker": "1229",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 137.1
-    },
-    {
-      "date": "2017-12-27",
-      "ticker": "5234",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 135.7
     },
     {
       "date": "2017-12-27",
@@ -4781,12 +4731,6 @@
       "ticker": "6449",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 125.3
-    },
-    {
-      "date": "2017-12-29",
-      "ticker": "5234",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 119.3
     },
     {
       "date": "2017-12-29",

@@ -1,25 +1,25 @@
 {
   "trades": [
     {
-      "ticker": "5871A",
+      "ticker": "2496",
       "buy_date": "2024-01-02",
-      "buy_price": 90.95,
-      "sell_date": "2024-01-09",
-      "sell_price": 90.95,
-      "shares": 3298,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+      "buy_price": 49.79,
+      "sell_date": "2024-01-08",
+      "sell_price": 48.43,
+      "shares": 6024,
+      "pl": -8198.07,
+      "pl_pct": -2.73,
+      "sell_reason": "RSI<35"
     },
     {
-      "ticker": "2881A",
+      "ticker": "2250",
       "buy_date": "2024-01-02",
-      "buy_price": 56.89,
+      "buy_price": 72.31,
       "sell_date": "2024-01-09",
-      "sell_price": 56.98,
-      "shares": 5273,
-      "pl": 491.73,
-      "pl_pct": 0.16,
+      "sell_price": 70.46,
+      "shares": 4148,
+      "pl": -7655.1,
+      "pl_pct": -2.55,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -34,14 +34,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2250",
+      "ticker": "2883",
       "buy_date": "2024-01-03",
-      "buy_price": 72.56,
+      "buy_price": 11.05,
       "sell_date": "2024-01-09",
-      "sell_price": 70.46,
-      "shares": 4134,
-      "pl": -8669.63,
-      "pl_pct": -2.89,
+      "sell_price": 11.05,
+      "shares": 27142,
+      "pl": 0.0,
+      "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -56,25 +56,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "6214",
-      "buy_date": "2024-01-04",
-      "buy_price": 105.37,
-      "sell_date": "2024-01-09",
-      "sell_price": 107.23,
-      "shares": 2847,
-      "pl": 5309.33,
-      "pl_pct": 1.77,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "8114",
-      "buy_date": "2024-01-05",
-      "buy_price": 114.93,
+      "buy_date": "2024-01-04",
+      "buy_price": 114.46,
       "sell_date": "2024-01-09",
       "sell_price": 115.41,
-      "shares": 2610,
-      "pl": 1234.46,
-      "pl_pct": 0.41,
+      "shares": 2621,
+      "pl": 2479.32,
+      "pl_pct": 0.83,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -89,14 +78,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "3036A",
-      "buy_date": "2024-01-08",
-      "buy_price": 42.82,
+      "ticker": "6005",
+      "buy_date": "2024-01-05",
+      "buy_price": 14.5,
       "sell_date": "2024-01-09",
-      "sell_price": 42.91,
-      "shares": 7005,
-      "pl": 657.82,
-      "pl_pct": 0.22,
+      "sell_price": 14.5,
+      "shares": 20682,
+      "pl": 0.0,
+      "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -111,6 +100,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "6670",
+      "buy_date": "2024-01-08",
+      "buy_price": 190.29,
+      "sell_date": "2024-01-09",
+      "sell_price": 193.0,
+      "shares": 1576,
+      "pl": 4263.96,
+      "pl_pct": 1.42,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "2891",
       "buy_date": "2024-01-10",
       "buy_price": 25.1,
@@ -122,36 +122,36 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "6214",
-      "buy_date": "2024-01-10",
-      "buy_price": 107.23,
-      "sell_date": "2024-01-12",
-      "sell_price": 105.83,
-      "shares": 2797,
-      "pl": -3912.07,
-      "pl_pct": -1.3,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
       "ticker": "8114",
-      "buy_date": "2024-01-11",
-      "buy_price": 114.46,
+      "buy_date": "2024-01-10",
+      "buy_price": 113.99,
       "sell_date": "2024-01-12",
       "sell_price": 111.62,
-      "shares": 2621,
-      "pl": -7437.97,
-      "pl_pct": -2.48,
+      "shares": 2631,
+      "pl": -6221.96,
+      "pl_pct": -2.07,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "3036A",
+      "ticker": "6005",
       "buy_date": "2024-01-11",
-      "buy_price": 42.87,
+      "buy_price": 14.55,
       "sell_date": "2024-01-12",
-      "sell_price": 42.91,
-      "shares": 6998,
-      "pl": 328.57,
-      "pl_pct": 0.11,
+      "sell_price": 14.46,
+      "shares": 20618,
+      "pl": -1851.77,
+      "pl_pct": -0.62,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2024-01-11",
+      "buy_price": 22.81,
+      "sell_date": "2024-01-12",
+      "sell_price": 22.68,
+      "shares": 13154,
+      "pl": -1679.03,
+      "pl_pct": -0.56,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -188,37 +188,48 @@
       "sell_reason": "RSI<35"
     },
     {
-      "ticker": "5871A",
-      "buy_date": "2024-01-22",
-      "buy_price": 91.05,
-      "sell_date": "2024-02-26",
-      "sell_price": 90.39,
-      "shares": 3294,
-      "pl": -2153.18,
-      "pl_pct": -0.72,
-      "sell_reason": "RSI<35"
+      "ticker": "2404",
+      "buy_date": "2024-01-19",
+      "buy_price": 245.14,
+      "sell_date": "2024-03-07",
+      "sell_price": 319.57,
+      "shares": 611,
+      "pl": 45478.96,
+      "pl_pct": 30.36,
+      "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "3450",
+      "ticker": "2404",
       "buy_date": "2024-01-19",
-      "buy_price": 57.29,
-      "sell_date": "2024-02-29",
-      "sell_price": 65.77,
-      "shares": 2618,
-      "pl": 22192.59,
-      "pl_pct": 14.8,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+      "buy_price": 245.14,
+      "sell_date": "2024-03-15",
+      "sell_price": 305.31,
+      "shares": 612,
+      "pl": 36824.6,
+      "pl_pct": 24.55,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-18%)"
     },
     {
       "ticker": "8114",
       "buy_date": "2024-01-15",
       "buy_price": 115.41,
-      "sell_date": "2024-03-08",
-      "sell_price": 111.62,
-      "shares": 2599,
-      "pl": -9834.05,
-      "pl_pct": -3.28,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+      "sell_date": "2024-03-18",
+      "sell_price": 328.24,
+      "shares": 1299,
+      "pl": 276476.35,
+      "pl_pct": 184.43,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2024-01-15",
+      "buy_price": 22.72,
+      "sell_date": "2024-03-18",
+      "sell_price": 29.49,
+      "shares": 6601,
+      "pl": 44656.87,
+      "pl_pct": 29.78,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "2236",
@@ -243,48 +254,81 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "3029",
+      "ticker": "2496",
       "buy_date": "2024-01-24",
-      "buy_price": 59.3,
+      "buy_price": 47.95,
       "sell_date": "2024-03-18",
-      "sell_price": 122.54,
-      "shares": 2529,
-      "pl": 159930.33,
-      "pl_pct": 106.65,
+      "sell_price": 65.48,
+      "shares": 3128,
+      "pl": 54838.87,
+      "pl_pct": 36.56,
       "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "1736",
-      "buy_date": "2024-02-20",
-      "buy_price": 61.5,
+      "buy_date": "2024-02-16",
+      "buy_price": 60.75,
       "sell_date": "2024-03-18",
       "sell_price": 172.9,
-      "shares": 2439,
-      "pl": 271716.81,
-      "pl_pct": 181.16,
+      "shares": 2469,
+      "pl": 276905.0,
+      "pl_pct": 184.62,
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "1231",
-      "buy_date": "2024-02-26",
-      "buy_price": 67.97,
+      "ticker": "2618",
+      "buy_date": "2024-02-20",
+      "buy_price": 28.17,
       "sell_date": "2024-03-18",
-      "sell_price": 100.55,
-      "shares": 2207,
-      "pl": 71903.6,
-      "pl_pct": 47.94,
+      "sell_price": 40.64,
+      "shares": 5325,
+      "pl": 66396.49,
+      "pl_pct": 44.27,
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "2233",
-      "buy_date": "2024-03-08",
-      "buy_price": 129.6,
+      "ticker": "6215",
+      "buy_date": "2024-03-15",
+      "buy_price": 26.79,
       "sell_date": "2024-03-18",
-      "sell_price": 196.03,
-      "shares": 1157,
-      "pl": 76865.91,
-      "pl_pct": 51.26,
+      "sell_price": 66.55,
+      "shares": 5598,
+      "pl": 222595.45,
+      "pl_pct": 148.42,
       "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "8114",
+      "buy_date": "2024-01-15",
+      "buy_price": 115.41,
+      "sell_date": "2024-03-19",
+      "sell_price": 112.57,
+      "shares": 1300,
+      "pl": -3689.19,
+      "pl_pct": -2.46,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-66%)"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2024-01-15",
+      "buy_price": 22.72,
+      "sell_date": "2024-03-19",
+      "sell_price": 24.85,
+      "shares": 6602,
+      "pl": 14045.17,
+      "pl_pct": 9.36,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
+    },
+    {
+      "ticker": "3450",
+      "buy_date": "2024-01-19",
+      "buy_price": 57.29,
+      "sell_date": "2024-03-19",
+      "sell_price": 68.69,
+      "shares": 2618,
+      "pl": 29845.2,
+      "pl_pct": 19.9,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-72%)"
     },
     {
       "ticker": "2236",
@@ -298,113 +342,91 @@
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-41%)"
     },
     {
-      "ticker": "6183",
-      "buy_date": "2024-01-23",
-      "buy_price": 63.88,
-      "sell_date": "2024-03-19",
-      "sell_price": 68.55,
-      "shares": 2348,
-      "pl": 10968.71,
-      "pl_pct": 7.31,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
-    },
-    {
-      "ticker": "3029",
-      "buy_date": "2024-01-24",
-      "buy_price": 59.3,
-      "sell_date": "2024-03-19",
-      "sell_price": 67.18,
-      "shares": 2530,
-      "pl": 19945.01,
-      "pl_pct": 13.29,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-45%)"
-    },
-    {
       "ticker": "1736",
-      "buy_date": "2024-02-20",
-      "buy_price": 61.5,
+      "buy_date": "2024-02-16",
+      "buy_price": 60.75,
       "sell_date": "2024-03-19",
       "sell_price": 67.85,
-      "shares": 2439,
-      "pl": 15500.61,
-      "pl_pct": 10.33,
+      "shares": 2469,
+      "pl": 17537.31,
+      "pl_pct": 11.69,
       "sell_reason": "\u79fb\u52d5\u505c\u5229(-61%)"
     },
     {
-      "ticker": "1231",
-      "buy_date": "2024-02-26",
-      "buy_price": 67.97,
+      "ticker": "2618",
+      "buy_date": "2024-02-20",
+      "buy_price": 28.17,
       "sell_date": "2024-03-19",
-      "sell_price": 76.31,
-      "shares": 2207,
-      "pl": 18405.95,
-      "pl_pct": 12.27,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-24%)"
+      "sell_price": 28.17,
+      "shares": 5325,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-31%)"
     },
     {
-      "ticker": "2332",
-      "buy_date": "2024-02-29",
-      "buy_price": 18.4,
+      "ticker": "6215",
+      "buy_date": "2024-03-15",
+      "buy_price": 26.79,
       "sell_date": "2024-03-19",
-      "sell_price": 17.78,
-      "shares": 16306,
-      "pl": -10077.42,
-      "pl_pct": -3.36,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "2233",
-      "buy_date": "2024-03-08",
-      "buy_price": 129.6,
-      "sell_date": "2024-03-19",
-      "sell_price": 125.85,
-      "shares": 1157,
-      "pl": -4330.47,
-      "pl_pct": -2.89,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-36%)"
+      "sell_price": 28.95,
+      "shares": 5599,
+      "pl": 12105.46,
+      "pl_pct": 8.07,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-56%)"
     },
     {
       "ticker": "2236",
       "buy_date": "2024-03-19",
       "buy_price": 67.6,
-      "sell_date": "2024-03-25",
-      "sell_price": 70.44,
+      "sell_date": "2024-03-29",
+      "sell_price": 66.96,
       "shares": 4438,
-      "pl": 12601.43,
-      "pl_pct": 4.2,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "pl": -2845.5,
+      "pl_pct": -0.95,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
     },
     {
-      "ticker": "2881A",
-      "buy_date": "2024-01-15",
-      "buy_price": 56.98,
+      "ticker": "2374",
+      "buy_date": "2024-03-21",
+      "buy_price": 22.24,
+      "sell_date": "2024-04-03",
+      "sell_price": 26.86,
+      "shares": 6745,
+      "pl": 31178.56,
+      "pl_pct": 20.79,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2332",
+      "buy_date": "2024-01-22",
+      "buy_price": 18.07,
       "sell_date": "2024-04-16",
-      "sell_price": 57.63,
-      "shares": 5265,
-      "pl": 3436.97,
-      "pl_pct": 1.15,
+      "sell_price": 16.45,
+      "shares": 16606,
+      "pl": -26841.26,
+      "pl_pct": -8.95,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "8112A",
-      "buy_date": "2024-01-19",
-      "buy_price": 38.57,
+      "ticker": "6183",
+      "buy_date": "2024-01-23",
+      "buy_price": 63.88,
       "sell_date": "2024-04-16",
-      "sell_price": 39.49,
-      "shares": 7777,
-      "pl": 7142.44,
-      "pl_pct": 2.38,
+      "sell_price": 69.02,
+      "shares": 2348,
+      "pl": 12087.97,
+      "pl_pct": 8.06,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2887E",
-      "buy_date": "2024-02-16",
-      "buy_price": 47.44,
+      "ticker": "2496",
+      "buy_date": "2024-01-24",
+      "buy_price": 47.95,
       "sell_date": "2024-04-16",
-      "sell_price": 48.09,
-      "shares": 6323,
-      "pl": 4069.51,
-      "pl_pct": 1.36,
+      "sell_price": 59.03,
+      "shares": 3128,
+      "pl": 34663.95,
+      "pl_pct": 23.11,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -419,6 +441,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "3031",
+      "buy_date": "2024-03-20",
+      "buy_price": 18.47,
+      "sell_date": "2024-04-16",
+      "sell_price": 17.95,
+      "shares": 16243,
+      "pl": -8354.16,
+      "pl_pct": -2.78,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "2480",
       "buy_date": "2024-03-20",
       "buy_price": 120.73,
@@ -430,36 +463,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2891B",
-      "buy_date": "2024-03-20",
-      "buy_price": 56.7,
+      "ticker": "2374",
+      "buy_date": "2024-03-21",
+      "buy_price": 22.24,
       "sell_date": "2024-04-16",
-      "sell_price": 56.8,
-      "shares": 5290,
-      "pl": 499.94,
-      "pl_pct": 0.17,
+      "sell_price": 32.02,
+      "shares": 6745,
+      "pl": 66008.68,
+      "pl_pct": 44.01,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "3031",
+      "ticker": "4583",
       "buy_date": "2024-03-21",
-      "buy_price": 18.42,
+      "buy_price": 235.33,
       "sell_date": "2024-04-16",
-      "sell_price": 17.95,
-      "shares": 16284,
-      "pl": -7613.87,
-      "pl_pct": -2.54,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "5871A",
-      "buy_date": "2024-03-21",
-      "buy_price": 90.49,
-      "sell_date": "2024-04-16",
-      "sell_price": 90.39,
-      "shares": 3315,
-      "pl": -309.56,
-      "pl_pct": -0.1,
+      "sell_price": 222.74,
+      "shares": 1274,
+      "pl": -16038.97,
+      "pl_pct": -5.35,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -474,25 +496,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2838A",
-      "buy_date": "2024-03-25",
-      "buy_price": 48.54,
+      "ticker": "6670",
+      "buy_date": "2024-03-29",
+      "buy_price": 211.03,
       "sell_date": "2024-04-16",
-      "sell_price": 49.0,
-      "shares": 6180,
-      "pl": 2851.5,
-      "pl_pct": 0.95,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3036A",
-      "buy_date": "2024-04-17",
-      "buy_price": 44.09,
-      "sell_date": "2024-04-22",
-      "sell_price": 44.04,
-      "shares": 6804,
-      "pl": -319.46,
-      "pl_pct": -0.11,
+      "sell_price": 216.9,
+      "shares": 1421,
+      "pl": 8329.96,
+      "pl_pct": 2.78,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -504,6 +515,17 @@
       "shares": 4423,
       "pl": -10093.01,
       "pl_pct": -3.36,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2891",
+      "buy_date": "2024-04-17",
+      "buy_price": 28.19,
+      "sell_date": "2024-04-22",
+      "sell_price": 28.06,
+      "shares": 10642,
+      "pl": -1428.55,
+      "pl_pct": -0.48,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -530,7 +552,7 @@
     },
     {
       "ticker": "2250",
-      "buy_date": "2024-04-26",
+      "buy_date": "2024-04-25",
       "buy_price": 85.75,
       "sell_date": "2024-05-22",
       "sell_price": 103.49,
@@ -541,24 +563,24 @@
     },
     {
       "ticker": "2250",
-      "buy_date": "2024-04-26",
+      "buy_date": "2024-04-25",
       "buy_price": 85.75,
-      "sell_date": "2024-05-29",
-      "sell_price": 103.49,
+      "sell_date": "2024-05-30",
+      "sell_price": 95.89,
       "shares": 1749,
-      "pl": 31030.08,
-      "pl_pct": 20.69,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
+      "pl": 17731.48,
+      "pl_pct": 11.82,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-17%)"
     },
     {
-      "ticker": "2850",
-      "buy_date": "2024-05-29",
-      "buy_price": 83.63,
-      "sell_date": "2024-06-24",
-      "sell_price": 100.51,
-      "shares": 1793,
-      "pl": 30281.58,
-      "pl_pct": 20.2,
+      "ticker": "2328",
+      "buy_date": "2024-04-30",
+      "buy_price": 31.97,
+      "sell_date": "2024-06-05",
+      "sell_price": 39.05,
+      "shares": 4692,
+      "pl": 33234.71,
+      "pl_pct": 22.16,
       "sell_reason": "\u505c\u522950%"
     },
     {
@@ -571,17 +593,6 @@
       "pl": 38095.6,
       "pl_pct": 25.41,
       "sell_reason": "\u505c\u522950%"
-    },
-    {
-      "ticker": "2850",
-      "buy_date": "2024-05-29",
-      "buy_price": 83.63,
-      "sell_date": "2024-07-02",
-      "sell_price": 89.6,
-      "shares": 1794,
-      "pl": 10720.53,
-      "pl_pct": 7.15,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
     },
     {
       "ticker": "2883",
@@ -603,6 +614,28 @@
       "shares": 2201,
       "pl": 46972.84,
       "pl_pct": 31.32,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1597",
+      "buy_date": "2024-04-30",
+      "buy_price": 66.17,
+      "sell_date": "2024-07-05",
+      "sell_price": 86.07,
+      "shares": 2266,
+      "pl": 45073.21,
+      "pl_pct": 30.06,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2024-04-25",
+      "buy_price": 25.36,
+      "sell_date": "2024-07-11",
+      "sell_price": 30.48,
+      "shares": 5915,
+      "pl": 30314.88,
+      "pl_pct": 20.21,
       "sell_reason": "\u505c\u522950%"
     },
     {
@@ -628,25 +661,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "8112A",
+      "ticker": "2885",
       "buy_date": "2024-04-25",
-      "buy_price": 39.49,
+      "buy_price": 25.36,
       "sell_date": "2024-07-19",
-      "sell_price": 39.9,
-      "shares": 7596,
-      "pl": 3139.31,
-      "pl_pct": 1.05,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2891B",
-      "buy_date": "2024-04-25",
-      "buy_price": 56.7,
-      "sell_date": "2024-07-19",
-      "sell_price": 57.94,
-      "shares": 5290,
-      "pl": 6512.74,
-      "pl_pct": 2.17,
+      "sell_price": 29.53,
+      "shares": 5915,
+      "pl": 24688.49,
+      "pl_pct": 16.46,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -661,14 +683,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2480",
-      "buy_date": "2024-04-29",
-      "buy_price": 118.86,
+      "ticker": "2466",
+      "buy_date": "2024-04-26",
+      "buy_price": 36.55,
       "sell_date": "2024-07-19",
-      "sell_price": 112.06,
-      "shares": 2523,
-      "pl": -17156.37,
-      "pl_pct": -5.72,
+      "sell_price": 36.55,
+      "shares": 8207,
+      "pl": 0.0,
+      "pl_pct": 0.0,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -683,47 +705,47 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2836A",
+      "ticker": "2404",
+      "buy_date": "2024-04-29",
+      "buy_price": 361.47,
+      "sell_date": "2024-07-19",
+      "sell_price": 321.5,
+      "shares": 829,
+      "pl": -33136.11,
+      "pl_pct": -11.06,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1597",
       "buy_date": "2024-04-30",
-      "buy_price": 19.69,
+      "buy_price": 66.17,
       "sell_date": "2024-07-19",
-      "sell_price": 20.21,
-      "shares": 15232,
-      "pl": 7831.05,
-      "pl_pct": 2.61,
+      "sell_price": 98.49,
+      "shares": 2267,
+      "pl": 73248.79,
+      "pl_pct": 48.83,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2466",
+      "ticker": "2328",
       "buy_date": "2024-04-30",
-      "buy_price": 36.45,
+      "buy_price": 31.97,
       "sell_date": "2024-07-19",
-      "sell_price": 36.55,
-      "shares": 8230,
-      "pl": 822.99,
-      "pl_pct": 0.27,
+      "sell_price": 34.3,
+      "shares": 4692,
+      "pl": 10932.47,
+      "pl_pct": 7.29,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2887E",
-      "buy_date": "2024-07-02",
-      "buy_price": 48.55,
+      "ticker": "2850",
+      "buy_date": "2024-05-30",
+      "buy_price": 83.81,
       "sell_date": "2024-07-19",
-      "sell_price": 48.93,
-      "shares": 6179,
-      "pl": 2375.98,
-      "pl_pct": 0.79,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "8112A",
-      "buy_date": "2024-07-23",
-      "buy_price": 39.95,
-      "sell_date": "2024-07-26",
-      "sell_price": 39.9,
-      "shares": 7508,
-      "pl": -359.66,
-      "pl_pct": -0.12,
+      "sell_price": 89.31,
+      "shares": 3579,
+      "pl": 19710.21,
+      "pl_pct": 6.57,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -738,47 +760,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2383",
-      "buy_date": "2024-09-27",
-      "buy_price": 457.03,
-      "sell_date": "2024-10-04",
-      "sell_price": 404.79,
-      "shares": 656,
-      "pl": -34273.44,
-      "pl_pct": -11.43,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-11%)"
-    },
-    {
-      "ticker": "8374",
-      "buy_date": "2024-09-25",
-      "buy_price": 142.84,
-      "sell_date": "2024-10-11",
-      "sell_price": 122.87,
-      "shares": 2100,
-      "pl": -41953.95,
-      "pl_pct": -13.99,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-14%)"
-    },
-    {
-      "ticker": "2236",
-      "buy_date": "2024-10-04",
-      "buy_price": 103.04,
-      "sell_date": "2024-10-28",
-      "sell_price": 103.04,
-      "shares": 2911,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
-    },
-    {
-      "ticker": "2881A",
-      "buy_date": "2024-09-24",
-      "buy_price": 59.88,
-      "sell_date": "2024-10-29",
-      "sell_price": 60.37,
-      "shares": 5009,
-      "pl": 2422.96,
-      "pl_pct": 0.81,
+      "ticker": "2850",
+      "buy_date": "2024-07-23",
+      "buy_price": 90.27,
+      "sell_date": "2024-07-26",
+      "sell_price": 89.31,
+      "shares": 3323,
+      "pl": -3181.05,
+      "pl_pct": -1.06,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -793,6 +782,28 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "2236",
+      "buy_date": "2024-09-24",
+      "buy_price": 100.3,
+      "sell_date": "2024-10-29",
+      "sell_price": 107.62,
+      "shares": 2991,
+      "pl": 21916.81,
+      "pl_pct": 7.31,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "8374",
+      "buy_date": "2024-09-25",
+      "buy_price": 142.84,
+      "sell_date": "2024-10-29",
+      "sell_price": 127.36,
+      "shares": 2100,
+      "pl": -32514.31,
+      "pl_pct": -10.84,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "1213",
       "buy_date": "2024-09-25",
       "buy_price": 11.68,
@@ -801,17 +812,6 @@
       "shares": 25691,
       "pl": 0.0,
       "pl_pct": 0.0,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2891B",
-      "buy_date": "2024-09-26",
-      "buy_price": 58.52,
-      "sell_date": "2024-10-29",
-      "sell_price": 58.91,
-      "shares": 5126,
-      "pl": 1989.82,
-      "pl_pct": 0.66,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -826,6 +826,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "2332",
+      "buy_date": "2024-09-26",
+      "buy_price": 18.86,
+      "sell_date": "2024-10-29",
+      "sell_price": 19.06,
+      "shares": 15908,
+      "pl": 3133.11,
+      "pl_pct": 1.04,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "1414",
       "buy_date": "2024-09-27",
       "buy_price": 19.88,
@@ -834,6 +845,17 @@
       "shares": 15088,
       "pl": -1327.41,
       "pl_pct": -0.44,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2383",
+      "buy_date": "2024-09-27",
+      "buy_price": 457.03,
+      "sell_date": "2024-10-29",
+      "sell_price": 410.16,
+      "shares": 656,
+      "pl": -30750.0,
+      "pl_pct": -10.26,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -856,28 +878,6 @@
       "shares": 1127,
       "pl": 2061.01,
       "pl_pct": 0.69,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2618",
-      "buy_date": "2024-10-11",
-      "buy_price": 34.45,
-      "sell_date": "2024-10-29",
-      "sell_price": 35.49,
-      "shares": 8708,
-      "pl": 9065.85,
-      "pl_pct": 3.02,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "3450",
-      "buy_date": "2024-10-28",
-      "buy_price": 208.51,
-      "sell_date": "2024-10-29",
-      "sell_price": 214.36,
-      "shares": 1438,
-      "pl": 8406.77,
-      "pl_pct": 2.8,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -906,12 +906,12 @@
       "ticker": "8114",
       "buy_date": "2024-11-08",
       "buy_price": 197.7,
-      "sell_date": "2024-11-13",
-      "sell_price": 197.7,
-      "shares": 1517,
-      "pl": 0.0,
-      "pl_pct": 0.0,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+      "sell_date": "2024-11-14",
+      "sell_price": 247.84,
+      "shares": 758,
+      "pl": 38002.43,
+      "pl_pct": 25.36,
+      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "3029",
@@ -947,25 +947,14 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2887E",
+      "ticker": "2345",
       "buy_date": "2024-11-05",
-      "buy_price": 49.12,
+      "buy_price": 545.18,
       "sell_date": "2024-11-18",
-      "sell_price": 49.03,
-      "shares": 6107,
-      "pl": -587.06,
-      "pl_pct": -0.2,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "8112A",
-      "buy_date": "2024-11-06",
-      "buy_price": 41.05,
-      "sell_date": "2024-11-18",
-      "sell_price": 41.1,
-      "shares": 7307,
-      "pl": 350.06,
-      "pl_pct": 0.12,
+      "sell_price": 585.75,
+      "shares": 550,
+      "pl": 22311.8,
+      "pl_pct": 7.44,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -977,6 +966,17 @@
       "shares": 9954,
       "pl": 3235.48,
       "pl_pct": 1.08,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2404",
+      "buy_date": "2024-11-06",
+      "buy_price": 342.5,
+      "sell_date": "2024-11-18",
+      "sell_price": 384.0,
+      "shares": 875,
+      "pl": 36312.5,
+      "pl_pct": 12.12,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1002,36 +1002,25 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2348A",
+      "ticker": "8114",
       "buy_date": "2024-11-08",
-      "buy_price": 33.72,
+      "buy_price": 197.7,
       "sell_date": "2024-11-18",
-      "sell_price": 34.0,
-      "shares": 8898,
-      "pl": 2575.09,
-      "pl_pct": 0.86,
+      "sell_price": 255.88,
+      "shares": 759,
+      "pl": 44155.34,
+      "pl_pct": 29.43,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2332",
-      "buy_date": "2024-11-14",
-      "buy_price": 19.35,
+      "ticker": "2374",
+      "buy_date": "2024-11-08",
+      "buy_price": 41.62,
       "sell_date": "2024-11-18",
-      "sell_price": 19.84,
-      "shares": 15503,
-      "pl": 7633.34,
-      "pl_pct": 2.54,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "8112A",
-      "buy_date": "2024-11-19",
-      "buy_price": 41.15,
-      "sell_date": "2024-11-21",
-      "sell_price": 41.2,
-      "shares": 7290,
-      "pl": 349.22,
-      "pl_pct": 0.12,
+      "sell_price": 40.59,
+      "shares": 7207,
+      "pl": -7476.42,
+      "pl_pct": -2.49,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -1046,6 +1035,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "2880",
+      "buy_date": "2024-11-19",
+      "buy_price": 24.06,
+      "sell_date": "2024-11-21",
+      "sell_price": 24.2,
+      "shares": 12467,
+      "pl": 1768.1,
+      "pl_pct": 0.59,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "6670",
       "buy_date": "2024-11-20",
       "buy_price": 271.57,
@@ -1057,26 +1057,15 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2880",
+      "ticker": "1414",
       "buy_date": "2024-11-20",
-      "buy_price": 23.83,
+      "buy_price": 19.49,
       "sell_date": "2024-11-21",
-      "sell_price": 24.2,
-      "shares": 12591,
-      "pl": 4761.84,
-      "pl_pct": 1.59,
+      "sell_price": 19.66,
+      "shares": 15394,
+      "pl": 2708.66,
+      "pl_pct": 0.9,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2374",
-      "buy_date": "2024-12-05",
-      "buy_price": 40.72,
-      "sell_date": "2024-12-17",
-      "sell_price": 48.93,
-      "shares": 3683,
-      "pl": 30247.07,
-      "pl_pct": 20.17,
-      "sell_reason": "\u505c\u522950%"
     },
     {
       "ticker": "1213",
@@ -1101,6 +1090,28 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
+      "ticker": "4571",
+      "buy_date": "2024-12-06",
+      "buy_price": 166.92,
+      "sell_date": "2024-12-18",
+      "sell_price": 218.5,
+      "shares": 898,
+      "pl": 46322.94,
+      "pl_pct": 30.9,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2374",
+      "buy_date": "2024-12-03",
+      "buy_price": 40.8,
+      "sell_date": "2024-12-19",
+      "sell_price": 53.25,
+      "shares": 3676,
+      "pl": 45761.04,
+      "pl_pct": 30.51,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
       "ticker": "1538",
       "buy_date": "2024-12-05",
       "buy_price": 17.8,
@@ -1112,17 +1123,6 @@
       "sell_reason": "\u505c\u522950%"
     },
     {
-      "ticker": "8112A",
-      "buy_date": "2024-11-25",
-      "buy_price": 41.1,
-      "sell_date": "2024-12-31 (\u5e74\u7d42)",
-      "sell_price": 41.82,
-      "shares": 7298,
-      "pl": 5244.14,
-      "pl_pct": 1.75,
-      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
-    },
-    {
       "ticker": "2236",
       "buy_date": "2024-11-25",
       "buy_price": 105.33,
@@ -1131,6 +1131,17 @@
       "shares": 2848,
       "pl": 26086.21,
       "pl_pct": 8.7,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2496",
+      "buy_date": "2024-11-25",
+      "buy_price": 66.49,
+      "sell_date": "2024-12-31 (\u5e74\u7d42)",
+      "sell_price": 71.86,
+      "shares": 4512,
+      "pl": 24250.07,
+      "pl_pct": 8.08,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -1145,14 +1156,14 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "2348A",
+      "ticker": "2374",
       "buy_date": "2024-12-03",
-      "buy_price": 33.81,
+      "buy_price": 40.8,
       "sell_date": "2024-12-31 (\u5e74\u7d42)",
-      "sell_price": 34.34,
-      "shares": 8872,
-      "pl": 4707.21,
-      "pl_pct": 1.57,
+      "sell_price": 56.8,
+      "shares": 3676,
+      "pl": 58790.22,
+      "pl_pct": 39.19,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -1178,17 +1189,6 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "2374",
-      "buy_date": "2024-12-05",
-      "buy_price": 40.72,
-      "sell_date": "2024-12-31 (\u5e74\u7d42)",
-      "sell_price": 56.8,
-      "shares": 3684,
-      "pl": 59236.64,
-      "pl_pct": 39.49,
-      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
-    },
-    {
       "ticker": "1538",
       "buy_date": "2024-12-05",
       "buy_price": 17.8,
@@ -1197,6 +1197,17 @@
       "shares": 8427,
       "pl": 87640.79,
       "pl_pct": 58.43,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "1220",
+      "buy_date": "2024-12-05",
+      "buy_price": 16.5,
+      "sell_date": "2024-12-31 (\u5e74\u7d42)",
+      "sell_price": 17.02,
+      "shares": 18182,
+      "pl": 9537.48,
+      "pl_pct": 3.18,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
@@ -1211,14 +1222,14 @@
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     },
     {
-      "ticker": "2887E",
+      "ticker": "4571",
       "buy_date": "2024-12-06",
-      "buy_price": 49.03,
+      "buy_price": 166.92,
       "sell_date": "2024-12-31 (\u5e74\u7d42)",
-      "sell_price": 49.6,
-      "shares": 6119,
-      "pl": 3529.34,
-      "pl_pct": 1.18,
+      "sell_price": 267.17,
+      "shares": 899,
+      "pl": 90124.08,
+      "pl_pct": 60.06,
       "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
     }
   ],
@@ -1230,1229 +1241,1211 @@
     },
     {
       "date": "2024-01-03",
-      "equity": 3000491.73,
+      "equity": 2996221.5,
       "type": "daily"
     },
     {
       "date": "2024-01-04",
-      "equity": 2994912.94,
+      "equity": 2989340.89,
       "type": "daily"
     },
     {
       "date": "2024-01-05",
-      "equity": 3001962.54,
+      "equity": 2990042.99,
       "type": "daily"
     },
     {
       "date": "2024-01-08",
-      "equity": 3009752.88,
+      "equity": 3002646.31,
       "type": "daily"
     },
     {
       "date": "2024-01-09",
-      "equity": 3004407.23,
+      "equity": 2996273.62,
       "type": "crash"
     },
     {
       "date": "2024-01-10",
-      "equity": 3004407.23,
+      "equity": 2996273.62,
       "type": "daily"
     },
     {
       "date": "2024-01-11",
-      "equity": 3007615.79,
+      "equity": 3000726.58,
       "type": "daily"
     },
     {
       "date": "2024-01-12",
-      "equity": 2993385.76,
+      "equity": 2986520.85,
       "type": "crash"
     },
     {
       "date": "2024-01-15",
-      "equity": 2993385.76,
+      "equity": 2986520.85,
       "type": "daily"
     },
     {
       "date": "2024-01-16",
-      "equity": 2988959.74,
+      "equity": 2976547.94,
       "type": "hold"
     },
     {
       "date": "2024-01-17",
-      "equity": 2982322.45,
+      "equity": 2965345.77,
       "type": "hold"
     },
     {
       "date": "2024-01-18",
-      "equity": 2981584.2,
+      "equity": 2964116.52,
       "type": "hold"
     },
     {
       "date": "2024-01-19",
-      "equity": 2981093.19,
+      "equity": 2968610.65,
       "type": "daily"
     },
     {
       "date": "2024-01-22",
-      "equity": 2990995.42,
+      "equity": 2985649.2,
       "type": "daily"
     },
     {
       "date": "2024-01-23",
-      "equity": 3001343.04,
+      "equity": 3002806.74,
       "type": "daily"
     },
     {
       "date": "2024-01-24",
-      "equity": 3007924.68,
+      "equity": 3002492.47,
       "type": "daily"
     },
     {
       "date": "2024-01-25",
-      "equity": 3000403.52,
+      "equity": 3005555.83,
       "type": "daily"
     },
     {
       "date": "2024-01-26",
-      "equity": 2995434.39,
+      "equity": 3000308.41,
       "type": "daily"
     },
     {
       "date": "2024-01-29",
-      "equity": 3011778.67,
+      "equity": 3019586.88,
       "type": "daily"
     },
     {
       "date": "2024-01-30",
-      "equity": 3011369.15,
+      "equity": 3008623.79,
       "type": "daily"
     },
     {
       "date": "2024-01-31",
-      "equity": 3011490.01,
+      "equity": 3010522.97,
       "type": "daily"
     },
     {
       "date": "2024-02-01",
-      "equity": 3019084.78,
+      "equity": 3017848.7,
       "type": "daily"
     },
     {
       "date": "2024-02-02",
-      "equity": 3027752.13,
+      "equity": 3019069.58,
       "type": "daily"
     },
     {
       "date": "2024-02-05",
-      "equity": 3022269.06,
+      "equity": 3011393.44,
       "type": "daily"
     },
     {
       "date": "2024-02-15",
-      "equity": 3030398.88,
+      "equity": 3034553.77,
       "type": "daily"
     },
     {
       "date": "2024-02-16",
-      "equity": 3066011.08,
+      "equity": 3069026.21,
       "type": "daily"
     },
     {
       "date": "2024-02-19",
-      "equity": 3071564.9,
+      "equity": 3087328.0,
       "type": "daily"
     },
     {
       "date": "2024-02-20",
-      "equity": 3068459.25,
+      "equity": 3099590.84,
       "type": "daily"
     },
     {
       "date": "2024-02-21",
-      "equity": 3083706.06,
+      "equity": 3108400.22,
       "type": "daily"
     },
     {
       "date": "2024-02-22",
-      "equity": 3079185.63,
+      "equity": 3102861.12,
       "type": "daily"
     },
     {
       "date": "2024-02-23",
-      "equity": 3102118.98,
+      "equity": 3111727.64,
       "type": "daily"
     },
     {
       "date": "2024-02-26",
-      "equity": 3140808.62,
+      "equity": 3154453.12,
       "type": "daily"
     },
     {
       "date": "2024-02-27",
-      "equity": 3111692.65,
+      "equity": 3128014.17,
       "type": "daily"
     },
     {
       "date": "2024-02-29",
-      "equity": 3145359.13,
+      "equity": 3145990.7,
       "type": "daily"
     },
     {
       "date": "2024-03-01",
-      "equity": 3140951.83,
+      "equity": 3155752.29,
       "type": "daily"
     },
     {
       "date": "2024-03-04",
-      "equity": 3155596.08,
+      "equity": 3191913.54,
       "type": "daily"
     },
     {
       "date": "2024-03-05",
-      "equity": 3189562.29,
+      "equity": 3239945.65,
       "type": "daily"
     },
     {
       "date": "2024-03-06",
-      "equity": 3183623.4,
+      "equity": 3243378.84,
       "type": "daily"
     },
     {
       "date": "2024-03-07",
-      "equity": 3176997.26,
+      "equity": 3274937.58,
       "type": "daily"
     },
     {
       "date": "2024-03-08",
-      "equity": 3133694.95,
+      "equity": 3248038.39,
       "type": "daily"
     },
     {
       "date": "2024-03-11",
-      "equity": 3149953.94,
+      "equity": 3284831.27,
       "type": "daily"
     },
     {
       "date": "2024-03-12",
-      "equity": 3175862.15,
+      "equity": 3331587.56,
       "type": "daily"
     },
     {
       "date": "2024-03-13",
-      "equity": 3161526.29,
+      "equity": 3314152.08,
       "type": "daily"
     },
     {
       "date": "2024-03-14",
-      "equity": 3166119.33,
+      "equity": 3299070.06,
       "type": "daily"
     },
     {
       "date": "2024-03-15",
-      "equity": 3160851.88,
+      "equity": 3267135.93,
       "type": "daily"
     },
     {
       "date": "2024-03-18",
-      "equity": 4589823.37,
+      "equity": 5853369.12,
       "type": "daily"
     },
     {
       "date": "2024-03-19",
-      "equity": 3871423.29,
+      "equity": 4352144.51,
       "type": "daily"
     },
     {
       "date": "2024-03-20",
-      "equity": 3890297.04,
+      "equity": 4362232.78,
       "type": "daily"
     },
     {
       "date": "2024-03-21",
-      "equity": 3922994.78,
+      "equity": 4395783.98,
       "type": "daily"
     },
     {
       "date": "2024-03-22",
-      "equity": 3909040.83,
+      "equity": 4381721.2,
       "type": "daily"
     },
     {
       "date": "2024-03-25",
-      "equity": 3905321.84,
+      "equity": 4402343.36,
       "type": "daily"
     },
     {
       "date": "2024-03-26",
-      "equity": 3880866.08,
+      "equity": 4348216.1,
       "type": "daily"
     },
     {
       "date": "2024-03-27",
-      "equity": 3889805.29,
+      "equity": 4372176.19,
       "type": "daily"
     },
     {
       "date": "2024-03-28",
-      "equity": 3894757.15,
+      "equity": 4359410.47,
       "type": "daily"
     },
     {
       "date": "2024-03-29",
-      "equity": 3888135.85,
+      "equity": 4348960.5,
       "type": "daily"
     },
     {
       "date": "2024-04-01",
-      "equity": 3895272.72,
+      "equity": 4379270.05,
       "type": "daily"
     },
     {
       "date": "2024-04-02",
-      "equity": 3900869.23,
+      "equity": 4419071.45,
       "type": "daily"
     },
     {
       "date": "2024-04-03",
-      "equity": 3891704.54,
+      "equity": 4441380.44,
       "type": "daily"
     },
     {
       "date": "2024-04-08",
-      "equity": 3894422.05,
+      "equity": 4467416.61,
       "type": "daily"
     },
     {
       "date": "2024-04-09",
-      "equity": 3901956.65,
+      "equity": 4457807.95,
       "type": "daily"
     },
     {
       "date": "2024-04-10",
-      "equity": 3923426.02,
+      "equity": 4473979.77,
       "type": "daily"
     },
     {
       "date": "2024-04-11",
-      "equity": 3901951.93,
+      "equity": 4451743.75,
       "type": "daily"
     },
     {
       "date": "2024-04-12",
-      "equity": 3928925.0,
+      "equity": 4497601.83,
       "type": "daily"
     },
     {
       "date": "2024-04-15",
-      "equity": 3923902.65,
+      "equity": 4465653.68,
       "type": "daily"
     },
     {
       "date": "2024-04-16",
-      "equity": 3884875.99,
+      "equity": 4406504.08,
       "type": "crash"
     },
     {
       "date": "2024-04-17",
-      "equity": 3884875.99,
+      "equity": 4406504.08,
       "type": "daily"
     },
     {
       "date": "2024-04-18",
-      "equity": 3883261.11,
+      "equity": 4406793.95,
       "type": "daily"
     },
     {
       "date": "2024-04-19",
-      "equity": 3865341.27,
+      "equity": 4381888.04,
       "type": "hold"
     },
     {
       "date": "2024-04-22",
-      "equity": 3849226.25,
+      "equity": 4369745.25,
       "type": "crash"
     },
     {
       "date": "2024-04-23",
-      "equity": 3849226.25,
+      "equity": 4369745.25,
       "type": "hold"
     },
     {
       "date": "2024-04-24",
-      "equity": 3849226.25,
+      "equity": 4369745.25,
       "type": "daily"
     },
     {
       "date": "2024-04-25",
-      "equity": 3845352.69,
+      "equity": 4365871.69,
       "type": "daily"
     },
     {
       "date": "2024-04-26",
-      "equity": 3846625.34,
+      "equity": 4369506.54,
       "type": "daily"
     },
     {
       "date": "2024-04-29",
-      "equity": 3852088.66,
+      "equity": 4386012.01,
       "type": "daily"
     },
     {
       "date": "2024-04-30",
-      "equity": 3855151.63,
+      "equity": 4370443.42,
       "type": "daily"
     },
     {
       "date": "2024-05-02",
-      "equity": 3851933.22,
+      "equity": 4372458.05,
       "type": "daily"
     },
     {
       "date": "2024-05-03",
-      "equity": 3846708.51,
+      "equity": 4357322.01,
       "type": "daily"
     },
     {
       "date": "2024-05-06",
-      "equity": 3850558.49,
+      "equity": 4379623.83,
       "type": "daily"
     },
     {
       "date": "2024-05-07",
-      "equity": 3854961.02,
+      "equity": 4373285.35,
       "type": "daily"
     },
     {
       "date": "2024-05-08",
-      "equity": 3866270.45,
+      "equity": 4394322.52,
       "type": "daily"
     },
     {
       "date": "2024-05-09",
-      "equity": 3835819.12,
+      "equity": 4354516.57,
       "type": "daily"
     },
     {
       "date": "2024-05-10",
-      "equity": 3854487.93,
+      "equity": 4370040.46,
       "type": "daily"
     },
     {
       "date": "2024-05-13",
-      "equity": 3852931.58,
+      "equity": 4354796.98,
       "type": "daily"
     },
     {
       "date": "2024-05-14",
-      "equity": 3889275.12,
+      "equity": 4392440.22,
       "type": "daily"
     },
     {
       "date": "2024-05-15",
-      "equity": 3892356.46,
+      "equity": 4396244.81,
       "type": "daily"
     },
     {
       "date": "2024-05-16",
-      "equity": 3894053.4,
+      "equity": 4401807.83,
       "type": "daily"
     },
     {
       "date": "2024-05-17",
-      "equity": 3879976.79,
+      "equity": 4380234.67,
       "type": "daily"
     },
     {
       "date": "2024-05-20",
-      "equity": 3873942.25,
+      "equity": 4359732.37,
       "type": "daily"
     },
     {
       "date": "2024-05-21",
-      "equity": 3911052.79,
+      "equity": 4401053.38,
       "type": "daily"
     },
     {
       "date": "2024-05-22",
-      "equity": 3960693.7,
+      "equity": 4477817.52,
       "type": "daily"
     },
     {
       "date": "2024-05-23",
-      "equity": 3924626.66,
+      "equity": 4433358.54,
       "type": "daily"
     },
     {
       "date": "2024-05-24",
-      "equity": 3962797.69,
+      "equity": 4459062.26,
       "type": "daily"
     },
     {
       "date": "2024-05-27",
-      "equity": 3980321.92,
+      "equity": 4496713.79,
       "type": "daily"
     },
     {
       "date": "2024-05-28",
-      "equity": 3978895.34,
+      "equity": 4509390.35,
       "type": "daily"
     },
     {
       "date": "2024-05-29",
-      "equity": 3951677.07,
+      "equity": 4500291.59,
       "type": "daily"
     },
     {
       "date": "2024-05-30",
-      "equity": 3943022.88,
+      "equity": 4461303.1,
       "type": "daily"
     },
     {
       "date": "2024-05-31",
-      "equity": 3970275.18,
+      "equity": 4497870.56,
       "type": "daily"
     },
     {
       "date": "2024-06-03",
-      "equity": 3986073.26,
+      "equity": 4537997.22,
       "type": "daily"
     },
     {
       "date": "2024-06-04",
-      "equity": 3976689.67,
+      "equity": 4515910.54,
       "type": "daily"
     },
     {
       "date": "2024-06-05",
-      "equity": 3980739.44,
+      "equity": 4539946.86,
       "type": "daily"
     },
     {
       "date": "2024-06-06",
-      "equity": 4009433.45,
+      "equity": 4557805.63,
       "type": "daily"
     },
     {
       "date": "2024-06-07",
-      "equity": 4032669.51,
+      "equity": 4570872.78,
       "type": "daily"
     },
     {
       "date": "2024-06-11",
-      "equity": 4040480.84,
+      "equity": 4578081.56,
       "type": "daily"
     },
     {
       "date": "2024-06-12",
-      "equity": 4044851.37,
+      "equity": 4584047.71,
       "type": "daily"
     },
     {
       "date": "2024-06-13",
-      "equity": 4049722.21,
+      "equity": 4589232.23,
       "type": "daily"
     },
     {
       "date": "2024-06-14",
-      "equity": 4064462.96,
+      "equity": 4603376.43,
       "type": "daily"
     },
     {
       "date": "2024-06-17",
-      "equity": 4058092.72,
+      "equity": 4602807.3,
       "type": "daily"
     },
     {
       "date": "2024-06-18",
-      "equity": 4077932.59,
+      "equity": 4626347.21,
       "type": "daily"
     },
     {
       "date": "2024-06-19",
-      "equity": 4083129.1,
+      "equity": 4639114.58,
       "type": "daily"
     },
     {
       "date": "2024-06-20",
-      "equity": 4087870.17,
+      "equity": 4662179.06,
       "type": "daily"
     },
     {
       "date": "2024-06-21",
-      "equity": 4102225.72,
+      "equity": 4665368.49,
       "type": "daily"
     },
     {
       "date": "2024-06-24",
-      "equity": 4125490.17,
+      "equity": 4697514.74,
       "type": "daily"
     },
     {
       "date": "2024-06-25",
-      "equity": 4139069.17,
+      "equity": 4704126.71,
       "type": "daily"
     },
     {
       "date": "2024-06-26",
-      "equity": 4119172.46,
+      "equity": 4693492.4,
       "type": "daily"
     },
     {
       "date": "2024-06-27",
-      "equity": 4090167.09,
+      "equity": 4674339.36,
       "type": "daily"
     },
     {
       "date": "2024-06-28",
-      "equity": 4120425.37,
+      "equity": 4720027.42,
       "type": "daily"
     },
     {
       "date": "2024-07-01",
-      "equity": 4123735.74,
+      "equity": 4727750.52,
       "type": "daily"
     },
     {
       "date": "2024-07-02",
-      "equity": 4149180.71,
+      "equity": 4731438.59,
       "type": "daily"
     },
     {
       "date": "2024-07-03",
-      "equity": 4182217.0,
+      "equity": 4785785.93,
       "type": "daily"
     },
     {
       "date": "2024-07-04",
-      "equity": 4190378.26,
+      "equity": 4831887.39,
       "type": "daily"
     },
     {
       "date": "2024-07-05",
-      "equity": 4242493.39,
+      "equity": 4904667.67,
       "type": "daily"
     },
     {
       "date": "2024-07-08",
-      "equity": 4249053.42,
+      "equity": 4915072.85,
       "type": "daily"
     },
     {
       "date": "2024-07-09",
-      "equity": 4285785.32,
+      "equity": 4929320.64,
       "type": "daily"
     },
     {
       "date": "2024-07-10",
-      "equity": 4292844.6,
+      "equity": 4949227.17,
       "type": "daily"
     },
     {
       "date": "2024-07-11",
-      "equity": 4281299.44,
+      "equity": 4948884.28,
       "type": "daily"
     },
     {
       "date": "2024-07-12",
-      "equity": 4273093.5,
+      "equity": 4959817.62,
       "type": "daily"
     },
     {
       "date": "2024-07-15",
-      "equity": 4260715.24,
+      "equity": 4930001.77,
       "type": "daily"
     },
     {
       "date": "2024-07-16",
-      "equity": 4251912.71,
+      "equity": 4946492.2,
       "type": "daily"
     },
     {
       "date": "2024-07-17",
-      "equity": 4261155.63,
+      "equity": 4942911.37,
       "type": "daily"
     },
     {
       "date": "2024-07-18",
-      "equity": 4255115.61,
+      "equity": 4941402.88,
       "type": "daily"
     },
     {
       "date": "2024-07-19",
-      "equity": 4240044.25,
+      "equity": 4906803.47,
       "type": "crash"
     },
     {
       "date": "2024-07-22",
-      "equity": 4240044.25,
+      "equity": 4906803.47,
       "type": "hold"
     },
     {
       "date": "2024-07-23",
-      "equity": 4240044.25,
+      "equity": 4906803.47,
       "type": "daily"
     },
     {
       "date": "2024-07-26",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "crash"
     },
     {
       "date": "2024-07-29",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-07-30",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-07-31",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-01",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-02",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-05",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-06",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-07",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-08",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-09",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-12",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-13",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-14",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-15",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-16",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-19",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-20",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-21",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-22",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-23",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-26",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-27",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-28",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-29",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-08-30",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-02",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-03",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-04",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-05",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-06",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-09",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-10",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-11",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-12",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-13",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-16",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-18",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-19",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-20",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-23",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "hold"
     },
     {
       "date": "2024-09-24",
-      "equity": 4223069.84,
+      "equity": 4887007.67,
       "type": "daily"
     },
     {
       "date": "2024-09-25",
-      "equity": 4230110.49,
+      "equity": 4896787.92,
       "type": "daily"
     },
     {
       "date": "2024-09-26",
-      "equity": 4224147.68,
+      "equity": 4888085.52,
       "type": "daily"
     },
     {
       "date": "2024-09-27",
-      "equity": 4220941.11,
+      "equity": 4886731.3,
       "type": "daily"
     },
     {
       "date": "2024-09-30",
-      "equity": 4206217.63,
+      "equity": 4865444.66,
       "type": "hold"
     },
     {
       "date": "2024-10-01",
-      "equity": 4210133.57,
+      "equity": 4864569.87,
       "type": "daily"
     },
     {
       "date": "2024-10-04",
-      "equity": 4160272.35,
+      "equity": 4824994.83,
       "type": "daily"
     },
     {
       "date": "2024-10-07",
-      "equity": 4189751.13,
+      "equity": 4868701.59,
       "type": "daily"
     },
     {
       "date": "2024-10-08",
-      "equity": 4190120.62,
+      "equity": 4864512.48,
       "type": "daily"
     },
     {
       "date": "2024-10-09",
-      "equity": 4184635.22,
+      "equity": 4846105.32,
       "type": "daily"
     },
     {
       "date": "2024-10-11",
-      "equity": 4171113.39,
+      "equity": 4837111.0,
       "type": "daily"
     },
     {
       "date": "2024-10-14",
-      "equity": 4184473.97,
+      "equity": 4872563.74,
       "type": "daily"
     },
     {
       "date": "2024-10-15",
-      "equity": 4186090.04,
+      "equity": 4870898.27,
       "type": "daily"
     },
     {
       "date": "2024-10-16",
-      "equity": 4213128.24,
+      "equity": 4911240.58,
       "type": "daily"
     },
     {
       "date": "2024-10-17",
-      "equity": 4211263.36,
+      "equity": 4926654.08,
       "type": "daily"
     },
     {
       "date": "2024-10-18",
-      "equity": 4248961.59,
+      "equity": 4965233.63,
       "type": "daily"
     },
     {
       "date": "2024-10-21",
-      "equity": 4240430.19,
+      "equity": 4968493.76,
       "type": "daily"
     },
     {
       "date": "2024-10-22",
-      "equity": 4247342.1,
+      "equity": 4975130.99,
       "type": "daily"
     },
     {
       "date": "2024-10-23",
-      "equity": 4235957.02,
+      "equity": 4958856.76,
       "type": "daily"
     },
     {
       "date": "2024-10-24",
-      "equity": 4229311.77,
+      "equity": 4931515.59,
       "type": "daily"
     },
     {
       "date": "2024-10-25",
-      "equity": 4248426.51,
+      "equity": 4942076.11,
       "type": "daily"
     },
     {
       "date": "2024-10-28",
-      "equity": 4196865.53,
+      "equity": 4868876.45,
       "type": "daily"
     },
     {
       "date": "2024-10-29",
-      "equity": 4193673.34,
+      "equity": 4873738.78,
       "type": "crash"
     },
     {
       "date": "2024-10-30",
-      "equity": 4193673.34,
+      "equity": 4873738.78,
       "type": "daily"
     },
     {
       "date": "2024-11-01",
-      "equity": 4213619.75,
+      "equity": 4893685.18,
       "type": "crash"
     },
     {
       "date": "2024-11-04",
-      "equity": 4213619.75,
+      "equity": 4893685.18,
       "type": "daily"
     },
     {
       "date": "2024-11-05",
-      "equity": 4206357.34,
+      "equity": 4886422.78,
       "type": "daily"
     },
     {
       "date": "2024-11-06",
-      "equity": 4215490.25,
+      "equity": 4908659.12,
       "type": "daily"
     },
     {
       "date": "2024-11-07",
-      "equity": 4236720.65,
+      "equity": 4941671.47,
       "type": "daily"
     },
     {
       "date": "2024-11-08",
-      "equity": 4234044.96,
+      "equity": 4934868.57,
       "type": "daily"
     },
     {
       "date": "2024-11-11",
-      "equity": 4272098.48,
+      "equity": 4962171.25,
       "type": "daily"
     },
     {
       "date": "2024-11-12",
-      "equity": 4265704.5,
+      "equity": 4941755.98,
       "type": "daily"
     },
     {
       "date": "2024-11-13",
-      "equity": 4213619.75,
+      "equity": 4893685.18,
       "type": "daily"
     },
     {
       "date": "2024-11-14",
-      "equity": 4270074.12,
+      "equity": 5072364.75,
       "type": "daily"
     },
     {
       "date": "2024-11-15",
-      "equity": 4282273.39,
+      "equity": 5093894.8,
       "type": "daily"
     },
     {
       "date": "2024-11-18",
-      "equity": 4306376.41,
+      "equity": 5109776.06,
       "type": "crash"
     },
     {
       "date": "2024-11-19",
-      "equity": 4306376.41,
+      "equity": 5109776.06,
       "type": "daily"
     },
     {
       "date": "2024-11-20",
-      "equity": 4306725.63,
+      "equity": 5106829.21,
       "type": "daily"
     },
     {
       "date": "2024-11-21",
-      "equity": 4320499.58,
+      "equity": 5123264.93,
       "type": "crash"
     },
     {
       "date": "2024-11-22",
-      "equity": 4320499.58,
+      "equity": 5123264.93,
       "type": "hold"
     },
     {
       "date": "2024-11-25",
-      "equity": 4320499.58,
+      "equity": 5123264.93,
       "type": "daily"
     },
     {
       "date": "2024-11-26",
-      "equity": 4319894.47,
+      "equity": 5121178.37,
       "type": "hold"
     },
     {
       "date": "2024-11-27",
-      "equity": 4326066.42,
+      "equity": 5127699.92,
       "type": "hold"
     },
     {
       "date": "2024-11-28",
-      "equity": 4336151.3,
+      "equity": 5137352.15,
       "type": "hold"
     },
     {
       "date": "2024-11-29",
-      "equity": 4338759.92,
+      "equity": 5141525.27,
       "type": "hold"
     },
     {
       "date": "2024-12-02",
-      "equity": 4355110.85,
+      "equity": 5159523.8,
       "type": "hold"
     },
     {
       "date": "2024-12-03",
-      "equity": 4357719.47,
+      "equity": 5164870.32,
       "type": "daily"
     },
     {
       "date": "2024-12-04",
-      "equity": 4365938.24,
+      "equity": 5177301.05,
       "type": "daily"
     },
     {
       "date": "2024-12-05",
-      "equity": 4417462.8,
+      "equity": 5224572.06,
       "type": "daily"
     },
     {
       "date": "2024-12-06",
-      "equity": 4421859.19,
+      "equity": 5221860.16,
       "type": "daily"
     },
     {
       "date": "2024-12-09",
-      "equity": 4435910.56,
+      "equity": 5240542.04,
       "type": "daily"
     },
     {
       "date": "2024-12-10",
-      "equity": 4424246.05,
+      "equity": 5254535.02,
       "type": "daily"
     },
     {
       "date": "2024-12-11",
-      "equity": 4422016.58,
+      "equity": 5304108.84,
       "type": "daily"
     },
     {
       "date": "2024-12-12",
-      "equity": 4428581.48,
+      "equity": 5278599.72,
       "type": "daily"
     },
     {
       "date": "2024-12-13",
-      "equity": 4449845.04,
+      "equity": 5325695.46,
       "type": "daily"
     },
     {
       "date": "2024-12-16",
-      "equity": 4502659.62,
+      "equity": 5380803.59,
       "type": "daily"
     },
     {
       "date": "2024-12-17",
-      "equity": 4546983.59,
+      "equity": 5440491.6,
       "type": "daily"
     },
     {
       "date": "2024-12-18",
-      "equity": 4601432.24,
+      "equity": 5526636.22,
       "type": "daily"
     },
     {
       "date": "2024-12-19",
-      "equity": 4620727.02,
+      "equity": 5580756.91,
       "type": "daily"
     },
     {
       "date": "2024-12-20",
-      "equity": 4656364.29,
+      "equity": 5613172.55,
       "type": "hold"
     },
     {
       "date": "2024-12-23",
-      "equity": 4682003.22,
+      "equity": 5649165.36,
       "type": "daily"
     },
     {
       "date": "2024-12-24",
-      "equity": 4720319.32,
+      "equity": 5690976.12,
       "type": "daily"
     },
     {
       "date": "2024-12-25",
-      "equity": 4784607.15,
+      "equity": 5768706.9,
       "type": "daily"
     },
     {
       "date": "2024-12-26",
-      "equity": 4756725.18,
+      "equity": 5726201.25,
       "type": "daily"
     },
     {
       "date": "2024-12-27",
-      "equity": 4776063.92,
+      "equity": 5744385.76,
       "type": "daily"
     },
     {
       "date": "2024-12-30",
-      "equity": 4764386.39,
+      "equity": 5727876.7,
       "type": "daily"
     },
     {
       "date": "2024-12-31",
-      "equity": 4953410.97,
+      "equity": 5927997.74,
       "type": "daily"
     }
   ],
   "missed_trades": [
-    {
-      "date": "2024-01-16",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.5
-    },
-    {
-      "date": "2024-01-16",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.6
-    },
-    {
-      "date": "2024-01-16",
-      "ticker": "5871A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.5
-    },
     {
       "date": "2024-01-16",
       "ticker": "1231",
@@ -2496,22 +2489,22 @@
       "score": 76.5
     },
     {
-      "date": "2024-01-17",
-      "ticker": "8112A",
+      "date": "2024-01-16",
+      "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 137.3
+      "score": 75.1
     },
     {
-      "date": "2024-01-17",
-      "ticker": "6592B",
+      "date": "2024-01-16",
+      "ticker": "2250",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.0
+      "score": 72.4
     },
     {
-      "date": "2024-01-17",
-      "ticker": "3036A",
+      "date": "2024-01-16",
+      "ticker": "1597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.8
+      "score": 68.6
     },
     {
       "date": "2024-01-17",
@@ -2556,16 +2549,28 @@
       "score": 81.7
     },
     {
+      "date": "2024-01-17",
+      "ticker": "2480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.1
+    },
+    {
+      "date": "2024-01-17",
+      "ticker": "8374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.6
+    },
+    {
+      "date": "2024-01-17",
+      "ticker": "1597",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.5
+    },
+    {
       "date": "2024-01-18",
       "ticker": "3450",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.7
-    },
-    {
-      "date": "2024-01-18",
-      "ticker": "3036A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.9
     },
     {
       "date": "2024-01-18",
@@ -2599,12 +2604,6 @@
     },
     {
       "date": "2024-01-18",
-      "ticker": "3416",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.5
-    },
-    {
-      "date": "2024-01-18",
       "ticker": "2374",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.1
@@ -2616,22 +2615,16 @@
       "score": 84.3
     },
     {
-      "date": "2024-04-19",
-      "ticker": "2891B",
+      "date": "2024-01-18",
+      "ticker": "4540",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.8
+      "score": 80.0
     },
     {
-      "date": "2024-04-19",
-      "ticker": "5871A",
+      "date": "2024-01-18",
+      "ticker": "2891",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.5
-    },
-    {
-      "date": "2024-04-19",
-      "ticker": "6214",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.8
+      "score": 79.2
     },
     {
       "date": "2024-04-19",
@@ -2670,10 +2663,22 @@
       "score": 82.1
     },
     {
-      "date": "2024-04-23",
-      "ticker": "8112A",
+      "date": "2024-04-19",
+      "ticker": "1220",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.7
+      "score": 75.0
+    },
+    {
+      "date": "2024-04-19",
+      "ticker": "2610",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.1
+    },
+    {
+      "date": "2024-04-19",
+      "ticker": "6214",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.8
     },
     {
       "date": "2024-04-23",
@@ -2695,21 +2700,9 @@
     },
     {
       "date": "2024-04-23",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.3
-    },
-    {
-      "date": "2024-04-23",
       "ticker": "2885",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.2
-    },
-    {
-      "date": "2024-04-23",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.6
     },
     {
       "date": "2024-04-23",
@@ -2730,6 +2723,24 @@
       "score": 75.0
     },
     {
+      "date": "2024-04-23",
+      "ticker": "2480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.1
+    },
+    {
+      "date": "2024-04-23",
+      "ticker": "3059",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 38.9
+    },
+    {
+      "date": "2024-04-23",
+      "ticker": "1776",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 3.2
+    },
+    {
       "date": "2024-07-22",
       "ticker": "6183",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2737,27 +2748,9 @@
     },
     {
       "date": "2024-07-22",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.6
-    },
-    {
-      "date": "2024-07-22",
       "ticker": "6757",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 124.4
-    },
-    {
-      "date": "2024-07-22",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 112.1
-    },
-    {
-      "date": "2024-07-22",
-      "ticker": "5871A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.4
     },
     {
       "date": "2024-07-22",
@@ -2773,12 +2766,6 @@
     },
     {
       "date": "2024-07-22",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 97.0
-    },
-    {
-      "date": "2024-07-22",
       "ticker": "2332",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 94.1
@@ -2788,6 +2775,30 @@
       "ticker": "2359",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 92.3
+    },
+    {
+      "date": "2024-07-22",
+      "ticker": "8482",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.8
+    },
+    {
+      "date": "2024-07-22",
+      "ticker": "6215",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.9
+    },
+    {
+      "date": "2024-07-22",
+      "ticker": "2880",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.7
+    },
+    {
+      "date": "2024-07-22",
+      "ticker": "2852",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.6
     },
     {
       "date": "2024-07-29",
@@ -2800,24 +2811,6 @@
       "ticker": "2496",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 125.4
-    },
-    {
-      "date": "2024-07-29",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 112.6
-    },
-    {
-      "date": "2024-07-29",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.3
-    },
-    {
-      "date": "2024-07-29",
-      "ticker": "5871A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.4
     },
     {
       "date": "2024-07-29",
@@ -2850,28 +2843,28 @@
       "score": 78.8
     },
     {
+      "date": "2024-07-29",
+      "ticker": "1220",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.9
+    },
+    {
+      "date": "2024-07-29",
+      "ticker": "6214",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.3
+    },
+    {
+      "date": "2024-07-29",
+      "ticker": "6671",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -6.7
+    },
+    {
       "date": "2024-07-30",
       "ticker": "2496",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 122.1
-    },
-    {
-      "date": "2024-07-30",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 112.8
-    },
-    {
-      "date": "2024-07-30",
-      "ticker": "5871A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.5
-    },
-    {
-      "date": "2024-07-30",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.6
     },
     {
       "date": "2024-07-30",
@@ -2910,16 +2903,28 @@
       "score": 77.7
     },
     {
+      "date": "2024-07-30",
+      "ticker": "1220",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.0
+    },
+    {
+      "date": "2024-07-30",
+      "ticker": "2480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.2
+    },
+    {
+      "date": "2024-07-30",
+      "ticker": "6214",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.2
+    },
+    {
       "date": "2024-07-31",
       "ticker": "2496",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 132.7
-    },
-    {
-      "date": "2024-07-31",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 107.6
     },
     {
       "date": "2024-07-31",
@@ -2970,10 +2975,10 @@
       "score": 60.7
     },
     {
-      "date": "2024-08-01",
-      "ticker": "8112A",
+      "date": "2024-07-31",
+      "ticker": "2540",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 137.9
+      "score": -3.6
     },
     {
       "date": "2024-08-01",
@@ -3030,10 +3035,10 @@
       "score": 76.1
     },
     {
-      "date": "2024-08-02",
-      "ticker": "8112A",
+      "date": "2024-08-01",
+      "ticker": "6214",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 137.9
+      "score": 71.7
     },
     {
       "date": "2024-08-02",
@@ -3046,18 +3051,6 @@
       "ticker": "1231",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.3
-    },
-    {
-      "date": "2024-08-02",
-      "ticker": "3036A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 104.9
-    },
-    {
-      "date": "2024-08-02",
-      "ticker": "5871A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.1
     },
     {
       "date": "2024-08-02",
@@ -3090,58 +3083,28 @@
       "score": 75.2
     },
     {
-      "date": "2024-08-05",
-      "ticker": "2887E",
+      "date": "2024-08-02",
+      "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.2
+      "score": 73.5
     },
     {
-      "date": "2024-08-05",
-      "ticker": "2881A",
+      "date": "2024-08-02",
+      "ticker": "4576",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 111.4
+      "score": 60.0
+    },
+    {
+      "date": "2024-08-02",
+      "ticker": "4763",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.3
     },
     {
       "date": "2024-08-05",
       "ticker": "1231",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.7
-    },
-    {
-      "date": "2024-08-05",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.0
-    },
-    {
-      "date": "2024-08-05",
-      "ticker": "3036A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.7
-    },
-    {
-      "date": "2024-08-05",
-      "ticker": "5871A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.6
-    },
-    {
-      "date": "2024-08-05",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 101.6
-    },
-    {
-      "date": "2024-08-05",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 95.8
-    },
-    {
-      "date": "2024-08-05",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 72.2
     },
     {
       "date": "2024-08-05",
@@ -3241,12 +3204,6 @@
     },
     {
       "date": "2024-08-08",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.8
-    },
-    {
-      "date": "2024-08-08",
       "ticker": "1736",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 100.5
@@ -3286,12 +3243,6 @@
       "ticker": "2368",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 60.4
-    },
-    {
-      "date": "2024-08-09",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.8
     },
     {
       "date": "2024-08-09",
@@ -3348,16 +3299,16 @@
       "score": 59.8
     },
     {
+      "date": "2024-08-09",
+      "ticker": "2597",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 38.9
+    },
+    {
       "date": "2024-08-12",
       "ticker": "3450",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 134.2
-    },
-    {
-      "date": "2024-08-12",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.8
     },
     {
       "date": "2024-08-12",
@@ -3408,22 +3359,10 @@
       "score": 43.5
     },
     {
-      "date": "2024-08-13",
-      "ticker": "2881A",
+      "date": "2024-08-12",
+      "ticker": "2348",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.5
-    },
-    {
-      "date": "2024-08-13",
-      "ticker": "3036A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.0
-    },
-    {
-      "date": "2024-08-13",
-      "ticker": "8112A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.9
+      "score": 30.3
     },
     {
       "date": "2024-08-13",
@@ -3468,16 +3407,16 @@
       "score": 38.7
     },
     {
-      "date": "2024-08-14",
-      "ticker": "2881A",
+      "date": "2024-08-13",
+      "ticker": "2115",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.9
+      "score": -1.0
     },
     {
-      "date": "2024-08-14",
-      "ticker": "8112A",
+      "date": "2024-08-13",
+      "ticker": "8103",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.9
+      "score": -25.3
     },
     {
       "date": "2024-08-14",
@@ -3508,12 +3447,6 @@
       "ticker": "6743",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -33.1
-    },
-    {
-      "date": "2024-08-15",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 127.0
     },
     {
       "date": "2024-08-15",
@@ -3559,12 +3492,6 @@
     },
     {
       "date": "2024-08-16",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 126.5
-    },
-    {
-      "date": "2024-08-16",
       "ticker": "2236",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.2
@@ -3592,12 +3519,6 @@
       "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 40.3
-    },
-    {
-      "date": "2024-08-19",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 126.7
     },
     {
       "date": "2024-08-19",
@@ -3637,12 +3558,6 @@
     },
     {
       "date": "2024-08-19",
-      "ticker": "6592A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 55.3
-    },
-    {
-      "date": "2024-08-19",
       "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 43.4
@@ -3673,12 +3588,6 @@
     },
     {
       "date": "2024-08-20",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.4
-    },
-    {
-      "date": "2024-08-20",
       "ticker": "2332",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.2
@@ -3703,33 +3612,27 @@
     },
     {
       "date": "2024-08-20",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 73.2
-    },
-    {
-      "date": "2024-08-20",
       "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 60.0
     },
     {
-      "date": "2024-08-21",
-      "ticker": "2887E",
+      "date": "2024-08-20",
+      "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 126.4
+      "score": 42.2
+    },
+    {
+      "date": "2024-08-20",
+      "ticker": "6671",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -4.8
     },
     {
       "date": "2024-08-21",
       "ticker": "3029",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 115.1
-    },
-    {
-      "date": "2024-08-21",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.9
     },
     {
       "date": "2024-08-21",
@@ -3775,12 +3678,6 @@
     },
     {
       "date": "2024-08-23",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 127.4
-    },
-    {
-      "date": "2024-08-23",
       "ticker": "2496",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 122.1
@@ -3811,21 +3708,9 @@
     },
     {
       "date": "2024-08-23",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.0
-    },
-    {
-      "date": "2024-08-23",
       "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 57.7
-    },
-    {
-      "date": "2024-08-23",
-      "ticker": "6592A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 55.6
     },
     {
       "date": "2024-08-26",
@@ -3847,12 +3732,6 @@
     },
     {
       "date": "2024-08-26",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.1
-    },
-    {
-      "date": "2024-08-26",
       "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 59.3
@@ -3865,21 +3744,9 @@
     },
     {
       "date": "2024-08-26",
-      "ticker": "6592A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 54.3
-    },
-    {
-      "date": "2024-08-26",
       "ticker": "9902",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -20.5
-    },
-    {
-      "date": "2024-08-27",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 127.2
     },
     {
       "date": "2024-08-27",
@@ -3901,12 +3768,6 @@
     },
     {
       "date": "2024-08-27",
-      "ticker": "2887F",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.1
-    },
-    {
-      "date": "2024-08-27",
       "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 59.0
@@ -3922,18 +3783,6 @@
       "ticker": "9902",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -21.4
-    },
-    {
-      "date": "2024-08-28",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 127.7
-    },
-    {
-      "date": "2024-08-28",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.7
     },
     {
       "date": "2024-08-28",
@@ -3967,18 +3816,6 @@
     },
     {
       "date": "2024-08-29",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 127.0
-    },
-    {
-      "date": "2024-08-29",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 110.3
-    },
-    {
-      "date": "2024-08-29",
       "ticker": "2885",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.4
@@ -3994,18 +3831,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.4
-    },
-    {
-      "date": "2024-08-30",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 125.9
-    },
-    {
-      "date": "2024-08-30",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.3
     },
     {
       "date": "2024-08-30",
@@ -4033,27 +3858,9 @@
     },
     {
       "date": "2024-09-02",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 126.0
-    },
-    {
-      "date": "2024-09-02",
       "ticker": "8374",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 106.6
-    },
-    {
-      "date": "2024-09-02",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.4
-    },
-    {
-      "date": "2024-09-02",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 103.8
     },
     {
       "date": "2024-09-02",
@@ -4093,18 +3900,6 @@
     },
     {
       "date": "2024-09-03",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 126.0
-    },
-    {
-      "date": "2024-09-03",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.0
-    },
-    {
-      "date": "2024-09-03",
       "ticker": "1231",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.5
@@ -4120,12 +3915,6 @@
       "ticker": "2496",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 95.4
-    },
-    {
-      "date": "2024-09-03",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 93.9
     },
     {
       "date": "2024-09-03",
@@ -4147,21 +3936,15 @@
     },
     {
       "date": "2024-09-03",
-      "ticker": "2887F",
+      "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.3
+      "score": 34.6
     },
     {
       "date": "2024-09-04",
       "ticker": "6183",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 107.0
-    },
-    {
-      "date": "2024-09-04",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.1
     },
     {
       "date": "2024-09-04",
@@ -4212,10 +3995,10 @@
       "score": 87.1
     },
     {
-      "date": "2024-09-05",
-      "ticker": "2881A",
+      "date": "2024-09-04",
+      "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.2
+      "score": 77.8
     },
     {
       "date": "2024-09-05",
@@ -4272,6 +4055,12 @@
       "score": 72.7
     },
     {
+      "date": "2024-09-05",
+      "ticker": "3416",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.9
+    },
+    {
       "date": "2024-09-06",
       "ticker": "2345",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -4303,12 +4092,6 @@
     },
     {
       "date": "2024-09-06",
-      "ticker": "6592B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 73.5
-    },
-    {
-      "date": "2024-09-06",
       "ticker": "6214",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 72.5
@@ -4327,21 +4110,15 @@
     },
     {
       "date": "2024-09-06",
-      "ticker": "2887F",
+      "ticker": "1439",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 61.0
+      "score": 48.8
     },
     {
-      "date": "2024-09-09",
-      "ticker": "8112A",
+      "date": "2024-09-06",
+      "ticker": "6671",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.5
-    },
-    {
-      "date": "2024-09-09",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.5
+      "score": -4.0
     },
     {
       "date": "2024-09-09",
@@ -4354,12 +4131,6 @@
       "ticker": "1213",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.0
-    },
-    {
-      "date": "2024-09-09",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 102.9
     },
     {
       "date": "2024-09-09",
@@ -4392,22 +4163,28 @@
       "score": 65.7
     },
     {
-      "date": "2024-09-10",
-      "ticker": "8112A",
+      "date": "2024-09-09",
+      "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 132.7
+      "score": 64.8
+    },
+    {
+      "date": "2024-09-09",
+      "ticker": "4576",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.1
+    },
+    {
+      "date": "2024-09-09",
+      "ticker": "1464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.0
     },
     {
       "date": "2024-09-10",
       "ticker": "8374",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 108.8
-    },
-    {
-      "date": "2024-09-10",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 105.7
     },
     {
       "date": "2024-09-10",
@@ -4450,6 +4227,18 @@
       "ticker": "2404",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 91.9
+    },
+    {
+      "date": "2024-09-10",
+      "ticker": "2880",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.0
+    },
+    {
+      "date": "2024-09-10",
+      "ticker": "2480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.4
     },
     {
       "date": "2024-09-11",
@@ -4519,18 +4308,6 @@
     },
     {
       "date": "2024-09-12",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 93.4
-    },
-    {
-      "date": "2024-09-12",
-      "ticker": "2348A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 90.1
-    },
-    {
-      "date": "2024-09-12",
       "ticker": "2404",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.5
@@ -4540,12 +4317,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 87.9
-    },
-    {
-      "date": "2024-09-12",
-      "ticker": "2881B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 81.2
     },
     {
       "date": "2024-09-12",
@@ -4560,10 +4331,22 @@
       "score": 68.7
     },
     {
-      "date": "2024-09-13",
-      "ticker": "2881A",
+      "date": "2024-09-12",
+      "ticker": "4576",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.5
+      "score": 64.4
+    },
+    {
+      "date": "2024-09-12",
+      "ticker": "2328",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.8
+    },
+    {
+      "date": "2024-09-12",
+      "ticker": "3051",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.9
     },
     {
       "date": "2024-09-13",
@@ -4576,12 +4359,6 @@
       "ticker": "2880",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.5
-    },
-    {
-      "date": "2024-09-13",
-      "ticker": "2348A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.1
     },
     {
       "date": "2024-09-13",
@@ -4606,12 +4383,6 @@
       "ticker": "1439",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 50.9
-    },
-    {
-      "date": "2024-09-16",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.6
     },
     {
       "date": "2024-09-16",
@@ -4651,33 +4422,33 @@
     },
     {
       "date": "2024-09-16",
-      "ticker": "2836A",
+      "ticker": "2368",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 85.5
+      "score": 54.8
     },
     {
       "date": "2024-09-16",
-      "ticker": "2348A",
+      "ticker": "1439",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 76.2
+      "score": 53.0
     },
     {
       "date": "2024-09-16",
-      "ticker": "6592B",
+      "ticker": "2543",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 73.5
+      "score": 28.7
+    },
+    {
+      "date": "2024-09-16",
+      "ticker": "6606",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 0.5
     },
     {
       "date": "2024-09-18",
       "ticker": "8374",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 109.5
-    },
-    {
-      "date": "2024-09-18",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.5
     },
     {
       "date": "2024-09-18",
@@ -4690,12 +4461,6 @@
       "ticker": "1213",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.4
-    },
-    {
-      "date": "2024-09-18",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 97.5
     },
     {
       "date": "2024-09-18",
@@ -4728,10 +4493,16 @@
       "score": 78.4
     },
     {
-      "date": "2024-09-19",
-      "ticker": "2881A",
+      "date": "2024-09-18",
+      "ticker": "2328",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.5
+      "score": 65.8
+    },
+    {
+      "date": "2024-09-18",
+      "ticker": "1439",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 52.2
     },
     {
       "date": "2024-09-19",
@@ -4789,12 +4560,6 @@
     },
     {
       "date": "2024-09-20",
-      "ticker": "2881A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.5
-    },
-    {
-      "date": "2024-09-20",
       "ticker": "2885",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.7
@@ -4831,21 +4596,21 @@
     },
     {
       "date": "2024-09-20",
-      "ticker": "6592B",
+      "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 73.4
+      "score": 58.9
     },
     {
       "date": "2024-09-20",
-      "ticker": "2887F",
+      "ticker": "2368",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.2
+      "score": 54.1
     },
     {
-      "date": "2024-09-23",
-      "ticker": "2881A",
+      "date": "2024-09-20",
+      "ticker": "2308",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 106.4
+      "score": 51.9
     },
     {
       "date": "2024-09-23",
@@ -4897,9 +4662,15 @@
     },
     {
       "date": "2024-09-23",
-      "ticker": "2887F",
+      "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 60.2
+      "score": 59.4
+    },
+    {
+      "date": "2024-09-23",
+      "ticker": "2543",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 32.0
     },
     {
       "date": "2024-09-30",
@@ -4927,27 +4698,21 @@
     },
     {
       "date": "2024-09-30",
-      "ticker": "2836A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 84.3
-    },
-    {
-      "date": "2024-09-30",
       "ticker": "3533",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 68.8
     },
     {
-      "date": "2024-11-22",
-      "ticker": "8112A",
+      "date": "2024-09-30",
+      "ticker": "3051",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 118.0
+      "score": 54.1
     },
     {
-      "date": "2024-11-22",
-      "ticker": "5871A",
+      "date": "2024-09-30",
+      "ticker": "2820",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.1
+      "score": 51.7
     },
     {
       "date": "2024-11-22",
@@ -4999,12 +4764,6 @@
     },
     {
       "date": "2024-11-26",
-      "ticker": "2496",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.4
-    },
-    {
-      "date": "2024-11-26",
       "ticker": "2374",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 88.9
@@ -5041,9 +4800,15 @@
     },
     {
       "date": "2024-11-26",
-      "ticker": "2348A",
+      "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 75.9
+      "score": 72.9
+    },
+    {
+      "date": "2024-11-26",
+      "ticker": "2328",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.0
     },
     {
       "date": "2024-11-27",
@@ -5053,27 +4818,9 @@
     },
     {
       "date": "2024-11-27",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 113.0
-    },
-    {
-      "date": "2024-11-27",
-      "ticker": "2496",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.8
-    },
-    {
-      "date": "2024-11-27",
       "ticker": "6670",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 94.3
-    },
-    {
-      "date": "2024-11-27",
-      "ticker": "2348A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.4
     },
     {
       "date": "2024-11-27",
@@ -5100,6 +4847,24 @@
       "score": 77.2
     },
     {
+      "date": "2024-11-27",
+      "ticker": "1220",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.8
+    },
+    {
+      "date": "2024-11-27",
+      "ticker": "2480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.2
+    },
+    {
+      "date": "2024-11-27",
+      "ticker": "2609",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.7
+    },
+    {
       "date": "2024-11-28",
       "ticker": "6183",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -5113,21 +4878,9 @@
     },
     {
       "date": "2024-11-28",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 108.0
-    },
-    {
-      "date": "2024-11-28",
       "ticker": "1213",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 102.4
-    },
-    {
-      "date": "2024-11-28",
-      "ticker": "2496",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 97.5
     },
     {
       "date": "2024-11-28",
@@ -5143,33 +4896,33 @@
     },
     {
       "date": "2024-11-28",
-      "ticker": "2348A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.6
-    },
-    {
-      "date": "2024-11-28",
       "ticker": "1220",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 75.9
+    },
+    {
+      "date": "2024-11-28",
+      "ticker": "2480",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.7
+    },
+    {
+      "date": "2024-11-28",
+      "ticker": "6166",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.9
+    },
+    {
+      "date": "2024-11-28",
+      "ticker": "3051",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 54.3
     },
     {
       "date": "2024-11-29",
       "ticker": "6183",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 137.7
-    },
-    {
-      "date": "2024-11-29",
-      "ticker": "2496",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.9
-    },
-    {
-      "date": "2024-11-29",
-      "ticker": "2348A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.3
     },
     {
       "date": "2024-11-29",
@@ -5182,12 +4935,6 @@
       "ticker": "1538",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 81.3
-    },
-    {
-      "date": "2024-11-29",
-      "ticker": "2881B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 81.2
     },
     {
       "date": "2024-11-29",
@@ -5218,12 +4965,6 @@
       "ticker": "1736",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 96.2
-    },
-    {
-      "date": "2024-12-02",
-      "ticker": "2348A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 91.2
     },
     {
       "date": "2024-12-02",
@@ -5287,9 +5028,15 @@
     },
     {
       "date": "2024-12-20",
-      "ticker": "1220",
+      "ticker": "3533",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 73.6
+      "score": 72.1
+    },
+    {
+      "date": "2024-12-20",
+      "ticker": "2929",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.0
     }
   ]
 }

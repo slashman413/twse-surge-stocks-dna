@@ -1,17 +1,6 @@
 {
   "trades": [
     {
-      "ticker": "1470",
-      "buy_date": "2018-01-05",
-      "buy_price": 11.95,
-      "sell_date": "2018-01-22",
-      "sell_price": 10.73,
-      "shares": 25094,
-      "pl": -30810.59,
-      "pl_pct": -10.27,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-10%)"
-    },
-    {
       "ticker": "5215",
       "buy_date": "2018-01-08",
       "buy_price": 15.76,
@@ -100,6 +89,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "1470",
+      "buy_date": "2018-01-05",
+      "buy_price": 11.95,
+      "sell_date": "2018-02-09",
+      "sell_price": 11.95,
+      "shares": 25094,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "8046",
       "buy_date": "2018-01-08",
       "buy_price": 19.79,
@@ -108,17 +108,6 @@
       "shares": 15157,
       "pl": -14772.42,
       "pl_pct": -4.92,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2546",
-      "buy_date": "2018-02-01",
-      "buy_price": 14.03,
-      "sell_date": "2018-02-09",
-      "sell_price": 13.26,
-      "shares": 21378,
-      "pl": -16446.66,
-      "pl_pct": -5.48,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -144,26 +133,15 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
-      "ticker": "2546",
-      "buy_date": "2018-03-13",
-      "buy_price": 13.97,
-      "sell_date": "2018-03-19",
-      "sell_price": 12.43,
-      "shares": 21473,
-      "pl": -33039.5,
-      "pl_pct": -11.01,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
-    },
-    {
       "ticker": "6230",
       "buy_date": "2018-03-15",
       "buy_price": 82.92,
-      "sell_date": "2018-04-17",
-      "sell_price": 74.3,
+      "sell_date": "2018-04-23",
+      "sell_price": 70.35,
       "shares": 3617,
-      "pl": -31169.66,
-      "pl_pct": -10.39,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-13%)"
+      "pl": -45482.25,
+      "pl_pct": -15.16,
+      "sell_reason": "\u505c\u640d(-15%)"
     },
     {
       "ticker": "2325",
@@ -185,6 +163,17 @@
       "shares": 23339,
       "pl": 2166.01,
       "pl_pct": 0.72,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2546",
+      "buy_date": "2018-03-13",
+      "buy_price": 13.97,
+      "sell_date": "2018-04-26",
+      "sell_price": 15.36,
+      "shares": 21473,
+      "pl": 29735.55,
+      "pl_pct": 9.91,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -240,28 +229,6 @@
       "shares": 9651,
       "pl": 29788.52,
       "pl_pct": 9.93,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2458",
-      "buy_date": "2018-03-20",
-      "buy_price": 25.49,
-      "sell_date": "2018-04-26",
-      "sell_price": 24.44,
-      "shares": 11767,
-      "pl": -12388.11,
-      "pl_pct": -4.13,
-      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
-    },
-    {
-      "ticker": "2524",
-      "buy_date": "2018-04-19",
-      "buy_price": 19.88,
-      "sell_date": "2018-04-26",
-      "sell_price": 20.1,
-      "shares": 15092,
-      "pl": 3355.6,
-      "pl_pct": 1.12,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -364,6 +331,17 @@
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
+      "ticker": "3338",
+      "buy_date": "2018-05-17",
+      "buy_price": 16.74,
+      "sell_date": "2018-06-28",
+      "sell_price": 17.53,
+      "shares": 17918,
+      "pl": 14108.87,
+      "pl_pct": 4.7,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
       "ticker": "2524",
       "buy_date": "2018-05-22",
       "buy_price": 20.01,
@@ -406,17 +384,6 @@
       "pl": -4008.85,
       "pl_pct": -1.34,
       "sell_reason": "RSI<35"
-    },
-    {
-      "ticker": "1730",
-      "buy_date": "2018-07-31",
-      "buy_price": 43.57,
-      "sell_date": "2018-08-13",
-      "sell_price": 39.86,
-      "shares": 6885,
-      "pl": -25541.06,
-      "pl_pct": -8.51,
-      "sell_reason": "\u79fb\u52d5\u505c\u5229(-12%)"
     },
     {
       "ticker": "2524",
@@ -482,6 +449,17 @@
       "shares": 4767,
       "pl": 12146.69,
       "pl_pct": 4.05,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1730",
+      "buy_date": "2018-07-31",
+      "buy_price": 43.57,
+      "sell_date": "2018-08-16",
+      "sell_price": 40.17,
+      "shares": 6885,
+      "pl": -23367.34,
+      "pl_pct": -7.79,
       "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
     },
     {
@@ -618,1152 +596,1152 @@
     },
     {
       "date": "2018-01-23",
-      "equity": 3001051.84,
+      "equity": 3001862.63,
       "type": "daily"
     },
     {
       "date": "2018-01-24",
-      "equity": 3002621.79,
+      "equity": 3004243.41,
       "type": "daily"
     },
     {
       "date": "2018-01-25",
-      "equity": 2990052.7,
+      "equity": 2990863.49,
       "type": "daily"
     },
     {
       "date": "2018-01-26",
-      "equity": 2988066.71,
+      "equity": 3018877.3,
       "type": "daily"
     },
     {
       "date": "2018-01-29",
-      "equity": 3001324.17,
+      "equity": 3001324.18,
       "type": "daily"
     },
     {
       "date": "2018-01-30",
-      "equity": 2992787.93,
+      "equity": 2996841.96,
       "type": "daily"
     },
     {
       "date": "2018-01-31",
-      "equity": 2994418.25,
+      "equity": 3000904.69,
       "type": "daily"
     },
     {
       "date": "2018-02-01",
-      "equity": 3001811.34,
+      "equity": 3013162.6,
       "type": "daily"
     },
     {
       "date": "2018-02-02",
-      "equity": 3003734.8,
+      "equity": 3019645.01,
       "type": "daily"
     },
     {
       "date": "2018-02-05",
-      "equity": 3001010.56,
+      "equity": 3036426.19,
       "type": "daily"
     },
     {
       "date": "2018-02-06",
-      "equity": 2917922.83,
+      "equity": 2949927.72,
       "type": "hold"
     },
     {
       "date": "2018-02-07",
-      "equity": 2950922.72,
+      "equity": 2968240.9,
       "type": "hold"
     },
     {
       "date": "2018-02-08",
-      "equity": 2946478.59,
+      "equity": 2989130.77,
       "type": "hold"
     },
     {
       "date": "2018-02-09",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "crash"
     },
     {
       "date": "2018-02-12",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "hold"
     },
     {
       "date": "2018-02-21",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "hold"
     },
     {
       "date": "2018-02-22",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "hold"
     },
     {
       "date": "2018-02-23",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "hold"
     },
     {
       "date": "2018-02-26",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "hold"
     },
     {
       "date": "2018-02-27",
-      "equity": 2935761.96,
+      "equity": 2983019.21,
       "type": "daily"
     },
     {
       "date": "2018-03-01",
-      "equity": 2935027.7,
+      "equity": 2982284.95,
       "type": "hold"
     },
     {
       "date": "2018-03-02",
-      "equity": 2933845.86,
+      "equity": 2981103.11,
       "type": "hold"
     },
     {
       "date": "2018-03-05",
-      "equity": 2921913.32,
+      "equity": 2969170.57,
       "type": "hold"
     },
     {
       "date": "2018-03-06",
-      "equity": 2924277.0,
+      "equity": 2971534.25,
       "type": "hold"
     },
     {
       "date": "2018-03-07",
-      "equity": 2921775.8,
+      "equity": 2969033.05,
       "type": "crash"
     },
     {
       "date": "2018-03-08",
-      "equity": 2921775.8,
+      "equity": 2969033.05,
       "type": "hold"
     },
     {
       "date": "2018-03-09",
-      "equity": 2921775.8,
+      "equity": 2969033.05,
       "type": "hold"
     },
     {
       "date": "2018-03-12",
-      "equity": 2921775.8,
+      "equity": 2969033.05,
       "type": "daily"
     },
     {
       "date": "2018-03-13",
-      "equity": 2925024.82,
+      "equity": 2972282.07,
       "type": "daily"
     },
     {
       "date": "2018-03-14",
-      "equity": 2932676.65,
+      "equity": 2979933.9,
       "type": "daily"
     },
     {
       "date": "2018-03-15",
-      "equity": 2937146.71,
+      "equity": 2984403.96,
       "type": "daily"
     },
     {
       "date": "2018-03-16",
-      "equity": 2941101.38,
+      "equity": 2988358.63,
       "type": "daily"
     },
     {
       "date": "2018-03-19",
-      "equity": 2944390.42,
+      "equity": 2991647.67,
       "type": "daily"
     },
     {
       "date": "2018-03-20",
-      "equity": 2906729.45,
+      "equity": 3008171.46,
       "type": "daily"
     },
     {
       "date": "2018-03-21",
-      "equity": 2934104.31,
+      "equity": 3030162.79,
       "type": "daily"
     },
     {
       "date": "2018-03-22",
-      "equity": 2928713.01,
+      "equity": 3031450.09,
       "type": "daily"
     },
     {
       "date": "2018-03-23",
-      "equity": 2911926.84,
+      "equity": 3027650.97,
       "type": "hold"
     },
     {
       "date": "2018-03-26",
-      "equity": 2938230.99,
+      "equity": 3052272.21,
       "type": "hold"
     },
     {
       "date": "2018-03-27",
-      "equity": 2951740.91,
+      "equity": 3055447.09,
       "type": "daily"
     },
     {
       "date": "2018-03-28",
-      "equity": 2945453.32,
+      "equity": 3047538.46,
       "type": "hold"
     },
     {
       "date": "2018-03-29",
-      "equity": 2944679.54,
+      "equity": 3051126.08,
       "type": "hold"
     },
     {
       "date": "2018-03-30",
-      "equity": 2944505.25,
+      "equity": 3047956.14,
       "type": "daily"
     },
     {
       "date": "2018-04-02",
-      "equity": 2948603.88,
+      "equity": 3056653.79,
       "type": "hold"
     },
     {
       "date": "2018-04-03",
-      "equity": 2947010.99,
+      "equity": 3062391.47,
       "type": "hold"
     },
     {
       "date": "2018-04-09",
-      "equity": 2940218.18,
+      "equity": 3055598.66,
       "type": "hold"
     },
     {
       "date": "2018-04-10",
-      "equity": 2952283.27,
+      "equity": 3067672.59,
       "type": "daily"
     },
     {
       "date": "2018-04-11",
-      "equity": 2929703.54,
+      "equity": 3049057.59,
       "type": "daily"
     },
     {
       "date": "2018-04-12",
-      "equity": 2947070.13,
+      "equity": 3078679.72,
       "type": "daily"
     },
     {
       "date": "2018-04-13",
-      "equity": 2939627.35,
+      "equity": 3073880.11,
       "type": "daily"
     },
     {
       "date": "2018-04-16",
-      "equity": 2943167.11,
+      "equity": 3072415.34,
       "type": "daily"
     },
     {
       "date": "2018-04-17",
-      "equity": 2922172.64,
+      "equity": 3049209.74,
       "type": "hold"
     },
     {
       "date": "2018-04-18",
-      "equity": 2943767.51,
+      "equity": 3058974.91,
       "type": "hold"
     },
     {
       "date": "2018-04-19",
-      "equity": 2938173.73,
+      "equity": 3049629.61,
       "type": "daily"
     },
     {
       "date": "2018-04-20",
-      "equity": 2958300.28,
+      "equity": 3069397.6,
       "type": "hold"
     },
     {
       "date": "2018-04-23",
-      "equity": 2958383.07,
+      "equity": 3060020.35,
       "type": "hold"
     },
     {
       "date": "2018-04-24",
-      "equity": 2941691.54,
+      "equity": 3057401.46,
       "type": "hold"
     },
     {
       "date": "2018-04-25",
-      "equity": 2938142.83,
+      "equity": 3055225.9,
       "type": "hold"
     },
     {
       "date": "2018-04-26",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "crash"
     },
     {
       "date": "2018-04-27",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-04-30",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-02",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-03",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-04",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-07",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-08",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-09",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-10",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "hold"
     },
     {
       "date": "2018-05-11",
-      "equity": 2934163.17,
+      "equity": 3038915.39,
       "type": "daily"
     },
     {
       "date": "2018-05-14",
-      "equity": 2933363.72,
+      "equity": 3038115.94,
       "type": "daily"
     },
     {
       "date": "2018-05-15",
-      "equity": 2935134.69,
+      "equity": 3039886.91,
       "type": "daily"
     },
     {
       "date": "2018-05-16",
-      "equity": 2935326.2,
+      "equity": 3040078.42,
       "type": "daily"
     },
     {
       "date": "2018-05-17",
-      "equity": 2932661.38,
+      "equity": 3037413.6,
       "type": "daily"
     },
     {
       "date": "2018-05-18",
-      "equity": 2930549.08,
+      "equity": 3033816.15,
       "type": "daily"
     },
     {
       "date": "2018-05-21",
-      "equity": 2925753.94,
+      "equity": 3026050.7,
       "type": "daily"
     },
     {
       "date": "2018-05-22",
-      "equity": 2918280.66,
+      "equity": 3021547.73,
       "type": "daily"
     },
     {
       "date": "2018-05-23",
-      "equity": 2921123.85,
+      "equity": 3022905.76,
       "type": "daily"
     },
     {
       "date": "2018-05-24",
-      "equity": 2934224.62,
+      "equity": 3036006.54,
       "type": "daily"
     },
     {
       "date": "2018-05-25",
-      "equity": 2925014.33,
+      "equity": 3026796.24,
       "type": "daily"
     },
     {
       "date": "2018-05-28",
-      "equity": 2936938.1,
+      "equity": 3053571.47,
       "type": "daily"
     },
     {
       "date": "2018-05-29",
-      "equity": 2934234.02,
+      "equity": 3051609.96,
       "type": "daily"
     },
     {
       "date": "2018-05-30",
-      "equity": 2923038.2,
+      "equity": 3033731.0,
       "type": "hold"
     },
     {
       "date": "2018-05-31",
-      "equity": 2942011.83,
+      "equity": 3052704.63,
       "type": "daily"
     },
     {
       "date": "2018-06-01",
-      "equity": 2945724.99,
+      "equity": 3054932.64,
       "type": "daily"
     },
     {
       "date": "2018-06-04",
-      "equity": 2966372.95,
+      "equity": 3080036.03,
       "type": "daily"
     },
     {
       "date": "2018-06-05",
-      "equity": 2958173.59,
+      "equity": 3082232.7,
       "type": "daily"
     },
     {
       "date": "2018-06-06",
-      "equity": 2965562.3,
+      "equity": 3087393.69,
       "type": "daily"
     },
     {
       "date": "2018-06-07",
-      "equity": 2963746.95,
+      "equity": 3091518.93,
       "type": "daily"
     },
     {
       "date": "2018-06-08",
-      "equity": 2968607.86,
+      "equity": 3104548.13,
       "type": "daily"
     },
     {
       "date": "2018-06-11",
-      "equity": 2990984.19,
+      "equity": 3142518.51,
       "type": "daily"
     },
     {
       "date": "2018-06-12",
-      "equity": 2982668.28,
+      "equity": 3131232.3,
       "type": "daily"
     },
     {
       "date": "2018-06-13",
-      "equity": 2976577.16,
+      "equity": 3114002.58,
       "type": "daily"
     },
     {
       "date": "2018-06-14",
-      "equity": 2970720.81,
+      "equity": 3110373.95,
       "type": "daily"
     },
     {
       "date": "2018-06-15",
-      "equity": 2969195.04,
+      "equity": 3104392.75,
       "type": "daily"
     },
     {
       "date": "2018-06-19",
-      "equity": 2956506.09,
+      "equity": 3092446.36,
       "type": "daily"
     },
     {
       "date": "2018-06-20",
-      "equity": 2956262.3,
+      "equity": 3097400.58,
       "type": "daily"
     },
     {
       "date": "2018-06-21",
-      "equity": 2967631.57,
+      "equity": 3103571.84,
       "type": "daily"
     },
     {
       "date": "2018-06-22",
-      "equity": 2975795.83,
+      "equity": 3112478.68,
       "type": "hold"
     },
     {
       "date": "2018-06-25",
-      "equity": 3005961.89,
+      "equity": 3130021.0,
       "type": "hold"
     },
     {
       "date": "2018-06-26",
-      "equity": 3025731.93,
+      "equity": 3144593.02,
       "type": "hold"
     },
     {
       "date": "2018-06-27",
-      "equity": 2994135.73,
+      "equity": 3110769.11,
       "type": "hold"
     },
     {
       "date": "2018-06-28",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "crash"
     },
     {
       "date": "2018-06-29",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-02",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-03",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-04",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-05",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-06",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-09",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-10",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-11",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-12",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-13",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-16",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-17",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-18",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-19",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-20",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-23",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-24",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-25",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "hold"
     },
     {
       "date": "2018-07-26",
-      "equity": 3012206.6,
+      "equity": 3131067.69,
       "type": "daily"
     },
     {
       "date": "2018-07-27",
-      "equity": 3011538.44,
+      "equity": 3130399.53,
       "type": "daily"
     },
     {
       "date": "2018-07-30",
-      "equity": 3006991.31,
+      "equity": 3125852.4,
       "type": "daily"
     },
     {
       "date": "2018-07-31",
-      "equity": 3011428.24,
+      "equity": 3130289.33,
       "type": "daily"
     },
     {
       "date": "2018-08-01",
-      "equity": 3027600.09,
+      "equity": 3146461.18,
       "type": "daily"
     },
     {
       "date": "2018-08-02",
-      "equity": 3007516.44,
+      "equity": 3126377.53,
       "type": "hold"
     },
     {
       "date": "2018-08-03",
-      "equity": 3022489.79,
+      "equity": 3141350.89,
       "type": "hold"
     },
     {
       "date": "2018-08-06",
-      "equity": 3036721.07,
+      "equity": 3155582.16,
       "type": "hold"
     },
     {
       "date": "2018-08-07",
-      "equity": 3016191.41,
+      "equity": 3135052.5,
       "type": "hold"
     },
     {
       "date": "2018-08-08",
-      "equity": 3042216.57,
+      "equity": 3161077.66,
       "type": "daily"
     },
     {
       "date": "2018-08-09",
-      "equity": 3037530.0,
+      "equity": 3156391.09,
       "type": "daily"
     },
     {
       "date": "2018-08-10",
-      "equity": 3050902.7,
+      "equity": 3169763.79,
       "type": "hold"
     },
     {
       "date": "2018-08-13",
-      "equity": 3006186.55,
+      "equity": 3125047.64,
       "type": "hold"
     },
     {
       "date": "2018-08-14",
-      "equity": 3015807.6,
+      "equity": 3141189.81,
       "type": "hold"
     },
     {
       "date": "2018-08-15",
-      "equity": 3021745.61,
+      "equity": 3143867.25,
       "type": "hold"
     },
     {
       "date": "2018-08-16",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "crash"
     },
     {
       "date": "2018-08-17",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-20",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-21",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-22",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-23",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-24",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-27",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-28",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-29",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "hold"
     },
     {
       "date": "2018-08-30",
-      "equity": 3010815.7,
+      "equity": 3131850.51,
       "type": "daily"
     },
     {
       "date": "2018-08-31",
-      "equity": 3014851.07,
+      "equity": 3135885.87,
       "type": "hold"
     },
     {
       "date": "2018-09-03",
-      "equity": 3003736.38,
+      "equity": 3124771.18,
       "type": "hold"
     },
     {
       "date": "2018-09-04",
-      "equity": 3006201.17,
+      "equity": 3127235.97,
       "type": "hold"
     },
     {
       "date": "2018-09-05",
-      "equity": 3022474.72,
+      "equity": 3143509.53,
       "type": "hold"
     },
     {
       "date": "2018-09-06",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "crash"
     },
     {
       "date": "2018-09-07",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-10",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-11",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-12",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-13",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-14",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-17",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-18",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-19",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-20",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-21",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-25",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-26",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-27",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-09-28",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-01",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-02",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-03",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-04",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-05",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-08",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-09",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-11",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-12",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-15",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-16",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-17",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-18",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-19",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-22",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-23",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-24",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-25",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-26",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-29",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-30",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-10-31",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-01",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-02",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-05",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-06",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-07",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-08",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-09",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-12",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-13",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-14",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-15",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-16",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-19",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-20",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-21",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-22",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-23",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-26",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-27",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-28",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-29",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-11-30",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-03",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-04",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-05",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-06",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-07",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-10",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-11",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-12",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-13",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-14",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-17",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-18",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-19",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-20",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-21",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-24",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-25",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-26",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-27",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     },
     {
       "date": "2018-12-28",
-      "equity": 3022365.85,
+      "equity": 3143400.66,
       "type": "hold"
     }
   ],
@@ -1791,12 +1769,6 @@
       "ticker": "1315",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 44.5
-    },
-    {
-      "date": "2018-02-06",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 38.5
     },
     {
       "date": "2018-02-06",
@@ -1833,12 +1805,6 @@
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.1
-    },
-    {
-      "date": "2018-02-07",
-      "ticker": "1470",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 64.1
     },
     {
       "date": "2018-02-07",
@@ -2070,12 +2036,6 @@
     },
     {
       "date": "2018-02-22",
-      "ticker": "2441",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -7.2
-    },
-    {
-      "date": "2018-02-22",
       "ticker": "3130",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -33.3
@@ -2121,12 +2081,6 @@
       "ticker": "1773",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -4.0
-    },
-    {
-      "date": "2018-02-23",
-      "ticker": "2441",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -7.1
     },
     {
       "date": "2018-02-23",
@@ -2358,9 +2312,9 @@
     },
     {
       "date": "2018-03-06",
-      "ticker": "9935",
+      "ticker": "1723",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.6
+      "score": 12.8
     },
     {
       "date": "2018-03-08",
@@ -2478,9 +2432,9 @@
     },
     {
       "date": "2018-03-09",
-      "ticker": "9935",
+      "ticker": "6215",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 19.4
+      "score": -11.6
     },
     {
       "date": "2018-03-23",
@@ -2556,12 +2510,6 @@
     },
     {
       "date": "2018-03-26",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 22.9
-    },
-    {
-      "date": "2018-03-26",
       "ticker": "6112",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 16.7
@@ -2595,6 +2543,12 @@
       "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 103.4
+    },
+    {
+      "date": "2018-03-28",
+      "ticker": "2458",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.7
     },
     {
       "date": "2018-03-28",
@@ -2688,6 +2642,12 @@
     },
     {
       "date": "2018-04-02",
+      "ticker": "2458",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.8
+    },
+    {
+      "date": "2018-04-02",
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.1
@@ -2721,6 +2681,12 @@
       "ticker": "3026",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -19.1
+    },
+    {
+      "date": "2018-04-03",
+      "ticker": "2458",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.7
     },
     {
       "date": "2018-04-03",
@@ -2772,6 +2738,12 @@
     },
     {
       "date": "2018-04-09",
+      "ticker": "2458",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.9
+    },
+    {
+      "date": "2018-04-09",
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.2
@@ -2820,12 +2792,6 @@
     },
     {
       "date": "2018-04-17",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.3
-    },
-    {
-      "date": "2018-04-17",
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 80.7
@@ -2868,12 +2834,6 @@
     },
     {
       "date": "2018-04-18",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 81.9
-    },
-    {
-      "date": "2018-04-18",
       "ticker": "6176",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 81.2
@@ -2883,12 +2843,6 @@
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 74.1
-    },
-    {
-      "date": "2018-04-18",
-      "ticker": "2539",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 15.8
     },
     {
       "date": "2018-04-18",
@@ -2915,6 +2869,12 @@
       "score": -17.9
     },
     {
+      "date": "2018-04-18",
+      "ticker": "1701",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -20.0
+    },
+    {
       "date": "2018-04-20",
       "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -2922,15 +2882,15 @@
     },
     {
       "date": "2018-04-20",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 83.2
-    },
-    {
-      "date": "2018-04-20",
       "ticker": "6176",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 79.2
+    },
+    {
+      "date": "2018-04-20",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 76.0
     },
     {
       "date": "2018-04-20",
@@ -2958,15 +2918,15 @@
     },
     {
       "date": "2018-04-23",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 82.8
-    },
-    {
-      "date": "2018-04-23",
       "ticker": "6176",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 78.5
+    },
+    {
+      "date": "2018-04-23",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.5
     },
     {
       "date": "2018-04-23",
@@ -3000,9 +2960,15 @@
     },
     {
       "date": "2018-04-24",
-      "ticker": "2546",
+      "ticker": "2458",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 82.1
+      "score": 85.1
+    },
+    {
+      "date": "2018-04-24",
+      "ticker": "2524",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.5
     },
     {
       "date": "2018-04-24",
@@ -3024,9 +2990,9 @@
     },
     {
       "date": "2018-04-25",
-      "ticker": "2546",
+      "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 79.7
+      "score": 75.6
     },
     {
       "date": "2018-04-25",
@@ -3042,12 +3008,6 @@
     },
     {
       "date": "2018-04-25",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 23.4
-    },
-    {
-      "date": "2018-04-25",
       "ticker": "9958",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 7.3
@@ -3057,6 +3017,12 @@
       "ticker": "6112",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 6.3
+    },
+    {
+      "date": "2018-04-25",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -3.3
     },
     {
       "date": "2018-04-27",
@@ -3102,12 +3068,6 @@
     },
     {
       "date": "2018-04-27",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 23.6
-    },
-    {
-      "date": "2018-04-27",
       "ticker": "6112",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 15.1
@@ -3117,6 +3077,12 @@
       "ticker": "2850",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 2.3
+    },
+    {
+      "date": "2018-04-27",
+      "ticker": "2851",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -2.0
     },
     {
       "date": "2018-04-30",
@@ -3234,9 +3200,9 @@
     },
     {
       "date": "2018-05-02",
-      "ticker": "2539",
+      "ticker": "2850",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 20.4
+      "score": 7.7
     },
     {
       "date": "2018-05-03",
@@ -3336,12 +3302,6 @@
     },
     {
       "date": "2018-05-04",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 38.4
-    },
-    {
-      "date": "2018-05-04",
       "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 29.7
@@ -3354,9 +3314,15 @@
     },
     {
       "date": "2018-05-04",
-      "ticker": "2838A",
+      "ticker": "2535",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.4
+      "score": 10.2
+    },
+    {
+      "date": "2018-05-04",
+      "ticker": "6024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -7.6
     },
     {
       "date": "2018-05-07",
@@ -3390,12 +3356,6 @@
     },
     {
       "date": "2018-05-07",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 38.4
-    },
-    {
-      "date": "2018-05-07",
       "ticker": "2480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 28.1
@@ -3408,15 +3368,21 @@
     },
     {
       "date": "2018-05-07",
-      "ticker": "2539",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 15.7
-    },
-    {
-      "date": "2018-05-07",
       "ticker": "2851",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -1.8
+    },
+    {
+      "date": "2018-05-07",
+      "ticker": "6024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -9.8
+    },
+    {
+      "date": "2018-05-07",
+      "ticker": "1725",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -13.5
     },
     {
       "date": "2018-05-08",
@@ -3534,9 +3500,9 @@
     },
     {
       "date": "2018-05-09",
-      "ticker": "2539",
+      "ticker": "6024",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.3
+      "score": -8.4
     },
     {
       "date": "2018-05-10",
@@ -4053,12 +4019,6 @@
       "ticker": "5525",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 37.5
-    },
-    {
-      "date": "2018-07-05",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.1
     },
     {
       "date": "2018-07-05",
@@ -4680,12 +4640,6 @@
     },
     {
       "date": "2018-07-23",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.1
-    },
-    {
-      "date": "2018-07-23",
       "ticker": "2206",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": -13.9
@@ -4746,9 +4700,9 @@
     },
     {
       "date": "2018-07-24",
-      "ticker": "2891B",
+      "ticker": "2206",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.1
+      "score": -13.5
     },
     {
       "date": "2018-07-25",
@@ -5034,12 +4988,6 @@
     },
     {
       "date": "2018-08-14",
-      "ticker": "1203",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.0
-    },
-    {
-      "date": "2018-08-14",
       "ticker": "2501",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.2
@@ -5058,6 +5006,12 @@
     },
     {
       "date": "2018-08-14",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.0
+    },
+    {
+      "date": "2018-08-14",
       "ticker": "2530",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 27.9
@@ -5067,12 +5021,6 @@
       "ticker": "8480",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 27.9
-    },
-    {
-      "date": "2018-08-15",
-      "ticker": "1203",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 86.7
     },
     {
       "date": "2018-08-15",
@@ -5091,6 +5039,12 @@
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.1
+    },
+    {
+      "date": "2018-08-15",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.7
     },
     {
       "date": "2018-08-15",
@@ -5238,12 +5192,6 @@
     },
     {
       "date": "2018-08-21",
-      "ticker": "1203",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 87.4
-    },
-    {
-      "date": "2018-08-21",
       "ticker": "2404",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.9
@@ -5271,6 +5219,12 @@
       "ticker": "5215",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 67.1
+    },
+    {
+      "date": "2018-08-21",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.4
     },
     {
       "date": "2018-08-21",
@@ -5688,12 +5642,6 @@
     },
     {
       "date": "2018-09-04",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2018-09-04",
       "ticker": "1102",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 5.8
@@ -5838,12 +5786,6 @@
     },
     {
       "date": "2018-09-10",
-      "ticker": "1203",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 88.1
-    },
-    {
-      "date": "2018-09-10",
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 72.3
@@ -5853,6 +5795,12 @@
       "ticker": "6285",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 58.6
+    },
+    {
+      "date": "2018-09-10",
+      "ticker": "1203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.1
     },
     {
       "date": "2018-09-10",
@@ -5928,15 +5876,9 @@
     },
     {
       "date": "2018-09-11",
-      "ticker": "2887E",
+      "ticker": "2884",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 23.4
-    },
-    {
-      "date": "2018-09-11",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.3
+      "score": -7.9
     },
     {
       "date": "2018-09-12",
@@ -6432,12 +6374,6 @@
     },
     {
       "date": "2018-09-25",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 23.5
-    },
-    {
-      "date": "2018-09-25",
       "ticker": "1722",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 21.2
@@ -6546,12 +6482,6 @@
     },
     {
       "date": "2018-09-27",
-      "ticker": "2887E",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 23.3
-    },
-    {
-      "date": "2018-09-27",
       "ticker": "2539",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 15.5
@@ -6561,6 +6491,12 @@
       "ticker": "2442",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 14.8
+    },
+    {
+      "date": "2018-09-27",
+      "ticker": "2850",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 2.7
     },
     {
       "date": "2018-09-28",
@@ -6846,12 +6782,6 @@
     },
     {
       "date": "2018-10-05",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 88.5
-    },
-    {
-      "date": "2018-10-05",
       "ticker": "1203",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.8
@@ -6888,6 +6818,12 @@
     },
     {
       "date": "2018-10-05",
+      "ticker": "2546",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.5
+    },
+    {
+      "date": "2018-10-05",
       "ticker": "4904",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 56.8
@@ -6906,12 +6842,6 @@
     },
     {
       "date": "2018-10-08",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 95.9
-    },
-    {
-      "date": "2018-10-08",
       "ticker": "5288",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 85.8
@@ -6927,6 +6857,12 @@
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 76.8
+    },
+    {
+      "date": "2018-10-08",
+      "ticker": "2546",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.9
     },
     {
       "date": "2018-10-08",
@@ -6966,12 +6902,6 @@
     },
     {
       "date": "2018-10-09",
-      "ticker": "2546",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 96.8
-    },
-    {
-      "date": "2018-10-09",
       "ticker": "2404",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 86.7
@@ -7005,6 +6935,12 @@
       "ticker": "2524",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 74.5
+    },
+    {
+      "date": "2018-10-09",
+      "ticker": "2546",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.8
     },
     {
       "date": "2018-10-09",
@@ -7095,12 +7031,6 @@
       "ticker": "1203",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 55.2
-    },
-    {
-      "date": "2018-10-12",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 15.0
     },
     {
       "date": "2018-10-15",
@@ -7265,12 +7195,6 @@
       "score": 52.7
     },
     {
-      "date": "2018-10-24",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.2
-    },
-    {
       "date": "2018-10-25",
       "ticker": "2597",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -7305,12 +7229,6 @@
       "ticker": "6278",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 47.1
-    },
-    {
-      "date": "2018-10-25",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
     },
     {
       "date": "2018-10-26",
@@ -7397,18 +7315,6 @@
       "score": 52.2
     },
     {
-      "date": "2018-10-30",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
-    },
-    {
-      "date": "2018-10-30",
-      "ticker": "2881B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": -0.1
-    },
-    {
       "date": "2018-10-31",
       "ticker": "2404",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -7445,12 +7351,6 @@
       "score": 51.1
     },
     {
-      "date": "2018-10-31",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
       "date": "2018-11-01",
       "ticker": "5288",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -7475,12 +7375,6 @@
       "score": 56.4
     },
     {
-      "date": "2018-11-01",
-      "ticker": "2891B",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.9
-    },
-    {
       "date": "2018-11-02",
       "ticker": "2404",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -7503,6 +7397,12 @@
       "ticker": "3054",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 51.3
+    },
+    {
+      "date": "2018-11-02",
+      "ticker": "6625",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.3
     },
     {
       "date": "2018-11-05",
@@ -7569,6 +7469,12 @@
       "ticker": "4958",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 47.8
+    },
+    {
+      "date": "2018-11-08",
+      "ticker": "6625",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.8
     },
     {
       "date": "2018-11-09",
@@ -8183,12 +8089,6 @@
       "score": 48.9
     },
     {
-      "date": "2018-12-11",
-      "ticker": "3432",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 30.8
-    },
-    {
       "date": "2018-12-14",
       "ticker": "9908",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
@@ -8205,12 +8105,6 @@
       "ticker": "3229",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 50.5
-    },
-    {
-      "date": "2018-12-14",
-      "ticker": "3432",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 29.4
     },
     {
       "date": "2018-12-17",
@@ -8241,12 +8135,6 @@
       "ticker": "3229",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 45.9
-    },
-    {
-      "date": "2018-12-17",
-      "ticker": "3432",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 27.1
     },
     {
       "date": "2018-12-18",
@@ -8382,12 +8270,6 @@
     },
     {
       "date": "2018-12-24",
-      "ticker": "3432",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 36.3
-    },
-    {
-      "date": "2018-12-24",
       "ticker": "1592",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 28.5
@@ -8411,22 +8293,10 @@
       "score": 27.3
     },
     {
-      "date": "2018-12-25",
-      "ticker": "3432",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 26.9
-    },
-    {
       "date": "2018-12-26",
       "ticker": "3665",
       "reason": "\u5927\u76e4\u975e\u591a\u982d",
       "score": 49.3
-    },
-    {
-      "date": "2018-12-26",
-      "ticker": "2838A",
-      "reason": "\u5927\u76e4\u975e\u591a\u982d",
-      "score": 14.8
     },
     {
       "date": "2018-12-26",
