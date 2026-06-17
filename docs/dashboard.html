@@ -306,6 +306,7 @@
 const SUMMARY_URL = './yearly_backtests/summary_v12.json';
 const SIGNALS_URL = './yearly_backtests/signals_data.json';
 const KLINE_URL = './yearly_backtests/kline_data.json';
+const LIVE_KLINE_URL = './yearly_backtests/live_kline.json';
 const STOCK_PERF_URL = './yearly_backtests/stock_performance.json';
 let yearlyChart1 = null;
 let yearlyChart2 = null;
@@ -1030,10 +1031,19 @@ async function openKline(ticker) {
   document.getElementById('kline-summary').textContent = '載入中...';
 
   try {
-    const resp = await fetch(KLINE_URL);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const allData = await resp.json();
-    const data = allData[ticker];
+    // Try live K-line data first, fall back to backtest data
+    let resp = await fetch(LIVE_KLINE_URL);
+    let isLive = resp.ok;
+    let allData = isLive ? await resp.json() : {};
+    let data = allData[ticker];
+
+    if (!data) {
+      resp = await fetch(KLINE_URL);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      allData = await resp.json();
+      data = allData[ticker];
+      isLive = false;
+    }
     if (!data) throw new Error(`無 ${ticker} K線資料`);
 
     const kline = data.kline;
