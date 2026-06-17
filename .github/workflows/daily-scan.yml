@@ -1,0 +1,35 @@
+name: Daily Scan
+
+on:
+  schedule:
+    # Mon-Fri 14:00 UTC = 22:00 TW (after market close)
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:  # manual trigger
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy
+
+      - name: Run daily scan
+        run: python code/ci_scan.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "hermes-agent-deepseek-v4-flash"
+          git config user.email "hermes-agent@nousresearch.com"
+          git add docs/yearly_backtests/signals_data.json docs/latest_scan.html
+          git diff --cached --quiet || \
+            git commit -m "auto: daily scan update $(date +'%Y-%m-%d')
+
+          author: hermes-agent-deepseek-v4-flash"
+          git push

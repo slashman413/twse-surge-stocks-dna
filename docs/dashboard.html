@@ -320,11 +320,17 @@ let tradeVolChart = null;
 let stockNames = {};
 let tradeChartsCache = {};
 
+let signalsLoaded = false;
+
 function switchTab(name, btn) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
   btn.classList.add('active');
+  if (name === 'signals' && !signalsLoaded) {
+    signalsLoaded = true;
+    loadSignals();
+  }
 }
 
 async function loadData() {
@@ -861,31 +867,51 @@ async function loadSignals() {
 
     const mk = data.market_bullish && data.market_trend_up ? '多頭' : data.market_crash ? '崩跌' : '盤整';
     document.getElementById('signals-market-info').innerHTML =
-      `📅 最新交易日: ${data.date} | 大盤: <strong style="color:${data.market_bullish && data.market_trend_up ? 'var(--green)' : 'var(--red)'}">${mk}</strong> 趨勢${data.market_trend_up ? '向上' : '向下'}`;
+      `📅 ${data.date} | 大盤: <strong style="color:${data.market_bullish && data.market_trend_up ? 'var(--green)' : 'var(--red)'}">${mk}</strong> 趨勢${data.market_trend_up ? '向上' : '向下'} ` +
+      `| score: ${data.market_score || '?'} | 加權指數: ${data.taiex_close ? data.taiex_close.toLocaleString() : '?'}` +
+      (data.reasons ? ` <span style="font-size:0.8rem;color:var(--text-dim);">${data.reasons.slice(0,3).join(' · ')}</span>` : '');
 
-    // ── 只顯示最新日期的訊號 ──
-    const latestDate = data.signals.reduce((a, s) => s.date > a ? s.date : a, '');
-    const recentSignals = data.signals.filter(s => s.date === latestDate);
-    const olderCount = data.signals.length - recentSignals.length;
+    const buySignals = data.signals.filter(s => s.signal === 'BUY' || !s.signal);
+    const sellSignals = data.signals.filter(s => s.signal === 'SELL');
 
     const list = document.getElementById('signals-list');
-    list.innerHTML = `<div style="color:var(--text-dim);font-size:0.85rem;margin-bottom:12px;">📌 ${latestDate} 進場訊號 (${recentSignals.length}檔${olderCount ? `，另有 ${olderCount} 檔舊訊號隱藏` : ''})</div>`;
+    list.innerHTML = '';
 
-    list.innerHTML += recentSignals.map((s, i) => {
-      const distColor = s.dist_ma20 < 0 ? 'var(--green)' : s.dist_ma20 > 1 ? 'var(--red)' : 'var(--yellow)';
-      return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openKline('${s.ticker}')">
-        <div class="signal-rank">${i + 1}</div>
-        <div style="flex:1;">
-          <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''} <span class="signal-score">${s.score}</span></div>
-          <div class="signal-detail">價格 ${Math.round(s.close).toLocaleString()} | 距20MA <span style="color:${distColor}">${s.dist_ma20 >= 0 ? '+' : ''}${s.dist_ma20}%</span> | RSI14 ${Math.round(s.rsi14)} | 加分 ${s.bonus}</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="badge badge-buy">📈 BUY</span>
-        </div>
-      </div>`;
-    }).join('');
+    if (buySignals.length > 0) {
+      list.innerHTML += `<div style="color:var(--green);font-size:0.85rem;margin-bottom:8px;font-weight:600;">📈 買進訊號 (${buySignals.length}檔)</div>`;
+      list.innerHTML += buySignals.map((s, i) => {
+        const distColor = s.dist_ma20 < 0 ? 'var(--green)' : s.dist_ma20 > 1 ? 'var(--red)' : 'var(--yellow)';
+        return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openKline('${s.ticker}')">
+          <div class="signal-rank">${i + 1}</div>
+          <div style="flex:1;">
+            <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''} <span class="signal-score">${s.score}</span></div>
+            <div class="signal-detail">${s.date} | 價格 ${typeof s.close === 'number' ? s.close.toLocaleString('en-US', {minimumFractionDigits:0,maximumFractionDigits:2}) : s.close} | 距20MA <span style="color:${distColor}">${typeof s.dist_ma20 === 'number' ? (s.dist_ma20 >= 0 ? '+' : '') + s.dist_ma20 + '%' : s.dist_ma20}</span> | RSI14 ${typeof s.rsi14 === 'number' ? Math.round(s.rsi14) : s.rsi14}${s.details && s.details.length ? ' | ' + s.details.slice(0,3).join(' ') : ''}</div>
+          </div>
+          <div style="text-align:right;">
+            <span class="badge badge-buy">📈 BUY</span>
+          </div>
+        </div>`;
+      }).join('');
+    }
 
-    // ── 離場訊號（獨立卡片） ──
+    if (sellSignals.length > 0) {
+      list.innerHTML += `<div style="margin-top:16px;color:var(--red);font-size:0.85rem;margin-bottom:8px;font-weight:600;">📉 賣出訊號 (${sellSignals.length}檔)</div>`;
+      list.innerHTML += sellSignals.map((s, i) => {
+        return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;border-left-color:var(--red);">
+          <div class="signal-rank" style="color:var(--red);">${i + 1}</div>
+          <div style="flex:1;">
+            <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''} <span style="color:var(--red);font-size:0.8rem;">${s.score}</span></div>
+            <div class="signal-detail" style="color:var(--red);">${s.date} | 價格 ${typeof s.close === 'number' ? s.close.toLocaleString('en-US', {minimumFractionDigits:0,maximumFractionDigits:2}) : s.close} | RSI14 ${typeof s.rsi14 === 'number' ? Math.round(s.rsi14) : s.rsi14} | ${s.details ? s.details.slice(0,3).join(' · ') : ''}</div>
+          </div>
+          <div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📉 SELL</span></div>
+        </div>`;
+      }).join('');
+    }
+
+    if (buySignals.length === 0 && sellSignals.length === 0) {
+      list.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-dim);">暫無訊號</div>';
+    }
+
     try {
       const kr = await fetch(KLINE_URL);
       const kd = await kr.json();
@@ -897,8 +923,8 @@ async function loadSignals() {
         const last2 = td[td.length - 1];
         const prev2 = td[td.length - 2] || last2;
         const reasons = [];
-        if (last2.rsi14 < 35 && prev2.rsi14 >= 35) reasons.push(`RSI<35(${last2.rsi14})`);
-        if (last2.dist_ma20 < -5) reasons.push(`跌破MA20(${last2.dist_ma20}%)`);
+        if (last2.rsi14 < 35 && prev2.rsi14 >= 35) reasons.push('RSI<' + last2.rsi14);
+        if (last2.dist_ma20 < -5) reasons.push('跌破MA20(' + last2.dist_ma20 + '%)');
         if (last2.adx > 25 && last2.pdi < last2.mdi) reasons.push('DMI空頭');
         if (td.length >= 4 && td.slice(-4).every((p, i, a) => i === 0 || p.c <= a[i-1].c)) reasons.push('連跌4天');
         if (reasons.length > 0) {
@@ -906,24 +932,25 @@ async function loadSignals() {
         }
       }
       if (exitSignals.length > 0) {
-        list.innerHTML += `<div style="margin-top:16px;"><h3 style="font-size:1rem;margin-bottom:8px;">🔴 離場訊號 (${exitSignals.length})</h3>`;
+        list.innerHTML += '<div style="margin-top:16px;"><h3 style="font-size:1rem;margin-bottom:8px;color:var(--red);">🔴 離場訊號 (' + exitSignals.length + ')</h3>';
         list.innerHTML += exitSignals.map((s, i) => {
-          return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;border-left-color:var(--red);" onclick="openKline('${s.ticker}')">
-            <div class="signal-rank" style="color:var(--red);">${i + 1}</div>
-            <div style="flex:1;">
-              <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''}</div>
-              <div class="signal-detail" style="color:var(--red);">${s.reasons.join(' | ')}</div>
-            </div>
-            <div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📉 SELL</span></div>
-          </div>`;
+          return '<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;border-left-color:var(--red);" onclick="openKline(' + "'" + s.ticker + "'" + ')">' +
+            '<div class="signal-rank" style="color:var(--red);">' + (i + 1) + '</div>' +
+            '<div style="flex:1;">' +
+            '<div><span class="signal-ticker">' + s.ticker + '</span>' + (s.name ? ' <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">' + s.name + '</span>' : '') + '</div>' +
+            '<div class="signal-detail" style="color:var(--red);">' + s.reasons.join(' | ') + '</div>' +
+            '</div>' +
+            '<div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📉 SELL</span></div>' +
+            '</div>';
         }).join('');
-        list.innerHTML += `</div>`;
+        list.innerHTML += '</div>';
       }
     } catch(e) {}
   } catch(e) {
     document.getElementById('signals-market-info').textContent = '⚠️ 無法載入訊號資料';
   }
 }
+
 
 function closeKline() {
   document.getElementById('kline-modal').classList.remove('open');
