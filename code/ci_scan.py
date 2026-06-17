@@ -26,6 +26,7 @@ import yfinance as yf
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SIGNALS_DIR = os.path.join(REPO_ROOT, "docs", "yearly_backtests")
 SIGNALS_FILE = os.path.join(SIGNALS_DIR, "signals_data.json")
+KLINE_FILE   = os.path.join(SIGNALS_DIR, "kline_data.json")
 HTML_FILE = os.path.join(REPO_ROOT, "docs", "latest_scan.html")
 os.makedirs(SIGNALS_DIR, exist_ok=True)
 
@@ -347,6 +348,76 @@ def fetch_names(tickers: list[str]) -> dict[str, str]:
     return names
 
 
+
+
+# -- KLine Data Generation ------------------------------------------
+
+
+def generate_kline_data(stocks_data: dict) -> None:
+    """Generate kline_data.json for dashboard K-line charts from yfinance data."""
+    import math
+
+    def safe_round(v, d=2):
+        try:
+            f = float(v)
+            return None if math.isnan(f) else round(f, d)
+        except Exception:
+            return None
+
+    kline_out = {}
+    for ticker, df in stocks_data.items():
+        close = df["Close"]
+        high  = df["High"]
+        low   = df["Low"]
+        vol   = df["Volume"]
+
+        ma20     = close.rolling(20).mean()
+        ma50     = close.rolling(50).mean()
+        rsi14    = rsi(close, 14)
+        rsi60    = rsi(close, 60)
+        vol_ma20 = vol.rolling(20).mean()
+        dm       = dmi(high, low, close, 14)
+        dist_20  = (close - ma20) / ma20 * 100
+        dist_50  = (close - ma50) / ma50 * 100
+
+        kline = []
+        for i in range(len(df)):
+            try:
+                d_raw = df["Date"].iloc[i]
+                d = str(d_raw.date()) if hasattr(d_raw, "date") else str(d_raw)[:10]
+                kline.append({
+                    "d":        d,
+                    "o":        safe_round(df["Open"].iloc[i]),
+                    "h":        safe_round(high.iloc[i]),
+                    "l":        safe_round(low.iloc[i]),
+                    "c":        safe_round(close.iloc[i]),
+                    "v":        int(vol.iloc[i]) if not math.isnan(float(vol.iloc[i])) else 0,
+                    "ma20":     safe_round(ma20.iloc[i]),
+                    "ma50":     safe_round(ma50.iloc[i]),
+                    "rsi14":    safe_round(rsi14.iloc[i], 1),
+                    "rsi60":    safe_round(rsi60.iloc[i], 1),
+                    "adx":      safe_round(dm["adx"].iloc[i], 1),
+                    "pdi":      safe_round(dm["+di"].iloc[i], 1),
+                    "mdi":      safe_round(dm["-di"].iloc[i], 1),
+                    "vol_ma20": int(vol_ma20.iloc[i]) if not math.isnan(float(vol_ma20.iloc[i])) else None,
+                    "dist_ma20": safe_round(dist_20.iloc[i]),
+                    "dist_ma50": safe_round(dist_50.iloc[i]),
+                })
+            except Exception:
+                pass
+
+        kline_out[ticker] = {
+            "ticker":  ticker,
+            "m_rsi4":  safe_round(rsi14.iloc[-1], 1) or 0,
+            "m_adx1":  safe_round(dm["adx"].iloc[-1], 1) or 0,
+            "kline":   kline,
+        }
+
+    with open(KLINE_FILE, "w", encoding="utf-8") as f:
+        json.dump(kline_out, f, ensure_ascii=False, separators=(",", ":"))
+    total_pts = sum(len(v["kline"]) for v in kline_out.values())
+    print(f"\u2705 Saved kline_data.json: {len(kline_out)} stocks, {total_pts} data points")
+
 # ── Main ───────────────────────────────────────────────────────
 
 
@@ -395,6 +466,9 @@ def main():
             continue
 
     print(f"    Loaded {len(stocks_data)} stocks")
+
+    # ── 2.5. Generate kline data ──
+    generate_kline_data(stocks_data)
 
     # ── 3. Evaluate signals ──
     print("\n🔍 Evaluating signals...")
