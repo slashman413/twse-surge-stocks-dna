@@ -4,69 +4,111 @@
   "market_crash": false,
   "market_trend_up": false,
   "market_score": 60,
-  "taiex_close": 45877.390625,
+  "taiex_close": 45809.19140625,
   "reasons": [
-    "DIF210=283.3>0",
+    "DIF210=280.7>0",
     "W%R50=-5>-50",
-    "RSI60=67>50"
+    "RSI60=66>50"
   ],
   "scanned_count": 39,
   "signals": [
     {
-      "ticker": "2317",
-      "name": "Hon Hai Precision Industry Co., Ltd.",
+      "ticker": "1101",
+      "name": "TCC Group Holdings Co., Ltd.",
       "date": "2026-06-17",
-      "score": 60,
-      "close": 269.0,
-      "dist_ma20": 359.72,
-      "rsi14": 98.54,
-      "quality": 60,
+      "score": 70,
+      "close": NaN,
+      "dist_ma20": 0.96,
+      "rsi14": 61.64,
+      "quality": 70,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
         "ADX=25",
-        "RSI=54",
-        "MA20=-0.2%",
-        "W%R=-67"
+        "+DI>-16",
+        "RSI=62",
+        "MA20=+1.0%",
+        "W%R=-49"
       ]
     },
     {
-      "ticker": "3711",
-      "name": "ASE Technology Holding Co., Ltd.",
+      "ticker": "1504",
+      "name": "TECO Electric & Machinery Co., Ltd.",
+      "date": "2026-06-17",
+      "score": 70,
+      "close": NaN,
+      "dist_ma20": -2.62,
+      "rsi14": 50.89,
+      "quality": 70,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=21",
+        "+DI>-23",
+        "RSI=51",
+        "MA20=-2.6%",
+        "W%R=-81"
+      ]
+    },
+    {
+      "ticker": "2603",
+      "name": "Evergreen Marine Corporation (Taiwan) Ltd.",
+      "date": "2026-06-17",
+      "score": 70,
+      "close": NaN,
+      "dist_ma20": -0.51,
+      "rsi14": 58.72,
+      "quality": 70,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=26",
+        "+DI>-21",
+        "RSI=59",
+        "MA20=-0.5%",
+        "W%R=-70"
+      ]
+    },
+    {
+      "ticker": "6770",
+      "name": "Powerchip Semiconductor Manufacturing Corp.",
+      "date": "2026-06-17",
+      "score": 70,
+      "close": NaN,
+      "dist_ma20": -2.45,
+      "rsi14": 40.58,
+      "quality": 70,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=26",
+        "+DI>-25",
+        "RSI=41",
+        "MA20=-2.5%",
+        "W%R=-73"
+      ]
+    },
+    {
+      "ticker": "2317",
+      "name": "Hon Hai Precision Industry Co., Ltd.",
       "date": "2026-06-17",
       "score": 60,
-      "close": 592.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
+      "close": NaN,
+      "dist_ma20": -0.75,
+      "rsi14": 52.44,
       "quality": 60,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "+DI>-29",
-        "RSI=44",
-        "MA20=+1.6%",
-        "W%R=-40"
-      ]
-    },
-    {
-      "ticker": "8046",
-      "name": "Nan Ya Printed Circuit Board Corporation",
-      "date": "2026-06-17",
-      "score": 60,
-      "close": 902.0,
-      "dist_ma20": 1181.29,
-      "rsi14": 99.72,
-      "quality": 60,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "+DI>-19",
-        "RSI=53",
-        "MA20=+1.3%",
-        "W%R=-26"
+        "ADX=24",
+        "RSI=52",
+        "MA20=-0.7%",
+        "W%R=-72"
       ]
     },
     {
@@ -74,17 +116,17 @@
       "name": "ASUSTeK Computer Inc.",
       "date": "2026-06-17",
       "score": 60,
-      "close": 791.0,
-      "dist_ma20": 128.23,
-      "rsi14": 96.79,
+      "close": NaN,
+      "dist_ma20": 1.01,
+      "rsi14": 61.7,
       "quality": 60,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
         "ADX=26",
-        "RSI=63",
-        "MA20=+1.5%",
+        "RSI=62",
+        "MA20=+1.0%",
         "W%R=-63"
       ]
     },
@@ -93,37 +135,56 @@
       "name": "Wistron Corporation",
       "date": "2026-06-17",
       "score": 60,
-      "close": 158.0,
-      "dist_ma20": 328.97,
-      "rsi14": 98.32,
+      "close": NaN,
+      "dist_ma20": -0.66,
+      "rsi14": 56.28,
       "quality": 60,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "+DI>-29",
-        "RSI=58",
-        "MA20=+1.2%",
-        "W%R=-76"
+        "+DI>-28",
+        "RSI=56",
+        "MA20=-0.7%",
+        "W%R=-74"
       ]
     },
     {
-      "ticker": "2330",
-      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "ticker": "4938",
+      "name": "Pegatron Corporation",
       "date": "2026-06-17",
-      "score": 55,
-      "close": 2400.0,
-      "dist_ma20": 1202.79,
-      "rsi14": 99.85,
-      "quality": 55,
+      "score": 60,
+      "close": NaN,
+      "dist_ma20": -2.52,
+      "rsi14": 54.9,
+      "quality": 60,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "ADX=27",
-        "+DI>-25",
-        "RSI=60",
-        "W%R=-22"
+        "ADX=30",
+        "RSI=55",
+        "MA20=-2.5%",
+        "W%R=-79"
+      ]
+    },
+    {
+      "ticker": "8016",
+      "name": "Sitronix Technology Corporation",
+      "date": "2026-06-17",
+      "score": 60,
+      "close": NaN,
+      "dist_ma20": -1.74,
+      "rsi14": 42.7,
+      "quality": 60,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=28",
+        "RSI=43",
+        "MA20=-1.7%",
+        "W%R=-55"
       ]
     },
     {
@@ -131,18 +192,18 @@
       "name": "MediaTek Inc.",
       "date": "2026-06-17",
       "score": 55,
-      "close": 4560.0,
-      "dist_ma20": 1050.65,
-      "rsi14": 99.75,
+      "close": NaN,
+      "dist_ma20": 7.47,
+      "rsi14": 53.5,
       "quality": 55,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "ADX=36",
-        "+DI>-17",
-        "RSI=51",
-        "W%R=-47"
+        "ADX=37",
+        "+DI>-15",
+        "RSI=54",
+        "W%R=-38"
       ]
     },
     {
@@ -150,18 +211,132 @@
       "name": "China Steel Corporation",
       "date": "2026-06-17",
       "score": 55,
-      "close": 18.65,
-      "dist_ma20": 5.58,
-      "rsi14": 82.0,
+      "close": NaN,
+      "dist_ma20": -1.36,
+      "rsi14": 46.43,
       "quality": 55,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "ADX=23",
-        "+DI>-24",
-        "RSI=48",
-        "MA20=-1.0%",
-        "W%R=-71"
+        "+DI>-21",
+        "RSI=46",
+        "MA20=-1.4%",
+        "W%R=-79"
+      ]
+    },
+    {
+      "ticker": "1301",
+      "name": "Formosa Plastics Corporation",
+      "date": "2026-06-17",
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": -0.04,
+      "rsi14": 54.45,
+      "quality": 55,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "ADX=27",
+        "+DI>-23",
+        "RSI=54",
+        "MA20=-0.0%",
+        "W%R=-65"
+      ]
+    },
+    {
+      "ticker": "1303",
+      "name": "Nan Ya Plastics Corporation",
+      "date": "2026-06-17",
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": 15.45,
+      "rsi14": 67.94,
+      "quality": 55,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=32",
+        "+DI>-14",
+        "RSI=68",
+        "W%R=-24"
+      ]
+    },
+    {
+      "ticker": "1326",
+      "name": "Formosa Chemicals & Fibre Corporation",
+      "date": "2026-06-17",
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": 6.28,
+      "rsi14": 62.27,
+      "quality": 55,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=29",
+        "+DI>-20",
+        "RSI=62",
+        "W%R=-49"
+      ]
+    },
+    {
+      "ticker": "3711",
+      "name": "ASE Technology Holding Co., Ltd.",
+      "date": "2026-06-17",
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": 2.09,
+      "rsi14": 43.14,
+      "quality": 55,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=20",
+        "+DI>-25",
+        "RSI=43",
+        "W%R=-51"
+      ]
+    },
+    {
+      "ticker": "2382",
+      "name": "Quanta Computer Inc.",
+      "date": "2026-06-17",
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": 2.15,
+      "rsi14": 65.17,
+      "quality": 55,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=22",
+        "+DI>-20",
+        "RSI=65",
+        "W%R=-58"
+      ]
+    },
+    {
+      "ticker": "3034",
+      "name": "Novatek Microelectronics Corp.",
+      "date": "2026-06-17",
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": 2.52,
+      "rsi14": 60.49,
+      "quality": 55,
+      "bonus": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD>0",
+        "ADX=23",
+        "+DI>-15",
+        "RSI=60",
+        "W%R=-21"
       ]
     },
     {
@@ -169,182 +344,56 @@
       "name": "Powertech Technology Inc.",
       "date": "2026-06-17",
       "score": 55,
-      "close": 346.5,
-      "dist_ma20": 467.92,
-      "rsi14": 99.0,
+      "close": NaN,
+      "dist_ma20": 5.96,
+      "rsi14": 47.59,
       "quality": 55,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "ADX=30",
+        "ADX=29",
         "+DI>-12",
-        "RSI=47",
-        "W%R=-46"
+        "RSI=48",
+        "W%R=-45"
       ]
     },
     {
-      "ticker": "6770",
-      "name": "Powerchip Semiconductor Manufacturing Corp.",
+      "ticker": "6269",
+      "name": "Flexium Interconnect, Inc.",
       "date": "2026-06-17",
       "score": 55,
-      "close": 71.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
+      "close": NaN,
+      "dist_ma20": 9.17,
+      "rsi14": 63.5,
       "quality": 55,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "ADX=25",
-        "+DI>-31",
-        "RSI=40",
-        "W%R=-75"
-      ]
-    },
-    {
-      "ticker": "8454",
-      "name": "momo.com Inc.",
-      "date": "2026-06-17",
-      "score": 55,
-      "close": 321.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 55,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=55",
-        "+DI>-31",
-        "RSI=65",
-        "W%R=-58"
-      ]
-    },
-    {
-      "ticker": "2382",
-      "name": "Quanta Computer Inc.",
-      "date": "2026-06-17",
-      "score": 45,
-      "close": 362.5,
-      "dist_ma20": 336.62,
-      "rsi14": 98.14,
-      "quality": 45,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=23",
-        "RSI=67",
-        "W%R=-52"
-      ]
-    },
-    {
-      "ticker": "1216",
-      "name": "Uni-President Enterprises Corp.",
-      "date": "2026-06-17",
-      "score": 45,
-      "close": 75.6,
-      "dist_ma20": 38.66,
-      "rsi14": 88.35,
-      "quality": 45,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=33",
-        "+DI>-16",
-        "W%R=-25"
-      ]
-    },
-    {
-      "ticker": "1504",
-      "name": "TECO Electric & Machinery Co., Ltd.",
-      "date": "2026-06-17",
-      "score": 45,
-      "close": 71.8,
-      "dist_ma20": 196.08,
-      "rsi14": 98.51,
-      "quality": 45,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=20",
-        "RSI=50",
-        "W%R=-86"
-      ]
-    },
-    {
-      "ticker": "2603",
-      "name": "Evergreen Marine Corporation (Taiwan) Ltd.",
-      "date": "2026-06-17",
-      "score": 45,
-      "close": 220.5,
-      "dist_ma20": 700.15,
-      "rsi14": 99.29,
-      "quality": 45,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=30",
-        "RSI=49",
-        "W%R=-94"
-      ]
-    },
-    {
-      "ticker": "3034",
-      "name": "Novatek Microelectronics Corp.",
-      "date": "2026-06-17",
-      "score": 45,
-      "close": 500.0,
-      "dist_ma20": 263.04,
-      "rsi14": 98.36,
-      "quality": 45,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=25",
+        "ADX=35",
         "+DI>-14",
-        "RSI=66"
+        "RSI=63",
+        "W%R=-34"
       ]
     },
     {
-      "ticker": "2379",
-      "name": "Realtek Semiconductor Corp.",
+      "ticker": "6742",
+      "name": "Vactronics technologies inc.",
       "date": "2026-06-17",
-      "score": 45,
-      "close": 678.0,
-      "dist_ma20": 636.44,
-      "rsi14": 99.5,
-      "quality": 45,
+      "score": 55,
+      "close": NaN,
+      "dist_ma20": 4.6,
+      "rsi14": 55.61,
+      "quality": 55,
       "bonus": 3,
       "signal": "BUY",
       "details": [
         "MACD>0",
-        "ADX=31",
-        "+DI>-12",
-        "RSI=68"
-      ]
-    },
-    {
-      "ticker": "4938",
-      "name": "Pegatron Corporation",
-      "date": "2026-06-17",
-      "score": 45,
-      "close": 83.0,
-      "dist_ma20": 111.08,
-      "rsi14": 95.55,
-      "quality": 45,
-      "bonus": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD>0",
-        "ADX=31",
-        "RSI=55",
-        "W%R=-88"
+        "ADX=27",
+        "+DI>-21",
+        "RSI=56",
+        "W%R=-26"
       ]
     }
   ]
