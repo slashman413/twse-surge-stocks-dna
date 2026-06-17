@@ -453,7 +453,7 @@ def evaluate_stock(ticker: str, df: pd.DataFrame, market: dict) -> dict | None:
         "name": "",
         "date": str(df.index[-1].date()) if isinstance(df.index[-1], pd.Timestamp) else str(df["Date"].iloc[-1].date()),
         "score": round(buy_score if is_buy else -sell_score, 1),
-        "close": round(float(close_now), 2),
+        "close": round(float(close_now), 2) if close_now == close_now else 0.0,
         "dist_ma20": round(dist_ma20, 2),
         "rsi14": round(rsi14, 2),
         "quality": quality,
@@ -496,7 +496,7 @@ def build_kline_data(ticker: str, df: pd.DataFrame) -> list[dict] | None:
             date_str = str(df["Date"].iloc[i].date()) if "Date" in df.columns else str(i)
 
         c = float(close.iloc[i])
-        if c == 0:
+        if c == 0 or (c != c):  # NaN check (NaN != NaN)
             continue
 
         row = {
@@ -790,6 +790,17 @@ def main():
     print(f"\n✅ Saved {len(top_signals)} signals to {SIGNALS_FILE}")
 
     # ── 7. Save live_kline.json ──
+    # Clean NaN values from kline_data before serializing (NaN is invalid JSON)
+    def _clean(obj):
+        if isinstance(obj, dict):
+            return {k: _clean(v) for k, v in obj.items()}
+        elif isinstance(obj, list):
+            return [_clean(v) for v in obj]
+        elif isinstance(obj, float):
+            return 0.0 if (obj != obj) else obj  # NaN → 0.0
+        return obj
+
+    kline_data = _clean(kline_data)
     with open(KLINE_FILE, "w", encoding="utf-8") as f:
         json.dump(kline_data, f, indent=2, ensure_ascii=False)
     print(f"✅ Saved K-line data ({len(kline_data)} stocks) to {KLINE_FILE}")
