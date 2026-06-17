@@ -74,7 +74,7 @@ def taiex_bullish():
             data = json.loads(f.read_text(encoding="utf-8"))
             closes = [r["c"] for r in data.get("taiex", [])[-100:] if r.get("c")]
             if len(closes) >= 60:
-                return closes[-1] > np.mean(closes[-60:])
+                return bool(closes[-1] > np.mean(closes[-60:]))
         except: pass
     return True
 
