@@ -1234,10 +1234,13 @@ loadData();
 setTimeout(loadSignals, 100);
 
 // Page view counter (localStorage - 最簡易)
-const vk = 'twse_dna_visits';
-let vc = parseInt(localStorage.getItem(vk) || '0') + 1;
-localStorage.setItem(vk, vc);
-document.getElementById('pageview-count').textContent = vc.toLocaleString();
+// Page view counter - persists across all visitors via counterapi.dev
+fetch('https://api.counterapi.dev/v1/twse-surge-stocks-dna/pageviews/up')
+  .then(r => r.json())
+  .then(d => {
+    const el = document.getElementById('pageview-count');
+    if (el && d.count) el.textContent = Number(d.count).toLocaleString();
+  }).catch(() => {});
 </script>
 
 </body>
