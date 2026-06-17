@@ -433,9 +433,9 @@ def evaluate_stock(ticker: str, df: pd.DataFrame, market: dict) -> dict | None:
         sell_score += 8
         sell_details.append("跌破MA50")
 
-    # --- Decision ---
-    is_buy = buy_score >= 40
-    is_sell = sell_score >= 30
+    # --- Decision (raised thresholds to filter marginal signals) ---
+    is_buy = buy_score >= 55
+    is_sell = sell_score >= 40
 
     if is_buy and not is_sell:
         quality = min(buy_score, 100)
