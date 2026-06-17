@@ -607,7 +607,7 @@ async function showTradeChart(ticker, year, buyDate, sellDate) {
     if (!tradeChartsCache[year]) {
       const resp = await fetch(`./yearly_backtests/trade_charts_${year}.json`);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      tradeChartsCache[year] = await resp.json();
+      tradeChartsCache[year] = JSON.parse((await resp.text()).replace(/\bNaN\b/g, "null"));
     }
     const allData = tradeChartsCache[year];
     const data = allData[ticker];
