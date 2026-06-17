@@ -220,29 +220,20 @@
     <div id="signals-market-info" style="color:var(--text-dim);font-size:0.85rem;margin-bottom:16px;">載入中...</div>
     <div id="signals-list"></div>
 
-    <!-- ═══ K線 Modal ═══ -->
+    <!-- ═══ K線 Modal (優化版) ═══ -->
     <div id="kline-modal" class="sponsor-modal-overlay" onclick="if(event.target===this)closeKline()">
       <div class="sponsor-modal" style="max-width:900px;width:90%;padding:20px;">
         <button class="close-btn" onclick="closeKline()">&times;</button>
         <h2 id="kline-modal-title" style="margin-bottom:12px;">📈 K線分析</h2>
-        <div style="display:grid;grid-template-columns:2fr 1fr;gap:12px;">
-          <div class="chart-card" style="padding:12px;">
-            <h3>📊 K線 + 均線</h3>
-            <div style="position:relative;height:350px;">
-              <canvas id="klineChart"></canvas>
-            </div>
-          </div>
-          <div class="chart-card" style="padding:12px;">
-            <h3>📉 技術指標</h3>
-            <div style="position:relative;height:150px;margin-bottom:8px;">
-              <canvas id="rsiChart"></canvas>
-            </div>
-            <div style="position:relative;height:100px;">
-              <canvas id="volumeChart"></canvas>
-            </div>
-            <div id="kline-summary" style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(51,65,85,0.3);font-size:0.8rem;color:var(--text-dim);"></div>
+        <!-- 單一圖表：價格 + MA + RSI + 成交量 + 買賣訊號 -->
+        <div class="chart-card" style="padding:12px;">
+          <h3>📊 價格 · 均線 · RSI · 成交量</h3>
+          <div style="position:relative;height:400px;">
+            <canvas id="klineChart"></canvas>
           </div>
         </div>
+        <!-- 詳細資訊（圖表下方，往下拉） -->
+        <div id="kline-summary" style="margin-top:12px;padding:12px;border-radius:8px;background:rgba(51,65,85,0.3);font-size:0.8rem;color:var(--text-dim);max-height:300px;overflow-y:auto;"></div>
       </div>
     </div>
 
@@ -313,12 +304,9 @@ let yearlyChart2 = null;
 let equityChart = null;
 let twiiChart = null;
 let klineChart = null;
-let rsiChart = null;
-let volumeChart = null;
 let tradeKlineChart = null;
 let tradeRsiChart = null;
 let tradeVolChart = null;
-let stockNames = {};
 let tradeChartsCache = {};
 
 let signalsLoaded = false;
@@ -956,8 +944,6 @@ async function loadSignals() {
 function closeKline() {
   document.getElementById('kline-modal').classList.remove('open');
   if (klineChart) { klineChart.destroy(); klineChart = null; }
-  if (rsiChart) { rsiChart.destroy(); rsiChart = null; }
-  if (volumeChart) { volumeChart.destroy(); volumeChart = null; }
 }
 
 // ═══ Stat info modal ═══
@@ -1031,7 +1017,6 @@ async function openKline(ticker) {
   document.getElementById('kline-summary').textContent = '載入中...';
 
   try {
-    // Try live K-line data first, fall back to backtest data
     let resp = await fetch(LIVE_KLINE_URL);
     let isLive = resp.ok;
     let allData = isLive ? await resp.json() : {};
@@ -1050,23 +1035,23 @@ async function openKline(ticker) {
     if (kline.length < 10) throw new Error('K線資料不足');
 
     const targetDays = kline.filter(p => p.d >= '2026-01-01');
-    const labels = targetDays.map(p => p.d.slice(5));  // MM-DD
+    const labels = targetDays.map(p => p.d.slice(5));
 
-    // Destroy old charts & reset canvas
-    [klineChart, rsiChart, volumeChart].forEach(c => { if (c) { c.destroy(); } });
-    klineChart = null; rsiChart = null; volumeChart = null;
+    // Destroy old chart
+    if (klineChart) { klineChart.destroy(); klineChart = null; }
 
-    // --- Kline price chart ---
     const ctx = document.getElementById('klineChart');
     ctx.removeAttribute('style');
     ctx.width = ctx.parentElement.clientWidth || 600;
-    ctx.height = 350;
+    ctx.height = 400;
 
     const priceData = targetDays.map(p => p.c);
     const ma20Data = targetDays.map(p => p.ma20);
     const ma50Data = targetDays.map(p => p.ma50);
+    const rsiData = targetDays.map(p => p.rsi14);
+    const volData = targetDays.map(p => p.v / 1000);
 
-    // Buy/sell marker arrays — FULL length matching targetDays
+    // Buy/sell signal markers — red/green circles
     const len = targetDays.length;
     const buyIdx = [];
     const sellIdx = [];
@@ -1080,38 +1065,58 @@ async function openKline(ticker) {
       if (p.dist_ma20 < -5 && prev.dist_ma20 >= -5)
         sellIdx.push(i);
     }
-    // Full-length arrays: 0 at non-signal, >0 at signal
     const buyRad = new Array(len).fill(0);
-    const sellRad = new Array(len).fill(0);
+    const sellRad = new Array(len).fill(2);
     const buyCol = new Array(len).fill('transparent');
     const sellCol = new Array(len).fill('transparent');
-    buyIdx.forEach(i => { buyRad[i] = 9; buyCol[i] = '#ef4444'; });
-    sellIdx.forEach(i => { sellRad[i] = 9; sellCol[i] = '#22c55e'; });
+    const buyBorder = new Array(len).fill('transparent');
+    const sellBorder = new Array(len).fill('transparent');
+    buyIdx.forEach(i => { buyRad[i] = 7; buyCol[i] = 'rgba(239,68,68,0.35)'; buyBorder[i] = '#ef4444'; });
+    sellIdx.forEach(i => { sellRad[i] = 7; sellCol[i] = 'rgba(34,197,94,0.35)'; sellBorder[i] = '#22c55e'; });
 
+    // Volume colors
+    const volColors = targetDays.map((p, i) => i > 0 && p.c >= targetDays[i-1].c
+      ? 'rgba(34,197,94,0.25)' : 'rgba(239,68,68,0.25)');
+
+    // Combined chart: price + MA + RSI + volume + signals
     klineChart = new Chart(ctx, {
       type: 'line',
       data: {
         labels,
         datasets: [
-          { label: `${ticker} 收盤價`, data: priceData, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.15, pointRadius: 0, borderWidth: 2 },
-          { label: 'MA20', data: ma20Data, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
-          { label: 'MA50', data: ma50Data, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, borderDash: [4, 3] },
-          { label: '🔴買進', data: priceData, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointStyle: 'triangle', pointRotation: 0, showLine: false },
-          { label: '🟢出場', data: priceData, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointStyle: 'triangle', pointRotation: 180, showLine: false },
+          { label: `${ticker} 收盤價`, data: priceData, borderColor: '#3b82f6', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 0, tension: 0.12, yAxisID: 'y', order: 2 },
+          { label: 'MA20', data: ma20Data, borderColor: '#eab308', borderWidth: 1.5, pointRadius: 0, borderDash: [4, 3], fill: false, yAxisID: 'y', order: 3 },
+          { label: 'MA50', data: ma50Data, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, borderDash: [4, 3], fill: false, yAxisID: 'y', order: 4 },
+          { label: '🔴 買進', data: priceData, borderColor: 'transparent', pointRadius: buyRad, pointBackgroundColor: buyCol, pointBorderColor: buyBorder, pointBorderWidth: 2, pointStyle: 'circle', showLine: false, yAxisID: 'y', order: 1 },
+          { label: '🟢 賣出', data: priceData, borderColor: 'transparent', pointRadius: sellRad, pointBackgroundColor: sellCol, pointBorderColor: sellBorder, pointBorderWidth: 2, pointStyle: 'circle', showLine: false, yAxisID: 'y', order: 1 },
+          { label: 'RSI14', data: rsiData, borderColor: '#a855f7', borderWidth: 1.5, pointRadius: 0, fill: false, yAxisID: 'y1', order: 5 },
+          { label: '成交量', data: volData, type: 'bar', backgroundColor: volColors, borderRadius: 1, borderWidth: 0, yAxisID: 'y2', order: 6 },
         ]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
         plugins: {
-          legend: { position: 'top', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 10 } } },
+          legend: {
+            position: 'top',
+            labels: { color: '#94a3b8', boxWidth: 14, font: { size: 10 }, usePointStyle: true,
+              filter: item => !item.text.includes('買進') && !item.text.includes('賣出') }
+          },
           tooltip: {
             callbacks: {
               label: ctx => {
                 const d = targetDays[ctx.dataIndex];
                 if (!d) return '';
-                if (ctx.datasetIndex === 3) return '🔴 買進訊號 (拉回MA20+RSI合理)';
-                if (ctx.datasetIndex === 4) return '🟢 出場訊號';
-                return `${ctx.dataset.label}: ${d.c}`;
+                if (ctx.dataset.label === '🔴 買進') {
+                  const idx = buyIdx.indexOf(ctx.dataIndex);
+                  return idx >= 0 ? `🔴 買進訊號 (拉回MA20+RSI合理)` : '';
+                }
+                if (ctx.dataset.label === '🟢 賣出') {
+                  const idx = sellIdx.indexOf(ctx.dataIndex);
+                  return idx >= 0 ? `🟢 出場訊號` : '';
+                }
+                const v = ctx.parsed[ctx.parsed.y !== undefined ? 'y' : 'y1'];
+                return `${ctx.dataset.label}: ${typeof v === 'number' ? v.toFixed(2) : v}`;
               },
               afterBody: items => {
                 const d = targetDays[items[0].dataIndex];
@@ -1123,57 +1128,28 @@ async function openKline(ticker) {
         },
         scales: {
           x: { ticks: { color: '#94a3b8', font: { size: 9 }, maxTicksLimit: 12 }, grid: { display: false } },
-          y: { ticks: { color: '#94a3b8', font: { size: 9 } }, grid: { color: '#1e293b' } }
+          y: {
+            position: 'left', ticks: { color: '#94a3b8', font: { size: 9 } },
+            grid: { color: 'rgba(51,65,85,0.4)' },
+            title: { display: true, text: '價格', color: '#94a3b8', font: { size: 10 } }
+          },
+          y1: {
+            position: 'right', min: 0, max: 100,
+            ticks: { color: '#a855f7', font: { size: 8 }, stepSize: 25 },
+            grid: { display: false },
+            title: { display: true, text: 'RSI', color: '#a855f7', font: { size: 10 } }
+          },
+          y2: {
+            position: 'right', display: true,
+            ticks: { display: false },
+            grid: { display: false },
+            title: { display: false }
+          }
         }
       }
     });
 
-    // --- RSI chart ---
-    const rsiEl = document.getElementById('rsiChart');
-    rsiEl.removeAttribute('style');
-    rsiEl.width = rsiEl.parentElement.clientWidth || 300;
-    rsiEl.height = 150;
-    const rsiData = targetDays.map(p => p.rsi14);
-    rsiChart = new Chart(rsiEl, {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [{ label: 'RSI14', data: rsiData, borderColor: '#3b82f6', borderWidth: 1.5, pointRadius: 0, fill: false }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { ticks: { display: false }, grid: { display: false } },
-          y: { min: 0, max: 100, ticks: { color: '#94a3b8', font: { size: 8 } }, grid: { color: '#1e293b' } }
-        }
-      }
-    });
-
-    // --- Volume chart ---
-    const volEl = document.getElementById('volumeChart');
-    volEl.removeAttribute('style');
-    volEl.width = volEl.parentElement.clientWidth || 300;
-    volEl.height = 100;
-    const volData = targetDays.map(p => p.v);
-    const volColors = targetDays.map((p, i) => i > 0 && p.c >= targetDays[i-1].c ? 'rgba(34,197,94,0.5)' : 'rgba(239,68,68,0.5)');
-    volumeChart = new Chart(volEl, {
-      type: 'bar',
-      data: {
-        labels,
-        datasets: [{ label: '成交量', data: volData, backgroundColor: volColors, borderRadius: 1 }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { ticks: { display: false }, grid: { display: false } },
-          y: { ticks: { color: '#94a3b8', font: { size: 8 }, callback: v => (v/1000).toFixed(0) + 'k' }, grid: { color: '#1e293b' } }
-        }
-      }
-    });
-
-    // ── Summary with entry/exit reasons + historical performance ──
+    // ── Summary below chart ──
     const last = targetDays[targetDays.length - 1];
     const exitRsi = last.rsi14 < 35;
     const exitBreak = last.dist_ma20 < -5;
@@ -1192,7 +1168,6 @@ async function openKline(ticker) {
     if (exitConsec) exitReasons.push('⚠️ 連續下跌中');
     if (last.adx > 25 && last.pdi < last.mdi) exitReasons.push('⚠️ DMI空頭(PDI<MDI)');
 
-    // ── 載入歷史回測績效 ──
     let perfHtml = '';
     try {
       const perfResp = await fetch(STOCK_PERF_URL);
@@ -1216,28 +1191,25 @@ async function openKline(ticker) {
     } catch(e) {}
 
     document.getElementById('kline-summary').innerHTML = `
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px;">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:8px;">
         <div>收盤: <strong>${last.c}</strong></div>
         <div>距MA20: <strong style="color:${last.dist_ma20 >= -2 && last.dist_ma20 <= 1 ? 'var(--green)' : 'var(--yellow)'}">${last.dist_ma20 >= 0 ? '+' : ''}${last.dist_ma20}%</strong></div>
-        <div>MA20: <strong>${last.ma20}</strong></div>
         <div>RSI14: <strong style="color:${last.rsi14 >= 30 && last.rsi14 <= 60 ? 'var(--green)' : 'var(--red)'}">${last.rsi14}</strong></div>
-        <div>MA50: <strong>${last.ma50}</strong></div>
-        <div>月RSI4: <strong>${data.m_rsi4}</strong></div>
         <div>ADX: <strong>${last.adx}</strong></div>
+        <div>MA20: <strong>${last.ma20}</strong></div>
+        <div>MA50: <strong>${last.ma50}</strong></div>
         <div>PDI/MDI: <strong>${last.pdi}/${last.mdi}</strong></div>
+        <div>成交量: <strong>${(last.v/1000).toFixed(0)}k</strong></div>
       </div>
-      ${entryReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--green);font-size:0.85rem;">🟢 進場原因<br>${entryReasons.join('<br>')}</div>` : ''}
-      ${exitReasons.length > 0 ? `<div style="padding:4px 0;border-top:1px solid #334155;color:var(--red);font-size:0.85rem;">🔴 出場原因<br>${exitReasons.join('<br>')}</div>` : ''}
-      ${entryReasons.length === 0 && exitReasons.length === 0 ? '<div style="color:var(--text-dim);font-size:0.8rem;border-top:1px solid #334155;padding-top:4px;">目前無明顯進出場訊號</div>' : ''}
+      ${entryReasons.length > 0 ? `<div style="padding:6px 0;border-top:1px solid #334155;color:var(--green);font-size:0.85rem;">🟢 進場原因<br>${entryReasons.join('<br>')}</div>` : ''}
+      ${exitReasons.length > 0 ? `<div style="padding:6px 0;border-top:1px solid #334155;color:var(--red);font-size:0.85rem;">🔴 出場原因<br>${exitReasons.join('<br>')}</div>` : ''}
       ${perfHtml}
-      <div style="margin-top:4px;font-size:0.75rem;color:var(--text-dim);border-top:1px solid #334155;padding-top:4px;">
-        🟢倒三角=買進訊號 | 🔴倒三角=出場訊號（圖上標記僅供參考）
-      </div>`;
-
+    `;
   } catch(e) {
-    document.getElementById('kline-summary').innerHTML = `<span style="color:var(--red);">⚠️ ${e.message}</span>`;
+    document.getElementById('kline-summary').textContent = `⚠️ ${e.message}`;
   }
 }
+
 
 loadData();
 // Also load signals
