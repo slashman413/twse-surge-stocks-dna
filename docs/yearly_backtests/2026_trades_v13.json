@@ -1,0 +1,1405 @@
+{
+  "trades": [
+    {
+      "ticker": "1608",
+      "buy_date": "2026-01-06",
+      "buy_price": 38.4,
+      "sell_date": "2026-02-03",
+      "sell_price": 34.0,
+      "shares": 7812,
+      "pl": -34372.81,
+      "pl_pct": -11.46,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
+    },
+    {
+      "ticker": "6581",
+      "buy_date": "2026-01-08",
+      "buy_price": 98.86,
+      "sell_date": "2026-02-09",
+      "sell_price": 101.25,
+      "shares": 3034,
+      "pl": 7244.87,
+      "pl_pct": 2.42,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2026-01-02",
+      "buy_price": 39.65,
+      "sell_date": "2026-02-26",
+      "sell_price": 49.15,
+      "shares": 3783,
+      "pl": 35938.5,
+      "pl_pct": 23.96,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2026-01-02",
+      "buy_price": 39.65,
+      "sell_date": "2026-03-09",
+      "sell_price": 44.15,
+      "shares": 3783,
+      "pl": 17023.5,
+      "pl_pct": 11.35,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3528",
+      "buy_date": "2026-01-02",
+      "buy_price": 67.4,
+      "sell_date": "2026-03-09",
+      "sell_price": 65.0,
+      "shares": 4451,
+      "pl": -10682.41,
+      "pl_pct": -3.56,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2323",
+      "buy_date": "2026-01-05",
+      "buy_price": 10.6,
+      "sell_date": "2026-03-09",
+      "sell_price": 10.4,
+      "shares": 28301,
+      "pl": -5660.22,
+      "pl_pct": -1.89,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2881",
+      "buy_date": "2026-01-05",
+      "buy_price": 97.2,
+      "sell_date": "2026-03-09",
+      "sell_price": 87.2,
+      "shares": 3086,
+      "pl": -30860.0,
+      "pl_pct": -10.29,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "5706",
+      "buy_date": "2026-01-06",
+      "buy_price": 49.8,
+      "sell_date": "2026-03-09",
+      "sell_price": 48.7,
+      "shares": 6024,
+      "pl": -6626.39,
+      "pl_pct": -2.21,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1708",
+      "buy_date": "2026-01-07",
+      "buy_price": 30.95,
+      "sell_date": "2026-03-09",
+      "sell_price": 34.65,
+      "shares": 9694,
+      "pl": 35889.24,
+      "pl_pct": 11.96,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6414",
+      "buy_date": "2026-01-07",
+      "buy_price": 287.5,
+      "sell_date": "2026-03-09",
+      "sell_price": 265.0,
+      "shares": 1043,
+      "pl": -23467.5,
+      "pl_pct": -7.83,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2377",
+      "buy_date": "2026-01-08",
+      "buy_price": 96.5,
+      "sell_date": "2026-03-09",
+      "sell_price": 92.8,
+      "shares": 3108,
+      "pl": -11499.59,
+      "pl_pct": -3.83,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2855",
+      "buy_date": "2026-02-09",
+      "buy_price": 29.0,
+      "sell_date": "2026-03-09",
+      "sell_price": 29.3,
+      "shares": 10344,
+      "pl": 3103.19,
+      "pl_pct": 1.03,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6446",
+      "buy_date": "2026-02-26",
+      "buy_price": 724.0,
+      "sell_date": "2026-03-09",
+      "sell_price": 667.0,
+      "shares": 414,
+      "pl": -23598.0,
+      "pl_pct": -7.87,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1708",
+      "buy_date": "2026-03-10",
+      "buy_price": 34.36,
+      "sell_date": "2026-03-17",
+      "sell_price": 41.77,
+      "shares": 4365,
+      "pl": 32320.3,
+      "pl_pct": 21.55,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3049",
+      "buy_date": "2026-03-10",
+      "buy_price": 13.0,
+      "sell_date": "2026-03-19",
+      "sell_price": 16.4,
+      "shares": 11538,
+      "pl": 39229.2,
+      "pl_pct": 26.15,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3049",
+      "buy_date": "2026-03-10",
+      "buy_price": 13.0,
+      "sell_date": "2026-03-24",
+      "sell_price": 14.6,
+      "shares": 11538,
+      "pl": 18460.8,
+      "pl_pct": 12.31,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1708",
+      "buy_date": "2026-03-10",
+      "buy_price": 34.36,
+      "sell_date": "2026-03-24",
+      "sell_price": 40.87,
+      "shares": 4365,
+      "pl": 28383.85,
+      "pl_pct": 18.92,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2883",
+      "buy_date": "2026-03-11",
+      "buy_price": 20.15,
+      "sell_date": "2026-03-24",
+      "sell_price": 19.8,
+      "shares": 14888,
+      "pl": -5210.81,
+      "pl_pct": -1.74,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2405",
+      "buy_date": "2026-03-11",
+      "buy_price": 15.2,
+      "sell_date": "2026-03-24",
+      "sell_price": 16.85,
+      "shares": 19736,
+      "pl": 32564.41,
+      "pl_pct": 10.86,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2347",
+      "buy_date": "2026-03-12",
+      "buy_price": 69.9,
+      "sell_date": "2026-03-24",
+      "sell_price": 79.1,
+      "shares": 4291,
+      "pl": 39477.19,
+      "pl_pct": 13.16,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2459",
+      "buy_date": "2026-03-12",
+      "buy_price": 65.5,
+      "sell_date": "2026-03-24",
+      "sell_price": 65.4,
+      "shares": 4580,
+      "pl": -457.99,
+      "pl_pct": -0.15,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2603",
+      "buy_date": "2026-03-13",
+      "buy_price": 207.5,
+      "sell_date": "2026-03-24",
+      "sell_price": 203.0,
+      "shares": 1445,
+      "pl": -6502.5,
+      "pl_pct": -2.17,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2816",
+      "buy_date": "2026-03-13",
+      "buy_price": 29.95,
+      "sell_date": "2026-03-24",
+      "sell_price": 30.6,
+      "shares": 10016,
+      "pl": 6510.4,
+      "pl_pct": 2.17,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6581",
+      "buy_date": "2026-03-16",
+      "buy_price": 104.59,
+      "sell_date": "2026-03-24",
+      "sell_price": 106.02,
+      "shares": 2868,
+      "pl": 4109.09,
+      "pl_pct": 1.37,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3338",
+      "buy_date": "2026-03-17",
+      "buy_price": 57.8,
+      "sell_date": "2026-03-24",
+      "sell_price": 61.3,
+      "shares": 5190,
+      "pl": 18165.0,
+      "pl_pct": 6.06,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2855",
+      "buy_date": "2026-03-25",
+      "buy_price": 32.2,
+      "sell_date": "2026-03-26",
+      "sell_price": 32.45,
+      "shares": 9316,
+      "pl": 2329.0,
+      "pl_pct": 0.78,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2883",
+      "buy_date": "2026-03-25",
+      "buy_price": 20.35,
+      "sell_date": "2026-03-26",
+      "sell_price": 19.8,
+      "shares": 14742,
+      "pl": -8108.12,
+      "pl_pct": -2.7,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3338",
+      "buy_date": "2026-04-10",
+      "buy_price": 59.0,
+      "sell_date": "2026-04-22",
+      "sell_price": 77.7,
+      "shares": 2542,
+      "pl": 47535.39,
+      "pl_pct": 31.69,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1611",
+      "buy_date": "2026-04-10",
+      "buy_price": 12.2,
+      "sell_date": "2026-04-23",
+      "sell_price": 12.0,
+      "shares": 24590,
+      "pl": -4918.0,
+      "pl_pct": -1.64,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3338",
+      "buy_date": "2026-04-10",
+      "buy_price": 59.0,
+      "sell_date": "2026-05-11",
+      "sell_price": 72.4,
+      "shares": 2542,
+      "pl": 34062.8,
+      "pl_pct": 22.71,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+    },
+    {
+      "ticker": "2484",
+      "buy_date": "2026-04-23",
+      "buy_price": 43.2,
+      "sell_date": "2026-05-13",
+      "sell_price": 37.9,
+      "shares": 6944,
+      "pl": -36803.19,
+      "pl_pct": -12.27,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-15%)"
+    },
+    {
+      "ticker": "6451",
+      "buy_date": "2026-05-13",
+      "buy_price": 478.0,
+      "sell_date": "2026-05-15",
+      "sell_price": 577.0,
+      "shares": 313,
+      "pl": 30987.0,
+      "pl_pct": 20.71,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "6451",
+      "buy_date": "2026-05-13",
+      "buy_price": 478.0,
+      "sell_date": "2026-05-19",
+      "sell_price": 484.0,
+      "shares": 314,
+      "pl": 1884.0,
+      "pl_pct": 1.26,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-16%)"
+    },
+    {
+      "ticker": "9933",
+      "buy_date": "2026-04-08",
+      "buy_price": 36.0,
+      "sell_date": "2026-05-20",
+      "sell_price": 38.75,
+      "shares": 8333,
+      "pl": 22915.75,
+      "pl_pct": 7.64,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2603",
+      "buy_date": "2026-04-08",
+      "buy_price": 202.0,
+      "sell_date": "2026-05-20",
+      "sell_price": 212.5,
+      "shares": 1485,
+      "pl": 15592.5,
+      "pl_pct": 5.2,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1323",
+      "buy_date": "2026-04-09",
+      "buy_price": 21.38,
+      "sell_date": "2026-05-20",
+      "sell_price": 19.43,
+      "shares": 14033,
+      "pl": -27396.16,
+      "pl_pct": -9.13,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "4938",
+      "buy_date": "2026-04-13",
+      "buy_price": 78.0,
+      "sell_date": "2026-05-20",
+      "sell_price": 77.2,
+      "shares": 3846,
+      "pl": -3076.81,
+      "pl_pct": -1.03,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6005",
+      "buy_date": "2026-04-13",
+      "buy_price": 28.25,
+      "sell_date": "2026-05-20",
+      "sell_price": 30.6,
+      "shares": 10619,
+      "pl": 24954.65,
+      "pl_pct": 8.32,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2883",
+      "buy_date": "2026-04-14",
+      "buy_price": 20.85,
+      "sell_date": "2026-05-20",
+      "sell_price": 21.6,
+      "shares": 14388,
+      "pl": 10791.0,
+      "pl_pct": 3.6,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6698",
+      "buy_date": "2026-04-14",
+      "buy_price": 30.45,
+      "sell_date": "2026-05-20",
+      "sell_price": 31.35,
+      "shares": 9852,
+      "pl": 8866.8,
+      "pl_pct": 2.96,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2851",
+      "buy_date": "2026-04-15",
+      "buy_price": 31.3,
+      "sell_date": "2026-05-20",
+      "sell_price": 34.9,
+      "shares": 9584,
+      "pl": 34502.42,
+      "pl_pct": 11.5,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2535",
+      "buy_date": "2026-05-11",
+      "buy_price": 74.4,
+      "sell_date": "2026-05-20",
+      "sell_price": 74.6,
+      "shares": 4032,
+      "pl": 806.39,
+      "pl_pct": 0.27,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2026-05-19",
+      "buy_price": 54.7,
+      "sell_date": "2026-05-20",
+      "sell_price": 55.1,
+      "shares": 5484,
+      "pl": 2193.59,
+      "pl_pct": 0.73,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3532",
+      "buy_date": "2026-05-21",
+      "buy_price": 226.0,
+      "sell_date": "2026-05-25",
+      "sell_price": 273.0,
+      "shares": 663,
+      "pl": 31161.0,
+      "pl_pct": 20.8,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "4807",
+      "buy_date": "2026-05-26",
+      "buy_price": 23.35,
+      "sell_date": "2026-06-01",
+      "sell_price": 28.7,
+      "shares": 6423,
+      "pl": 34363.05,
+      "pl_pct": 22.91,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2855",
+      "buy_date": "2026-05-21",
+      "buy_price": 40.2,
+      "sell_date": "2026-06-02",
+      "sell_price": 49.45,
+      "shares": 3731,
+      "pl": 34511.75,
+      "pl_pct": 23.01,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3532",
+      "buy_date": "2026-05-21",
+      "buy_price": 226.0,
+      "sell_date": "2026-06-04",
+      "sell_price": 291.0,
+      "shares": 664,
+      "pl": 43160.0,
+      "pl_pct": 28.76,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-17%)"
+    },
+    {
+      "ticker": "1708",
+      "buy_date": "2026-05-25",
+      "buy_price": 38.02,
+      "sell_date": "2026-06-04",
+      "sell_price": 47.65,
+      "shares": 3945,
+      "pl": 37994.88,
+      "pl_pct": 25.33,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "2855",
+      "buy_date": "2026-05-21",
+      "buy_price": 40.2,
+      "sell_date": "2026-06-11",
+      "sell_price": 50.9,
+      "shares": 3731,
+      "pl": 39921.7,
+      "pl_pct": 26.62,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2885",
+      "buy_date": "2026-05-22",
+      "buy_price": 55.1,
+      "sell_date": "2026-06-11",
+      "sell_price": 61.6,
+      "shares": 5444,
+      "pl": 35386.0,
+      "pl_pct": 11.8,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "5706",
+      "buy_date": "2026-05-22",
+      "buy_price": 49.95,
+      "sell_date": "2026-06-11",
+      "sell_price": 52.2,
+      "shares": 6006,
+      "pl": 13513.5,
+      "pl_pct": 4.5,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2108",
+      "buy_date": "2026-05-25",
+      "buy_price": 27.4,
+      "sell_date": "2026-06-11",
+      "sell_price": 29.95,
+      "shares": 10948,
+      "pl": 27917.41,
+      "pl_pct": 9.31,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1708",
+      "buy_date": "2026-05-25",
+      "buy_price": 38.02,
+      "sell_date": "2026-06-11",
+      "sell_price": 45.55,
+      "shares": 3945,
+      "pl": 29710.37,
+      "pl_pct": 19.81,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "4807",
+      "buy_date": "2026-05-26",
+      "buy_price": 23.35,
+      "sell_date": "2026-06-11",
+      "sell_price": 37.3,
+      "shares": 6424,
+      "pl": 89614.79,
+      "pl_pct": 59.74,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "6581",
+      "buy_date": "2026-05-26",
+      "buy_price": 106.5,
+      "sell_date": "2026-06-11",
+      "sell_price": 109.0,
+      "shares": 2816,
+      "pl": 7040.0,
+      "pl_pct": 2.35,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "9933",
+      "buy_date": "2026-05-27",
+      "buy_price": 39.35,
+      "sell_date": "2026-06-11",
+      "sell_price": 41.25,
+      "shares": 7623,
+      "pl": 14483.71,
+      "pl_pct": 4.83,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2486",
+      "buy_date": "2026-05-27",
+      "buy_price": 276.0,
+      "sell_date": "2026-06-11",
+      "sell_price": 245.0,
+      "shares": 1086,
+      "pl": -33666.0,
+      "pl_pct": -11.23,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3450",
+      "buy_date": "2026-06-04",
+      "buy_price": 520.0,
+      "sell_date": "2026-06-11",
+      "sell_price": 452.5,
+      "shares": 576,
+      "pl": -38880.0,
+      "pl_pct": -12.98,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "9933",
+      "buy_date": "2026-06-12",
+      "buy_price": 40.95,
+      "sell_date": "2026-06-18 (\u5e74\u7d42)",
+      "sell_price": 40.95,
+      "shares": 7326,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2603",
+      "buy_date": "2026-06-12",
+      "buy_price": 228.0,
+      "sell_date": "2026-06-18 (\u5e74\u7d42)",
+      "sell_price": 228.0,
+      "shares": 1315,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2026-01-02",
+      "equity": 3000000.0,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-05",
+      "equity": 2990230.29,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-06",
+      "equity": 3015382.89,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-07",
+      "equity": 3037142.68,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-08",
+      "equity": 3019003.82,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-09",
+      "equity": 3014686.46,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-12",
+      "equity": 3042476.09,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-13",
+      "equity": 3031923.88,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-14",
+      "equity": 3086228.24,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-15",
+      "equity": 3079930.32,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-16",
+      "equity": 3077392.94,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-19",
+      "equity": 3068786.99,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-20",
+      "equity": 3058611.91,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-21",
+      "equity": 3017072.88,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-22",
+      "equity": 3044957.78,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-23",
+      "equity": 3049095.89,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-26",
+      "equity": 3057098.24,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-27",
+      "equity": 3052784.87,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-28",
+      "equity": 3065029.93,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-29",
+      "equity": 3065195.57,
+      "type": "daily"
+    },
+    {
+      "date": "2026-01-30",
+      "equity": 3013139.47,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-02",
+      "equity": 2963189.78,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-03",
+      "equity": 2964314.43,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-04",
+      "equity": 3014284.21,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-05",
+      "equity": 2987570.19,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-06",
+      "equity": 2964665.84,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-09",
+      "equity": 2988935.47,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-10",
+      "equity": 2999003.13,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-11",
+      "equity": 3026137.04,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-23",
+      "equity": 3067143.95,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-24",
+      "equity": 3090375.48,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-25",
+      "equity": 3098929.1,
+      "type": "daily"
+    },
+    {
+      "date": "2026-02-26",
+      "equity": 3129796.87,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-02",
+      "equity": 3103210.18,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-03",
+      "equity": 3074184.52,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-04",
+      "equity": 2949927.74,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-05",
+      "equity": 2999369.63,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-06",
+      "equity": 3041021.42,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-09",
+      "equity": 2952432.38,
+      "type": "clear"
+    },
+    {
+      "date": "2026-03-10",
+      "equity": 2952432.38,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-11",
+      "equity": 2957754.94,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-12",
+      "equity": 2962924.71,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-13",
+      "equity": 2956634.76,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-16",
+      "equity": 3049416.46,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-17",
+      "equity": 3106019.14,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-18",
+      "equity": 3179230.34,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-19",
+      "equity": 3208772.04,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-20",
+      "equity": 3230906.08,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-23",
+      "equity": 3133151.39,
+      "type": "hold"
+    },
+    {
+      "date": "2026-03-24",
+      "equity": 3159481.3,
+      "type": "clear"
+    },
+    {
+      "date": "2026-03-25",
+      "equity": 3159481.3,
+      "type": "daily"
+    },
+    {
+      "date": "2026-03-26",
+      "equity": 3153702.18,
+      "type": "clear"
+    },
+    {
+      "date": "2026-03-27",
+      "equity": 3153702.18,
+      "type": "hold"
+    },
+    {
+      "date": "2026-03-30",
+      "equity": 3153702.18,
+      "type": "hold"
+    },
+    {
+      "date": "2026-03-31",
+      "equity": 3153702.18,
+      "type": "hold"
+    },
+    {
+      "date": "2026-04-01",
+      "equity": 3153702.18,
+      "type": "hold"
+    },
+    {
+      "date": "2026-04-02",
+      "equity": 3153702.18,
+      "type": "hold"
+    },
+    {
+      "date": "2026-04-07",
+      "equity": 3153702.18,
+      "type": "hold"
+    },
+    {
+      "date": "2026-04-08",
+      "equity": 3153702.18,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-09",
+      "equity": 3151853.97,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-10",
+      "equity": 3146973.51,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-13",
+      "equity": 3155556.52,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-14",
+      "equity": 3155242.05,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-15",
+      "equity": 3197860.4,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-16",
+      "equity": 3192720.82,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-17",
+      "equity": 3193695.88,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-20",
+      "equity": 3189120.27,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-21",
+      "equity": 3228729.55,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-22",
+      "equity": 3270153.99,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-23",
+      "equity": 3281143.66,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-24",
+      "equity": 3245268.95,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-27",
+      "equity": 3189904.74,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-28",
+      "equity": 3224016.17,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-29",
+      "equity": 3226828.23,
+      "type": "daily"
+    },
+    {
+      "date": "2026-04-30",
+      "equity": 3210630.57,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-04",
+      "equity": 3230842.07,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-05",
+      "equity": 3257959.82,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-06",
+      "equity": 3272967.44,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-07",
+      "equity": 3320174.36,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-08",
+      "equity": 3307639.05,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-11",
+      "equity": 3298588.94,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-12",
+      "equity": 3284701.94,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-13",
+      "equity": 3279037.84,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-14",
+      "equity": 3280911.21,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-15",
+      "equity": 3299694.27,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-18",
+      "equity": 3267262.67,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-19",
+      "equity": 3271263.16,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-20",
+      "equity": 3316600.31,
+      "type": "clear"
+    },
+    {
+      "date": "2026-05-21",
+      "equity": 3316600.31,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-22",
+      "equity": 3350561.91,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-25",
+      "equity": 3396416.21,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-26",
+      "equity": 3411901.17,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-27",
+      "equity": 3454790.96,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-28",
+      "equity": 3439203.65,
+      "type": "daily"
+    },
+    {
+      "date": "2026-05-29",
+      "equity": 3543061.61,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-01",
+      "equity": 3604304.02,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-02",
+      "equity": 3607081.11,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-03",
+      "equity": 3748483.33,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-04",
+      "equity": 3805668.09,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-05",
+      "equity": 3870364.26,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-08",
+      "equity": 3679201.69,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-09",
+      "equity": 3715100.18,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-10",
+      "equity": 3656530.56,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-11",
+      "equity": 3682832.48,
+      "type": "clear"
+    },
+    {
+      "date": "2026-06-12",
+      "equity": 3682832.48,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-15",
+      "equity": 3682832.48,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-16",
+      "equity": 3682832.48,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-17",
+      "equity": 3682832.48,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-18",
+      "equity": 3682832.48,
+      "type": "daily"
+    }
+  ],
+  "missed_trades": [
+    {
+      "date": "2026-03-23",
+      "ticker": "1809",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 138.3
+    },
+    {
+      "date": "2026-03-23",
+      "ticker": "4938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.6
+    },
+    {
+      "date": "2026-03-23",
+      "ticker": "2108",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.1
+    },
+    {
+      "date": "2026-03-23",
+      "ticker": "1310",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 0.7
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "1708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.1
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "9933",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 91.3
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "3338",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.4
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.6
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "2356",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.6
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "2324",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.3
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "1305",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 6.5
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "1708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.3
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "2484",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.1
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "4938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.3
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "2382",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.8
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "6414",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.4
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "3704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.7
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "1708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.1
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "2885",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.2
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "2379",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.5
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "2382",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.7
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "3704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.1
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "5484",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.5
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "2459",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.6
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "1305",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.5
+    },
+    {
+      "date": "2026-04-01",
+      "ticker": "1708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 121.4
+    },
+    {
+      "date": "2026-04-01",
+      "ticker": "4938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 94.5
+    },
+    {
+      "date": "2026-04-01",
+      "ticker": "2459",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.2
+    },
+    {
+      "date": "2026-04-02",
+      "ticker": "1708",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 119.8
+    },
+    {
+      "date": "2026-04-02",
+      "ticker": "4938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.8
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "2855",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 140.0
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "4938",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.1
+    }
+  ]
+}

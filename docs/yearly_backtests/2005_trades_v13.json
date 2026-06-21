@@ -1,0 +1,4264 @@
+{
+  "trades": [
+    {
+      "ticker": "3008",
+      "buy_date": "2005-02-15",
+      "buy_price": 84.76,
+      "sell_date": "2005-02-21",
+      "sell_price": 104.83,
+      "shares": 1769,
+      "pl": 35511.67,
+      "pl_pct": 23.68,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3008",
+      "buy_date": "2005-02-15",
+      "buy_price": 84.76,
+      "sell_date": "2005-02-24",
+      "sell_price": 104.28,
+      "shares": 1770,
+      "pl": 34544.75,
+      "pl_pct": 23.03,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "3044",
+      "buy_date": "2005-02-21",
+      "buy_price": 15.27,
+      "sell_date": "2005-02-24",
+      "sell_price": 15.01,
+      "shares": 19648,
+      "pl": -4989.55,
+      "pl_pct": -1.66,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "6166",
+      "buy_date": "2005-02-21",
+      "buy_price": 10.09,
+      "sell_date": "2005-02-24",
+      "sell_price": 10.06,
+      "shares": 29725,
+      "pl": -1067.59,
+      "pl_pct": -0.36,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2357",
+      "buy_date": "2005-03-09",
+      "buy_price": 21.05,
+      "sell_date": "2005-03-14",
+      "sell_price": 20.82,
+      "shares": 14250,
+      "pl": -3293.02,
+      "pl_pct": -1.1,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3044",
+      "buy_date": "2005-02-25",
+      "buy_price": 15.08,
+      "sell_date": "2005-03-16",
+      "sell_price": 14.95,
+      "shares": 19896,
+      "pl": -2526.27,
+      "pl_pct": -0.84,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2353",
+      "buy_date": "2005-02-25",
+      "buy_price": 24.53,
+      "sell_date": "2005-03-16",
+      "sell_price": 23.97,
+      "shares": 12229,
+      "pl": -6831.15,
+      "pl_pct": -2.28,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "6202",
+      "buy_date": "2005-03-01",
+      "buy_price": 15.85,
+      "sell_date": "2005-03-16",
+      "sell_price": 15.59,
+      "shares": 18931,
+      "pl": -4851.51,
+      "pl_pct": -1.62,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2464",
+      "buy_date": "2005-03-01",
+      "buy_price": 11.83,
+      "sell_date": "2005-03-16",
+      "sell_price": 12.6,
+      "shares": 25363,
+      "pl": 19534.76,
+      "pl_pct": 6.51,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "6239",
+      "buy_date": "2005-03-02",
+      "buy_price": 27.34,
+      "sell_date": "2005-03-16",
+      "sell_price": 28.17,
+      "shares": 10973,
+      "pl": 9152.04,
+      "pl_pct": 3.05,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "3008",
+      "buy_date": "2005-03-02",
+      "buy_price": 99.81,
+      "sell_date": "2005-03-16",
+      "sell_price": 95.63,
+      "shares": 3005,
+      "pl": -12567.43,
+      "pl_pct": -4.19,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "8016",
+      "buy_date": "2005-03-04",
+      "buy_price": 31.77,
+      "sell_date": "2005-03-16",
+      "sell_price": 31.5,
+      "shares": 9441,
+      "pl": -2608.43,
+      "pl_pct": -0.87,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2395",
+      "buy_date": "2005-03-04",
+      "buy_price": 33.45,
+      "sell_date": "2005-03-16",
+      "sell_price": 32.43,
+      "shares": 8967,
+      "pl": -9187.28,
+      "pl_pct": -3.06,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "1520",
+      "buy_date": "2005-03-07",
+      "buy_price": 39.93,
+      "sell_date": "2005-03-16",
+      "sell_price": 38.51,
+      "shares": 7512,
+      "pl": -10665.91,
+      "pl_pct": -3.56,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2353",
+      "buy_date": "2005-06-20",
+      "buy_price": 30.6,
+      "sell_date": "2005-06-27",
+      "sell_price": 30.41,
+      "shares": 9803,
+      "pl": -1904.69,
+      "pl_pct": -0.63,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3031",
+      "buy_date": "2005-06-16",
+      "buy_price": 11.67,
+      "sell_date": "2005-06-28",
+      "sell_price": 11.67,
+      "shares": 25709,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2380",
+      "buy_date": "2005-06-15",
+      "buy_price": 16.77,
+      "sell_date": "2005-07-04",
+      "sell_price": 20.41,
+      "shares": 8947,
+      "pl": 32608.04,
+      "pl_pct": 21.74,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "1503",
+      "buy_date": "2005-06-16",
+      "buy_price": 19.17,
+      "sell_date": "2005-07-05",
+      "sell_price": 19.49,
+      "shares": 15653,
+      "pl": 5009.24,
+      "pl_pct": 1.67,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "1236",
+      "buy_date": "2005-06-13",
+      "buy_price": 10.97,
+      "sell_date": "2005-07-07",
+      "sell_price": 11.12,
+      "shares": 27354,
+      "pl": 4273.43,
+      "pl_pct": 1.42,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2911",
+      "buy_date": "2005-06-14",
+      "buy_price": 13.29,
+      "sell_date": "2005-07-07",
+      "sell_price": 12.53,
+      "shares": 22568,
+      "pl": -17272.49,
+      "pl_pct": -5.76,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2454",
+      "buy_date": "2005-06-14",
+      "buy_price": 103.88,
+      "sell_date": "2005-07-07",
+      "sell_price": 106.86,
+      "shares": 2887,
+      "pl": 8599.17,
+      "pl_pct": 2.87,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2704",
+      "buy_date": "2005-06-15",
+      "buy_price": 21.32,
+      "sell_date": "2005-07-07",
+      "sell_price": 20.23,
+      "shares": 14074,
+      "pl": -15289.64,
+      "pl_pct": -5.1,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2380",
+      "buy_date": "2005-06-15",
+      "buy_price": 16.77,
+      "sell_date": "2005-07-07",
+      "sell_price": 22.94,
+      "shares": 8947,
+      "pl": 55216.29,
+      "pl_pct": 36.81,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2492",
+      "buy_date": "2005-06-17",
+      "buy_price": 10.97,
+      "sell_date": "2005-07-07",
+      "sell_price": 11.33,
+      "shares": 27348,
+      "pl": 9944.66,
+      "pl_pct": 3.31,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "6239",
+      "buy_date": "2005-06-17",
+      "buy_price": 30.77,
+      "sell_date": "2005-07-07",
+      "sell_price": 32.44,
+      "shares": 9750,
+      "pl": 16264.01,
+      "pl_pct": 5.42,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2353",
+      "buy_date": "2005-06-27",
+      "buy_price": 30.41,
+      "sell_date": "2005-07-07",
+      "sell_price": 29.73,
+      "shares": 9866,
+      "pl": -6709.23,
+      "pl_pct": -2.24,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2301",
+      "buy_date": "2005-06-28",
+      "buy_price": 10.26,
+      "sell_date": "2005-07-07",
+      "sell_price": 10.46,
+      "shares": 29235,
+      "pl": 5761.25,
+      "pl_pct": 1.92,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "3043",
+      "buy_date": "2005-07-15",
+      "buy_price": 45.35,
+      "sell_date": "2005-07-20",
+      "sell_price": 45.04,
+      "shares": 6614,
+      "pl": -2075.92,
+      "pl_pct": -0.69,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "3311",
+      "buy_date": "2005-07-11",
+      "buy_price": 65.43,
+      "sell_date": "2005-07-27",
+      "sell_price": 59.81,
+      "shares": 4584,
+      "pl": -25776.94,
+      "pl_pct": -8.59,
+      "sell_reason": "\u79fb\u52d5\u505c\u5229(-19%)"
+    },
+    {
+      "ticker": "2464",
+      "buy_date": "2005-07-27",
+      "buy_price": 14.72,
+      "sell_date": "2005-08-09",
+      "sell_price": 15.0,
+      "shares": 20375,
+      "pl": 5692.55,
+      "pl_pct": 1.9,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "6202",
+      "buy_date": "2005-07-11",
+      "buy_price": 16.47,
+      "sell_date": "2005-08-11",
+      "sell_price": 16.9,
+      "shares": 18219,
+      "pl": 7954.5,
+      "pl_pct": 2.65,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1903",
+      "buy_date": "2005-07-12",
+      "buy_price": 27.15,
+      "sell_date": "2005-08-11",
+      "sell_price": 26.1,
+      "shares": 11049,
+      "pl": -11601.44,
+      "pl_pct": -3.87,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2301",
+      "buy_date": "2005-07-13",
+      "buy_price": 10.56,
+      "sell_date": "2005-08-11",
+      "sell_price": 10.77,
+      "shares": 28416,
+      "pl": 5999.83,
+      "pl_pct": 2.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1722",
+      "buy_date": "2005-07-13",
+      "buy_price": 23.8,
+      "sell_date": "2005-08-11",
+      "sell_price": 22.86,
+      "shares": 12606,
+      "pl": -11778.18,
+      "pl_pct": -3.93,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2395",
+      "buy_date": "2005-07-14",
+      "buy_price": 36.53,
+      "sell_date": "2005-08-11",
+      "sell_price": 39.03,
+      "shares": 8212,
+      "pl": 20571.73,
+      "pl_pct": 6.86,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3007",
+      "buy_date": "2005-07-14",
+      "buy_price": 93.84,
+      "sell_date": "2005-08-11",
+      "sell_price": 77.49,
+      "shares": 3196,
+      "pl": -52257.35,
+      "pl_pct": -17.42,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3023",
+      "buy_date": "2005-07-15",
+      "buy_price": 12.34,
+      "sell_date": "2005-08-11",
+      "sell_price": 11.75,
+      "shares": 24307,
+      "pl": -14396.12,
+      "pl_pct": -4.8,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "3031",
+      "buy_date": "2005-07-19",
+      "buy_price": 12.08,
+      "sell_date": "2005-08-11",
+      "sell_price": 11.07,
+      "shares": 24824,
+      "pl": -25257.09,
+      "pl_pct": -8.42,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2486",
+      "buy_date": "2005-07-20",
+      "buy_price": 10.85,
+      "sell_date": "2005-08-11",
+      "sell_price": 11.12,
+      "shares": 27660,
+      "pl": 7692.19,
+      "pl_pct": 2.56,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "8078",
+      "buy_date": "2005-08-09",
+      "buy_price": 96.48,
+      "sell_date": "2005-08-11",
+      "sell_price": 93.35,
+      "shares": 3109,
+      "pl": -9720.81,
+      "pl_pct": -3.24,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2301",
+      "buy_date": "2005-08-12",
+      "buy_price": 10.71,
+      "sell_date": "2005-08-15",
+      "sell_price": 10.33,
+      "shares": 28006,
+      "pl": -10643.87,
+      "pl_pct": -3.55,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "2357",
+      "buy_date": "2005-08-12",
+      "buy_price": 23.41,
+      "sell_date": "2005-08-15",
+      "sell_price": 22.48,
+      "shares": 12814,
+      "pl": -11863.88,
+      "pl_pct": -3.95,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1477",
+      "buy_date": "2005-12-05",
+      "buy_price": 13.23,
+      "sell_date": "2005-12-12",
+      "sell_price": 13.61,
+      "shares": 22683,
+      "pl": 8823.5,
+      "pl_pct": 2.94,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "6196",
+      "buy_date": "2005-12-06",
+      "buy_price": 12.83,
+      "sell_date": "2005-12-12",
+      "sell_price": 13.03,
+      "shares": 23375,
+      "pl": 4687.3,
+      "pl_pct": 1.56,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2374",
+      "buy_date": "2005-12-07",
+      "buy_price": 11.62,
+      "sell_date": "2005-12-12",
+      "sell_price": 11.9,
+      "shares": 25824,
+      "pl": 7291.41,
+      "pl_pct": 2.43,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "6202",
+      "buy_date": "2005-12-07",
+      "buy_price": 21.52,
+      "sell_date": "2005-12-12",
+      "sell_price": 21.26,
+      "shares": 13943,
+      "pl": -3503.16,
+      "pl_pct": -1.17,
+      "sell_reason": "\u5927\u76e4\u9023\u7e8c3\u5929\u975e\u591a\u982d\u6e05\u5009"
+    },
+    {
+      "ticker": "2325",
+      "buy_date": "2005-12-16",
+      "buy_price": 18.76,
+      "sell_date": "2005-12-26",
+      "sell_price": 22.74,
+      "shares": 7994,
+      "pl": 31780.18,
+      "pl_pct": 21.19,
+      "sell_reason": "\u505c\u522950%"
+    },
+    {
+      "ticker": "3231",
+      "buy_date": "2005-12-16",
+      "buy_price": 13.36,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 13.39,
+      "shares": 22457,
+      "pl": 721.14,
+      "pl_pct": 0.24,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2325",
+      "buy_date": "2005-12-16",
+      "buy_price": 18.76,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 22.33,
+      "shares": 7995,
+      "pl": 28489.45,
+      "pl_pct": 18.99,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2514",
+      "buy_date": "2005-12-19",
+      "buy_price": 11.51,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 11.67,
+      "shares": 26064,
+      "pl": 4137.92,
+      "pl_pct": 1.38,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "6202",
+      "buy_date": "2005-12-19",
+      "buy_price": 21.7,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 21.15,
+      "shares": 13825,
+      "pl": -7578.58,
+      "pl_pct": -2.53,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2374",
+      "buy_date": "2005-12-20",
+      "buy_price": 12.26,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 13.03,
+      "shares": 24465,
+      "pl": 18749.43,
+      "pl_pct": 6.25,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "1236",
+      "buy_date": "2005-12-20",
+      "buy_price": 11.93,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 12.24,
+      "shares": 25154,
+      "pl": 7941.04,
+      "pl_pct": 2.65,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2353",
+      "buy_date": "2005-12-21",
+      "buy_price": 39.98,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 40.07,
+      "shares": 7504,
+      "pl": 728.99,
+      "pl_pct": 0.24,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "9921",
+      "buy_date": "2005-12-21",
+      "buy_price": 41.07,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 41.26,
+      "shares": 7304,
+      "pl": 1423.88,
+      "pl_pct": 0.47,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2441",
+      "buy_date": "2005-12-22",
+      "buy_price": 12.66,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 13.51,
+      "shares": 23692,
+      "pl": 20098.86,
+      "pl_pct": 6.7,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    },
+    {
+      "ticker": "2357",
+      "buy_date": "2005-12-22",
+      "buy_price": 26.45,
+      "sell_date": "2005-12-30 (\u5e74\u7d42)",
+      "sell_price": 26.72,
+      "shares": 11340,
+      "pl": 2999.76,
+      "pl_pct": 1.0,
+      "sell_reason": "\u5e74\u7d42\u7d50\u7b97"
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2005-01-03",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2005-01-04",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-05",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-06",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-07",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-10",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-11",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-12",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-13",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-14",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-17",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-18",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-19",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-20",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-21",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-24",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-25",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-26",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-27",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-28",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-01-31",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-01",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-02",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-03",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-14",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-15",
+      "equity": 3000000.0,
+      "type": "daily"
+    },
+    {
+      "date": "2005-02-16",
+      "equity": 3019734.28,
+      "type": "daily"
+    },
+    {
+      "date": "2005-02-17",
+      "equity": 3025654.57,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-18",
+      "equity": 3047362.28,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-21",
+      "equity": 3071043.42,
+      "type": "daily"
+    },
+    {
+      "date": "2005-02-22",
+      "equity": 3064098.48,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-23",
+      "equity": 3069700.55,
+      "type": "hold"
+    },
+    {
+      "date": "2005-02-24",
+      "equity": 3063999.29,
+      "type": "clear"
+    },
+    {
+      "date": "2005-02-25",
+      "equity": 3063999.29,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-01",
+      "equity": 3066563.11,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-02",
+      "equity": 3063436.54,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-03",
+      "equity": 3065857.23,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-04",
+      "equity": 3076259.14,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-07",
+      "equity": 3079551.21,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-08",
+      "equity": 3124617.48,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-09",
+      "equity": 3166496.3,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-10",
+      "equity": 3161125.03,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-11",
+      "equity": 3162255.45,
+      "type": "daily"
+    },
+    {
+      "date": "2005-03-14",
+      "equity": 3139727.82,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-15",
+      "equity": 3068361.91,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-16",
+      "equity": 3040155.1,
+      "type": "clear"
+    },
+    {
+      "date": "2005-03-17",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-18",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-21",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-22",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-23",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-24",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-25",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-28",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-29",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-30",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-03-31",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-01",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-04",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-06",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-07",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-08",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-11",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-12",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-13",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-14",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-15",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-18",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-19",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-20",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-21",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-22",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-25",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-26",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-27",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-28",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-04-29",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-03",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-04",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-05",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-06",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-09",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-10",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-11",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-12",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-13",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-16",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-17",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-18",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-19",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-20",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-23",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-24",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-25",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-26",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-27",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-30",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-05-31",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-01",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-02",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-03",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-06",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-07",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-08",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-09",
+      "equity": 3040155.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-10",
+      "equity": 3040155.1,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-13",
+      "equity": 3040155.1,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-14",
+      "equity": 3038445.75,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-15",
+      "equity": 3049237.36,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-16",
+      "equity": 3033179.28,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-17",
+      "equity": 3027160.2,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-20",
+      "equity": 3027518.61,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-21",
+      "equity": 3021230.59,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-22",
+      "equity": 3058353.92,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-23",
+      "equity": 3087056.46,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-24",
+      "equity": 3082844.62,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-27",
+      "equity": 3099572.65,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-28",
+      "equity": 3108379.63,
+      "type": "daily"
+    },
+    {
+      "date": "2005-06-29",
+      "equity": 3076629.96,
+      "type": "hold"
+    },
+    {
+      "date": "2005-06-30",
+      "equity": 3063746.84,
+      "type": "hold"
+    },
+    {
+      "date": "2005-07-01",
+      "equity": 3082623.31,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-04",
+      "equity": 3125264.82,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-05",
+      "equity": 3128475.33,
+      "type": "hold"
+    },
+    {
+      "date": "2005-07-06",
+      "equity": 3131148.5,
+      "type": "hold"
+    },
+    {
+      "date": "2005-07-07",
+      "equity": 3136655.15,
+      "type": "clear"
+    },
+    {
+      "date": "2005-07-08",
+      "equity": 3136655.15,
+      "type": "hold"
+    },
+    {
+      "date": "2005-07-11",
+      "equity": 3136655.15,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-12",
+      "equity": 3151086.73,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-13",
+      "equity": 3143315.46,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-14",
+      "equity": 3152122.31,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-15",
+      "equity": 3117581.36,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-19",
+      "equity": 3141208.66,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-20",
+      "equity": 3148449.24,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-21",
+      "equity": 3145330.83,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-22",
+      "equity": 3091606.13,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-25",
+      "equity": 3134478.82,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-26",
+      "equity": 3129416.06,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-27",
+      "equity": 3069804.56,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-28",
+      "equity": 3124687.32,
+      "type": "daily"
+    },
+    {
+      "date": "2005-07-29",
+      "equity": 3083790.1,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-01",
+      "equity": 3088621.73,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-02",
+      "equity": 3034395.71,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-03",
+      "equity": 3103846.22,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-04",
+      "equity": 3081726.43,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-08",
+      "equity": 3064194.16,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-09",
+      "equity": 3054525.98,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-10",
+      "equity": 3055814.79,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-11",
+      "equity": 3031702.11,
+      "type": "clear"
+    },
+    {
+      "date": "2005-08-12",
+      "equity": 3031702.11,
+      "type": "daily"
+    },
+    {
+      "date": "2005-08-15",
+      "equity": 3009194.37,
+      "type": "clear"
+    },
+    {
+      "date": "2005-08-16",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-17",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-18",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-19",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-22",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-23",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-24",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-25",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-26",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-29",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-30",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-08-31",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-02",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-05",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-06",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-07",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-08",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-09",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-12",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-13",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-14",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-15",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-16",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-19",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-20",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-21",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-22",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-23",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-26",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-27",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-28",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-29",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-09-30",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-03",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-04",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-05",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-06",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-07",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-11",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-12",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-13",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-14",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-17",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-18",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-19",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-20",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-21",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-24",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-25",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-26",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-27",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-28",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-10-31",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-01",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-02",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-03",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-04",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-07",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-08",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-09",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-10",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-11",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-14",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-15",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-16",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-17",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-18",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-21",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-22",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-23",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-24",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-25",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-28",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-29",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-11-30",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-01",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-02",
+      "equity": 3009194.37,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-05",
+      "equity": 3009194.37,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-06",
+      "equity": 3012135.54,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-07",
+      "equity": 3005646.71,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-08",
+      "equity": 3001786.89,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-09",
+      "equity": 3020260.61,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-12",
+      "equity": 3026493.42,
+      "type": "clear"
+    },
+    {
+      "date": "2005-12-13",
+      "equity": 3026493.42,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-14",
+      "equity": 3026493.42,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-15",
+      "equity": 3026493.42,
+      "type": "hold"
+    },
+    {
+      "date": "2005-12-16",
+      "equity": 3026493.42,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-19",
+      "equity": 3050740.72,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-20",
+      "equity": 3030151.02,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-21",
+      "equity": 3054637.1,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-22",
+      "equity": 3033631.41,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-23",
+      "equity": 3097046.18,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-26",
+      "equity": 3127884.56,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-27",
+      "equity": 3119900.34,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-28",
+      "equity": 3122456.82,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-29",
+      "equity": 3139270.58,
+      "type": "daily"
+    },
+    {
+      "date": "2005-12-30",
+      "equity": 3135985.49,
+      "type": "daily"
+    }
+  ],
+  "missed_trades": [
+    {
+      "date": "2005-01-04",
+      "ticker": "1736",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.0
+    },
+    {
+      "date": "2005-01-05",
+      "ticker": "1736",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.8
+    },
+    {
+      "date": "2005-01-06",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.5
+    },
+    {
+      "date": "2005-01-06",
+      "ticker": "2487",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.3
+    },
+    {
+      "date": "2005-01-07",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.2
+    },
+    {
+      "date": "2005-01-10",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.1
+    },
+    {
+      "date": "2005-01-11",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.9
+    },
+    {
+      "date": "2005-01-12",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
+    },
+    {
+      "date": "2005-01-13",
+      "ticker": "1736",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.4
+    },
+    {
+      "date": "2005-01-14",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.6
+    },
+    {
+      "date": "2005-01-14",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.4
+    },
+    {
+      "date": "2005-01-17",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.5
+    },
+    {
+      "date": "2005-01-19",
+      "ticker": "1736",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 84.0
+    },
+    {
+      "date": "2005-01-24",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
+      "date": "2005-01-26",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.7
+    },
+    {
+      "date": "2005-01-27",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.6
+    },
+    {
+      "date": "2005-01-27",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.2
+    },
+    {
+      "date": "2005-01-28",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.9
+    },
+    {
+      "date": "2005-01-31",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.5
+    },
+    {
+      "date": "2005-02-17",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.7
+    },
+    {
+      "date": "2005-02-17",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.2
+    },
+    {
+      "date": "2005-02-18",
+      "ticker": "2704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.7
+    },
+    {
+      "date": "2005-02-18",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.5
+    },
+    {
+      "date": "2005-02-22",
+      "ticker": "2325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 79.8
+    },
+    {
+      "date": "2005-02-22",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.6
+    },
+    {
+      "date": "2005-02-22",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.4
+    },
+    {
+      "date": "2005-02-22",
+      "ticker": "2394",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 34.9
+    },
+    {
+      "date": "2005-02-22",
+      "ticker": "3020",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.3
+    },
+    {
+      "date": "2005-02-23",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.3
+    },
+    {
+      "date": "2005-02-23",
+      "ticker": "2394",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 36.3
+    },
+    {
+      "date": "2005-03-08",
+      "ticker": "5471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.2
+    },
+    {
+      "date": "2005-03-08",
+      "ticker": "2452",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 67.6
+    },
+    {
+      "date": "2005-03-14",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.2
+    },
+    {
+      "date": "2005-03-14",
+      "ticker": "6119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 44.8
+    },
+    {
+      "date": "2005-03-14",
+      "ticker": "4532",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 34.9
+    },
+    {
+      "date": "2005-03-15",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.9
+    },
+    {
+      "date": "2005-03-17",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.2
+    },
+    {
+      "date": "2005-03-17",
+      "ticker": "2707",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.2
+    },
+    {
+      "date": "2005-03-17",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.4
+    },
+    {
+      "date": "2005-03-18",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.2
+    },
+    {
+      "date": "2005-03-18",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.0
+    },
+    {
+      "date": "2005-03-21",
+      "ticker": "8101",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.9
+    },
+    {
+      "date": "2005-03-21",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.7
+    },
+    {
+      "date": "2005-03-22",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.3
+    },
+    {
+      "date": "2005-03-22",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.2
+    },
+    {
+      "date": "2005-03-23",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.9
+    },
+    {
+      "date": "2005-03-23",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.8
+    },
+    {
+      "date": "2005-03-23",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.7
+    },
+    {
+      "date": "2005-03-24",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.3
+    },
+    {
+      "date": "2005-03-24",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.2
+    },
+    {
+      "date": "2005-03-24",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.6
+    },
+    {
+      "date": "2005-03-24",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.5
+    },
+    {
+      "date": "2005-03-24",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.6
+    },
+    {
+      "date": "2005-03-25",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.7
+    },
+    {
+      "date": "2005-03-25",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.9
+    },
+    {
+      "date": "2005-03-28",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.8
+    },
+    {
+      "date": "2005-03-28",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.0
+    },
+    {
+      "date": "2005-03-29",
+      "ticker": "2354",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 87.2
+    },
+    {
+      "date": "2005-03-29",
+      "ticker": "2392",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 53.6
+    },
+    {
+      "date": "2005-03-30",
+      "ticker": "1736",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 128.3
+    },
+    {
+      "date": "2005-03-30",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.0
+    },
+    {
+      "date": "2005-03-31",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.7
+    },
+    {
+      "date": "2005-04-01",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.1
+    },
+    {
+      "date": "2005-04-04",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.4
+    },
+    {
+      "date": "2005-04-06",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.3
+    },
+    {
+      "date": "2005-04-06",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.8
+    },
+    {
+      "date": "2005-04-06",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.6
+    },
+    {
+      "date": "2005-04-07",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.9
+    },
+    {
+      "date": "2005-04-07",
+      "ticker": "3026",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.3
+    },
+    {
+      "date": "2005-04-08",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.7
+    },
+    {
+      "date": "2005-04-08",
+      "ticker": "2463",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": -34.4
+    },
+    {
+      "date": "2005-04-11",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.3
+    },
+    {
+      "date": "2005-04-13",
+      "ticker": "3037",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 131.8
+    },
+    {
+      "date": "2005-04-13",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.5
+    },
+    {
+      "date": "2005-04-14",
+      "ticker": "6168",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.8
+    },
+    {
+      "date": "2005-04-14",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.5
+    },
+    {
+      "date": "2005-04-14",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.6
+    },
+    {
+      "date": "2005-04-14",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.9
+    },
+    {
+      "date": "2005-04-14",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.4
+    },
+    {
+      "date": "2005-04-15",
+      "ticker": "3063",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 125.4
+    },
+    {
+      "date": "2005-04-15",
+      "ticker": "3037",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.3
+    },
+    {
+      "date": "2005-04-15",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.9
+    },
+    {
+      "date": "2005-04-15",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.3
+    },
+    {
+      "date": "2005-04-19",
+      "ticker": "3044",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.8
+    },
+    {
+      "date": "2005-04-19",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.2
+    },
+    {
+      "date": "2005-04-19",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.1
+    },
+    {
+      "date": "2005-04-20",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.5
+    },
+    {
+      "date": "2005-04-20",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.3
+    },
+    {
+      "date": "2005-04-22",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.6
+    },
+    {
+      "date": "2005-04-22",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.2
+    },
+    {
+      "date": "2005-04-25",
+      "ticker": "2474",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2005-04-28",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
+      "date": "2005-04-28",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.5
+    },
+    {
+      "date": "2005-04-29",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.9
+    },
+    {
+      "date": "2005-05-03",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.2
+    },
+    {
+      "date": "2005-05-05",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.3
+    },
+    {
+      "date": "2005-05-06",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.8
+    },
+    {
+      "date": "2005-05-09",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.9
+    },
+    {
+      "date": "2005-05-10",
+      "ticker": "2474",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.8
+    },
+    {
+      "date": "2005-05-10",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.7
+    },
+    {
+      "date": "2005-05-10",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.2
+    },
+    {
+      "date": "2005-05-10",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.6
+    },
+    {
+      "date": "2005-05-10",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 44.9
+    },
+    {
+      "date": "2005-05-11",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 44.9
+    },
+    {
+      "date": "2005-05-12",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.3
+    },
+    {
+      "date": "2005-05-13",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.2
+    },
+    {
+      "date": "2005-05-13",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.0
+    },
+    {
+      "date": "2005-05-13",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.3
+    },
+    {
+      "date": "2005-05-16",
+      "ticker": "2707",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.3
+    },
+    {
+      "date": "2005-05-16",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 45.8
+    },
+    {
+      "date": "2005-05-17",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.1
+    },
+    {
+      "date": "2005-05-17",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 45.0
+    },
+    {
+      "date": "2005-05-18",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.5
+    },
+    {
+      "date": "2005-05-18",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.9
+    },
+    {
+      "date": "2005-05-19",
+      "ticker": "1471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.8
+    },
+    {
+      "date": "2005-05-20",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.4
+    },
+    {
+      "date": "2005-05-20",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.4
+    },
+    {
+      "date": "2005-05-20",
+      "ticker": "5203",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 34.7
+    },
+    {
+      "date": "2005-05-23",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.8
+    },
+    {
+      "date": "2005-05-23",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
+      "date": "2005-05-23",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.4
+    },
+    {
+      "date": "2005-05-23",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.9
+    },
+    {
+      "date": "2005-05-24",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.9
+    },
+    {
+      "date": "2005-05-24",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.2
+    },
+    {
+      "date": "2005-05-24",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.4
+    },
+    {
+      "date": "2005-05-24",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.4
+    },
+    {
+      "date": "2005-05-24",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.8
+    },
+    {
+      "date": "2005-05-25",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.8
+    },
+    {
+      "date": "2005-05-25",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.7
+    },
+    {
+      "date": "2005-05-25",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.2
+    },
+    {
+      "date": "2005-05-26",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.5
+    },
+    {
+      "date": "2005-05-27",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.0
+    },
+    {
+      "date": "2005-05-31",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.1
+    },
+    {
+      "date": "2005-05-31",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.1
+    },
+    {
+      "date": "2005-06-01",
+      "ticker": "2446",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 141.4
+    },
+    {
+      "date": "2005-06-01",
+      "ticker": "2498",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 77.9
+    },
+    {
+      "date": "2005-06-02",
+      "ticker": "1736",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.3
+    },
+    {
+      "date": "2005-06-02",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.8
+    },
+    {
+      "date": "2005-06-02",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.5
+    },
+    {
+      "date": "2005-06-03",
+      "ticker": "3044",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.1
+    },
+    {
+      "date": "2005-06-03",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.0
+    },
+    {
+      "date": "2005-06-03",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.0
+    },
+    {
+      "date": "2005-06-03",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.1
+    },
+    {
+      "date": "2005-06-06",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.2
+    },
+    {
+      "date": "2005-06-07",
+      "ticker": "2325",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.2
+    },
+    {
+      "date": "2005-06-07",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 71.4
+    },
+    {
+      "date": "2005-06-08",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.9
+    },
+    {
+      "date": "2005-06-09",
+      "ticker": "2705",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 98.4
+    },
+    {
+      "date": "2005-06-09",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.8
+    },
+    {
+      "date": "2005-06-09",
+      "ticker": "2447",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 48.8
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.7
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "1303",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.8
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.7
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "2368",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "3043",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "6289",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.6
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "2910",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.8
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "2447",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 52.2
+    },
+    {
+      "date": "2005-06-29",
+      "ticker": "2312",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 34.1
+    },
+    {
+      "date": "2005-06-30",
+      "ticker": "2825",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.3
+    },
+    {
+      "date": "2005-06-30",
+      "ticker": "2447",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 51.6
+    },
+    {
+      "date": "2005-06-30",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 47.4
+    },
+    {
+      "date": "2005-07-05",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.6
+    },
+    {
+      "date": "2005-07-05",
+      "ticker": "1503",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 29.0
+    },
+    {
+      "date": "2005-07-05",
+      "ticker": "1903",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.5
+    },
+    {
+      "date": "2005-07-06",
+      "ticker": "3063",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 95.8
+    },
+    {
+      "date": "2005-07-06",
+      "ticker": "2101",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.0
+    },
+    {
+      "date": "2005-07-06",
+      "ticker": "1722",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 36.2
+    },
+    {
+      "date": "2005-07-06",
+      "ticker": "1903",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 15.4
+    },
+    {
+      "date": "2005-07-08",
+      "ticker": "1471",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 78.7
+    },
+    {
+      "date": "2005-07-08",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.6
+    },
+    {
+      "date": "2005-07-08",
+      "ticker": "1473",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 13.2
+    },
+    {
+      "date": "2005-07-29",
+      "ticker": "2430",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.6
+    },
+    {
+      "date": "2005-07-29",
+      "ticker": "6165",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 43.2
+    },
+    {
+      "date": "2005-08-01",
+      "ticker": "2394",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 36.9
+    },
+    {
+      "date": "2005-08-01",
+      "ticker": "3038",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.9
+    },
+    {
+      "date": "2005-08-01",
+      "ticker": "6196",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 5.6
+    },
+    {
+      "date": "2005-08-16",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.6
+    },
+    {
+      "date": "2005-08-16",
+      "ticker": "1503",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 31.0
+    },
+    {
+      "date": "2005-08-17",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.2
+    },
+    {
+      "date": "2005-08-17",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 96.5
+    },
+    {
+      "date": "2005-08-17",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.3
+    },
+    {
+      "date": "2005-08-17",
+      "ticker": "1503",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 35.0
+    },
+    {
+      "date": "2005-08-18",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.0
+    },
+    {
+      "date": "2005-08-18",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.0
+    },
+    {
+      "date": "2005-08-19",
+      "ticker": "2704",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.4
+    },
+    {
+      "date": "2005-08-19",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.7
+    },
+    {
+      "date": "2005-08-19",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.7
+    },
+    {
+      "date": "2005-08-19",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.0
+    },
+    {
+      "date": "2005-08-19",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.3
+    },
+    {
+      "date": "2005-08-22",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.0
+    },
+    {
+      "date": "2005-08-23",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.2
+    },
+    {
+      "date": "2005-08-24",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2005-08-24",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 80.6
+    },
+    {
+      "date": "2005-08-24",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.1
+    },
+    {
+      "date": "2005-08-25",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
+    },
+    {
+      "date": "2005-08-25",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.7
+    },
+    {
+      "date": "2005-08-25",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.3
+    },
+    {
+      "date": "2005-08-25",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.3
+    },
+    {
+      "date": "2005-08-25",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.0
+    },
+    {
+      "date": "2005-08-25",
+      "ticker": "6165",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 42.3
+    },
+    {
+      "date": "2005-08-26",
+      "ticker": "2354",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 115.8
+    },
+    {
+      "date": "2005-08-26",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.7
+    },
+    {
+      "date": "2005-08-29",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 74.1
+    },
+    {
+      "date": "2005-08-30",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.7
+    },
+    {
+      "date": "2005-08-31",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.3
+    },
+    {
+      "date": "2005-08-31",
+      "ticker": "5434",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 35.0
+    },
+    {
+      "date": "2005-09-07",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.4
+    },
+    {
+      "date": "2005-09-07",
+      "ticker": "5434",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 35.4
+    },
+    {
+      "date": "2005-09-07",
+      "ticker": "9910",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 31.4
+    },
+    {
+      "date": "2005-09-09",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.7
+    },
+    {
+      "date": "2005-09-13",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 132.7
+    },
+    {
+      "date": "2005-09-13",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.5
+    },
+    {
+      "date": "2005-09-14",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.8
+    },
+    {
+      "date": "2005-09-14",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.4
+    },
+    {
+      "date": "2005-09-15",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.2
+    },
+    {
+      "date": "2005-09-19",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.4
+    },
+    {
+      "date": "2005-09-20",
+      "ticker": "2486",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.0
+    },
+    {
+      "date": "2005-09-20",
+      "ticker": "2439",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.5
+    },
+    {
+      "date": "2005-09-20",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.3
+    },
+    {
+      "date": "2005-09-22",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 102.5
+    },
+    {
+      "date": "2005-09-22",
+      "ticker": "9910",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 29.6
+    },
+    {
+      "date": "2005-09-23",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.9
+    },
+    {
+      "date": "2005-09-23",
+      "ticker": "9910",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 30.6
+    },
+    {
+      "date": "2005-09-26",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.0
+    },
+    {
+      "date": "2005-09-26",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.9
+    },
+    {
+      "date": "2005-09-27",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.4
+    },
+    {
+      "date": "2005-09-27",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 54.9
+    },
+    {
+      "date": "2005-09-28",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.8
+    },
+    {
+      "date": "2005-09-28",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 54.9
+    },
+    {
+      "date": "2005-09-29",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.6
+    },
+    {
+      "date": "2005-09-29",
+      "ticker": "2354",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.0
+    },
+    {
+      "date": "2005-09-29",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.6
+    },
+    {
+      "date": "2005-09-30",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.6
+    },
+    {
+      "date": "2005-10-03",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.4
+    },
+    {
+      "date": "2005-10-04",
+      "ticker": "6012",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 69.2
+    },
+    {
+      "date": "2005-10-04",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.1
+    },
+    {
+      "date": "2005-10-04",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.5
+    },
+    {
+      "date": "2005-10-05",
+      "ticker": "2464",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.9
+    },
+    {
+      "date": "2005-10-05",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.9
+    },
+    {
+      "date": "2005-10-05",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.1
+    },
+    {
+      "date": "2005-10-06",
+      "ticker": "2379",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 40.2
+    },
+    {
+      "date": "2005-10-06",
+      "ticker": "2394",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 36.3
+    },
+    {
+      "date": "2005-10-07",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.1
+    },
+    {
+      "date": "2005-10-07",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.2
+    },
+    {
+      "date": "2005-10-07",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 54.0
+    },
+    {
+      "date": "2005-10-07",
+      "ticker": "2379",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 38.7
+    },
+    {
+      "date": "2005-10-07",
+      "ticker": "2394",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 33.8
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.6
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.5
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.6
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.9
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.6
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "6119",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 46.3
+    },
+    {
+      "date": "2005-10-11",
+      "ticker": "2379",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 39.3
+    },
+    {
+      "date": "2005-10-12",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.0
+    },
+    {
+      "date": "2005-10-12",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.3
+    },
+    {
+      "date": "2005-10-12",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.9
+    },
+    {
+      "date": "2005-10-12",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.9
+    },
+    {
+      "date": "2005-10-13",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 130.3
+    },
+    {
+      "date": "2005-10-13",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.1
+    },
+    {
+      "date": "2005-10-13",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.6
+    },
+    {
+      "date": "2005-10-13",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.1
+    },
+    {
+      "date": "2005-10-13",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.0
+    },
+    {
+      "date": "2005-10-13",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.2
+    },
+    {
+      "date": "2005-10-14",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.9
+    },
+    {
+      "date": "2005-10-14",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.0
+    },
+    {
+      "date": "2005-10-14",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.2
+    },
+    {
+      "date": "2005-10-14",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.6
+    },
+    {
+      "date": "2005-10-14",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.5
+    },
+    {
+      "date": "2005-10-17",
+      "ticker": "2446",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 141.2
+    },
+    {
+      "date": "2005-10-17",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 122.7
+    },
+    {
+      "date": "2005-10-17",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.6
+    },
+    {
+      "date": "2005-10-18",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.1
+    },
+    {
+      "date": "2005-10-18",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.9
+    },
+    {
+      "date": "2005-10-18",
+      "ticker": "6168",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 72.4
+    },
+    {
+      "date": "2005-10-18",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.9
+    },
+    {
+      "date": "2005-10-19",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.6
+    },
+    {
+      "date": "2005-10-19",
+      "ticker": "4526",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 106.9
+    },
+    {
+      "date": "2005-10-19",
+      "ticker": "6168",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 70.6
+    },
+    {
+      "date": "2005-10-20",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.2
+    },
+    {
+      "date": "2005-10-20",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.3
+    },
+    {
+      "date": "2005-10-20",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.7
+    },
+    {
+      "date": "2005-10-21",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.5
+    },
+    {
+      "date": "2005-10-24",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 97.6
+    },
+    {
+      "date": "2005-10-24",
+      "ticker": "1720",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 29.8
+    },
+    {
+      "date": "2005-10-25",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.0
+    },
+    {
+      "date": "2005-10-26",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.7
+    },
+    {
+      "date": "2005-10-26",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.8
+    },
+    {
+      "date": "2005-10-27",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.9
+    },
+    {
+      "date": "2005-10-31",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.0
+    },
+    {
+      "date": "2005-11-02",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.1
+    },
+    {
+      "date": "2005-11-03",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.1
+    },
+    {
+      "date": "2005-11-04",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.3
+    },
+    {
+      "date": "2005-11-04",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.4
+    },
+    {
+      "date": "2005-11-08",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.9
+    },
+    {
+      "date": "2005-11-08",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 93.3
+    },
+    {
+      "date": "2005-11-08",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.1
+    },
+    {
+      "date": "2005-11-08",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.5
+    },
+    {
+      "date": "2005-11-09",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.1
+    },
+    {
+      "date": "2005-11-09",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 100.4
+    },
+    {
+      "date": "2005-11-10",
+      "ticker": "2393",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.6
+    },
+    {
+      "date": "2005-11-10",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 85.3
+    },
+    {
+      "date": "2005-11-10",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 81.0
+    },
+    {
+      "date": "2005-11-11",
+      "ticker": "2393",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.0
+    },
+    {
+      "date": "2005-11-15",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.7
+    },
+    {
+      "date": "2005-11-16",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 52.8
+    },
+    {
+      "date": "2005-11-17",
+      "ticker": "2808",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.6
+    },
+    {
+      "date": "2005-11-18",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 132.0
+    },
+    {
+      "date": "2005-11-21",
+      "ticker": "5305",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 104.1
+    },
+    {
+      "date": "2005-11-21",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 47.1
+    },
+    {
+      "date": "2005-11-22",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 108.0
+    },
+    {
+      "date": "2005-11-22",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.2
+    },
+    {
+      "date": "2005-11-22",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.3
+    },
+    {
+      "date": "2005-11-22",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.3
+    },
+    {
+      "date": "2005-11-22",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.8
+    },
+    {
+      "date": "2005-11-22",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.5
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 132.2
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.8
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "2417",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 110.9
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "6605",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 105.6
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 88.8
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 66.5
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 63.0
+    },
+    {
+      "date": "2005-11-23",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.5
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 112.1
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "2393",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 109.2
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.8
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "6166",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.9
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.3
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "3002",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.4
+    },
+    {
+      "date": "2005-11-24",
+      "ticker": "2808",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 35.8
+    },
+    {
+      "date": "2005-11-25",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.1
+    },
+    {
+      "date": "2005-11-25",
+      "ticker": "2808",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 37.2
+    },
+    {
+      "date": "2005-11-28",
+      "ticker": "2808",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 41.5
+    },
+    {
+      "date": "2005-11-29",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 123.0
+    },
+    {
+      "date": "2005-11-29",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.6
+    },
+    {
+      "date": "2005-11-29",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 103.0
+    },
+    {
+      "date": "2005-11-29",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.5
+    },
+    {
+      "date": "2005-11-29",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 64.5
+    },
+    {
+      "date": "2005-11-29",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 53.8
+    },
+    {
+      "date": "2005-11-30",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 107.5
+    },
+    {
+      "date": "2005-11-30",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 90.8
+    },
+    {
+      "date": "2005-11-30",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 73.0
+    },
+    {
+      "date": "2005-11-30",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 62.5
+    },
+    {
+      "date": "2005-11-30",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 54.3
+    },
+    {
+      "date": "2005-11-30",
+      "ticker": "2487",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 11.1
+    },
+    {
+      "date": "2005-12-01",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 123.3
+    },
+    {
+      "date": "2005-12-01",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.3
+    },
+    {
+      "date": "2005-12-01",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 61.3
+    },
+    {
+      "date": "2005-12-01",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 52.8
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 111.8
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "2422",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "2448",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 75.0
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.9
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "6239",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.7
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.4
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.5
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 30.9
+    },
+    {
+      "date": "2005-12-02",
+      "ticker": "6196",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 3.5
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "3231",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 99.7
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.9
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.9
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 56.6
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "2332",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 54.2
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 44.8
+    },
+    {
+      "date": "2005-12-08",
+      "ticker": "2105",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 5.7
+    },
+    {
+      "date": "2005-12-09",
+      "ticker": "2301",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 120.5
+    },
+    {
+      "date": "2005-12-09",
+      "ticker": "2380",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 65.7
+    },
+    {
+      "date": "2005-12-09",
+      "ticker": "1520",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.8
+    },
+    {
+      "date": "2005-12-09",
+      "ticker": "2357",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.6
+    },
+    {
+      "date": "2005-12-09",
+      "ticker": "2332",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 55.0
+    },
+    {
+      "date": "2005-12-09",
+      "ticker": "1233",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 45.2
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 89.3
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "3031",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 83.2
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "6202",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 82.5
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.2
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "6289",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.0
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "2328",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.5
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "2105",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 10.3
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "9942",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 7.2
+    },
+    {
+      "date": "2005-12-13",
+      "ticker": "6196",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 6.0
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "2374",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 127.7
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "2353",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 101.8
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "3008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 86.6
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 60.2
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 59.1
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "2854",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 43.6
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "4532",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 36.0
+    },
+    {
+      "date": "2005-12-14",
+      "ticker": "6196",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 5.4
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "3063",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 127.3
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "2825",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 92.6
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "9921",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 68.9
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "3024",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 58.9
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "1532",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.4
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "2395",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 57.4
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "6209",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 36.5
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "4532",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 33.7
+    },
+    {
+      "date": "2005-12-15",
+      "ticker": "2487",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 12.2
+    }
+  ]
+}

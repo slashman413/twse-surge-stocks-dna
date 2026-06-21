@@ -1,13 +1,11 @@
-"""Yearly backtest v13 - 趨勢自由搏擊 (Trend Free Fight)
+"""Yearly backtest v13 - 全出清強化 + 品質門檻
 
 根據 股市司令「股票第10次出清」影片分析調整：
 
-Changes from v12:
-  A) 移除強制停利 TAKE_PROFIT_50 (自由搏擊—讓獲利奔跑)
-  B) 放寬移動停利 TRAIL_STOP_PCT: -15% → -20% (給趨勢更多空間)
-  C) 全出清強化: 大盤非多頭連續N天 → 清倉
-  D) 進場門檻提高: bonus >= 3 (從 bonus >= 2 提高)
-  E) 放寬 RSI_EXIT: 35 → 30 (減少過早出場)
+保留 v12 風控 (停利50%、移動停利-15%、RSI<35出場)，
+只強化：
+  C) 全出清: 大盤非多頭連續N天 → 清倉
+  D) bonus >= 3 (從 >= 2 提高)
 """
 
 import os, sys, time, json, gc, math
@@ -30,9 +28,9 @@ POSITION_SIZE = INITIAL_CAPITAL // 10  # ~300k per position (10%)
 MIN_PRICE = 10
 MIN_VOLUME = 1000
 STOP_LOSS_PCT = -15      # 硬停損不變
-TRAIL_STOP_PCT = -20     # [B] 放寬移動停利，讓趨勢有更多空間
-TAKE_PROFIT_50 = None    # [A] 移除強制停利 — 自由搏擊，不賣一半
-RSI_EXIT = 30            # [E] 放寬 RSI 出場從 35 → 30
+TRAIL_STOP_PCT = -15     # 跟 v12 一致
+TAKE_PROFIT_50 = 20      # 恢復 v12 停利50%
+RSI_EXIT = 35            # 跟 v12 一致
 
 # [D] 進場品質門檻提高
 MIN_BONUS = 3            # ≥3 (v12 是 ≥2)
@@ -427,7 +425,20 @@ def process_year(year):
                 if days >= 5 and rsi < RSI_EXIT:
                     sell = True; reason = f"RSI<{RSI_EXIT}"
 
-            # [A] 移除 TAKE_PROFIT_50 強制停利邏輯 — 讓獲利奔跑
+            if not sell and pl_pct >= TAKE_PROFIT_50 and not pos.get("sold_half"):
+                pos["sold_half"] = True
+                half = pos["shares"] // 2
+                if half > 0:
+                    cash += half * sp
+                    pos["shares"] -= half
+                    trades.append({
+                        "ticker": pos["ticker"], "buy_date": pos["buy_date"],
+                        "buy_price": round(pos["buy_price"], 2), "sell_date": date,
+                        "sell_price": round(sp, 2), "shares": half,
+                        "pl": round(half * (sp - pos["buy_price"]), 2),
+                        "pl_pct": round((sp - pos["buy_price"]) / pos["buy_price"] * 100, 2),
+                        "sell_reason": "停利50%"
+                    })
 
             if sell:
                 cash += pos["shares"] * sp
@@ -540,12 +551,9 @@ def main():
     avg = sum(s["total_return_pct"] for s in all_summary) / len(all_summary)
 
     print(f"\n{'='*60}")
-    print(f"策略: v13 趨勢自由搏擊 (股市司令概念)")
-    print(f"  [A] 移除 TAKE_PROFIT_50 強制停利 — 自由搏擊讓獲利奔跑")
-    print(f"  [B] TRAIL_STOP_PCT: -15% → -20% (給趨勢更多空間)")
-    print(f"  [C] 全出清強化: 大盤連續非多頭天數即清倉")
+    print(f"策略: v13 全出清強化 + 品質門檻 (保留v12風控)")
+    print(f"  [C] 全出清強化: 大盤連續非多頭即清倉")
     print(f"  [D] bonus門檻: ≥2 → ≥{MIN_BONUS} (提高進場品質)")
-    print(f"  [E] RSI_EXIT: 35 → {RSI_EXIT} (減少過早出場)")
     print(f"初始資金: {INITIAL_CAPITAL:,} | 持倉上限: {MAX_POSITIONS}檔 | 每日最多: {MAX_DAILY_ENTRIES}筆")
     print(f"{'='*60}")
     print(f"年均報酬率: {avg:>+10.2f}%")

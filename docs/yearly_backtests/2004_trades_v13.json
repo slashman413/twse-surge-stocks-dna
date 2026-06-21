@@ -1,0 +1,1362 @@
+{
+  "trades": [
+    {
+      "ticker": "2449",
+      "buy_date": "2004-04-13",
+      "buy_price": 14.74,
+      "sell_date": "2004-04-29",
+      "sell_price": 12.83,
+      "shares": 20355,
+      "pl": -38852.81,
+      "pl_pct": -12.95,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1471",
+      "buy_date": "2004-10-05",
+      "buy_price": 19.61,
+      "sell_date": "2004-10-11",
+      "sell_price": 19.52,
+      "shares": 15302,
+      "pl": -1333.33,
+      "pl_pct": -0.44,
+      "sell_reason": "RSI<35"
+    },
+    {
+      "ticker": "2008",
+      "buy_date": "2004-10-04",
+      "buy_price": 15.33,
+      "sell_date": "2004-10-13",
+      "sell_price": 15.33,
+      "shares": 19563,
+      "pl": 0.0,
+      "pl_pct": 0.0,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    },
+    {
+      "ticker": "1471",
+      "buy_date": "2004-10-11",
+      "buy_price": 19.52,
+      "sell_date": "2004-10-13",
+      "sell_price": 19.26,
+      "shares": 15370,
+      "pl": -4017.73,
+      "pl_pct": -1.34,
+      "sell_reason": "\u5927\u76e4\u5d29\u8dcc\u6e05\u5009"
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2004-01-02",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-05",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-06",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-07",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-08",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-09",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-12",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-13",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-14",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-15",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-16",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-27",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-28",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-29",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-01-30",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-02",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-03",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-04",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-05",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-06",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-09",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-10",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-11",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-12",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-13",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-16",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-17",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-18",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-19",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-20",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-23",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-24",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-25",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-26",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-02-27",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-01",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-02",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-03",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-04",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-05",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-08",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-09",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-10",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-11",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-12",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-15",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-16",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-17",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-18",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-19",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-03-22",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-23",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-24",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-25",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-26",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-29",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-30",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-03-31",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-04-01",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-04-02",
+      "equity": 3000000,
+      "type": "hold"
+    },
+    {
+      "date": "2004-04-05",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-06",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-07",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-08",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-09",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-12",
+      "equity": 3000000,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-13",
+      "equity": 3000000.0,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-14",
+      "equity": 3000000.0,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-15",
+      "equity": 2989809.11,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-16",
+      "equity": 2992993.76,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-19",
+      "equity": 2986624.45,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-20",
+      "equity": 2985987.53,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-21",
+      "equity": 2996178.42,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-22",
+      "equity": 2994267.63,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-23",
+      "equity": 2994267.63,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-26",
+      "equity": 2985987.53,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-27",
+      "equity": 2968153.43,
+      "type": "daily"
+    },
+    {
+      "date": "2004-04-28",
+      "equity": 2964968.77,
+      "type": "hold"
+    },
+    {
+      "date": "2004-04-29",
+      "equity": 2961147.19,
+      "type": "clear"
+    },
+    {
+      "date": "2004-04-30",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-03",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-04",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-05",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-06",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-07",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-10",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-11",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-12",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-13",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-14",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-17",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-18",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-19",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-20",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-21",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-24",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-25",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-26",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-27",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-28",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-05-31",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-01",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-02",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-03",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-04",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-07",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-08",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-09",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-10",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-11",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-14",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-15",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-16",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-17",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-18",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-21",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-23",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-24",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-25",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-28",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-29",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-06-30",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-01",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-02",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-05",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-06",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-07",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-08",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-09",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-12",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-13",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-14",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-15",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-16",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-19",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-20",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-21",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-22",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-23",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-26",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-27",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-28",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-29",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-07-30",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-02",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-03",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-04",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-05",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-06",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-09",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-10",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-11",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-12",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-13",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-16",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-17",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-18",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-19",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-20",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-23",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-26",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-27",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-30",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-08-31",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-01",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-02",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-03",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-06",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-07",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-08",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-09",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-10",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-13",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-14",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-15",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-16",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-17",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-20",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-21",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-22",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-23",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-24",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-27",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-29",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-09-30",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-01",
+      "equity": 2961147.19,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-04",
+      "equity": 2961147.19,
+      "type": "daily"
+    },
+    {
+      "date": "2004-10-05",
+      "equity": 2970640.72,
+      "type": "daily"
+    },
+    {
+      "date": "2004-10-06",
+      "equity": 2961147.19,
+      "type": "daily"
+    },
+    {
+      "date": "2004-10-07",
+      "equity": 2957915.15,
+      "type": "daily"
+    },
+    {
+      "date": "2004-10-08",
+      "equity": 2967408.71,
+      "type": "daily"
+    },
+    {
+      "date": "2004-10-11",
+      "equity": 2973104.82,
+      "type": "daily"
+    },
+    {
+      "date": "2004-10-12",
+      "equity": 2966069.46,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-13",
+      "equity": 2955796.14,
+      "type": "clear"
+    },
+    {
+      "date": "2004-10-14",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-15",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-18",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-19",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-20",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-21",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-22",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-26",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-27",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-28",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-10-29",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-01",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-02",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-03",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-04",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-05",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-08",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-09",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-10",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-11",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-12",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-15",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-16",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-17",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-18",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-11-19",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-11-22",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-23",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-24",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-25",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-26",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-29",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-11-30",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-01",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-02",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-03",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-06",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-07",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-08",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-09",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-10",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-13",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-14",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-15",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-12-16",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-12-17",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-12-20",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-21",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-22",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-23",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-24",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-27",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-28",
+      "equity": 2955796.14,
+      "type": "hold"
+    },
+    {
+      "date": "2004-12-29",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-12-30",
+      "equity": 2955796.14,
+      "type": "daily"
+    },
+    {
+      "date": "2004-12-31",
+      "equity": 2955796.14,
+      "type": "daily"
+    }
+  ],
+  "missed_trades": [
+    {
+      "date": "2004-07-09",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.5
+    },
+    {
+      "date": "2004-07-15",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.0
+    },
+    {
+      "date": "2004-09-03",
+      "ticker": "6189",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.4
+    },
+    {
+      "date": "2004-09-14",
+      "ticker": "2833",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.3
+    },
+    {
+      "date": "2004-09-17",
+      "ticker": "2615",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.8
+    },
+    {
+      "date": "2004-09-21",
+      "ticker": "2391",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.0
+    },
+    {
+      "date": "2004-09-21",
+      "ticker": "8016",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 18.9
+    },
+    {
+      "date": "2004-09-30",
+      "ticker": "2008",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.5
+    },
+    {
+      "date": "2004-10-01",
+      "ticker": "2032",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.7
+    },
+    {
+      "date": "2004-10-01",
+      "ticker": "2833",
+      "reason": "\u5927\u76e4\u975e\u591a\u982d",
+      "score": 19.7
+    }
+  ]
+}

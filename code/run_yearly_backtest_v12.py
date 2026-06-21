@@ -14,7 +14,7 @@ from strategy import _safe_last
 
 ADJ_DIR = "D:/TWSE-Data/Adjusted"
 TEMP_DIR = os.path.join(ADJ_DIR, "_temp")
-OUT_DIR = r"D:\twse-surge-stocks-dna\docs\yearly_backtests"
+OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs", "yearly_backtests")
 os.makedirs(OUT_DIR, exist_ok=True)
 VERSION = "v12"
 

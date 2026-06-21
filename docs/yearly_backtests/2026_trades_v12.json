@@ -719,7 +719,7 @@
       "ticker": "9933",
       "buy_date": "2026-06-12",
       "buy_price": 40.95,
-      "sell_date": "2026-06-15 (\u5e74\u7d42)",
+      "sell_date": "2026-06-18 (\u5e74\u7d42)",
       "sell_price": 40.95,
       "shares": 7326,
       "pl": 0.0,
@@ -730,7 +730,7 @@
       "ticker": "2347",
       "buy_date": "2026-06-12",
       "buy_price": 89.1,
-      "sell_date": "2026-06-15 (\u5e74\u7d42)",
+      "sell_date": "2026-06-18 (\u5e74\u7d42)",
       "sell_price": 89.1,
       "shares": 3367,
       "pl": 0.0,
@@ -1266,6 +1266,21 @@
     },
     {
       "date": "2026-06-15",
+      "equity": 4261481.22,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-16",
+      "equity": 4261481.22,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-17",
+      "equity": 4261481.22,
+      "type": "daily"
+    },
+    {
+      "date": "2026-06-18",
       "equity": 4261481.22,
       "type": "daily"
     }
