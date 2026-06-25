@@ -3,430 +3,335 @@
   "market_bullish": true,
   "market_crash": false,
   "market_trend_up": false,
-  "market_score": 87,
-  "taiex_close": 47100.6484375,
+  "market_score": 61,
+  "taiex_close": 46043.6015625,
   "reasons": [
-    "DIF210=292>0",
-    "MACD四箭頭=4",
-    "W%R50=-9",
-    "RSI60=68"
+    "DIF210=295>0",
+    "W%R50=-17",
+    "RSI60=66"
   ],
   "market_assessment": {
-    "score": 87,
-    "arrows": 4,
-    "dif210": 292.3,
+    "score": 61,
+    "arrows": 2,
+    "dif210": 294.7,
     "adx300": 13.7,
-    "rsi60": 68.2,
-    "wr50": -8.6,
+    "rsi60": 66.5,
+    "wr50": -17.2,
     "market_bullish": true,
     "market_crash": false,
     "market_trend_up": false,
     "reasons": [
-      "DIF210=292>0",
-      "MACD四箭頭=4",
-      "W%R50=-9",
-      "RSI60=68"
+      "DIF210=295>0",
+      "W%R50=-17",
+      "RSI60=66"
     ],
-    "taiex_close": 47100.6484375
+    "taiex_close": 46043.6015625
   },
   "scanned_count": 533,
   "buy_count": 30,
   "sell_count": 0,
   "signals": [
     {
-      "ticker": "2034",
-      "name": "YC Inox Co.,Ltd",
-      "date": "2026-06-24",
+      "ticker": "1234",
+      "name": "Hey Song Corporation",
+      "date": "2026-06-25",
       "score": 83,
-      "close": 20.4,
-      "dist_ma20": 21.56,
-      "rsi14": 87.89,
+      "close": 35.15,
+      "dist_ma20": 0.83,
+      "rsi14": 50.0,
       "quality": 83,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX26",
+        "ADX33",
         "拉回MA20",
-        "RSI51"
+        "RSI50"
       ]
     },
     {
-      "ticker": "2489",
-      "name": "AmTRAN Technology Co.,Ltd",
-      "date": "2026-06-24",
-      "score": 83,
-      "close": 47.1,
-      "dist_ma20": 92.95,
-      "rsi14": 94.12,
-      "quality": 83,
+      "ticker": "1315",
+      "name": "Tahsin Industrial Corporation",
+      "date": "2026-06-25",
+      "score": 80,
+      "close": 62.3,
+      "dist_ma20": 0.83,
+      "rsi14": 59.26,
+      "quality": 80,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX24",
+        "ADX21",
+        "拉回MA20",
+        "RSI59"
+      ]
+    },
+    {
+      "ticker": "6743",
+      "name": "AMPACS Corporation",
+      "date": "2026-06-25",
+      "score": 78,
+      "close": 29.85,
+      "dist_ma20": 0.99,
+      "rsi14": 44.0,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX22",
         "拉回MA20",
         "RSI44"
       ]
     },
     {
-      "ticker": "6282",
-      "name": "AcBel Polytech Inc.",
-      "date": "2026-06-24",
-      "score": 83,
-      "close": 62.0,
-      "dist_ma20": 171.63,
-      "rsi14": 97.19,
-      "quality": 83,
+      "ticker": "1229",
+      "name": "Lien Hwa Industrial Holdings Corporation",
+      "date": "2026-06-25",
+      "score": 76,
+      "close": 42.25,
+      "dist_ma20": 1.63,
+      "rsi14": 42.99,
+      "quality": 76,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX32",
-        "拉回MA20",
-        "RSI46"
+        "ADX21",
+        "RSI43"
       ]
     },
     {
-      "ticker": "2002",
-      "name": "China Steel Corporation",
-      "date": "2026-06-24",
-      "score": 80,
-      "close": 19.35,
-      "dist_ma20": 9.33,
-      "rsi14": 86.6,
-      "quality": 80,
+      "ticker": "1231",
+      "name": "Lian Hwa Foods Corporation",
+      "date": "2026-06-25",
+      "score": 76,
+      "close": 88.0,
+      "dist_ma20": 1.15,
+      "rsi14": 54.87,
+      "quality": 76,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
         "ADX34",
-        "拉回MA20",
-        "RSI47"
-      ]
-    },
-    {
-      "ticker": "2455",
-      "name": "Visual Photonics Epitaxy Co., Ltd.",
-      "date": "2026-06-24",
-      "score": 80,
-      "close": 397.0,
-      "dist_ma20": 655.76,
-      "rsi14": 99.47,
-      "quality": 80,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX25",
-        "拉回MA20",
-        "RSI47"
-      ]
-    },
-    {
-      "ticker": "2633",
-      "name": "Taiwan High Speed Rail Corporation",
-      "date": "2026-06-24",
-      "score": 78,
-      "close": 25.95,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX31",
-        "拉回MA20",
-        "RSI50"
-      ]
-    },
-    {
-      "ticker": "3037",
-      "name": "Unimicron Technology Corp.",
-      "date": "2026-06-24",
-      "score": 78,
-      "close": 931.0,
-      "dist_ma20": 1130.67,
-      "rsi14": 99.81,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX21",
-        "拉回MA20",
-        "RSI47"
-      ]
-    },
-    {
-      "ticker": "6451",
-      "name": "ShunSin Technology Holdings Limited",
-      "date": "2026-06-24",
-      "score": 78,
-      "close": 631.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX32",
-        "拉回MA20"
-      ]
-    },
-    {
-      "ticker": "6743",
-      "name": "AMPACS Corporation",
-      "date": "2026-06-24",
-      "score": 78,
-      "close": 29.85,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX23",
-        "拉回MA20",
-        "RSI42"
-      ]
-    },
-    {
-      "ticker": "1231",
-      "name": "Lian Hwa Foods Corporation",
-      "date": "2026-06-24",
-      "score": 76,
-      "close": 88.0,
-      "dist_ma20": 131.52,
-      "rsi14": 98.13,
-      "quality": 76,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX32",
-        "RSI56"
-      ]
-    },
-    {
-      "ticker": "3443",
-      "name": "Global Unichip Corp.",
-      "date": "2026-06-24",
-      "score": 76,
-      "close": 4880.0,
-      "dist_ma20": 1344.56,
-      "rsi14": 99.89,
-      "quality": 76,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX21",
-        "RSI53"
-      ]
-    },
-    {
-      "ticker": "4961",
-      "name": "Fitipower Integrated Technology Inc.",
-      "date": "2026-06-24",
-      "score": 76,
-      "close": 177.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 76,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX25",
-        "RSI53"
-      ]
-    },
-    {
-      "ticker": "5469",
-      "name": "HannStar Board Corporation",
-      "date": "2026-06-24",
-      "score": 76,
-      "close": 85.5,
-      "dist_ma20": 409.92,
-      "rsi14": 99.11,
-      "quality": 76,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX24",
-        "RSI50"
-      ]
-    },
-    {
-      "ticker": "1514",
-      "name": "Allis Electric Co.,Ltd.",
-      "date": "2026-06-24",
-      "score": 75,
-      "close": 128.0,
-      "dist_ma20": 793.39,
-      "rsi14": 99.82,
-      "quality": 75,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "拉回MA20",
-        "RSI42"
-      ]
-    },
-    {
-      "ticker": "6412",
-      "name": "Chicony Power Technology Co., Ltd.",
-      "date": "2026-06-24",
-      "score": 75,
-      "close": 93.1,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 75,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "拉回MA20",
-        "RSI39"
-      ]
-    },
-    {
-      "ticker": "1315",
-      "name": "Tahsin Industrial Corporation",
-      "date": "2026-06-24",
-      "score": 73,
-      "close": 62.3,
-      "dist_ma20": 103.15,
-      "rsi14": 97.58,
-      "quality": 73,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX29",
         "RSI55"
+      ]
+    },
+    {
+      "ticker": "2002",
+      "name": "China Steel Corporation",
+      "date": "2026-06-25",
+      "score": 76,
+      "close": 19.35,
+      "dist_ma20": 1.8,
+      "rsi14": 51.61,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX33",
+        "RSI52"
+      ]
+    },
+    {
+      "ticker": "2012",
+      "name": "Chun Yu Works & Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 76,
+      "close": 14.9,
+      "dist_ma20": 2.71,
+      "rsi14": 53.49,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX32",
+        "RSI53"
       ]
     },
     {
       "ticker": "2228",
       "name": "Iron Force Industrial Co., Ltd.",
-      "date": "2026-06-24",
-      "score": 73,
+      "date": "2026-06-25",
+      "score": 76,
       "close": 87.7,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 73,
+      "dist_ma20": 2.07,
+      "rsi14": 57.97,
+      "quality": 76,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX23",
-        "RSI53"
+        "ADX21",
+        "RSI58"
       ]
     },
     {
       "ticker": "2515",
       "name": "BES Engineering Corporation",
-      "date": "2026-06-24",
-      "score": 73,
+      "date": "2026-06-25",
+      "score": 76,
       "close": 13.2,
-      "dist_ma20": 64.33,
-      "rsi14": 92.62,
+      "dist_ma20": 1.3,
+      "rsi14": 48.72,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX21",
+        "RSI49"
+      ]
+    },
+    {
+      "ticker": "6184",
+      "name": "Dafeng TV Ltd.",
+      "date": "2026-06-25",
+      "score": 76,
+      "close": 44.45,
+      "dist_ma20": 1.95,
+      "rsi14": 58.57,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX52",
+        "RSI59"
+      ]
+    },
+    {
+      "ticker": "6282",
+      "name": "AcBel Polytech Inc.",
+      "date": "2026-06-25",
+      "score": 76,
+      "close": 62.0,
+      "dist_ma20": 1.68,
+      "rsi14": 36.98,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX34",
+        "RSI37"
+      ]
+    },
+    {
+      "ticker": "1341",
+      "name": "Fulin Plastic Industry (Cayman) Holding Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 75,
+      "close": 58.2,
+      "dist_ma20": -0.16,
+      "rsi14": 40.64,
+      "quality": 75,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "拉回MA20",
+        "RSI41"
+      ]
+    },
+    {
+      "ticker": "6902",
+      "name": "Gogolook Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 75,
+      "close": 138.0,
+      "dist_ma20": 0.09,
+      "rsi14": 43.88,
+      "quality": 75,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX22",
+        "拉回MA20",
+        "RSI44"
+      ]
+    },
+    {
+      "ticker": "2207",
+      "name": "Hotai Motor Co.,Ltd.",
+      "date": "2026-06-25",
+      "score": 73,
+      "close": 477.5,
+      "dist_ma20": 2.76,
+      "rsi14": 55.8,
       "quality": 73,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX23",
-        "RSI50"
+        "ADX39",
+        "RSI56"
       ]
     },
     {
-      "ticker": "1504",
-      "name": "TECO Electric & Machinery Co., Ltd.",
-      "date": "2026-06-24",
+      "ticker": "3605",
+      "name": "ACES Electronics Co., Ltd.",
+      "date": "2026-06-25",
       "score": 72,
-      "close": 71.9,
-      "dist_ma20": 196.43,
-      "rsi14": 98.51,
+      "close": 76.6,
+      "dist_ma20": 0.76,
+      "rsi14": 50.52,
       "quality": 72,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
+        "ADX25",
         "拉回MA20",
-        "RSI38"
+        "RSI51"
       ]
     },
     {
-      "ticker": "2609",
-      "name": "Yang Ming Marine Transport Corporation",
-      "date": "2026-06-24",
-      "score": 72,
-      "close": 51.6,
-      "dist_ma20": 246.77,
-      "rsi14": 98.6,
-      "quality": 72,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "拉回MA20",
-        "RSI40"
-      ]
-    },
-    {
-      "ticker": "6781",
-      "name": "Advanced Energy Solution Holding Co., Ltd.",
-      "date": "2026-06-24",
-      "score": 72,
-      "close": 1165.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 72,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "拉回MA20",
-        "RSI46"
-      ]
-    },
-    {
-      "ticker": "3044",
-      "name": "Tripod Technology Corporation",
-      "date": "2026-06-24",
+      "ticker": "2330",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "date": "2026-06-25",
       "score": 71,
-      "close": 526.0,
-      "dist_ma20": 514.74,
-      "rsi14": 99.05,
+      "close": 2390.0,
+      "dist_ma20": 1.34,
+      "rsi14": 51.01,
+      "quality": 71,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX26",
+        "RSI51"
+      ]
+    },
+    {
+      "ticker": "2633",
+      "name": "Taiwan High Speed Rail Corporation",
+      "date": "2026-06-25",
+      "score": 71,
+      "close": 25.95,
+      "dist_ma20": 1.6,
+      "rsi14": 56.67,
       "quality": 71,
       "bonus": 3,
       "arrows": 3,
@@ -434,61 +339,241 @@
       "details": [
         "MACD3箭",
         "ADX28",
-        "RSI55"
+        "RSI57"
       ]
     },
     {
-      "ticker": "4919",
-      "name": "Nuvoton Technology Corporation",
-      "date": "2026-06-24",
+      "ticker": "2812",
+      "name": "Taichung Commercial Bank Co., Ltd.",
+      "date": "2026-06-25",
       "score": 71,
-      "close": 186.0,
-      "dist_ma20": 381.87,
-      "rsi14": 98.95,
+      "close": 19.85,
+      "dist_ma20": 2.81,
+      "rsi14": 57.89,
       "quality": 71,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX27",
-        "RSI48"
+        "ADX29",
+        "RSI58"
       ]
     },
     {
-      "ticker": "6191",
-      "name": "Global Brands Manufacture Ltd.",
-      "date": "2026-06-24",
+      "ticker": "6923",
+      "name": "CHUNGTAI RESOURCE Technology CORP.",
+      "date": "2026-06-25",
       "score": 71,
-      "close": 98.4,
-      "dist_ma20": 571.44,
-      "rsi14": 99.48,
+      "close": 76.9,
+      "dist_ma20": 1.23,
+      "rsi14": 53.39,
       "quality": 71,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX31",
-        "RSI48"
+        "ADX22",
+        "RSI53"
       ]
     },
     {
-      "ticker": "6271",
-      "name": "Tong Hsing Electronic Industries, Ltd.",
-      "date": "2026-06-24",
-      "score": 71,
-      "close": 251.5,
-      "dist_ma20": 132.65,
-      "rsi14": 97.39,
-      "quality": 71,
-      "bonus": 3,
-      "arrows": 3,
+      "ticker": "1517",
+      "name": "Lee Chi Enterprises Company Ltd.",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 10.45,
+      "dist_ma20": 0.94,
+      "rsi14": 38.71,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
       "signal": "BUY",
       "details": [
-        "MACD3箭",
-        "ADX26",
+        "ADX21",
+        "拉回MA20",
+        "RSI39"
+      ]
+    },
+    {
+      "ticker": "1525",
+      "name": "Kian Shen Corporation",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 63.0,
+      "dist_ma20": -1.89,
+      "rsi14": 49.12,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX34",
+        "拉回MA20",
         "RSI49"
+      ]
+    },
+    {
+      "ticker": "2538",
+      "name": "Kee Tai Properties Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 9.99,
+      "dist_ma20": 0.87,
+      "rsi14": 50.6,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX30",
+        "拉回MA20",
+        "RSI51"
+      ]
+    },
+    {
+      "ticker": "3617",
+      "name": "Cyber Power Systems, Inc.",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 212.0,
+      "dist_ma20": -0.66,
+      "rsi14": 37.66,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX22",
+        "拉回MA20",
+        "RSI38"
+      ]
+    },
+    {
+      "ticker": "6128",
+      "name": "General Plastic Industrial Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 20.55,
+      "dist_ma20": 0.32,
+      "rsi14": 41.77,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX22",
+        "拉回MA20",
+        "RSI42"
+      ]
+    },
+    {
+      "ticker": "6552",
+      "name": "JMC Electronics Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 31.55,
+      "dist_ma20": -1.44,
+      "rsi14": 41.09,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX26",
+        "拉回MA20",
+        "RSI41"
+      ]
+    },
+    {
+      "ticker": "6792",
+      "name": "Unictron Technologies Corporation",
+      "date": "2026-06-25",
+      "score": 69,
+      "close": 65.9,
+      "dist_ma20": -1.76,
+      "rsi14": 47.37,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX31",
+        "拉回MA20",
+        "RSI47"
+      ]
+    },
+    {
+      "ticker": "1312",
+      "name": "Grand Pacific Petrochemical Corporation",
+      "date": "2026-06-25",
+      "score": 68,
+      "close": 14.0,
+      "dist_ma20": 7.06,
+      "rsi14": 47.5,
+      "quality": 68,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX37",
+        "RSI48"
+      ]
+    },
+    {
+      "ticker": "1313",
+      "name": "UPC Technology Corporation",
+      "date": "2026-06-25",
+      "score": 68,
+      "close": 11.8,
+      "dist_ma20": 6.27,
+      "rsi14": 58.07,
+      "quality": 68,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX38",
+        "RSI58"
+      ]
+    },
+    {
+      "ticker": "2436",
+      "name": "Weltrend Semiconductor, Inc.",
+      "date": "2026-06-25",
+      "score": 68,
+      "close": 76.2,
+      "dist_ma20": 5.69,
+      "rsi14": 56.71,
+      "quality": 68,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX29",
+        "RSI57"
+      ]
+    },
+    {
+      "ticker": "2449",
+      "name": "King Yuan Electronics Co., Ltd.",
+      "date": "2026-06-25",
+      "score": 68,
+      "close": 333.5,
+      "dist_ma20": 9.38,
+      "rsi14": 54.01,
+      "quality": 68,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX33",
+        "RSI54"
       ]
     }
   ]
