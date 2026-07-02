@@ -3,60 +3,157 @@
   "market_bullish": true,
   "market_crash": false,
   "market_trend_up": false,
-  "market_score": 61,
-  "taiex_close": 46125.91015625,
+  "market_score": 79,
+  "taiex_close": 47018.98828125,
   "reasons": [
-    "DIF210=302>0",
-    "W%R50=-18",
-    "RSI60=67"
+    "DIF210=305>0",
+    "MACD四箭頭=3",
+    "W%R50=-11",
+    "RSI60=68"
   ],
   "market_assessment": {
-    "score": 61,
-    "arrows": 2,
-    "dif210": 302.4,
+    "score": 79,
+    "arrows": 3,
+    "dif210": 304.8,
     "adx300": 13.9,
-    "rsi60": 66.6,
-    "wr50": -18.4,
+    "rsi60": 68.4,
+    "wr50": -10.7,
     "market_bullish": true,
     "market_crash": false,
     "market_trend_up": false,
     "reasons": [
-      "DIF210=302>0",
-      "W%R50=-18",
-      "RSI60=67"
+      "DIF210=305>0",
+      "MACD四箭頭=3",
+      "W%R50=-11",
+      "RSI60=68"
     ],
-    "taiex_close": 46125.91015625
+    "taiex_close": 47018.98828125
   },
   "scanned_count": 533,
   "buy_count": 30,
   "sell_count": 0,
   "signals": [
     {
-      "ticker": "6743",
-      "name": "AMPACS Corporation",
-      "date": "2026-07-01",
+      "ticker": "1110",
+      "name": "Southeast Cement Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 83,
+      "close": 15.5,
+      "dist_ma20": -0.24,
+      "rsi14": 52.17,
+      "quality": 83,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX33",
+        "拉回MA20",
+        "RSI52"
+      ]
+    },
+    {
+      "ticker": "1460",
+      "name": "Everest Textile Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 83,
+      "close": 7.2,
+      "dist_ma20": 0.54,
+      "rsi14": 57.14,
+      "quality": 83,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX26",
+        "拉回MA20",
+        "RSI57"
+      ]
+    },
+    {
+      "ticker": "2504",
+      "name": "Goldsun Building Materials Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 83,
+      "close": 33.3,
+      "dist_ma20": -0.45,
+      "rsi14": 36.74,
+      "quality": 83,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX25",
+        "拉回MA20",
+        "RSI37"
+      ]
+    },
+    {
+      "ticker": "1227",
+      "name": "Standard Foods Corporation",
+      "date": "2026-07-02",
+      "score": 80,
+      "close": 29.1,
+      "dist_ma20": 0.67,
+      "rsi14": 56.41,
+      "quality": 80,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX28",
+        "拉回MA20",
+        "RSI56"
+      ]
+    },
+    {
+      "ticker": "1455",
+      "name": "Zig Sheng Industrial Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 78,
+      "close": 9.79,
+      "dist_ma20": 0.59,
+      "rsi14": 48.5,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX38",
+        "拉回MA20",
+        "RSI48"
+      ]
+    },
+    {
+      "ticker": "2431",
+      "name": "Lien Chang Electronic Enterprise Co., Ltd",
+      "date": "2026-07-02",
       "score": 76,
-      "close": 32.0,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
+      "close": 11.35,
+      "dist_ma20": 1.02,
+      "rsi14": 57.3,
       "quality": 76,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX39",
-        "RSI52"
+        "ADX23",
+        "RSI57"
       ]
     },
     {
-      "ticker": "5871",
-      "name": "Chailease Holding Company Limited",
-      "date": "2026-07-01",
+      "ticker": "2545",
+      "name": "Huang Hsiang Construction Corporation",
+      "date": "2026-07-02",
       "score": 75,
-      "close": 114.5,
-      "dist_ma20": 70.23,
-      "rsi14": 93.84,
+      "close": 38.35,
+      "dist_ma20": 0.35,
+      "rsi14": 53.57,
       "quality": 75,
       "bonus": 3,
       "arrows": 3,
@@ -64,71 +161,179 @@
       "details": [
         "MACD3箭",
         "拉回MA20",
-        "RSI47"
+        "RSI54"
       ]
     },
     {
       "ticker": "2539",
       "name": "Sakura Development Co.,Ltd",
-      "date": "2026-07-01",
-      "score": 71,
+      "date": "2026-07-02",
+      "score": 73,
       "close": 39.25,
-      "dist_ma20": 85.65,
-      "rsi14": 97.9,
+      "dist_ma20": 1.86,
+      "rsi14": 52.85,
+      "quality": 73,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX26",
+        "RSI53"
+      ]
+    },
+    {
+      "ticker": "1531",
+      "name": "Kaulin Mfg. Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 72,
+      "close": 12.9,
+      "dist_ma20": -0.0,
+      "rsi14": 44.44,
+      "quality": 72,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "拉回MA20",
+        "RSI44"
+      ]
+    },
+    {
+      "ticker": "2376",
+      "name": "Giga-Byte Technology Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 72,
+      "close": 337.5,
+      "dist_ma20": -2.6,
+      "rsi14": 48.57,
+      "quality": 72,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "拉回MA20",
+        "RSI49"
+      ]
+    },
+    {
+      "ticker": "2511",
+      "name": "Prince Housing & Development Corp.",
+      "date": "2026-07-02",
+      "score": 71,
+      "close": 8.19,
+      "dist_ma20": 1.1,
+      "rsi14": 57.97,
       "quality": 71,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX27",
-        "RSI46"
+        "ADX35",
+        "RSI58"
+      ]
+    },
+    {
+      "ticker": "4994",
+      "name": "X-Legend Entertainment Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 71,
+      "close": 90.5,
+      "dist_ma20": 1.65,
+      "rsi14": 57.73,
+      "quality": 71,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX53",
+        "RSI58"
       ]
     },
     {
       "ticker": "5519",
       "name": "LongDa Construction & Development Corporation",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "score": 71,
       "close": 34.5,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
+      "dist_ma20": 2.26,
+      "rsi14": 57.65,
       "quality": 71,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX29",
+        "ADX30",
         "RSI58"
       ]
     },
     {
-      "ticker": "1216",
-      "name": "Uni-President Enterprises Corp.",
-      "date": "2026-07-01",
+      "ticker": "6666",
+      "name": "Luo Lih-Fen Holding Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 71,
+      "close": 43.7,
+      "dist_ma20": 2.46,
+      "rsi14": 55.56,
+      "quality": 71,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX60",
+        "RSI56"
+      ]
+    },
+    {
+      "ticker": "1102",
+      "name": "Asia Cement Corporation",
+      "date": "2026-07-02",
       "score": 69,
-      "close": 74.5,
-      "dist_ma20": 36.79,
-      "rsi14": 87.9,
+      "close": 35.1,
+      "dist_ma20": -0.08,
+      "rsi14": 57.14,
       "quality": 69,
       "bonus": 2,
       "arrows": 2,
       "signal": "BUY",
       "details": [
-        "ADX40",
+        "ADX27",
         "拉回MA20",
-        "RSI51"
+        "RSI57"
       ]
     },
     {
-      "ticker": "1460",
-      "name": "Everest Textile Co., Ltd.",
-      "date": "2026-07-01",
+      "ticker": "1216",
+      "name": "Uni-President Enterprises Corp.",
+      "date": "2026-07-02",
       "score": 69,
-      "close": 7.2,
-      "dist_ma20": -0.05,
-      "rsi14": 56.49,
+      "close": 74.5,
+      "dist_ma20": -0.4,
+      "rsi14": 43.53,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX33",
+        "拉回MA20",
+        "RSI44"
+      ]
+    },
+    {
+      "ticker": "1459",
+      "name": "Lan Fa Textile Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 11.7,
+      "dist_ma20": -0.19,
+      "rsi14": 45.45,
       "quality": 69,
       "bonus": 3,
       "arrows": 3,
@@ -136,17 +341,17 @@
       "details": [
         "MACD3箭",
         "拉回MA20",
-        "RSI54"
+        "RSI45"
       ]
     },
     {
-      "ticker": "2029",
-      "name": "Sheng Yu Steel Co., Ltd.",
-      "date": "2026-07-01",
+      "ticker": "1517",
+      "name": "Lee Chi Enterprises Company Ltd.",
+      "date": "2026-07-02",
       "score": 69,
-      "close": 20.7,
-      "dist_ma20": 14.51,
-      "rsi14": 83.85,
+      "close": 10.4,
+      "dist_ma20": -0.26,
+      "rsi14": 55.56,
       "quality": 69,
       "bonus": 2,
       "arrows": 2,
@@ -154,89 +359,17 @@
       "details": [
         "ADX23",
         "拉回MA20",
-        "RSI50"
+        "RSI56"
       ]
     },
     {
-      "ticker": "2347",
-      "name": "Synnex Technology International Corporation",
-      "date": "2026-07-01",
+      "ticker": "2027",
+      "name": "Ta Chen Stainless Pipe Co., Ltd.",
+      "date": "2026-07-02",
       "score": 69,
-      "close": 93.6,
-      "dist_ma20": 65.9,
-      "rsi14": 89.76,
-      "quality": 69,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX28",
-        "拉回MA20",
-        "RSI47"
-      ]
-    },
-    {
-      "ticker": "2867",
-      "name": "Mercuries Life Insurance Company Ltd.",
-      "date": "2026-07-01",
-      "score": 69,
-      "close": 8.25,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 69,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX28",
-        "拉回MA20",
-        "RSI58"
-      ]
-    },
-    {
-      "ticker": "2884",
-      "name": "E.SUN Financial Holding Company, Ltd.",
-      "date": "2026-07-01",
-      "score": 69,
-      "close": 32.9,
-      "dist_ma20": 92.51,
-      "rsi14": 95.26,
-      "quality": 69,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX38",
-        "拉回MA20",
-        "RSI59"
-      ]
-    },
-    {
-      "ticker": "2897",
-      "name": "O-Bank Co., Ltd.",
-      "date": "2026-07-01",
-      "score": 69,
-      "close": 10.4,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 69,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX33",
-        "拉回MA20",
-        "RSI54"
-      ]
-    },
-    {
-      "ticker": "3617",
-      "name": "Cyber Power Systems, Inc.",
-      "date": "2026-07-01",
-      "score": 69,
-      "close": 216.5,
-      "dist_ma20": 262.19,
-      "rsi14": 99.01,
+      "close": 41.5,
+      "dist_ma20": -0.85,
+      "rsi14": 43.31,
       "quality": 69,
       "bonus": 2,
       "arrows": 2,
@@ -244,72 +377,90 @@
       "details": [
         "ADX21",
         "拉回MA20",
-        "RSI50"
+        "RSI43"
       ]
     },
     {
-      "ticker": "5876",
-      "name": "The Shanghai Commercial & Savings Bank, Ltd.",
-      "date": "2026-07-01",
-      "score": 68,
-      "close": 42.4,
-      "dist_ma20": 0.0,
-      "rsi14": 50.0,
-      "quality": 68,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX27",
-        "RSI57"
-      ]
-    },
-    {
-      "ticker": "2025",
-      "name": "Chien Shing Stainless Steel Co., Ltd.",
-      "date": "2026-07-01",
-      "score": 66,
-      "close": 13.2,
-      "dist_ma20": 233.42,
-      "rsi14": 98.22,
-      "quality": 66,
+      "ticker": "2033",
+      "name": "Chia Ta World Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 16.0,
+      "dist_ma20": -0.03,
+      "rsi14": 57.69,
+      "quality": 69,
       "bonus": 2,
       "arrows": 2,
       "signal": "BUY",
       "details": [
-        "ADX30",
+        "ADX21",
         "拉回MA20",
-        "RSI41"
+        "RSI58"
       ]
     },
     {
-      "ticker": "2207",
-      "name": "Hotai Motor Co.,Ltd.",
-      "date": "2026-07-01",
-      "score": 66,
-      "close": 465.0,
-      "dist_ma20": 101.67,
-      "rsi14": 94.39,
-      "quality": 66,
+      "ticker": "2536",
+      "name": "Hong Pu Real Estate Development Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 20.85,
+      "dist_ma20": -1.53,
+      "rsi14": 39.47,
+      "quality": 69,
       "bonus": 2,
       "arrows": 2,
       "signal": "BUY",
       "details": [
         "ADX33",
         "拉回MA20",
-        "RSI49"
+        "RSI39"
       ]
     },
     {
-      "ticker": "2520",
-      "name": "Kindom Development Co., Ltd.",
-      "date": "2026-07-01",
-      "score": 66,
-      "close": 34.3,
-      "dist_ma20": 62.67,
-      "rsi14": 92.12,
-      "quality": 66,
+      "ticker": "2884",
+      "name": "E.SUN Financial Holding Company, Ltd.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 32.9,
+      "dist_ma20": -0.5,
+      "rsi14": 54.87,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX34",
+        "拉回MA20",
+        "RSI55"
+      ]
+    },
+    {
+      "ticker": "3042",
+      "name": "TXC Corporation",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 206.0,
+      "dist_ma20": -0.99,
+      "rsi14": 39.37,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX22",
+        "拉回MA20",
+        "RSI39"
+      ]
+    },
+    {
+      "ticker": "3679",
+      "name": "Nishoku Technology Inc.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 112.5,
+      "dist_ma20": -0.12,
+      "rsi14": 42.31,
+      "quality": 69,
       "bonus": 2,
       "arrows": 2,
       "signal": "BUY",
@@ -320,129 +471,110 @@
       ]
     },
     {
-      "ticker": "2501",
-      "name": "Cathay Real Estate Development Co., Ltd.",
-      "date": "2026-07-01",
-      "score": 66,
-      "close": 24.0,
-      "dist_ma20": 65.63,
-      "rsi14": 93.9,
-      "quality": 66,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX27",
-        "拉回MA20",
-        "RSI39"
-      ]
-    },
-    {
-      "ticker": "1438",
-      "name": "SanDi Properties Co.,Ltd.",
-      "date": "2026-07-01",
-      "score": 65,
-      "close": 22.9,
-      "dist_ma20": 448.17,
-      "rsi14": 98.04,
-      "quality": 65,
+      "ticker": "4106",
+      "name": "Wellell Inc.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 23.6,
+      "dist_ma20": 0.22,
+      "rsi14": 55.56,
+      "quality": 69,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX25",
+        "ADX31",
+        "拉回MA20",
         "RSI56"
       ]
     },
     {
-      "ticker": "1410",
-      "name": "Nan Yang Dyeing & Finishing Co.,Ltd",
-      "date": "2026-07-01",
-      "score": 64,
-      "close": 25.4,
-      "dist_ma20": 0.98,
-      "rsi14": 56.01,
-      "quality": 64,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX28",
-        "拉回MA20",
-        "RSI50"
-      ]
-    },
-    {
-      "ticker": "1441",
-      "name": "Tah Tong Textile Co., Ltd.",
-      "date": "2026-07-01",
-      "score": 64,
-      "close": 9.03,
-      "dist_ma20": -3.93,
-      "rsi14": 42.06,
-      "quality": 64,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX33",
-        "拉回MA20",
-        "RSI38"
-      ]
-    },
-    {
-      "ticker": "1452",
-      "name": "Hong Yi Fiber Ind. Co., Ltd.",
-      "date": "2026-07-01",
-      "score": 64,
-      "close": 10.9,
-      "dist_ma20": 14.53,
-      "rsi14": 88.65,
-      "quality": 64,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "拉回MA20",
-        "RSI57"
-      ]
-    },
-    {
-      "ticker": "2002",
-      "name": "China Steel Corporation",
-      "date": "2026-07-01",
-      "score": 64,
-      "close": 18.65,
-      "dist_ma20": 5.58,
-      "rsi14": 82.0,
-      "quality": 64,
-      "bonus": 2,
-      "arrows": 2,
-      "signal": "BUY",
-      "details": [
-        "ADX31",
-        "拉回MA20",
-        "RSI52"
-      ]
-    },
-    {
-      "ticker": "2204",
-      "name": "China Motor Corporation",
-      "date": "2026-07-01",
-      "score": 64,
-      "close": 56.5,
-      "dist_ma20": 98.66,
-      "rsi14": 96.33,
-      "quality": 64,
+      "ticker": "5203",
+      "name": "CyberLink Corp.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 68.2,
+      "dist_ma20": -0.94,
+      "rsi14": 50.78,
+      "quality": 69,
       "bonus": 2,
       "arrows": 2,
       "signal": "BUY",
       "details": [
         "ADX21",
         "拉回MA20",
-        "RSI47"
+        "RSI51"
+      ]
+    },
+    {
+      "ticker": "5285",
+      "name": "Jih Lin Technology Co., Ltd.",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 92.9,
+      "dist_ma20": -0.12,
+      "rsi14": 57.72,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX39",
+        "拉回MA20",
+        "RSI58"
+      ]
+    },
+    {
+      "ticker": "6792",
+      "name": "Unictron Technologies Corporation",
+      "date": "2026-07-02",
+      "score": 69,
+      "close": 65.2,
+      "dist_ma20": -1.08,
+      "rsi14": 55.81,
+      "quality": 69,
+      "bonus": 2,
+      "arrows": 2,
+      "signal": "BUY",
+      "details": [
+        "ADX20",
+        "拉回MA20",
+        "RSI56"
+      ]
+    },
+    {
+      "ticker": "1308",
+      "name": "Asia Polymer Corporation",
+      "date": "2026-07-02",
+      "score": 68,
+      "close": 14.05,
+      "dist_ma20": 1.81,
+      "rsi14": 59.38,
+      "quality": 68,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "RSI59"
+      ]
+    },
+    {
+      "ticker": "1417",
+      "name": "Carnival Industrial Corporation",
+      "date": "2026-07-02",
+      "score": 68,
+      "close": 8.57,
+      "dist_ma20": 1.11,
+      "rsi14": 57.53,
+      "quality": 68,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "RSI58"
       ]
     }
   ]
