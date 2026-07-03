@@ -471,6 +471,7 @@ def evaluate_stock(ticker: str, df: pd.DataFrame, market: dict) -> dict | None:
 def build_kline_data(ticker: str, df: pd.DataFrame) -> list[dict] | None:
     """Build K-line data in the format expected by dashboard openKline()."""
     close = df["Close"]
+    open_ = df["Open"]
     high = df["High"]
     low = df["Low"]
     volume = df["Volume"]
@@ -502,7 +503,7 @@ def build_kline_data(ticker: str, df: pd.DataFrame) -> list[dict] | None:
         row = {
             "d": date_str,
             "c": c,
-            "o": float(high.iloc[i]),
+            "o": float(open_.iloc[i]),
             "h": float(high.iloc[i]),
             "l": float(low.iloc[i]),
             "v": float(volume.iloc[i]),
