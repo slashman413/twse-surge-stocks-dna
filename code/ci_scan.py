@@ -643,6 +643,12 @@ def generate_html(output: dict, names: dict[str, str], scan_date: date):
   <h1>📊 TWSE 量化每日掃描</h1>
   <div class="subtitle">{scan_date} ｜ 掃描 {output.get('scanned_count', 0)} 檔</div>
 
+  <div style="background:linear-gradient(135deg,rgba(34,197,94,.13),rgba(59,130,246,.13));border:1px solid rgba(34,197,94,.35);border-radius:12px;padding:16px;margin:8px 0 20px;text-align:center;">
+    <strong style="color:#e2e8f0;">想在收盤後第一時間收到訊號？</strong><br>
+    <span style="color:#94a3b8;font-size:.9rem;">TWSE Premium 每交易日 Email 推送精選買賣訊號（含進出場價位）</span><br>
+    <a href="https://ko-fi.com/s/b99720d13d?utm_source=surge-dna&utm_medium=web&utm_campaign=twse-surge-stocks-dna" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;padding:10px 20px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;border-radius:8px;text-decoration:none;font-weight:bold;">🔓 升級 TWSE Premium — 每月 $49 起</a>
+  </div>
+
   <div class="market-card">
     <span class="market-state" style="background:{market_color}">{market_status}</span>
     <span style="margin-left:12px;font-size:0.9rem;color:#94a3b8;">
