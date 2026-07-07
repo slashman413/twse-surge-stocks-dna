@@ -538,19 +538,41 @@ def fetch_stock_data(ticker: str) -> pd.DataFrame | None:
 
 
 def fetch_names(tickers: list[str]) -> dict[str, str]:
-    """Fetch Chinese stock names in parallel."""
+    """Fetch Chinese stock names from TWSE OpenAPI (native Chinese names)."""
     names = {}
-    def _get_name(t):
-        try:
-            tk = yf.Ticker(f"{t}.TW")
-            info = tk.info
-            n = info.get("longName") or info.get("shortName") or t
-            names[t] = str(n)
-        except Exception:
+    try:
+        import urllib.request, ssl
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        req = urllib.request.Request(
+            "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        with urllib.request.urlopen(req, context=ctx, timeout=30) as r:
+            rows = json.loads(r.read())
+        for row in rows:
+            code = row.get("Code", "")
+            if code in tickers:
+                names[code] = row.get("Name", code)
+    except Exception as e:
+        print(f"    TWSE name fetch failed: {e}, falling back to yfinance")
+        # Fallback: use yfinance
+        def _get_name(t):
+            try:
+                tk = yf.Ticker(f"{t}.TW")
+                info = tk.info
+                n = info.get("longName") or info.get("shortName") or t
+                names[t] = str(n)
+            except Exception:
+                names[t] = t
+        with ThreadPoolExecutor(max_workers=PARALLEL) as ex:
+            for t in tickers:
+                ex.submit(_get_name, t)
+    # Fill any missing tickers with their code
+    for t in tickers:
+        if t not in names:
             names[t] = t
-    with ThreadPoolExecutor(max_workers=PARALLEL) as ex:
-        for t in tickers:
-            ex.submit(_get_name, t)
     return names
 
 

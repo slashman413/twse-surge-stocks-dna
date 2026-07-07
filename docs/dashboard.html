@@ -851,6 +851,13 @@ async function loadTwiiChart(year) {
 // ═══ Signals & K-line ═══
 async function loadSignals() {
   try {
+    // Ensure stockNames is loaded
+    if (typeof stockNames === 'undefined' || !Object.keys(stockNames).length) {
+      try {
+        const nr = await fetch('./yearly_backtests/stock_names.json');
+        if (nr.ok) stockNames = await nr.json();
+      } catch(e) { stockNames = {}; }
+    }
     const resp = await fetch(SIGNALS_URL);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
@@ -874,7 +881,7 @@ async function loadSignals() {
         return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openKline('${s.ticker}')">
           <div class="signal-rank">${i + 1}</div>
           <div style="flex:1;">
-            <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''} <span class="signal-score">${s.score}</span></div>
+            <div><span class="signal-ticker">${s.ticker}</span>${stockNames[s.ticker] || s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${stockNames[s.ticker] || s.name}</span>` : ''} <span class="signal-score">${s.score}</span></div>
             <div class="signal-detail">${s.date} | 價格 ${typeof s.close === 'number' ? s.close.toLocaleString('en-US', {minimumFractionDigits:0,maximumFractionDigits:2}) : s.close} | 距20MA <span style="color:${distColor}">${typeof s.dist_ma20 === 'number' ? (s.dist_ma20 >= 0 ? '+' : '') + s.dist_ma20 + '%' : s.dist_ma20}</span> | RSI14 ${typeof s.rsi14 === 'number' ? Math.round(s.rsi14) : s.rsi14}${s.details && s.details.length ? ' | ' + s.details.slice(0,3).join(' ') : ''}</div>
           </div>
           <div style="text-align:right;">
@@ -890,7 +897,7 @@ async function loadSignals() {
         return `<div class="signal-card" style="display:flex;align-items:center;gap:12px;border-left-color:var(--red);">
           <div class="signal-rank" style="color:var(--red);">${i + 1}</div>
           <div style="flex:1;">
-            <div><span class="signal-ticker">${s.ticker}</span>${s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${s.name}</span>` : ''} <span style="color:var(--red);font-size:0.8rem;">${s.score}</span></div>
+            <div><span class="signal-ticker">${s.ticker}</span>${stockNames[s.ticker] || s.name ? ` <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">${stockNames[s.ticker] || s.name}</span>` : ''} <span style="color:var(--red);font-size:0.8rem;">${s.score}</span></div>
             <div class="signal-detail" style="color:var(--red);">${s.date} | 價格 ${typeof s.close === 'number' ? s.close.toLocaleString('en-US', {minimumFractionDigits:0,maximumFractionDigits:2}) : s.close} | RSI14 ${typeof s.rsi14 === 'number' ? Math.round(s.rsi14) : s.rsi14} | ${s.details ? s.details.slice(0,3).join(' · ') : ''}</div>
           </div>
           <div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📉 SELL</span></div>
@@ -927,7 +934,7 @@ async function loadSignals() {
           return '<div class="signal-card" style="display:flex;align-items:center;gap:12px;cursor:pointer;border-left-color:var(--red);" onclick="openKline(' + "'" + s.ticker + "'" + ')">' +
             '<div class="signal-rank" style="color:var(--red);">' + (i + 1) + '</div>' +
             '<div style="flex:1;">' +
-            '<div><span class="signal-ticker">' + s.ticker + '</span>' + (s.name ? ' <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">' + s.name + '</span>' : '') + '</div>' +
+            '<div><span class="signal-ticker">' + s.ticker + '</span>' + ((stockNames[s.ticker] || s.name) ? ' <span class="signal-ticker" style="font-family:inherit;color:var(--text-dim);font-weight:400;">' + (stockNames[s.ticker] || s.name) + '</span>' : '') + '</div>' +
             '<div class="signal-detail" style="color:var(--red);">' + s.reasons.join(' | ') + '</div>' +
             '</div>' +
             '<div style="text-align:right;"><span class="badge badge-buy" style="background:rgba(239,68,68,0.2);color:var(--red);">📉 SELL</span></div>' +
