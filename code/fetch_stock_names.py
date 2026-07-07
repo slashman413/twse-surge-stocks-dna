@@ -33,6 +33,29 @@ if os.path.isfile(kline_file):
 missing = [c for c in all_ticks if c not in stock_names or not stock_names[c]]
 print(f'To fetch: {len(missing)}')
 
+# Try TWSE OpenAPI first (gives Chinese names)
+try:
+    import urllib.request, ssl
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    req = urllib.request.Request(
+        "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
+    with urllib.request.urlopen(req, context=ctx, timeout=30) as r:
+        twse_rows = json.loads(r.read())
+    for row in twse_rows:
+        code = row.get("Code", "")
+        if code in missing:
+            stock_names[code] = row.get("Name", code)
+    print(f"  Got {sum(1 for c in missing if stock_names.get(c))}/{len(missing)} from TWSE API")
+except Exception as e:
+    print(f"  TWSE API failed: {e}")
+
+# Refresh missing list
+missing = [c for c in all_ticks if c not in stock_names or not stock_names[c]]
+
 for i, code in enumerate(missing):
     try:
         suf = '.TWO' if code.endswith('O') else '.TW'
