@@ -30,7 +30,7 @@ python backtest.py --ticker 2330 --start 2004 --end 2026
 ```
 
 ## 📊 回測儀表板
-https://slashman413.github.io/twse-surge-stocks-dna/dashboard.html
+https://slashmantools.us/twse-surge-stocks-dna/dashboard.html
 
 ## 🛠️ 技術棧
 - Python 3.11+, pandas, numpy
