@@ -23,7 +23,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install numpy requests
+        run: pip install numpy requests yfinance pandas
 
       - name: Update signals
         run: python ci_update_signals.py
