@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "hermes-agent-deepseek-v4-flash"
           git config user.email "hermes-agent@nousresearch.com"
-          git add docs/yearly_backtests/signals_data.json docs/yearly_backtests/kline_data.json docs/latest_scan.html
+          git add docs/yearly_backtests/signals_data.json docs/yearly_backtests/kline_data.json docs/yearly_backtests/live_kline.json docs/latest_scan.html
           git diff --cached --quiet || \
             git commit -m "auto: daily scan update $(date +'%Y-%m-%d')
 

@@ -910,7 +910,10 @@ async function loadSignals() {
     }
 
     try {
-      const kr = await fetch(KLINE_URL);
+      // Try live_kline first, fall back to kline_data
+      let kr = await fetch(LIVE_KLINE_URL);
+      if (!kr.ok) kr = await fetch(KLINE_URL);
+      if (!kr.ok) throw new Error('K-line not available');
       const kd = await kr.json();
       const exitSignals = [];
       for (const sig of data.signals) {

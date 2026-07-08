@@ -818,7 +818,7 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
     print(f"\n✅ Saved {len(top_signals)} signals to {SIGNALS_FILE}")
 
-    # ── 7. Save live_kline.json ──
+    # ── 7. Save live_kline.json and kline_data.json ──
     # Clean NaN values from kline_data before serializing (NaN is invalid JSON)
     def _clean(obj):
         if isinstance(obj, dict):
@@ -833,6 +833,12 @@ def main():
     with open(KLINE_FILE, "w", encoding="utf-8") as f:
         json.dump(kline_data, f, indent=2, ensure_ascii=False)
     print(f"✅ Saved K-line data ({len(kline_data)} stocks) to {KLINE_FILE}")
+
+    # Also save to kline_data.json for backward compatibility
+    KLINE_FALLBACK = os.path.join(SIGNALS_DIR, "kline_data.json")
+    with open(KLINE_FALLBACK, "w", encoding="utf-8") as f:
+        json.dump(kline_data, f, indent=2, ensure_ascii=False)
+    print(f"✅ Also saved fallback to {KLINE_FALLBACK}")
 
     # ── 8. Generate HTML report ──
     output["buy_count"] = buy_count
