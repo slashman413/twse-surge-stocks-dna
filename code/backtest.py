@@ -412,6 +412,37 @@ def main():
             json_mod.dump(summary, f, ensure_ascii=False, indent=2)
         print(f"📊 Dashboard JSON: {json_path}")
 
+        # Also emit the per-stock performance table the live dashboard fetches
+        # (docs/yearly_backtests/stock_performance.json). Historically this file had NO
+        # generator — it was a stale static commit, so re-running the (lookahead-fixed)
+        # engine never refreshed what the dashboard showed. Derive it purely from the
+        # already-computed simulation trades: reuses validated per-trade P&L, no new math.
+        perf = []
+        for rr in results:
+            sim_rr = rr.get("simulation", {})
+            trades_rr = sim_rr.get("trades", [])
+            n = len(trades_rr)
+            if n == 0:
+                continue
+            wins = sum(1 for t in trades_rr if t.get("pl", 0) > 0)
+            total_pl_rr = float(sim_rr.get("total_pl", 0.0))
+            perf.append({
+                "ticker": rr.get("ticker", ""),
+                "total_trades": n,
+                "total_pl": round(total_pl_rr, 2),
+                "avg_pl_per_trade": round(total_pl_rr / n, 2),
+                "win_rate": round(wins / n * 100, 1),
+                "win_count": wins,
+                "loss_count": n - wins,
+            })
+        perf.sort(key=lambda x: (x["total_trades"], x["total_pl"]), reverse=True)
+        perf_dir = os.path.join(os.path.dirname(json_path), "yearly_backtests")
+        os.makedirs(perf_dir, exist_ok=True)
+        perf_path = os.path.join(perf_dir, "stock_performance.json")
+        with open(perf_path, "w", encoding="utf-8") as f:
+            json_mod.dump(perf, f, ensure_ascii=False, indent=2)
+        print(f"📊 Dashboard perf JSON: {perf_path} ({len(perf)} stocks)")
+
         chart_count = 0
         for r in results:
             ticker = r.get("ticker", "")
