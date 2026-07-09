@@ -134,11 +134,16 @@ def run_backtest(
             continue
 
         date_str = str(chunk["Date"].iloc[-1].date())
+        chunk_date = pd.Timestamp(date_str)
+        # Point-in-time: restrict weekly/monthly bars to <= scan date so the buy/sell
+        # evaluators (which read _safe_last) can't see future weeks/months. Passing the
+        # full-range frames here was the lookahead bug that inflated backtest returns.
+        weekly_chunk = weekly[weekly["Date"] <= chunk_date]
+        monthly_chunk = monthly[monthly["Date"] <= chunk_date]
 
         market_entry_zone = False
         market_entry_reason = ""
         if has_market_data and len(taiex_df) > 42:
-            chunk_date = pd.Timestamp(date_str)
             tx_sub = taiex_df[taiex_df.index <= chunk_date].copy()
             if len(tx_sub) >= 42:
                 tx_close = tx_sub["Close"]
@@ -200,7 +205,7 @@ def run_backtest(
 
         if market_entry_zone:
             bbs = BigStockBuySignalV2()
-            buy = bbs.evaluate(ticker, daily=chunk, weekly=weekly, monthly=monthly)
+            buy = bbs.evaluate(ticker, daily=chunk, weekly=weekly_chunk, monthly=monthly_chunk)
             if buy.signal in (TradeSignal.STRONG_BUY, TradeSignal.BUY):
                 reason_lower = market_entry_reason.lower()
                 if "備戰區" in reason_lower:
@@ -219,7 +224,7 @@ def run_backtest(
                 })
 
         bss = BigStockSellSignalV2()
-        sell = bss.evaluate(ticker, daily=chunk, weekly=weekly, monthly=monthly)
+        sell = bss.evaluate(ticker, daily=chunk, weekly=weekly_chunk, monthly=monthly_chunk)
         if sell.signal in (TradeSignal.STRONG_SELL, TradeSignal.SELL):
             sell_signals.append({
                 "date": date_str,
