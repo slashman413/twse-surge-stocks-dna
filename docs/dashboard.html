@@ -136,6 +136,13 @@
   <!-- ═══ 回測報告 Tab ═══ -->
   <div id="tab-backtest" class="tab-content active">
 
+    <!-- Integrity notice: engine has an unfixed weekly/monthly lookahead bias -->
+    <div style="background:#3a1d1d;border:1px solid #b91c1c;border-radius:12px;padding:14px 16px;margin:0 0 18px;color:#fecaca;line-height:1.6;font-size:.9rem">
+      ⚠️ <strong>數據重新驗證中 — 請勿作為決策依據。</strong>
+      回測引擎在逐日模擬時，週線／月線指標讀到的是整段期間<strong>最後一期</strong>的值（前視偏誤 lookahead bias），
+      因此下方績效（年化報酬、勝率等）<strong>可能高估且尚未修正</strong>，僅供方法論展示，請勿作為投資依據。
+    </div>
+
     <!-- ═══ 回測模擬操作總結 ═══ -->
     <div class="stats-grid" id="summary-stats-grid">
       <div class="stat-card info"><div class="value">300 萬</div><div class="label">初始資金</div></div>
