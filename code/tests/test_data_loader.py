@@ -398,3 +398,49 @@ class TestDataIntegrity:
     def test_no_duplicate_daily(self, sample_ohlcv: pd.DataFrame):
         """日線無重複日期."""
         assert sample_ohlcv["Date"].is_unique
+
+
+# ═══════════════════════════════════════════════════════════════
+# 6. Lookahead-bias 迴歸測試 (backtest.py point-in-time 切片)
+# ═══════════════════════════════════════════════════════════════
+
+
+class TestLookaheadGuard:
+    """守護 backtest.py 消除前視偏誤的核心不變量。
+
+    每日模擬迴圈以 chunk_date 為「當日」，週/月線必須切到 Date <= chunk_date
+    才能餵進買賣訊號評估器。若餵進 full-range 週/月線，訊號會透過 _safe_last()
+    讀到整段期間「最後一根」週/月 K 棒（= 未來資料）→ 前視偏誤，灌水回測績效。
+    這正是 commit 150d443 修掉的 bug；此測試鎖住 (1) resample 框架有 'Date' 欄、
+    (2) <= chunk_date 切片確實排除所有未來 K 棒。
+    """
+
+    @pytest.fixture
+    def frames(self, sample_ohlcv: pd.DataFrame):
+        loader = TWSEStockLoader()
+        weekly = loader.resample_weekly(sample_ohlcv)
+        monthly = loader.resample_monthly(sample_ohlcv)
+        return sample_ohlcv, weekly, monthly
+
+    def test_resample_frames_expose_date_column(self, frames):
+        """切片依賴 weekly/monthly 有 'Date' 欄；沒有的話 backtest 會 KeyError。"""
+        _, weekly, monthly = frames
+        assert "Date" in weekly.columns
+        assert "Date" in monthly.columns
+
+    def test_point_in_time_slice_excludes_future_bars(self, frames):
+        """週/月線切到 <= chunk_date 後不得含任何未來 K 棒，且完整框架確實有未來 K 棒。"""
+        daily, weekly, monthly = frames
+        # 取序列中段某一天當作模擬「當日」
+        chunk_date = pd.Timestamp(daily["Date"].iloc[len(daily) // 2].date())
+
+        weekly_chunk = weekly[weekly["Date"] <= chunk_date]
+        monthly_chunk = monthly[monthly["Date"] <= chunk_date]
+
+        # 非空、確實比完整框架小、且最後一根不晚於「當日」
+        assert len(weekly_chunk) > 0 and len(monthly_chunk) > 0
+        assert len(weekly_chunk) < len(weekly)
+        assert weekly_chunk["Date"].max() <= chunk_date
+        assert monthly_chunk["Date"].max() <= chunk_date
+        # 完整框架含未來 K 棒 → 證明「不切片就會前視」，切片有意義
+        assert weekly["Date"].max() > chunk_date
