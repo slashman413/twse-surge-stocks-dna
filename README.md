@@ -1,4 +1,7 @@
 # 大飆股DNA — TWSE 多週期量化交易篩選系統
+> ## 🛍️ **ETF 儀表板 — 完整版**
+> 此 repo 為開源核心。完整版 **[ETF 儀表板 ($199) on Gumroad](https://slashmaster6.gumroad.com/l/etf-dashboard)** — 自動財報分析、評分系統、歷史回測與每日更新。
+
 
 ## 📈 專案概述
 基於 TWSE 歷史資料，實作九步量化策略的台股篩選系統。
