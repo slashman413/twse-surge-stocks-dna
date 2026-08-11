@@ -34,164 +34,68 @@
   "sell_count": 0,
   "signals": [
     {
-      "ticker": "1341",
-      "name": "富林-KY",
-      "date": "2026-08-10",
-      "score": 89,
-      "close": 59.2,
-      "dist_ma20": 0.81,
-      "rsi14": 49.54,
-      "quality": 89,
-      "bonus": 4,
-      "arrows": 4,
-      "signal": "BUY",
-      "details": [
-        "MACD4箭",
-        "ADX26",
-        "拉回MA20",
-        "RSI51"
-      ]
-    },
-    {
-      "ticker": "1541",
-      "name": "錩泰",
-      "date": "2026-08-10",
-      "score": 86,
-      "close": 21.95,
-      "dist_ma20": 0.8,
-      "rsi14": 55.54,
-      "quality": 86,
-      "bonus": 4,
-      "arrows": 4,
-      "signal": "BUY",
-      "details": [
-        "MACD4箭",
-        "ADX27",
-        "拉回MA20",
-        "RSI47"
-      ]
-    },
-    {
-      "ticker": "1232",
-      "name": "大統益",
-      "date": "2026-08-10",
+      "ticker": "2516",
+      "name": "新建",
+      "date": "2026-08-11",
       "score": 83,
-      "close": 156.0,
-      "dist_ma20": 0.0,
-      "rsi14": 59.32,
+      "close": 14.1,
+      "dist_ma20": 0.93,
+      "rsi14": 57.14,
       "quality": 83,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX27",
+        "ADX63",
         "拉回MA20",
-        "RSI37"
+        "RSI57"
       ]
     },
     {
-      "ticker": "1416",
-      "name": "廣豐",
-      "date": "2026-08-10",
-      "score": 83,
-      "close": 11.0,
-      "dist_ma20": 0.66,
-      "rsi14": 56.07,
-      "quality": 83,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX40",
-        "拉回MA20",
-        "RSI48"
-      ]
-    },
-    {
-      "ticker": "1464",
-      "name": "得力",
-      "date": "2026-08-10",
-      "score": 83,
-      "close": 10.4,
-      "dist_ma20": 0.17,
-      "rsi14": 51.52,
-      "quality": 83,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX20",
-        "拉回MA20",
-        "RSI44"
-      ]
-    },
-    {
-      "ticker": "6944",
-      "name": "兆聯實業",
-      "date": "2026-08-10",
-      "score": 83,
-      "close": 755.0,
-      "dist_ma20": -0.03,
-      "rsi14": 51.27,
-      "quality": 83,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX20",
-        "拉回MA20",
-        "RSI50"
-      ]
-    },
-    {
-      "ticker": "6949",
-      "name": "沛爾生醫-創",
-      "date": "2026-08-10",
-      "score": 83,
-      "close": 948.0,
-      "dist_ma20": 0.25,
-      "rsi14": 53.89,
-      "quality": 83,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX26",
-        "拉回MA20",
-        "RSI45"
-      ]
-    },
-    {
-      "ticker": "2535",
-      "name": "達欣工",
-      "date": "2026-08-10",
+      "ticker": "1536",
+      "name": "和大",
+      "date": "2026-08-11",
       "score": 82,
-      "close": 90.5,
-      "dist_ma20": 2.47,
-      "rsi14": 55.1,
+      "close": 51.2,
+      "dist_ma20": 2.33,
+      "rsi14": 46.45,
       "quality": 82,
       "bonus": 4,
       "arrows": 4,
       "signal": "BUY",
       "details": [
         "MACD4箭",
-        "ADX24",
+        "ADX25",
+        "RSI46"
+      ]
+    },
+    {
+      "ticker": "2509",
+      "name": "全坤建",
+      "date": "2026-08-11",
+      "score": 82,
+      "close": 13.5,
+      "dist_ma20": 2.23,
+      "rsi14": 55.81,
+      "quality": 82,
+      "bonus": 4,
+      "arrows": 4,
+      "signal": "BUY",
+      "details": [
+        "MACD4箭",
+        "ADX23",
         "RSI56"
       ]
     },
     {
       "ticker": "1537",
       "name": "廣隆",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "score": 81,
       "close": 127.0,
       "dist_ma20": 0.51,
-      "rsi14": 54.77,
+      "rsi14": 58.82,
       "quality": 81,
       "bonus": 4,
       "arrows": 4,
@@ -199,36 +103,17 @@
       "details": [
         "MACD4箭",
         "拉回MA20",
-        "RSI56"
+        "RSI59"
       ]
     },
     {
-      "ticker": "2023",
-      "name": "燁輝",
-      "date": "2026-08-10",
+      "ticker": "1103",
+      "name": "嘉泥",
+      "date": "2026-08-11",
       "score": 80,
-      "close": 13.9,
-      "dist_ma20": 0.94,
-      "rsi14": 58.02,
-      "quality": 80,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX23",
-        "拉回MA20",
-        "RSI57"
-      ]
-    },
-    {
-      "ticker": "3557",
-      "name": "嘉威",
-      "date": "2026-08-10",
-      "score": 80,
-      "close": 26.1,
-      "dist_ma20": 0.27,
-      "rsi14": 53.38,
+      "close": 13.2,
+      "dist_ma20": 0.53,
+      "rsi14": 56.75,
       "quality": 80,
       "bonus": 3,
       "arrows": 3,
@@ -237,110 +122,112 @@
         "MACD3箭",
         "ADX27",
         "拉回MA20",
-        "RSI48"
+        "RSI57"
       ]
     },
     {
-      "ticker": "1539",
-      "name": "巨庭",
-      "date": "2026-08-10",
-      "score": 79,
-      "close": 16.35,
-      "dist_ma20": 1.24,
-      "rsi14": 58.06,
-      "quality": 79,
-      "bonus": 4,
-      "arrows": 4,
-      "signal": "BUY",
-      "details": [
-        "MACD4箭",
-        "ADX23",
-        "RSI59"
-      ]
-    },
-    {
-      "ticker": "6670",
-      "name": "復盛應用",
-      "date": "2026-08-10",
-      "score": 79,
-      "close": 266.5,
-      "dist_ma20": 1.25,
-      "rsi14": 59.53,
-      "quality": 79,
-      "bonus": 4,
-      "arrows": 4,
-      "signal": "BUY",
-      "details": [
-        "MACD4箭",
-        "ADX20",
-        "RSI56"
-      ]
-    },
-    {
-      "ticker": "1308",
-      "name": "亞聚",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 13.65,
-      "dist_ma20": 0.94,
-      "rsi14": 53.15,
-      "quality": 78,
+      "ticker": "2023",
+      "name": "燁輝",
+      "date": "2026-08-11",
+      "score": 80,
+      "close": 13.85,
+      "dist_ma20": 0.6,
+      "rsi14": 50.0,
+      "quality": 80,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX20",
+        "ADX27",
         "拉回MA20",
-        "RSI45"
+        "RSI50"
       ]
     },
     {
-      "ticker": "1315",
-      "name": "達新",
-      "date": "2026-08-10",
+      "ticker": "1313",
+      "name": "聯成",
+      "date": "2026-08-11",
       "score": 78,
-      "close": 64.4,
-      "dist_ma20": 0.63,
-      "rsi14": 58.24,
+      "close": 11.3,
+      "dist_ma20": -1.61,
+      "rsi14": 37.18,
       "quality": 78,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX21",
-        "拉回MA20",
-        "RSI49"
-      ]
-    },
-    {
-      "ticker": "1337",
-      "name": "再生-KY",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 4.72,
-      "dist_ma20": -1.14,
-      "rsi14": 45.49,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX20",
+        "ADX25",
         "拉回MA20",
         "RSI37"
       ]
     },
     {
-      "ticker": "2233",
-      "name": "宇隆",
-      "date": "2026-08-10",
+      "ticker": "1340",
+      "name": "勝悅-KY",
+      "date": "2026-08-11",
       "score": 78,
-      "close": 204.5,
-      "dist_ma20": 0.64,
-      "rsi14": 48.18,
+      "close": 5.22,
+      "dist_ma20": 0.76,
+      "rsi14": 53.41,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX35",
+        "拉回MA20",
+        "RSI53"
+      ]
+    },
+    {
+      "ticker": "1416",
+      "name": "廣豐",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 10.95,
+      "dist_ma20": 0.23,
+      "rsi14": 45.45,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX40",
+        "拉回MA20",
+        "RSI45"
+      ]
+    },
+    {
+      "ticker": "1449",
+      "name": "佳和",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 12.65,
+      "dist_ma20": 0.28,
+      "rsi14": 46.94,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX27",
+        "拉回MA20",
+        "RSI47"
+      ]
+    },
+    {
+      "ticker": "1535",
+      "name": "中宇",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 46.05,
+      "dist_ma20": -0.27,
+      "rsi14": 53.12,
       "quality": 78,
       "bonus": 3,
       "arrows": 3,
@@ -349,55 +236,150 @@
         "MACD3箭",
         "ADX24",
         "拉回MA20",
+        "RSI53"
+      ]
+    },
+    {
+      "ticker": "2028",
+      "name": "威致",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 15.55,
+      "dist_ma20": 0.23,
+      "rsi14": 48.89,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX32",
+        "拉回MA20",
+        "RSI49"
+      ]
+    },
+    {
+      "ticker": "2327",
+      "name": "國巨*",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 617.0,
+      "dist_ma20": 0.62,
+      "rsi14": 41.1,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX35",
+        "拉回MA20",
+        "RSI41"
+      ]
+    },
+    {
+      "ticker": "2535",
+      "name": "達欣工",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 88.5,
+      "dist_ma20": 0.32,
+      "rsi14": 50.57,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX23",
+        "拉回MA20",
         "RSI51"
       ]
     },
     {
-      "ticker": "2614",
-      "name": "東森",
-      "date": "2026-08-10",
+      "ticker": "3060",
+      "name": "銘異",
+      "date": "2026-08-11",
       "score": 78,
-      "close": 18.2,
-      "dist_ma20": 0.21,
-      "rsi14": 51.58,
+      "close": 28.8,
+      "dist_ma20": -0.34,
+      "rsi14": 43.22,
       "quality": 78,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX26",
+        "ADX25",
         "拉回MA20",
-        "RSI48"
+        "RSI43"
       ]
     },
     {
-      "ticker": "3059",
-      "name": "華晶科",
-      "date": "2026-08-10",
+      "ticker": "3704",
+      "name": "合勤控",
+      "date": "2026-08-11",
       "score": 78,
-      "close": 40.8,
-      "dist_ma20": 1.3,
-      "rsi14": 42.77,
+      "close": 45.4,
+      "dist_ma20": -0.86,
+      "rsi14": 47.0,
       "quality": 78,
       "bonus": 3,
       "arrows": 3,
       "signal": "BUY",
       "details": [
         "MACD3箭",
-        "ADX30",
+        "ADX25",
         "拉回MA20",
-        "RSI48"
+        "RSI47"
       ]
     },
     {
-      "ticker": "3090",
-      "name": "日電貿",
-      "date": "2026-08-10",
+      "ticker": "5215",
+      "name": "科嘉-KY",
+      "date": "2026-08-11",
       "score": 78,
-      "close": 161.0,
-      "dist_ma20": 0.12,
-      "rsi14": 35.4,
+      "close": 38.5,
+      "dist_ma20": -0.44,
+      "rsi14": 41.67,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX25",
+        "拉回MA20",
+        "RSI42"
+      ]
+    },
+    {
+      "ticker": "6552",
+      "name": "易華電",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 24.4,
+      "dist_ma20": -2.34,
+      "rsi14": 37.98,
+      "quality": 78,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX24",
+        "拉回MA20",
+        "RSI38"
+      ]
+    },
+    {
+      "ticker": "6771",
+      "name": "平和環保-創",
+      "date": "2026-08-11",
+      "score": 78,
+      "close": 38.5,
+      "dist_ma20": 0.36,
+      "rsi14": 52.31,
       "quality": 78,
       "bonus": 3,
       "arrows": 3,
@@ -406,150 +388,17 @@
         "MACD3箭",
         "ADX34",
         "拉回MA20",
-        "RSI45"
-      ]
-    },
-    {
-      "ticker": "5203",
-      "name": "訊連",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 66.3,
-      "dist_ma20": 0.57,
-      "rsi14": 48.85,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX20",
-        "拉回MA20",
-        "RSI51"
-      ]
-    },
-    {
-      "ticker": "5285",
-      "name": "界霖",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 77.9,
-      "dist_ma20": -0.04,
-      "rsi14": 45.85,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX25",
-        "拉回MA20",
-        "RSI46"
-      ]
-    },
-    {
-      "ticker": "5519",
-      "name": "隆大",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 27.85,
-      "dist_ma20": -0.54,
-      "rsi14": 36.88,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX25",
-        "拉回MA20",
-        "RSI44"
-      ]
-    },
-    {
-      "ticker": "6534",
-      "name": "正瀚-創",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 94.1,
-      "dist_ma20": 0.66,
-      "rsi14": 58.82,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX25",
-        "拉回MA20",
-        "RSI53"
-      ]
-    },
-    {
-      "ticker": "6757",
-      "name": "台灣虎航",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 55.6,
-      "dist_ma20": 0.63,
-      "rsi14": 45.64,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX30",
-        "拉回MA20",
-        "RSI49"
-      ]
-    },
-    {
-      "ticker": "6916",
-      "name": "華凌",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 18.85,
-      "dist_ma20": -0.03,
-      "rsi14": 48.81,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX22",
-        "拉回MA20",
-        "RSI42"
-      ]
-    },
-    {
-      "ticker": "6936",
-      "name": "永鴻生技",
-      "date": "2026-08-10",
-      "score": 78,
-      "close": 32.0,
-      "dist_ma20": 0.37,
-      "rsi14": 47.88,
-      "quality": 78,
-      "bonus": 3,
-      "arrows": 3,
-      "signal": "BUY",
-      "details": [
-        "MACD3箭",
-        "ADX20",
-        "拉回MA20",
-        "RSI58"
+        "RSI52"
       ]
     },
     {
       "ticker": "1101",
       "name": "台泥",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "score": 77,
-      "close": 24.55,
-      "dist_ma20": 1.95,
-      "rsi14": 59.77,
+      "close": 24.65,
+      "dist_ma20": 2.35,
+      "rsi14": 59.52,
       "quality": 77,
       "bonus": 4,
       "arrows": 4,
@@ -557,43 +406,189 @@
       "details": [
         "MACD4箭",
         "ADX40",
+        "RSI60"
+      ]
+    },
+    {
+      "ticker": "2520",
+      "name": "冠德",
+      "date": "2026-08-11",
+      "score": 77,
+      "close": 34.45,
+      "dist_ma20": 2.58,
+      "rsi14": 53.34,
+      "quality": 77,
+      "bonus": 4,
+      "arrows": 4,
+      "signal": "BUY",
+      "details": [
+        "MACD4箭",
+        "ADX28",
+        "RSI53"
+      ]
+    },
+    {
+      "ticker": "1475",
+      "name": "業旺",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 27.15,
+      "dist_ma20": 0.23,
+      "rsi14": 49.35,
+      "quality": 76,
+      "bonus": 4,
+      "arrows": 4,
+      "signal": "BUY",
+      "details": [
+        "MACD4箭",
+        "拉回MA20",
+        "RSI49"
+      ]
+    },
+    {
+      "ticker": "2611",
+      "name": "志信",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 14.05,
+      "dist_ma20": 1.37,
+      "rsi14": 45.45,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX39",
+        "RSI45"
+      ]
+    },
+    {
+      "ticker": "2612",
+      "name": "中航",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 54.1,
+      "dist_ma20": 2.49,
+      "rsi14": 55.45,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX33",
+        "RSI55"
+      ]
+    },
+    {
+      "ticker": "3029",
+      "name": "零壹",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 108.0,
+      "dist_ma20": 2.74,
+      "rsi14": 57.04,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX34",
+        "RSI57"
+      ]
+    },
+    {
+      "ticker": "6753",
+      "name": "龍德造船",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 141.0,
+      "dist_ma20": 2.36,
+      "rsi14": 46.6,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX20",
+        "RSI47"
+      ]
+    },
+    {
+      "ticker": "6757",
+      "name": "台灣虎航",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 56.1,
+      "dist_ma20": 1.49,
+      "rsi14": 55.98,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX29",
         "RSI56"
       ]
     },
     {
-      "ticker": "1339",
-      "name": "昭輝",
-      "date": "2026-08-10",
-      "score": 77,
-      "close": 45.0,
-      "dist_ma20": 1.22,
-      "rsi14": 58.29,
-      "quality": 77,
-      "bonus": 4,
-      "arrows": 4,
+      "ticker": "6919",
+      "name": "康霈*",
+      "date": "2026-08-11",
+      "score": 76,
+      "close": 108.0,
+      "dist_ma20": 2.31,
+      "rsi14": 55.65,
+      "quality": 76,
+      "bonus": 3,
+      "arrows": 3,
       "signal": "BUY",
       "details": [
-        "MACD4箭",
-        "ADX21",
-        "RSI48"
+        "MACD3箭",
+        "ADX30",
+        "RSI56"
       ]
     },
     {
-      "ticker": "2609",
-      "name": "陽明",
-      "date": "2026-08-10",
-      "score": 77,
-      "close": 51.6,
-      "dist_ma20": 1.97,
-      "rsi14": 59.41,
-      "quality": 77,
-      "bonus": 4,
-      "arrows": 4,
+      "ticker": "1308",
+      "name": "亞聚",
+      "date": "2026-08-11",
+      "score": 75,
+      "close": 13.6,
+      "dist_ma20": 0.59,
+      "rsi14": 38.57,
+      "quality": 75,
+      "bonus": 3,
+      "arrows": 3,
       "signal": "BUY",
       "details": [
-        "MACD4箭",
-        "ADX25",
-        "RSI55"
+        "MACD3箭",
+        "ADX21",
+        "拉回MA20",
+        "RSI39"
+      ]
+    },
+    {
+      "ticker": "1315",
+      "name": "達新",
+      "date": "2026-08-11",
+      "score": 75,
+      "close": 64.4,
+      "dist_ma20": 0.63,
+      "rsi14": 50.0,
+      "quality": 75,
+      "bonus": 3,
+      "arrows": 3,
+      "signal": "BUY",
+      "details": [
+        "MACD3箭",
+        "ADX23",
+        "拉回MA20",
+        "RSI50"
       ]
     }
   ]
