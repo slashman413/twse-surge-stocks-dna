@@ -4,30 +4,30 @@
   "market_crash": false,
   "market_trend_up": false,
   "market_score": 87,
-  "taiex_close": 49658.328125,
+  "taiex_close": 48475.73828125,
   "reasons": [
-    "DIF210=333>0",
+    "DIF210=332>0",
     "MACD四箭頭=4",
     "W%R50=-1",
-    "RSI60=56"
+    "RSI60=55"
   ],
   "market_assessment": {
     "score": 87,
     "arrows": 4,
-    "dif210": 332.6,
+    "dif210": 331.5,
     "adx300": 13.2,
-    "rsi60": 55.8,
-    "wr50": -0.7,
+    "rsi60": 54.5,
+    "wr50": -1.4,
     "market_bullish": true,
     "market_crash": false,
     "market_trend_up": false,
     "reasons": [
-      "DIF210=333>0",
+      "DIF210=332>0",
       "MACD四箭頭=4",
       "W%R50=-1",
-      "RSI60=56"
+      "RSI60=55"
     ],
-    "taiex_close": 49658.328125
+    "taiex_close": 48475.73828125
   },
   "scanned_count": 533,
   "buy_count": 30,
