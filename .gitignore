@@ -8,3 +8,7 @@ venv/
 *.log
 docs/yearly_backtests/*_signals.json
 reports/
+
+# Rebuilt by the daily scan and published to GitHub Pages only (see pages.yml)
+docs/yearly_backtests/live_kline.json
+docs/yearly_backtests/kline_data.json

@@ -36,8 +36,16 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: daily signals update $(date -u +%Y-%m-%d)"
           git push
 
-  notify-failure:
+  pages:
     needs: [update]
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+
+  notify-failure:
+    needs: [update, pages]
     if: failure()
     runs-on: ubuntu-latest
     steps:

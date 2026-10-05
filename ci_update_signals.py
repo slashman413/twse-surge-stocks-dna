@@ -21,6 +21,10 @@ CHARTS_DIR    = Path("docs/charts")
 SIGNALS_DIR   = Path("docs/yearly_backtests")
 SIGNALS_FILE  = SIGNALS_DIR / "signals_data.json"
 LIVE_KLINE    = SIGNALS_DIR / "live_kline.json"
+# live_kline.json is not committed (it is rebuilt by ci_scan.py and published to
+# GitHub Pages only), so in CI it is read from the live site.
+PAGES_URL     = os.environ.get("PAGES_URL", "https://slashmantools.us/twse-surge-stocks-dna")
+LIVE_KLINE_URL = f"{PAGES_URL}/yearly_backtests/live_kline.json"
 TODAY         = date.today().isoformat()
 
 CTX = ssl.create_default_context()
@@ -67,11 +71,14 @@ def fetch_prices():
 # ═══════════════════════════════════════════════════════════════
 
 def load_live_kline_cache():
-    """Load live_kline.json into a {ticker: [closes]} cache."""
-    if not LIVE_KLINE.exists():
-        return {}
+    """Load live_kline.json into a {ticker: [closes]} cache.
+
+    Uses the local file if a scan just produced it, otherwise the Pages copy."""
     try:
-        data = json.loads(LIVE_KLINE.read_text(encoding="utf-8"))
+        if LIVE_KLINE.exists():
+            data = json.loads(LIVE_KLINE.read_text(encoding="utf-8"))
+        else:
+            data = fetch_json(LIVE_KLINE_URL)
         cache = {}
         for ticker, entry in data.items():
             kline = entry.get("kline", [])

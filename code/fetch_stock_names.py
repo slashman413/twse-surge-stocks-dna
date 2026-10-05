@@ -22,10 +22,20 @@ if os.path.isfile(sig_file):
         stock_names[s['ticker']] = s['name']
 
 # Existing names from kline_data
+# kline_data.json is no longer committed; fall back to the GitHub Pages copy
 kline_file = os.path.join(DATA_DIR, 'kline_data.json')
+kd = {}
 if os.path.isfile(kline_file):
     with open(kline_file) as f:
         kd = json.load(f)
+else:
+    import urllib.request
+    try:
+        with urllib.request.urlopen('https://slashmantools.us/twse-surge-stocks-dna/yearly_backtests/kline_data.json', timeout=30) as r:
+            kd = json.loads(r.read())
+    except Exception as e:
+        print(f'kline_data.json not available ({e}); skipping')
+if kd:
     for t, v in kd.items():
         if t not in stock_names or not stock_names[t]:
             stock_names[t] = v.get('ticker', t)  # just code as fallback

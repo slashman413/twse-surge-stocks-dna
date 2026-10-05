@@ -1,0 +1,75 @@
+name: Deploy Pages
+
+# The site is docs/ plus the two K-line files, which are rebuilt by the daily
+# scan and published here only (never committed, so they don't bloat history).
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      kline_artifact:
+        description: "Artifact from the calling run with fresh live_kline.json + kline_data.json ('' = reuse the copies already on Pages)"
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  PAGES_URL: https://slashmantools.us/twse-surge-stocks-dna
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # include the data commit the calling workflow just pushed
+
+      - name: Use fresh K-line data from this run
+        if: inputs.kline_artifact != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.kline_artifact }}
+          path: docs/yearly_backtests
+
+      - name: Otherwise reuse the K-line data already on Pages
+        if: inputs.kline_artifact == ''
+        run: |
+          for f in live_kline.json kline_data.json; do
+            curl -fsSL --retry 3 -o "docs/yearly_backtests/$f" "$PAGES_URL/yearly_backtests/$f"
+          done
+
+      - name: Validate K-line data
+        run: |
+          python3 -c "
+          import json
+          for f in ('live_kline.json', 'kline_data.json'):
+              d = json.load(open('docs/yearly_backtests/' + f))
+              assert d, f + ' is empty'
+              print(f, len(d), 'tickers')
+          "
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
