@@ -23,7 +23,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install numpy requests yfinance pandas
+        run: pip install numpy requests yfinance pandas "slashman-finance-utils @ git+https://github.com/slashman413/slashman-finance-utils@v0.1.0"
 
       - name: Update signals
         run: python ci_update_signals.py
