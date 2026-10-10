@@ -16,6 +16,7 @@ import urllib.request
 import numpy as np
 import pandas as pd
 import yfinance as yf
+from slashman_finance import stock_day_all
 
 CHARTS_DIR    = Path("docs/charts")
 SIGNALS_DIR   = Path("docs/yearly_backtests")
@@ -43,26 +44,8 @@ def fetch_json(url):
 
 
 def fetch_prices():
-    """Get today's closing prices from TWSE OpenAPI (fallback RWD)."""
-    try:
-        rows = fetch_json("https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL")
-        if not rows: raise ValueError("empty")
-        prices = {}
-        for row in rows:
-            try:
-                prices[row["Code"]] = float(row["ClosingPrice"].replace(",",""))
-            except: pass
-        return prices
-    except Exception as e:
-        print(f"  OpenAPI failed: {e}, trying RWD...")
-    try:
-        d = date.today().strftime("%Y%m%d")
-        rwd = fetch_json(f"https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_ALL?response=json&date={d}")
-        rows = rwd.get("data", [])
-        return {str(r[0]).strip(): float(str(r[7]).replace(",","")) for r in rows if len(r) >= 8}
-    except Exception as e2:
-        print(f"  RWD also failed: {e2}")
-        return {}
+    """{code: close} for every TWSE-listed stock — OpenAPI first, RWD fallback (shared lib)."""
+    return {code: q["close"] for code, q in stock_day_all()[1].items()}
 
 
 # ═══════════════════════════════════════════════════════════════
