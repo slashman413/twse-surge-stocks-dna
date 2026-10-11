@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: read
+  actions: read  # fallback: download the last Daily Scan K-line artifact
   pages: write
   id-token: write
 
@@ -43,19 +44,43 @@ jobs:
           name: ${{ inputs.kline_artifact }}
           path: docs/yearly_backtests
 
+      # Cloudflare (proxied slashmantools.us) 403s curl's default User-Agent, so
+      # send a browser one. If Pages is still unreachable, fall back to the
+      # newest Daily Scan artifact; if that fails too, deploy without K-line
+      # data (the next Daily Scan republishes it) rather than abort the deploy.
       - name: Otherwise reuse the K-line data already on Pages
         if: inputs.kline_artifact == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
         run: |
+          dir=docs/yearly_backtests
+          missing=0
           for f in live_kline.json kline_data.json; do
-            curl -fsSL --retry 3 -o "docs/yearly_backtests/$f" "$PAGES_URL/yearly_backtests/$f"
+            curl -fsSL --retry 3 --retry-all-errors -H "User-Agent: $UA" \
+              -o "$dir/$f" "$PAGES_URL/yearly_backtests/$f" || { rm -f "$dir/$f"; missing=1; }
           done
+          if [ "$missing" = 1 ]; then
+            echo "::warning::K-line fetch from Pages failed; trying latest Daily Scan artifact"
+            run_id=$(gh run list -R "$GITHUB_REPOSITORY" -w daily-scan.yml -s success -L 1 \
+              --json databaseId -q '.[0].databaseId' || true)
+            if [ -n "$run_id" ] && gh run download "$run_id" -R "$GITHUB_REPOSITORY" -n kline -D "$dir"; then
+              echo "Restored K-line data from Daily Scan run $run_id"
+            else
+              echo "::warning::No K-line data available; deploying without it until the next Daily Scan"
+            fi
+          fi
 
       - name: Validate K-line data
         run: |
           python3 -c "
-          import json
+          import json, os
           for f in ('live_kline.json', 'kline_data.json'):
-              d = json.load(open('docs/yearly_backtests/' + f))
+              p = 'docs/yearly_backtests/' + f
+              if not os.path.exists(p):
+                  print('::warning::' + f + ' missing, skipped')
+                  continue
+              d = json.load(open(p))
               assert d, f + ' is empty'
               print(f, len(d), 'tickers')
           "
