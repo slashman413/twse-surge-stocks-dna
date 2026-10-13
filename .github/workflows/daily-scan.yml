@@ -53,6 +53,7 @@ jobs:
     needs: [scan]
     permissions:
       contents: read
+      actions: read  # pages.yml requests it; a called workflow can't exceed the caller's grant
       pages: write
       id-token: write
     uses: ./.github/workflows/pages.yml
