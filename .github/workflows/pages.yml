@@ -15,6 +15,10 @@ on:
         type: string
         default: ''
 
+# CALLERS (workflow_call): daily-scan.yml (job `pages`) and daily-update.yml
+# (job `pages`). A called workflow can't exceed its caller's grant: any scope
+# added here must also be added to the `pages:` job of EVERY caller, or the
+# caller fails with startup_failure (as on 2026-10-12, fixed in 0cf933c).
 permissions:
   contents: read
   actions: read  # fallback: download the last Daily Scan K-line artifact
