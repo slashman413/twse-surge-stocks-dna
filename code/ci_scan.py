@@ -538,6 +538,114 @@ def fetch_stock_data(ticker: str) -> pd.DataFrame | None:
         return None
 
 
+# ═══════════════════════════════════════════════════════════════
+# TWSE official-data backfill (Yahoo per-stock holes)
+# ═══════════════════════════════════════════════════════════════
+# Yahoo sometimes drops a whole trading day for .TW stocks while ^TWII has it
+# (e.g. 2026-10-12). Fill those days from TWSE MI_INDEX, which returns OHLCV
+# for every listed stock in one request per date. Raw TWSE prices equal Yahoo's
+# auto-adjusted prices for recent bars unless an ex-dividend falls after the gap.
+
+TWSE_MI_INDEX_URL = ("https://www.twse.com.tw/exchangeReport/MI_INDEX"
+                     "?response=json&date={ymd}&type=ALLBUT0999")
+BACKFILL_WINDOW = 30   # only look for holes in the last N ^TWII trading days
+
+
+def _twse_num(s) -> float | None:
+    try:
+        return float(str(s).replace(",", "").strip())
+    except ValueError:
+        return None   # "--" = no trade that day
+
+
+def parse_mi_index(payload: dict) -> dict[str, dict]:
+    """MI_INDEX JSON → {ticker: {Open, High, Low, Close, Volume}} (traded stocks only)."""
+    rows = {}
+    if payload.get("stat") != "OK":
+        return rows
+    for table in payload.get("tables") or []:
+        fields = table.get("fields") or []
+        if "證券代號" not in fields or "收盤價" not in fields:
+            continue
+        idx = {name: fields.index(name) for name in
+               ("證券代號", "成交股數", "開盤價", "最高價", "最低價", "收盤價")}
+        for r in table.get("data") or []:
+            o, h, l, c = (_twse_num(r[idx[k]]) for k in ("開盤價", "最高價", "最低價", "收盤價"))
+            v = _twse_num(r[idx["成交股數"]])
+            if None in (o, h, l, c, v):
+                continue
+            rows[str(r[idx["證券代號"]]).strip()] = {
+                "Open": o, "High": h, "Low": l, "Close": c, "Volume": v}
+    return rows
+
+
+def fetch_twse_day(day: date, retries: int = 3, timeout: int = 20) -> dict[str, dict] | None:
+    """One MI_INDEX call for `day`; None if TWSE fails or has no data."""
+    import time, urllib.request, ssl
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    req = urllib.request.Request(TWSE_MI_INDEX_URL.format(ymd=day.strftime("%Y%m%d")),
+                                 headers={"User-Agent": "Mozilla/5.0"})
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, context=ctx, timeout=timeout) as r:
+                rows = parse_mi_index(json.loads(r.read()))
+            return rows or None
+        except Exception as e:
+            print(f"    ⚠ TWSE MI_INDEX {day} attempt {attempt}/{retries} failed: {e}")
+            if attempt < retries:
+                time.sleep(3 * attempt)
+    return None
+
+
+def backfill_missing_days(stocks_data: dict[str, pd.DataFrame], trading_days,
+                          window: int = BACKFILL_WINDOW, fetch=fetch_twse_day) -> int:
+    """Fill trading days present in ^TWII but missing from a stock's frame.
+
+    Only the last `window` trading days are checked, and only dates after a
+    stock's first bar. Never raises: a TWSE failure just leaves the hole.
+    Returns the number of rows added.
+    """
+    added = 0
+    try:
+        recent = sorted(pd.DatetimeIndex(trading_days).normalize().unique())[-window:]
+        missing: dict[pd.Timestamp, list[str]] = {}
+        for ticker, df in stocks_data.items():
+            have = set(df.index.normalize())
+            first = df.index.min().normalize()
+            for d in recent:
+                if d > first and d not in have:
+                    missing.setdefault(d, []).append(ticker)
+        if not missing:
+            return 0
+        print(f"    Yahoo holes on {len(missing)} date(s): "
+              f"{', '.join(d.date().isoformat() for d in sorted(missing))}")
+        for d in sorted(missing):
+            try:
+                rows = fetch(d.date())
+            except Exception as e:
+                print(f"    ⚠ TWSE fetch for {d.date()} raised: {e}")
+                rows = None
+            if not rows:
+                print(f"    ⚠ No TWSE data for {d.date()}, leaving hole")
+                continue
+            filled = 0
+            for ticker in missing[d]:
+                row = rows.get(ticker)
+                if row is None:
+                    continue
+                df = stocks_data[ticker]
+                new = pd.DataFrame([row], index=pd.DatetimeIndex([d], name=df.index.name))
+                stocks_data[ticker] = pd.concat([df, new[df.columns.intersection(new.columns)]]).sort_index()
+                filled += 1
+            added += filled
+            print(f"    {d.date()}: filled {filled}/{len(missing[d])} stocks from TWSE")
+    except Exception as e:
+        print(f"    ⚠ TWSE backfill skipped: {e}")
+    return added
+
+
 def fetch_names(tickers: list[str]) -> dict[str, str]:
     """Fetch Chinese stock names from TWSE OpenAPI (native Chinese names)."""
     names = {}
@@ -760,6 +868,10 @@ def main():
                 print(f"    Progress: {i+1}/{len(TWSE_STOCKS)} (loaded: {loaded}, failed: {failed})")
 
     print(f"    Loaded {loaded} stocks ({failed} skipped)")
+
+    print(f"\n🩹 Checking last {BACKFILL_WINDOW} trading days for Yahoo holes (TWSE fallback)...")
+    added = backfill_missing_days(stocks_data, twii.index)
+    print(f"    Backfilled {added} rows")
 
     # ── 3. Evaluate signals ──
     print("\n🔍 Evaluating signals...")
