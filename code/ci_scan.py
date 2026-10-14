@@ -582,9 +582,7 @@ def parse_mi_index(payload: dict) -> dict[str, dict]:
 def fetch_twse_day(day: date, retries: int = 3, timeout: int = 20) -> dict[str, dict] | None:
     """One MI_INDEX call for `day`; None if TWSE fails or has no data."""
     import time, urllib.request, ssl
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
+    ctx = ssl.create_default_context()   # full cert + hostname verification
     req = urllib.request.Request(TWSE_MI_INDEX_URL.format(ymd=day.strftime("%Y%m%d")),
                                  headers={"User-Agent": "Mozilla/5.0"})
     for attempt in range(1, retries + 1):
