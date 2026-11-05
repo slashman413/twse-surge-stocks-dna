@@ -533,9 +533,16 @@ def fetch_stock_data(ticker: str) -> pd.DataFrame | None:
             return None
         # Flatten MultiIndex columns
         df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
-        return df
+        # Yahoo can list today's date with an empty close. Keeping that row labels the
+        # previous session's close with today's date; dropped, backfill can fill it from TWSE.
+        return df[df["Close"].notna()]
     except Exception:
         return None
+
+
+def drop_holiday_rows(df: pd.DataFrame, trading_days) -> pd.DataFrame:
+    """Drop Yahoo's zero-volume placeholder rows on days ^TWII did not trade (e.g. 2026-10-23)."""
+    return df[(df["Volume"] > 0) | df.index.isin(trading_days)]
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -867,6 +874,8 @@ def main():
 
     print(f"    Loaded {loaded} stocks ({failed} skipped)")
 
+    stocks_data = {t: drop_holiday_rows(df, twii.index) for t, df in stocks_data.items()}
+
     print(f"\n🩹 Checking last {BACKFILL_WINDOW} trading days for Yahoo holes (TWSE fallback)...")
     added = backfill_missing_days(stocks_data, twii.index)
     print(f"    Backfilled {added} rows")
@@ -913,8 +922,10 @@ def main():
     print(f"    K-line data for {len(kline_data)} stocks")
 
     # ── 6. Save signals_data.json ──
+    # Label with the newest session the data holds, not the clock (holidays, Yahoo lag)
+    session = max(df.index[-1] for df in stocks_data.values()).date()
     output = {
-        "date": today.isoformat(),
+        "date": session.isoformat(),
         "market_bullish": market["market_bullish"],
         "market_crash": market["market_crash"],
         "market_trend_up": market["market_trend_up"],
@@ -957,7 +968,7 @@ def main():
     # ── 8. Generate HTML report ──
     output["buy_count"] = buy_count
     output["sell_count"] = sell_count
-    generate_html(output, names, today)
+    generate_html(output, names, session)
 
     print(f"\n✅ CI scan complete — {loaded} stocks, {len(signals)} signals, {len(kline_data)} K-lines")
 

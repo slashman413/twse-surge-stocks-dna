@@ -2,7 +2,7 @@ name: Daily Signals Update
 
 on:
   schedule:
-    - cron: "0 8 * * 1-5"   # Mon-Fri 8:00 UTC = 4:00 PM Taiwan (30 min after TWSE data available)
+    - cron: "0 8 * * 1-5"   # Mon-Fri 8:00 UTC = 4:00 PM Taiwan (after TWSE's RWD file has the day's session)
   workflow_dispatch:
 
 concurrency:
@@ -15,6 +15,7 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write
+      actions: read  # download the last Daily Scan K-line artifact
     steps:
       - uses: actions/checkout@v4
 
@@ -24,6 +25,20 @@ jobs:
 
       - name: Install dependencies
         run: pip install numpy requests yfinance pandas "slashman-finance-utils @ git+https://github.com/slashman413/slashman-finance-utils@v0.1.0"
+
+      # Cloudflare 403s GitHub runners on the live site, so read the K-line data from the
+      # last Daily Scan. Not committed: only signals_data.json is added below.
+      - name: Restore K-line data from the last Daily Scan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh run list -R "$GITHUB_REPOSITORY" -w daily-scan.yml -s success -L 1 \
+            --json databaseId -q '.[0].databaseId' || true)
+          if [ -n "$run_id" ] && gh run download "$run_id" -R "$GITHUB_REPOSITORY" -n kline -D docs/yearly_backtests; then
+            echo "Restored K-line data from Daily Scan run $run_id"
+          else
+            echo "::warning::No K-line data; signals keep the last scan's indicators"
+          fi
 
       - name: Update signals
         run: python ci_update_signals.py

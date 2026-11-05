@@ -2,31 +2,31 @@
 """
 CI daily signal updater — twse-surge-stocks-dna
 ================================================
-Reads live_kline.json for historical closes, fetches TWSE prices,
-computes proper market assessment (same logic as ci_scan.py),
+Reads live_kline.json for historical closes, fetches the latest TWSE session
+(labelled with TWSE's own date, never the clock), computes proper market assessment (same logic as ci_scan.py),
 updates ALL market fields + signals in signals_data.json.
 
 Output:
   - docs/yearly_backtests/signals_data.json  — updated signals + market
 """
 import json, ssl, sys, os
-from datetime import date, datetime
+from datetime import datetime
 from pathlib import Path
 import urllib.request
 import numpy as np
 import pandas as pd
 import yfinance as yf
-from slashman_finance import stock_day_all
+from slashman_finance import fetch_text, roc_to_ad, stock_day_all
+from slashman_finance.twse import RWD, parse_stock_day_rwd
 
-CHARTS_DIR    = Path("docs/charts")
 SIGNALS_DIR   = Path("docs/yearly_backtests")
 SIGNALS_FILE  = SIGNALS_DIR / "signals_data.json"
 LIVE_KLINE    = SIGNALS_DIR / "live_kline.json"
-# live_kline.json is not committed (it is rebuilt by ci_scan.py and published to
-# GitHub Pages only), so in CI it is read from the live site.
+# live_kline.json is not committed (ci_scan.py rebuilds it and publishes it to Pages only).
+# daily-update.yml restores it from the last Daily Scan artifact, because Cloudflare 403s
+# GitHub runners on the live site; the URL is the fallback for local runs.
 PAGES_URL     = os.environ.get("PAGES_URL", "https://slashmantools.us/twse-surge-stocks-dna")
 LIVE_KLINE_URL = f"{PAGES_URL}/yearly_backtests/live_kline.json"
-TODAY         = date.today().isoformat()
 
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
@@ -44,19 +44,30 @@ def fetch_json(url):
 
 
 def fetch_prices():
-    """{code: close} for every TWSE-listed stock — OpenAPI first, RWD fallback (shared lib)."""
-    return {code: q["close"] for code, q in stock_day_all()[1].items()}
+    """(session ISO date, {code: close}) for the latest session TWSE has published.
+
+    Anything derived from these prices must carry this date, never the clock: the data can be
+    older than today. The RWD file rolls soon after the close; the OpenAPI file only rolls at
+    about 05:20 Taipei the next morning, so a run on the cron would read the previous session.
+    """
+    try:
+        roc, quotes, _ = parse_stock_day_rwd(fetch_text(f"{RWD}/afterTrading/STOCK_DAY_ALL?response=json"))
+    except Exception as e:
+        print(f"  RWD STOCK_DAY_ALL failed: {e}, trying OpenAPI...")
+        roc, quotes = "", {}
+    if not quotes:
+        roc, quotes = stock_day_all(fallback=False)
+    return roc_to_ad(roc).isoformat(), {code: q["close"] for code, q in quotes.items()}
 
 
 # ═══════════════════════════════════════════════════════════════
 # Fix 5: Historical close prices from live_kline.json (fresh scan data)
-#         Fall back to docs/charts/*.json if not found
 # ═══════════════════════════════════════════════════════════════
 
-def load_live_kline_cache():
-    """Load live_kline.json into a {ticker: [closes]} cache.
+def load_live_kline_cache(session):
+    """{ticker: [closes before `session`]} from live_kline.json, so the session's close is added once.
 
-    Uses the local file if a scan just produced it, otherwise the Pages copy."""
+    Uses the local file if present, otherwise the Pages copy."""
     try:
         if LIVE_KLINE.exists():
             data = json.loads(LIVE_KLINE.read_text(encoding="utf-8"))
@@ -64,33 +75,14 @@ def load_live_kline_cache():
             data = fetch_json(LIVE_KLINE_URL)
         cache = {}
         for ticker, entry in data.items():
-            kline = entry.get("kline", [])
-            closes = [r["c"] for r in kline if r.get("c") and r["c"] > 0]
+            closes = [r["c"] for r in entry.get("kline", [])
+                      if r.get("c") and r["c"] > 0 and r.get("d", "") < session]
             if closes:
                 cache[ticker] = closes
         return cache
-    except Exception:
+    except Exception as e:
+        print(f"    live_kline.json unavailable: {e}")
         return {}
-
-
-def load_closes(ticker, live_cache=None):
-    """
-    Primary: read close prices from live_kline.json (fresh scan data).
-    Fallback: read from docs/charts/{ticker}.json (pre-generated).
-    """
-    # Try live_kline cache first (most recent scan data)
-    if live_cache is not None and ticker in live_cache:
-        return live_cache[ticker]
-
-    # Fallback to chart files
-    f = CHARTS_DIR / (ticker + ".json")
-    if not f.exists():
-        return []
-    try:
-        data = json.loads(f.read_text(encoding="utf-8"))
-        return [r["c"] for r in data.get("stock", []) if r.get("c") and r["c"] > 0]
-    except Exception:
-        return []
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -264,15 +256,23 @@ def dist_ma20_from_closes(closes):
 # ═══════════════════════════════════════════════════════════════
 
 def main():
-    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Fetching prices for {TODAY}...")
-    prices = fetch_prices()
+    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Fetching latest TWSE session...")
+    try:
+        session, prices = fetch_prices()
+    except Exception as e:
+        print(f"No price data: {e}"); sys.exit(0)
     if not prices:
         print("No price data — non-trading day?"); sys.exit(0)
-    print(f"  Got {len(prices)} stocks")
+    print(f"  Got {len(prices)} stocks for session {session}")
+
+    signals_data = json.loads(SIGNALS_FILE.read_text(encoding="utf-8"))
+    if session < signals_data.get("date", ""):
+        print(f"  Session {session} is older than signals date {signals_data['date']}; nothing to do")
+        sys.exit(0)
 
     # Build live_kline close cache (Fix 5)
     print("  Loading live_kline.json cache...")
-    live_cache = load_live_kline_cache()
+    live_cache = load_live_kline_cache(session)
     print(f"    Cached {len(live_cache)} stocks from live_kline.json")
 
     # Download ^TWII for market assessment (Fix 8)
@@ -293,7 +293,6 @@ def main():
         market = None
 
     # Read existing signals
-    signals_data = json.loads(SIGNALS_FILE.read_text(encoding="utf-8"))
     existing = signals_data.get("signals", [])
 
     # Update existing signals
@@ -305,23 +304,24 @@ def main():
             updated.append(sig)
             continue
 
-        closes = load_closes(ticker, live_cache)
-        closes_with_today = closes + [price] if closes else [price]
-        d20 = dist_ma20_from_closes(closes_with_today)
-        r14 = rsi14_from_closes(closes_with_today)
-
-        if d20 < -5 or r14 < 35:
-            print(f"  EXIT {ticker}: dist_ma20={d20:.1f}% rsi14={r14:.1f}")
-            continue
-
         sig = sig.copy()
-        sig["close"]     = price
-        sig["dist_ma20"] = d20
-        sig["rsi14"]     = r14
+        sig["date"]  = session
+        sig["close"] = price
+
+        # Without recent closes, keep the scan's indicators rather than inventing new ones
+        closes = live_cache.get(ticker)
+        if closes:
+            d20 = dist_ma20_from_closes(closes + [price])
+            r14 = rsi14_from_closes(closes + [price])
+            if d20 < -5 or r14 < 35:
+                print(f"  EXIT {ticker}: dist_ma20={d20:.1f}% rsi14={r14:.1f}")
+                continue
+            sig["dist_ma20"] = d20
+            sig["rsi14"]     = r14
         updated.append(sig)
 
     # Fix 2: Update ALL market fields (not just date + market_bullish)
-    signals_data["date"]   = TODAY
+    signals_data["date"]   = session
     signals_data["signals"] = updated
 
     if market is not None:
