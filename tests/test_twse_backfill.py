@@ -7,6 +7,7 @@ import json
 import os
 import sys
 import unittest
+import unittest.mock
 from datetime import date
 
 import pandas as pd
@@ -49,6 +50,24 @@ class ParseMiIndex(unittest.TestCase):
 
     def test_no_data_stat(self):
         self.assertEqual(ci_scan.parse_mi_index({"stat": "很抱歉，沒有符合條件的資料!"}), {})
+
+
+class FetchStockData(unittest.TestCase):
+    def test_drops_rows_with_an_empty_close(self):
+        raw = frame(TWII_DAYS)
+        raw.loc["2026-10-13", "Close"] = float("nan")
+        with unittest.mock.patch.object(ci_scan.yf, "download", return_value=raw):
+            df = ci_scan.fetch_stock_data("2330")
+        self.assertEqual(df.index[-1], pd.Timestamp("2026-10-12"))
+
+
+class DropHolidayRows(unittest.TestCase):
+    def test_drops_only_zero_volume_rows_on_non_trading_days(self):
+        df = frame(TWII_DAYS + ["2026-10-14", "2026-10-15"])
+        df.loc["2026-10-08", "Volume"] = 0.0   # untraded on a real session: kept
+        df.loc["2026-10-14", "Volume"] = 0.0   # holiday placeholder: dropped
+        out = ci_scan.drop_holiday_rows(df, pd.DatetimeIndex(TWII_DAYS))
+        self.assertEqual(list(out.index.strftime("%Y-%m-%d")), TWII_DAYS + ["2026-10-15"])
 
 
 class BackfillMissingDays(unittest.TestCase):
