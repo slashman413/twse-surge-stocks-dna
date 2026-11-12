@@ -24,7 +24,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install numpy requests yfinance pandas "slashman-finance-utils @ git+https://github.com/slashman413/slashman-finance-utils@v0.1.0"
+        run: pip install numpy requests yfinance pandas "slashman-finance-utils @ git+https://github.com/slashman413/slashman-finance-utils@fe2f62be36758ba02b1bfe92a6be5d480072dd48"
 
       # Cloudflare 403s GitHub runners on the live site, so read the K-line data from the
       # last Daily Scan. Not committed: only signals_data.json is added below.

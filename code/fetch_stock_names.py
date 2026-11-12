@@ -45,16 +45,8 @@ print(f'To fetch: {len(missing)}')
 
 # Try TWSE OpenAPI first (gives Chinese names)
 try:
-    import urllib.request, ssl
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
-    req = urllib.request.Request(
-        "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-        headers={"User-Agent": "Mozilla/5.0"},
-    )
-    with urllib.request.urlopen(req, context=ctx, timeout=30) as r:
-        twse_rows = json.loads(r.read())
+    from slashman_finance import fetch_json
+    twse_rows = fetch_json("https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL", timeout=30)
     for row in twse_rows:
         code = row.get("Code", "")
         if code in missing:
