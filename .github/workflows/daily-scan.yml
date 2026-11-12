@@ -24,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install yfinance pandas numpy "slashman-finance-utils @ git+https://github.com/slashman413/slashman-finance-utils@fe2f62be36758ba02b1bfe92a6be5d480072dd48"
+        run: pip install yfinance pandas numpy "slashman-finance-utils @ git+https://github.com/slashman413/slashman-finance-utils@c79da83a70508755651d677e59403bdd48b7d84e"
 
       - name: Run daily scan
         run: python code/ci_scan.py
