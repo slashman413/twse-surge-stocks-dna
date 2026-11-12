@@ -22,6 +22,8 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
+from slashman_finance import fetch_json, fetch_text
+
 # ── Paths ──────────────────────────────────────────────────────
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SIGNALS_DIR = os.path.join(REPO_ROOT, "docs", "yearly_backtests")
@@ -588,14 +590,14 @@ def parse_mi_index(payload: dict) -> dict[str, dict]:
 
 def fetch_twse_day(day: date, retries: int = 3, timeout: int = 20) -> dict[str, dict] | None:
     """One MI_INDEX call for `day`; None if TWSE fails or has no data."""
-    import time, urllib.request, ssl
-    ctx = ssl.create_default_context()   # full cert + hostname verification
-    req = urllib.request.Request(TWSE_MI_INDEX_URL.format(ymd=day.strftime("%Y%m%d")),
-                                 headers={"User-Agent": "Mozilla/5.0"})
+    import time
     for attempt in range(1, retries + 1):
         try:
-            with urllib.request.urlopen(req, context=ctx, timeout=timeout) as r:
-                rows = parse_mi_index(json.loads(r.read()))
+            payload = json.loads(fetch_text(
+                TWSE_MI_INDEX_URL.format(ymd=day.strftime("%Y%m%d")),
+                timeout=timeout,
+            ))
+            rows = parse_mi_index(payload)
             return rows or None
         except Exception as e:
             print(f"    ⚠ TWSE MI_INDEX {day} attempt {attempt}/{retries} failed: {e}")
@@ -655,16 +657,7 @@ def fetch_names(tickers: list[str]) -> dict[str, str]:
     """Fetch Chinese stock names from TWSE OpenAPI (native Chinese names)."""
     names = {}
     try:
-        import urllib.request, ssl
-        ctx = ssl.create_default_context()
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-        req = urllib.request.Request(
-            "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-            headers={"User-Agent": "Mozilla/5.0"},
-        )
-        with urllib.request.urlopen(req, context=ctx, timeout=30) as r:
-            rows = json.loads(r.read())
+        rows = fetch_json("https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL", timeout=30)
         for row in rows:
             code = row.get("Code", "")
             if code in tickers:
