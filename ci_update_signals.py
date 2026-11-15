@@ -9,14 +9,13 @@ updates ALL market fields + signals in signals_data.json.
 Output:
   - docs/yearly_backtests/signals_data.json  — updated signals + market
 """
-import json, ssl, sys, os
+import json, sys, os
 from datetime import datetime
 from pathlib import Path
-import urllib.request
 import numpy as np
 import pandas as pd
 import yfinance as yf
-from slashman_finance import fetch_text, roc_to_ad, stock_day_all
+from slashman_finance import fetch_json, fetch_text, roc_to_ad, stock_day_all
 from slashman_finance.twse import RWD, parse_stock_day_rwd
 
 SIGNALS_DIR   = Path("docs/yearly_backtests")
@@ -28,20 +27,9 @@ LIVE_KLINE    = SIGNALS_DIR / "live_kline.json"
 PAGES_URL     = os.environ.get("PAGES_URL", "https://slashmantools.us/twse-surge-stocks-dna")
 LIVE_KLINE_URL = f"{PAGES_URL}/yearly_backtests/live_kline.json"
 
-CTX = ssl.create_default_context()
-CTX.check_hostname = False
-CTX.verify_mode    = ssl.CERT_NONE
-
-
 # ═══════════════════════════════════════════════════════════════
 # Data fetching
 # ═══════════════════════════════════════════════════════════════
-
-def fetch_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, context=CTX, timeout=30) as r:
-        return json.loads(r.read())
-
 
 def fetch_prices():
     """(session ISO date, {code: close}) for the latest session TWSE has published.
